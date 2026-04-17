@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crawley Family Photo — ~1964</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #1a1a1a;
+      color: #eee;
+      font-family: Georgia, serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem 3rem;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: normal;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.4rem;
+      color: #e8d9b0;
+    }
+
+    .subtitle {
+      font-size: 0.85rem;
+      color: #888;
+      margin-bottom: 1.4rem;
+      text-align: center;
+    }
+
+    .toggle-btn {
+      background: #2e2e2e;
+      border: 1px solid #555;
+      color: #e8d9b0;
+      padding: 0.5rem 1.4rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.03em;
+      transition: background 0.2s;
+    }
+    .toggle-btn:hover { background: #3a3a3a; }
+
+    .photo-wrapper {
+      position: relative;
+      display: inline-block;
+      line-height: 0;
+    }
+
+    .photo-wrapper img {
+      max-width: min(640px, 100vw - 2rem);
+      display: block;
+      border: 2px solid #444;
+    }
+
+    /* Label base styles */
+    .label {
+      position: absolute;
+      font-size: 0.7rem;
+      font-family: Arial, sans-serif;
+      line-height: 1.3;
+      text-align: center;
+      pointer-events: none;
+      transition: opacity 0.25s;
+      text-shadow: 0 1px 3px #000, 0 0 6px #000;
+      max-width: 110px;
+    }
+
+    .label.confirmed {
+      color: #ffffff;
+    }
+
+    .label.unconfirmed {
+      color: #ffe066;
+    }
+
+    /* Small dot marker */
+    .label::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      margin: 0 auto 3px;
+    }
+    .label.confirmed::before { background: #fff; }
+    .label.unconfirmed::before { background: #ffe066; }
+
+    .labels-hidden .label { opacity: 0; }
+    .labels-visible .label { opacity: 1; }
+
+    /* Legend */
+    .legend {
+      margin-top: 1.4rem;
+      display: flex;
+      gap: 1.8rem;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+    .legend span { display: flex; align-items: center; gap: 0.4rem; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+    .dot.c { background: #fff; }
+    .dot.u { background: #ffe066; }
+
+    .notes {
+      margin-top: 1.6rem;
+      max-width: 640px;
+      font-size: 0.82rem;
+      color: #888;
+      line-height: 1.7;
+      border-top: 1px solid #333;
+      padding-top: 1rem;
+    }
+    .notes strong { color: #bbb; }
+
+    .back-link {
+      margin-top: 1.4rem;
+      font-size: 0.82rem;
+    }
+    .back-link a { color: #c9a84c; text-decoration: none; }
+    .back-link a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <h1>Crawley Family — Mountain Visit, ~1964</h1>
+  <p class="subtitle">Likely taken during a visit to James "Jim" Crawley while serving in the US Air Corps / Air Force</p>
+
+  <button class="toggle-btn" id="toggleBtn" onclick="toggleLabels()">Hide Labels</button>
+
+  <div class="photo-wrapper labels-visible" id="photoWrapper">
+    <img src="CrawleyFamilyPhotoWithChildrenCir1964.jpg" alt="Crawley Family Photo ~1964" id="photo">
+
+    <!--
+      Positions are expressed as percentages of the image's rendered width/height.
+      left/top point to the person's approximate head/shoulder.
+      Adjust as needed if photo renders at different size.
+    -->
+
+    <!-- James "Jim" Crawley — far left, standing -->
+    <div class="label confirmed" style="left:10%; top:28%;">
+      James "Jim" Crawley
+    </div>
+
+    <!-- Mary Williamson Crawley — glasses, white cardigan -->
+    <div class="label unconfirmed" style="left:28%; top:35%;">
+      Mary Williamson<br>Crawley?
+    </div>
+
+    <!-- J.G. Thomas Jr. — center back, holding toddler -->
+    <div class="label confirmed" style="left:46%; top:18%;">
+      J.G. Thomas Jr.
+    </div>
+
+    <!-- Michael Scott Thomas — toddler held by J.G. -->
+    <div class="label confirmed" style="left:37%; top:13%;">
+      Michael Scott<br>Thomas (~age 4)
+    </div>
+
+    <!-- Charlotte Lucille Crawley Thomas — tan dress, next to J.G. -->
+    <div class="label confirmed" style="left:56%; top:26%;">
+      Charlotte<br>Crawley Thomas
+    </div>
+
+    <!-- Charles "Chuck" Convis — tall man far right -->
+    <div class="label confirmed" style="left:74%; top:22%;">
+      Charles "Chuck"<br>Convis
+    </div>
+
+    <!-- Lottie Robison Crawley — seated left, orange chair -->
+    <div class="label unconfirmed" style="left:17%; top:57%;">
+      Lottie Robison<br>Crawley?<br>("Grandma Crawley")
+    </div>
+
+    <!-- Mary Ann Crawley Convis — seated right, white top -->
+    <div class="label unconfirmed" style="left:60%; top:52%;">
+      Mary Ann<br>Crawley Convis?<br>("Aunt Mary Ann")
+    </div>
+
+    <!-- Mary Beth Thomas — girl in light blue top, center -->
+    <div class="label unconfirmed" style="left:52%; top:44%;">
+      Mary Beth<br>Thomas?
+    </div>
+
+    <!-- Child — girl in lavender dress, covering eyes -->
+    <div class="label unconfirmed" style="left:36%; top:50%;">
+      Charles Jr. / Bill /<br>Jim / John Scott /<br>David Convis<br>— or —<br>Linda / Martha /<br>Sara Crawley?
+    </div>
+
+    <!-- Child — boy front center, face down -->
+    <div class="label unconfirmed" style="left:42%; top:70%;">
+      Convis or<br>Crawley child?
+    </div>
+
+    <!-- Child — boy seated far right, white polo -->
+    <div class="label unconfirmed" style="left:76%; top:45%;">
+      Convis or<br>Crawley child?
+    </div>
+
+    <!-- Child — boy standing far right behind Mary Ann -->
+    <div class="label unconfirmed" style="left:82%; top:33%;">
+      Convis or<br>Crawley child?
+    </div>
+
+    <!-- Infant held by Lottie -->
+    <div class="label unconfirmed" style="left:20%; top:68%;">
+      Infant —<br>identity unknown
+    </div>
+
+  </div>
+
+  <div class="legend">
+    <span><span class="dot c"></span> Confirmed</span>
+    <span><span class="dot u"></span> Unconfirmed / pending Charlotte's verification</span>
+  </div>
+
+  <div class="notes">
+    <strong>Children (5 unidentified):</strong> Believed to be a mix of Convis children (Charles Jr., Bill, Jim, John Scott, and/or David — children of Chuck &amp; Mary Ann) and/or Jim &amp; Mary Crawley's daughters (Linda, Martha, and/or Sara). To be confirmed by Charlotte Thomas or Charles Convis Jr.<br><br>
+    <strong>Setting:</strong> Mountain or canyon location, consistent with an Air Force base visit. Charlotte Thomas recalled the trip in a Facebook comment: <em>"all I remember about James in the Air Corp was a visit we made to see him… we stayed in a rustic cabin and had a meal of chicken fried steak and gravy that Aunt Imogene had canned."</em><br><br>
+    <strong>Photo courtesy:</strong> Crawley Family Connection (Facebook group), posted by Charles Convis Jr.
+  </div>
+
+  <div class="back-link">
+    <a href="../full-family-tree.html#crawley-line">← Back to Family Tree</a>
+  </div>
+
+  <script>
+    function toggleLabels() {
+      const wrapper = document.getElementById('photoWrapper');
+      const btn = document.getElementById('toggleBtn');
+      if (wrapper.classList.contains('labels-visible')) {
+        wrapper.classList.replace('labels-visible', 'labels-hidden');
+        btn.textContent = 'Show Labels';
+      } else {
+        wrapper.classList.replace('labels-hidden', 'labels-visible');
+        btn.textContent = 'Hide Labels';
+      }
+    }
+  </script>
+
+</body>
+</html>
