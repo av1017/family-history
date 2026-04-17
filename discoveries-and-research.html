@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discoveries &amp; Open Research — Avery Thomas Family History</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --surface2: #222;
+      --border: #2e2e2e;
+      --accent: #c9a84c;
+      --accent2: #a0522d;
+      --accent-red: #c94c4c;
+      --accent-green: #4ca87a;
+      --text: #e0d8cc;
+      --muted: #888;
+      --link: #c9a84c;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', serif;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a1208 0%, #0f0f0f 60%);
+      border-bottom: 2px solid var(--accent);
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+    }
+    header .crest { font-size: 3rem; margin-bottom: 0.5rem; }
+    header h1 { font-size: 2.2rem; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.4rem; }
+    header .subtitle { color: var(--muted); font-style: italic; font-size: 1rem; }
+    header .byline { margin-top: 1rem; font-size: 0.85rem; color: var(--muted); }
+
+    .site-nav {
+      background: #111;
+      border-bottom: 2px solid var(--accent);
+      padding: 0.7rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 0;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+    }
+
+    .site-nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 0.3rem 1rem;
+      border-right: 1px solid #2a2a2a;
+      transition: color 0.2s;
+    }
+
+    .site-nav a:last-child { border-right: none; }
+    .site-nav a:hover { color: var(--accent); }
+    .site-nav a.active { color: var(--accent); }
+
+    nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0.75rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      justify-content: center;
+      position: sticky;
+      top: 44px;
+      z-index: 100;
+    }
+    nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; font-family: sans-serif; letter-spacing: 0.5px; }
+    nav a:hover { text-decoration: underline; }
+
+    .container { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+
+    .section { margin-bottom: 3rem; }
+
+    .section-title {
+      font-size: 1.4rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p { margin-bottom: 1rem; }
+
+    /* ── Status badges ── */
+    .status-confirmed {
+      display: inline-block;
+      background: #1a3a2a;
+      color: #4ca87a;
+      border: 1px solid #4ca87a;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-family: sans-serif;
+      padding: 0.15rem 0.6rem;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+      letter-spacing: 0.5px;
+    }
+    .status-uncertain {
+      display: inline-block;
+      background: #2a2a1a;
+      color: #c9a84c;
+      border: 1px solid #c9a84c;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-family: sans-serif;
+      padding: 0.15rem 0.6rem;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+      letter-spacing: 0.5px;
+    }
+    .status-open {
+      display: inline-block;
+      background: #2a1a1a;
+      color: #c97a4c;
+      border: 1px solid #c97a4c;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-family: sans-serif;
+      padding: 0.15rem 0.6rem;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Feature card ── */
+    .feature-card {
+      background: linear-gradient(135deg, #1a1a0a, #1a1208);
+      border: 1px solid var(--accent);
+      border-left: 4px solid var(--accent);
+      border-radius: 6px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .feature-label {
+      font-size: 0.75rem;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .feature-text { font-size: 1rem; line-height: 1.7; }
+
+    /* ── Ancestor table ── */
+    .ancestor-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin: 1.5rem 0;
+    }
+    .ancestor-table th {
+      background: var(--surface2);
+      color: var(--accent);
+      font-family: sans-serif;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 0.6rem 0.8rem;
+      text-align: left;
+      border-bottom: 2px solid var(--border);
+    }
+    .ancestor-table td {
+      padding: 0.6rem 0.8rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .ancestor-table tr:nth-child(even) td { background: var(--surface); }
+    .ancestor-table tr:hover td { background: #1a1a1e; }
+    .ancestor-table .name { font-weight: bold; color: #e8d9b8; }
+    .ancestor-table .rel { color: var(--accent); font-style: italic; font-size: 0.88rem; }
+    .ancestor-table .dates { color: var(--muted); font-size: 0.85rem; }
+    .ancestor-table .note { color: #aaa; font-size: 0.84rem; }
+    .highlight-row td { background: #1a1a0d !important; }
+
+    /* ── Research question cards ── */
+    .research-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid #c97a4c;
+      border-radius: 6px;
+      padding: 1.1rem 1.4rem;
+      margin-bottom: 1.2rem;
+    }
+    .research-card.resolved {
+      border-left-color: #4ca87a;
+    }
+    .research-q {
+      font-weight: bold;
+      color: #e8d9b8;
+      margin-bottom: 0.4rem;
+      font-size: 0.95rem;
+    }
+    .research-a {
+      font-size: 0.88rem;
+      color: #bbb;
+      line-height: 1.6;
+    }
+    .research-lead {
+      font-size: 0.8rem;
+      font-family: sans-serif;
+      color: var(--muted);
+      margin-top: 0.5rem;
+    }
+
+    /* ── XRef box ── */
+    .xref-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid #5b8dc9;
+      border-radius: 4px;
+      padding: 1rem 1.3rem;
+      margin: 1.2rem 0;
+      font-size: 0.9rem;
+    }
+    .xref-label {
+      font-size: 0.72rem;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #5b8dc9;
+      margin-bottom: 0.4rem;
+    }
+
+    /* ── Timeline ── */
+    .timeline { position: relative; padding-left: 2rem; margin: 1.5rem 0; }
+    .timeline::before { content: ''; position: absolute; left: 0.4rem; top: 0; bottom: 0; width: 2px; background: var(--border); }
+    .timeline-item { position: relative; margin-bottom: 1.5rem; }
+    .timeline-item::before { content: ''; position: absolute; left: -1.75rem; top: 0.4rem; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+    .timeline-year { font-size: 0.8rem; font-family: sans-serif; color: var(--accent); letter-spacing: 0.5px; margin-bottom: 0.2rem; }
+    .timeline-title { font-weight: bold; color: #e8d9b8; margin-bottom: 0.3rem; }
+    .timeline-body { font-size: 0.9rem; color: #bbb; line-height: 1.65; }
+
+    hr.divider { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html">Home</a>
+  <a href="full-family-tree.html">Family Tree</a>
+  <a href="thomas-kennard-documents.html">Thomas &amp; Kennard</a>
+  <a href="kennard-family-history.html">Kennard History</a>
+  <a href="discoveries-and-research.html" class="active">Discoveries</a>
+  <a href="sources.html">Primary Sources</a>
+  <a href="file-glossary.html">Site Index</a>
+</nav>
+
+<header>
+  <div class="crest">&#9876;</div>
+  <h1>Discoveries &amp; Open Research</h1>
+  <div class="subtitle">New findings, bombshells, and unresolved questions in the Thomas–Kennard family history</div>
+  <div class="byline">Avery Thomas · Updated April 2026</div>
+</header>
+
+<nav>
+  <a href="#sar">Revolutionary War</a>
+  <a href="#sar-lineage">SAR Lineage</a>
+  <a href="#open-questions">Open Questions</a>
+  <a href="#david-thomas">David Thomas (Signer)</a>
+  <a href="#john-thomas-parents">James Avery's Parents</a>
+  <a href="#sources">Sources</a>
+  <a href="full-family-tree.html">Full Tree</a>
+  <a href="thomas-kennard-documents.html">Primary Documents</a>
+  <a href="file-glossary.html">File Glossary</a>
+</nav>
+
+<div class="container">
+
+  <!-- ═══════════════════════ REVOLUTIONARY WAR ═══════════════════════ -->
+  <div class="section" id="sar">
+    <h2 class="section-title">Revolutionary War Discovery <span class="status-confirmed">Confirmed</span></h2>
+
+    <div class="feature-card">
+      <div class="feature-label">Bombshell — April 16, 2026</div>
+      <div class="feature-text">
+        Through Ancestry research, the Thomas line has been traced back to <strong>James E. Thomas</strong> (b. 1714, Nansemond County, Virginia · d. November 1780, Bertie County, North Carolina) — your <strong>6th great-grandfather</strong>. His son <strong>James Thomas (2nd)</strong> (b. 2/12/1760, Bertie Co., NC) served as a <strong>Private in the North Carolina Revolutionary Army</strong>, making him your 5th great-grandfather and a <strong>Sons of the American Revolution (SAR) qualifying patriot ancestor</strong>.<br><br>
+        This discovery parallels the SRT (Sons of the Republic of Texas) memberships held by your father Michael Scott Thomas and your first cousin twice removed Richard Gary Thomas — and means you are potentially eligible for <strong>SAR membership</strong> through this line.
+      </div>
+    </div>
+
+    <p>The lineage was surfaced as an Ancestry hint attached to James E. Thomas's profile — a SAR membership application filed by a Kentucky branch of the same Thomas family. That Kentucky family descends from <strong>James Thomas (2nd)</strong>, while your Texas line descends from a different child of James E. Thomas (most likely <strong>Joseph Thomas</strong>, b. ~1735–1740). Both lines share the same Revolutionary War patriot ancestor.</p>
+
+    <div class="xref-box">
+      <div class="xref-label">SAR vs. SRT — Two Patriot Societies</div>
+      Your family now has documented connections to <em>two</em> patriot lineage societies:<br><br>
+      <strong>Sons of the Republic of Texas (SRT)</strong> — requires lineal descent from a resident of Texas before annexation (Feb 19, 1846). Your father Michael Scott Thomas and Richard Gary Thomas are both members, qualifying through Anthony Drew Kennard and James Avery Thomas respectively.<br><br>
+      <strong>Sons of the American Revolution (SAR)</strong> — requires lineal descent from someone who actively supported American independence during the Revolutionary War (1775–1783). James Thomas (2nd), your 5th great-grandfather, served as a Private in the North Carolina Revolutionary Army. You would be eligible to apply through this line once the connecting generations are fully documented.
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- ═══════════════════════ SAR LINEAGE ═══════════════════════ -->
+  <div class="section" id="sar-lineage">
+    <h2 class="section-title">Thomas Line — Colonial Virginia to Revolutionary War</h2>
+
+    <p>The following chain was extracted from a Sons of the American Revolution membership application (Kentucky Society, National Number ~7625) found as an Ancestry hint on James E. Thomas's profile. It documents the Thomas line from colonial Virginia through to the Revolutionary War patriot. <strong>Your line branches from this chain at James E. Thomas (1714) or Joseph Thomas (~1680).</strong></p>
+
+    <table class="ancestor-table">
+      <thead>
+        <tr>
+          <th>Generation from Avery</th>
+          <th>Person</th>
+          <th>Born</th>
+          <th>Died</th>
+          <th>Place / Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-row">
+          <td class="rel">You</td>
+          <td class="name">Avery Thomas</td>
+          <td class="dates">b. 1998</td>
+          <td class="dates">—</td>
+          <td>Texas</td>
+        </tr>
+        <tr>
+          <td class="rel">Father</td>
+          <td class="name">Michael Scott Thomas</td>
+          <td class="dates">b. 1960</td>
+          <td class="dates">—</td>
+          <td>Texas</td>
+        </tr>
+        <tr>
+          <td class="rel">Great-grandfather</td>
+          <td class="name">J.G. Thomas Jr.</td>
+          <td class="dates">28 Nov 1924</td>
+          <td class="dates">8 Dec 2016</td>
+          <td>Texas · m. Charlotte Crawley 10 Apr 1954</td>
+        </tr>
+        <tr>
+          <td class="rel">2nd great-grandparents</td>
+          <td class="name">James Gary Thomas Sr. &amp; Stella Kennard</td>
+          <td class="dates">2/6/1877 &amp; 4/11/1882</td>
+          <td class="dates">3/10/1953 &amp; 2/19/1965</td>
+          <td>Grimes Co., TX</td>
+        </tr>
+        <tr>
+          <td class="rel">3rd great-grandparents</td>
+          <td class="name">Francis Marion Thomas &amp; Susan Mullins</td>
+          <td class="dates">9 Aug 1852 · Bedias TX &amp; 19 Feb 1857 · TN · d. 20 Jan 1922 / 27 Dec 1928</td>
+          <td class="dates">1922 &amp; 12/27/1928</td>
+          <td>Grimes Co., TX</td>
+        </tr>
+        <tr>
+          <td class="rel">4th great-grandparents</td>
+          <td class="name">James Avery Thomas &amp; Amanda K. Wheeler</td>
+          <td class="dates">31 Oct 1812 · m. 4/28/1842</td>
+          <td class="dates">28 Apr 1865 &amp; 5 Sep 1896</td>
+          <td>Marengo Co., AL → Grimes Co., TX · arrived ~1832–1835</td>
+        </tr>
+        <tr>
+          <td class="rel">5th great-grandparents <span class="status-confirmed">Confirmed</span></td>
+          <td class="name">John C. Thomas Sr. &amp; Phebe Gayland Springer</td>
+          <td class="dates">18 Mar 1784 · Edgefield, SC · m. 26 Jul 1801, Upson Co., GA</td>
+          <td class="dates">after 1850</td>
+          <td>Edgefield, SC → Warren/Upson Co., GA → Marlboro Co., SC → Marengo Co., AL → Montgomery/Grimes Co., TX · confirmed in updated GEDCOM Apr 17, 2026</td>
+        </tr>
+        <tr>
+          <td class="rel">6th great-grandfather <span class="status-confirmed">Confirmed</span></td>
+          <td class="name">Joseph Augustus Thomas</td>
+          <td class="dates">1740 · Bertie Co., NC</td>
+          <td class="dates">28 Mar 1814 · Edgefield Co., SC</td>
+          <td>Moved NC → SC; died in Edgefield where son John C. Thomas Sr. was born · sources: York Co. SC Wills; Godfrey Memorial Library AGBI</td>
+        </tr>
+        <tr>
+          <td class="rel">7th great-grandfather <span class="status-confirmed">Confirmed</span></td>
+          <td class="name">James Clark Thomas (REV WAR)</td>
+          <td class="dates">1714 · Nansemond Co., VA</td>
+          <td class="dates">Nov 1780 · Bertie Co., NC</td>
+          <td>Military service: 19 Dec 1775–1783, Virginia · m. Sarah (Barnes) Thomas · <strong>Revolutionary War patriot</strong></td>
+        </tr>
+        <tr>
+          <td class="rel">8th great-grandparents <span class="status-confirmed">Confirmed</span></td>
+          <td class="name">Joseph Thomas Sr. &amp; Alice (Spivey) Thomas</td>
+          <td class="dates">~1680 &amp; ~1687</td>
+          <td class="dates">10 Dec 1735 · Bertie Co., NC &amp; unknown</td>
+          <td>Nansemond Co., Virginia → Bertie Co., North Carolina · Alice b. Lancashire, England</td>
+        </tr>
+        <tr>
+          <td class="rel">9th great-grandparents <span class="status-confirmed">Confirmed</span></td>
+          <td class="name">John Thomas &amp; Susannah (Portis) Thomas</td>
+          <td class="dates">unknown</td>
+          <td class="dates">~1714</td>
+          <td>Isle of Wight Co., Virginia → Nansemond Co., Virginia</td>
+        </tr>
+        <tr>
+          <td class="rel">10th great-grandfather <span class="status-confirmed">Confirmed</span></td>
+          <td class="name">Richard Thomas</td>
+          <td class="dates">unknown</td>
+          <td class="dates">~1667</td>
+          <td>York County, Virginia → Isle of Wight Co., Virginia · earliest confirmed Thomas ancestor</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="xref-box">
+      <div class="xref-label">The SAR Patriot — James Thomas (2nd)</div>
+      The actual Revolutionary War patriot in the SAR application is <strong>James Thomas (2nd)</strong> (b. 2/12/1760, Bertie Co., NC · d. 9/5/1832, Trigg Co., KY) — son of James E. Thomas (1714). He served as a <strong>Private in the North Carolina Revolutionary Army</strong>. His line went to Kentucky; your Texas line descends from a sibling (likely Joseph Thomas, b. ~1735). The SAR application references DAR Patriot Index #23X and cites sources including: <em>Abstracts of Original Entries, Pulaski County History</em> p.145; <em>History of Thomas &amp; Bridges Family</em>; and North Carolina Revolutionary Army rolls (Reel 438, 432).
+    </div>
+
+    <div class="xref-box">
+      <div class="xref-label">Missing Link — The Generation Between James E. Thomas and James Avery Thomas</div>
+      There is a gap of roughly 100 years between James E. Thomas (d. 1780, Bertie Co., NC) and James Avery Thomas (b. 1812, Marengo Co., AL). At least two intermediate generations are needed. The GEDCOM and Shelly Rhodes' Ancestry tree both show a "Joseph Thomas" and/or "John C. Thomas" filling this gap, but the exact chain is not yet fully confirmed. <strong>This is the primary open research question for the Thomas line.</strong> Resolving it would allow you to formally document SAR eligibility.
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- ═══════════════════════ OPEN QUESTIONS ═══════════════════════ -->
+  <div class="section" id="open-questions">
+    <h2 class="section-title">Open Research Questions</h2>
+
+    <div class="research-card resolved">
+      <div class="research-q">1. Who are James Avery Thomas's parents? <span class="status-confirmed">Resolved</span></div>
+      <div class="research-a"><strong>John C. Thomas Sr.</strong> (b. 18 Mar 1784, Edgefield, SC) and <strong>Phebe Gayland Springer</strong> — confirmed in the updated GEDCOM (Apr 17, 2026, 112 people). Sources: 1810 and 1830 Marlboro Co. SC census; Georgia marriage records (married 26 Jul 1801, Upson Co., GA); Texas GLO land abstracts; Austin's Colony register 1835. Shelly Rhodes' tree placing William Thomas + Elizabeth Purviance at this level is likely one generation off — William Thomas is probably John C. Thomas Sr.'s father (see question 4).</div>
+      <div class="research-lead">Resolved via updated GEDCOM export Apr 17, 2026</div>
+    </div>
+
+    <div class="research-card">
+      <div class="research-q">2. What are the intermediate generations between James E. Thomas (d. 1780) and James Avery Thomas (b. 1812)? <span class="status-open">Open</span></div>
+      <div class="research-a">The SAR application confirms the line back to James E. Thomas (1714). But the connecting generations between him and James Avery Thomas (1812) — spanning roughly South Carolina, Georgia, and Alabama — are not fully documented. The GEDCOM shows "Joseph Thomas" (~1735) and possibly "John C. Thomas" (~1784) filling the gap. These need to be confirmed with census and deed records tracing the Thomas family from Bertie County, NC through SC, GA, and into Alabama.</div>
+      <div class="research-lead">Best leads: NC → SC → GA deed records · Ancestry hints on Joseph Thomas profile · Shelly Rhodes' tree</div>
+    </div>
+
+    <div class="research-card" id="david-thomas">
+      <div class="research-q">3. Is David Thomas (signer of the Texas Declaration of Independence) related to your line? <span class="status-uncertain">Uncertain</span></div>
+      <div class="research-a">Family tradition holds that David Thomas (signer, 1836) was James Avery Thomas's brother. The History of Grimes County cites this. However, the historical David Thomas is recorded as born ~1800 in Tennessee and arriving in Texas in 1835 at approximately age 35 — whereas John Thomas's son David was born ~1816 and was only 14 at Texas arrival. These are likely two different people. The connection may be a different branch of the same broader Thomas family (not a direct sibling relationship). The <strong>David Thomas Papers at UT Austin</strong> (Dolph Briscoe Center) are the best resource to resolve this.</div>
+      <div class="research-lead">Best lead: David Thomas Papers, Dolph Briscoe Center for American History, UT Austin · finding aid: legacy.lib.utexas.edu/taro/utcah/01581</div>
+    </div>
+
+    <div class="research-card" id="john-thomas-parents">
+      <div class="research-q">4. Are William Thomas (1765) and Elizabeth Purviance James Avery's grandparents (not parents)? <span class="status-uncertain">Uncertain</span></div>
+      <div class="research-a">Shelly Rhodes' tree places William Thomas (1765–1833) + Elizabeth Purviance (1765–1849) as James Avery Thomas's parents. But if John C. Thomas (~1784) is James Avery's father, then William and Elizabeth would be his grandparents — one generation further back. William Thomas (b. 1765) being the father of John C. Thomas (b. ~1784) is chronologically plausible (19 years apart). This would make William Thomas + Elizabeth Purviance your 6th great-grandparents from Avery's perspective, not 5th.</div>
+      <div class="research-lead">Best lead: Georgia deed records · 1800 and 1810 census records for William Thomas in SC/GA/AL</div>
+    </div>
+
+    <div class="research-card">
+      <div class="research-q">5. SAR membership eligibility — can the chain be formally documented? <span class="status-open">Open</span></div>
+      <div class="research-a">James Thomas (2nd) (b. 1760, Bertie Co., NC) is the confirmed SAR patriot ancestor — he served as a Private in the NC Revolutionary Army. Your line shares James E. Thomas (1714) as a common ancestor with the Kentucky SAR applicant. To formally apply for SAR membership, the full chain from Avery down to James Thomas (2nd) — or another son of James E. Thomas who connects to the Texas line — must be documented with primary sources. The main gap is the NC → SC → GA → AL → TX migration chain between ~1780 and ~1812.</div>
+      <div class="research-lead">Best lead: NC Revolutionary Army rolls (Reel 438, 432) · DAR Patriot Index · SAR application from Kentucky family (Ancestry hint on James E. Thomas)</div>
+    </div>
+
+  </div>
+
+  <hr class="divider" />
+
+  <!-- ═══════════════════════ SOURCES ═══════════════════════ -->
+  <div class="section" id="sources">
+    <h2 class="section-title">Sources</h2>
+
+    <ul style="font-size:0.9rem;line-height:2;margin-left:1.5rem;color:#bbb;">
+      <li><strong>SAR Membership Application (Kentucky Society)</strong> — National Number ~7625. Ancestry hint on James E. Thomas profile. Applicant: descendant of James Thomas (2nd) via Kentucky branch. Extracted via OCR from Ancestry screenshot, Apr 16 2026.</li>
+      <li><strong>Ancestry profile — James E. Thomas</strong> — b. 1714, Nansemond Co., VA · d. Nov 1780, Bertie Co., NC. 6th great-grandfather. Parents: Joseph Thomas Sr. + Alice Thomas.</li>
+      <li><strong>Austin's Colony Register, 1835</strong> — original page image: <code>documents/AustinsColonyRegister_JohnThomas_1835.jpg</code>. Confirms "John Thomas 50 years of age Moved from Alabama / Phoebe his wife 50 years of age / 6 Male 2 female children." Primary source for John Thomas + Phoebe Springer as James Avery's parents. Same page lists John Springer, Wm. Morris, Ezekiel Springer — all Alabama neighbors arriving together. Marginal note: "Want land in the San Jacinto District &amp; have gone to examine it."</li>
+      <li><strong>Thomas_Squires Family Tree.ged</strong> — personal/familyHistory/Thomas_Squires Family Tree/ — GEDCOM export Apr 12, 2026. Contains "Thomas Family Notes" story with census data and family connections.</li>
+      <li><strong>Shelly Rhodes Ancestry Tree</strong> — Fan chart screenshot showing JG (James Gary Thomas Jr.) → James Gary Thomas Sr. → Francis Marion Thomas → James Avery Thomas → William Thomas (1765) + Elizabeth Purviance. Captured Apr 15, 2026.</li>
+      <li><strong>Thomas Lineal Descent.pdf</strong> — personal/familyHistory/documents/ — SRT application by Richard Gary Thomas. Confirms James Avery Thomas (1812) as patriot ancestor for SRT purposes.</li>
+      <li><strong>History of Grimes County (1982)</strong>, pp. 554–555 — Exhibit A in SRT application. Mentions David Thomas signing the Texas Declaration of Independence as James Avery's brother.</li>
+      <li><strong>David Thomas Papers</strong> — Dolph Briscoe Center for American History, UT Austin. Finding aid: legacy.lib.utexas.edu/taro/utcah/01581. Best resource for resolving David Thomas signer relationship.</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  Part of the Avery Thomas Family History project · Last updated April 2026 ·
+  <a href="file-glossary.html" style="color:var(--link);">File Glossary</a> ·
+  <a href="full-family-tree.html" style="color:var(--link);">Full Family Tree</a> ·
+  <a href="thomas-kennard-documents.html" style="color:var(--link);">Primary Documents</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roots: The Thomas &amp; Squires Family History</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --surface2: #222;
+      --border: #2e2e2e;
+      --accent: #c9a84c;
+      --accent2: #a0522d;
+      --accent-blue: #5b8dc9;
+      --accent-teal: #4ca89a;
+      --text: #e0d8cc;
+      --muted: #888;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', serif;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    /* ── Site Nav ── */
+    .site-nav {
+      background: #111;
+      border-bottom: 2px solid var(--accent);
+      padding: 0.7rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 0;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+    }
+
+    .site-nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 0.3rem 1rem;
+      border-right: 1px solid #2a2a2a;
+      transition: color 0.2s;
+    }
+
+    .site-nav a:last-child { border-right: none; }
+    .site-nav a:hover { color: var(--accent); }
+    .site-nav a.active { color: var(--accent); }
+
+    /* ── Hero ── */
+    .hero {
+      background: linear-gradient(160deg, #1a1208 0%, #0a0a14 55%, #0f0f0f 100%);
+      border-bottom: 2px solid var(--accent);
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+    }
+
+    .hero .crest { font-size: 4rem; margin-bottom: 1rem; }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      color: var(--accent);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+    }
+
+    .hero .subtitle {
+      color: var(--muted);
+      font-style: italic;
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero .byline {
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    /* ── Container ── */
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    /* ── Section headings ── */
+    .section { margin-top: 3.5rem; }
+
+    .section-title {
+      color: var(--accent);
+      font-size: 1.4rem;
+      font-variant: small-caps;
+      letter-spacing: 1px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-title.teal { color: var(--accent-teal); border-color: var(--accent-teal); }
+    .section-title.blue { color: var(--accent-blue); border-color: var(--accent-blue); }
+
+    p { margin-bottom: 1rem; }
+
+    /* ── Heritage cards ── */
+    .heritage-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    @media (max-width: 640px) { .heritage-grid { grid-template-columns: 1fr; } }
+
+    .heritage-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--accent);
+      border-radius: 4px;
+      padding: 1.5rem;
+    }
+
+    .heritage-card.maternal {
+      border-top-color: var(--accent-teal);
+    }
+
+    .heritage-card h3 {
+      font-size: 1.1rem;
+      color: var(--accent);
+      margin-bottom: 0.8rem;
+      font-variant: small-caps;
+      letter-spacing: 1px;
+    }
+
+    .heritage-card.maternal h3 { color: var(--accent-teal); }
+
+    .heritage-card ul {
+      list-style: none;
+      font-size: 0.92rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .heritage-card ul li {
+      padding: 0.25rem 0;
+      border-bottom: 1px solid var(--border);
+      color: #ccc;
+    }
+
+    .heritage-card ul li:last-child { border-bottom: none; }
+
+    .heritage-card ul li span {
+      color: var(--muted);
+      font-style: italic;
+      font-size: 0.88rem;
+    }
+
+    .card-link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-family: sans-serif;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+    }
+
+    .card-link:hover { color: #fff; }
+    .heritage-card.maternal .card-link { color: var(--accent-teal); }
+
+    /* ── Highlights ── */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+
+    .highlight-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent2);
+      border-radius: 4px;
+      padding: 1.2rem 1.4rem;
+    }
+
+    .highlight-card.teal { border-left-color: var(--accent-teal); }
+    .highlight-card.blue { border-left-color: var(--accent-blue); }
+    .highlight-card.gold { border-left-color: var(--accent); }
+
+    .highlight-card .hl-label {
+      font-size: 0.75rem;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .highlight-card .hl-title {
+      font-size: 1rem;
+      color: #e8d9b8;
+      font-weight: bold;
+      margin-bottom: 0.4rem;
+    }
+
+    .highlight-card .hl-body {
+      font-size: 0.88rem;
+      color: #aaa;
+      line-height: 1.6;
+    }
+
+    .highlight-card a {
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+
+    .highlight-card a:hover { color: #fff; }
+
+    /* ── Site pages nav grid ── */
+    .pages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .page-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.2rem 1.4rem;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.2s, background 0.2s;
+      display: block;
+    }
+
+    .page-card:hover {
+      border-color: var(--accent);
+      background: #1e1a10;
+    }
+
+    .page-card.teal:hover { border-color: var(--accent-teal); background: #0e1a18; }
+    .page-card.blue:hover  { border-color: var(--accent-blue); background: #0e1018; }
+
+    .page-card .pc-icon { font-size: 1.6rem; margin-bottom: 0.5rem; }
+
+    .page-card .pc-title {
+      font-size: 1rem;
+      font-weight: bold;
+      color: var(--accent);
+      margin-bottom: 0.3rem;
+    }
+
+    .page-card.teal .pc-title { color: var(--accent-teal); }
+    .page-card.blue .pc-title  { color: var(--accent-blue); }
+
+    .page-card .pc-desc {
+      font-size: 0.86rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    /* ── Research status note ── */
+    .research-note {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent-blue);
+      border-radius: 4px;
+      padding: 1.2rem 1.4rem;
+      font-size: 0.92rem;
+      color: #aaa;
+      margin-top: 1.5rem;
+    }
+
+    .research-note strong { color: var(--accent-blue); }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 1.5rem 2rem;
+      font-size: 0.8rem;
+      color: #444;
+      font-family: sans-serif;
+    }
+
+    footer a { color: #666; text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<!-- ── Site-wide Navigation ── -->
+<nav class="site-nav">
+  <a href="index.html" class="active">Home</a>
+  <a href="full-family-tree.html">Family Tree</a>
+  <a href="thomas-kennard-documents.html">Thomas &amp; Kennard</a>
+  <a href="kennard-family-history.html">Kennard History</a>
+  <a href="discoveries-and-research.html">Discoveries</a>
+  <a href="sources.html">Primary Sources</a>
+  <a href="file-glossary.html">Site Index</a>
+</nav>
+
+<!-- ── Hero ── -->
+<header class="hero">
+  <div class="crest">🌳</div>
+  <h1>Roots</h1>
+  <div class="subtitle">The Thomas &amp; Squires Family History</div>
+  <div class="byline">Compiled by Avery Thomas · April 2026</div>
+</header>
+
+<div class="container">
+
+  <!-- ── Intro ── -->
+  <div class="section">
+    <p>This site documents the family history of <strong>Avery Thomas</strong>, tracing two very different lineages — one deep into the American South, the other across the Atlantic from Eastern Europe. Together they tell a story of migration, survival, and the long arc of family across centuries.</p>
+    <p>The <strong>Thomas &amp; Kennard</strong> paternal line runs from colonial Virginia in the 1680s, south through the Carolinas and Georgia, west into Alabama, and finally into Texas with the earliest wave of American settlers. The <strong>Squires &amp; Croft</strong> maternal line originates in the Jewish communities of Poland and the Russian Empire, arriving in Philadelphia in the early twentieth century and eventually settling in Texas.</p>
+    <p>This is a living research project. Some lines are documented back ten generations with primary sources. Others are works in progress.</p>
+  </div>
+
+  <!-- ── Heritage Cards ── -->
+  <div class="section">
+    <h2 class="section-title">Two Heritages</h2>
+    <div class="heritage-grid">
+
+      <div class="heritage-card">
+        <h3>Paternal — Thomas &amp; Kennard</h3>
+        <ul>
+          <li>Origins: <span>Virginia, 1680s — English colonial</span></li>
+          <li>Route: <span>VA → NC → SC/GA → AL → Texas (1835)</span></li>
+          <li>Earliest ancestor: <span>Richard Thomas, York Co. VA, d. ~1667</span></li>
+          <li>Generations documented: <span>10</span></li>
+          <li>Notable: <span>Revolutionary War service · Sons of the Republic of Texas · Texas Declaration of Independence connection</span></li>
+        </ul>
+        <a href="full-family-tree.html#paternal-tree" class="card-link">View Paternal Tree →</a>
+      </div>
+
+      <div class="heritage-card maternal">
+        <h3>Maternal — Squires &amp; Croft</h3>
+        <ul>
+          <li>Origins: <span>Poland &amp; Russian Empire — Jewish community</span></li>
+          <li>Route: <span>Eastern Europe → Philadelphia, early 1900s → Texas</span></li>
+          <li>Name changes: <span>Skversky → Squires · Krawczyk → Croft</span></li>
+          <li>Generations documented: <span>3–4 (active research)</span></li>
+          <li>Notable: <span>Immigration-era name Americanization · Philadelphia Jewish community</span></li>
+        </ul>
+        <a href="full-family-tree.html#maternal-tree" class="card-link">View Maternal Tree →</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Highlights ── -->
+  <div class="section">
+    <h2 class="section-title">Key Discoveries</h2>
+    <div class="highlights-grid">
+
+      <div class="highlight-card gold">
+        <div class="hl-label">Revolutionary War</div>
+        <div class="hl-title">James Clark Thomas — SAR Patriot Ancestor</div>
+        <div class="hl-body">James Clark Thomas (b. 1714, Nansemond Co. VA) served in the Continental Army 1775–1783. His confirmed descent from Avery makes Avery potentially eligible for Sons of the American Revolution membership.</div>
+        <a href="discoveries-and-research.html#sar">Read more →</a>
+      </div>
+
+      <div class="highlight-card">
+        <div class="hl-label">Ten Generations</div>
+        <div class="hl-title">Richard Thomas — Colonial Virginia, d. ~1667</div>
+        <div class="hl-body">The earliest confirmed Thomas ancestor, living in York County, Virginia before the American colonies declared independence by over a century. The full chain from Avery to Richard is now documented in the GEDCOM.</div>
+        <a href="full-family-tree.html#thomas-line">View the line →</a>
+      </div>
+
+      <div class="highlight-card teal">
+        <div class="hl-label">Texas History</div>
+        <div class="hl-title">Austin's Colony, 1835</div>
+        <div class="hl-body">John C. Thomas Sr. and wife Phoebe Springer registered with Stephen F. Austin's Colony in 1835, among the earliest wave of American settlers in Texas. Their son James Avery Thomas — Avery's namesake — made shoes for Sam Houston's soldiers during the Texas Revolution.</div>
+        <a href="thomas-kennard-documents.html">View documents →</a>
+      </div>
+
+      <div class="highlight-card teal">
+        <div class="hl-label">Sons of the Republic of Texas</div>
+        <div class="hl-title">Two SRT Members in the Family</div>
+        <div class="hl-body">Michael Scott Thomas and Richard Gary Thomas are both members of the Sons of the Republic of Texas, each qualifying through a different ancestor of the same family line — Anthony Drew Kennard and James Avery Thomas respectively.</div>
+        <a href="thomas-kennard-documents.html#srt">View SRT records →</a>
+      </div>
+
+      <div class="highlight-card blue">
+        <div class="hl-label">Immigration Story</div>
+        <div class="hl-title">Skversky → Squires · Krawczyk → Croft</div>
+        <div class="hl-body">Two Americanization-era name changes mark the maternal line's arrival in the United States — a pattern common among Jewish immigrants from Eastern Europe in the early twentieth century.</div>
+        <a href="full-family-tree.html#name-changes">Read more →</a>
+      </div>
+
+      <div class="highlight-card">
+        <div class="hl-label">Primary Sources</div>
+        <div class="hl-title">19 Original Documents</div>
+        <div class="hl-body">Birth certificates, draft cards, SRT membership applications, marriage records, newspaper clippings, land grants, and more — all acquired and archived as part of this research.</div>
+        <a href="sources.html">Browse sources →</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Explore the Site ── -->
+  <div class="section">
+    <h2 class="section-title">Explore the Site</h2>
+    <div class="pages-grid">
+
+      <a href="full-family-tree.html" class="page-card">
+        <div class="pc-icon">🌳</div>
+        <div class="pc-title">Full Family Tree</div>
+        <div class="pc-desc">Both paternal and maternal lines, generation by generation — from colonial Virginia and Eastern Europe to Texas.</div>
+      </a>
+
+      <a href="thomas-kennard-documents.html" class="page-card">
+        <div class="pc-icon">📜</div>
+        <div class="pc-title">Thomas &amp; Kennard Documents</div>
+        <div class="pc-desc">Primary source analysis — SRT applications, Austin's Colony register, birth certificates, and the Texas Declaration connection.</div>
+      </a>
+
+      <a href="kennard-family-history.html" class="page-card">
+        <div class="pc-icon">📖</div>
+        <div class="pc-title">Kennard Family History</div>
+        <div class="pc-desc">A detailed history of the Kennard line, drawn from the 93-page document authored by Richard Gary Thomas.</div>
+      </a>
+
+      <a href="discoveries-and-research.html" class="page-card">
+        <div class="pc-icon">🔍</div>
+        <div class="pc-title">Discoveries &amp; Open Research</div>
+        <div class="pc-desc">Major findings, bombshells, and open questions — including SAR eligibility, the David Thomas mystery, and migration gaps.</div>
+      </a>
+
+      <a href="sources.html" class="page-card">
+        <div class="pc-icon">🗂️</div>
+        <div class="pc-title">Primary Sources</div>
+        <div class="pc-desc">Browse all 19 original documents — birth certificates, draft cards, marriage records, land grants, and newspaper clippings.</div>
+      </a>
+
+      <a href="file-glossary.html" class="page-card blue">
+        <div class="pc-icon">📋</div>
+        <div class="pc-title">Site Index</div>
+        <div class="pc-desc">A complete index of every file, document, and page in this archive. Start here if you're looking for something specific.</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ── Research Status ── -->
+  <div class="section">
+    <h2 class="section-title blue">Research Status</h2>
+    <div class="research-note">
+      <strong>Paternal line (Thomas &amp; Kennard):</strong> Well documented — 10 confirmed generations with primary sources, GEDCOM of 112 people, multiple SRT and SAR-qualifying ancestors identified. Active open questions include formal SAR documentation and the David Thomas (Texas Declaration) connection.<br><br>
+      <strong>Maternal line (Squires &amp; Croft):</strong> Active research. Immigration-era Jewish records are genuinely difficult — name changes, records destroyed or inaccessible in Eastern Europe, disrupted communities. This line is documented 3–4 generations and is an ongoing area of investigation. Contributions and corrections from family members are welcome.
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Roots: The Thomas &amp; Squires Family History &nbsp;·&nbsp; Compiled by Avery Thomas · April 2026 &nbsp;·&nbsp;
+  <a href="file-glossary.html">Site Index</a> &nbsp;·&nbsp;
+  <a href="discoveries-and-research.html">Open Research Questions</a>
+</footer>
+
+</body>
+</html>

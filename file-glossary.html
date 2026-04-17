@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family History File Glossary — Avery Thomas</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --surface2: #222;
+      --border: #2e2e2e;
+      --accent: #c9a84c;
+      --accent2: #a0522d;
+      --text: #e0d8cc;
+      --muted: #888;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', serif;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a1208 0%, #0f0f0f 60%);
+      border-bottom: 2px solid var(--accent);
+      padding: 2.5rem 2rem 1.8rem;
+      text-align: center;
+    }
+
+    header .crest { font-size: 2.4rem; margin-bottom: 0.4rem; }
+
+    header h1 {
+      font-size: 2rem;
+      color: var(--accent);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
+    }
+
+    header .subtitle { color: var(--muted); font-style: italic; font-size: 0.95rem; }
+    header .byline { margin-top: 0.8rem; font-size: 0.82rem; color: var(--muted); }
+
+    .site-nav {
+      background: #111;
+      border-bottom: 2px solid var(--accent);
+      padding: 0.7rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 0;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+    }
+
+    .site-nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 0.3rem 1rem;
+      border-right: 1px solid #2a2a2a;
+      transition: color 0.2s;
+    }
+
+    .site-nav a:last-child { border-right: none; }
+    .site-nav a:hover { color: var(--accent); }
+    .site-nav a.active { color: var(--accent); }
+
+    nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0.65rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.2rem;
+      justify-content: center;
+      position: sticky;
+      top: 44px;
+      z-index: 100;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      letter-spacing: 0.5px;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: #fff; }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    .section { margin-top: 3rem; }
+
+    .section-title {
+      color: var(--accent);
+      font-size: 1.35rem;
+      font-variant: small-caps;
+      letter-spacing: 1px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .folder-path {
+      font-family: 'Courier New', monospace;
+      font-size: 0.8rem;
+      color: #7a9fcc;
+      background: #0a0e14;
+      border: 1px solid #1a2535;
+      border-radius: 3px;
+      padding: 4px 10px;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    /* ── File table ── */
+    .file-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.87rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .file-table th {
+      background: #1e1508;
+      color: var(--accent);
+      text-align: left;
+      padding: 0.5rem 0.9rem;
+      font-variant: small-caps;
+      letter-spacing: 0.5px;
+      border-bottom: 2px solid var(--accent);
+      white-space: nowrap;
+    }
+
+    .file-table td {
+      padding: 0.5rem 0.9rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    .file-table tr:nth-child(even) td { background: var(--surface); }
+    .file-table tr:hover td { background: #1e1a12; }
+
+    .file-table .fname {
+      font-family: 'Courier New', monospace;
+      font-size: 0.8rem;
+      color: #7a9fcc;
+      white-space: nowrap;
+    }
+
+    .file-table .fdesc { color: var(--text); }
+    .file-table .fdate { color: var(--muted); font-size: 0.78rem; white-space: nowrap; font-family: sans-serif; }
+    .file-table .fstatus { font-size: 0.75rem; font-family: sans-serif; white-space: nowrap; }
+
+    /* Type badges */
+    .badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-family: sans-serif;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 1px 6px;
+      border-radius: 3px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .badge-pdf    { background: #2a1808; color: #e07840; border: 1px solid #5a3010; }
+    .badge-html   { background: #08201a; color: #40c090; border: 1px solid #105030; }
+    .badge-ocr    { background: #151520; color: #8080d0; border: 1px solid #303060; }
+    .badge-docx   { background: #102030; color: #60a8d0; border: 1px solid #204060; }
+    .badge-ged    { background: #201820; color: #c070c0; border: 1px solid #502850; }
+    .badge-orig   { background: #1a1010; color: #888; border: 1px solid #333; }
+
+    .status-done    { color: #50c070; }
+    .status-partial { color: #c0a030; }
+    .status-raw     { color: #888; }
+
+    /* ── Legend ── */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      margin-bottom: 1.5rem;
+      font-size: 0.82rem;
+      font-family: sans-serif;
+    }
+
+    .legend-item { display: flex; align-items: center; gap: 6px; }
+
+    /* ── Stats bar ── */
+    .stats-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .stat {
+      text-align: center;
+      min-width: 80px;
+    }
+
+    .stat .stat-num {
+      font-size: 1.6rem;
+      color: var(--accent);
+      font-family: sans-serif;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    .stat .stat-label {
+      font-size: 0.72rem;
+      color: var(--muted);
+      font-family: sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    p { margin-bottom: 0.8rem; }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-family: sans-serif;
+    }
+
+    @media (max-width: 640px) {
+      .file-table .fdate { display: none; }
+      header h1 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html">Home</a>
+  <a href="full-family-tree.html">Family Tree</a>
+  <a href="thomas-kennard-documents.html">Thomas &amp; Kennard</a>
+  <a href="kennard-family-history.html">Kennard History</a>
+  <a href="discoveries-and-research.html">Discoveries</a>
+  <a href="sources.html">Primary Sources</a>
+  <a href="file-glossary.html" class="active">Site Index</a>
+</nav>
+
+<header>
+  <div class="crest">📁</div>
+  <h1>Family History File Glossary</h1>
+  <div class="subtitle">Complete index of all files in personal/familyHistory/ — what each one is and where it came from</div>
+  <div class="byline">Last updated April 15, 2026 · Avery Thomas</div>
+</header>
+
+<nav>
+  <a href="#summary">Summary</a>
+  <a href="#html">HTML Files</a>
+  <a href="#documents">Documents</a>
+  <a href="#ocr">OCR Text</a>
+  <a href="#gedcom">GEDCOM</a>
+  <a href="#originals">Originals</a>
+</nav>
+
+<div class="container">
+
+  <!-- ── Summary ── -->
+  <div class="section" id="summary">
+    <h2 class="section-title">Summary</h2>
+
+    <div class="stats-bar">
+      <div class="stat"><div class="stat-num">4</div><div class="stat-label">HTML files</div></div>
+      <div class="stat"><div class="stat-num">11</div><div class="stat-label">PDF/DOCX docs</div></div>
+      <div class="stat"><div class="stat-num">3</div><div class="stat-label">OCR text files</div></div>
+      <div class="stat"><div class="stat-num">1</div><div class="stat-label">GEDCOM</div></div>
+      <div class="stat"><div class="stat-num">3</div><div class="stat-label">Original scans</div></div>
+      <div class="stat"><div class="stat-num">73</div><div class="stat-label">People in GEDCOM</div></div>
+    </div>
+
+    <div class="legend">
+      <div class="legend-item"><span class="badge badge-html">HTML</span> Compiled family history web page</div>
+      <div class="legend-item"><span class="badge badge-pdf">PDF</span> Primary source document</div>
+      <div class="legend-item"><span class="badge badge-ocr">OCR</span> Machine-extracted text from scan</div>
+      <div class="legend-item"><span class="badge badge-docx">DOCX</span> Word document</div>
+      <div class="legend-item"><span class="badge badge-ged">GED</span> Ancestry GEDCOM family tree</div>
+      <div class="legend-item"><span class="badge badge-orig">ORIG</span> Unsplit backup scan</div>
+    </div>
+
+    <p>This directory is organized into five subfolders plus the root HTML files:</p>
+    <ul style="margin-left:1.5rem;font-size:0.9rem;margin-bottom:0.8rem;">
+      <li><code style="color:#7a9fcc;">documents/</code> — all PDFs and the .docx letter transcription</li>
+      <li><code style="color:#7a9fcc;">ocr/</code> — machine-readable text extracted from scanned PDFs</li>
+      <li><code style="color:#7a9fcc;">originals/</code> — the original combined/unsplit scans kept as backups</li>
+      <li><code style="color:#7a9fcc;">screenshots/</code> — 49 Ancestry research screenshots from April 2026 (tree views, SAR application, profiles, hints)</li>
+      <li><code style="color:#7a9fcc;">Thomas_Squires Family Tree/</code> — Ancestry GEDCOM export</li>
+    </ul>
+  </div>
+
+  <!-- ── HTML Files ── -->
+  <div class="section" id="html">
+    <h2 class="section-title">HTML Files — Root Directory</h2>
+    <div class="folder-path">personal/familyHistory/</div>
+
+    <table class="file-table">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>File</th>
+          <th>Description</th>
+          <th>Created</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge badge-html">HTML</span></td>
+          <td class="fname"><a href="kennard-family-history.html" style="color:#7a9fcc;">kennard-family-history.html</a></td>
+          <td class="fdesc">Narrative summary of the 93-page Kennard Family History document authored by Richard Gary Thomas. Covers Anthony Drew Kennard, John H. "Papa" Kennard, Stella Kennard Thomas, and the broader Kennard line in Grimes County TX. Personalized for Avery.</td>
+          <td class="fdate">Apr 12 2026</td>
+          <td class="fstatus status-done">✓ Complete</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-html">HTML</span></td>
+          <td class="fname"><a href="full-family-tree.html" style="color:#7a9fcc;">full-family-tree.html</a></td>
+          <td class="fdesc">Visual family tree covering both family sides. Paternal: Thomas/Kennard line now traced to Richard Thomas (York Co. VA, d. ~1667) through Joseph Thomas Sr., James Clark Thomas (REV WAR, 1714), Joseph Augustus Thomas (1740), John C. Thomas Sr. (1784, Edgefield SC), James Avery Thomas (1812), Francis Marion Thomas, James Gary Thomas Sr., JG Thomas Jr., Michael Scott Thomas, to Avery. Maternal: Squires/Croft/Krawczyk/Skversky line from Kock Poland and Russia through to Avery. Includes Jewish immigration narrative and name change analysis (Krawczyk→Croft, Skversky→Squires). Charlotte Crawley marriage details included.</td>
+          <td class="fdate">Apr 16 2026</td>
+          <td class="fstatus status-done">✓ Current</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-html">HTML</span></td>
+          <td class="fname"><a href="thomas-kennard-documents.html" style="color:#7a9fcc;">thomas-kennard-documents.html</a></td>
+          <td class="fdesc">Deep dive into the three primary source documents provided by Michael Scott Thomas (April 2026). Covers both SRT applications (Michael Scott Thomas via Anthony Drew Kennard; Richard Gary Thomas via James Avery Thomas), the Kennard family letters from the 1860s, the Thomas arrival in Texas in 1835, and the updated Thomas lineage table extending back to John C. Thomas Sr. (b. 18 Mar 1784, Edgefield SC) and James Clark Thomas (REV WAR, b. 1714). Includes Charlotte Crawley marriage details and Austin's Colony Register citation. All dates synced to GEDCOM Apr 17, 2026.</td>
+          <td class="fdate">Apr 16 2026</td>
+          <td class="fstatus status-done">✓ Current</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-html">HTML</span></td>
+          <td class="fname"><a href="file-glossary.html" style="color:#7a9fcc;">file-glossary.html</a></td>
+          <td class="fdesc">This file. Complete index of all files in the familyHistory directory with descriptions, dates, and sources. 5 subfolders: documents/, ocr/, originals/, screenshots/, Thomas_Squires Family Tree/. Update whenever new files are added.</td>
+          <td class="fdate">Apr 16 2026</td>
+          <td class="fstatus status-done">✓ Current</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-html">HTML</span></td>
+          <td class="fname"><a href="discoveries-and-research.html" style="color:#7a9fcc;">discoveries-and-research.html</a></td>
+          <td class="fdesc">Ongoing log of major discoveries and open research questions. Documents: (1) Revolutionary War finding — James Clark Thomas (b. 1714, Nansemond VA, military service 1775–1783) is Avery's 7th great-grandfather; SAR eligibility identified. (2) Full confirmed Thomas chain: Richard Thomas → John Thomas → Joseph Thomas Sr. → James Clark Thomas (REV WAR) → Joseph Augustus Thomas (1740) → John C. Thomas Sr. (1784, Edgefield SC) → James Avery Thomas (1812) → … → Avery. (3) Open questions: David Thomas signer relationship; SAR formal documentation; William Thomas + Elizabeth Purviance placement. Question 1 (James Avery's parents) resolved Apr 17, 2026.</td>
+          <td class="fdate">Apr 16 2026</td>
+          <td class="fstatus status-partial">↻ Growing</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-html">HTML</span></td>
+          <td class="fname"><a href="research-links.md" style="color:#7a9fcc;">research-links.md</a></td>
+          <td class="fdesc">45 curated research URLs organized into 4 tiers by confidence level (Tier 1 = confirmed family mentions, Tier 4 = background context). Includes full summary of everything known about the Thomas, Kennard, and Squires/Jewish family lines. Open research questions listed at bottom.</td>
+          <td class="fdate">Apr 14 2026</td>
+          <td class="fstatus status-partial">↻ In progress</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ── Documents ── -->
+  <div class="section" id="documents">
+    <h2 class="section-title">Documents — PDFs &amp; DOCX</h2>
+    <div class="folder-path">personal/familyHistory/documents/</div>
+
+    <table class="file-table">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>File</th>
+          <th>Description</th>
+          <th>Pages</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge badge-pdf">PDF</span></td>
+          <td class="fname">Kennard Family History.pdf</td>
+          <td class="fdesc">The 93-page Kennard Family History authored by Richard Gary Thomas. Primary source for kennard-family-history.html. Covers the Kennard family from Anthony Drew Kennard (b. 1788) through multiple generations in Grimes County TX.</td>
+          <td class="fdate">93 pp</td>
+          <td class="fdate">Richard Gary Thomas · provided Apr 2026</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-pdf">PDF</span></td>
+          <td class="fname">Kennard_ADK_Biography_and_Letters_Newsletter.pdf</td>
+          <td class="fdesc">Pages 1–3 of original combined scan. Contains: (1) biographical sketch of Anthony Drew Kennard; (2) letter from ~1860 Kennard sibling to A.D. Kennard Jr. re: dividing enslaved people and secession sentiment; (3) letter Jan 4 1861 from Michael Moore Kennard to A.D. Kennard Jr. re: family life and wartime hardship. From Grimes County Historical Newsletter, Feb 2016, compiled by Vanessa Kierce Burzynski.</td>
+          <td class="fdate">3 pp</td>
+          <td class="fdate">Split from ORIGINAL_UNSPLIT_Kennard_Letters_and_Photos.pdf</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-pdf">PDF</span></td>
+          <td class="fname">Kennard_ADK_Photographs_and_Land_Grant.pdf</td>
+          <td class="fdesc">Pages 4–13 of original combined scan. Contains photographs of the Kennard family home (built 1892, 2 miles north of Anderson TX), grave markers, and the original Spanish-language Mexican land grant document issued to Anthony Drew Kennard. OCR not possible on these pages — view PDF directly.</td>
+          <td class="fdate">10 pp</td>
+          <td class="fdate">Split from ORIGINAL_UNSPLIT_Kennard_Letters_and_Photos.pdf</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-pdf">PDF</span></td>
+          <td class="fname">Kennard_SRT_Application_Michael_Scott_Thomas.pdf</td>
+          <td class="fdesc">Sons of the Republic of Texas membership application filed by Michael Scott Thomas (Avery's father), b. Jan 27 1960, Houston TX. Qualifying ancestor: Anthony Drew Kennard (b. 1788, Maryland). Chapter: James Pinckney Henderson Class / Sesquicentennial of Statehood.</td>
+          <td class="fdate">4 pp</td>
+          <td class="fdate">Split from ORIGINAL_UNSPLIT_Kennard_Lineal_Descent.pdf</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-pdf">PDF</span></td>
+          <td class="fname">Kennard_History_of_Grimes_County_pp369-371.pdf</td>
+          <td class="fdesc">Exhibit A from Michael Scott Thomas's SRT application. Scanned pages 369–371 from History of Grimes County (1982), Grimes County Historical Commission. Contains the Kennard family narrative including Anthony Drew Kennard's arrival in Texas, land grant, Texas Revolution service, and descendants.</td>
+          <td class="fdate">4 pp</td>
+          <td class="fdate">Split from ORIGINAL_UNSPLIT_Kennard_Lineal_Descent.pdf</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-pdf">PDF</span></td>
+          <td class="fname">Kennard_SRT_Supporting_Exhibits.pdf</td>
+          <td class="fdesc">Supporting exhibits from Michael Scott Thomas's SRT application. Includes: deed from Sarah Kennard to son Michael Moore Kennard (Exhibit C); marriage certificate for John H. Kennard and Hattie Brown, Nov 15 1875 (Exhibit D); and additional supporting documents.</td>
+          <td class="fdate">6 pp</td>
+          <td class="fdate">Split from ORIGINAL_UNSPLIT_Kennard_Lineal_Descent.pdf</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-pdf">PDF</span></td>
+          <td class="fname">Charlotte_Crawley_marriage_to_JG_Thomas.pdf</td>
+          <td class="fdesc">Newspaper clipping — The Longview Daily News, April 11, 1954 (p. 27). Announces the marriage of Charlotte Lucille Crawley to J.G. Thomas Jr. on April 10, 1954 at Hill Cumberland Church. Includes a photograph of Charlotte in her Chantilly lace wedding gown. Identifies her father as the late J.E. Crawley and her mother as Mrs. John E. Crawley of Longview. JG identified as son of Mrs. Gary Thomas of Anderson and the late James Gary Thomas. Couple honeymooned in California and settled in Houma, Louisiana. Source: Newspapers.com. Clipped by thomasavery7 on Apr 15, 2026.</td>
+          <td class="fdate">1 p · Apr 11, 1954</td>
+          <td class="fdate">Downloaded from Newspapers.com</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-pdf">PDF</span></td>
+          <td class="fname">Thomas_Charlotte_Lucile_Crawley_Birth_Certificate.pdf</td>
+          <td class="fdesc">Birth certificate for Charlotte Lucille Crawley, b. 27 Jan 1931, State of Louisiana (Gregg County area / Longview TX). Avery's paternal grandmother — wife of J.G. Thomas Jr. (b. 1924, d. 2016). Mother of Michael Scott Thomas (Avery's father).</td>
+          <td class="fdate">1 p</td>
+          <td class="fdate">Split from ORIGINAL_UNSPLIT_Kennard_Lineal_Descent.pdf</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-pdf">PDF</span></td>
+          <td class="fname">Thomas_James_Gary_Birth_Certificate_1924.pdf</td>
+          <td class="fdesc">Grimes County, Texas birth certificate for James Gary Thomas, b. November 28, 1924 (J.G. Thomas Jr. — Avery's great-grandfather). Father listed as Gary Thomas; mother as Stella Kennard. Filed Dec 15, 1924 by M.E. Parker. Certified copy issued May 16, 1986 by Grimes County Clerk Trinston Harris.</td>
+          <td class="fdate">1 p</td>
+          <td class="fdate">Split from ORIGINAL_UNSPLIT_Kennard_Lineal_Descent.pdf</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-pdf">PDF</span></td>
+          <td class="fname">Thomas_SRT_Application_Richard_Gary_Thomas.pdf</td>
+          <td class="fdesc">Sons of the Republic of Texas membership application filed by Richard Gary Thomas, 1901 N. Floyd, Richardson TX 75080. Qualifying ancestor: James Avery Thomas (b. 1812, Marengo County Alabama). Chapter: Thomas J. Rusk Chapter No. 8. Richard Gary Thomas is also the author of the 93-page Kennard Family History — he is J.G. Thomas Jr.'s nephew (Avery's 1st cousin twice removed).</td>
+          <td class="fdate">4 pp</td>
+          <td class="fdate">Split from ORIGINAL_UNSPLIT_Thomas_Lineal_Descent.pdf</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-pdf">PDF</span></td>
+          <td class="fname">Thomas_History_of_Grimes_County_pp554-555.pdf</td>
+          <td class="fdesc">Exhibit A from Richard Gary Thomas's SRT application. Scanned pages 554–555 from History of Grimes County (1982). Contains the Obie R. Thomas family narrative: James Avery Thomas arriving in Texas in 1835 in Austin's colony, his brother David Thomas signing the Texas Declaration of Independence, land grant at Mustang Prairie, 8 children, and descendants.</td>
+          <td class="fdate">2 pp</td>
+          <td class="fdate">Split from ORIGINAL_UNSPLIT_Thomas_Lineal_Descent.pdf</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-pdf">PDF</span></td>
+          <td class="fname">AustinsColonyRegister_JohnThomas_1835.jpg</td>
+          <td class="fdesc">Original page image from Stephen F. Austin's Colony Register (1835), page 26 of the Families section. Shows the entry for John Thomas: "John Thomas 50 years of age Moved from Alabama / Phoebe his wife 50 years of age / 6 Male 2 female children." Primary source confirming John Thomas + Phoebe Springer as James Avery Thomas's parents. Same page lists neighbors John Springer, Wm. Morris, Ezekiel Springer — all arriving together from Alabama. Marginal note: "Want land in the San Jacinto District &amp; have gone to examine it." Downloaded from Ancestry Apr 2026.</td>
+          <td class="fdate">1 p · 1835</td>
+          <td class="fdate">Downloaded from Ancestry</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-pdf">PDF</span></td>
+          <td class="fname">Crawley_JohnEarl_WWIIDraftCard_1942.jpg</td>
+          <td class="fdesc">WWII draft registration card for John Earl Crawley, registered Feb 16, 1942. Born Feb 8, 1908, Texas. Address: Route 2 (Spring Hill), Longview, Gregg County, Texas. Employer: Magnolia Petroleum Company, Greggton, Gregg County, TX. Charlotte Lucille Crawley's father. Confirms birth date and location. Downloaded from Ancestry Apr 2026.</td>
+          <td class="fdate">1 p · 1942</td>
+          <td class="fdate">Downloaded from Ancestry</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-pdf">PDF</span></td>
+          <td class="fname">Crawley_Lottie_Robison_Obituary_1991.pdf</td>
+          <td class="fdesc">Obituary for Lottie Robison Crawley — Longview News-Journal, July 31, 1991, p.21. Charlotte's mother. Born May 11, 1902, Simsboro, LA; died July 1991, Norman, OK, age 89. Daughter of James A. and Norma Hodge Robison. Married John Earl Crawley in 1924. After his death (Jul 1953) became a social worker in Louisiana. Survivors listed: son James B., daughters Mary Ann Convis (Stockton CA) and Charlotte Thomas of Houston. Buried Elmira Chapel Cemetery, Longview TX. Downloaded from Newspapers.com Apr 15, 2026.</td>
+          <td class="fdate">1 p · Jul 31 1991</td>
+          <td class="fdate">Newspapers.com</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-pdf">PDF</span></td>
+          <td class="fname">Crawley_Lottie_Robison_Marriage_to_JohnEarlCrawley_1925.pdf</td>
+          <td class="fdesc">Newspaper announcement of the marriage of Lottie Robison to John Earl Crawley — The Marshall News Messenger, July 26, 1925. Charlotte's parents' marriage. Downloaded from Newspapers.com Apr 15, 2026.</td>
+          <td class="fdate">1 p · Jul 26 1925</td>
+          <td class="fdate">Newspapers.com</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-pdf">PDF</span></td>
+          <td class="fname">Edgefield_Advertiser_1841_08_19.pdf</td>
+          <td class="fdesc">Edgefield Advertiser (Edgefield, South Carolina), August 19, 1841, page 4. Sheriff's sales listing land tracts in Edgefield County, SC. Potentially relevant to Thomas/Springer family land records in South Carolina during the period when the family was migrating through the state. Downloaded from Newspapers.com Apr 2026.</td>
+          <td class="fdate">1 p · Aug 19 1841</td>
+          <td class="fdate">Newspapers.com</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-pdf">PDF</span></td>
+          <td class="fname">Houston_Post_1901_09_15_BryanGrimesCounty.pdf</td>
+          <td class="fdesc">The Houston Post, September 15, 1901, page 28. "Bryan Briefs" column — local news from Bryan, TX and Grimes County. The updated GEDCOM (Apr 17, 2026) cites this specific article as a source on Stella Kennard Thomas's profile, meaning it likely contains a mention of Stella Kennard or the Kennard/Thomas family. Poor scan quality limits legibility of the full text. Downloaded from Newspapers.com Apr 2026.</td>
+          <td class="fdate">1 p · Sep 15 1901</td>
+          <td class="fdate">Newspapers.com</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-docx">DOCX</span></td>
+          <td class="fname">1861 MM Kenard Ltr to AD Kennard.docx</td>
+          <td class="fdesc">Richard Gary Thomas's typed transcription of the Michael Moore Kennard letter dated January 4, 1861 (not 1864 as originally estimated) to his brother A.D. Kennard Jr. Includes editorial notes by Richard Gary Thomas explaining the source (Issuu website, provided by first cousin Scott Thomas of Houston). More readable than the scanned version in the newsletter PDF.</td>
+          <td class="fdate">—</td>
+          <td class="fdate">Authored by Richard Gary Thomas · provided Apr 2026</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ── OCR ── -->
+  <div class="section" id="ocr">
+    <h2 class="section-title">OCR Text Files</h2>
+    <div class="folder-path">personal/familyHistory/ocr/</div>
+    <p style="font-size:0.85rem;color:var(--muted);margin-bottom:1rem;">Machine-extracted text from scanned PDFs. Generated using Tesseract OCR 5.4.0 via pdftoppm (poppler 25.07.0). Quality varies — photographic pages yield noise rather than text.</p>
+
+    <table class="file-table">
+      <thead>
+        <tr><th>Type</th><th>File</th><th>Description</th><th>Quality</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge badge-ocr">OCR</span></td>
+          <td class="fname">kennard_ocr.txt</td>
+          <td class="fdesc">Full OCR extraction of Kennard Family History.pdf (93 pages). 210,179 characters. Primary source text for kennard-family-history.html.</td>
+          <td class="fdate">Good (typed document)</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-ocr">OCR</span></td>
+          <td class="fname">kennard_letters_ocr.txt</td>
+          <td class="fdesc">OCR extraction of original combined Kennard Letters scan (13 pages). Pages 1–3 yielded partial text (bio sketch, letters). Pages 4–13 are photographs — output is noise. Use the .docx transcription for the letter text instead.</td>
+          <td class="fdate">Partial (pp.1–3 only)</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-ocr">OCR</span></td>
+          <td class="fname">thomas_lineal_descent_ocr.txt</td>
+          <td class="fdesc">OCR extraction of original combined Thomas Lineal Descent scan (6 pages). All pages yielded readable text. Contains Richard Gary Thomas's SRT application and the Grimes County history excerpt.</td>
+          <td class="fdate">Good (all pages)</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-ocr">OCR</span></td>
+          <td class="fname">austins_colony_register_john_thomas_1835_ocr.txt</td>
+          <td class="fdesc">OCR of AustinsColonyRegister_JohnThomas_1835.jpg. Full text of Austin's Colony Register page 26 including the John Thomas entry and neighboring families (Cartwright, Springer, Morris). Good quality — typed/printed document.</td>
+          <td class="fdate">Good</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-ocr">OCR</span></td>
+          <td class="fname">crawley_john_earl_wwii_draft_card_ocr.txt</td>
+          <td class="fdesc">OCR of John Earl Crawley WWII draft card. Confirms: b. Feb 8, 1908; address Route 2 (Spring Hill), Longview, Gregg Co. TX; employer Magnolia Petroleum Company, Greggton TX.</td>
+          <td class="fdate">Good</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-ocr">OCR</span></td>
+          <td class="fname">crawley_lottie_robison_obituary_ocr.txt</td>
+          <td class="fdesc">OCR of Lottie Robison Crawley obituary (Longview News-Journal, Jul 31, 1991). Full text including parents, education, marriage date, WPA work, survivors listing Charlotte Thomas of Houston.</td>
+          <td class="fdate">Good</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-ocr">OCR</span></td>
+          <td class="fname">crawley_lottie_robison_marriage_1925_ocr.txt</td>
+          <td class="fdesc">OCR of Lottie Robison–John Earl Crawley marriage announcement (Marshall News Messenger, Jul 26, 1925). Partial — newspaper print quality limits readability.</td>
+          <td class="fdate">Partial</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-ocr">OCR</span></td>
+          <td class="fname">edgefield_advertiser_1841_ocr.txt</td>
+          <td class="fdesc">OCR of Edgefield Advertiser, Aug 19, 1841 — sheriff's sales in Edgefield Co., SC. Potentially relevant to Thomas/Springer land records during SC migration period.</td>
+          <td class="fdate">Fair</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-ocr">OCR</span></td>
+          <td class="fname">houston_post_1901_grimes_county_ocr.txt</td>
+          <td class="fdesc">OCR of Houston Post, Sep 15, 1901 — Bryan/Grimes County briefs. Poor scan quality. Mentions Ex-Sheriff Garrett Scott of Grimes County.</td>
+          <td class="fdate">Poor</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-ocr">OCR</span></td>
+          <td class="fname">charlotte_crawley_marriage_ocr.txt</td>
+          <td class="fdesc">OCR extraction of Charlotte_Crawley_marriage_to_JG_Thomas.pdf. Longview Daily News, April 11, 1954 — wedding announcement with photo of Charlotte in Chantilly lace gown. Confirms marriage date (April 10, 1954), venue (Hill Cumberland Church), Charlotte's parents (John E. Crawley), and couple's first home (Houma, Louisiana).</td>
+          <td class="fdate">Good (newspaper print)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ── GEDCOM ── -->
+  <div class="section" id="gedcom">
+    <h2 class="section-title">GEDCOM — Ancestry Family Tree</h2>
+    <div class="folder-path">personal/familyHistory/Thomas_Squires Family Tree/</div>
+
+    <table class="file-table">
+      <thead>
+        <tr><th>Type</th><th>File</th><th>Description</th><th>Exported</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge badge-ged">GED</span></td>
+          <td class="fname">Thomas_Squires Family Tree.ged</td>
+          <td class="fdesc">Ancestry.com GEDCOM export from tree ID 178944660. <strong>112 people</strong> (updated Apr 17, 2026 — up from 73). Major additions: John C. Thomas Sr. (b. 18 Mar 1784, Edgefield SC) + Phebe Gayland Springer confirmed as James Avery Thomas's parents; James Clark Thomas (REV WAR, b. 1714, military service 1775–1783) added; full Crawley family tree (John Earl Crawley, Lottie Robison, siblings); all children of John C. Thomas Sr. added. Paternal line now extends to Richard Thomas (York Co. VA, d. ~1667). Previous version (73 people, Apr 12) backed up to originals/ as ORIGINAL_Thomas_Squires_Family_Tree_2026-04-12.ged.</td>
+          <td class="fdate">Apr 17 2026</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ── Originals ── -->
+  <div class="section" id="originals">
+    <h2 class="section-title">Original Unsplit Scans — Backups</h2>
+    <div class="folder-path">personal/familyHistory/originals/</div>
+    <p style="font-size:0.85rem;color:var(--muted);margin-bottom:1rem;">These are the original combined scans exactly as received. Each has been split into individual named files in <code style="color:#7a9fcc;">documents/</code>. Kept as backups only — use the split files for reference.</p>
+
+    <table class="file-table">
+      <thead>
+        <tr><th>Type</th><th>File</th><th>What's Inside</th><th>Split Into</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge badge-orig">ORIG</span></td>
+          <td class="fname">ORIGINAL_Thomas_Squires_Family_Tree_2026-04-12.ged</td>
+          <td class="fdesc">Backup of the original GEDCOM export (Apr 12, 2026) with 73 people. Superseded by the Apr 17, 2026 export (112 people) now in Thomas_Squires Family Tree/. Kept for reference.</td>
+          <td class="fdate">Backed up Apr 17 2026</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-orig">ORIG</span></td>
+          <td class="fname">ORIGINAL_UNSPLIT_Kennard_Letters_and_Photos.pdf</td>
+          <td class="fdesc">13 pages. Combined: ADK bio sketch + 2 letters (pp.1–3) + photographs and land grant (pp.4–13).</td>
+          <td class="fdate">Kennard_ADK_Biography_and_Letters_Newsletter.pdf · Kennard_ADK_Photographs_and_Land_Grant.pdf</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-orig">ORIG</span></td>
+          <td class="fname">ORIGINAL_UNSPLIT_Kennard_Lineal_Descent.pdf</td>
+          <td class="fdesc">16 pages. Combined: Michael Scott Thomas SRT application + History of Grimes County pp.369–371 + supporting exhibits + Charlotte Crawley birth cert + J.G. Thomas Jr. birth cert.</td>
+          <td class="fdate">Kennard_SRT_Application_Michael_Scott_Thomas.pdf · Kennard_History_of_Grimes_County_pp369-371.pdf · Kennard_SRT_Supporting_Exhibits.pdf · Thomas_Charlotte_Lucile_Crawley_Birth_Certificate.pdf · Thomas_James_Gary_Birth_Certificate_1924.pdf</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-orig">ORIG</span></td>
+          <td class="fname">ORIGINAL_UNSPLIT_Thomas_Lineal_Descent.pdf</td>
+          <td class="fdesc">6 pages. Combined: Richard Gary Thomas SRT application (pp.1–4) + History of Grimes County pp.554–555 (pp.5–6).</td>
+          <td class="fdate">Thomas_SRT_Application_Richard_Gary_Thomas.pdf · Thomas_History_of_Grimes_County_pp554-555.pdf</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<footer>
+  personal/familyHistory/file-glossary.html · Last updated April 15, 2026<br>
+  Update this file whenever new documents are added to the familyHistory directory.
+</footer>
+
+</body>
+</html>

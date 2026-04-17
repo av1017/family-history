@@ -1,0 +1,4484 @@
+0 HEAD
+1 SUBM @SUBM1@
+1 SOUR Ancestry.com Family Trees
+2 NAME Ancestry.com Member Trees
+2 VERS 2025.08
+2 _TREE Thomas/Squires Family Tree
+3 RIN 178944660
+3 _ENV prd
+2 CORP Ancestry.com
+3 PHON 801-705-7000
+3 WWW www.ancestry.com
+3 ADDR 1300 West Traverse Parkway
+4 CONT Lehi, UT  84043
+4 CONT USA
+1 DATE 12 Apr 2026
+2 TIME 18:23:11
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+0 @SUBM1@ SUBM
+1 NAME Ancestry.com Member Trees Submitter
+0 @I182329818776@ INDI
+1 NAME Avery S /Thomas/
+2 GIVN Avery S
+2 SURN Thomas
+2 SOUR @S466338397@
+3 _APID 1,62209::231041677
+1 FAMC @F17@
+1 BIRT
+2 DATE 5 Jan 1998
+2 PLAC Houston, Harris, Texas, USA
+1 RESI
+2 DATE 2014-2020
+2 PLAC Houston, Texas, USA
+2 SOUR @S466338397@
+3 _APID 1,62209::231041677
+1 SOUR @S466338397@
+2 _APID 1,62209::231041677
+0 @I182329818803@ INDI
+1 NAME Michael Scott /Thomas/
+2 GIVN Michael Scott
+2 SURN Thomas
+1 SEX M
+1 FAMC @F10@
+1 FAMS @F17@
+1 BIRT
+2 DATE 27 Jan 1960
+2 PLAC Harris, Texas, USA
+2 SOUR @S466338293@
+3 _APID 1,8781::8371939
+1 MARR
+2 DATE 20-Apr-1991
+2 PLAC Houston, TX
+2 SOUR @S466338438@
+3 _APID 1,1360::14479
+1 SOUR @S466338438@
+2 _APID 1,1360::14479
+1 SOUR @S466338293@
+2 _APID 1,8781::8371939
+2 _APID 1,8781::169450326
+1 SOUR @S466338308@
+2 _APID 1,8795::11383646
+0 @I182329818814@ INDI
+1 NAME Heather Denise /Squires/
+2 GIVN Heather Denise
+2 SURN Squires
+2 SOUR @S466338293@
+3 _APID 1,8781::9097719
+1 SEX F
+1 FAMC @F7@
+1 FAMS @F17@
+1 BIRT
+2 DATE 14 Aug 1963
+2 PLAC Harris, Texas, USA
+2 SOUR @S466338293@
+3 _APID 1,8781::9097719
+1 RESI
+2 PLAC Houston, Texas, USA
+2 SOUR @S466338336@
+3 _APID 1,1732::122168761
+1 SOUR @S466338336@
+2 _APID 1,1732::122168761
+1 SOUR @S466338293@
+2 _APID 1,8781::9097719
+2 _APID 1,8781::319450326
+1 SOUR @S466338308@
+2 PAGE Texas Department of State Health Services; Austin, Texas
+2 _APID 1,8795::10953081
+0 @I182329818890@ INDI
+1 NAME J G /Thomas/
+2 GIVN J G
+2 SURN Thomas
+2 SOUR @S466338770@
+3 PAGE Grimes County Clerks Office; Anderson, Texas; Marriage Records
+3 _APID 1,9168::134225572
+2 SOUR @S466338593@
+3 PAGE The Shreveport Journal; Publication Date: 23/ Apr/ 1954; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/600822411/?article=38093701-61e3-4d91-b1dd-9bec690fa599&focus=0.7255308,0.030304162,0.9573054,0.85438734&x
+4 CONC id=3398
+3 _APID 1,62116::68552100
+1 SEX M
+1 FAMC @F21@
+1 FAMS @F10@
+1 BIRT
+2 DATE 28 Nov 1924
+2 PLAC Anderson, Grimes, Texas, USA
+1 RESI
+2 DATE 1930
+2 PLAC Precinct 1, Precinct 1, Grimes, Texas, USA
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Precinct 1, Grimes, Texas; Page: 8B; Enumeration District: 0003; FHL microfilm: 2342068
+3 _APID 1,6224::63584483
+1 RESI
+2 DATE 1935
+2 PLAC Anderson, Grimes, Texas
+2 SOUR @S466338541@
+3 PAGE Year: 1940; Census Place: Grimes, Texas; Roll: m-t0627-04047; Page: 16B; Enumeration District: 93-3
+3 _APID 1,2442::153327509
+1 RESI
+2 DATE 1940
+2 PLAC Justice Precinct #1, Grimes, Texas, USA
+2 SOUR @S466338541@
+3 PAGE Year: 1940; Census Place: Grimes, Texas; Roll: m-t0627-04047; Page: 16B; Enumeration District: 93-3
+3 _APID 1,2442::153327509
+1 RESI
+2 DATE 1942
+2 PLAC Anderson, Grimes, Texas, USA
+2 SOUR @S466338562@
+3 PAGE National Archives at St. Louis; St. Louis, Missouri; WWII Draft Registration Cards for Texas, 10/16/1940-03/31/1947; Record Group: Records of the Selective Service System, 147; Box: 1492
+3 _APID 1,2238::21101465
+1 RESI
+2 DATE Abt 1954
+2 PLAC Houma
+2 SOUR @S466338593@
+3 PAGE The Shreveport Journal; Publication Date: 23/ Apr/ 1954; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/600822411/?article=38093701-61e3-4d91-b1dd-9bec690fa599&focus=0.7255308,0.030304162,0.9573054,0.85438734&x
+4 CONC id=3398
+3 _APID 1,62116::68552100
+1 DEAT
+2 DATE 8 Dec 2016
+2 PLAC Houston, Harris, Texas, USA
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 352363369693:1030:22016113
+1 SOUR @S466338562@
+2 PAGE National Archives at St. Louis; St. Louis, Missouri; WWII Draft Registration Cards for Texas, 10/16/1940-03/31/1947; Record Group: Records of the Selective Service System, 147; Box: 1492
+2 _APID 1,2238::21101465
+1 SOUR @S466338497@
+2 _APID 1,2275::1136642
+1 SOUR @S466338541@
+2 PAGE Year: 1940; Census Place: Grimes, Texas; Roll: m-t0627-04047; Page: 16B; Enumeration District: 93-3
+2 _APID 1,2442::153327509
+1 SOUR @S466338630@
+2 PAGE Year: 1930; Census Place: Precinct 1, Grimes, Texas; Page: 8B; Enumeration District: 0003; FHL microfilm: 2342068
+2 _APID 1,6224::63584483
+1 SOUR @S466338642@
+2 PAGE tributesTX; Publication Place: City, Texas, USA; URL: http://www.tributes.com/obituary/print_selections/104230550?type=1
+2 DATA
+3 WWW http://www.tributes.com/obituary/print_selections/104230550?type=1
+2 _APID 1,7545::503952252
+1 SOUR @S466338293@
+2 _APID 1,8781::158371939
+1 SOUR @S466338770@
+2 PAGE Grimes County Clerks Office; Anderson, Texas; Marriage Records
+2 _APID 1,9168::134225572
+1 SOUR @S466338593@
+2 PAGE The Shreveport Journal; Publication Date: 23/ Apr/ 1954; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/600822411/?article=38093701-61e3-4d91-b1dd-9bec690fa599&focus=0.7255308,0.030304162,0.9573054,0.85438734&x
+3 CONC id=3398
+2 _APID 1,62116::68552100
+0 @I182329818989@ INDI
+1 NAME Arthur /Squires/
+2 GIVN Arthur
+2 SURN Squires
+2 SOUR @S466338293@
+3 _APID 1,8781::159097719
+2 SOUR @S466341385@
+3 _APID 1,60525::213946027
+1 SEX M
+1 FAMC @F4@
+1 FAMS @F7@
+1 FAMS @F16@
+1 BIRT
+2 DATE abt 1934
+2 PLAC Philadelphia
+2 SOUR @S466338541@
+3 _APID 1,2442::4267282
+2 SOUR @S466341385@
+3 _APID 1,60525::213946027
+1 RESI
+2 DATE 1935
+2 PLAC New York, Kings, New York
+2 SOUR @S466338541@
+3 _APID 1,2442::4267282
+1 RESI
+2 DATE 1940
+2 PLAC Borough of Brooklyn, New York, Kings, New York, USA
+2 SOUR @S466338541@
+3 _APID 1,2442::4267282
+1 DEAT
+2 DATE 8 August 2022
+2 PLAC Houston, Harris County, Texas, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::213946027
+1 BURI
+2 PLAC Houston, Harris County, Texas, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::213946027
+1 SOUR @S466338541@
+2 _APID 1,2442::4267282
+1 SOUR @S466338293@
+2 _APID 1,8781::159097719
+1 SOUR @S466338770@
+2 PAGE Johnson County Clerk's Office; Denton, Texas; Smith County Marriage Records; Pages: 2
+2 _APID 1,9168::25283561
+1 SOUR @S466341385@
+2 _APID 1,60525::213946027
+0 @I182329819385@ INDI
+1 NAME Austin Squires /Thomas/
+2 GIVN Austin Squires
+2 SURN Thomas
+2 SOUR @S466338293@
+3 _APID 1,8781::19450326
+1 SEX M
+1 FAMC @F17@
+1 BIRT
+2 DATE 22 Jul 1995
+2 PLAC Harris, Texas, USA
+2 SOUR @S466338293@
+3 _APID 1,8781::19450326
+1 SOUR @S466338293@
+2 _APID 1,8781::19450326
+0 @I182329819662@ INDI
+1 NAME Charlotte Lucille /Crawley/
+2 GIVN Charlotte Lucille
+2 SURN Crawley
+2 SOUR @S466338293@
+3 _APID 1,8781::308371939
+2 SOUR @S466338593@
+3 PAGE Longview News-Journal; Publication Date: 11/ Apr/ 1954; Publication Place: Longview, Texas, USA; URL: https://www.newspapers.com/image/190894835/?article=29daaf9d-b7bb-42c9-9c1c-e71ee53eeeee&focus=0,0.031953633,0.33818415,0.48768082&xid=3398
+3 _APID 1,62116::925612
+2 SOUR @S466338593@
+3 PAGE The Shreveport Journal; Publication Date: 23/ Apr/ 1954; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/600822411/?article=38093701-61e3-4d91-b1dd-9bec690fa599&focus=0.7255308,0.030304162,0.9573054,0.85438734&x
+4 CONC id=3398
+3 _APID 1,62116::9295883
+1 NAME Charlotte /Thomas/
+2 GIVN Charlotte
+2 SURN Thomas
+2 SOUR @S466339470@
+3 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
+3 _APID 1,61843::354592837
+1 SEX F
+1 FAMC @F2@
+1 FAMS @F10@
+1 BIRT
+2 DATE 27 Jan 1931
+2 SOUR @S466338701@
+3 _APID 1,1788::345044568
+1 RESI
+2 DATE 1935
+2 PLAC Gregg, Texas
+2 SOUR @S466338541@
+3 PAGE Year: 1940; Census Place: Gregg, Texas; Roll: m-t0627-04046; Page: 37B; Enumeration District: 92-34
+3 _APID 1,2442::155440826
+1 RESI
+2 DATE 1940
+2 PLAC Justice Precinct #7, Gregg, Texas, USA
+2 SOUR @S466338541@
+3 PAGE Year: 1940; Census Place: Gregg, Texas; Roll: m-t0627-04046; Page: 37B; Enumeration District: 92-34
+3 _APID 1,2442::155440826
+1 RESI
+2 DATE 1947
+2 PLAC Longview, Texas, USA
+2 SOUR @S466338725@
+3 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Spring Hill High School; Year: 1947
+3 _APID 1,1265::182570548
+1 RESI
+2 DATE 1951
+2 PLAC Austin, Texas, USA
+2 SOUR @S466338725@
+3 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: University of Texas; Year: 1951
+3 _APID 1,1265::261265037
+1 RESI
+2 DATE Abt 1954
+2 PLAC Houma
+2 SOUR @S466338593@
+3 PAGE Longview News-Journal; Publication Date: 11/ Apr/ 1954; Publication Place: Longview, Texas, USA; URL: https://www.newspapers.com/image/190894835/?article=29daaf9d-b7bb-42c9-9c1c-e71ee53eeeee&focus=0,0.031953633,0.33818415,0.48768082&xid=3398
+3 _APID 1,62116::925612
+2 SOUR @S466338593@
+3 PAGE The Shreveport Journal; Publication Date: 23/ Apr/ 1954; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/600822411/?article=38093701-61e3-4d91-b1dd-9bec690fa599&focus=0.7255308,0.030304162,0.9573054,0.85438734&x
+4 CONC id=3398
+3 _APID 1,62116::9295883
+1 RESI
+2 DATE 1985-2020
+2 PLAC Houston, Texas, USA
+2 SOUR @S466338397@
+3 _APID 1,62209::97896296
+1 RESI
+2 DATE 1992
+2 PLAC Houston, TX
+2 SOUR @S466338701@
+3 _APID 1,1788::345044568
+1 SOUR @S466338725@
+2 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Spring Hill High School; Year: 1947
+2 _APID 1,1265::182570548
+2 _APID 1,1265::440725501
+2 _APID 1,1265::994261557
+1 SOUR @S466338725@
+2 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: University of Texas; Year: 1951
+2 _APID 1,1265::261265037
+1 SOUR @S466338701@
+2 _APID 1,1788::345044568
+1 SOUR @S466338541@
+2 PAGE Year: 1940; Census Place: Gregg, Texas; Roll: m-t0627-04046; Page: 37B; Enumeration District: 92-34
+2 _APID 1,2442::155440826
+1 SOUR @S466338293@
+2 _APID 1,8781::308371939
+1 SOUR @S466339470@
+2 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
+2 _APID 1,61843::354592837
+1 SOUR @S466338593@
+2 PAGE Longview News-Journal; Publication Date: 11/ Apr/ 1954; Publication Place: Longview, Texas, USA; URL: https://www.newspapers.com/image/190894835/?article=29daaf9d-b7bb-42c9-9c1c-e71ee53eeeee&focus=0,0.031953633,0.33818415,0.48768082&xid=3398
+2 _APID 1,62116::925612
+1 SOUR @S466338593@
+2 PAGE The Shreveport Journal; Publication Date: 23/ Apr/ 1954; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/600822411/?article=38093701-61e3-4d91-b1dd-9bec690fa599&focus=0.7255308,0.030304162,0.9573054,0.85438734&x
+3 CONC id=3398
+2 _APID 1,62116::9295883
+1 SOUR @S466338397@
+2 _APID 1,62209::97896296
+1 OBJE @O14@
+2 _PRIM Y
+2 _CROP
+3 _LEFT 162
+3 _TOP 226
+3 _WDTH 647
+3 _HGHT 903
+3 _TYPE primary
+0 @I182329819759@ INDI
+1 NAME Gary /Thomas/
+2 GIVN Gary
+2 SURN Thomas
+2 SOUR @S466338725@
+3 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Texas Aandm; Year: 1955
+3 _APID 1,1265::54116264
+2 SOUR @S466338497@
+3 PAGE Texas Department of State Health Services; Austin, TX; Texas, U.S., Birth Certificates, 1903-1932
+3 _APID 1,2275::106136642
+2 SOUR @S466338541@
+3 _APID 1,2442::153327503
+2 SOUR @S466339470@
+3 PAGE The Eagle; Publication Date: 8 Feb 1963; Publication Place: Bryan, Texas, USA; URL: https://www.newspapers.com/image/48616744/?article=52906b5a-6495-4cb9-8592-484099dd8d94&focus=0.73530656,0.58199406,0.98610014,0.8375136&xid=3355
+3 _APID 1,61843::118740105
+2 SOUR @S466338593@
+3 PAGE The Shreveport Journal; Publication Date: 23/ Apr/ 1954; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/600822411/?article=38093701-61e3-4d91-b1dd-9bec690fa599&focus=0.7255308,0.030304162,0.9573054,0.85438734&x
+4 CONC id=3398
+3 _APID 1,62116::214336936
+2 SOUR @S528276028@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Grimes, Texas; Roll: 3986; Page: 10; Enumeration District: 93-5
+3 _APID 1,62308::190335630
+1 NAME James Gary /Thomas/
+2 GIVN James Gary
+2 SURN Thomas
+2 SOUR @S466339362@
+3 _APID 1,4876::4672406
+1 NAME James Geren /Thomas/
+2 GIVN James Geren
+2 SURN Thomas
+2 SOUR @S466339346@
+3 PAGE Year: 1880; Census Place: Prairie Plains, Grimes, Texas; Roll: 1308; Page: 176B; Enumeration District: 067
+3 _APID 1,6742::10961263
+1 SEX M
+1 FAMC @F18@
+1 FAMS @F21@
+1 BIRT
+2 DATE 6 Feb 1877
+2 PLAC Shiro, Texas
+2 SOUR @S466339191@
+3 PAGE Texas Department of State Health Services; Austin Texas, USA
+3 _APID 1,2272::21543508
+2 SOUR @S466338497@
+3 PAGE Texas Department of State Health Services; Austin, TX; Texas, U.S., Birth Certificates, 1903-1932
+3 _APID 1,2275::106136642
+2 SOUR @S466338541@
+3 _APID 1,2442::153327503
+2 SOUR @S466339160@
+3 PAGE Year: 1900; Census Place: Justice Precinct 8, Grimes, Texas; Page: 8; Enumeration District: 0027; FHL microfilm: 1241640
+3 _APID 1,7602::61594542
+2 SOUR @S528276028@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Grimes, Texas; Roll: 3986; Page: 10; Enumeration District: 93-5
+3 _APID 1,62308::190335630
+1 RESI
+2 DATE 1880
+2 PLAC Prairie Plains, Grimes, Texas, USA
+2 SOUR @S466339346@
+3 PAGE Year: 1880; Census Place: Prairie Plains, Grimes, Texas; Roll: 1308; Page: 176B; Enumeration District: 067
+3 _APID 1,6742::10961263
+1 RESI
+2 DATE 1900
+2 PLAC Justice Precinct 8, Grimes, Texas, USA
+2 SOUR @S466339160@
+3 PAGE Year: 1900; Census Place: Justice Precinct 8, Grimes, Texas; Page: 8; Enumeration District: 0027; FHL microfilm: 1241640
+3 _APID 1,7602::61594542
+1 RESI
+2 DATE 1910
+2 PLAC Justice Precinct 1, Grimes, Texas, USA
+2 SOUR @S466339250@
+3 PAGE Year: 1910; Census Place: Justice Precinct 1, Grimes, Texas; Roll: T624_1555; Page: 16B; Enumeration District: 0028; FHL microfilm: 1375568
+3 _APID 1,7884::28064801
+1 RESI
+2 DATE 1917-1918
+2 PLAC Grimes County, Texas, USA
+2 SOUR @S466339414@
+3 PAGE Registration State: Texas; Registration County: Grimes County
+3 _APID 1,6482::18002956
+1 RESI
+2 DATE 1920
+2 PLAC Anderson, Grimes, Texas, USA
+2 SOUR @S466339223@
+3 PAGE Year: 1920; Census Place: Anderson, Grimes, Texas; Roll: T625_1806; Page: 3A; Enumeration District: 15
+3 _APID 1,6061::22641283
+1 RESI
+2 DATE 1930
+2 PLAC Precinct 1, Precinct 1, Grimes, Texas, USA
+2 SOUR @S466338630@
+3 _APID 1,6224::63584479
+1 RESI
+2 DATE 1935
+2 PLAC Anderson, Grimes, Texas
+2 SOUR @S466338541@
+3 _APID 1,2442::153327503
+1 RESI
+2 DATE 1940
+2 PLAC Justice Precinct #1, Grimes, Texas, USA
+2 SOUR @S466338541@
+3 _APID 1,2442::153327503
+1 RESI
+2 DATE 1950
+2 PLAC Grimes, Texas, USA
+2 SOUR @S528276028@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Grimes, Texas; Roll: 3986; Page: 10; Enumeration District: 93-5
+3 _APID 1,62308::190335630
+2 NOTE Relation to Head of House: Head; Marital Status: Married
+1 RESI
+2 DATE 1955
+2 PLAC College Station, Texas, USA
+2 SOUR @S466338725@
+3 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Texas Aandm; Year: 1955
+3 _APID 1,1265::54116264
+1 RESI
+2 PLAC Anderson, Grimes, Texas, USA
+2 SOUR @S466339191@
+3 PAGE Texas Department of State Health Services; Austin Texas, USA
+3 _APID 1,2272::21543508
+1 DEAT
+2 DATE 10 Mar 1953
+2 PLAC Anderson, Grimes, Texas, USA
+2 SOUR @S466339191@
+3 PAGE Texas Department of State Health Services; Austin Texas, USA
+3 _APID 1,2272::21543508
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 765561130:1030:8733552
+2 _APID 28436367803:1030:14569534
+2 _APID 352363369643:1030:22016113
+2 _APID 142175379444:1030:67146332
+2 _APID 34377820920:1030:78068562
+2 _APID 390167257520:1030:107377775
+2 _APID 272267838681:1030:172382839
+1 SOUR @S466338725@
+2 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Texas Aandm; Year: 1955
+2 _APID 1,1265::54116264
+1 SOUR @S466339191@
+2 PAGE Texas Department of State Health Services; Austin Texas, USA
+2 _APID 1,2272::21543508
+1 SOUR @S466338497@
+2 PAGE Texas Department of State Health Services; Austin, TX; Texas, U.S., Birth Certificates, 1903-1932
+2 _APID 1,2275::106136642
+1 SOUR @S466338541@
+2 _APID 1,2442::153327503
+1 SOUR @S466339362@
+2 _APID 1,4876::4672406
+1 SOUR @S466339223@
+2 PAGE Year: 1920; Census Place: Anderson, Grimes, Texas; Roll: T625_1806; Page: 3A; Enumeration District: 15
+2 _APID 1,6061::22641283
+1 SOUR @S466338630@
+2 _APID 1,6224::63584479
+1 SOUR @S466339414@
+2 PAGE Registration State: Texas; Registration County: Grimes County
+2 _APID 1,6482::18002956
+1 SOUR @S466339346@
+2 PAGE Year: 1880; Census Place: Prairie Plains, Grimes, Texas; Roll: 1308; Page: 176B; Enumeration District: 067
+2 _APID 1,6742::10961263
+1 SOUR @S466339160@
+2 PAGE Year: 1900; Census Place: Justice Precinct 8, Grimes, Texas; Page: 8; Enumeration District: 0027; FHL microfilm: 1241640
+2 _APID 1,7602::61594542
+1 SOUR @S466339250@
+2 PAGE Year: 1910; Census Place: Justice Precinct 1, Grimes, Texas; Roll: T624_1555; Page: 16B; Enumeration District: 0028; FHL microfilm: 1375568
+2 _APID 1,7884::28064801
+1 SOUR @S466338293@
+2 _APID 1,8781::150241167
+1 SOUR @S466339400@
+2 DATA
+3 WWW https://familysearch.org/ark:/61903/1:1:QK8T-856X
+2 _APID 1,60183::1479502
+1 SOUR @S466339379@
+2 _APID 1,60901::6260239
+1 SOUR @S466339470@
+2 PAGE The Eagle; Publication Date: 8 Feb 1963; Publication Place: Bryan, Texas, USA; URL: https://www.newspapers.com/image/48616744/?article=52906b5a-6495-4cb9-8592-484099dd8d94&focus=0.73530656,0.58199406,0.98610014,0.8375136&xid=3355
+2 _APID 1,61843::118740105
+1 SOUR @S466338593@
+2 PAGE The Shreveport Journal; Publication Date: 23/ Apr/ 1954; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/600822411/?article=38093701-61e3-4d91-b1dd-9bec690fa599&focus=0.7255308,0.030304162,0.9573054,0.85438734&x
+3 CONC id=3398
+2 _APID 1,62116::214336936
+1 SOUR @S528276028@
+2 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Grimes, Texas; Roll: 3986; Page: 10; Enumeration District: 93-5
+2 _APID 1,62308::190335630
+1 OBJE @O7@
+2 _PRIM Y
+2 _CROP
+3 _LEFT 83
+3 _TOP 0
+3 _WDTH 2486
+3 _HGHT 1492
+3 _TYPE primary
+1 OBJE @O1@
+0 @I182329819761@ INDI
+1 NAME Stella Kennard /Thomas/
+2 GIVN Stella Kennard
+2 SURN Thomas
+2 SOUR @S466338541@
+3 _APID 1,2442::153327504
+2 SOUR @S466338630@
+3 _APID 1,6224::63584482
+2 SOUR @S466341385@
+3 _APID 1,60525::5862662
+2 SOUR @S466338593@
+3 PAGE The Shreveport Journal; Publication Date: 23/ Apr/ 1954; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/600822411/?article=38093701-61e3-4d91-b1dd-9bec690fa599&focus=0.7255308,0.030304162,0.9573054,0.85438734&x
+4 CONC id=3398
+3 _APID 1,62116::68563064
+1 NAME Stella /Kennard/
+2 GIVN Stella
+2 SURN Kennard
+2 SOUR @S466339400@
+3 _APID 1,60183::1479515
+1 SEX F
+1 FAMC @F12@
+1 FAMS @F21@
+1 BIRT
+2 DATE 11 April 1882
+2 PLAC Grimes County, Texas, United States of America
+2 SOUR @S466338541@
+3 _APID 1,2442::153327504
+2 SOUR @S466341385@
+3 _APID 1,60525::5862662
+1 BIRT
+2 DATE 11 Apr 1883
+2 PLAC Grimes County, Texas, United States of America
+2 SOUR @S466339379@
+3 _APID 1,60901::6474359
+1 RESI
+2 DATE 1900
+2 PLAC Justice Precinct 1, Grimes, Texas, USA
+2 SOUR @S466339160@
+3 PAGE Year: 1900; Census Place: Justice Precinct 1, Grimes, Texas; Page: 24; Enumeration District: 0018; FHL microfilm: 1241640
+3 _APID 1,7602::61574969
+1 RESI
+2 DATE 1910
+2 PLAC Justice Precinct 1, Grimes, Texas, USA
+2 SOUR @S466339250@
+3 _APID 1,7884::129834956
+1 RESI
+2 DATE 1920
+2 PLAC Anderson, Grimes, Texas, USA
+2 SOUR @S466339223@
+3 _APID 1,6061::22641284
+1 RESI
+2 DATE 1930
+2 PLAC Precinct 1, Precinct 1, Grimes, Texas, USA
+2 SOUR @S466338630@
+3 _APID 1,6224::63584482
+1 RESI
+2 DATE 1935
+2 PLAC Anderson, Grimes, Texas
+2 SOUR @S466338541@
+3 _APID 1,2442::153327504
+1 RESI
+2 DATE 1940
+2 PLAC Justice Precinct #1, Grimes, Texas, USA
+2 SOUR @S466338541@
+3 _APID 1,2442::153327504
+1 RESI
+2 DATE Abt 1954
+2 PLAC Anderson Tex
+2 SOUR @S466338593@
+3 PAGE The Shreveport Journal; Publication Date: 23/ Apr/ 1954; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/600822411/?article=38093701-61e3-4d91-b1dd-9bec690fa599&focus=0.7255308,0.030304162,0.9573054,0.85438734&x
+4 CONC id=3398
+3 _APID 1,62116::68563064
+1 RESI
+2 PLAC Anderson, Grimes, Texas, USA
+2 SOUR @S466339191@
+3 PAGE Texas Department of State Health Services; Austin Texas, USA
+3 _APID 1,2272::370073
+1 DEAT
+2 DATE 19 February 1965
+2 PLAC Navasota, Grimes County, Texas, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::5862662
+1 BURI
+2 PLAC Anderson, Grimes County, Texas, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::5862662
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 765562087:1030:8733552
+2 _APID 28436367787:1030:14569534
+2 _APID 352363308006:1030:22016113
+2 _APID 142175533317:1030:67146332
+2 _APID 272267830531:1030:172382839
+1 SOUR @S466339191@
+2 PAGE Texas Department of State Health Services; Austin Texas, USA
+2 _APID 1,2272::370073
+1 SOUR @S466338541@
+2 _APID 1,2442::153327504
+1 SOUR @S466339362@
+2 _APID 1,4876::157214
+1 SOUR @S466339223@
+2 _APID 1,6061::22641284
+1 SOUR @S466338630@
+2 _APID 1,6224::63584482
+1 SOUR @S466339160@
+2 PAGE Year: 1900; Census Place: Justice Precinct 1, Grimes, Texas; Page: 24; Enumeration District: 0018; FHL microfilm: 1241640
+2 _APID 1,7602::61574969
+1 SOUR @S466339250@
+2 _APID 1,7884::129834956
+1 SOUR @S466339400@
+2 _APID 1,60183::1479515
+1 SOUR @S466341385@
+2 _APID 1,60525::5862662
+1 SOUR @S466339379@
+2 _APID 1,60901::6474359
+1 SOUR @S466338593@
+2 PAGE The Shreveport Journal; Publication Date: 23/ Apr/ 1954; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/600822411/?article=38093701-61e3-4d91-b1dd-9bec690fa599&focus=0.7255308,0.030304162,0.9573054,0.85438734&x
+3 CONC id=3398
+2 _APID 1,62116::68563064
+0 @I182329820069@ INDI
+1 NAME John Kennard /Thomas/
+2 GIVN John Kennard
+2 SURN Thomas
+2 SOUR @S466338630@
+3 _APID 1,6224::63584480
+1 NAME John K /Thomas/
+2 GIVN John K
+2 SURN Thomas
+2 SOUR @S466339250@
+3 _APID 1,7884::129834957
+1 SEX M
+1 FAMC @F21@
+1 BIRT
+2 DATE 2 Oct 1908
+2 PLAC Anderson, Grimes, Texas, USA
+2 SOUR @S466338630@
+3 _APID 1,6224::63584480
+1 RESI
+2 DATE 1910
+2 PLAC Justice Precinct 1, Grimes, Texas, USA
+2 SOUR @S466339250@
+3 _APID 1,7884::129834957
+1 RESI
+2 DATE 1920
+2 PLAC Anderson, Grimes, Texas, USA
+2 SOUR @S466339223@
+3 _APID 1,6061::22641285
+1 RESI
+2 DATE 1930
+2 PLAC Precinct 1, Precinct 1, Grimes, Texas, USA
+2 SOUR @S466338630@
+3 _APID 1,6224::63584480
+1 DEAT
+2 DATE 19 August 1984
+2 PLAC Grimes County, Texas, USA
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 765563326:1030:8733552
+2 _APID 28436383558:1030:14569534
+2 _APID 352363369671:1030:22016113
+2 _APID 142175533318:1030:67146332
+2 _APID 272267838683:1030:172382839
+1 SOUR @S466339223@
+2 _APID 1,6061::22641285
+1 SOUR @S466338630@
+2 _APID 1,6224::63584480
+1 SOUR @S466339250@
+2 _APID 1,7884::129834957
+0 @I182329820070@ INDI
+1 NAME Marion Brown /Thomas/
+2 GIVN Marion Brown
+2 SURN Thomas
+2 SOUR @S466338630@
+3 _APID 1,6224::63584421
+2 SOUR @S466339470@
+3 PAGE The Eagle; Publication Date: 8 Feb 1963; Publication Place: Bryan, Texas, USA; URL: https://www.newspapers.com/image/48616744/?article=52906b5a-6495-4cb9-8592-484099dd8d94&focus=0.73530656,0.58199406,0.98610014,0.8375136&xid=3355
+3 _APID 1,61843::530555630
+1 SEX M
+1 FAMC @F21@
+1 BIRT
+2 DATE abt 1914
+2 PLAC Texas
+2 SOUR @S466338630@
+3 _APID 1,6224::63584421
+2 SOUR @S466339470@
+3 PAGE The Eagle; Publication Date: 8 Feb 1963; Publication Place: Bryan, Texas, USA; URL: https://www.newspapers.com/image/48616744/?article=52906b5a-6495-4cb9-8592-484099dd8d94&focus=0.73530656,0.58199406,0.98610014,0.8375136&xid=3355
+3 _APID 1,61843::530555630
+1 RESI
+2 DATE 1920
+2 PLAC Anderson, Grimes, Texas, USA
+2 SOUR @S466339223@
+3 _APID 1,6061::22641286
+1 RESI
+2 DATE 1930
+2 PLAC Precinct 1, Precinct 1, Grimes, Texas, USA
+2 SOUR @S466338630@
+3 _APID 1,6224::63584421
+1 RESI
+2 PLAC Navasota
+2 SOUR @S466339470@
+3 PAGE The Eagle; Publication Date: 8 Feb 1963; Publication Place: Bryan, Texas, USA; URL: https://www.newspapers.com/image/48616744/?article=52906b5a-6495-4cb9-8592-484099dd8d94&focus=0.73530656,0.58199406,0.98610014,0.8375136&xid=3355
+3 _APID 1,61843::530555630
+1 DEAT
+2 DATE 7 Feb 1963
+2 PLAC Navasota
+2 SOUR @S466339470@
+3 PAGE The Eagle; Publication Date: 8 Feb 1963; Publication Place: Bryan, Texas, USA; URL: https://www.newspapers.com/image/48616744/?article=52906b5a-6495-4cb9-8592-484099dd8d94&focus=0.73530656,0.58199406,0.98610014,0.8375136&xid=3355
+3 _APID 1,61843::530555630
+1 BURI
+2 PLAC Navasota
+2 SOUR @S466339470@
+3 PAGE The Eagle; Publication Date: 8 Feb 1963; Publication Place: Bryan, Texas, USA; URL: https://www.newspapers.com/image/48616744/?article=52906b5a-6495-4cb9-8592-484099dd8d94&focus=0.73530656,0.58199406,0.98610014,0.8375136&xid=3355
+3 _APID 1,61843::530555630
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 765563327:1030:8733552
+2 _APID 28436383700:1030:14569534
+2 _APID 352363371320:1030:22016113
+2 _APID 142175533389:1030:67146332
+2 _APID 272267838686:1030:172382839
+1 SOUR @S466339223@
+2 _APID 1,6061::22641286
+1 SOUR @S466338630@
+2 _APID 1,6224::63584421
+1 SOUR @S466339470@
+2 PAGE The Eagle; Publication Date: 8 Feb 1963; Publication Place: Bryan, Texas, USA; URL: https://www.newspapers.com/image/48616744/?article=52906b5a-6495-4cb9-8592-484099dd8d94&focus=0.73530656,0.58199406,0.98610014,0.8375136&xid=3355
+2 _APID 1,61843::530555630
+0 @I182329820547@ INDI
+1 NAME Barbara /Croft/
+2 GIVN Barbara
+2 SURN Croft
+2 SOUR @S466338770@
+3 _APID 1,9168::925283561
+1 SEX F
+1 FAMS @F16@
+1 SOUR @S466338770@
+2 _APID 1,9168::925283561
+0 @I182329820752@ INDI
+1 NAME Barbara /Croft/
+2 GIVN Barbara
+2 SURN Croft
+1 NAME Barbara C /Squires/
+2 GIVN Barbara C
+2 SURN Squires
+2 SOUR @S466338701@
+3 _APID 1,1788::188302869
+1 SEX F
+1 FAMC @F19@
+1 FAMS @F7@
+1 BIRT
+2 DATE 23 Jan 1936
+2 PLAC Harris, Texas, USA
+2 SOUR @S466338541@
+3 PAGE Year: 1940; Census Place: Houston, Harris, Texas; Roll: m-t0627-04198; Page: 15A; Enumeration District: 258-257
+3 _APID 1,2442::160683548
+2 SOUR @S466338293@
+3 _APID 1,8781::2676661
+1 RESI
+2 DATE 1940
+2 PLAC , Houston, Harris, Texas, USA
+2 SOUR @S466338541@
+3 PAGE Year: 1940; Census Place: Houston, Harris, Texas; Roll: m-t0627-04198; Page: 15A; Enumeration District: 258-257
+3 _APID 1,2442::160683548
+1 RESI
+2 DATE 1986-2008
+2 PLAC Houston, Texas, USA
+2 SOUR @S466338397@
+3 _APID 1,62209::91661999
+1 RESI
+2 DATE 1987-2020
+2 PLAC Houston, Texas, USA
+2 SOUR @S466338397@
+3 _APID 1,62209::91661999
+1 RESI
+2 DATE 1993
+2 PLAC Houston, TX
+2 SOUR @S466338701@
+3 _APID 1,1788::188302869
+1 RESI
+2 DATE 1995
+2 PLAC Houston, TX
+2 SOUR @S466338701@
+3 _APID 1,1788::188302869
+1 RESI
+2 PLAC Houston, TX
+2 SOUR @S466338701@
+3 _APID 1,1788::188302869
+1 SOUR @S466338701@
+2 _APID 1,1788::188302869
+1 SOUR @S466338541@
+2 PAGE Year: 1940; Census Place: Houston, Harris, Texas; Roll: m-t0627-04198; Page: 15A; Enumeration District: 258-257
+2 _APID 1,2442::160683548
+1 SOUR @S466338293@
+2 _APID 1,8781::2676661
+1 SOUR @S466338770@
+2 PAGE Johnson County Clerk's Office; Denton, Texas; Smith County Marriage Records; Pages: 2
+2 _APID 1,9168::925283561
+1 SOUR @S466338397@
+2 _APID 1,62209::91661999
+0 @I182329820976@ INDI
+1 NAME Evelyn /Croft/
+2 GIVN Evelyn
+2 SURN Croft
+2 SOUR @S466338541@
+3 _APID 1,2442::160683546
+1 SEX F
+1 FAMC @F19@
+1 BIRT
+2 DATE abt 1929
+2 PLAC Texas
+2 SOUR @S466338541@
+3 _APID 1,2442::160683546
+1 RESI
+2 DATE 1930
+2 PLAC Houston, Houston, Harris, Texas, USA
+2 SOUR @S466338630@
+3 _APID 1,6224::63351633
+1 RESI
+2 DATE 1935
+2 PLAC Houston, Harris, Texas
+2 SOUR @S466338541@
+3 _APID 1,2442::160683546
+1 RESI
+2 DATE 1940
+2 PLAC , Houston, Harris, Texas, USA
+2 SOUR @S466338541@
+3 _APID 1,2442::160683546
+1 SOUR @S466338541@
+2 _APID 1,2442::160683546
+1 SOUR @S466338630@
+2 _APID 1,6224::63351633
+0 @I182329820977@ INDI
+1 NAME Kenneth /Croft/
+2 GIVN Kenneth
+2 SURN Croft
+2 SOUR @S466338541@
+3 _APID 1,2442::160683550
+2 SOUR @S466341385@
+3 _APID 1,60525::190548135
+1 SEX M
+1 FAMC @F19@
+1 BIRT
+2 DATE abt 1938
+2 PLAC Texas
+2 SOUR @S466338541@
+3 _APID 1,2442::160683550
+2 SOUR @S466341385@
+3 _APID 1,60525::190548135
+1 RESI
+2 DATE 1940
+2 PLAC , Houston, Harris, Texas, USA
+2 SOUR @S466338541@
+3 _APID 1,2442::160683550
+1 DEAT
+2 DATE 11 January 2021
+2 PLAC Houston, Harris County, Texas, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::190548135
+1 BURI
+2 PLAC Houston, Harris County, Texas, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::190548135
+1 SOUR @S466338541@
+2 _APID 1,2442::160683550
+1 SOUR @S466341385@
+2 _APID 1,60525::190548135
+0 @I182329820979@ INDI
+1 NAME Jack (Jake) (J) (Jakub Srul) /Croft (Kravchik) (Krawcryk)/
+2 GIVN Jack (Jake) (J) (Jakub Srul)
+2 SURN Croft (Kravchik) (Krawcryk)
+2 SOUR @S466338541@
+3 _APID 1,2442::160683543
+2 SOUR @S466339400@
+3 _APID 1,60183::2521235
+2 SOUR @S466341385@
+3 _APID 1,60525::131896156
+1 NAME Jakub Srul /Krawcryk/
+2 GIVN Jakub Srul
+2 SURN Krawcryk
+2 SOUR @S466346322@
+3 PAGE The National Archives at Fort Worth; Fort Worth, Texas; Record Group Title: Records of District Courts of the United States, 1685-2009; Record Group Number: 21
+3 _APID 1,2509::156392
+1 NAME Jack /Craft/
+2 GIVN Jack
+2 SURN Craft
+2 SOUR @S466338293@
+3 _APID 1,8781::152676661
+1 SEX M
+1 FAMC @F22@
+1 FAMS @F19@
+1 FAMS @F20@
+1 BIRT
+2 DATE 05 Apr 1903
+2 PLAC Kock, Siedlce, Russian Empire (presently, Kock, Poland)
+2 SOUR @S466338541@
+3 _APID 1,2442::160683543
+2 SOUR @S466341385@
+3 _APID 1,60525::131896156
+1 EVEN
+2 TYPE Arrival
+2 DATE 20 Mar 1921
+2 PLAC New York City, New York, USA
+2 SOUR @S466346322@
+3 PAGE The National Archives at Fort Worth; Fort Worth, Texas; Record Group Title: Records of District Courts of the United States, 1685-2009; Record Group Number: 21
+3 _APID 1,2509::156392
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 36A; Enumeration District: 0207; FHL microfilm: 2342081
+3 _APID 1,6224::63351675
+1 RESI
+2 DATE 1930
+2 PLAC Houston, Houston, Harris, Texas, USA
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 36A; Enumeration District: 0207; FHL microfilm: 2342081
+3 _APID 1,6224::63351675
+1 RESI
+2 DATE 1932
+2 PLAC Houston, Texas, USA
+2 SOUR @S466346305@
+3 _APID 1,2469::400363400
+1 RESI
+2 DATE 1935
+2 PLAC Houston, Harris, Texas
+2 SOUR @S466338541@
+3 _APID 1,2442::160683543
+1 RESI
+2 DATE 1940
+2 PLAC , Houston, Harris, Texas, USA
+2 SOUR @S466338541@
+3 _APID 1,2442::160683543
+1 RESI
+2 DATE 1942
+2 PLAC Houston, Harris, Texas, USA
+2 SOUR @S466338562@
+3 PAGE National Archives at St. Louis; St. Louis, Missouri; WWII Draft Registration Cards for Texas, 10/16/1940-03/31/1947; Record Group: Records of the Selective Service System, 147; Box: 335
+3 _APID 1,2238::19835472
+1 RESI
+2 DATE 1951
+2 PLAC Texas
+2 SOUR @S466347315@
+3 PAGE Social Security Administration; Washington D.C., USA; Social Security Death Index, Master File
+3 _APID 1,3693::13220215
+1 EVEN
+2 TYPE Departure
+2 PLAC Rotterdam
+2 SOUR @S466347375@
+3 PAGE Year: 1921; Arrival: New York, New York, USA; Microfilm Serial: T715, 1897-1957; Line: 23; Page Number: 129
+3 _APID 1,7488::4025194284
+1 RESI
+2 PLAC Houston, Harris, Texas, USA
+2 SOUR @S466339191@
+3 PAGE Texas Department of State Health Services; Austin Texas, USA
+3 _APID 1,2272::40074680
+1 RESI
+2 PLAC Poland
+2 SOUR @S466347375@
+3 PAGE Year: 1921; Arrival: New York, New York, USA; Microfilm Serial: T715, 1897-1957; Line: 23; Page Number: 129
+3 _APID 1,7488::4025194284
+1 DEAT
+2 DATE 04 Mar 1982
+2 PLAC Houston, Harris, Texas, USA
+2 SOUR @S466341385@
+3 _APID 1,60525::131896156
+1 BURI
+2 PLAC Houston, Harris County, Texas, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::131896156
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 190171700878:1030:24500409
+2 _APID 36217150205:1030:70208803
+2 _APID 77005245557:1030:89905403
+2 _APID 212321018114:1030:157187077
+2 _APID 190171700878:1030:24500409
+2 _APID 36217150205:1030:70208803
+2 _APID 77005245557:1030:89905403
+2 _APID 212321018114:1030:157187077
+1 SOUR @S466338438@
+2 _APID 1,1360::106317
+1 SOUR @S466347352@
+2 _APID 1,1411::574172
+1 SOUR @S466338562@
+2 PAGE National Archives at St. Louis; St. Louis, Missouri; WWII Draft Registration Cards for Texas, 10/16/1940-03/31/1947; Record Group: Records of the Selective Service System, 147; Box: 335
+2 _APID 1,2238::19835472
+1 SOUR @S466339191@
+2 PAGE Texas Department of State Health Services; Austin Texas, USA
+2 _APID 1,2272::40074680
+1 SOUR @S466338541@
+2 _APID 1,2442::160683543
+1 SOUR @S466346305@
+2 _APID 1,2469::400363400
+1 SOUR @S466346322@
+2 PAGE The National Archives at Fort Worth; Fort Worth, Texas; Record Group Title: Records of District Courts of the United States, 1685-2009; Record Group Number: 21
+2 _APID 1,2509::156392
+1 SOUR @S466347315@
+2 PAGE Social Security Administration; Washington D.C., USA; Social Security Death Index, Master File
+2 _APID 1,3693::13220215
+1 SOUR @S466339362@
+2 _APID 1,4876::1785424
+1 SOUR @S466338630@
+2 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 36A; Enumeration District: 0207; FHL microfilm: 2342081
+2 _APID 1,6224::63351675
+1 SOUR @S466347375@
+2 PAGE Year: 1921; Arrival: New York, New York, USA; Microfilm Serial: T715, 1897-1957; Line: 23; Page Number: 129
+2 _APID 1,7488::4025194284
+1 SOUR @S466338293@
+2 _APID 1,8781::152676661
+1 SOUR @S466338770@
+2 PAGE Harris County Clerk's Office; Houston, Texas; Harris County, Texas, Marriage Records
+2 _APID 1,9168::26325074
+1 SOUR @S466339400@
+2 _APID 1,60183::2521235
+1 SOUR @S466341385@
+2 _APID 1,60525::131896156
+1 OBJE @O5@
+2 _PRIM Y
+1 OBJE @O13@
+0 @I182329820980@ INDI
+1 NAME Mollie /Croft/
+2 GIVN Mollie
+2 SURN Croft
+2 SOUR @S466338541@
+3 _APID 1,2442::160683545
+2 SOUR @S466341385@
+3 _APID 1,60525::130552274
+1 NAME Mollie /Krofheck/
+2 GIVN Mollie
+2 SURN Krofheck
+2 SOUR @S466339400@
+3 _APID 1,60183::2521248
+1 NAME Malchi /Krawcryk/
+2 GIVN Malchi
+2 SURN Krawcryk
+2 SOUR @S466346322@
+3 PAGE The National Archives at Fort Worth; Fort Worth, Texas; Record Group Title: Records of District Courts of the United States, 1685-2009; Record Group Number: 21
+3 _APID 1,2509::900156392
+1 NAME Molly /Croft/
+2 GIVN Molly
+2 SURN Croft
+2 SOUR @S466338562@
+3 _APID 1,2238::109835472
+1 NAME Mollie /Krofheck/
+2 GIVN Mollie
+2 SURN Krofheck
+2 SOUR @S466338770@
+3 _APID 1,9168::926325074
+1 NAME Mollie /Krafcheck/
+2 GIVN Mollie
+2 SURN Krafcheck
+2 SOUR @S466338293@
+3 _APID 1,8781::302676661
+1 SEX F
+1 FAMC @F8@
+1 FAMS @F19@
+1 BIRT
+2 DATE 15 May 1905
+2 PLAC Zachodniopomorskie, Poland
+2 SOUR @S466338541@
+3 _APID 1,2442::160683545
+2 SOUR @S466341385@
+3 _APID 1,60525::130552274
+1 EVEN
+2 TYPE Arrival
+2 DATE 1921
+2 SOUR @S466338630@
+3 _APID 1,6224::63351684
+1 RESI
+2 DATE 1930
+2 PLAC Houston, Houston, Harris, Texas, USA
+2 SOUR @S466338630@
+3 _APID 1,6224::63351684
+1 RESI
+2 DATE 1932
+2 PLAC Houston, Texas, USA
+2 SOUR @S466346305@
+3 _APID 1,2469::400363401
+1 RESI
+2 DATE 1935
+2 PLAC Houston, Harris, Texas
+2 SOUR @S466338541@
+3 _APID 1,2442::160683545
+1 RESI
+2 DATE 1940
+2 PLAC , Houston, Harris, Texas, USA
+2 SOUR @S466338541@
+3 _APID 1,2442::160683545
+1 DEAT
+2 DATE 30-Jan-1947
+2 PLAC Houston, Harris County, Texas, USA
+2 SOUR @S466341385@
+3 _APID 1,60525::130552274
+1 BURI
+2 PLAC Houston, Harris County, Texas, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::130552274
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 190171700676:1030:24500409
+2 _APID 36217153018:1030:70208803
+2 _APID 290040649072:1030:89905403
+2 _APID 170121199374:1030:113704099
+1 SOUR @S466338562@
+2 _APID 1,2238::109835472
+1 SOUR @S466338541@
+2 _APID 1,2442::160683545
+1 SOUR @S466346305@
+2 _APID 1,2469::400363401
+1 SOUR @S466346322@
+2 PAGE The National Archives at Fort Worth; Fort Worth, Texas; Record Group Title: Records of District Courts of the United States, 1685-2009; Record Group Number: 21
+2 _APID 1,2509::900156392
+1 SOUR @S466338630@
+2 _APID 1,6224::63351684
+1 SOUR @S466338293@
+2 _APID 1,8781::302676661
+1 SOUR @S466338770@
+2 _APID 1,9168::926325074
+1 SOUR @S466339400@
+2 _APID 1,60183::2521248
+1 SOUR @S466341385@
+2 _APID 1,60525::130552274
+1 OBJE @O4@
+2 _PRIM Y
+0 @I182329821622@ INDI
+1 NAME Susan B. /Thomas/
+2 GIVN Susan B.
+2 SURN Thomas
+2 SOUR @S466339346@
+3 _APID 1,6742::7621682
+2 SOUR @S466339160@
+3 _APID 1,7602::61594541
+1 NAME Susan /Mullen/
+2 GIVN Susan
+2 SURN Mullen
+1 NAME Susan B. /Mullins/
+2 GIVN Susan B.
+2 SURN Mullins
+2 SOUR @S466338308@
+3 _APID 1,8795::582765
+1 SEX F
+1 FAMS @F18@
+1 BIRT
+2 DATE 19 February 1857
+2 PLAC Tennessee, USA
+2 SOUR @S466339191@
+3 _APID 1,2272::771543508
+2 SOUR @S466339160@
+3 _APID 1,7602::61594541
+1 BIRT
+2 DATE 19 February 1857
+2 PLAC Courtland, Cass County, Texas, USA
+1 BIRT
+2 DATE 19 February 1857
+2 PLAC Texas
+1 RESI
+2 DATE 1880
+2 PLAC Prairie Plains, Grimes, Texas, USA
+2 SOUR @S466339346@
+3 _APID 1,6742::7621682
+1 RESI
+2 DATE 1900
+2 PLAC Justice Precinct 8, Grimes, Texas, USA
+2 SOUR @S466339160@
+3 _APID 1,7602::61594541
+1 RESI
+2 DATE 1910
+2 PLAC Justice Precinct 8, Grimes, Texas, USA
+2 SOUR @S466339250@
+3 _APID 1,7884::129851046
+1 DEAT
+2 DATE 27 December 1928
+2 PLAC Grimes, Texas, United States
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 765559253:1030:8733552
+2 _APID 142175254481:1030:67146332
+2 _APID 34377820823:1030:78068562
+2 _APID 390059581954:1030:107377775
+1 SOUR @S466339191@
+2 _APID 1,2272::771543508
+1 SOUR @S466339346@
+2 _APID 1,6742::7621682
+1 SOUR @S466339160@
+2 _APID 1,7602::61594541
+1 SOUR @S466339250@
+2 _APID 1,7884::129851046
+1 SOUR @S466338308@
+2 _APID 1,8795::582765
+0 @I182329821623@ INDI
+1 NAME Francis Marion /Thomas/
+2 GIVN Francis Marion
+2 SURN Thomas
+2 SOUR @S466339191@
+3 PAGE Texas Department of State Health Services; Austin Texas, USA; Texas Death Certificates, 1903–1982
+3 _APID 1,2272::83225211
+2 SOUR @S466339160@
+3 _APID 1,7602::61594540
+2 SOUR @S466341385@
+3 _APID 1,60525::93425122
+1 NAME Francis "Frank" Marion /Thomas/
+2 GIVN Francis "Frank" Marion
+2 SURN Thomas
+1 NAME Marian F. /Thomas/
+2 GIVN Marian F.
+2 SURN Thomas
+2 SOUR @S466339346@
+3 _APID 1,6742::6871828
+1 SEX M
+1 FAMC @F24@
+1 FAMS @F18@
+1 BIRT
+2 DATE 9 aug 1852
+2 PLAC Bedies, Grimes, Texas, USA
+2 SOUR @S466339160@
+3 _APID 1,7602::61594540
+2 SOUR @S466341385@
+3 _APID 1,60525::93425122
+1 RESI
+2 DATE 1870
+2 PLAC , Crossie Clessie, Grimes, Texas, USA
+2 SOUR @S466342329@
+3 PAGE Year: 1870; Census Place: Grimes, Texas; Roll: M593_1588; Page: 312B
+3 _APID 1,7163::14503464
+1 RESI
+2 DATE 1880
+2 PLAC Prairie Plains, Grimes, Texas, USA
+2 SOUR @S466339346@
+3 _APID 1,6742::6871828
+1 RESI
+2 DATE 1900
+2 PLAC Justice Precinct 8, Grimes, Texas, USA
+2 SOUR @S466339160@
+3 _APID 1,7602::61594540
+1 RESI
+2 DATE 1910
+2 PLAC Justice Precinct 8, Grimes, Texas, USA
+2 SOUR @S466339250@
+3 PAGE Year: 1910; Census Place: Justice Precinct 8, Grimes, Texas; Roll: T624_1555; Page: 7B; Enumeration District: 0039; FHL microfilm: 1375568
+3 _APID 1,7884::28069817
+1 DEAT
+2 DATE 20 January 1922
+2 PLAC Mustang, Grimes, Texas, USA
+1 DEAT
+2 DATE 20 January 1922
+2 PLAC Shiro, Grimes County, Texas, United States of America
+1 DEAT
+2 DATE 20 January 1922
+2 PLAC Shiro, Grimes County, Texas, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::93425122
+1 BURI
+2 PLAC Shiro, Grimes County, Texas, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::93425122
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 370151071191:1030:7334405
+2 _APID -887631700:1030:8733552
+2 _APID 142175379219:1030:67146332
+2 _APID 34377820822:1030:78068562
+2 _APID 390059581310:1030:107377775
+2 _APID 382124392148:1030:108684020
+2 _APID 422286701929:1030:176188984
+1 SOUR @S466339191@
+2 _APID 1,2272::81543508
+1 SOUR @S466339191@
+2 PAGE Texas Department of State Health Services; Austin Texas, USA; Texas Death Certificates, 1903–1982
+2 _APID 1,2272::83225211
+1 SOUR @S466339346@
+2 _APID 1,6742::6871828
+1 SOUR @S466342329@
+2 PAGE Year: 1870; Census Place: Grimes, Texas; Roll: M593_1588; Page: 312B
+2 _APID 1,7163::14503464
+1 SOUR @S466339160@
+2 _APID 1,7602::61594540
+1 SOUR @S466339250@
+2 PAGE Year: 1910; Census Place: Justice Precinct 8, Grimes, Texas; Roll: T624_1555; Page: 7B; Enumeration District: 0039; FHL microfilm: 1375568
+2 _APID 1,7884::28069817
+1 SOUR @S466338308@
+2 PAGE Texas Department of State Health Services; Austin, Texas
+2 _APID 1,8795::620494
+1 SOUR @S466341385@
+2 _APID 1,60525::93425122
+1 OBJE @O17@
+2 _PRIM Y
+1 OBJE @O12@
+1 OBJE @O10@
+1 OBJE @O9@
+1 OBJE @O3@
+0 @I182329823816@ INDI
+1 NAME John Henry /Kennard/
+2 GIVN John Henry
+2 SURN Kennard
+2 SOUR @S466341385@
+3 _APID 1,60525::113216442
+1 NAME John /Kennard/
+2 GIVN John
+2 SURN Kennard
+2 SOUR @S466339191@
+3 _APID 1,2272::60370073
+1 SEX M
+1 FAMS @F12@
+1 BIRT
+2 DATE 23 June 1852
+2 PLAC Texas, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::113216442
+1 RESI
+2 DATE 1900
+2 PLAC Justice Precinct 1, Grimes, Texas, USA
+2 SOUR @S466339160@
+3 _APID 1,7602::61574965
+1 DEAT
+2 DATE 12 November 1929
+2 PLAC Anderson, Grimes County, Texas, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::113216442
+1 BURI
+2 PLAC Anderson, Grimes County, Texas, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::113216442
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 28436317281:1030:14569534
+2 _APID 272267829849:1030:172382839
+1 SOUR @S466339191@
+2 _APID 1,2272::60370073
+1 SOUR @S466339160@
+2 _APID 1,7602::61574965
+1 SOUR @S466341385@
+2 _APID 1,60525::113216442
+0 @I182329823847@ INDI
+1 NAME Hattie /Kennard/
+2 GIVN Hattie
+2 SURN Kennard
+2 SOUR @S466341385@
+3 _APID 1,60525::113216638
+1 NAME Hazeltine Hattie  /Kennard Brown/
+2 GIVN Hazeltine Hattie 
+2 SURN Kennard Brown
+1 NAME Hattie /Brown/
+2 GIVN Hattie
+2 SURN Brown
+2 SOUR @S466339191@
+3 _APID 1,2272::750370073
+1 SEX F
+1 FAMS @F12@
+1 BIRT
+2 DATE 31 July 1856
+2 PLAC Perry Co, AL
+2 SOUR @S466341385@
+3 _APID 1,60525::113216638
+1 RESI
+2 DATE 1900
+2 PLAC Justice Precinct 1, Grimes, Texas, USA
+2 SOUR @S466339160@
+3 _APID 1,7602::61574966
+1 DEAT
+2 DATE 4 March 1948
+2 PLAC Navasota, Grimes County, Texas, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::113216638
+1 BURI
+2 PLAC Anderson, Grimes County, Texas, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::113216638
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 28436367221:1030:14569534
+2 _APID 272267828510:1030:172382839
+1 SOUR @S466339191@
+2 _APID 1,2272::750370073
+1 SOUR @S466339160@
+2 _APID 1,7602::61574966
+1 SOUR @S466341385@
+2 _APID 1,60525::113216638
+0 @I182329826202@ INDI
+1 NAME Lottie Robison /Robison/
+2 GIVN Lottie Robison
+2 SURN Robison
+2 SOUR @S466339470@
+3 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
+3 _APID 1,61843::596015595
+1 NAME Lotter /Crowley/
+2 GIVN Lotter
+2 SURN Crowley
+2 SOUR @S466338541@
+3 _APID 1,2442::155440813
+1 SEX F
+1 FAMS @F2@
+1 BIRT
+2 DATE abt 1902
+2 PLAC Louisiana
+2 SOUR @S466338541@
+3 _APID 1,2442::155440813
+2 SOUR @S466339470@
+3 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
+3 _APID 1,61843::596015595
+1 RESI
+2 DATE 1935
+2 PLAC Gregg, Texas
+2 SOUR @S466338541@
+3 _APID 1,2442::155440813
+1 RESI
+2 DATE 1940
+2 PLAC J P #7, Gregg, Texas, USA
+2 SOUR @S466338541@
+3 _APID 1,2442::155440813
+1 RESI
+2 PLAC Crawley
+2 SOUR @S466339470@
+3 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
+3 _APID 1,61843::596015595
+1 DEAT
+2 DATE 29 Jul 1991
+2 PLAC Norman, Okla.
+2 SOUR @S466339470@
+3 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
+3 _APID 1,61843::596015595
+1 BURI
+2 DATE 2 Aug
+2 PLAC Long-view, Texas
+2 SOUR @S466339470@
+3 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
+3 _APID 1,61843::596015595
+1 SOUR @S466338541@
+2 _APID 1,2442::155440813
+1 SOUR @S466339470@
+2 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
+2 _APID 1,61843::596015595
+0 @I182329826210@ INDI
+1 NAME John Earl /Crawley/
+2 GIVN John Earl
+2 SURN Crawley
+2 SOUR @S466339470@
+3 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
+3 _APID 1,61843::353859673
+1 NAME John E. /Crawley/
+2 GIVN John E.
+2 SURN Crawley
+2 SOUR @S466338593@
+3 PAGE Longview News-Journal; Publication Date: 11/ Apr/ 1954; Publication Place: Longview, Texas, USA; URL: https://www.newspapers.com/image/190894835/?article=29daaf9d-b7bb-42c9-9c1c-e71ee53eeeee&focus=0,0.031953633,0.33818415,0.48768082&xid=3398
+3 _APID 1,62116::201172807
+1 NAME Gehu Ed I /Crowley/
+2 GIVN Gehu Ed I
+2 SURN Crowley
+2 SOUR @S466338541@
+3 _APID 1,2442::155440810
+1 SEX M
+1 FAMC @F13@
+1 FAMS @F2@
+1 BIRT
+2 DATE 21 Feb 1903
+2 PLAC Marshall, Texas
+2 SOUR @S466339191@
+3 PAGE Texas Department of State Health Services; Austin Texas, USA
+3 _APID 1,2272::23487587
+2 SOUR @S466338541@
+3 _APID 1,2442::155440810
+1 RESI
+2 DATE 1935
+2 PLAC Gregg, Texas
+2 SOUR @S466338541@
+3 _APID 1,2442::155440810
+1 RESI
+2 DATE 1940
+2 PLAC J P #7, Gregg, Texas, USA
+2 SOUR @S466338541@
+3 _APID 1,2442::155440810
+1 RESI
+2 PLAC Longview, Gregg, Texas, USA
+2 SOUR @S466339191@
+3 PAGE Texas Department of State Health Services; Austin Texas, USA
+3 _APID 1,2272::23487587
+1 DEAT
+2 DATE 2 Jun 1953
+2 PLAC Gladewater, Gregg, Texas, USA
+2 SOUR @S466339191@
+3 PAGE Texas Department of State Health Services; Austin Texas, USA
+3 _APID 1,2272::23487587
+1 SOUR @S466339191@
+2 PAGE Texas Department of State Health Services; Austin Texas, USA
+2 _APID 1,2272::23487587
+1 SOUR @S466338541@
+2 _APID 1,2442::155440810
+1 SOUR @S466339470@
+2 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
+2 _APID 1,61843::353859673
+1 SOUR @S466338593@
+2 PAGE Longview News-Journal; Publication Date: 11/ Apr/ 1954; Publication Place: Longview, Texas, USA; URL: https://www.newspapers.com/image/190894835/?article=29daaf9d-b7bb-42c9-9c1c-e71ee53eeeee&focus=0,0.031953633,0.33818415,0.48768082&xid=3398
+2 _APID 1,62116::201172807
+1 OBJE @O19@
+2 _PRIM Y
+1 OBJE @O8@
+0 @I182329830195@ INDI
+1 NAME James B. /Crawley/
+2 GIVN James B.
+2 SURN Crawley
+2 SOUR @S466339470@
+3 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
+3 _APID 1,61843::354176261
+1 NAME James B /Crowley/
+2 GIVN James B
+2 SURN Crowley
+2 SOUR @S466338541@
+3 _APID 1,2442::155440815
+1 SEX M
+1 FAMC @F2@
+1 BIRT
+2 DATE abt 1927
+2 PLAC Louisiana
+2 SOUR @S466338541@
+3 _APID 1,2442::155440815
+1 RESI
+2 DATE 1935
+2 PLAC Gregg, Texas
+2 SOUR @S466338541@
+3 _APID 1,2442::155440815
+1 RESI
+2 DATE 1940
+2 PLAC J P #7, Gregg, Texas, USA
+2 SOUR @S466338541@
+3 _APID 1,2442::155440815
+1 SOUR @S466338541@
+2 _APID 1,2442::155440815
+1 SOUR @S466339470@
+2 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
+2 _APID 1,61843::354176261
+0 @I182329830196@ INDI
+1 NAME Mary Anne /Convis/
+2 GIVN Mary Anne
+2 SURN Convis
+2 SOUR @S466339470@
+3 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
+3 _APID 1,61843::354413454
+1 NAME Mary Ann /Crowley/
+2 GIVN Mary Ann
+2 SURN Crowley
+2 SOUR @S466338541@
+3 _APID 1,2442::155440817
+1 SEX F
+1 FAMC @F2@
+1 BIRT
+2 DATE abt 1930
+2 PLAC Louisiana
+2 SOUR @S466338541@
+3 _APID 1,2442::155440817
+1 RESI
+2 DATE 1935
+2 PLAC Gregg, Texas
+2 SOUR @S466338541@
+3 _APID 1,2442::155440817
+1 RESI
+2 DATE 1940
+2 PLAC J P #7, Gregg, Texas, USA
+2 SOUR @S466338541@
+3 _APID 1,2442::155440817
+1 SOUR @S466338541@
+2 _APID 1,2442::155440817
+1 SOUR @S466339470@
+2 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
+2 _APID 1,61843::354413454
+0 @I182329830596@ INDI
+1 NAME Frank R /Crawley/
+2 GIVN Frank R
+2 SURN Crawley
+2 SOUR @S466339191@
+3 _APID 1,2272::83487587
+1 SEX M
+1 FAMS @F13@
+1 BIRT
+2 PLAC Texas, USA
+2 SOUR @S466339191@
+3 _APID 1,2272::83487587
+1 SOUR @S466339191@
+2 _APID 1,2272::83487587
+0 @I182329830598@ INDI
+1 NAME Mary /Rain/
+2 GIVN Mary
+2 SURN Rain
+2 SOUR @S466339191@
+3 _APID 1,2272::773487587
+1 SEX F
+1 FAMS @F13@
+1 BIRT
+2 PLAC Texas, USA
+2 SOUR @S466339191@
+3 _APID 1,2272::773487587
+1 SOUR @S466339191@
+2 _APID 1,2272::773487587
+0 @I182329830948@ INDI
+1 NAME James Avery /Thomas/
+2 GIVN James Avery
+2 SURN Thomas
+2 SOUR @S528276035@
+3 PAGE Texas State Library and Archives Commission; Austin, TX, USA; 1867 Voter Registration Lists; Reel Number: 6
+3 _APID 1,2274::50274
+2 SOUR @S466341385@
+3 _APID 1,60525::43662137
+1 NAME Jim /Thomas/
+2 GIVN Jim
+2 SURN Thomas
+2 SOUR @S466339191@
+3 PAGE Texas Department of State Health Services; Austin Texas, USA
+3 _APID 1,2272::83332999
+1 SEX M
+1 FAMC @F23@
+1 FAMS @F24@
+1 BIRT
+2 DATE 31 Oct 1812
+2 PLAC Baldwin, Georgia, USA
+2 SOUR @S528276035@
+3 PAGE Texas State Library and Archives Commission; Austin, TX, USA; 1867 Voter Registration Lists; Reel Number: 6
+3 _APID 1,2274::50274
+2 SOUR @S466341385@
+3 _APID 1,60525::43662137
+1 BIRT
+2 DATE abt 1816
+2 PLAC Tennessee
+2 SOUR @S466345033@
+3 PAGE Year: 1850; Census Place: Grimes, Texas; Roll: 910; Page: 386b
+3 _APID 1,8054::6962455
+1 BIRT
+2 DATE 31 Oct 1812
+2 PLAC Alabama, USA
+2 SOUR @S466339191@
+3 PAGE Texas Department of State Health Services; Austin Texas, USA
+3 _APID 1,2272::83332999
+1 MARR
+2 DATE 28 Apr 1842
+2 PLAC Montgomery, Texas
+1 RESI
+2 DATE 1850
+2 PLAC Grimes, Texas, USA
+2 SOUR @S466345033@
+3 PAGE Year: 1850; Census Place: Grimes, Texas; Roll: 910; Page: 386b
+3 _APID 1,8054::6962455
+1 RESI
+2 DATE 1864
+2 PLAC Jackson, Georgia, United States
+2 SOUR @S466342668@
+3 _APID 1,3007::20756
+1 RESI
+2 DATE 3 Aug 1867
+2 PLAC Grimes, Texas, USA
+2 SOUR @S528276035@
+3 PAGE Texas State Library and Archives Commission; Austin, TX, USA; 1867 Voter Registration Lists; Reel Number: 6
+3 _APID 1,2274::50274
+1 _MILT
+2 PLAC Alabama
+2 SOUR @S466344998@
+3 _APID 1,1138::2671992
+1 RESI
+2 PLAC Alabama, United States
+2 SOUR @S466342679@
+3 _APID 1,1736::124710
+1 DEAT
+2 DATE 28 April 1865
+2 PLAC Bedias, Grimes, Texas, United States
+2 SOUR @S466341385@
+3 _APID 1,60525::43662137
+1 BURI
+2 PLAC Shiro, Grimes County, Texas, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::43662137
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 370142938330:1030:7334405
+2 _APID -887698205:1030:8733552
+2 _APID 34377820824:1030:78068562
+2 _APID 390166846888:1030:107377775
+2 _APID 382124392150:1030:108684020
+2 _APID 422286886918:1030:176188984
+1 SOUR @S466344998@
+2 _APID 1,1138::2671992
+1 SOUR @S466345059@
+2 PAGE Historical Data Systems, Inc.; Duxbury, MA 02331; American Civil War Research Database
+2 _APID 1,1555::1738375
+1 SOUR @S466342679@
+2 _APID 1,1736::124710
+1 SOUR @S466339191@
+2 PAGE Texas Department of State Health Services; Austin Texas, USA
+2 _APID 1,2272::83332999
+1 SOUR @S528276035@
+2 PAGE Texas State Library and Archives Commission; Austin, TX, USA; 1867 Voter Registration Lists; Reel Number: 6
+2 _APID 1,2274::50274
+1 SOUR @S466344994@
+2 PAGE National Archives and Records Administration (NARA); Washington, D.C.; Compiled Service Records of Confederate Soldiers Who Served in Organizations from the State of Alabama; Series Number: M311; Roll: 276
+2 DATA
+3 WWW http://www.footnote.com/image/#9074145
+2 _APID 1,2322::9074145
+1 SOUR @S466342668@
+2 _APID 1,3007::20756
+1 SOUR @S466345033@
+2 PAGE Year: 1850; Census Place: Grimes, Texas; Roll: 910; Page: 386b
+2 _APID 1,8054::6962455
+1 SOUR @S466338308@
+2 PAGE Texas Department of State Health Services; Austin, Texas
+2 _APID 1,8795::209665
+1 SOUR @S466338770@
+2 PAGE Montgomery County Clerk's Office; Conroe, Texas; Montgomery County, Texas, Marriage Records; The Book Series: 1; Volumes: 01; Pages: 42
+2 _APID 1,9168::1510642
+1 SOUR @S466338770@
+2 PAGE Johnson County Clerk's Office; Denton, Texas; Smith County Marriage Records
+2 _APID 1,9168::25576546
+1 SOUR @S466341385@
+2 _APID 1,60525::43662137
+1 OBJE @O11@
+2 _PRIM Y
+1 OBJE @O18@
+1 OBJE @O6@
+1 OBJE @O15@
+0 @I182329830951@ INDI
+1 NAME Amanda Katherine /Wheeler/
+2 GIVN Amanda Katherine
+2 SURN Wheeler
+1 NAME Amanda Katherine /Thomas/
+2 GIVN Amanda Katherine
+2 SURN Thomas
+2 SOUR @S466341385@
+3 _APID 1,60525::93425106
+1 NAME Mandy /Wheeler/
+2 GIVN Mandy
+2 SURN Wheeler
+2 SOUR @S466339191@
+3 _APID 1,2272::773332999
+1 SEX F
+1 FAMS @F24@
+1 BIRT
+2 DATE 15 May 1827
+2 PLAC Baldwin, Georgia, United States
+2 SOUR @S466341385@
+3 _APID 1,60525::93425106
+1 RESI
+2 DATE 1870
+2 PLAC , Crossie Clessie, Grimes, Texas, USA
+2 SOUR @S466342329@
+3 _APID 1,7163::10858530
+1 DEAT
+2 DATE 5 Sep 1896
+2 PLAC Bedias, Grimes, Texas, United States
+2 SOUR @S466341385@
+3 _APID 1,60525::93425106
+1 BURI
+2 PLAC Shiro, Grimes County, Texas, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::93425106
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 370151071013:1030:7334405
+2 _APID -887698204:1030:8733552
+2 _APID 34399586205:1030:78068562
+2 _APID 390166846891:1030:107377775
+2 _APID 382124392149:1030:108684020
+2 _APID 422286886921:1030:176188984
+1 SOUR @S466339191@
+2 _APID 1,2272::773332999
+1 SOUR @S466342329@
+2 _APID 1,7163::10858530
+1 SOUR @S466338308@
+2 _APID 1,8795::210851
+1 SOUR @S466338770@
+2 _APID 1,9168::1510643
+2 _APID 1,9168::925576546
+1 SOUR @S466341385@
+2 _APID 1,60525::93425106
+0 @I182329831915@ INDI
+1 NAME Jonathon  John C /Thomas/
+2 GIVN Jonathon  John C
+2 SURN Thomas
+1 SEX M
+1 FAMC @F1@
+1 FAMS @F23@
+1 BIRT
+2 DATE 1773
+2 PLAC Burke, Georgia, United States
+1 DEAT
+2 DATE 1816
+2 PLAC Montgomery, Montgomery, Texas, United States
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 25339125052:1030:7334405
+2 _APID 382124392151:1030:108684020
+2 _APID 422287146839:1030:176188984
+0 @I182329831917@ INDI
+1 NAME Phebe /Geryland/
+2 GIVN Phebe
+2 SURN Geryland
+1 SEX F
+1 FAMS @F23@
+1 BIRT
+2 DATE 1785
+2 PLAC South Carolina, United States
+1 DEAT
+2 DATE ABT 1850
+2 PLAC Montgomery, Walker, Texas, United States
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 370142938314:1030:7334405
+2 _APID 382124392152:1030:108684020
+2 _APID 422287146840:1030:176188984
+0 @I182329844252@ INDI
+1 NAME Joseph /Thomas/
+2 GIVN Joseph
+2 SURN Thomas
+1 SEX M
+1 FAMC @F11@
+1 FAMS @F1@
+1 BIRT
+2 DATE 1740
+2 PLAC Bertie, North Carolina, USA
+1 DEAT
+2 DATE 1815
+2 PLAC Edgefield, South Carolina, USA
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 132266356606:1030:64593985
+0 @I182329844273@ INDI
+1 NAME Joyce /Callahan/
+2 GIVN Joyce
+2 SURN Callahan
+1 SEX F
+1 FAMS @F1@
+1 BIRT
+2 DATE 1754
+2 PLAC , Edgefield, South Carolina, USA
+1 DEAT
+2 DATE 18 Dec 1821
+2 PLAC , West Feliciana Parrish, Louisiana, USA
+0 @I182329845193@ INDI
+1 NAME James E /Thomas/
+2 GIVN James E
+2 SURN Thomas
+1 SEX M
+1 FAMC @F14@
+1 FAMS @F11@
+1 BIRT
+2 DATE 1714
+2 PLAC New Kent, Nansemond County, Virginia
+1 MARR
+2 DATE 1741
+2 PLAC Bertie, NC
+1 DEAT
+2 DATE 22 Oct 1780
+2 PLAC Bertie, North Carolina
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 202143582565:1030:16610948
+2 _APID 132266356599:1030:64593985
+2 _APID 112102711516:1030:76687409
+2 _APID 202143582565:1030:16610948
+2 _APID 132266356599:1030:64593985
+2 _APID 112102711516:1030:76687409
+2 _APID 202143582565:1030:16610948
+2 _APID 132266356599:1030:64593985
+2 _APID 112102711516:1030:76687409
+1 SOUR @S466345864@
+2 _APID 1,2204::1067557
+0 @I182329846022@ INDI
+1 NAME Joseph /Thomas/
+2 GIVN Joseph
+2 SURN Thomas
+2 SOUR @S466345864@
+3 _APID 1,2204::1067559
+1 SEX M
+1 FAMS @F14@
+1 BIRT
+2 DATE 1680
+2 PLAC Nansemond, Virginia
+2 SOUR @S466345864@
+3 _APID 1,2204::1067559
+1 RESI
+2 DATE 6 Jan 1873
+2 PLAC Maryland
+2 SOUR @S466348760@
+3 _APID 1,8755::223660
+1 DEAT
+2 DATE 10 Dec 1735
+2 PLAC Bertie, North Carolina
+2 SOUR @S466345864@
+3 _APID 1,2204::1067559
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 202293258796:1030:16610948
+2 _APID 132267299101:1030:64593985
+2 _APID 112102723760:1030:76687409
+2 _APID 332259973260:1030:174071523
+2 _APID 102283085228:1030:176054618
+1 SOUR @S466345864@
+2 _APID 1,2204::1067559
+1 SOUR @S466348713@
+2 _APID 1,7836::1210209
+2 _APID 1,7836::1210210
+1 SOUR @S466348760@
+2 _APID 1,8755::223660
+0 @I182329846023@ INDI
+1 NAME (Eales) Elizabeth Alice /(Spivey) THOMAS/
+2 GIVN (Eales) Elizabeth Alice
+2 SURN (Spivey) THOMAS
+2 SOUR @S466345864@
+3 _APID 1,2204::1067560
+1 NAME Alice /Spivey/
+2 GIVN Alice
+2 SURN Spivey
+2 SOUR @S466348713@
+3 PAGE Source number: 728.000; Source type: Electronic Database; Number of Pages: 1; Submitter Code: PKS
+3 _APID 1,7836::1145962
+1 SEX F
+1 FAMC @F9@
+1 FAMS @F14@
+1 BIRT
+2 DATE 1 Sep 1687
+2 PLAC Nansemond, Virginia
+2 SOUR @S466345864@
+3 _APID 1,2204::1067560
+1 BIRT
+2 DATE 1 Sep 1687
+2 PLAC St Lancashire, England
+1 DEAT
+2 DATE 1740
+2 PLAC Bertie, North Carolina, United States
+2 SOUR @S466345864@
+3 _APID 1,2204::1067560
+1 DEAT
+2 DATE 1758
+2 PLAC Bertie, North Carolina, United States
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 202293258798:1030:16610948
+2 _APID 132267299256:1030:64593985
+2 _APID 112102723761:1030:76687409
+2 _APID 332259973262:1030:174071523
+2 _APID 102283084273:1030:176054618
+2 _APID 202293258798:1030:16610948
+2 _APID 132267299256:1030:64593985
+2 _APID 112102723761:1030:76687409
+2 _APID 332259973262:1030:174071523
+2 _APID 102283084273:1030:176054618
+2 _APID 202293258798:1030:16610948
+2 _APID 132267299256:1030:64593985
+2 _APID 112102723761:1030:76687409
+2 _APID 332259973262:1030:174071523
+2 _APID 102283084273:1030:176054618
+1 SOUR @S466345864@
+2 _APID 1,2204::1067560
+1 SOUR @S466348713@
+2 PAGE Source number: 728.000; Source type: Electronic Database; Number of Pages: 1; Submitter Code: PKS
+2 _APID 1,7836::1145962
+1 SOUR @S466348713@
+2 PAGE Source number: 1490.000; Source type: Electronic Database; Number of Pages: 1; Submitter Code: PKS
+2 _APID 1,7836::1211406
+1 SOUR @S466348760@
+2 PAGE The National Archives in Washington, DC; Washington, DC; Registers of Signatures of Depositors in Branches of the Freedman's Savings and Trust Company, 1865-1874; ARC Identifier: 566522; Record Group Number: 101; Record Group: Records of the Offic
+3 CONC e of the 
+2 _APID 1,8755::45223660
+0 @I182329846026@ INDI
+1 NAME Sarah /Thomas/
+2 GIVN Sarah
+2 SURN Thomas
+2 SOUR @S466345864@
+3 _APID 1,2204::1067558
+1 SEX F
+1 FAMS @F11@
+1 BIRT
+2 DATE 1718
+2 PLAC Bertie, North Carolina
+2 SOUR @S466345864@
+3 _APID 1,2204::1067558
+1 DEAT
+2 DATE 1806
+2 PLAC Bertie, North Carolina
+2 SOUR @S466345864@
+3 _APID 1,2204::1067558
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 132266356601:1030:64593985
+2 _APID 112102711663:1030:76687409
+1 SOUR @S466345864@
+2 _APID 1,2204::1067558
+0 @I182329846701@ INDI
+1 NAME Benjamin (Benard Harry) (Boruch Gerzko) /Croft (Kravchik)/
+2 GIVN Benjamin (Benard Harry) (Boruch Gerzko)
+2 SURN Croft (Kravchik)
+1 NAME Bernard (Baruch) Harry /Croft/
+2 GIVN Bernard (Baruch) Harry
+2 SURN Croft
+2 SOUR @S466341385@
+3 _APID 1,60525::130597050
+1 SEX M
+1 FAMC @F6@
+1 FAMS @F22@
+1 BIRT
+2 DATE 5 Mar 1877
+2 PLAC Kock, Siedlce, Russian Empire (presently, Kock, Poland)
+2 SOUR @S466341385@
+3 _APID 1,60525::130597050
+1 EVEN
+2 TYPE Arrival
+2 DATE 29 Mar 1913
+2 PLAC Galveston, Texas, USA
+2 SOUR @S466347712@
+3 PAGE The National Archives at Washington, D.C.; Washington, D.C.; Series Title: Passenger Lists of Vessels Arriving at Galveston, Texas, 1896-1951; ARC Number: M1359; Record Group Title: Records of the Immigration and Naturalization Service, 1787-2004
+4 CONC ; Record G
+3 _APID 1,8722::31386
+1 RESI
+2 DATE 1920
+2 PLAC Houston, Texas, USA
+2 SOUR @S466346305@
+3 _APID 1,2469::393690153
+1 EVEN
+2 TYPE Departure
+2 PLAC Bremen, Germany
+2 SOUR @S466347712@
+3 PAGE The National Archives at Washington, D.C.; Washington, D.C.; Series Title: Passenger Lists of Vessels Arriving at Galveston, Texas, 1896-1951; ARC Number: M1359; Record Group Title: Records of the Immigration and Naturalization Service, 1787-2004
+4 CONC ; Record G
+3 _APID 1,8722::31386
+1 RESI
+2 PLAC Russia
+2 SOUR @S466347712@
+3 PAGE The National Archives at Washington, D.C.; Washington, D.C.; Series Title: Passenger Lists of Vessels Arriving at Galveston, Texas, 1896-1951; ARC Number: M1359; Record Group Title: Records of the Immigration and Naturalization Service, 1787-2004
+4 CONC ; Record G
+3 _APID 1,8722::31386
+1 DEAT
+2 DATE 02 Dec 1940
+2 PLAC Houston, Harris County, Texas, USA
+2 SOUR @S466341385@
+3 _APID 1,60525::130597050
+1 BURI
+2 PLAC Houston, Harris County, Texas, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::130597050
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 28431359043:1030:16231684
+2 _APID 190171700872:1030:24500409
+2 _APID 360086183821:1030:32881120
+2 _APID 28202871622:1030:49945577
+2 _APID 36216557183:1030:70208803
+2 _APID 77004263652:1030:89905403
+2 _APID 212321018110:1030:157187077
+1 SOUR @S466339191@
+2 _APID 1,2272::100074680
+1 SOUR @S466346305@
+2 _APID 1,2469::393690153
+1 SOUR @S466346322@
+2 PAGE The National Archives at Fort Worth; Fort Worth, Texas; Record Group Title: Records of District Courts of the United States, 1685-2009; Record Group Number: 21
+2 _APID 1,2509::177428
+1 SOUR @S466347375@
+2 _APID 1,7488::1033943920
+1 SOUR @S466347712@
+2 PAGE The National Archives at Washington, D.C.; Washington, D.C.; Series Title: Passenger Lists of Vessels Arriving at Galveston, Texas, 1896-1951; ARC Number: M1359; Record Group Title: Records of the Immigration and Naturalization Service, 1787-2004
+3 CONC ; Record G
+2 _APID 1,8722::31386
+1 SOUR @S466341385@
+2 _APID 1,60525::130597050
+1 OBJE @O2@
+2 _PRIM Y
+1 OBJE @O16@
+0 @I182329846703@ INDI
+1 NAME Fannie (Feiga) /Lampart/
+2 GIVN Fannie (Feiga)
+2 SURN Lampart
+1 NAME Fannie (Faggi) /Croft/
+2 GIVN Fannie (Faggi)
+2 SURN Croft
+2 SOUR @S466341385@
+3 _APID 1,60525::130597059
+1 SEX F
+1 FAMS @F22@
+1 BIRT
+2 DATE 4 Oct 1870
+2 PLAC Kock, Siedlce, Russian Empire (presently, Kock, Poland)
+2 SOUR @S466341385@
+3 _APID 1,60525::130597059
+1 DEAT
+2 DATE 25 Nov 1952
+2 PLAC Houston, Harris, Texas, USA
+2 SOUR @S466341385@
+3 _APID 1,60525::130597059
+1 BURI
+2 PLAC Houston, Harris County, Texas, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::130597059
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 190171700873:1030:24500409
+2 _APID 360086183822:1030:32881120
+2 _APID 36216569522:1030:70208803
+2 _APID 77004263812:1030:89905403
+2 _APID 212321018111:1030:157187077
+1 SOUR @S466341385@
+2 _APID 1,60525::130597059
+0 @I182329846705@ INDI
+1 NAME Samuel /Croft (Kravchik)/
+2 GIVN Samuel
+2 SURN Croft (Kravchik)
+1 SEX M
+1 FAMC @F22@
+1 BIRT
+2 DATE 23 Dec 1896
+2 PLAC Kock, Siedlce, Russian Empire (presently, Kock, Poland)
+1 DEAT
+2 DATE 12 Mar 1965
+2 PLAC Houston, Harris, Texas
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 190063180732:1030:24500409
+2 _APID 36216569905:1030:70208803
+2 _APID 212321017244:1030:157187077
+0 @I182329846706@ INDI
+1 NAME William Bernard /Croft/
+2 GIVN William Bernard
+2 SURN Croft
+1 SEX M
+1 FAMC @F22@
+1 BIRT
+2 DATE 29 Apr 1905
+2 PLAC Kock, Siedlce, Russian Empire (presently, Kock, Poland)
+1 DEAT
+2 DATE 6 Oct 1960
+2 PLAC Houston, Harris County, Texas, USA
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 190171700766:1030:24500409
+2 _APID 36216570247:1030:70208803
+2 _APID 212321018120:1030:157187077
+0 @I182329846707@ INDI
+1 NAME Sarah /Croft (Kravchik) Stein/
+2 GIVN Sarah
+2 SURN Croft (Kravchik) Stein
+1 SEX F
+1 FAMC @F22@
+1 BIRT
+2 DATE 10 Dec 1908
+2 PLAC Kock, Siedlce, Russian Empire (presently, Kock, Poland)
+1 DEAT
+2 DATE 07 Dec 1987
+2 PLAC Houston, Harris County, Texas, USA
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 190171700874:1030:24500409
+2 _APID 36216173629:1030:70208803
+2 _APID 212321018121:1030:157187077
+0 @I182329846708@ INDI
+1 NAME Tobe Bella (Touba Bajla) /Croft (Kravchik)Lensky/
+2 GIVN Tobe Bella (Touba Bajla)
+2 SURN Croft (Kravchik)Lensky
+1 SEX F
+1 FAMC @F22@
+1 BIRT
+2 DATE 16 Aug 1900
+2 PLAC Kock, Siedlce, Russian Empire (presently, Kock, Poland)
+1 DEAT
+2 DATE 27 Nov 1974
+2 PLAC Houston, Harris, Texas, USA
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 190171700877:1030:24500409
+2 _APID 36217148770:1030:70208803
+2 _APID 212321018112:1030:157187077
+0 @I182329846712@ INDI
+1 NAME Mollie /Lass/
+2 GIVN Mollie
+2 SURN Lass
+1 SEX F
+1 FAMC @F22@
+1 BIRT
+2 DATE 17 May 1912
+2 PLAC Warszawa, Russian Empire (presently, Warszawa, Poland)
+1 DEAT
+2 DATE 03 Oct 1993
+2 PLAC Houston, TX
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 190171700876:1030:24500409
+2 _APID 36216569663:1030:70208803
+2 _APID 212321018118:1030:157187077
+0 @I182329847298@ INDI
+1 NAME Dorothy /Davidoff/
+2 GIVN Dorothy
+2 SURN Davidoff
+2 SOUR @S466339191@
+3 _APID 1,2272::85074680
+1 SEX F
+1 SOUR @S466339191@
+2 _APID 1,2272::85074680
+0 @I182329847524@ INDI
+1 NAME Malchi /Krawcryk/
+2 GIVN Malchi
+2 SURN Krawcryk
+2 SOUR @S466346322@
+3 _APID 1,2509::900156392
+1 SEX F
+1 FAMS @F20@
+1 SOUR @S466346322@
+2 _APID 1,2509::900156392
+0 @I182329851475@ INDI
+1 NAME Abram Jojna  /Krawczyk /
+2 GIVN Abram Jojna 
+2 SURN Krawczyk 
+1 SEX M
+1 FAMC @F5@
+1 FAMS @F6@
+1 BIRT
+2 DATE 1843
+2 PLAC Kock, Siedlce, Russian Empire (presently, Kock, Poland)
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 28431439911:1030:16231684
+2 _APID 28202958468:1030:49945577
+2 _APID 290042635753:1030:89905403
+2 _APID 212321019052:1030:157187077
+0 @I182329851477@ INDI
+1 NAME Sura /Kuperszlag/
+2 GIVN Sura
+2 SURN Kuperszlag
+1 SEX F
+1 FAMS @F6@
+1 BIRT
+2 DATE 1844
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 260051005884:1030:16231684
+2 _APID 292053086576:1030:49945577
+2 _APID 292054656336:1030:89905403
+2 _APID 212321019053:1030:157187077
+0 @I182329877240@ INDI
+1 NAME Lejb Wolf /Krawczyk/
+2 GIVN Lejb Wolf
+2 SURN Krawczyk
+1 SEX M
+1 FAMS @F5@
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 260051006015:1030:16231684
+2 _APID 292054656333:1030:89905403
+0 @I182329877272@ INDI
+1 NAME Frajda //
+2 GIVN Frajda
+1 SEX F
+1 FAMS @F5@
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 260051006026:1030:16231684
+0 @I182329882449@ INDI
+1 NAME Hyman /Krafcheck/
+2 GIVN Hyman
+2 SURN Krafcheck
+1 SEX M
+1 FAMS @F8@
+1 BIRT
+2 DATE 15 Jun 1873
+2 PLAC Radom, Radom, Russian Empire (presently, Radom, Poland)
+1 DEAT
+2 DATE 24 Dec 1947
+2 PLAC Houston, TX
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 77019233600:1030:89905403
+2 _APID 170121199256:1030:113704099
+0 @I182329882502@ INDI
+1 NAME Libby /Lipschitz/
+2 GIVN Libby
+2 SURN Lipschitz
+1 SEX F
+1 FAMC @F25@
+1 FAMS @F8@
+1 BIRT
+2 DATE 15 Apr 1881
+2 PLAC Radzyn Podlaskie, Poland
+1 DEAT
+2 DATE 6 Sep 1963
+2 PLAC Houston, TX
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 77019234907:1030:89905403
+2 _APID 170121199366:1030:113704099
+0 @I182329909801@ INDI
+1 NAME George Adolphus /Spivey/
+2 GIVN George Adolphus
+2 SURN Spivey
+1 SEX M
+1 FAMS @F9@
+1 BIRT
+2 DATE 1655
+2 PLAC Nansemond, Virginia, United States
+1 DEAT
+2 DATE 9 Feb 1742
+2 PLAC Chowan, North Carolina, United States
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 102283085226:1030:176054618
+0 @I182329909840@ INDI
+1 NAME Judath Judith /(Nichols) Bowers(Spivey)/
+2 GIVN Judath Judith
+2 SURN (Nichols) Bowers(Spivey)
+1 SEX F
+1 FAMS @F9@
+1 BIRT
+2 DATE abt 1662
+2 PLAC Nansemond, Virginia, United States
+1 DEAT
+2 DATE 19 May 1721
+2 PLAC Norfolk, Virginia, United States
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 102283085227:1030:176054618
+0 @I182330007515@ INDI
+1 NAME Harry /Skversky/
+2 GIVN Harry
+2 SURN Skversky
+2 SOUR @S466339470@
+3 PAGE Daily News; Publication Date: 21 Dec 1960; Publication Place: New York, New York, USA; URL: https://www.newspapers.com/image/456893159/?article=d332fe82-d5b0-4fec-9bc7-aaa850291e70&focus=0.46775594,0.45912024,0.6395189,0.5328585&xid=3355
+3 _APID 1,61843::517070785
+1 NAME Harry D /Squires/
+2 GIVN Harry D
+2 SURN Squires
+1 NAME Harry /Skversky/
+2 GIVN Harry
+2 SURN Skversky
+2 SOUR @S466494863@
+3 _APID 1,2536::734381
+1 NAME Harry /Skversky/
+2 GIVN Harry
+2 SURN Skversky
+2 SOUR @S466494854@
+3 _APID 1,61381::964084
+1 NAME Hany /Sames/
+2 GIVN Hany
+2 SURN Sames
+2 SOUR @S466338541@
+3 PAGE Year: 1940; Census Place: New York, Kings, New York; Roll: m-t0627-02583; Page: 3B; Enumeration District: 24-1424A
+3 _APID 1,2442::4267279
+1 SEX M
+1 FAMC @F15@
+1 FAMS @F4@
+1 BIRT
+2 DATE May 1897
+2 PLAC Pennsylvania
+2 SOUR @S466339470@
+3 PAGE Daily News; Publication Date: 21 Dec 1960; Publication Place: New York, New York, USA; URL: https://www.newspapers.com/image/456893159/?article=d332fe82-d5b0-4fec-9bc7-aaa850291e70&focus=0.46775594,0.45912024,0.6395189,0.5328585&xid=3355
+3 _APID 1,61843::517070785
+1 RESI
+2 DATE 1900
+2 PLAC Philadelphia Ward 2, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339160@
+3 PAGE Year: 1900; Census Place: Philadelphia Ward 2, Philadelphia, Pennsylvania; Page: 15; Enumeration District: 0039; FHL microfilm: 1241452
+3 _APID 1,7602::52638441
+1 RESI
+2 DATE 1910
+2 PLAC Philadelphia Ward 1, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339250@
+3 PAGE Year: 1910; Census Place: Philadelphia Ward 1, Philadelphia, Pennsylvania; Roll: T624_1385; Page: 12B; Enumeration District: 0010; FHL microfilm: 1375398
+3 _APID 1,7884::113572553
+1 RESI
+2 DATE 1918
+2 PLAC Philadelphia, Pennsylvania, USA
+2 SOUR @S466346305@
+3 _APID 1,2469::166033927
+1 RESI
+2 DATE 1920
+2 PLAC Philadelphia Ward 39, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339223@
+3 PAGE Year: 1920; Census Place: Philadelphia Ward 39, Philadelphia, Pennsylvania; Roll: T625_1640; Page: 6A; Enumeration District: 1427
+3 _APID 1,6061::70668201
+1 RESI
+2 DATE 1930
+2 PLAC Brooklyn (Districts 751-1000), Brooklyn, Kings, New York, USA
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Brooklyn, Kings, New York; Page: 9A; Enumeration District: 0888; FHL microfilm: 2341274
+3 _APID 1,6224::40635543
+1 RESI
+2 DATE 1935
+2 PLAC New York, Kings, New York
+2 SOUR @S466338541@
+3 PAGE Year: 1940; Census Place: New York, Kings, New York; Roll: m-t0627-02583; Page: 3B; Enumeration District: 24-1424A
+3 _APID 1,2442::4267279
+1 RESI
+2 DATE 1940
+2 PLAC Borough of Brooklyn, New York, Kings, New York, USA
+2 SOUR @S466338541@
+3 PAGE Year: 1940; Census Place: New York, Kings, New York; Roll: m-t0627-02583; Page: 3B; Enumeration District: 24-1424A
+3 _APID 1,2442::4267279
+1 DEAT
+2 DATE 19 Dec 1960
+2 PLAC 125 Ocean Parkway, Brooklyn
+2 SOUR @S466339470@
+3 PAGE Daily News; Publication Date: 21 Dec 1960; Publication Place: New York, New York, USA; URL: https://www.newspapers.com/image/456893159/?article=d332fe82-d5b0-4fec-9bc7-aaa850291e70&focus=0.46775594,0.45912024,0.6395189,0.5328585&xid=3355
+3 _APID 1,61843::517070785
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 100108974593:1030:50532568
+2 _APID 212025765423:1030:56414477
+2 _APID 422073958555:1030:156502202
+2 _APID 102158136771:1030:166435644
+2 _APID 202161541379:1030:166586648
+2 _APID 412227649234:1030:171597079
+1 SOUR @S466338541@
+2 PAGE Year: 1940; Census Place: New York, Kings, New York; Roll: m-t0627-02583; Page: 3B; Enumeration District: 24-1424A
+2 _APID 1,2442::4267279
+1 SOUR @S466346305@
+2 _APID 1,2469::166033927
+1 SOUR @S466494863@
+2 _APID 1,2536::734381
+1 SOUR @S466495072@
+2 PAGE Gale Research Company; Detroit, Michigan; Accession Number: 4396749
+2 _APID 1,4394::5421854
+1 SOUR @S466339223@
+2 PAGE Year: 1920; Census Place: Philadelphia Ward 39, Philadelphia, Pennsylvania; Roll: T625_1640; Page: 6A; Enumeration District: 1427
+2 _APID 1,6061::70668201
+1 SOUR @S466338630@
+2 PAGE Year: 1930; Census Place: Brooklyn, Kings, New York; Page: 9A; Enumeration District: 0888; FHL microfilm: 2341274
+2 _APID 1,6224::40635543
+1 SOUR @S466339160@
+2 PAGE Year: 1900; Census Place: Philadelphia Ward 2, Philadelphia, Pennsylvania; Page: 15; Enumeration District: 0039; FHL microfilm: 1241452
+2 _APID 1,7602::52638441
+1 SOUR @S466339250@
+2 PAGE Year: 1910; Census Place: Philadelphia Ward 1, Philadelphia, Pennsylvania; Roll: T624_1385; Page: 12B; Enumeration District: 0010; FHL microfilm: 1375398
+2 _APID 1,7884::113572553
+1 SOUR @S466339379@
+2 _APID 1,60901::644335734
+1 SOUR @S466494854@
+2 _APID 1,61381::964084
+1 SOUR @S466495036@
+2 _APID 1,61461::802354
+1 SOUR @S466339470@
+2 PAGE Daily News; Publication Date: 21 Dec 1960; Publication Place: New York, New York, USA; URL: https://www.newspapers.com/image/456893159/?article=d332fe82-d5b0-4fec-9bc7-aaa850291e70&focus=0.46775594,0.45912024,0.6395189,0.5328585&xid=3355
+2 _APID 1,61843::517070785
+0 @I182330010081@ INDI
+1 NAME Eleanor /Yampolsky/
+2 GIVN Eleanor
+2 SURN Yampolsky
+1 NAME Eleanor /Yampolsky/
+2 GIVN Eleanor
+2 SURN Yampolsky
+1 NAME Eleanor /Yampolsky/
+2 GIVN Eleanor
+2 SURN Yampolsky
+2 SOUR @S466494863@
+3 _APID 1,2536::85564
+1 NAME Eleanor /Squires/
+2 GIVN Eleanor
+2 SURN Squires
+2 SOUR @S466338630@
+3 _APID 1,6224::40635535
+1 NAME Eleanor /Sames/
+2 GIVN Eleanor
+2 SURN Sames
+2 SOUR @S466338541@
+3 _APID 1,2442::4267280
+1 SEX F
+1 FAMS @F4@
+1 BIRT
+2 DATE abt 1903
+2 PLAC Philadelphia
+2 SOUR @S466338541@
+3 _APID 1,2442::4267280
+1 RESI
+2 DATE 1930
+2 PLAC Brooklyn (Districts 751-1000), Brooklyn, Kings, New York, USA
+2 SOUR @S466338630@
+3 _APID 1,6224::40635535
+1 RESI
+2 DATE 1935
+2 PLAC New York, Kings, New York
+2 SOUR @S466338541@
+3 _APID 1,2442::4267280
+1 RESI
+2 DATE 1940
+2 PLAC Borough of Brooklyn, New York, Kings, New York, USA
+2 SOUR @S466338541@
+3 _APID 1,2442::4267280
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 102159021523:1030:166435644
+1 SOUR @S466338541@
+2 _APID 1,2442::4267280
+1 SOUR @S466494863@
+2 _APID 1,2536::85564
+1 SOUR @S466338630@
+2 _APID 1,6224::40635535
+1 SOUR @S466339379@
+2 _APID 1,60901::794335734
+1 SOUR @S466494854@
+2 _APID 1,61381::900964084
+0 @I182330619639@ INDI
+1 NAME Irving /Squires/
+2 GIVN Irving
+2 SURN Squires
+2 SOUR @S466339379@
+3 _APID 1,60901::44335734
+1 SEX M
+1 FAMC @F4@
+1 BIRT
+2 DATE 8 Dec 1923
+2 PLAC Philadelphia, Pennsylvania
+2 SOUR @S466339379@
+3 _APID 1,60901::44335734
+1 RESI
+2 DATE 1930
+2 PLAC Brooklyn (Districts 751-1000), Brooklyn, Kings, New York, USA
+2 SOUR @S466338630@
+3 _APID 1,6224::40635568
+1 RESI
+2 DATE 1935
+2 PLAC New York, Kings, New York
+2 SOUR @S466338541@
+3 _APID 1,2442::4267281
+1 RESI
+2 DATE 1940
+2 PLAC Borough of Brooklyn, New York, Kings, New York, USA
+2 SOUR @S466338541@
+3 _APID 1,2442::4267281
+1 DEAT
+2 DATE 5 Apr 2002
+2 SOUR @S466339379@
+3 _APID 1,60901::44335734
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 102158013236:1030:166435644
+1 SOUR @S466338541@
+2 _APID 1,2442::4267281
+1 SOUR @S466338630@
+2 _APID 1,6224::40635568
+1 SOUR @S466339379@
+2 _APID 1,60901::44335734
+0 @I182330620723@ INDI
+1 NAME Benjamin /Skversky/
+2 GIVN Benjamin
+2 SURN Skversky
+2 SOUR @S466495930@
+3 PAGE The National Archives in Washington, D.C.; Washington, D.C.; Record Group Title: Records of District Courts of the United States; Record Group Number: 21
+3 _APID 1,2717::93741
+2 SOUR @S466339160@
+3 _APID 1,7602::52638433
+2 SOUR @S466341385@
+3 _APID 1,60525::181267996
+1 NAME Ben J /Skversky/
+2 GIVN Ben J
+2 SURN Skversky
+2 SOUR @S466339379@
+3 _APID 1,60901::609850127
+1 SEX M
+1 FAMC @F3@
+1 FAMS @F15@
+1 BIRT
+2 DATE Sep 1859
+2 PLAC Russia
+1 EVEN
+2 TYPE Arrival
+2 DATE 1884
+2 SOUR @S466339223@
+3 _APID 1,6061::70668197
+1 EVEN
+2 TYPE Arrival
+2 DATE 1885
+2 SOUR @S466339160@
+3 _APID 1,7602::52638433
+1 EVEN
+2 TYPE Arrival
+2 DATE 1888
+2 SOUR @S466339250@
+3 _APID 1,7884::25215835
+1 RESI
+2 DATE 1900
+2 PLAC Philadelphia Ward 2, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339160@
+3 _APID 1,7602::52638433
+1 RESI
+2 DATE 1910
+2 PLAC Philadelphia Ward 1, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339250@
+3 _APID 1,7884::25215835
+1 RESI
+2 DATE 1920
+2 PLAC Philadelphia Ward 39, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339223@
+3 _APID 1,6061::70668197
+1 NATU
+2 PLAC Pennsylvania, USA
+2 SOUR @S466495930@
+3 PAGE The National Archives in Washington, D.C.; Washington, D.C.; Record Group Title: Records of District Courts of the United States; Record Group Number: 21
+3 _APID 1,2717::93741
+1 DEAT
+2 DATE April 1925
+2 SOUR @S466341385@
+3 _APID 1,60525::181267996
+1 BURI
+2 PLAC Philadelphia, Philadelphia County, Pennsylvania, United States of America
+2 SOUR @S466341385@
+3 _APID 1,60525::181267996
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 100108974585:1030:50532568
+2 _APID 212025765007:1030:56414477
+2 _APID 422073946367:1030:156502202
+2 _APID 102159022526:1030:166435644
+2 _APID 202161542013:1030:166586648
+1 SOUR @S466346305@
+2 _APID 1,2469::571208324
+1 SOUR @S466495930@
+2 PAGE The National Archives in Washington, D.C.; Washington, D.C.; Record Group Title: Records of District Courts of the United States; Record Group Number: 21
+2 _APID 1,2717::93741
+1 SOUR @S466495981@
+2 PAGE Pennsylvania Historic and Museum Commission; Harrisburg, PA; Pennsylvania (State). Death Certificates, 1906-1968; Box Number: 2431; Certificate Number Range: 040501-043500
+2 _APID 1,5164::74945955
+1 SOUR @S466495981@
+2 PAGE Pennsylvania Historic and Museum Commission; Harrisburg, PA; Pennsylvania (State). Death Certificates, 1906-1968; Box Number: 2386; Certificate Number Range: 039001-041700
+2 _APID 1,5164::614792933
+1 SOUR @S466339223@
+2 _APID 1,6061::70668197
+1 SOUR @S466339160@
+2 _APID 1,7602::52638433
+1 SOUR @S466339250@
+2 _APID 1,7884::25215835
+1 SOUR @S466341385@
+2 _APID 1,60525::181267996
+1 SOUR @S466339379@
+2 _APID 1,60901::603559833
+2 _APID 1,60901::609850127
+0 @I182330620726@ INDI
+1 NAME Rose /Jablow/
+2 GIVN Rose
+2 SURN Jablow
+2 SOUR @S466339379@
+3 _APID 1,60901::753559833
+1 NAME Rose /Skversky/
+2 GIVN Rose
+2 SURN Skversky
+2 SOUR @S466346305@
+3 _APID 1,2469::571208323
+1 NAME Rose /Zablinsky/
+2 GIVN Rose
+2 SURN Zablinsky
+2 SOUR @S466339379@
+3 _APID 1,60901::759850127
+1 NAME Rose /Skversky/
+2 GIVN Rose
+2 SURN Skversky
+2 SOUR @S466495981@
+3 _APID 1,5164::89945955
+1 NAME Rose /Skversky/
+2 GIVN Rose
+2 SURN Skversky
+2 SOUR @S466495981@
+3 _APID 1,5164::764792933
+1 NAME Rosie /Skversky/
+2 GIVN Rosie
+2 SURN Skversky
+2 SOUR @S466339160@
+3 _APID 1,7602::52638434
+1 SEX F
+1 FAMC @F26@
+1 FAMS @F15@
+1 BIRT
+2 DATE Nov 1862
+2 PLAC Russia
+1 EVEN
+2 TYPE Arrival
+2 DATE 1884
+2 SOUR @S466339223@
+3 _APID 1,6061::70668198
+1 EVEN
+2 TYPE Arrival
+2 DATE 1885
+2 SOUR @S466339160@
+3 _APID 1,7602::52638434
+1 EVEN
+2 TYPE Arrival
+2 DATE 1888
+2 SOUR @S466339250@
+3 _APID 1,7884::113572546
+1 RESI
+2 DATE 1900
+2 PLAC Philadelphia Ward 2, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339160@
+3 _APID 1,7602::52638434
+1 RESI
+2 DATE 1910
+2 PLAC Philadelphia Ward 1, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339250@
+3 _APID 1,7884::113572546
+1 RESI
+2 DATE 1920
+2 PLAC Philadelphia Ward 39, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339223@
+3 _APID 1,6061::70668198
+1 RESI
+2 DATE 1935
+2 PLAC Atlantic City, New Jersey, USA
+2 SOUR @S466346305@
+3 _APID 1,2469::571208323
+1 DEAT
+2 DATE 15 Nov 1939
+2 PLAC Philadelphia, Philadelphia, Pennsylvania, USA
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 100108974587:1030:50532568
+2 _APID 212025765008:1030:56414477
+2 _APID 422073946411:1030:156502202
+2 _APID 102159022885:1030:166435644
+2 _APID 202161542534:1030:166586648
+1 SOUR @S466346305@
+2 _APID 1,2469::571208323
+1 SOUR @S466495981@
+2 _APID 1,5164::89945955
+2 _APID 1,5164::764792933
+1 SOUR @S466339223@
+2 _APID 1,6061::70668198
+1 SOUR @S466339160@
+2 _APID 1,7602::52638434
+1 SOUR @S466339250@
+2 _APID 1,7884::113572546
+1 SOUR @S466339379@
+2 _APID 1,60901::753559833
+2 _APID 1,60901::759850127
+0 @I182330621097@ INDI
+1 NAME Minie /Skversky/
+2 GIVN Minie
+2 SURN Skversky
+2 SOUR @S466339160@
+3 _APID 1,7602::52638435
+1 NAME Minnie /Fertman/
+2 GIVN Minnie
+2 SURN Fertman
+2 SOUR @S466495981@
+3 _APID 1,5164::14792933
+1 SEX F
+1 FAMC @F15@
+1 BIRT
+2 DATE 26 Jul 1887
+2 PLAC Russia
+2 SOUR @S466495981@
+3 _APID 1,5164::14792933
+2 SOUR @S466339160@
+3 _APID 1,7602::52638435
+1 EVEN
+2 TYPE Arrival
+2 DATE 1885
+2 SOUR @S466339160@
+3 _APID 1,7602::52638435
+1 EVEN
+2 TYPE Arrival
+2 DATE 1888
+2 SOUR @S466339250@
+3 _APID 1,7884::113572547
+1 RESI
+2 DATE 1900
+2 PLAC Philadelphia Ward 2, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339160@
+3 _APID 1,7602::52638435
+1 RESI
+2 DATE 1910
+2 PLAC Philadelphia Ward 1, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339250@
+3 _APID 1,7884::113572547
+1 DEAT
+2 DATE 13 Apr 1964
+2 PLAC Philadelphia, Philadelphia, Pennsylvania, USA
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 100108974514:1030:50532568
+2 _APID 212025764751:1030:56414477
+2 _APID 422073958559:1030:156502202
+2 _APID 202161542546:1030:166586648
+1 SOUR @S466495981@
+2 _APID 1,5164::14792933
+1 SOUR @S466339160@
+2 _APID 1,7602::52638435
+1 SOUR @S466339250@
+2 _APID 1,7884::113572547
+0 @I182330621099@ INDI
+1 NAME Simon /Skversky/
+2 GIVN Simon
+2 SURN Skversky
+2 SOUR @S466339160@
+3 _APID 1,7602::52638436
+1 SEX M
+1 FAMC @F15@
+1 BIRT
+2 DATE 25 May 1883
+2 PLAC Soviet Union
+2 SOUR @S466339160@
+3 _APID 1,7602::52638436
+2 SOUR @S466339379@
+3 _APID 1,60901::3559833
+1 EVEN
+2 TYPE Arrival
+2 DATE 1885
+2 SOUR @S466339160@
+3 _APID 1,7602::52638436
+1 EVEN
+2 TYPE Arrival
+2 DATE 1888
+2 SOUR @S466339250@
+3 _APID 1,7884::113572548
+1 RESI
+2 DATE 1900
+2 PLAC Philadelphia Ward 2, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339160@
+3 _APID 1,7602::52638436
+1 RESI
+2 DATE 1910
+2 PLAC Philadelphia Ward 1, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339250@
+3 _APID 1,7884::113572548
+1 DEAT
+2 DATE 18 Dec 1954
+2 PLAC Philadelphia, Philadelphia, Pennsylvania, USA
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 100108974588:1030:50532568
+2 _APID 212025765410:1030:56414477
+2 _APID 422073943312:1030:156502202
+2 _APID 202161542538:1030:166586648
+1 SOUR @S466339160@
+2 _APID 1,7602::52638436
+1 SOUR @S466339250@
+2 _APID 1,7884::113572548
+1 SOUR @S466339379@
+2 _APID 1,60901::3559833
+0 @I182330621100@ INDI
+1 NAME Louie /Skversky/
+2 GIVN Louie
+2 SURN Skversky
+2 SOUR @S466339160@
+3 _APID 1,7602::52638437
+1 SEX M
+1 FAMC @F15@
+1 BIRT
+2 DATE Sep 1885
+2 PLAC Russia
+2 SOUR @S466339160@
+3 _APID 1,7602::52638437
+1 EVEN
+2 TYPE Arrival
+2 DATE 1885
+2 SOUR @S466339160@
+3 _APID 1,7602::52638437
+1 EVEN
+2 TYPE Arrival
+2 DATE 1888
+2 SOUR @S466339250@
+3 _APID 1,7884::113572549
+1 RESI
+2 DATE 1900
+2 PLAC Philadelphia Ward 2, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339160@
+3 _APID 1,7602::52638437
+1 RESI
+2 DATE 1910
+2 PLAC Philadelphia Ward 1, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339250@
+3 _APID 1,7884::113572549
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 100108974589:1030:50532568
+2 _APID 212025765413:1030:56414477
+2 _APID 422073958561:1030:156502202
+2 _APID 202161542550:1030:166586648
+1 SOUR @S466339160@
+2 _APID 1,7602::52638437
+1 SOUR @S466339250@
+2 _APID 1,7884::113572549
+0 @I182330621101@ INDI
+1 NAME Frank /Skversky/
+2 GIVN Frank
+2 SURN Skversky
+2 SOUR @S466339160@
+3 _APID 1,7602::52638438
+1 NAME Frank B /Skversky/
+2 GIVN Frank B
+2 SURN Skversky
+2 SOUR @S466339379@
+3 _APID 1,60901::9850127
+1 SEX M
+1 FAMC @F15@
+1 BIRT
+2 DATE Sep 1887
+2 PLAC Pennsylvania, USA
+2 SOUR @S466339160@
+3 _APID 1,7602::52638438
+1 RESI
+2 DATE 1900
+2 PLAC Philadelphia Ward 2, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339160@
+3 _APID 1,7602::52638438
+1 RESI
+2 DATE 1910
+2 PLAC Philadelphia Ward 1, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339250@
+3 _APID 1,7884::113572550
+1 DEAT
+2 DATE 1 Apr 1965
+2 PLAC Philadelphia, Philadelphia, Pennsylvania, USA
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 100108974590:1030:50532568
+2 _APID 212025765415:1030:56414477
+2 _APID 422073958563:1030:156502202
+2 _APID 202161542552:1030:166586648
+1 SOUR @S466495981@
+2 _APID 1,5164::14945955
+1 SOUR @S466339160@
+2 _APID 1,7602::52638438
+1 SOUR @S466339250@
+2 _APID 1,7884::113572550
+1 SOUR @S466339379@
+2 _APID 1,60901::9850127
+0 @I182330621102@ INDI
+1 NAME Meyer /Skversky/
+2 GIVN Meyer
+2 SURN Skversky
+2 SOUR @S466339160@
+3 _APID 1,7602::52638439
+1 NAME Myer /Skversky/
+2 GIVN Myer
+2 SURN Skversky
+1 NAME Myer /Skversky/
+2 GIVN Myer
+2 SURN Skversky
+2 SOUR @S466339223@
+3 _APID 1,6061::70668199
+1 SEX M
+1 FAMC @F15@
+1 BIRT
+2 DATE Sep 1890
+2 PLAC Pennsylvania, USA
+2 SOUR @S466339160@
+3 _APID 1,7602::52638439
+1 RESI
+2 DATE 1900
+2 PLAC Philadelphia Ward 2, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339160@
+3 _APID 1,7602::52638439
+1 RESI
+2 DATE 1910
+2 PLAC Philadelphia Ward 1, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339250@
+3 _APID 1,7884::113572551
+1 RESI
+2 DATE 1920
+2 PLAC Philadelphia Ward 39, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339223@
+3 _APID 1,6061::70668199
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 100108974591:1030:50532568
+2 _APID 212025765417:1030:56414477
+2 _APID 422073958548:1030:156502202
+2 _APID 202161542541:1030:166586648
+1 SOUR @S466339223@
+2 _APID 1,6061::70668199
+1 SOUR @S466339160@
+2 _APID 1,7602::52638439
+1 SOUR @S466339250@
+2 _APID 1,7884::113572551
+0 @I182330621104@ INDI
+1 NAME David /Skversky/
+2 GIVN David
+2 SURN Skversky
+2 SOUR @S466339160@
+3 _APID 1,7602::52638440
+1 SEX M
+1 FAMC @F15@
+1 BIRT
+2 DATE Aug 1893
+2 PLAC Pennsylvania, USA
+2 SOUR @S466339160@
+3 _APID 1,7602::52638440
+1 RESI
+2 DATE 1900
+2 PLAC Philadelphia Ward 2, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339160@
+3 _APID 1,7602::52638440
+1 RESI
+2 DATE 1910
+2 PLAC Philadelphia Ward 1, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339250@
+3 _APID 1,7884::113572552
+1 RESI
+2 DATE 1920
+2 PLAC Philadelphia Ward 39, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339223@
+3 _APID 1,6061::70668200
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 100108974592:1030:50532568
+2 _APID 212025765420:1030:56414477
+2 _APID 422073958551:1030:156502202
+2 _APID 202161542543:1030:166586648
+1 SOUR @S466339223@
+2 _APID 1,6061::70668200
+1 SOUR @S466339160@
+2 _APID 1,7602::52638440
+1 SOUR @S466339250@
+2 _APID 1,7884::113572552
+0 @I182330623405@ INDI
+1 NAME Joseph /Skverski/
+2 GIVN Joseph
+2 SURN Skverski
+1 SEX M
+1 FAMS @F3@
+1 BIRT
+2 PLAC Russia
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 422073958535:1030:156502202
+2 _APID 202161542528:1030:166586648
+0 @I182330623407@ INDI
+1 NAME /Galcbie/
+2 SURN Galcbie
+1 SEX F
+1 FAMS @F3@
+1 BIRT
+2 PLAC Russia
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 422073958537:1030:156502202
+0 @I182330623409@ INDI
+1 NAME Jennie /Gersh/
+2 GIVN Jennie
+2 SURN Gersh
+1 SEX F
+1 FAMC @F3@
+1 BIRT
+2 DATE 1867
+2 PLAC Russia
+1 DEAT
+2 DATE 30 Jun 1921
+2 PLAC Philadelphia, Philadelphia, Pennsylvania, USA
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 422073958541:1030:156502202
+2 _APID 202161542532:1030:166586648
+0 @I182330623411@ INDI
+1 NAME Louis Lyon /Squires/
+2 GIVN Louis Lyon
+2 SURN Squires
+1 SEX M
+1 FAMC @F15@
+1 BIRT
+2 DATE 1886
+1 DEAT
+2 DATE 20 Oct 1944
+2 PLAC Cleveland, Cuyahoga, Ohio, USA
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 100108974594:1030:50532568
+0 @I182330623414@ INDI
+1 NAME Harry D. /Squires/
+2 GIVN Harry D.
+2 SURN Squires
+1 SEX M
+1 FAMC @F15@
+1 BIRT
+2 DATE 1883
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 100108974595:1030:50532568
+0 @I182330624087@ INDI
+1 NAME Jacob /Cohen/
+2 GIVN Jacob
+2 SURN Cohen
+1 SEX M
+1 FAMS @F26@
+1 BIRT
+2 DATE Abt. 1840
+2 PLAC Russia
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 102075501081:1030:50532568
+2 _APID 422073959304:1030:156502202
+0 @I182560184976@ INDI
+1 NAME Ashley Sarah /Thomas/
+2 GIVN Ashley Sarah
+2 SURN Thomas
+1 SEX F
+1 FAMC @F17@
+1 BIRT
+2 DATE 23 03 2001
+2 PLAC , Houston, Harris, Texas, USA
+0 @I182751598633@ INDI
+1 NAME Bessie /Lipschitz/
+2 GIVN Bessie
+2 SURN Lipschitz
+1 SEX F
+1 FAMS @F25@
+1 DEAT
+2 PLAC Radom, Radom, Russian Empire (presently, Radom, Poland)
+0 @F1@ FAM
+1 HUSB @I182329844252@
+1 WIFE @I182329844273@
+1 CHIL @I182329831915@
+0 @F2@ FAM
+1 HUSB @I182329826210@
+1 WIFE @I182329826202@
+1 CHIL @I182329830195@
+1 CHIL @I182329830196@
+1 CHIL @I182329819662@
+0 @F3@ FAM
+1 HUSB @I182330623405@
+1 WIFE @I182330623407@
+1 CHIL @I182330620723@
+1 CHIL @I182330623409@
+0 @F4@ FAM
+1 HUSB @I182330007515@
+1 WIFE @I182330010081@
+1 CHIL @I182330619639@
+1 CHIL @I182329818989@
+1 MARR
+2 DATE 1922
+2 PLAC Philadelphia, Philadelphia, Pennsylvania, United States
+0 @F5@ FAM
+1 HUSB @I182329877240@
+1 WIFE @I182329877272@
+1 CHIL @I182329851475@
+0 @F6@ FAM
+1 HUSB @I182329851475@
+1 WIFE @I182329851477@
+1 CHIL @I182329846701@
+1 MARR
+2 DATE 1863
+2 PLAC Kock, Lubelskie, Poland
+0 @F7@ FAM
+1 HUSB @I182329818989@
+1 WIFE @I182329820752@
+1 CHIL @I182329818814@
+1 MARR
+2 DATE 19 Sep 1954
+2 PLAC Harris, Texas, USA
+2 SOUR @S466338770@
+3 PAGE Johnson County Clerk's Office; Denton, Texas; Smith County Marriage Records; Pages: 2
+3 _HPID 1,9168::25283561
+3 _WPID 1,9168::925283561
+0 @F8@ FAM
+1 HUSB @I182329882449@
+1 WIFE @I182329882502@
+1 CHIL @I182329820980@
+0 @F9@ FAM
+1 HUSB @I182329909801@
+1 WIFE @I182329909840@
+1 CHIL @I182329846023@
+0 @F10@ FAM
+1 HUSB @I182329818890@
+1 WIFE @I182329819662@
+1 CHIL @I182329818803@
+1 MARR
+2 DATE 10 Apr 1954
+2 PLAC Spring-hill
+2 SOUR @S466338770@
+3 PAGE Grimes County Clerks Office; Anderson, Texas; Marriage Records
+3 _HPID 1,9168::134225572
+2 SOUR @S466338593@
+3 PAGE The Shreveport Journal; Publication Date: 23/ Apr/ 1954; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/600822411/?article=38093701-61e3-4d91-b1dd-9bec690fa599&focus=0.7255308,0.030304162,0.9573054,0.85438734&x
+4 CONC id=3398
+3 _WPID 1,62116::9295883
+3 _HPID 1,62116::68552100
+0 @F11@ FAM
+1 HUSB @I182329845193@
+1 WIFE @I182329846026@
+1 CHIL @I182329844252@
+1 MARR
+2 DATE 1741
+2 PLAC Bertie, North Carolina, American colonies
+1 MARR
+2 DATE 12 Jun 1769
+2 PLAC St Leonard, Shoreditch, England
+1 MARR
+2 DATE 8 Oct 1793
+2 PLAC Rutherford, North Carolina, USA
+1 MARR
+2 PLAC Bertie,NC
+0 @F12@ FAM
+1 HUSB @I182329823816@
+1 WIFE @I182329823847@
+1 CHIL @I182329819761@
+1 MARR
+2 DATE 1876
+2 PLAC Grimes, Texas, United States
+2 SOUR @S466339160@
+3 _HPID 1,7602::61574965
+3 _WPID 1,7602::61574966
+0 @F13@ FAM
+1 HUSB @I182329830596@
+1 WIFE @I182329830598@
+1 CHIL @I182329826210@
+0 @F14@ FAM
+1 HUSB @I182329846022@
+1 WIFE @I182329846023@
+1 CHIL @I182329845193@
+1 MARR
+2 DATE abt 1696
+2 PLAC Virginia
+1 MARR
+2 DATE 1701
+1 MARR
+2 DATE 1706
+2 PLAC , , , England
+1 MARR
+2 DATE Abt. 1710
+2 PLAC Isle of Wight County, Virginia, USA
+0 @F15@ FAM
+1 HUSB @I182330620723@
+1 WIFE @I182330620726@
+1 CHIL @I182330623414@
+1 CHIL @I182330621099@
+1 CHIL @I182330621100@
+1 CHIL @I182330623411@
+1 CHIL @I182330621097@
+1 CHIL @I182330621101@
+1 CHIL @I182330621102@
+1 CHIL @I182330621104@
+1 CHIL @I182330007515@
+1 MARR
+2 DATE 1880
+0 @F16@ FAM
+1 HUSB @I182329818989@
+1 WIFE @I182329820547@
+1 MARR
+2 DATE 19 Sep 1954
+2 PLAC Harris, Texas, USA
+2 SOUR @S466338770@
+3 PAGE Johnson County Clerk's Office; Denton, Texas; Smith County Marriage Records; Pages: 2
+3 _HPID 1,9168::25283561
+2 SOUR @S466338770@
+3 _WPID 1,9168::925283561
+0 @F17@ FAM
+1 HUSB @I182329818803@
+1 WIFE @I182329818814@
+1 CHIL @I182329819385@
+1 CHIL @I182329818776@
+1 CHIL @I182560184976@
+1 MARR
+2 DATE 20 Apr 1991
+2 PLAC Harris, Texas, USA
+2 SOUR @S466338308@
+3 PAGE Texas Department of State Health Services; Austin, Texas
+3 _WPID 1,8795::10953081
+2 SOUR @S466338308@
+3 _HPID 1,8795::11383646
+0 @F18@ FAM
+1 HUSB @I182329821623@
+1 WIFE @I182329821622@
+1 CHIL @I182329819759@
+1 MARR
+2 DATE 21 Jun 1875
+2 PLAC Grimes, Texas, United States
+2 SOUR @S466339160@
+3 _HPID 1,7602::61594540
+3 _WPID 1,7602::61594541
+0 @F19@ FAM
+1 HUSB @I182329820979@
+1 WIFE @I182329820980@
+1 CHIL @I182329820976@
+1 CHIL @I182329820752@
+1 CHIL @I182329820977@
+1 MARR
+2 DATE 12 Feb 1928
+2 PLAC Harris, Texas, USA
+2 SOUR @S466338770@
+3 PAGE Harris County Clerk's Office; Houston, Texas; Harris County, Texas, Marriage Records
+3 _HPID 1,9168::26325074
+2 SOUR @S466338770@
+3 _WPID 1,9168::926325074
+2 SOUR @S466339400@
+3 _HPID 1,60183::2521235
+3 _WPID 1,60183::2521248
+0 @F20@ FAM
+1 HUSB @I182329820979@
+1 WIFE @I182329847524@
+0 @F21@ FAM
+1 HUSB @I182329819759@
+1 WIFE @I182329819761@
+1 CHIL @I182329820069@
+1 CHIL @I182329820070@
+1 CHIL @I182329818890@
+1 MARR
+2 DATE 18 Jun 1907
+2 PLAC Grimes, Texas, United States
+2 SOUR @S466339400@
+3 DATA
+4 WWW https://familysearch.org/ark:/61903/1:1:QK8T-856X
+3 _HPID 1,60183::1479502
+2 SOUR @S466339400@
+3 _WPID 1,60183::1479515
+0 @F22@ FAM
+1 HUSB @I182329846701@
+1 WIFE @I182329846703@
+1 CHIL @I182329846705@
+1 CHIL @I182329846708@
+1 CHIL @I182329820979@
+1 CHIL @I182329846706@
+1 CHIL @I182329846707@
+1 CHIL @I182329846712@
+1 MARR
+2 DATE 1894
+2 PLAC Kock, Siedlce, Russian Empire (presently, Kock, Poland)
+0 @F23@ FAM
+1 HUSB @I182329831915@
+1 WIFE @I182329831917@
+1 CHIL @I182329830948@
+1 MARR
+2 DATE 26 Jul 1801
+2 PLAC Upson/Warren, Georgia, USA
+0 @F24@ FAM
+1 HUSB @I182329830948@
+1 WIFE @I182329830951@
+1 CHIL @I182329821623@
+1 MARR
+2 DATE 28 Apr 1842
+2 PLAC Montgomery, Montgomery, Texas, United States
+1 MARR
+2 PLAC Montgomery, Texas, USA
+2 SOUR @S466338770@
+3 PAGE Johnson County Clerk's Office; Denton, Texas; Smith County Marriage Records
+3 _HPID 1,9168::25576546
+2 SOUR @S466338770@
+3 _WPID 1,9168::925576546
+0 @F25@ FAM
+1 WIFE @I182751598633@
+1 CHIL @I182329882502@
+0 @F26@ FAM
+1 HUSB @I182330624087@
+1 CHIL @I182330620726@
+0 @O1@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _STYPE jpg
+3 _SIZE 1256786
+3 _WDTH 3984
+3 _HGHT 2864
+2 TITL Thomas, Francis Marion 1910 Grimes Co TX US Census
+1 _OID 15c1d4d5-d735-4e45-a289-60a50d114462
+1 DATE 4/10/2020 6:45:55 PM
+1 _CREA 2021-11-01 16:10:10.000
+1 _USER kUJJhqITvneHXDG7jWqo2TuFCn3OB64x1O8HtFvzDurwrtz1e8ipEqn0yS/u7UgVKDa3WTKfDlqowFGSx5rG/w==
+2 _ENCR 1
+1 _CLON
+2 _TID 168757805
+2 _PID 392190569871
+2 _OID 25732fd6-ac32-4939-aebb-c70b5a77dc75
+2 _USER HSY1E853IyfAHRSZ46UW41XHTACpjhU6s29ChPWBs/JxA69bI7PObtmTeKDlJKmUsVxXZudJ6QP0exiuAg9Hgg==
+3 _ENCR 1
+2 _DATE 2020-05-04 02:40:01.000
+1 _ORIG u
+1 _MSER
+2 _LKID 25732fd6-ac32-4939-aebb-c70b5a77dc75
+1 _ATL N
+0 @O2@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _STYPE jpg
+3 _SIZE 58052
+3 _WDTH 250
+3 _HGHT 188
+2 TITL BernardHarryCroftgrave
+1 _OID 28481083-fc26-4892-9826-affb2f02d187
+1 _CREA 2021-11-01 19:29:40.000
+1 _USER uQcTweDc2gjH7121q9RbEVZhQDzgx9TboGQUlYVWDA9Q/oDbOJEGuRkz5bHigmEMsWEtJlg7atuiTTLeLDpeEQ==
+2 _ENCR 1
+1 _CLON
+2 _TID 166259760
+2 _PID 422156733346
+2 _OID b0a0a738-39a7-47dd-9c82-5e40425a7d86
+2 _USER KJqUhBaqsKO7jhlCXvWtWOlNL9Kx7cZKaOzyyvKu1QksNemZZR7faAt0OWH2u8MNxt0Td/lZ2EOgD9+90o7Zmg==
+3 _ENCR 1
+2 _DATE 2020-01-13 15:54:38.000
+1 _ORIG u
+1 _MSER
+2 _LKID b0a0a738-39a7-47dd-9c82-5e40425a7d86
+1 _ATL N
+0 @O3@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 7469
+3 _WDTH 250
+3 _HGHT 188
+2 TITL Mustang Cemetery
+1 _OID 379352b3-ea05-4bf6-a4df-89d5e91d7b74
+1 _META <metadataxml><cemetery /><transcription /></metadataxml>
+1 _CREA 2021-11-01 16:51:48.000
+1 _USER pq8PGgZ06QX7ifUOmcn07CXMD5qtsrkFoBeCWiSrbszY8nfZ+SaoT858+BBv3HMZsPwIpvki2x/Hc0Xp9Vbi2A==
+2 _ENCR 1
+1 _CLON
+2 _TID 15734294
+2 _PID 1115066090
+2 _OID 4375e073-2a78-453a-a205-35498961bb1b
+2 _USER SB5FDnaapTE6KlAcQK17+tfY4ydQr/o6bYvwgqFd5j9RPNser/i8nvxFrNR0uhZ93Ej3U21yu0Rff08w9nPo0Q==
+3 _ENCR 1
+2 _DATE 2011-07-12 05:30:58.000
+1 _ORIG u
+1 _MSER
+2 _LKID 4375e073-2a78-453a-a205-35498961bb1b
+1 _ATL N
+0 @O4@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _STYPE jpeg
+3 _SIZE 62488
+3 _WDTH 250
+3 _HGHT 188
+2 TITL MollieKravchikCroftgrave
+1 _OID 3bac99a3-216f-4a73-aaca-69a0f69a0a3c
+1 _CREA 2021-11-01 19:38:20.000
+1 _USER SzFMbWuDQXEC5+lQ1S5hoBo2xmLoMpxCD0iMzTXiMGT0ceMea7YDBj/rt06LwQejaP57JRewIEkiDU0pwQ9ZWg==
+2 _ENCR 1
+1 _CLON
+2 _OID ee1d57df-7ff4-47c9-b4e4-a3ca0031f869
+2 _USER OCCD6Gno1TjKUDewXQPvC7ygCFClK5U4D+M36earLn/pdZZ2fFEpC/vapgyJM0BS3Fop0oQMXb97P5fWW3qe3Q==
+3 _ENCR 1
+2 _DATE 2018-12-31 01:16:44.000
+1 _ORIG u
+1 _MSER
+2 _LKID ee1d57df-7ff4-47c9-b4e4-a3ca0031f869
+1 _ATL N
+0 @O5@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _STYPE jpeg
+3 _SIZE 64761
+3 _WDTH 250
+3 _HGHT 188
+2 TITL JackCroftgrave2
+1 _OID 4461bd6e-3785-4d70-a42f-f60016056393
+1 _CREA 2021-11-01 18:52:02.000
+1 _USER S7HdnY3Wl0KKHQ2iTdOhXPD/3nQfVaAIpIIN07P6vwgEd9VLLz6bDzjBixlknCTzcSTfPPBDBp0yBYaR7q5ddw==
+2 _ENCR 1
+1 _CLON
+2 _OID c8c1d6c1-86c7-49a5-8481-b9b1cb0dcaf0
+2 _USER 180b03HFacsXEtX6kUANUFnS9piexJNwJu/PrAXFKSNyvpDVPcLI7cV6AcQIJWNgjYgiry2kO/G+rSkhP01n8w==
+3 _ENCR 1
+2 _DATE 2018-12-31 14:50:34.000
+1 _ORIG u
+1 _MSER
+2 _LKID c8c1d6c1-86c7-49a5-8481-b9b1cb0dcaf0
+1 _ATL N
+0 @O6@ OBJE
+1 FILE
+2 FORM
+3 TYPE story
+3 _MTYPE story
+3 _STYPE x-inline
+3 _SIZE 7931
+2 TITL Find a Grave
+1 _OID 4d7df1b2-57b6-4a94-8b06-4b294cca79d9
+1 _META <metadataxml><content><line>&lt;p&gt;&lt;span style="font-size: small;"&gt;&lt;strong&gt;James Avery Thomas&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</line><line>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</line><line /><line>&lt;tbody&gt;</line><line>&lt;tr&gt;</li
+2 CONC ne><line>&lt;td valign="top"&gt;Birth:&amp;nbsp;&lt;/td&gt;</line><line>&lt;td align="left" valign="top"&gt;Oct. 31, 1812&lt;br&gt;Marengo County&lt;br&gt;Alabama, USA&lt;/td&gt;</line><line>&lt;/tr&gt;</line><line>&lt;tr&gt;</line><line>&lt;td val
+2 CONC ign="top"&gt;Death:&amp;nbsp;&lt;/td&gt;</line><line>&lt;td align="left" valign="top"&gt;Apr. 28, 1865&lt;br&gt;Roans Prairie&lt;br&gt;Grimes County&lt;br&gt;Texas, USA&lt;/td&gt;</line><line>&lt;/tr&gt;</line><line>&lt;tr&gt;</line><line>&lt;td co
+2 CONC lspan="2" valign="top"&gt;&lt;br&gt;Son of John Thomas and Phoebe Springer. &lt;br&gt;&lt;br&gt;JAMES AVERY THOMAS was born in Marengo County, Alabama in 1812. According to the 1850 and 1860 censuses, he was born in 1816 in TN or 1818 in GA. Perhap
+2 CONC s he did not know himself. James came to Texas before 1835. At Montgomery County in 1842 he married *AMANDA WHEELER, daughter of *HENRY H. WHEELER and *MARY ANN SAWYER who were neighbors of the Thomas family in Alabama. It also appears that they we
+2 CONC re neighbors in Georgia, all having arrived in Texas within a short time of each other. James and Amanda settled in Roans Prarie in Grimes County though at the time they first came there, Roans Prarie was in Montgomery County. James was a farmer. J
+2 CONC ames died 28 Apr 1865 and is buried at Mustang Prarie. Amanda died 05 Sep 1896 at Mustang Prarie. The cemetery is located 100 yards from the Walker County line, 16 miles west of Huntsville, Texas, off Highway 30.&lt;br&gt;&lt;br&gt;&lt;br&gt;Jame
+2 CONC s Thomas and Amanda Wheeler Thomas' Children born married died Phebe M 1853Willis Fulton John Henry1846Betty Thornton1928Sam 1862Sarah Jane Reed1888Archie 1860Mollie Coleman1945Mack 1857Jennie Thompson1937C. Dave1855Mallie McGilberry1942Katherine 1
+2 CONC 850John Morris1938*Francis Marion1852*Susan Mullens1922&lt;br&gt;1850 Texas Census - Grimes County&lt;br&gt;&lt;br&gt;James Thomas age 34 m TN &lt;br&gt;(he was born in GA, or AL not TN) &lt;br&gt;Amanda 24 f TN (she was born in GA) &lt;br&gt;Pheb
+2 CONC e M. 7 f TX John 4 m TX &lt;br&gt;Samuel A. J. 2 m TX &lt;br&gt;Amanda C. J. 6/12 f TX &lt;br&gt;H. H. Wheeler 50 m NC &lt;br&gt;Mary Ann Wheeler 15 f AL (Granddaughter of Henry H. Wheeler)&lt;br&gt;&lt;br&gt;*JAMES and *AMANDA are listed as bein
+2 CONC g unable to read or write. Their property is valued at $600. In the household is HENRY H. WHEELER, Amanda's father. Mary Ann Wheeler is Amanda's neice, daughter of her brother, John Wheeler. John lives two farms away from his sister Amanda with hi
+2 CONC s wife Elizabeth and son Joseph Jr. but he denied paternity of the daughter living with Amanda. John listed his occupation as "none". Henry Wheeler's wife, Mary Ann Sawyer, does not appear on any census. &lt;br&gt; &lt;br&gt;&lt;br&gt;1860 Texas Ce
+2 CONC nsus-Bedias, Grimes County&lt;br&gt;J. Thomas 42 m GA farmer 480 - 700 &lt;br&gt;Amanda 31 f GA keeping house &lt;br&gt;Pheoby 17 f TX &lt;br&gt;John 14 m TX &lt;br&gt;Samuel 12 m TX &lt;br&gt;Catherine 10 f TX &lt;br&gt;Jane 8 f TX &lt;br&gt;Charl
+2 CONC es 4 m TX &lt;br&gt;McGowan 2 m TX &lt;br&gt;Archie 9/12 m TX &lt;br&gt;Willis Fulton 21 m TX (he married Pheoby above) &lt;br&gt;Elizabeth Wheeler 35 f AL Insane, Pauper &lt;br&gt;Elizabeth Wheeler was the sister-in-law of Amanda. Amanda's brothe
+2 CONC r John had her declared insane. James' real estate was worth $480 and his personal property was worth $700. Jane and McGowan do not appear on future censuses. Notice that Amanda lists her state of birth as GA. &lt;br&gt; &lt;br&gt;&lt;br&gt;1870 Te
+2 CONC xas Census - Grimes CountyAmanda Thomas 43 f GA &lt;br&gt;Marion 16 m TX &lt;br&gt;David 14 m TX &lt;br&gt;Sam 12 m TX &lt;br&gt;Archie 10 m TX&lt;br&gt;By the 1870 Census, James Avery had died, and *FRANCIS MARION THOMAS appears as the 16 year ol
+2 CONC d Marion. For some reason, the dates in &lt;br&gt;the 1870 census are in error by two years for Amanda and Marion. &lt;br&gt;&lt;br&gt;Note:&lt;br&gt;Some people say he is buried in Mustang Prairie.&lt;br&gt;&lt;br&gt;Source: http://www.fortunecity
+2 CONC .com/tinpan/nirvana/621/thomas.htm&lt;br&gt;&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;br&gt;Family links:&amp;nbsp;&lt;br&gt;&amp;nbsp;Spouse:&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;a class="NoUnderline12point" href="http://www.findagrave.com/cgi-bin/fg.cgi?page
+2 CONC =gr&amp;amp;GRid=20619258"&gt;Amanda Katherine &lt;em&gt;Wheeler&lt;/em&gt; Thomas (1827 - 1896)&lt;/a&gt;*&lt;br&gt;&amp;nbsp;&lt;br&gt;&amp;nbsp;Children:&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;a class="NoUnderline12point" href="http://www.findagrave.c
+2 CONC om/cgi-bin/fg.cgi?page=gr&amp;amp;GRid=20619259"&gt;Archibald Anderson Thomas (1860 - 1945)&lt;/a&gt;*&lt;br&gt;&amp;nbsp;&lt;br&gt;&lt;span class="minus1"&gt;*&lt;span class="fakeLink" title="header=[&amp;lt;img src='/icons2/info.gif' style='verti
+2 CONC cal-align:middle'&amp;gt;&amp;nbsp;&amp;nbsp;Reverse Relationships:] body=[This relationship was not directly added to this memorial. Rather, it is calculated based on information added to the related person's memorial. For example: if Joe Public i
+2 CONC s linked to Jane Public as a spouse, a reciprocal link will automatically be added to Jane Public's memorial.</line><line>	] fade=[on] fadespeed=[.09]"&gt;Calculated relationship&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;</line><line>&lt;/tr&gt;</line><l
+2 CONC ine>&lt;tr&gt;</line><line>&lt;td colspan="2"&gt;&amp;nbsp;&lt;/td&gt;</line><line>&lt;/tr&gt;</line><line>&lt;tr&gt;</line><line>&lt;td colspan="2" valign="top"&gt;Burial:&lt;br&gt; &lt;a href="http://www.findagrave.com/cgi-bin/fg.cgi?page=cr&amp;
+2 CONC amp;GRid=73230209&amp;amp;CRid=6281&amp;amp;"&gt;Red Top Cemetery&lt;/a&gt; &lt;br&gt;Shiro&lt;br&gt;Grimes County&lt;br&gt;Texas, USA&lt;/td&gt;</line><line>&lt;/tr&gt;</line><line>&lt;tr&gt;</line><line>&lt;td colspan="2" align="left"&gt;&amp;nbs
+2 CONC p;&lt;br&gt; &lt;a href="http://www.findagrave.com/cgi-bin/fg.cgi?page=editVcInfo&amp;amp;vcIntId=73230209"&gt;&lt;span class="minus1"&gt;Edit Virtual Cemetery info&lt;/span&gt;&lt;/a&gt; &lt;span class="minus1"&gt;[&lt;span class="fakeLink" title=
+2 CONC "header=[&amp;lt;img src='/icons2/info.gif' style='vertical-align:middle'&amp;gt;&amp;nbsp;&amp;nbsp;Virtual Cemetery:] body=[&amp;lt;b&amp;gt;What is a Virtual Cemetery?&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;</line><line>	A Find A Grave Virtual Cemet
+2 CONC ery is essentially a collection of names from the Find A Grave database. As a Find A Grave contributor, you can build Virtual Cemeteries to group listings in whatever way you would like. For example, you might make a 'Smith Family Virtual Cemetery
+2 CONC ' where you would place all of the members of your Smith family tree. Other examples: 'My Favorite Actors' or 'Memorials I Visit Often'. Be creative!</line><line>	&amp;lt;br&amp;gt;&amp;nbsp;&amp;lt;br&amp;gt;</line><line>	A VIRTUAL CEMETERY HAS N
+2 CONC O RELATION TO A REAL CEMETERY! People listed in your VIRTUAL cemeteries can be buried in many different REAL cemeteries. You can add any name in the Find A Grave database to the Virtual Cemeteries you create. You can choose to make your Virtual Cem
+2 CONC eteries visible to the visitors of your Find A Grave contributor page so that others can view the collections you have created.</line><line>	] fade=[on] fadespeed=[.09]"&gt;?&lt;/span&gt;]&lt;/span&gt;&lt;/td&gt;</line><line>&lt;/tr&gt;</line><line
+2 CONC >&lt;tr&gt;</line><line>&lt;td colspan="2" align="left"&gt;&amp;nbsp;&lt;br&gt;Created by: &lt;a href="http://www.findagrave.com/cgi-bin/fg.cgi?page=mr&amp;amp;MRid=47210619"&gt;Robert Awalt&lt;/a&gt;&lt;br&gt;Record added: Jul 12, 2011 &lt;br&gt;F
+2 CONC ind A Grave Memorial# 73230209&lt;/td&gt;</line><line>&lt;/tr&gt;</line><line>&lt;/tbody&gt;</line><line /><line>&lt;p&gt;&lt;span style="font-size: small;"&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</line></content></metadat
+2 CONC axml>
+1 _CREA 2021-11-01 17:02:54.000
+1 _USER dC8EUFHkTZZOOKPb8svaOMei8Zr9flZtoiv1+vMK8TCRlYV9cV5Ms1OypziFmMd3mE/q0xS6mDWCHwa42rFnvQ==
+2 _ENCR 1
+1 _CLON
+2 _TID 6187406
+2 _PID -1331255582
+2 _OID fd9ec8ba-7dd2-4535-b128-4a3fd7a298eb
+2 _USER iG+raXHhIxaqdBmbClV0zjVW+7jFD4PvwXyFMzgNwtc2QZYQxRQ5HAHpziOMaB2KEkDoXZ1Qy/JMgfTgsbGNHQ==
+3 _ENCR 1
+2 _DATE 2014-04-23 14:43:34.000
+1 _ORIG u
+1 _MSER
+2 _LKID fd9ec8ba-7dd2-4535-b128-4a3fd7a298eb
+1 _ATL N
+0 @O7@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 881461
+3 _WDTH 2578
+3 _HGHT 1865
+2 TITL Gary Thomas
+1 _OID 60510104-62c7-4e01-a9b4-f1155f51e8b5
+1 _DSCR Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.
+1 _META <metadataxml><record_source_gid>54116264:1265</record_source_gid></metadataxml>
+1 _CREA 2026-04-12 18:17:51.821
+1 _USER ik6kE67WV8wv3i1EGlfhJX16T6qIfSGJuAyhuECnUI46zTc8g7JDcaWz1mzhbCFKueGjxl20RDnjE7oIoa2g4g==
+2 _ENCR 1
+1 _ORIG u
+1 _ATL N
+0 @O8@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE document
+3 _STYPE jpeg
+3 _SIZE 37184
+3 _WDTH 250
+3 _HGHT 167
+2 TITL  John E. Crawley
+1 _OID 6141136f-9bf5-469c-bd51-e9666b24fe33
+1 DATE 2 Jun 1953
+1 PLAC Spring Hill, Gregg County, Texas, USA
+1 _CREA 2021-11-01 16:47:31.000
+1 _USER 7P6RramHJ3U38ZLstJ8ZTmLYkxTQSAN2SVv5yXaneywErVijOgTqKg20qZNZCgsNuEfMYdIOns7fxEFnb/3+cw==
+2 _ENCR 1
+1 _CLON
+2 _TID 117657095
+2 _PID 370173183081
+2 _OID 400f8633-994c-4232-983b-fec5b183dccd
+2 _USER LaWyeY7pKSqHuRbmd5n9X5TSGifdQK+2GCw5KQyFhFJf2Gtn9qJsNNlzMsMX+UXWkrBMuYKLwXqMb6lFQD7euQ==
+3 _ENCR 1
+2 _DATE 2018-01-05 17:42:15.000
+1 _ORIG u
+2 _URL https://www.findagrave.com/memorial/9110408/john-e.-crawley
+1 _MSER
+2 _LKID 400f8633-994c-4232-983b-fec5b183dccd
+1 _ATL N
+0 @O9@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 150252
+3 _WDTH 450
+3 _HGHT 640
+2 TITL Francis Marion Thomas
+1 _OID 66b23ffa-8d12-48a6-93a8-ecf233db8be1
+1 _DSCR Photo per Lou Poole
+1 _META <metadataxml><cemetery /><transcription /></metadataxml>
+1 _CREA 2021-11-01 16:51:53.000
+1 _USER 0zxteUQhF+aOHKuexPpm/V9bdYJURnsU3D59Wvkw3RQiejUECT7GoSBnN6ZFSnemxE/cIzjPzrR3Si7bn3SLsg==
+2 _ENCR 1
+1 _CLON
+2 _TID 15734294
+2 _PID 1115066090
+2 _OID ddd5e527-9cf3-4dbb-82c6-fb6c24218d24
+2 _USER WcvvW5csBOhl4nIXyFnLtv2d3KmfGuG4orjnlxkQkMncYz1tYbNgTnbmrqO9ocZSBdC7Sr5wkP8vTAOahcsD0Q==
+3 _ENCR 1
+2 _DATE 2015-09-26 01:33:08.000
+1 _ORIG u
+1 _MSER
+2 _LKID ddd5e527-9cf3-4dbb-82c6-fb6c24218d24
+1 _ATL N
+0 @O10@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE headstone
+3 _STYPE jpeg
+3 _SIZE 64702
+3 _WDTH 229
+3 _HGHT 517
+2 TITL Thomas, Francis Marion-male-Mustang Cem-Walker Cty-TX
+1 _OID 6834b379-9141-43c3-8bbe-da4a988d1585
+1 _META <metadataxml><cemetery>Mustang Cemetery</cemetery><transcription /><personas><persona><pname>M. Thomas</pname><bdate>1852</bdate><bplace /><ddate>1922</ddate><dplace /></persona></personas></metadataxml>
+1 _CREA 2021-11-01 16:51:55.000
+1 _USER wN9X01kfyqhYuGgtzb4rGN8u6q1RXVXmES5MgU3KJw07YaRRgYZk086iYmje3vgj8vbsQhgCovY8GCYQo1RA7Q==
+2 _ENCR 1
+1 _CLON
+2 _TID 10142672
+2 _PID 6124305322
+2 _OID df93d6d2-34cb-4dd2-ae93-233cfd4b4a75
+2 _USER Gx+mRMJwDwrDS5+n7luU0bCWqSjM3vYHX7JOpK2ppolKik5rUlyCWv2OXx6yA2uNR+9mxyV+w4OeS5NAyZuFdA==
+3 _ENCR 1
+2 _DATE 2013-08-20 04:51:23.000
+1 _ORIG u
+1 _MSER
+2 _LKID df93d6d2-34cb-4dd2-ae93-233cfd4b4a75
+1 _ATL N
+0 @O11@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 13117
+3 _WDTH 250
+3 _HGHT 188
+2 TITL Red Top Cemetery
+1 _OID 6faeed3c-654c-40e3-9171-c87e96d57fd6
+1 PLAC Shioro, Grimes, TX
+1 _DSCR per Sandy Avery
+1 _META <metadataxml><cemetery /><transcription /></metadataxml>
+1 _CREA 2021-11-01 17:02:59.000
+1 _USER bUVE2Se9w0oaLuv5IllpdLAevFytladB78QzsbbrOAavPivSctopuJRPVPUh+xoJCfBWD5itXmWyjeXGcukuQA==
+2 _ENCR 1
+1 _CLON
+2 _TID 15734294
+2 _PID 1095534787
+2 _OID bab75de5-4eed-4cbf-b42c-ed1b3f3d02c9
+2 _USER m6Qrmn0TW9KvIzc9FAaCKWogrL3wb/W4YHeYz5wpCvI7a/7pGM/aqmgXiPrd5V/yDrRcfuaxx9Nd4Ul9IvJSCA==
+3 _ENCR 1
+2 _DATE 2011-07-12 13:07:10.000
+1 _ORIG u
+1 _MSER
+2 _LKID bab75de5-4eed-4cbf-b42c-ed1b3f3d02c9
+1 _ATL N
+0 @O12@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 65979
+3 _WDTH 250
+3 _HGHT 333
+2 TITL Francis
+1 _OID 74a1020a-d997-485b-8b6d-fca43d750d41
+1 _META <metadataxml><cemetery /><transcription /></metadataxml>
+1 _CREA 2021-11-01 16:52:01.000
+1 _USER +zUq4xG5tKRBbYEp4bgUY/ip2ZQU0JTOxnVFSZASkfZbDuFic7K9ts/226LlDQKQBe8fShG/kGsDoa8jc432fA==
+2 _ENCR 1
+1 _CLON
+2 _TID 6187406
+2 _PID 24109620795
+2 _OID 51d0f165-977f-4761-af00-f7f4bbb12172
+2 _USER pMMxU27KwYJEltY5DbKIpXWOFhCVbKy2uRYkjijN2tn+fNixojLf8vcTVLqmybwpKAwyVud1ukIdd58fC+xjtw==
+3 _ENCR 1
+2 _DATE 2014-04-23 16:44:52.000
+1 _ORIG u
+1 _MSER
+2 _LKID 51d0f165-977f-4761-af00-f7f4bbb12172
+1 _ATL N
+0 @O13@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _STYPE jpeg
+3 _SIZE 62348
+3 _WDTH 250
+3 _HGHT 188
+2 TITL JackCroftgrave1
+1 _OID 8958108e-bee9-488b-b943-ae65ee982e14
+1 _CREA 2021-11-01 18:52:07.000
+1 _USER vqFFfmWzZYG0g1fb7kKBiKHJK5ZqrOpSfDOOC4m+bksLARucHgNCcODhpLcFeNefaTRpnYzJ02VQjjp2S4pDTQ==
+2 _ENCR 1
+1 _CLON
+2 _OID c94d29dd-0500-4534-b858-e8d41967a3b3
+2 _USER AALbvY49V4iIkD2+uy38MwSSKgjmgvCxK2PKzxOfaUBZyReHFe1Aq+FGnyS0mRGIh+M5GthjhvvPUKY2PU5J4A==
+3 _ENCR 1
+2 _DATE 2018-12-31 14:50:11.000
+1 _ORIG u
+1 _MSER
+2 _LKID c94d29dd-0500-4534-b858-e8d41967a3b3
+1 _ATL N
+0 @O14@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 130275
+3 _WDTH 971
+3 _HGHT 1355
+2 TITL Charlotte Lucille Crawlwy
+1 _OID b2d408cc-fc23-41d0-9ce0-8a66f62aecbd
+1 _DSCR Ancestry.com. U.S., School Yearbooks, 1900-1999 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.
+1 _META <metadataxml><record_source_gid>182570548:1265</record_source_gid></metadataxml>
+1 _CREA 2021-11-01 16:01:00.000
+1 _USER pSu+iR/owpVIi3O/ioombnwlHY4Zt1l3CeH/Tgv63gevxXFBq+k708BgHZzL0j8VmDOUpAylrBKzUhtkoWwIzQ==
+2 _ENCR 1
+1 _ORIG u
+1 _ATL Y
+0 @O15@ OBJE
+1 FILE
+2 FORM htm
+3 TYPE story
+3 _MTYPE story
+3 _STYPE x-inline
+3 _SIZE 7459
+2 TITL Notes
+1 _OID bb7617f5-052d-4ca5-bf56-f7cdd6ed7433
+1 _META <metadataxml><content><line>&lt;strong&gt;&lt;font color="#0000a0"&gt;JAMES AVERY THOMAS was born in Marengo County, Alabama in 1812. According to the 1850 and 1860 censuses, he was born in 1816 in TN or 1818 in GA. Perhaps he did not know himself
+2 CONC . James came to Texas before 1835. At Montgomery County in 1842 he married *AMANDA WHEELER, daughter of *HENRY H. WHEELER and *MARY ANN SAWYER who were neighbors of the Thomas family in Alabama. It also appears that they were neighbors in Georgia
+2 CONC , all having arrived in Texas within a short time of each other. James and Amanda settled in Roans Prarie in Grimes County though at the time they first came there, Roans Prarie was in Montgomery County. James was a farmer.&amp;nbsp; James died 2
+2 CONC 8 Apr 1865 and is buried at Mustang Prarie. Amanda died 05 Sep 1896 at Mustang Prarie. The cemetery is located 100 yards from the Walker County line, 16 miles west of Huntsville, Texas, off Highway 30.&lt;/font&gt;&lt;/strong&gt; &lt;p&gt;&amp;nbsp
+2 CONC ;&lt;/p&gt;&lt;font&gt;&lt;font size="+1" color="#0000a0"&gt;&lt;strong&gt;James Thomas and Amanda Wheeler Thomas&amp;#39; Children&lt;/strong&gt;&lt;/font&gt;&lt;/font&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;child&lt;/font&gt;&lt;/strong&gt;&
+2 CONC lt;strong&gt;&lt;font color="#0000a0"&gt;born&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;married&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;died&lt;/font&gt;&lt;/strong&gt;&lt;font color="#0000a0"
+2 CONC &gt;Phebe M&lt;/font&gt;&lt;font color="#0000a0"&gt;1853&lt;/font&gt;&lt;font color="#0000a0"&gt;Willis Fulton&lt;/font&gt;&amp;nbsp;&lt;font color="#0000a0"&gt;John Henry&lt;/font&gt;&lt;font color="#0000a0"&gt;1846&lt;/font&gt;&lt;font color="#00
+2 CONC 00a0"&gt;Betty Thornton&lt;/font&gt;&lt;font color="#0000a0"&gt;1928&lt;/font&gt;&lt;font color="#0000a0"&gt;Sam&lt;/font&gt;&lt;font color="#0000a0"&gt;1862&lt;/font&gt;&lt;font color="#0000a0"&gt;Sarah Jane Reed&lt;/font&gt;&lt;font color="#0000a
+2 CONC 0"&gt;1888&lt;/font&gt;&lt;font color="#0000a0"&gt;Archie&lt;/font&gt;&lt;font color="#0000a0"&gt;1860&lt;/font&gt;&lt;font color="#0000a0"&gt;Mollie Coleman&lt;/font&gt;&lt;font color="#0000a0"&gt;1945&lt;/font&gt;&lt;font color="#0000a0"&gt;Mack&
+2 CONC lt;/font&gt;&lt;font color="#0000a0"&gt;1857&lt;/font&gt;&lt;font color="#0000a0"&gt;Jennie Thompson&lt;/font&gt;&lt;font color="#0000a0"&gt;1937&lt;/font&gt;&lt;font color="#0000a0"&gt;C. Dave&lt;/font&gt;&lt;font color="#0000a0"&gt;1855&lt;/font&
+2 CONC gt;&lt;font color="#0000a0"&gt;Mallie McGilberry&lt;/font&gt;&lt;font color="#0000a0"&gt;1942&lt;/font&gt;&lt;font color="#0000a0"&gt;Katherine&lt;/font&gt;&lt;font color="#0000a0"&gt;1850&lt;/font&gt;&lt;font color="#0000a0"&gt;John Morris&lt;/fon
+2 CONC t&gt;&lt;font color="#0000a0"&gt;1938&lt;/font&gt;&lt;font color="#0000a0"&gt;*Francis Marion&lt;/font&gt;&lt;font color="#0000a0"&gt;1852&lt;/font&gt;&lt;font color="#0000a0"&gt;*Susan Mullens&lt;/font&gt;&lt;font color="#0000a0"&gt;1922&lt;/font&
+2 CONC gt;&lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;&lt;font size="+1"&gt;1850 Texas Census &lt;/font&gt;&lt;/font&gt;&lt;/strong&gt;- &lt;font color="#0000a0"&gt;Grimes County&lt;/font&gt;&lt;/p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;Jame
+2 CONC s Thomas age 34 m TN&amp;nbsp;&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;(he was born in GA, or AL not TN)&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;&lt;strong&gt;Amanda 24 f TN&lt;/strong&gt; (she was bor
+2 CONC n in GA)&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;Phebe M. 7 f TX John 4 m TX&amp;nbsp;&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;Samuel A. J. 2 m TX&amp;nbsp;&lt;/font&gt;&lt;
+2 CONC /strong&gt; &lt;br&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;Amanda C. J. 6/12 f TX&amp;nbsp;&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;H. H. Wheeler 50 m NC&amp;nbsp;&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&
+2 CONC lt;font color="#0000a0"&gt;&lt;strong&gt;Mary Ann Wheeler 15 f AL &lt;/strong&gt;(Granddaughter of Henry H. Wheeler)&lt;/font&gt;&lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;*JAMES and *AMANDA are listed as being unable to read or write. Thei
+2 CONC r property is valued at $600. In the household is HENRY H. WHEELER, Amanda&amp;#39;s father. Mary Ann Wheeler is Amanda&amp;#39;s neice, daughter of her brother, John Wheeler. John lives two farms away from his sister Amanda with his wife Elizabet
+2 CONC h and son Joseph Jr. but he denied paternity of the daughter living with Amanda. John listed his occupation as &amp;quot;none&amp;quot;. Henry Wheeler&amp;#39;s wife, Mary Ann Sawyer, does not appear on any census.&lt;/font&gt;&lt;/strong&gt; &lt;b
+2 CONC r&gt;&amp;nbsp; &lt;/p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;&lt;font size="+1"&gt;1860 Texas Census&lt;/font&gt;-Bedias, Grimes County&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;&lt;font color="#0000a0"&gt;J. Thomas 42 m GA farmer 480 - 700&amp;n
+2 CONC bsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Amanda 31 f GA keeping house&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Pheoby 17 f&amp;nbsp; TX&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;John 14 m&amp;nb
+2 CONC sp; TX&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Samuel 12 m TX&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Catherine 10 f&amp;nbsp; TX&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Jane 8 f&amp;nb
+2 CONC sp; TX&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Charles 4 m TX&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;McGowan 2 m TX&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Archie 9/12 m TX&amp;nbsp;&l
+2 CONC t;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Willis Fulton 21 m TX (he married Pheoby above)&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Elizabeth Wheeler 35&amp;nbsp; f AL Insane, Pauper&amp;nbsp;&lt;/font&gt;&lt;p&gt;&lt;str
+2 CONC ong&gt;&lt;font color="#0000a0"&gt;Elizabeth Wheeler was the sister-in-law of Amanda. Amanda&amp;#39;s brother John had her declared insane. James&amp;#39; real estate was worth $480 and his personal property was worth $700. Jane and McGowan do no
+2 CONC t appear on future censuses. Notice that Amanda lists her state of birth as GA.&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&amp;nbsp; &lt;/p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;&lt;font size="+1"&gt;1870 Texas Census - Grimes County&lt;/font&gt
+2 CONC ;&lt;/font&gt;&lt;/strong&gt;&lt;font color="#0000a0"&gt;Amanda Thomas 43 f&amp;nbsp; GA&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Marion 16 m TX&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;David&amp;nbsp;&amp;nb
+2 CONC sp; 14 m TX&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Sam&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 12 m TX&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Archie&amp;nbsp; 10 m TX&lt;/font&gt;&lt;p&gt;&lt;strong&gt;&l
+2 CONC t;font color="#0000a0"&gt;By the 1870 Census, James Avery had died, and *FRANCIS MARION THOMAS appears as the 16 year old Marion. For some reason, the dates in&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;the 187
+2 CONC 0 census are in error by two years for Amanda and Marion.&lt;/font&gt;&lt;/strong&gt; &lt;/p&gt;&lt;p&gt;Source: &lt;span&gt;&lt;font color="#366388"&gt;http://www.fortunecity.com/tinpan/nirvana/621/thomas.htm&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;</l
+2 CONC ine></content></metadataxml>
+1 _CREA 2021-11-01 17:02:25.000
+1 _USER L1arcDKfjZRjhgCzj5aSNNviVvjwaQ/70nvIPQvilYSRPiha6gqD7FAwI4ULYS/joDpofZcC9NWCvLjD4Qi99g==
+2 _ENCR 1
+1 _CLON
+2 _TID 15734294
+2 _PID 1095534787
+2 _OID 45f030a5-ee55-46de-acc1-c921800875fd
+2 _USER ZkNpJMS2VrhRNa1QJBTw9o6UwcFTmiPwfOM5hvis3owPzKySVGXfRtRGYaqnG2He94CNlOQ9iYw4b7pyNwi+Sg==
+3 _ENCR 1
+2 _DATE 2010-10-12 04:07:01.000
+1 _ORIG u
+1 _MSER
+2 _LKID 45f030a5-ee55-46de-acc1-c921800875fd
+1 _ATL N
+0 @O16@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE document
+3 _STYPE jpg
+3 _SIZE 255133
+3 _WDTH 692
+3 _HGHT 960
+2 TITL Houston, Harris, Texas, USA
+1 _OID c0cacc83-2eb3-43e1-9a79-a0c0aa741fdb
+1 DATE 9 Jan 1925
+1 PLAC Houston, Harris, Texas, USA
+1 _META <metadataxml><transcription></transcription></metadataxml>
+1 _CREA 2021-11-01 19:30:28.000
+1 _USER zRnzeujQ117R446suVqwK3dAGqaIYJtDofofejcjnDPrdhnJF/0GbQ6SyVXGY342NsXMGshhbJ+W1fXfAsc3gw==
+2 _ENCR 1
+1 _CLON
+2 _TID 81610823
+2 _PID 210060696245
+2 _OID 3b6c7f29-f744-4965-a15e-3d0107d88893
+2 _USER br/4iu4DqA/Jd0QzOztur4ow57+qM2Ul2uYeizPjfLS9G9vf1lKtYS7abE+kc8jVRDqxfGcLC55MSI3JwTv/Xw==
+3 _ENCR 1
+2 _DATE 2018-11-10 16:49:53.000
+1 _ORIG u
+1 _MSER
+2 _LKID 3b6c7f29-f744-4965-a15e-3d0107d88893
+1 _ATL N
+0 @O17@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 64702
+3 _WDTH 229
+3 _HGHT 517
+2 TITL Francis Marion Thomas headstone
+1 _OID c6bfa90e-6102-4959-829a-a20e68f6059a
+1 PLAC Mustang Cemetery, Walker County, TX
+1 _DSCR Find A Grave Memorial# 20619274
+1 _META <metadataxml><cemetery /><transcription /></metadataxml>
+1 _CREA 2021-11-01 16:51:46.000
+1 _USER DO8M/U9oq+T1WfbJK508V8MBATOj8Sw5fi4TJgwjJAR4blYQxhtfQ8mYbkDV1z0R0JkYe73zyGKPpss+0au55A==
+2 _ENCR 1
+1 _CLON
+2 _TID 15734294
+2 _PID 1115066090
+2 _OID 804609d6-0806-4a20-a170-03a5d959b354
+2 _USER NhLLeKfdGhrPx0v8rhg9fTvxueWOCxz2QbcAS1U6/kGp1fWNx+KTS29KlqCXBSJ6aAvHZno1bG61Yyxr5B0wZA==
+3 _ENCR 1
+2 _DATE 2015-09-26 01:33:45.000
+1 _ORIG u
+1 _MSER
+2 _LKID 804609d6-0806-4a20-a170-03a5d959b354
+1 _ATL N
+0 @O18@ OBJE
+1 FILE
+2 FORM htm
+3 TYPE story
+3 _MTYPE story
+3 _STYPE x-inline
+3 _SIZE 35545
+2 TITL Thomas Family Notes
+1 _OID e8193fda-fd6a-4eed-b3e7-342ce6019ddc
+1 _META <metadataxml><content><line>&lt;div&gt;&lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;&lt;font size="+2"&gt;THE THOMAS FAMILY&lt;/font&gt;&lt;/font&gt;&lt;/strong&gt; &lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;&lt;font size="-
+2 CONC 1"&gt;The * (asterisk) beside the name denotes ancestral line of Charlotte Sandel Beck&lt;/font&gt;&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;The THOMAS surname is common throughout the United States an
+2 CONC d there were many branches in the early years of the southern states as well. There are several Thomas lines that are likely to be our the ancestors but as of this writing, they are unproven. The Thomas ancestral line we descend from begins with *J
+2 CONC OHN THOMAS and his wife, *PHEOBE SPRINGER , both born about 1784. Their roots begin in the state of South Carolina. Three Thomas men, David, John, and John Nelson are recorded in censuses there and again in Georgia, Alabama and finally in Texas, al
+2 CONC l at the same times and places. Their relationship to each other has never been proven.&lt;/font&gt;&lt;/strong&gt; &lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;A Warren County, Georgia deed of 1799 indicates that John Thomas and hi
+2 CONC s wife Pheobe sold to James George, 120 acres on Middle Creek. Another deed dated 1802 mentions a Widow Thomas as adjoining landowner to McCullers land. In 1806, McCullers sold land adjoining Thomas SPRINGER and David THOMAS.&lt;/font&gt;&lt;/stron
+2 CONC g&gt; &lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;In 1805 the State of Georgia held a land lottery where land was given to encourage settlement. Land in Warren county was awarded to David Thomas, John Thomas, John Nelson Thomas an
+2 CONC d Thomas Springer. Both John Thomas&amp;#39; had two draws, indicating that they were married men. The John in Breed&amp;#39;s District was number 904, the John in Neal&amp;#39;s District was 908, David Thomas was number 909. The same David Thoma
+2 CONC s family moved to Texas and ended up in the same area at the same time as our John Thomas family. It is likely that John and David were brothers, or at least cousins.&lt;/font&gt;&lt;/strong&gt; &lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;font color="#000
+2 CONC 0a0"&gt;Pheobe&amp;#39;s Springer&amp;#39;s parentage has not been discovered. The land information may be useful because people in that time frame tended to marry their near neighbors. It is therefore possible that Pheobe is the daughter or near r
+2 CONC elative of Thomas Springer.&lt;/font&gt;&lt;/strong&gt; &lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;At least three of John and Pheobe Thomas&amp;#39;s older children list their place of birth as Georgia.&lt;/font&gt;&lt;/strong&gt
+2 CONC ; &lt;br&gt;&amp;nbsp; &lt;/p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;&lt;font size="+1"&gt;Children of John Thomas and Pheobe Springer Thomas&lt;/font&gt;&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;Sentha&amp;nbsp;&l
+2 CONC t;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt; born 1802, GA&amp;nbsp;&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;born in Georgia&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;N
+2 CONC ancy&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt; born 1803, GA&lt;/font&gt;&lt;/strong&gt;&amp;nbsp;&lt;strong&gt;&lt;font color="#0000a0"&gt;Betsy&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt; bor
+2 CONC n 1805, GA&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;born in Georgia&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;Polly&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt; born 18
+2 CONC 07, GA&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;married Joseph Henson&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;Lucy&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt; born 1
+2 CONC 810&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;married William Morris&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;*JAMES&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt; born 1
+2 CONC 812, AL&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;married *Amanda Wheeler&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;John Nelson&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&
+2 CONC gt;born 1815&lt;/font&gt;&lt;/strong&gt;&amp;nbsp;&lt;strong&gt;&lt;font color="#0000a0"&gt;David&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt; born 1816&lt;/font&gt;&lt;/strong&gt;&amp;nbsp;&lt;strong&gt;&lt;font color="#00
+2 CONC 00a0"&gt;Selvania&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt; born 1819&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#000099"&gt;married D. P. Lang&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000
+2 CONC a0"&gt;Annie&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt; born 1821&lt;/font&gt;&lt;/strong&gt;&amp;nbsp;&lt;strong&gt;&lt;font color="#0000a0"&gt;Samuel A. J.&amp;nbsp;&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font col
+2 CONC or="#0000a0"&gt;born 1823&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;married Jane Reed&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;William&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#
+2 CONC 0000a0"&gt; born 1825&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;married Lydia Springer&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;Simeon&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#
+2 CONC 0000a0"&gt; born 1827&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;married Sarah Gilmore&lt;/font&gt;&lt;/strong&gt;&lt;font color="#0000a0"&gt;&lt;strong&gt;&lt;font size="+1"&gt;1820 Alabama Census&lt;/font&gt;&lt;/strong&
+2 CONC gt; - &lt;strong&gt;Wilcox Co (adjoins Merengo Co)&lt;/strong&gt;&lt;/font&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;1 male over 21 (John-36 )&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;3 males under 21 (Jame
+2 CONC s-8, John-5, David-4 )&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;1 female over 21 (Pheobe-36 )&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;3 females under 21 (Betsy-15, Polly
+2 CONC -13, Lucenda-10.)&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;Sentha, 18 and Nancy, 17&amp;nbsp;&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;were probably married and&amp;nbsp;&lt;/font&g
+2 CONC t;&lt;/strong&gt; &lt;br&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;Selvania, Annie, Samuel, William&amp;nbsp;&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;and Simeon were not yet born.&lt;/font&gt;&lt;/strong&g
+2 CONC t; &lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;&lt;font size="+1"&gt;1830 Alabama Census - Marengo Co&lt;/font&gt;&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;&lt;font color="#0000a0"&gt;2 males under 5 (Simeon-3 )&lt;/font&gt; &lt;br&gt;&lt;font c
+2 CONC olor="#0000a0"&gt;1 male 5-10&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; (Samuel-7)&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;3 males 15-20 (James-18, John-15, David-14)&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;fon
+2 CONC t color="#0000a0"&gt;1 male under 50&amp;nbsp; (John )&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;1 female 5-10&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; (Annie-9 )&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;1 female 10-15&amp;nbsp;&a
+2 CONC mp;nbsp; (Selvania-11)&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;1 female under 50 (Pheobe)&lt;/font&gt; &lt;p&gt;&lt;font color="#0000a0"&gt;The family appears in the 1830 Alabama Census in Marengo County, which adjoins Wilcox C
+2 CONC ounty. It is possible the family never moved in Alabama but the boundaries of the counties were changed.&lt;/font&gt; &lt;/p&gt;&lt;p&gt;&lt;font color="#0000a0"&gt;The older female children were absent, probably married and living with their husba
+2 CONC nds. Neighbors of John Thomas in the 1830 Alabama Census were Henry H. Wheeler, whose daughter *Amanda married *James Avery Thomas, son of John, and John, Joseph and William Henson. Joseph Henson married John&amp;#39;s daughter Polly. Also nearby w
+2 CONC as the Gilmore family. The Thomas, Wheeler, Henson and Gilmore families were also neighbors in Grimes County, Texas. Thomas Gilmore was security in the marriages of Polly and Lucinda, John&amp;#39;s daughters.&lt;/font&gt; &lt;/p&gt;&lt;p&gt;&lt;fo
+2 CONC nt color="#0000a0"&gt;Soon after the 1830 Alabama Census was taken, John moved his family to Texas, still a territory of Mexico. They joined Stephen F. Austin&amp;#39;s colony before 1832, registering with other Alabama neighbors in 1835. The thir
+2 CONC d entry above their names is the name of Sam Houston. The entry in Austin&amp;#39;s register says:&lt;/font&gt; &lt;br&gt;&amp;nbsp; &lt;/p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;&amp;quot;John Thomas 50 years of age Moved from Alabama Phoeb
+2 CONC e his wife 50 years of age 6 male 2 female children&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;Peter Cartwright 55 years of age From Alabama Elizabeth 50 years of age 7 male 4 female children&lt;/font&gt;&lt;/strong&gt;&lt
+2 CONC ;strong&gt;&lt;font color="#0000a0"&gt;John Springer 27 years of age From Alabama Elizabeth 22 years of age 1 male 2 female children&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;Wm. Morris, widower, 29 years of age From Alab
+2 CONC ama one female child Wants place on San Jacinto River called Cedar Point&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;Ezekiel Springer 21 years of age Erises Springer 21 years of age&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;
+2 CONC &lt;font color="#0000a0"&gt;In the original Register, a marginal note applies to all the names from John Thomas through Ezekiel Springer: &amp;quot;Want land in the San Jacinto District and have gone to examine it.&amp;quot;&lt;/font&gt;&lt;/strong
+2 CONC &gt; &lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;No less than four Thomas family historians claim &lt;font size="+1"&gt;David Thomas&lt;/font&gt;, of Texas history fame, is the son of John Thomas. Each of the published histories vary slightl
+2 CONC y. A book detailing the life of David Thomas states that he was born in Tennessee and a friend of Sam Houston before coming to Texas in 1835 at the age of 35. He descends from a line of prominent politicians. A delegate to the convention at Washing
+2 CONC ton-on-the-Brazos, he was a signer of the Texas Declaration of Independence from Mexico. Elected Texas&amp;#39; first Attorney General, he died two days before the Battle of San Jacinto aboard the ship Cayuga off the port of Galveston. He is burie
+2 CONC d in Zavala&amp;#39;s private cemetery across Buffalo Bayou from the San Jacinto battleground. A historical marker was placed there in 1938 to commemorate his importance in the struggle for independence. A painting of David Thomas hangs inside th
+2 CONC e San Jacinto Monument. The dates and movements of our Thomas family do not coincide with David Thomas until they arrive in Texas. However, John Thomas was only 15 years older than the historical David, plus our David was only 14 years old when h
+2 CONC e came to Texas. The relationship of John Thomas to the other families he arrived in Texas with is not known. Undoubtedly the Springers are related to each other and to Phoebe. William Morris married John&amp;#39;s daughter Lucinda January 25, 1830
+2 CONC , but she died before registering with the Austin colony. Thomas Gilmore was security for the marriage which took place in Marengo County, Alabama. The Gilmore/Thomas connection is quite strong and several generations seem to overlap in those lines
+2 CONC . John Gilmore III married Nancy Thomas, daughter of a John Thomas of Georgia in 1790. That date is clearly a generation before our John Thomas but a coincidence that has strong implications is that John Gilmore III died and is buried in Demopolis
+2 CONC , Marengo County, Alabama - the same place our John Thomas lived. John Gilmore&amp;#39;s children married into the families of Hinson, Springer and Landrum, just as our Thomas line did. The Gilmore family moved to Texas in 1833, settling in the sam
+2 CONC e area as our Thomas family. According to a family history of the Gilmore family published in the Grimes County Family History Book, Simeon Thomas, youngest child of John Thomas, married Sarah Gilmore in 1853. &amp;quot;Simeon Thomas came to Texa
+2 CONC s in 1832 at age 5 from Alabama and died in 1897 at Montgomery, Texas where he had driven his 2 wheel cart to get the mail. His horse shied, and Simeon suffered fatal injuries in the accident... Sarah&amp;#39;s sister-in-law, Frances, ran away wit
+2 CONC h another sister&amp;#39;s husband on a horse she stole from Simeon Thomas&amp;quot;. The Thomas family settled in Montgomery County, Texas, west of Conroe. The county boundaries were changed, creating Grimes and Walker Counties from what was forme
+2 CONC rly Montgomery County, the homestead then becoming located in Grimes County. &amp;quot;&lt;/font&gt;&lt;/strong&gt; &lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;Sarah Gilmore Thomas remembered riding horseback with her baby Mary i
+2 CONC n her lap and son John behind her to visit her sister-in-law Mandy (Amanda Wheeler) Thomas, whose daughter Kate married John Morris&amp;quot; &amp;quot;Simeon and Sarah lived in a dog-trot house, two rooms and a porch across the front; later a kitc
+2 CONC hen was added. The corn cribs and rail fences were of logs, either whole or split; the cracks were &amp;#39;chinked&amp;#39; with clay and straw or rags. There were parties, dancing, games, singings, dinners-on-the- ground, and Sunday could be a ba
+2 CONC d day for the oldest rooster or hen as it might end up in the dinner pot with dumplings. There was time to tell stories to the children, sing to them and rock them in front of the fire, to work with them doing chores that became increasingly taxin
+2 CONC g as the children grew. There were crops, cattle, horses, mules, sheep, chickens, turkey, and pigs to tend; wood to chop, washing in a washpot outdoors, growing and canning fruits and vegetables; everyone was kept busy and out of trouble. The child
+2 CONC ren studied by candlelight or oil lamps, and misbehavior at school meant 2 whippens, one at school and one at home.&amp;quot; (Written by David, Thomas, and Newton Jones - descendants of Simeon Thomas)&lt;/font&gt;&lt;/strong&gt; &lt;/p&gt;&lt;p&gt
+2 CONC ;&lt;font color="#0000a0"&gt;&lt;strong&gt;&lt;font size="+1"&gt;1850 Census,&lt;/font&gt;&lt;/strong&gt; &lt;strong&gt;Montgomery County, Texas John Thomas lists his state of birth as South Carolina, his oldest three children living with him are l
+2 CONC isted as born in Georgia.&lt;/strong&gt;&lt;/font&gt; &lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;*JAMES AVERY THOMAS was born in Marengo County, Alabama in 1812. According to the 1850 and 1860 censuses, he was born in 1816 in TN o
+2 CONC r 1818 in GA. Perhaps he did not know himself. James came to Texas before 1835. At Montgomery County in 1842 he married *AMANDA WHEELER, daughter of *HENRY H. WHEELER and *MARY ANN SAWYER who were neighbors of the Thomas family in Alabama. It als
+2 CONC o appears that they were neighbors in Georgia, all having arrived in Texas within a short time of each other. James and Amanda settled in Roans Prarie in Grimes County though at the time they first came there, Roans Prarie was in Montgomery County
+2 CONC . James was a farmer.&amp;nbsp; James died 28 Apr 1865 and is buried at Mustang Prarie. Amanda died 05 Sep 1896 at Mustang Prarie. The cemetery is located 100 yards from the Walker County line, 16 miles west of Huntsville, Texas, off Highway 30.&lt
+2 CONC ;/font&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;&lt;font size="+1"&gt;James Thomas and Amanda Wheeler Thomas&amp;#39; Children&lt;/font&gt;&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;fon
+2 CONC t color="#0000a0"&gt;child&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt; born&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;married&lt;/font&gt;&lt;/strong&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt
+2 CONC ; died&lt;/font&gt;&lt;/strong&gt;&lt;font color="#0000a0"&gt;Phebe M&lt;/font&gt;&lt;font color="#0000a0"&gt;1853&lt;/font&gt;&lt;font color="#0000a0"&gt;Willis Fulton&lt;/font&gt;&amp;nbsp;&lt;font color="#0000a0"&gt;John Henry&lt;/font&gt;&lt;fo
+2 CONC nt color="#0000a0"&gt;1846&lt;/font&gt;&lt;font color="#0000a0"&gt;Betty Thornton&lt;/font&gt;&lt;font color="#0000a0"&gt;1928&lt;/font&gt;&lt;font color="#0000a0"&gt;Sam&lt;/font&gt;&lt;font color="#0000a0"&gt; 1862&lt;/font&gt;&lt;font color="#00
+2 CONC 00a0"&gt;Sarah Jane Reed&lt;/font&gt;&lt;font color="#0000a0"&gt;1888&lt;/font&gt;&lt;font color="#0000a0"&gt;Archie&lt;/font&gt;&lt;font color="#0000a0"&gt; 1860&lt;/font&gt;&lt;font color="#0000a0"&gt;Mollie Coleman&lt;/font&gt;&lt;font color="#0
+2 CONC 000a0"&gt;1945&lt;/font&gt;&lt;font color="#0000a0"&gt;Mack&lt;/font&gt;&lt;font color="#0000a0"&gt; 1857&lt;/font&gt;&lt;font color="#0000a0"&gt;Jennie Thompson&lt;/font&gt;&lt;font color="#0000a0"&gt;1937&lt;/font&gt;&lt;font color="#0000a0"&gt;C
+2 CONC . Dave&lt;/font&gt;&lt;font color="#0000a0"&gt;1855&lt;/font&gt;&lt;font color="#0000a0"&gt;Mallie McGilberry&lt;/font&gt;&lt;font color="#0000a0"&gt;1942&lt;/font&gt;&lt;font color="#0000a0"&gt;Katherine&lt;/font&gt;&lt;font color="#0000a0"&gt; 18
+2 CONC 50&lt;/font&gt;&lt;font color="#0000a0"&gt;John Morris&lt;/font&gt;&lt;font color="#0000a0"&gt;1938&lt;/font&gt;&lt;font color="#0000a0"&gt;*Francis Marion&lt;/font&gt;&lt;font color="#0000a0"&gt;1852&lt;/font&gt;&lt;font color="#0000a0"&gt;*Susa
+2 CONC n Mullens&lt;/font&gt;&lt;font color="#0000a0"&gt;1922&lt;/font&gt; &lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;&lt;font size="+1"&gt;1850 Texas Census &lt;/font&gt;&lt;/font&gt;&lt;/strong&gt;- &lt;font color="#0000a0"&gt;Grimes County&lt;/
+2 CONC font&gt;&lt;/p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;James Thomas age 34 m TN&amp;nbsp;&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;(he was born in GA, or AL not TN)&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#000
+2 CONC 0a0"&gt;&lt;strong&gt;Amanda 24 f TN&lt;/strong&gt; (she was born in GA)&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;Phebe M. 7 f TX John 4 m TX&amp;nbsp;&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&lt;strong&gt;&lt;font c
+2 CONC olor="#0000a0"&gt;Samuel A. J. 2 m TX&amp;nbsp;&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;Amanda C. J. 6/12 f TX&amp;nbsp;&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;H. H. W
+2 CONC heeler 50 m NC&amp;nbsp;&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;&lt;strong&gt;Mary Ann Wheeler 15 f AL &lt;/strong&gt;(Granddaughter of Henry H. Wheeler)&lt;/font&gt; &lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;*JA
+2 CONC MES and *AMANDA are listed as being unable to read or write. Their property is valued at $600. In the household is HENRY H. WHEELER, Amanda&amp;#39;s father. Mary Ann Wheeler is Amanda&amp;#39;s neice, daughter of her brother, John Wheeler. John li
+2 CONC ves two farms away from his sister Amanda with his wife Elizabeth and son Joseph Jr. but he denied paternity of the daughter living with Amanda. John listed his occupation as &amp;quot;none&amp;quot;. Henry Wheeler&amp;#39;s wife, Mary Ann Sawyer
+2 CONC , does not appear on any census.&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&amp;nbsp; &lt;/p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;&lt;font size="+1"&gt;1860 Texas Census&lt;/font&gt;-Bedias, Grimes County&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;&l
+2 CONC t;font color="#0000a0"&gt;J. Thomas 42 m GA farmer 480 - 700&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Amanda 31 f GA keeping house&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Pheoby 17 f&amp;nbsp; TX&amp;nbsp;&l
+2 CONC t;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;John 14 m&amp;nbsp; TX&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Samuel 12 m TX&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Catherine 10 f&amp;nbsp; TX&amp;nbsp;&
+2 CONC lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Jane 8 f&amp;nbsp; TX&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Charles 4 m TX&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;McGowan 2 m TX&amp;nbsp;&lt;/font&gt
+2 CONC ; &lt;br&gt;&lt;font color="#0000a0"&gt;Archie 9/12 m TX&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Willis Fulton 21 m TX (he married Pheoby above)&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Elizabeth Wheeler 35&
+2 CONC amp;nbsp; f AL Insane, Pauper&amp;nbsp;&lt;/font&gt; &lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;Elizabeth Wheeler was the sister-in-law of Amanda. Amanda&amp;#39;s brother John had her declared insane. James&amp;#39; real estate was worth $
+2 CONC 480 and his personal property was worth $700. Jane and McGowan do not appear on future censuses. Notice that Amanda lists her state of birth as GA.&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&amp;nbsp; &lt;/p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt
+2 CONC ;&lt;font size="+1"&gt;1870 Texas Census - Grimes County&lt;/font&gt;&lt;/font&gt;&lt;/strong&gt;&lt;font color="#0000a0"&gt;Amanda Thomas 43 f&amp;nbsp; GA&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Marion 16 m TX&amp;nbsp;&lt;/f
+2 CONC ont&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;David&amp;nbsp;&amp;nbsp; 14 m TX&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Sam&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 12 m TX&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a
+2 CONC 0"&gt;Archie&amp;nbsp; 10 m TX&lt;/font&gt; &lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;By the 1870 Census, James Avery had died, and *FRANCIS MARION THOMAS appears as the 16 year old Marion. For some reason, the dates in&lt;/font&gt;&lt;/st
+2 CONC rong&gt; &lt;br&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;the 1870 census are in error by two years for Amanda and Marion.&lt;/font&gt;&lt;/strong&gt; &lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;*FRANCES MARION THOMAS was the th
+2 CONC ird eldest child being born 09 Aug 1852. On 21 Jan 1875, he married *SUSAN BARBARA MULLENS, daughter of *MATHEW S. MULLENS and *MARY ANN EDWARDS. Susan was born in Courtland, Cass County, Texas on 29 Feb, 1857 and moved to Walker County with her mo
+2 CONC ther and sisters in 1866. Susan&amp;#39;s ancestry appears in the EDWARDS and MULLENS chapters.&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&amp;nbsp; &lt;/p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;&lt;font size="+1"&gt;Children of *Frances Thomas a
+2 CONC nd Susan Mullens&lt;/font&gt;&lt;/font&gt;&lt;/strong&gt;&lt;font color="#0000a0"&gt;James Gary&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; born 1877&amp;nbsp;&amp;nbsp;&amp;nbsp; married Stella Kennard&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;fo
+2 CONC nt color="#0000a0"&gt;Huey Edward&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; marr
+2 CONC ied Bessie Dameron&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Obey Roberts&amp;nbsp;&amp;nbsp; born 1878&amp;nbsp;&amp;nbsp; married Stella Stewart&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Walter Marion&amp;nbs
+2 CONC p;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; married Lillie Mae Haste&amp;nbsp;&lt;/font&gt; &lt;br&
+2 CONC gt;&lt;font color="#0000a0"&gt;Becky Mamie Jane&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; married Claude Hurt&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;fon
+2 CONC t color="#0000a0"&gt;Alice Abbie&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; born 1888&amp;nbsp;&amp;nbsp;&amp;nbsp; married Moody Hurt&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Sallie&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp
+2 CONC ;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; born 1889&amp;nbsp;&amp;nbsp;&amp;nbsp; married Warren Honea&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Simp Matthew&a
+2 CONC mp;nbsp; born 1894&amp;nbsp;&amp;nbsp; married Maureen Haste&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;*SUSIE CORNELIA born 1897 married *Lee Harrison Sandel&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Myrtle Luc
+2 CONC ille&amp;nbsp;&amp;nbsp; born 1900&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; married Garvin Colburn&lt;/font&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;&lt;font size="+1"&gt;1880 Texas Census&lt;/font&gt; - Grimes County, Prarie Plains&lt;/font&gt;
+2 CONC &lt;/strong&gt;&lt;font color="#0000a0"&gt;Thomas, Marion&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 29 m&amp;nbsp;&amp;nbsp; TX AL AL&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; farmer&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&g
+2 CONC t;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Susan B&amp;nbsp;&amp;nbsp;&amp;nbsp; 23 f&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; TX AL NC&amp;nbsp;&lt;/font&gt
+2 CONC ; &lt;br&gt;&lt;font color="#0000a0"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Obie R.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2 m&amp;nbsp;&amp;n
+2 CONC bsp;&amp;nbsp; TX TX TX&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Mullens, Mary A.&amp;nbsp;&amp;nbsp; 58 f&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; NC GA MD&amp;nbsp;&amp;nbsp; mother-in-law&lt;/font&gt; &lt;p&gt;&lt;st
+2 CONC rong&gt;&lt;font color="#0000a0"&gt;The first state listed after each name is their state of nativity, or birth. The second state listed is the father&amp;#39;s state of birth and the third state is the mother&amp;#39;s state of birth. Marion (*FRA
+2 CONC NCIS MARION) lists his mother as being born in Alabama though Amanda was born in Georgia according to earlier censuses. Notice that *MARY ANN MULLEN, Susan&amp;#39;s mother, is listed as being born in North Carolina though other records indicate sh
+2 CONC e was born in South Carolina. Her father PETER EDWARDS was born in SC and her mother, MARY SALMON was born in SC or possibly VA. Depending on who gave the census information, it was often inaccurate. In the same 1880 census, on a neighboring farm i
+2 CONC s this listing:&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&amp;nbsp; &lt;/p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;&lt;font size="+1"&gt;1880 Texas Census -&lt;/font&gt; neighboring farm&lt;/font&gt;&lt;/strong&gt;&lt;font color="#0000a0"&gt;Thom
+2 CONC as, Amanda&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 52 f&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; GA GA GA&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Keeping House&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&g
+2 CONC t;&amp;quot; Archie B.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 19 m&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; TX AL GA&amp;nbsp;&a
+2 CONC mp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; farmer&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Fulton, William M.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 15 m&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; TX TX TX&amp;nbsp;&amp;nbsp;&amp;nbsp
+2 CONC ;&amp;nbsp;&amp;nbsp; works on farm (grandson)&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;&amp;quot; Effie&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp
+2 CONC ;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 11 f&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; TX TX TX&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; at scho
+2 CONC ol (granddaughter)&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;(Living near Amanda Thomas was the family of Willis and Pheby Fulton, Amanda&amp;#39;s daughter.)&amp;nbsp;&lt;/font&gt; &lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"
+2 CONC &gt;1854-55 THE TEXAS SCHOLASTICS: J. Thomas paid school tax in District 14 of Grimes County for 2 males and 1 female (John, Samuel, Phoebe) Nelson B. Thomas paid a school tax in District 4 of Montgomery County for 6 children. In 1855, Mary Thoma
+2 CONC s paid a school tax in District 6 of Montgomery County for 2 children, Rufus and Elizabeth.&lt;/font&gt;&lt;/strong&gt; &lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;1846 REPUBLIC OF TEXAS POLL LISTS: James Thomas&lt;/font&gt;&lt;/st
+2 CONC rong&gt; &lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;FIRST SETTLERS OF TEXAS: David Thomas and John N. Thomas received land in Montgomery County and James Thomas received land in Walker County. Those boundaries are now in Grimes Co
+2 CONC unty.&lt;/font&gt;&lt;/strong&gt; &lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;TEXAS - SAN JACINTO: Algernon P. Thomas, Benjamin Thomas, G.S. Thomas fought in the battle for Texas&amp;#39; Independence at San Jacinto.&lt;/font&gt;&l
+2 CONC t;/strong&gt; &lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;1848 - Petition presented to establish a Baptist Church in Leona, Leon County. Signed by Sentha Thomas, daughter of John and Phoebe Thomas. She was a member in 1850, decease
+2 CONC d in 1852. Judge R. E. B. Baylor conducted early services there. He also presided over the first district court.&lt;/font&gt;&lt;/strong&gt; &lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;font color="#0000a0"&gt;1860 Census, Leon County, Texas hh660 - S.A.J
+2 CONC . and Jane Thomas (Samuel A. J. , son of John and Phoebe) This area was known as Bear Grass, located in the northwest corner of Leon County, northeast of the present town of Jewett.&lt;/font&gt;&lt;/strong&gt; &lt;br&gt;&amp;nbsp; &lt;/p&gt;&lt;str
+2 CONC ong&gt;&lt;font color="#0000a0"&gt;MONTGOMERY COUNTY COURTHOUSE RECORDS: Marriages&lt;/font&gt;&lt;/strong&gt;&lt;font color="#0000a0"&gt;William Thomas&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;n
+2 CONC bsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Susannah Morgan&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 02 Sep 1849&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;John Thomas&am
+2 CONC p;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Mary D. Cook&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbs
+2 CONC p;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 23 Aug 1860&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Wm S. Thomas&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+2 CONC &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; E. A. Furgerson&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 0
+2 CONC 7 Mar 1861&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;L.A.J. Thomas&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&am
+2 CONC p;nbsp; Sarah Jane Reed&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 06 Dec 1866&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;P. M. Thomas&amp;nbsp;&amp;nbsp
+2 CONC ;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Willis Fulton&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&am
+2 CONC p;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 19 Jan 1861&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;E. A. Thomas (f)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&
+2 CONC amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; J. A. Boggess&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;
+2 CONC nbsp;&amp;nbsp; 20 Sep 1865&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;M. E. Thomas (f)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; W. A. Martin&amp;nbsp;
+2 CONC &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 12 Jul 1865&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Hann
+2 CONC ah Thomas&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Willis Terrell&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp
+2 CONC ;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 01 Sep 1866&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Ann Thomas&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbs
+2 CONC p;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; William Hooker&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&
+2 CONC amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 31 Oct 1866&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Leah A. Thomas&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&
+2 CONC amp;nbsp;&amp;nbsp; E. O. Storey&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 04 Dec 1866&amp;nbsp;&lt;/font&gt
+2 CONC ; &lt;br&gt;&lt;font color="#0000a0"&gt;Phyllis Thomas&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; William Hayes&amp;nbsp;&amp;nbsp;
+2 CONC &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 03 Feb 1867&amp;nbsp;&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Mary W. Thomas&amp;nbsp;&amp;nbsp;
+2 CONC &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; John Stevens&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;
+2 CONC nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 26 Jan 1868&lt;/font&gt; &lt;p&gt;&lt;font color="#0000a0"&gt;This page appears in the book SANDEL / THOMAS And Related Families&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Written and researche
+2 CONC d by Charlotte Sandel Beck&lt;/font&gt; &lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/div&gt;</line></content></metadataxml>
+1 _CREA 2021-11-01 17:03:57.000
+1 _USER MJFVEB21Y9N34qODtzgaPO5g4bCW/uUiOX2qn40Xoaz1ob5OmCjjn1dmC7w6uC8qoutS63ThiWJ2Hm3Zq8nVWw==
+2 _ENCR 1
+1 _CLON
+2 _TID 15734294
+2 _PID 1095534787
+2 _OID b391b448-878c-4f13-bbe8-6956bd1b030f
+2 _USER W7thPNStTO6TyaPtay8Y32slzpcL5GZ0Idn45BJwRLDNLpv4Y43MkAtTMPgP0XTPmSfvJIVD4CuxY+qUYAg4lQ==
+3 _ENCR 1
+2 _DATE 2010-10-11 21:54:07.000
+1 _ORIG u
+1 _MSER
+2 _LKID b391b448-878c-4f13-bbe8-6956bd1b030f
+1 _ATL N
+0 @O19@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _STYPE jpeg
+3 _SIZE 3792229
+3 _WDTH 2780
+3 _HGHT 3693
+1 _OID fa1c8530-2548-4c06-9db3-f2460faecc60
+1 _CREA 2021-11-01 16:47:19.000
+1 _USER o0+C0wVIZ912iDjW5ljaOtO/B4r/u9YDVYHyQpInwjSN7EDCRrZI3dvLmZn6xX6wmk33Dgx7bk8XnKOs9a5ITg==
+2 _ENCR 1
+1 _CLON
+2 _TID 109510079
+2 _PID 330076745882
+2 _OID 852c6181-1ddf-4016-ac4d-7c9201d73151
+2 _USER uv220gtsNVw38TsKj35n+NDhGkwQG0e31uwjnQc2SPlgtee1sXiAl4TcExpYCYB3UmUpe53oCykPyOYj8rD32g==
+3 _ENCR 1
+2 _DATE 2017-03-10 22:35:17.000
+1 _ORIG u
+1 _MSER
+2 _LKID 852c6181-1ddf-4016-ac4d-7c9201d73151
+1 _ATL N
+0 @S466338293@ SOUR
+1 TITL Texas, U.S., Birth Index, 1903-1997
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2005
+2 PLAC Lehi, UT, USA
+1 _APID 1,8781::0
+1 REPO @R404973340@
+1 NOTE &lt;i&gt;Texas Birth Index, 1903-1997&lt;/i&gt;. Texas: Texas Department of State Health Services. Microfiche.
+0 @S466338308@ SOUR
+1 TITL Texas, U.S., Marriage Index, 1824-2017
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2005
+2 PLAC Lehi, UT, USA
+1 _APID 1,8795::0
+1 REPO @R404973340@
+1 NOTE &lt;p&gt;Dodd, Jordan R, et. al. &lt;i&gt;Early American Marriages: Texas to 1850&lt;/i&gt;. Bountiful, UT: Precision Indexing Publishers, 19xx.&lt;/p&gt;&lt;p&gt;Hunting For Bears, comp. Texas marriage information taken from county courthouse reco
+2 CONC rds. Many of these records were extracted from copies of the original records in microfilm, microfiche, or book format, located at the Family History Library.&lt;/p&gt;&lt;p&gt;Texas Department of State Health Services. Texas Marriage Index, 1966-2
+2 CONC 014. Texas Department of State Health Services, Texas.&lt;/p&gt;&lt;p&gt;Dodd, Jordan, Liahona Research, comp. (P.O. Box 740, Orem, Utah 84059) from county marriage records on microfilm located at the Family History Library in Salt Lake City, Utah
+2 CONC , in published books cataloged by the Library of Congress, or from county courthouse records.&lt;/p&gt;
+0 @S466338336@ SOUR
+1 TITL U.S., Public Records Index, 1950-1993, Volume 2
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2010
+2 PLAC Lehi, UT, USA
+1 _APID 1,1732::0
+1 REPO @R404973340@
+1 NOTE &lt;i&gt;Voter Registration Lists, Public Record Filings, Historical Residential Records, and Other Household Database Listings&lt;/i&gt;.
+0 @S466338397@ SOUR
+1 TITL U.S., Index to Public Records, 1994-2019
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2020
+2 PLAC Lehi, UT, USA
+1 _APID 1,62209::0
+1 REPO @R404973340@
+1 NOTE &lt;i&gt;Voter Registration Lists, Public Record Filings, Historical Residential Records, and Other Household Database Listings&lt;/i&gt;.
+0 @S466338438@ SOUR
+1 TITL The Houston Jewish Herald-Voice Index to Vitals and Family Events, 1908-2007
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2008
+2 PLAC Provo, UT, USA
+1 _APID 1,1360::0
+1 REPO @R404973340@
+1 NOTE Greater Houston Jewish Genealogical Society, comp. &lt;i&gt;Jewish Herald-Voice&lt;/i&gt;. Houston, Texas: Jewish-Herald Voice, 1908-2007. This data is provided in partnership with &lt;a target="_blank" href="http://jewishgen.org"&gt;JewishGen.org.
+2 CONC &lt;/a&gt;
+0 @S466338497@ SOUR
+1 TITL Texas, U.S., Birth Certificates, 1903-1932
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2013
+2 PLAC Provo, UT, USA
+1 _APID 1,2275::0
+1 REPO @R404973340@
+1 NOTE &lt;p&gt;Texas Department of State Health Services. Texas Birth Certificates, 1903–1932. iArchives, Orem, Utah.&lt;/p&gt;
+0 @S466338541@ SOUR
+1 TITL 1940 United States Federal Census
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2012
+2 PLAC Provo, UT, USA
+1 _APID 1,2442::0
+1 REPO @R404973340@
+1 NOTE United States of America, Bureau of the Census. &lt;i&gt;Sixteenth Census of the United States, 1940&lt;/i&gt;. Washington, D.C.: National Archives and Records Administration, 1940. T627, 4,643 rolls.
+0 @S466338562@ SOUR
+1 TITL U.S., World War II Draft Cards Young Men, 1940-1947
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2011
+2 PLAC Lehi, UT, USA
+1 _APID 1,2238::0
+1 REPO @R404973340@
+1 NOTE &lt;p&gt;&lt;a href="##SearchUrlPrefix##/search/dbextra.aspx?dbid=2238" target="_blank"&gt;View Sources&lt;/a&gt;.&lt;/p&gt;
+0 @S466338593@ SOUR
+1 TITL U.S., Newspapers.com Marriage Index, 1800s-2020
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2020
+2 PLAC Lehi, UT, USA
+1 _APID 1,62116::0
+1 REPO @R404973340@
+0 @S466338630@ SOUR
+1 TITL 1930 United States Federal Census
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2002
+2 PLAC Provo, UT, USA
+1 _APID 1,6224::0
+1 REPO @R404973340@
+1 NOTE United States of America, Bureau of the Census. &lt;i&gt;Fifteenth Census of the United States, 1930&lt;/i&gt;. Washington, D.C.: National Archives and Records Administration, 1930. T626, 2,667 rolls.
+0 @S466338642@ SOUR
+1 TITL U.S., Obituary Collection, 1930-Current
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2006
+2 PLAC Lehi, UT, USA
+1 _APID 1,7545::0
+1 REPO @R404973340@
+1 NOTE See newspaper information provided with each entry.
+0 @S466338701@ SOUR
+1 TITL U.S., Public Records Index, 1950-1993, Volume 1
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2010
+2 PLAC Lehi, UT, USA
+1 _APID 1,1788::0
+1 REPO @R404973340@
+1 NOTE &lt;i&gt;Voter Registration Lists, Public Record Filings, Historical Residential Records, and Other Household Database Listings&lt;/i&gt;.
+0 @S466338725@ SOUR
+1 TITL U.S., School Yearbooks, 1900-1999
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2010
+2 PLAC Lehi, UT, USA
+1 _APID 1,1265::0
+1 REPO @R404973340@
+1 NOTE Various school yearbooks from across the United States.
+0 @S466338770@ SOUR
+1 TITL Texas, U.S., Select County Marriage Records, 1837-1965
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2014
+2 PLAC Lehi, UT, USA
+1 _APID 1,9168::0
+1 REPO @R404973340@
+1 NOTE &lt;p&gt;&lt;a href="##SearchUrlPrefix##/search/dbextra.aspx?dbid=9168" target="_blank"&gt;View Sources&lt;/a&gt;.&lt;/p&gt;
+0 @S466339160@ SOUR
+1 TITL 1900 United States Federal Census
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2004
+2 PLAC Provo, UT, USA
+1 _APID 1,7602::0
+1 REPO @R404973340@
+1 NOTE United States of America, Bureau of the Census. &lt;i&gt;Twelfth Census of the United States, 1900&lt;/i&gt;. Washington, D.C.: National Archives and Records Administration, 1900. T623, 1854 rolls.
+0 @S466339191@ SOUR
+1 TITL Texas, U.S., Death Certificates, 1903-1982
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2013
+2 PLAC Provo, UT, USA
+1 _APID 1,2272::0
+1 REPO @R404973340@
+1 NOTE Texas Department of State Health Services. Texas Death Certificates, 1903–1982. Austin, Texas, USA.
+0 @S466339223@ SOUR
+1 TITL 1920 United States Federal Census
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2010
+2 PLAC Provo, UT, USA
+1 _APID 1,6061::0
+1 REPO @R404973340@
+1 NOTE Fourteenth Census of the United States, 1920. (NARA microfilm publication T625, 2076 rolls). Records of the Bureau of the Census, Record Group 29. National Archives, Washington, D.C. For details on the contents of the film numbers, visit the follow
+2 CONC ing NARA web page: &lt;a href="https://www.archives.gov/research/census/publications-microfilm-catalogs-census/1920/part-07.html" target="_blank"&gt;NARA&lt;/a&gt;. Note: Enumeration Districts 819-839 are on roll 323 (Chicago City).
+0 @S466339250@ SOUR
+1 TITL 1910 United States Federal Census
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2006
+2 PLAC Lehi, UT, USA
+1 _APID 1,7884::0
+1 REPO @R404973340@
+1 NOTE Thirteenth Census of the United States, 1910 (NARA microfilm publication T624, 1,178 rolls). Records of the Bureau of the Census, Record Group 29. National Archives, Washington, D.C. For details on the contents of the film numbers, visit the follow
+2 CONC ing NARA web page: &lt;a href="http://www.archives.gov/research/census/publications-microfilm-catalogs-census/1910/index.html" target="_blank"&gt;NARA&lt;/a&gt;.
+0 @S466339346@ SOUR
+1 TITL 1880 United States Federal Census
+1 AUTH Ancestry.com and The Church of Jesus Christ of Latter-day Saints
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2010
+2 PLAC Lehi, UT, USA
+1 _APID 1,6742::0
+1 REPO @R404973340@
+1 NOTE Tenth Census of the United States, 1880. (NARA microfilm publication T9, 1,454 rolls). Records of the Bureau of the Census, Record Group 29. National Archives, Washington, D.C.
+0 @S466339362@ SOUR
+1 TITL Texas, U.S., Death Index, 1903-2000
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2006
+2 PLAC Provo, UT, USA
+1 _APID 1,4876::0
+1 REPO @R404973340@
+1 NOTE Texas Department of Health. &lt;i&gt;Texas Death Indexes, 1903-2000&lt;/i&gt;. Austin, TX, USA: Texas Department of Health, State Vital Statistics Unit.
+0 @S466339379@ SOUR
+1 TITL U.S., Social Security Applications and Claims Index, 1936-2007
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2015
+2 PLAC Provo, UT, USA
+1 _APID 1,60901::0
+1 REPO @R404973340@
+1 NOTE Social Security Applications and Claims, 1936-2007.
+0 @S466339400@ SOUR
+1 TITL Texas, U.S., Select County Marriage Index, 1837-1965
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2014
+2 PLAC Provo, UT, USA
+1 _APID 1,60183::0
+1 REPO @R404973340@
+1 NOTE &lt;i&gt;Texas, County Marriage Index, 1837-1977&lt;/i&gt;. Salt Lake City, Utah: FamilySearch, 2013.
+0 @S466339414@ SOUR
+1 TITL U.S., World War I Draft Registration Cards, 1917-1918
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2005
+2 PLAC Provo, UT, USA
+1 _APID 1,6482::0
+1 REPO @R404973340@
+1 NOTE United States, Selective Service System. &lt;i&gt;World War I Selective Service System Draft Registration Cards, 1917-1918&lt;/i&gt;. Washington, D.C.: National Archives and Records Administration. M1509, 4,582 rolls. Imaged from Family History Lib
+2 CONC rary microfilm.
+0 @S466339470@ SOUR
+1 TITL U.S., Newspapers.com Obituary Index, 1800s-current
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2019
+2 PLAC Lehi, UT, USA
+1 _APID 1,61843::0
+1 REPO @R404973340@
+0 @S466339560@ SOUR
+1 TITL Ancestry Family Trees
+1 PUBL Online publication - Provo, UT, USA: Ancestry.com.  Original data:  Family Tree files submitted by Ancestry members.
+1 _APID 1,1030::0
+1 REPO @R404973340@
+0 @S466341385@ SOUR
+1 TITL U.S., Find a Grave Index, 1600s-Current
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2012
+2 PLAC Lehi, UT, USA
+1 _APID 1,60525::0
+1 REPO @R404973340@
+0 @S466342329@ SOUR
+1 TITL 1870 United States Federal Census
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2009
+2 PLAC Provo, UT, USA
+1 _APID 1,7163::0
+1 REPO @R404973340@
+1 NOTE &lt;ul&gt;&lt;li&gt;1870 U.S. census, population schedules. NARA microfilm publication M593, 1,761 rolls. Washington, D.C.: National Archives and Records Administration, n.d.&lt;/li&gt;&lt;li&gt;Minnesota census schedules for 1870. NARA microfilm p
+2 CONC ublication T132, 13 rolls. Washington, D.C.: National Archives and Records Administration, n.d.&lt;/li&gt;&lt;/ul&gt;
+0 @S466342668@ SOUR
+1 TITL 1864 Census for Re-Organizing the Georgia Militia
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2012
+2 PLAC Provo, UT, USA
+1 _APID 1,3007::0
+1 REPO @R404973340@
+1 NOTE Cornell, Nancy J. &lt;i&gt;1864 Census for Re-Organizing the Georgia Militia&lt;/i&gt;. Baltimore, MD, USA: Genealogical Publishing Co., 2000.
+0 @S466342679@ SOUR
+1 TITL Alabama, U.S., Civil War Muster Rolls, 1861-1865
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2010
+2 PLAC Provo, UT, USA
+1 _APID 1,1736::0
+1 REPO @R404973340@
+1 NOTE &lt;i&gt;Muster rolls of Alabama Civil War Units&lt;/i&gt;. &lt;i&gt;SG025006-25100.&lt;/i&gt; Montgomery, Alabama: Alabama Department of Archives &amp; History.
+0 @S466344994@ SOUR
+1 TITL U.S., Confederate Soldiers Compiled Service Records, 1861-1865
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2011
+2 PLAC Provo, UT, USA
+1 _APID 1,2322::0
+1 REPO @R404973340@
+1 NOTE &lt;i&gt;Compiled Service Records of Confederate Soldiers&lt;/i&gt;. The National Archives at Washington, D.C. &lt;p&gt;&lt;a href="##SearchUrlPrefix##/search/dbextra.aspx?dbid=2322" target="_blank"&gt;View Sources&lt;/a&gt;.&lt;/p&gt;
+0 @S466344998@ SOUR
+1 TITL U.S., Civil War Soldiers, 1861-1865
+1 AUTH National Park Service
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2007
+2 PLAC Provo, UT, USA
+1 _APID 1,1138::0
+1 REPO @R404973340@
+1 NOTE National Park Service, Civil War Soldiers and Sailors System, online &amp;lt;&lt;a href="http://www.itd.nps.gov/cwss/" target="_blank"&gt;http://www.itd.nps.gov/cwss/&lt;/a&gt;&amp;gt;, acquired 2007.
+0 @S466345033@ SOUR
+1 TITL 1850 United States Federal Census
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2009
+2 PLAC Lehi, UT, USA
+1 _APID 1,8054::0
+1 REPO @R404973340@
+1 NOTE Seventh Census of the United States, 1850; (National Archives Microfilm Publication M432, 1009 rolls); Records of the Bureau of the Census, Record Group 29; National Archives, Washington, D.C.
+0 @S466345059@ SOUR
+1 TITL U.S., Civil War Soldier Records and Profiles, 1861-1865
+1 AUTH Historical Data Systems, comp
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2009
+2 PLAC Provo, UT, USA
+1 _APID 1,1555::0
+1 REPO @R404973340@
+1 NOTE Data compiled by Historical Data Systems of Kingston, MA from the &lt;a href="##AncestryUrlPrefix##/handler/domainrd.ashx?domain=AncestryDomain&amp;url=/search/rectype/military/cwrd/db.aspx"&gt;following list of works&lt;/a&gt;.&lt;p&gt;Copyright 1
+2 CONC 997-2009&lt;br&gt;Historical Data Systems, Inc.&lt;br&gt; PO Box 35&lt;br&gt;Duxbury, MA 02331.&lt;/p&gt;
+0 @S466345864@ SOUR
+1 TITL U.S., Sons of the American Revolution Membership Applications, 1889-1970
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2011
+2 PLAC Provo, UT, USA
+1 _APID 1,2204::0
+1 REPO @R404973340@
+1 NOTE &lt;i&gt;Sons of the American Revolution Membership Applications, 1889-1970&lt;/i&gt;. Louisville, Kentucky: National Society of the Sons of the American Revolution. Microfilm, 508 rolls.
+0 @S466346305@ SOUR
+1 TITL U.S., City Directories, 1822-1995
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2011
+2 PLAC Lehi, UT, USA
+1 _APID 1,2469::0
+1 REPO @R404973340@
+1 NOTE Original sources vary according to directory. The title of the specific directory being viewed is listed at the top of the image viewer page.  Check the directory title page image for full title and publication information.
+0 @S466346322@ SOUR
+1 TITL Texas, U.S., Naturalization Records, 1852-1991
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2012
+2 PLAC Lehi, UT, USA
+1 _APID 1,2509::0
+1 REPO @R404973340@
+1 NOTE &lt;p&gt;Records of District Courts of the United States, Record Group 21; The National Archives at Fort Worth, TX.A&lt;/p&gt;&lt;p&gt;&lt;br&gt; full list of sources can be found h&lt;a href="##SearchUrlPrefix##/search/dbextra.aspx?dbid=2509" targ
+2 CONC et="_blank"&gt;ere.&lt;/a&gt;&lt;/p&gt;
+0 @S466347315@ SOUR
+1 TITL U.S., Social Security Death Index, 1935-2014
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2014
+2 PLAC Provo, UT, USA
+1 _APID 1,3693::0
+1 REPO @R404973340@
+1 NOTE Social Security Administration. &lt;i&gt;Social Security Death Index, Master File&lt;/i&gt;. Social Security Administration.
+0 @S466347352@ SOUR
+1 TITL JewishGen Online Worldwide Burial Registry (JOWBR)
+1 AUTH JewishGen, comp
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2008
+2 PLAC Provo, UT, USA
+1 _APID 1,1411::0
+1 REPO @R404973340@
+1 NOTE This data is provided in partnership with &lt;a target="_blank" href="http://jewishgen.org"&gt;JewishGen.org.&lt;/a&gt;
+0 @S466347375@ SOUR
+1 TITL New York, U.S., Arriving Passenger and Crew Lists (including Castle Garden and Ellis Island), 1820-1957
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2010
+2 PLAC Lehi, UT, USA
+1 _APID 1,7488::0
+1 REPO @R404973340@
+1 NOTE &lt;p&gt;&lt;i&gt;Passenger Lists of Vessels Arriving at New York, New York, 1820-1897. &lt;/i&gt; Microfilm Publication M237, 675 rolls. NAI: &lt;a href="http://research.archives.gov/description/6256867" target="_blank"&gt;6256867&lt;/a&gt;. Recor
+2 CONC ds of the U.S. Customs Service, Record Group 36. National Archives at Washington, D.C.&lt;/p&gt;
+2 CONT &lt;p&gt;&lt;i&gt;Passenger and Crew Lists of Vessels Arriving at New York, New York, 1897-1957.&lt;/i&gt; Microfilm Publication T715, 8892 rolls. NAI: &lt;a href="http://research.archives.gov/description/300346" target="_blank"&gt;300346&lt;/a&gt;
+2 CONC . Records of the Immigration and Naturalization Service; National Archives at Washington, D.C.&lt;/p&gt;
+2 CONT &lt;p&gt;&lt;i&gt;Supplemental Manifests of Alien Passengers and Crew Members Who Arrived on Vessels at New York, New York, Who Were Inspected for Admission, and Related Index, compiled 1887-1952.&lt;/i&gt; Microfilm Publication A3461, 21 rolls. NA
+2 CONC I: &lt;a href="http://research.archives.gov/description/3887372" target="_blank"&gt;3887372.&lt;/a&gt; RG 85, Records of the Immigration and Naturalization Service, 1787-2004; Records of the Immigration and Naturalization Service; National Archives
+2 CONC , Washington, D.C. &lt;/p&gt;
+2 CONT &lt;p&gt;&lt;i&gt;Index to Alien Crewmen Who Were Discharged or Who Deserted at New York, New York, May 1917-Nov. 1957.&lt;/i&gt; Microfilm Publication A3417. NAI: &lt;a href="http://research.archives.gov/description/4497925" target="_blank"&gt;449
+2 CONC 7925.&lt;/a&gt; National Archives at Washington, D.C.&lt;/p&gt;
+2 CONT &lt;p&gt;&lt;i&gt;Passenger Lists, 1962-1972, and Crew Lists, 1943-1972, of Vessels Arriving at Oswego, New York.&lt;/i&gt; Microfilm Publication A3426. NAI: &lt;a href="http://research.archives.gov/description/4441521" target="_blank"&gt;4441521.&
+2 CONC lt;/a&gt; National Archives at Washington, D.C.&lt;/p&gt;
+0 @S466347712@ SOUR
+1 TITL Texas, U.S., Arriving and Departing Passenger and Crew Lists, 1893-1963
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2014
+2 PLAC Provo, UT, USA
+1 _APID 1,8722::0
+1 REPO @R404973340@
+1 NOTE &lt;i&gt;Selected Passenger and Crew Lists and Manifests&lt;/i&gt;. National Archives, Washington, D.C.&lt;p&gt;&lt;br&gt;A full list of sources can be found &lt;a href="##SearchUrlPrefix##/search/dbextra.aspx?dbid=8722"&gt;here&lt;/a&gt;.&lt;/p&gt
+2 CONC ;
+0 @S466348713@ SOUR
+1 TITL U.S. and International Marriage Records, 1560-1900
+1 AUTH Yates Publishing
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2004
+2 PLAC Provo, UT, USA
+1 _APID 1,7836::0
+1 REPO @R404973340@
+1 NOTE This unique collection of records was extracted from a variety of sources including family group sheets and electronic databases. Originally, the information was derived from an array of materials including pedigree charts, family history articles
+2 CONC , querie.
+0 @S466348760@ SOUR
+1 TITL U.S., Freedman's Bank Records, 1865-1874
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2005
+2 PLAC Lehi, UT, USA
+1 _APID 1,8755::0
+1 REPO @R404973340@
+1 NOTE &lt;p&gt;&lt;a href="##SearchUrlPrefix##/search/dbextra.aspx?dbid=8755" target="_blank"&gt;View Sources&lt;/a&gt;.&lt;/p&gt;
+0 @S466494854@ SOUR
+1 TITL Pennsylvania, U.S., Marriages, 1852-1968
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2016
+2 PLAC Lehi, UT, USA
+1 _APID 1,61381::0
+1 REPO @R404973340@
+1 NOTE &lt;i&gt;Marriage Records&lt;/i&gt;. &lt;i&gt;Pennsylvania Marriages.&lt;/i&gt; Various County Register of Wills Offices, Pennsylvania.
+0 @S466494863@ SOUR
+1 TITL Philadelphia, Pennsylvania, U.S., Marriage Index, 1885-1951
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2011
+2 PLAC Provo, UT, USA
+1 _APID 1,2536::0
+1 REPO @R404973340@
+1 NOTE &lt;p&gt;"Pennsylvania, Philadelphia Marriage Index, 1885–1951." Index. FamilySearch, Salt Lake City, Utah, 2009. Philadelphia County Pennsylvania Clerk of the Orphans' Court. "Pennsylvania, Philadelphia marriage license index, 1885-1951." Clerk o
+2 CONC f the Orphans’ Court, Philadelphia, Pennsylvania.&lt;/p&gt;
+0 @S466495036@ SOUR
+1 TITL New York, New York, U.S., Death Index, 1949-1965
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2017
+2 PLAC Lehi, UT, USA
+1 _APID 1,61461::0
+1 REPO @R404973340@
+1 NOTE New York City Department of Health, courtesy of &lt;a href="http://www.vitalsearch-worldwide.com/" target="_blank"&gt;www.vitalsearch-worldwide.com&lt;/a&gt;. Digital Images.
+0 @S466495072@ SOUR
+1 TITL Biography & Genealogy Master Index (BGMI)
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2009
+2 PLAC Provo, UT, USA
+1 _APID 1,4394::0
+1 REPO @R404973340@
+1 NOTE Gale Research Company. &lt;i&gt;Biography and Genealogy Master Index&lt;/i&gt;. Detroit, MI, USA: Gale Research Company, 2008.
+0 @S466495930@ SOUR
+1 TITL Pennsylvania, U.S., Federal Naturalization Records, 1795-1931
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2011
+2 PLAC Provo, UT, USA
+1 _APID 1,2717::0
+1 REPO @R404973340@
+1 NOTE &lt;p&gt;&lt;i&gt;Naturalization Records&lt;/i&gt;. National Archives at 
+2 CONT 
+2 CONT Philadelphia, Philadelphia, Pennsylvania.&lt;/p&gt;
+2 CONT &lt;p&gt;A full list of sources can be found &lt;a href="##SearchUrlPrefix##/search/dbextra.aspx?dbid=2717" target="_blank"&gt;here&lt;/a&gt;.&lt;/p&gt;
+0 @S466495981@ SOUR
+1 TITL Pennsylvania, U.S., Death Certificates, 1906-1968
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2014
+2 PLAC Lehi, UT, USA
+1 _APID 1,5164::0
+1 REPO @R404973340@
+1 NOTE Pennsylvania (State). Death certificates, 1906–1968. Series 11.90 (1,905 cartons). Records of the Pennsylvania Department of Health, Record Group 11. Pennsylvania Historical and Museum Commission, Harrisburg, Pennsylvania.
+0 @S528276028@ SOUR
+1 TITL 1950 United States Federal Census
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2022
+2 PLAC Lehi, UT, USA
+1 _APID 1,62308::0
+1 REPO @R404973340@
+0 @S528276035@ SOUR
+1 TITL Texas, U.S., Voter Registration Lists, 1867-1869
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2011
+2 PLAC Lehi, UT, USA
+1 _APID 1,2274::0
+1 REPO @R404973340@
+0 @R404973340@ REPO
+1 NAME Ancestry.com
+0 TRLR

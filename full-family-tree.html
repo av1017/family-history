@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Full Family Tree — Avery Thomas</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --surface2: #222;
+      --border: #2e2e2e;
+      --accent: #c9a84c;
+      --accent2: #a0522d;
+      --accent-blue: #5b8dc9;
+      --accent-teal: #4ca89a;
+      --text: #e0d8cc;
+      --muted: #888;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', serif;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #1a1208 0%, #0a0a14 50%, #0f0f0f 100%);
+      border-bottom: 2px solid var(--accent);
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+    }
+
+    header .crest { font-size: 3rem; margin-bottom: 0.5rem; }
+
+    header h1 {
+      font-size: 2.4rem;
+      color: var(--accent);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+
+    header .subtitle {
+      color: var(--muted);
+      font-style: italic;
+      font-size: 1rem;
+    }
+
+    header .byline {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    /* ── Nav ── */
+    /* ── Site Nav ── */
+    .site-nav {
+      background: #111;
+      border-bottom: 2px solid var(--accent);
+      padding: 0.7rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 0;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+    }
+
+    .site-nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 0.3rem 1rem;
+      border-right: 1px solid #2a2a2a;
+      transition: color 0.2s;
+    }
+
+    .site-nav a:last-child { border-right: none; }
+    .site-nav a:hover { color: var(--accent); }
+    .site-nav a.active { color: var(--accent); }
+
+    nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0.75rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      justify-content: center;
+      position: sticky;
+      top: 44px;
+      z-index: 100;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-family: sans-serif;
+      letter-spacing: 0.5px;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: #fff; }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    /* ── Section Headings ── */
+    .section { margin-top: 3.5rem; }
+
+    .section-title {
+      color: var(--accent);
+      font-size: 1.5rem;
+      font-variant: small-caps;
+      letter-spacing: 1px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-title.paternal { border-color: var(--accent); }
+    .section-title.maternal { border-color: var(--accent-teal); color: var(--accent-teal); }
+    .section-title.jewish   { border-color: var(--accent-blue); color: var(--accent-blue); }
+
+    h3 {
+      color: #d4b87a;
+      font-size: 1.1rem;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    h3.teal { color: #6ecfc2; }
+    h3.blue { color: #7baee0; }
+
+    p { margin-bottom: 1rem; }
+
+    /* ── Ancestor Table ── */
+    .ancestor-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .ancestor-table th {
+      background: #1e1508;
+      color: var(--accent);
+      text-align: left;
+      padding: 0.6rem 1rem;
+      font-variant: small-caps;
+      letter-spacing: 0.5px;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    .ancestor-table.teal th {
+      background: #081a18;
+      color: var(--accent-teal);
+      border-bottom-color: var(--accent-teal);
+    }
+
+    .ancestor-table.blue th {
+      background: #080e1a;
+      color: var(--accent-blue);
+      border-bottom-color: var(--accent-blue);
+    }
+
+    .ancestor-table td {
+      padding: 0.55rem 1rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    .ancestor-table tr:nth-child(even) td { background: var(--surface); }
+    .ancestor-table tr:hover td { background: #1a1a1e; }
+
+    .ancestor-table .name  { font-weight: bold; color: #e8d9b8; }
+    .ancestor-table .rel   { color: var(--accent); font-style: italic; font-size: 0.88rem; }
+    .ancestor-table .rel.teal { color: var(--accent-teal); }
+    .ancestor-table .rel.blue { color: var(--accent-blue); }
+    .ancestor-table .dates { color: var(--muted); font-size: 0.85rem; }
+    .ancestor-table .note  { color: #aaa; font-size: 0.84rem; }
+
+    /* ── Story Cards ── */
+    .story-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent2);
+      border-radius: 4px;
+      padding: 1.2rem 1.4rem;
+      margin: 1.2rem 0;
+    }
+
+    .story-card.teal { border-left-color: var(--accent-teal); }
+    .story-card.blue { border-left-color: var(--accent-blue); }
+
+    .story-card .card-title {
+      font-weight: bold;
+      color: #e8d9b8;
+      margin-bottom: 0.4rem;
+      font-size: 1rem;
+    }
+
+    /* ── Timeline ── */
+    .timeline {
+      position: relative;
+      padding-left: 1.8rem;
+      border-left: 2px solid var(--border);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 1.8rem;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -1.93rem;
+      top: 0.5rem;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid var(--bg);
+    }
+
+    .timeline-item.blue::before { background: var(--accent-blue); }
+    .timeline-item.teal::before { background: var(--accent-teal); }
+
+    .timeline-year {
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-family: sans-serif;
+      letter-spacing: 1px;
+      margin-bottom: 0.2rem;
+    }
+
+    .timeline-year.blue { color: var(--accent-blue); }
+    .timeline-year.teal { color: var(--accent-teal); }
+
+    .timeline-title {
+      font-weight: bold;
+      color: #e8d9b8;
+      margin-bottom: 0.3rem;
+    }
+
+    .timeline-body {
+      color: var(--text);
+      font-size: 0.93rem;
+    }
+
+    /* ── Visual Family Tree ── */
+    .tree-section {
+      overflow-x: auto;
+      padding: 1rem 0 2rem;
+    }
+
+    .tree-container {
+      min-width: 700px;
+    }
+
+    /* Generation rows */
+    .gen-row {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 0;
+      position: relative;
+    }
+
+    .gen-label {
+      font-size: 0.72rem;
+      font-family: sans-serif;
+      color: var(--muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-align: right;
+      min-width: 80px;
+      padding-right: 10px;
+      padding-top: 14px;
+      flex-shrink: 0;
+    }
+
+    .gen-people {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex: 1;
+    }
+
+    /* Person cards in the tree */
+    .person {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px 12px;
+      text-align: center;
+      font-size: 0.78rem;
+      min-width: 130px;
+      max-width: 160px;
+      position: relative;
+      transition: border-color 0.2s;
+    }
+
+    .person:hover { border-color: var(--accent); }
+    .person.highlight { border-color: var(--accent); border-width: 2px; }
+    .person.you { border-color: var(--accent); border-width: 2px; background: #1e1a0f; }
+    .person.teal:hover { border-color: var(--accent-teal); }
+    .person.teal.highlight { border-color: var(--accent-teal); border-width: 2px; }
+    .person.blue:hover  { border-color: var(--accent-blue); }
+
+    .person .p-name {
+      font-weight: bold;
+      color: #e8d9b8;
+      font-size: 0.82rem;
+      line-height: 1.3;
+    }
+
+    .person .p-name.accent { color: var(--accent); }
+    .person .p-name.teal   { color: var(--accent-teal); }
+    .person .p-name.blue   { color: var(--accent-blue); }
+
+    .person .p-dates {
+      color: var(--muted);
+      font-size: 0.71rem;
+      margin-top: 2px;
+      font-family: sans-serif;
+    }
+
+    .person .p-place {
+      color: #777;
+      font-size: 0.69rem;
+      font-style: italic;
+      margin-top: 1px;
+    }
+
+    /* Connector lines using SVG inline */
+    .connector {
+      display: flex;
+      justify-content: center;
+      height: 24px;
+      align-items: center;
+    }
+
+    .connector-line {
+      width: 2px;
+      height: 24px;
+      background: var(--border);
+      margin: 0 auto;
+    }
+
+    /* Horizontal bracket connectors */
+    .bracket-row {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      height: 28px;
+      margin-bottom: 0;
+    }
+
+    .bracket-line {
+      height: 2px;
+      background: var(--border);
+      position: absolute;
+      top: 0;
+    }
+
+    .bracket-drop {
+      width: 2px;
+      background: var(--border);
+      position: absolute;
+      top: 0;
+    }
+
+    /* ── Name Change Highlight ── */
+    .name-change {
+      display: inline-block;
+      background: #151a25;
+      border: 1px solid var(--accent-blue);
+      border-radius: 3px;
+      padding: 0 6px;
+      font-size: 0.88rem;
+      font-family: sans-serif;
+      color: var(--accent-blue);
+    }
+
+    .arrow-right {
+      color: var(--muted);
+      margin: 0 4px;
+    }
+
+    /* ── Intro Card ── */
+    .intro-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .intro-side {
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .intro-side h4 {
+      font-size: 0.85rem;
+      font-family: sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+    }
+
+    .intro-side h4.teal { color: var(--accent-teal); }
+
+    .intro-side ul {
+      list-style: none;
+      font-size: 0.9rem;
+    }
+
+    .intro-side ul li {
+      padding: 2px 0;
+      color: #ccc;
+    }
+
+    .intro-side ul li span {
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    /* ── Map note ── */
+    .map-note {
+      background: #0c0c1a;
+      border: 1px solid #2a2a4a;
+      border-radius: 4px;
+      padding: 0.8rem 1.2rem;
+      font-size: 0.88rem;
+      color: #aab8d0;
+      margin: 1rem 0;
+    }
+
+    .map-note strong { color: var(--accent-blue); }
+
+    /* ── Divider ── */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-family: sans-serif;
+    }
+
+    /* ── Cross-reference box ── */
+    .xref-box {
+      background: #120f08;
+      border: 1px solid #3a2e15;
+      border-left: 4px solid var(--accent);
+      border-radius: 4px;
+      padding: 1rem 1.4rem;
+      margin: 1.2rem 0;
+      font-size: 0.9rem;
+    }
+
+    .xref-box .xref-label {
+      font-size: 0.72rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-family: sans-serif;
+      margin-bottom: 0.4rem;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      header h1 { font-size: 1.6rem; }
+      .person { min-width: 100px; font-size: 0.72rem; }
+      .gen-label { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html">Home</a>
+  <a href="full-family-tree.html" class="active">Family Tree</a>
+  <a href="thomas-kennard-documents.html">Thomas &amp; Kennard</a>
+  <a href="kennard-family-history.html">Kennard History</a>
+  <a href="discoveries-and-research.html">Discoveries</a>
+  <a href="sources.html">Primary Sources</a>
+  <a href="file-glossary.html">Site Index</a>
+</nav>
+
+<header>
+  <div class="crest">🌳</div>
+  <h1>The Thomas &amp; Squires Family Tree</h1>
+  <div class="subtitle">Paternal &amp; Maternal Lines — From Virginia to Poland, from Lancashire to Philadelphia</div>
+  <div class="byline">Compiled for Avery Thomas · April 2026</div>
+</header>
+
+<nav>
+  <a href="#avery">Avery</a>
+  <a href="#paternal-tree">Paternal Tree</a>
+  <a href="#thomas-line">Thomas Line</a>
+  <a href="#kennard-line">Kennard Line</a>
+  <a href="#maternal-tree">Maternal Tree</a>
+  <a href="#squires-line">Squires Line</a>
+  <a href="#jewish-roots">Jewish Roots</a>
+  <a href="#immigration">Immigration Story</a>
+  <a href="#name-changes">Name Changes</a>
+  <a href="#origins-map">Origins Map</a>
+</nav>
+
+<div class="container">
+
+  <!-- ═══════════════════════════════════ AVERY ═══════════════════════════════════ -->
+  <div class="section" id="avery">
+    <h2 class="section-title">You — Avery Thomas</h2>
+
+    <div class="intro-card">
+      <div class="intro-side">
+        <h4>Identity</h4>
+        <ul>
+          <li>Avery Thomas <span>b. 1998</span></li>
+          <li>Austin Squires Thomas <span>brother, b. 1995</span></li>
+          <li>Ashley Sarah Thomas <span>sister, b. 2001</span></li>
+        </ul>
+      </div>
+      <div class="intro-side">
+        <h4>Parents</h4>
+        <ul>
+          <li>Michael Scott Thomas <span>father, b. 1960</span></li>
+          <li>Charlotte Lucille Crawley <span>paternal grandmother, b. 1931</span></li>
+          <li>Heather Denise Squires <span>mother, b. 1963</span></li>
+        </ul>
+      </div>
+      <div class="intro-side">
+        <h4 class="teal">Heritage Summary</h4>
+        <ul>
+          <li>Paternal: <span>English/Southern colonial — Virginia 1680s, Alabama, Texas</span></li>
+          <li>Maternal: <span>Jewish — Polish/Russian Empire origins, Philadelphia immigration early 1900s</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <p>Your family spans two profoundly different worlds: the paternal Thomas line, rooted in the colonial American South going back to 17th-century Virginia and Lancashire, England — and the maternal Squires line, tracing through Jewish communities in the Russian Empire, scattered across Kock, Radom, and Radzyn Podlaskie in Poland before immigration to Philadelphia in the early 20th century.</p>
+  </div>
+
+  <!-- ═══════════════════════════════════ PATERNAL VISUAL TREE ═══════════════════════════════════ -->
+  <div class="section" id="paternal-tree">
+    <h2 class="section-title paternal">Paternal Line — Visual Tree</h2>
+    <p style="color:var(--muted);font-size:0.88rem;margin-bottom:1rem;">Thomas / Kennard family. Scroll horizontally on small screens.</p>
+
+    <div class="tree-section">
+      <div class="tree-container">
+
+        <!-- Gen 8 — Joseph Thomas & Alice Spivey (earliest) -->
+        <div class="gen-row">
+          <div class="gen-label">~1680</div>
+          <div class="gen-people">
+            <div class="person">
+              <div class="p-name">Joseph Thomas</div>
+              <div class="p-dates">b. ~1680</div>
+              <div class="p-place">Nansemond, Virginia</div>
+            </div>
+            <div class="person">
+              <div class="p-name">Alice Spivey</div>
+              <div class="p-dates">b. ~1687</div>
+              <div class="p-place">Lancashire, England</div>
+            </div>
+          </div>
+        </div>
+        <div class="connector"><div class="connector-line"></div></div>
+
+        <!-- Gen 7 — James E Thomas -->
+        <div class="gen-row">
+          <div class="gen-label">~1714</div>
+          <div class="gen-people">
+            <div class="person">
+              <div class="p-name">James E. Thomas</div>
+              <div class="p-dates">b. ~1714</div>
+              <div class="p-place">Virginia</div>
+            </div>
+          </div>
+        </div>
+        <div class="connector"><div class="connector-line"></div></div>
+
+        <!-- Gen 6 — Joseph Thomas b.1740 -->
+        <div class="gen-row">
+          <div class="gen-label">~1740</div>
+          <div class="gen-people">
+            <div class="person">
+              <div class="p-name">Joseph Thomas</div>
+              <div class="p-dates">b. ~1740</div>
+              <div class="p-place">Bertie, NC</div>
+            </div>
+          </div>
+        </div>
+        <div class="connector"><div class="connector-line"></div></div>
+
+        <!-- Gen 5 — Jonathon John C Thomas -->
+        <div class="gen-row">
+          <div class="gen-label">~1773</div>
+          <div class="gen-people">
+            <div class="person">
+              <div class="p-name">Jonathon John C Thomas</div>
+              <div class="p-dates">b. ~1773</div>
+              <div class="p-place">Burke, Georgia</div>
+            </div>
+          </div>
+        </div>
+        <div class="connector"><div class="connector-line"></div></div>
+
+        <!-- Gen 4 — Jim Thomas -->
+        <div class="gen-row">
+          <div class="gen-label">~1812</div>
+          <div class="gen-people">
+            <div class="person">
+              <div class="p-name">Jim Thomas</div>
+              <div class="p-dates">b. ~1812</div>
+              <div class="p-place">Alabama</div>
+            </div>
+          </div>
+        </div>
+        <div class="connector"><div class="connector-line"></div></div>
+
+        <!-- Gen 3 — Marian F. Thomas / James Geren Thomas Sr. + Stella Kennard split -->
+        <div class="gen-row">
+          <div class="gen-label">~1852</div>
+          <div class="gen-people">
+            <div class="person">
+              <div class="p-name">Marian F. Thomas</div>
+              <div class="p-dates">b. ~1852</div>
+              <div class="p-place">Bedias, Texas</div>
+            </div>
+          </div>
+        </div>
+        <div class="connector"><div class="connector-line"></div></div>
+
+        <!-- James Geren Thomas Sr. & Stella Kennard -->
+        <div class="gen-row">
+          <div class="gen-label">1877–1883</div>
+          <div class="gen-people">
+            <div class="person highlight">
+              <div class="p-name accent">James Geren Thomas Sr.</div>
+              <div class="p-dates">b. 6 Feb 1877 · d. 10 Mar 1953</div>
+              <div class="p-place">Texas</div>
+            </div>
+            <div class="person highlight">
+              <div class="p-name accent">Stella Kennard Thomas</div>
+              <div class="p-dates">b. 11 Apr 1883 · d. 19 Feb 1965</div>
+              <div class="p-place">Texas</div>
+            </div>
+          </div>
+        </div>
+        <div class="connector"><div class="connector-line"></div></div>
+
+        <!-- J.G. Thomas Jr. + Charlotte Lucille Crawley -->
+        <div class="gen-row">
+          <div class="gen-label">1924 / 1931</div>
+          <div class="gen-people">
+            <div class="person highlight">
+              <div class="p-name accent">J.G. Thomas Jr.</div>
+              <div class="p-dates">b. 28 Nov 1924 · d. 8 Dec 2016</div>
+              <div class="p-place">Texas</div>
+            </div>
+            <div class="person highlight">
+              <div class="p-name accent">Charlotte Lucille Crawley</div>
+              <div class="p-dates">b. 1931 · Living</div>
+              <div class="p-place">m. 10 Apr 1954, Hill Cumberland Church</div>
+            </div>
+          </div>
+        </div>
+        <div class="connector"><div class="connector-line"></div></div>
+
+        <!-- Michael Scott Thomas -->
+        <div class="gen-row">
+          <div class="gen-label">1960</div>
+          <div class="gen-people">
+            <div class="person highlight">
+              <div class="p-name accent">Michael Scott Thomas</div>
+              <div class="p-dates">b. 1960</div>
+              <div class="p-place">Texas</div>
+            </div>
+          </div>
+        </div>
+        <div class="connector"><div class="connector-line"></div></div>
+
+        <!-- Avery -->
+        <div class="gen-row">
+          <div class="gen-label">1998</div>
+          <div class="gen-people">
+            <div class="person you">
+              <div class="p-name accent">Avery Thomas</div>
+              <div class="p-dates">b. 1998</div>
+              <div class="p-place">Texas</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════ THOMAS LINE DETAIL ═══════════════════════════════════ -->
+  <div class="section" id="thomas-line">
+    <h2 class="section-title paternal">The Thomas Line — Virginia to Texas</h2>
+
+    <p>The Thomas line is one of the oldest traceable lines in your family, rooted in colonial Virginia before the American nation existed. The earliest confirmed ancestor, <strong>Joseph Thomas</strong>, was born around 1680 in <strong>Nansemond County, Virginia</strong> — a county on the south shore of Hampton Roads, settled by English colonists in the 1630s. He married <strong>Alice Spivey</strong>, born around 1687 in Lancashire, England, suggesting she may have been an immigrant or the daughter of immigrants from northern England.</p>
+
+    <p>Over the following 150 years, the Thomas family moved steadily south and west — the classic pattern of English colonial families following the agricultural frontier: from Virginia to North Carolina, then Georgia, then Alabama, and finally into Texas. The generation directly above James Avery Thomas is now confirmed: <strong>John Thomas</strong> (b. ~1784, South Carolina) and wife <strong>Phoebe Springer</strong> registered with Austin's Colony in 1835 and settled in what became Grimes County. Their son James Avery Thomas (b. 1812, Marengo Co., Alabama) is your direct 4th great-grandfather and Avery's namesake.</p>
+
+    <table class="ancestor-table">
+      <thead>
+        <tr>
+          <th>Generation</th>
+          <th>Person</th>
+          <th>Born</th>
+          <th>Place</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rel">8th great-grandparents</td>
+          <td class="name">Joseph Thomas Sr. &amp; Alice Spivey</td>
+          <td class="dates">~1680 / ~1687 · d. 10 Dec 1735</td>
+          <td>Nansemond, VA → Bertie Co., NC / Lancashire, England</td>
+          <td class="note">Earliest traceable ancestors</td>
+        </tr>
+        <tr>
+          <td class="rel">7th great-grandfather</td>
+          <td class="name">James Clark Thomas (REV WAR)</td>
+          <td class="dates">1714 · Nansemond Co., VA · d. Nov 1780</td>
+          <td>Bertie Co., NC · military service 19 Dec 1775–1783</td>
+          <td class="note">Revolutionary War patriot — Private, Virginia/NC forces</td>
+        </tr>
+        <tr>
+          <td class="rel">6th great-grandfather</td>
+          <td class="name">Joseph Augustus Thomas</td>
+          <td class="dates">1740 · Bertie Co., NC · d. 28 Mar 1814</td>
+          <td>Bertie Co., NC → Edgefield Co., SC</td>
+          <td class="note">Moved NC → SC; son John C. Thomas Sr. born in Edgefield</td>
+        </tr>
+        <tr>
+          <td class="rel">5th great-grandparents</td>
+          <td class="name">John C. Thomas Sr. &amp; Phebe Gayland Springer</td>
+          <td class="dates">18 Mar 1784 · Edgefield, SC · m. 26 Jul 1801, Upson Co., GA</td>
+          <td>Edgefield, SC → Warren/Upson GA → Marlboro SC → Marengo AL → Montgomery/Grimes TX</td>
+          <td class="note">Confirmed in updated GEDCOM (Apr 17, 2026) + Austin's Colony register (1835)</td>
+        </tr>
+        <tr>
+          <td class="rel">4th great-grandparents</td>
+          <td class="name">James Avery Thomas &amp; Amanda K. Wheeler</td>
+          <td class="dates">31 Oct 1812 · Marengo Co., AL · m. 4/28/1842 · d. 28 Apr 1865</td>
+          <td>Marengo Co., Alabama → Grimes Co., TX · arrived ~1832–1835</td>
+          <td class="note">Son of John C. Thomas Sr. &amp; Phebe Springer; namesake of Avery; buried Mustang Prairie, Grimes Co.</td>
+        </tr>
+        <tr>
+          <td class="rel">3rd great-grandparents</td>
+          <td class="name">Francis Marion Thomas &amp; Susan Barbara Mullins</td>
+          <td class="dates">9 Aug 1852 · Bedias TX / 19 Feb 1857 · TN · d. 20 Jan 1922 / 27 Dec 1928</td>
+          <td>Grimes County, Texas</td>
+          <td class="note">11 children; Thomas line continues to Anderson TX</td>
+        </tr>
+        <tr>
+          <td class="rel">2nd great-grandparents</td>
+          <td class="name">James Gary Thomas Sr. &amp; Stella Kennard</td>
+          <td class="dates">6 Feb 1877 / 11 Apr 1882 · d. 10 Mar 1953 · Anderson TX / 19 Feb 1965 · Navasota TX</td>
+          <td>Grimes County, Texas</td>
+          <td class="note">Where Thomas &amp; Kennard lines unite</td>
+        </tr>
+        <tr>
+          <td class="rel">Great-grandfather</td>
+          <td class="name">J.G. Thomas Jr.</td>
+          <td class="dates">28 Nov 1924 · Anderson, Grimes TX · d. 8 Dec 2016 · Houston TX</td>
+          <td>Texas</td>
+          <td class="note">m. Charlotte Crawley 10 Apr 1954</td>
+        </tr>
+        <tr>
+          <td class="rel">Father</td>
+          <td class="name">Michael Scott Thomas</td>
+          <td class="dates">b. 1960</td>
+          <td>Texas</td>
+          <td class="note"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="xref-box">
+      <div class="xref-label">Cross-Reference · Kennard Family History Paper</div>
+      The Kennard Family History paper authored by Richard Gary Thomas documents the Alabama connection explicitly: the Kennard family was established in <strong>Marengo County, Alabama</strong> before migrating to Texas — the same Alabama that the Thomas line passed through around the same era (Jim Thomas, b.~1812 Alabama). The Thomas and Kennard families likely moved in overlapping social and geographic circles through the antebellum South before their descendants married: James Geren Thomas Sr. and Stella Kennard, joining the two lines permanently.
+    </div>
+
+    <div class="story-card">
+      <div class="card-title">Nansemond County, Virginia — Where It Begins</div>
+      <p>Nansemond County was one of the original Virginia counties, established in 1637 from a larger county. It sits on the south bank of the James River and Hampton Roads, across from Norfolk. English settlement of the area began in the 1620s–1630s. Joseph Thomas being born there around 1680 places him squarely in the third generation of Virginia colonists — his grandparents likely came directly from England. Alice Spivey's Lancashire origins suggest a northwest England connection; Lancashire was a heavily Catholic and then Protestant contested county, and many Lancashire families emigrated to Virginia in the 17th century.</p>
+    </div>
+
+    <h3>The Alabama → Texas Migration</h3>
+    <p>Jim Thomas (b.~1812, Alabama) represents the generation that made the jump to Texas. Texas statehood came in 1845, and the decade following saw enormous migration from Alabama, Tennessee, and Georgia — the "Alabama fever" that swept the Deep South as cotton planters and their families sought new fertile land. His daughter (or descendant) Marian F. Thomas was born in Bedias, Grimes County, Texas around 1852, firmly establishing the family in the new state.</p>
+
+    <p>Grimes County, where Bedias is located, is in east-central Texas — the first region of Texas settled by Americans coming from Louisiana and Alabama in the 1820s–1840s. The Thomas family followed this exact migration path.</p>
+  </div>
+
+  <!-- ═══════════════════════════════════ KENNARD LINE ═══════════════════════════════════ -->
+  <div class="section" id="kennard-line">
+    <h2 class="section-title paternal">The Kennard Line — Alabama to Texas</h2>
+
+    <p>The Kennard line enters your family tree through <strong>Stella Kennard Thomas</strong> (b. 1883), who married James Geren Thomas Sr. The Kennard history is extensively documented in a 93-page family history authored by Richard Gary Thomas — a remarkable resource that traces the family through the antebellum South.</p>
+
+    <table class="ancestor-table">
+      <thead>
+        <tr>
+          <th>Generation</th>
+          <th>Person</th>
+          <th>Born</th>
+          <th>Died</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rel">4th great-grandparents</td>
+          <td class="name">Anthony Drew Kennard Sr. &amp; Sarah Moore</td>
+          <td class="dates">9 Jul 1788 / 16 Sep 1790</td>
+          <td class="dates">1848 / 1877</td>
+          <td class="note">Earliest Kennard generation in records</td>
+        </tr>
+        <tr>
+          <td class="rel">3rd great-grandparents</td>
+          <td class="name">Michael Moore Kennard</td>
+          <td class="dates">27 Jul 1809</td>
+          <td class="dates">7 Jul 1895</td>
+          <td class="note">Long-lived; bridged antebellum and post-Civil War eras</td>
+        </tr>
+        <tr>
+          <td class="rel">2nd great-grandparents</td>
+          <td class="name">John H. "Papa" Kennard &amp; Hattie Brown</td>
+          <td class="dates">23 Jun 1852 / 31 Jul 1856</td>
+          <td class="dates">12 Nov 1929 / 4 Mar 1948</td>
+          <td class="note">Subject of the family history paper; Texas settler</td>
+        </tr>
+        <tr>
+          <td class="rel">Great-great-grandmother</td>
+          <td class="name">Stella Kennard Thomas</td>
+          <td class="dates">11 Apr 1883</td>
+          <td class="dates">19 Feb 1965</td>
+          <td class="note">Married James Geren Thomas Sr.; united Kennard &amp; Thomas lines</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="story-card">
+      <div class="card-title">John H. "Papa" Kennard (1852–1929)</div>
+      <p>John H. Kennard — known in the family as "Papa" — is the central figure of Richard Gary Thomas's family history. Born in 1852, he lived through the Civil War as a child (too young to serve), Reconstruction, and the rise of modern Texas. He married Hattie Brown (b. 1856) and together they established the Kennard family in Texas, where their daughter Stella would continue the line by marrying into the Thomas family. Papa Kennard died in 1929 at age 77; Hattie outlived him nearly two decades, dying in 1948 at 91.</p>
+    </div>
+
+    <div class="xref-box">
+      <div class="xref-label">From the Kennard Family History Paper</div>
+      Anthony Drew Kennard Sr. (b. 1788) and his wife Sarah Moore (b. 1790) are the earliest Kennards in the documented record. Their son Michael Moore Kennard (b. 1809, d. 1895) was born in the Deep South during the antebellum era — likely in Alabama or adjacent states — and lived 86 years, spanning from the early American republic through the post-Reconstruction South. The Marengo County, Alabama connection is consistent with this timeline: Marengo County was settled by Alabama plantation families in the 1810s–1820s, exactly the era when Anthony and Sarah would have been raising their family.
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- ═══════════════════════════════════ MATERNAL VISUAL TREE ═══════════════════════════════════ -->
+  <div class="section" id="maternal-tree">
+    <h2 class="section-title maternal">Maternal Line — Visual Tree</h2>
+    <p style="color:var(--muted);font-size:0.88rem;margin-bottom:1rem;">Squires / Croft (Krawczyk) / Krafcheck / Skversky lines. Jewish Eastern European origins.</p>
+
+    <div class="tree-section">
+      <div class="tree-container">
+
+        <!-- Earliest Jewish ancestors -->
+        <div class="gen-row">
+          <div class="gen-label">~1800s</div>
+          <div class="gen-people">
+            <div class="person teal">
+              <div class="p-name teal">Lejb Wolf Krawczyk</div>
+              <div class="p-dates">dates unknown</div>
+              <div class="p-place">Kock, Poland (Russian Empire)</div>
+            </div>
+            <div class="person teal">
+              <div class="p-name teal">Frajda</div>
+              <div class="p-dates">dates unknown</div>
+              <div class="p-place">Kock, Poland</div>
+            </div>
+            <div class="person blue">
+              <div class="p-name blue">Joseph Skverski</div>
+              <div class="p-dates">dates unknown</div>
+              <div class="p-place">Russia</div>
+            </div>
+            <div class="person blue">
+              <div class="p-name blue">Galcbie Skverski</div>
+              <div class="p-dates">dates unknown</div>
+              <div class="p-place">Russia</div>
+            </div>
+          </div>
+        </div>
+        <div class="connector"><div class="connector-line"></div></div>
+
+        <!-- Abram Jojna Krawczyk + Sura / Ben Skversky + Rosie Cohen -->
+        <div class="gen-row">
+          <div class="gen-label">1843–1862</div>
+          <div class="gen-people">
+            <div class="person teal">
+              <div class="p-name teal">Abram Jojna Krawczyk</div>
+              <div class="p-dates">b. ~1843</div>
+              <div class="p-place">Kock, Poland</div>
+            </div>
+            <div class="person teal">
+              <div class="p-name teal">Sura Kuperszlag</div>
+              <div class="p-dates">b. ~1844</div>
+              <div class="p-place">Poland</div>
+            </div>
+            <div class="person blue">
+              <div class="p-name blue">Ben J. Skversky</div>
+              <div class="p-dates">b. Sep 1859</div>
+              <div class="p-place">Russia</div>
+            </div>
+            <div class="person blue">
+              <div class="p-name blue">Rosie Cohen Skversky</div>
+              <div class="p-dates">b. Nov 1862</div>
+              <div class="p-place">Russia</div>
+            </div>
+          </div>
+        </div>
+        <div class="connector"><div class="connector-line"></div></div>
+
+        <!-- Bernard Croft + Fannie / Hyman Krafcheck + Libby / Hany Sames -->
+        <div class="gen-row">
+          <div class="gen-label">1870–1905</div>
+          <div class="gen-people">
+            <div class="person teal">
+              <div class="p-name teal">Bernard "Baruch" Croft</div>
+              <div class="p-dates">b. 1877</div>
+              <div class="p-place">Kock, Poland → America</div>
+            </div>
+            <div class="person teal">
+              <div class="p-name teal">Fannie "Faggi" Croft</div>
+              <div class="p-dates">b. 1870</div>
+              <div class="p-place">Kock, Poland → America</div>
+            </div>
+            <div class="person teal">
+              <div class="p-name teal">Hyman Krafcheck</div>
+              <div class="p-dates">b. 1873</div>
+              <div class="p-place">Radom, Poland</div>
+            </div>
+            <div class="person teal">
+              <div class="p-name teal">Libby Lipschitz</div>
+              <div class="p-dates">b. 1881</div>
+              <div class="p-place">Radzyn Podlaski, Poland</div>
+            </div>
+            <div class="person blue">
+              <div class="p-name blue">Hany Sames</div>
+              <div class="p-dates">b. May 1897</div>
+              <div class="p-place">Pennsylvania</div>
+            </div>
+            <div class="person blue">
+              <div class="p-name blue">Eleanor Sames</div>
+              <div class="p-dates">b. ~1903</div>
+              <div class="p-place">Philadelphia, PA</div>
+            </div>
+          </div>
+        </div>
+        <div class="connector"><div class="connector-line"></div></div>
+
+        <!-- Jack Craft + Mollie Krafcheck / Arthur Squires -->
+        <div class="gen-row">
+          <div class="gen-label">~1900s</div>
+          <div class="gen-people">
+            <div class="person teal highlight">
+              <div class="p-name teal">Jack Craft</div>
+              <div class="p-dates">b. 1903</div>
+              <div class="p-place">Kock, Poland → USA</div>
+            </div>
+            <div class="person teal highlight">
+              <div class="p-name teal">Mollie Krafcheck</div>
+              <div class="p-dates">b. 1905</div>
+              <div class="p-place">Poland → USA</div>
+            </div>
+            <div class="person blue highlight">
+              <div class="p-name blue">Arthur Squires</div>
+              <div class="p-dates">b. ~1934 · d. 8 Aug 2022</div>
+              <div class="p-place">Philadelphia, PA</div>
+            </div>
+          </div>
+        </div>
+        <div class="connector"><div class="connector-line"></div></div>
+
+        <!-- Barbara Croft / Squires -->
+        <div class="gen-row">
+          <div class="gen-label">1936</div>
+          <div class="gen-people">
+            <div class="person teal highlight">
+              <div class="p-name teal">Barbara C. Squires (née Croft)</div>
+              <div class="p-dates">b. 23 Jan 1936</div>
+              <div class="p-place">Houston, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="connector"><div class="connector-line"></div></div>
+
+        <!-- Heather Squires -->
+        <div class="gen-row">
+          <div class="gen-label">1963</div>
+          <div class="gen-people">
+            <div class="person teal highlight">
+              <div class="p-name teal">Heather Denise Squires</div>
+              <div class="p-dates">b. 1963</div>
+              <div class="p-place">Texas</div>
+            </div>
+          </div>
+        </div>
+        <div class="connector"><div class="connector-line"></div></div>
+
+        <!-- Avery -->
+        <div class="gen-row">
+          <div class="gen-label">1998</div>
+          <div class="gen-people">
+            <div class="person you">
+              <div class="p-name accent">Avery Thomas</div>
+              <div class="p-dates">b. 1998</div>
+              <div class="p-place">Texas</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════ SQUIRES LINE DETAIL ═══════════════════════════════════ -->
+  <div class="section" id="squires-line">
+    <h2 class="section-title maternal">The Squires Line — Philadelphia Jewish Community</h2>
+
+    <p>The Squires name itself is an Americanization. Your maternal grandfather <strong>Arthur Squires</strong> (b. ~1934, Philadelphia, PA — d. 8 August 2022) carried the Americanized surname. His parents were <strong>Hany Sames</strong> and <strong>Eleanor Sames</strong>, both born in Philadelphia in the late 1890s–early 1900s, suggesting they were either born to immigrant parents or were themselves young immigrants who arrived in childhood.</p>
+
+    <p>The key connection: Hany Sames's parents were <strong>Ben J. Skversky</strong> and <strong>Rosie Cohen Skversky</strong> — both born in Russia in the late 1850s–early 1860s, almost certainly Jewish (the surname Skversky and the given name Cohen are strongly Jewish markers of the Russian Empire era). The Skversky family name was later Americanized to <strong>Squires</strong>.</p>
+
+    <table class="ancestor-table teal">
+      <thead>
+        <tr>
+          <th>Generation</th>
+          <th>Person</th>
+          <th>Born</th>
+          <th>Origin</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rel teal">Maternal grandfather</td>
+          <td class="name">Arthur Squires</td>
+          <td class="dates">~1934, Philadelphia · d. 8 Aug 2022</td>
+          <td>Philadelphia, PA</td>
+        </tr>
+        <tr>
+          <td class="rel teal">Great-grandparents</td>
+          <td class="name">Hany Sames &amp; Eleanor Sames</td>
+          <td class="dates">May 1897 / ~1903</td>
+          <td>Pennsylvania / Philadelphia</td>
+        </tr>
+        <tr>
+          <td class="rel teal">2nd great-grandparents</td>
+          <td class="name">Ben J. Skversky &amp; Rosie Cohen Skversky</td>
+          <td class="dates">Sep 1859 / Nov 1862</td>
+          <td>Russia (Jewish community)</td>
+        </tr>
+        <tr>
+          <td class="rel teal">3rd great-grandparents</td>
+          <td class="name">Joseph Skverski &amp; Galcbie</td>
+          <td class="dates">unknown</td>
+          <td>Russia</td>
+        </tr>
+        <tr>
+          <td class="rel teal">Rosie's father</td>
+          <td class="name">Jacob Cohen</td>
+          <td class="dates">b. ~1840</td>
+          <td>Russia</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="story-card teal">
+      <div class="card-title">The Skversky → Squires Name Change</div>
+      <p>The Americanization of Skversky to Squires is a classic pattern among Jewish immigrants of the early 20th century. The name Skversky (also spelled Skvierski, Skwierski) derives from <em>Skwierzyna</em>, a town in what is now western Poland — or possibly from the Yiddish pronunciation of a Russian place name. Upon immigration, names were often changed at Ellis Island by immigration officers who couldn't spell or pronounce Slavic/Yiddish names, or by families themselves seeking faster assimilation. "Squires" as a phonetic approximation of "Skversky" (both starting with Sk/Sq) is consistent with this pattern.</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════ JEWISH ROOTS ═══════════════════════════════════ -->
+  <div class="section" id="jewish-roots">
+    <h2 class="section-title jewish">The Jewish Roots — Croft / Krawczyk Line</h2>
+
+    <p>The richer and more traceable Jewish ancestry comes through your maternal grandmother <strong>Barbara C. Squires (née Croft/Krafcheck)</strong> (b. 23 January 1936, Houston), who married Arthur Squires. Her maiden name connects two Jewish families who converged in America: the Croft family (originally <strong>Krawczyk</strong>) from Kock, Poland, and the Krafcheck family from Radom, Poland.</p>
+
+    <h3 class="teal">The Croft / Krawczyk Family of Kock</h3>
+
+    <table class="ancestor-table teal">
+      <thead>
+        <tr>
+          <th>Generation</th>
+          <th>Person</th>
+          <th>Born</th>
+          <th>Place</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rel teal">5th great-grandparents</td>
+          <td class="name">Lejb Wolf Krawczyk &amp; Frajda</td>
+          <td class="dates">unknown</td>
+          <td>Kock, Poland (Russian Empire)</td>
+        </tr>
+        <tr>
+          <td class="rel teal">4th great-grandparents</td>
+          <td class="name">Abram Jojna Krawczyk &amp; Sura Kuperszlag</td>
+          <td class="dates">~1843 / ~1844</td>
+          <td>Kock, Poland</td>
+        </tr>
+        <tr>
+          <td class="rel teal">3rd great-grandparents (in America)</td>
+          <td class="name">Bernard "Baruch" Harry Croft &amp; Fannie "Faggi" Croft</td>
+          <td class="dates">1877 / 1870</td>
+          <td>Kock, Poland → America</td>
+        </tr>
+        <tr>
+          <td class="rel teal">Great-great-grandparents</td>
+          <td class="name">Jack Craft &amp; Mollie Krafcheck</td>
+          <td class="dates">1903 / 1905</td>
+          <td>Kock, Poland / Poland → USA</td>
+        </tr>
+        <tr>
+          <td class="rel teal">Maternal grandmother</td>
+          <td class="name">Barbara C. Squires (née Croft)</td>
+          <td class="dates">23 Jan 1936</td>
+          <td>Houston, TX</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 class="teal">The Krafcheck Family — Radom &amp; Radzyn Podlaski</h3>
+
+    <table class="ancestor-table teal">
+      <thead>
+        <tr>
+          <th>Person</th>
+          <th>Born</th>
+          <th>Place</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">Hyman Krafcheck</td>
+          <td class="dates">b. 1873</td>
+          <td>Radom, Poland (Russian Empire)</td>
+          <td class="note">Paternal grandfather of Mollie</td>
+        </tr>
+        <tr>
+          <td class="name">Libby Lipschitz</td>
+          <td class="dates">b. 1881</td>
+          <td>Radzyn Podlaski, Poland (Russian Empire)</td>
+          <td class="note">Maternal grandmother of Mollie; Lipschitz is a notable Ashkenazi surname</td>
+        </tr>
+        <tr>
+          <td class="name">Mollie Krafcheck</td>
+          <td class="dates">b. 1905, Poland</td>
+          <td>Poland → USA</td>
+          <td class="note">Married Jack Craft; mother of Barbara</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="story-card teal">
+      <div class="card-title">Krawczyk — A Jewish Family in a Polish Town</div>
+      <p>The Krawczyk name is puzzling at first glance: it is a native Polish word meaning "tailor" (<em>krawiec</em>), and it was commonly assigned to Jewish families in the Pale of Settlement during name-assignment drives under Russian and Prussian rule in the late 18th and early 19th centuries. Jewish families in Kock and surrounding towns were often required to take Polish or German surnames, and occupational surnames like Krawczyk (tailor), Goldstein (goldsmith), or Schneider (also tailor) were common assignments. That your ancestor Abram Jojna carried this name in Kock is consistent with this history.</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════ IMMIGRATION STORY ═══════════════════════════════════ -->
+  <div class="section" id="immigration">
+    <h2 class="section-title jewish">The Immigration Story — From the Russian Empire to America</h2>
+
+    <p>Your maternal Jewish ancestors lived in the <strong>Pale of Settlement</strong> — the vast zone of the Russian Empire where Jews were legally required to reside, stretching across modern-day Poland, Lithuania, Belarus, Ukraine, and Moldova. Life in the Pale was defined by poverty, periodic pogroms (mob violence against Jews), legal restrictions on where Jews could live and work, and quotas limiting their access to education and professions.</p>
+
+    <p>The wave of Jewish immigration to America between roughly <strong>1880 and 1924</strong> (when the Immigration Act of 1924 nearly closed the door) brought approximately 2 million Ashkenazi Jews — the largest Jewish migration in history. Your family was part of this wave.</p>
+
+    <div class="timeline">
+      <div class="timeline-item blue">
+        <div class="timeline-year blue">1840s–1870s</div>
+        <div class="timeline-title">Origins in the Pale</div>
+        <div class="timeline-body">Abram Jojna Krawczyk (b. ~1843) and Sura Kuperszlag (b. ~1844) are living in Kock, Poland — a shtetl (Jewish small town) in the Lublin region, then under Russian Empire rule. Hyman Krafcheck (b. 1873) is in Radom, a larger city also in the Lublin region. Ben Skversky (b. 1859) and Rosie Cohen (b. 1862) are somewhere in Russia, likely the western Pale. All are part of tightly-knit Ashkenazi Jewish communities with their own language (Yiddish), religious law, and culture.</div>
+      </div>
+      <div class="timeline-item blue">
+        <div class="timeline-year blue">1880s–1900s</div>
+        <div class="timeline-title">The Great Migration Begins</div>
+        <div class="timeline-body">The pogroms of 1881–1884 (triggered by the assassination of Tsar Alexander II) and 1903–1906 (Kishinev, Odessa) drove millions of Jews to emigrate. The primary destination was the United States — specifically New York, Philadelphia, and other East Coast cities. Bernard "Baruch" Croft (b. 1877, Kock) and his wife Fannie (b. 1870) make the crossing. Ben Skversky (b. 1859) also immigrates, eventually settling in Pennsylvania where his son Hany Sames is born in May 1897. The port of entry for many Polish Jews was Philadelphia — not just Ellis Island — via Hamburg and Liverpool shipping lines.</div>
+      </div>
+      <div class="timeline-item blue">
+        <div class="timeline-year blue">1903–1910</div>
+        <div class="timeline-title">Jack Craft &amp; Mollie's Generation Born</div>
+        <div class="timeline-body">Jack Craft (originally Krawczyk, b. 1903, Kock) and Mollie Krafcheck (b. 1905, Poland) are born either in the old country or shortly after their parents' arrival. The Krawczyk family's son Bernard has already been born in Kock (1877), suggesting he may have immigrated as a young adult and Jack was born in America — or Jack himself was a late immigrant child.</div>
+      </div>
+      <div class="timeline-item blue">
+        <div class="timeline-year blue">1920s–1930s</div>
+        <div class="timeline-title">Americanization — Name Changes, Settlement</div>
+        <div class="timeline-body">Jack Krawczyk/Croft marries Mollie Krafcheck. They settle in Philadelphia. The name Krawczyk has already been Americanized to "Croft" (or "Craft"). The family becomes established in the Philadelphia Jewish community. Their daughter Barbara is born in 1936 in Houston — suggesting the family or Barbara herself relocated to Texas at some point. Arthur Squires (née Skversky line, also Philadelphia) and Barbara Croft meet and marry in the Jewish community.</div>
+      </div>
+      <div class="timeline-item blue">
+        <div class="timeline-year blue">1963–1998</div>
+        <div class="timeline-title">Heather Squires → Avery Thomas</div>
+        <div class="timeline-body">Heather Denise Squires (b. 1963), daughter of Arthur and Barbara, grows up in Texas. She marries Michael Scott Thomas (b. 1960) — bringing together the deep Southern colonial Thomas/Kennard line with the Eastern European Jewish Squires/Croft heritage. Avery is born in 1998 in Texas.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════ NAME CHANGES ═══════════════════════════════════ -->
+  <div class="section" id="name-changes">
+    <h2 class="section-title jewish">The Name Changes — Identity in a New World</h2>
+
+    <p>Two major name changes mark your family's Jewish immigration story. Both followed the same pattern: a Yiddish/Slavic name that was difficult for Americans to pronounce or spell, replaced by something phonetically similar or semantically equivalent.</p>
+
+    <div style="margin: 1.5rem 0; text-align: center; font-size: 1.05rem;">
+      <span class="name-change">Krawczyk</span>
+      <span class="arrow-right">→</span>
+      <span class="name-change">Croft</span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="name-change">Skversky</span>
+      <span class="arrow-right">→</span>
+      <span class="name-change">Squires</span>
+    </div>
+
+    <div class="story-card blue">
+      <div class="card-title">Krawczyk → Croft</div>
+      <p><strong>Krawczyk</strong> (pronounced roughly "KRAVCH-ik") is a Polish occupational surname meaning "tailor." The English equivalent of this occupation-name is virtually never "Croft" — so this wasn't a semantic translation. Instead, it appears to be a phonetic simplification: "Croft" preserves the initial hard consonant cluster (Kr- → Cr-) and reduces the word to a simple, very English-sounding monosyllable. "Croft" also means a small enclosed field or a small farm in Old English, which gave it a respectable, landed-gentry sound. The family also used the spelling "Craft" at times (Jack is recorded as "Jack Craft" in some records), suggesting the name was still in flux during early Americanization.</p>
+    </div>
+
+    <div class="story-card blue">
+      <div class="card-title">Skversky → Squires</div>
+      <p><strong>Skversky</strong> (possibly derived from a place name, or from Yiddish roots) was Americanized to <strong>Squires</strong> — a choice that is both phonetically intuitive (Sk-/Sq- sounds, similar stress pattern) and aspirationally loaded. "Squire" in English society was a title of minor gentry, a step below knight — a respectable country landowner. Choosing "Squires" may have been a conscious statement of American belonging and social aspiration. The Ben J. Skversky generation immigrated from Russia; by the time their grandson Arthur was born in Philadelphia around 1934, the family was thoroughly "Squires."</p>
+    </div>
+
+    <h3 class="blue">Why Name Changes Happened</h3>
+    <p>Name changes among Jewish immigrants were driven by several overlapping forces:</p>
+    <ul style="margin-left:1.5rem;margin-bottom:1rem;font-size:0.93rem;">
+      <li style="margin-bottom:0.5rem;"><strong>Immigration processing:</strong> Ellis Island and Philadelphia port clerks often wrote names phonetically as they heard them, permanently anglicizing them on official documents.</li>
+      <li style="margin-bottom:0.5rem;"><strong>Anti-Semitism:</strong> A visibly Jewish name could cost someone a job, an apartment, or social standing. Many families changed names deliberately to "pass" more easily.</li>
+      <li style="margin-bottom:0.5rem;"><strong>American identity:</strong> Especially among the second generation (children born in America), there was strong pressure to assimilate — English names were part of becoming "American."</li>
+      <li style="margin-bottom:0.5rem;"><strong>Legal simplicity:</strong> Government documents, deeds, and business records all required names Americans could easily record and recognize.</li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════════ ORIGINS MAP ═══════════════════════════════════ -->
+  <div class="section" id="origins-map">
+    <h2 class="section-title jewish">Origins Map — Where Your Family Came From</h2>
+
+    <div class="map-note">
+      <strong>Note:</strong> This is a text-based geographic reference. The towns below were all within the <strong>Pale of Settlement</strong> — the region of the Russian Empire where Jews were legally required to reside, roughly corresponding to modern Poland, Lithuania, Belarus, and Ukraine.
+    </div>
+
+    <h3 class="teal">Jewish Origin Towns</h3>
+
+    <table class="ancestor-table teal">
+      <thead>
+        <tr>
+          <th>Town</th>
+          <th>Modern Country</th>
+          <th>Family</th>
+          <th>Context</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">Kock (Kock nad Wieprzem)</td>
+          <td>Poland</td>
+          <td class="rel teal">Krawczyk / Croft family</td>
+          <td class="note">Lublin region. Famous as a Hasidic center — the Kocker Rebbe was one of the most famous Hasidic masters of the 19th century. A significant Jewish shtetl before the Holocaust.</td>
+        </tr>
+        <tr>
+          <td class="name">Radom</td>
+          <td>Poland</td>
+          <td class="rel teal">Krafcheck family</td>
+          <td class="note">Major city in central Poland, Masovian region. Had a substantial Jewish population in the 19th–early 20th century before near-total destruction in the Holocaust.</td>
+        </tr>
+        <tr>
+          <td class="name">Radzyn Podlaski</td>
+          <td>Poland</td>
+          <td class="rel teal">Lipschitz family</td>
+          <td class="note">Eastern Poland (Lublin region). Also known as a Hasidic center — the Radzyner Rebbe line is famous. Significant Jewish community before WWII.</td>
+        </tr>
+        <tr>
+          <td class="name">Russia (unspecified)</td>
+          <td>Russia / Western Pale</td>
+          <td class="rel blue">Skversky family</td>
+          <td class="note">Ben J. Skversky (b. 1859) and Rosie Cohen (b. 1862) listed as born in Russia. Likely the western Pale — could be Lithuania, Belarus, or Ukraine.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Paternal Origin Towns</h3>
+
+    <table class="ancestor-table">
+      <thead>
+        <tr>
+          <th>Place</th>
+          <th>Family</th>
+          <th>Era</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">Nansemond County, Virginia</td>
+          <td class="rel">Thomas (Joseph Thomas, ~1680)</td>
+          <td class="dates">~1680</td>
+        </tr>
+        <tr>
+          <td class="name">Lancashire, England</td>
+          <td class="rel">Spivey (Alice Spivey, ~1687)</td>
+          <td class="dates">~1687</td>
+        </tr>
+        <tr>
+          <td class="name">Burke County, Georgia</td>
+          <td class="rel">Thomas</td>
+          <td class="dates">~1773</td>
+        </tr>
+        <tr>
+          <td class="name">Marengo County, Alabama</td>
+          <td class="rel">Kennard family (per Kennard History paper)</td>
+          <td class="dates">~1800s</td>
+        </tr>
+        <tr>
+          <td class="name">Bedias, Grimes County, Texas</td>
+          <td class="rel">Thomas (Marian F. Thomas, ~1852)</td>
+          <td class="dates">~1852</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="story-card">
+      <div class="card-title">The Hasidic Connection — Kock and Radzyn Podlaski</div>
+      <p>Two of your family's origin towns — Kock and Radzyn Podlaski — are specifically famous as centers of Hasidic Judaism. The <strong>Kocker Rebbe</strong> (Menachem Mendel of Kotzk, 1787–1859) was one of the most radical and celebrated Hasidic masters, known for his fierce demands for honesty and his legendary 20-year self-imposed isolation. The <strong>Radzyner Rebbe</strong> line was known for reinstating the <em>tekhelet</em> (blue thread) in the tallit. Whether your Krawczyk and Lipschitz ancestors were Hasidic Jews or opposed to Hasidism (the <em>Mitnagdim</em> movement) is unknown — but they lived in communities saturated with this religious ferment. The world they left behind was one of intense spiritual life, Yiddish literature, and communal solidarity that was largely destroyed in the Holocaust.</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════ FULL COMBINED TABLE ═══════════════════════════════════ -->
+  <div class="section" id="combined">
+    <h2 class="section-title">Complete Ancestor Reference</h2>
+    <p style="color:var(--muted);font-size:0.88rem;margin-bottom:1.2rem;">All ancestors from GEDCOM + Kennard History + oral records, organized by line.</p>
+
+    <h3>Paternal — Thomas Line (complete)</h3>
+    <table class="ancestor-table">
+      <thead>
+        <tr><th>Person</th><th>Born</th><th>Died</th><th>Place Born</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="name">Joseph Thomas</td><td class="dates">~1680</td><td class="dates">—</td><td>Nansemond, Virginia</td></tr>
+        <tr><td class="name">Alice Spivey (m. Thomas)</td><td class="dates">~1687</td><td class="dates">—</td><td>Lancashire, England</td></tr>
+        <tr><td class="name">James E. Thomas</td><td class="dates">~1714</td><td class="dates">—</td><td>Virginia</td></tr>
+        <tr><td class="name">Joseph Thomas</td><td class="dates">~1740</td><td class="dates">—</td><td>Bertie County, NC</td></tr>
+        <tr><td class="name">Jonathon John C Thomas</td><td class="dates">~1773</td><td class="dates">—</td><td>Burke County, Georgia</td></tr>
+        <tr><td class="name">Jim Thomas</td><td class="dates">~1812</td><td class="dates">—</td><td>Alabama</td></tr>
+        <tr><td class="name">Marian F. Thomas</td><td class="dates">~1852</td><td class="dates">—</td><td>Bedias, Texas</td></tr>
+        <tr><td class="name">James Geren Thomas Sr.</td><td class="dates">6 Feb 1877</td><td class="dates">10 Mar 1953</td><td>Texas</td></tr>
+        <tr><td class="name">J.G. Thomas Jr.</td><td class="dates">28 Nov 1924</td><td class="dates">8 Dec 2016</td><td>Texas</td></tr>
+        <tr><td class="name">Charlotte Lucille Crawley (m. Thomas)</td><td class="dates">b. 1931</td><td class="dates">Living</td><td>m. J.G. Thomas Jr. on 10 Apr 1954 at Hill Cumberland Church</td></tr>
+        <tr><td class="name">Michael Scott Thomas</td><td class="dates">b. 1960</td><td class="dates">—</td><td>Texas</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Paternal — Kennard Line (complete)</h3>
+    <table class="ancestor-table">
+      <thead>
+        <tr><th>Person</th><th>Born</th><th>Died</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="name">Anthony Drew Kennard Sr.</td><td class="dates">9 Jul 1788</td><td class="dates">1848</td><td class="note"></td></tr>
+        <tr><td class="name">Sarah Moore Kennard</td><td class="dates">16 Sep 1790</td><td class="dates">1877</td><td class="note"></td></tr>
+        <tr><td class="name">Michael Moore Kennard</td><td class="dates">27 Jul 1809</td><td class="dates">7 Jul 1895</td><td class="note"></td></tr>
+        <tr><td class="name">John H. "Papa" Kennard</td><td class="dates">23 Jun 1852</td><td class="dates">12 Nov 1929</td><td class="note">Central figure of Kennard History</td></tr>
+        <tr><td class="name">Hattie Brown Kennard</td><td class="dates">31 Jul 1856</td><td class="dates">4 Mar 1948</td><td class="note"></td></tr>
+        <tr><td class="name">Stella Kennard Thomas</td><td class="dates">11 Apr 1883</td><td class="dates">19 Feb 1965</td><td class="note">m. James Geren Thomas Sr.</td></tr>
+      </tbody>
+    </table>
+
+    <h3 class="teal">Maternal — Croft / Krawczyk Line</h3>
+    <table class="ancestor-table teal">
+      <thead>
+        <tr><th>Person</th><th>Born</th><th>Place</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="name">Lejb Wolf Krawczyk</td><td class="dates">unknown</td><td>Kock, Poland</td></tr>
+        <tr><td class="name">Frajda (m. Krawczyk)</td><td class="dates">unknown</td><td>Kock, Poland</td></tr>
+        <tr><td class="name">Abram Jojna Krawczyk</td><td class="dates">~1843</td><td>Kock, Poland</td></tr>
+        <tr><td class="name">Sura Kuperszlag (m. Krawczyk)</td><td class="dates">~1844</td><td>Poland</td></tr>
+        <tr><td class="name">Bernard "Baruch" Harry Croft</td><td class="dates">1877</td><td>Kock, Poland → America</td></tr>
+        <tr><td class="name">Fannie "Faggi" Croft</td><td class="dates">1870</td><td>Kock, Poland → America</td></tr>
+        <tr><td class="name">Jack Craft / Croft (né Krawczyk)</td><td class="dates">1903</td><td>Kock, Poland → USA</td></tr>
+        <tr><td class="name">Mollie Krafcheck (m. Craft)</td><td class="dates">1905</td><td>Poland → USA</td></tr>
+        <tr><td class="name">Barbara C. Squires (née Croft)</td><td class="dates">23 Jan 1936</td><td>Houston, TX</td></tr>
+      </tbody>
+    </table>
+
+    <h3 class="teal">Maternal — Krafcheck / Lipschitz Line</h3>
+    <table class="ancestor-table teal">
+      <thead>
+        <tr><th>Person</th><th>Born</th><th>Place</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="name">Hyman Krafcheck</td><td class="dates">~1873</td><td>Radom, Poland</td></tr>
+        <tr><td class="name">Libby Lipschitz (m. Krafcheck)</td><td class="dates">~1881</td><td>Radzyn Podlaski, Poland</td></tr>
+        <tr><td class="name">Mollie Krafcheck</td><td class="dates">1905</td><td>Poland → USA</td></tr>
+      </tbody>
+    </table>
+
+    <h3 class="blue">Maternal — Skversky / Squires Line</h3>
+    <table class="ancestor-table blue">
+      <thead>
+        <tr><th>Person</th><th>Born</th><th>Place</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="name">Joseph Skverski</td><td class="dates">unknown</td><td>Russia</td></tr>
+        <tr><td class="name">Galcbie Skverski</td><td class="dates">unknown</td><td>Russia</td></tr>
+        <tr><td class="name">Jacob Cohen</td><td class="dates">~1840</td><td>Russia</td></tr>
+        <tr><td class="name">Ben J. Skversky</td><td class="dates">Sep 1859</td><td>Russia → Pennsylvania</td></tr>
+        <tr><td class="name">Rosie Cohen Skversky</td><td class="dates">Nov 1862</td><td>Russia → Pennsylvania</td></tr>
+        <tr><td class="name">Hany Sames</td><td class="dates">May 1897</td><td>Pennsylvania</td></tr>
+        <tr><td class="name">Eleanor Sames</td><td class="dates">~1903</td><td>Philadelphia, PA</td></tr>
+        <tr><td class="name">Arthur Squires</td><td class="dates">~1934 · d. 8 Aug 2022</td><td>Philadelphia, PA</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<footer>
+  Family tree compiled April 2026 · Sources: Ancestry.com GEDCOM export (Thomas_Squires Family Tree, 73 people) · Kennard Family History (93-page document, Richard Gary Thomas) · U.S. Census records · GEDCOM file exported 12 April 2026<br>
+  <span style="color:#555;">personal/familyHistory/full-family-tree.html</span>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kennard Family History — Avery Thomas</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --surface2: #222;
+      --border: #2e2e2e;
+      --accent: #c9a84c;
+      --accent2: #a0522d;
+      --text: #e0d8cc;
+      --muted: #888;
+      --link: #c9a84c;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', serif;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #1a1208 0%, #0f0f0f 60%);
+      border-bottom: 2px solid var(--accent);
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+    }
+
+    header .crest {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      color: var(--accent);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+
+    header .subtitle {
+      color: var(--muted);
+      font-style: italic;
+      font-size: 1rem;
+    }
+
+    header .byline {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    /* ── Site Nav ── */
+    .site-nav {
+      background: #111;
+      border-bottom: 2px solid var(--accent);
+      padding: 0.7rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 0;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+    }
+
+    .site-nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 0.3rem 1rem;
+      border-right: 1px solid #2a2a2a;
+      transition: color 0.2s;
+    }
+
+    .site-nav a:last-child { border-right: none; }
+    .site-nav a:hover { color: var(--accent); }
+    .site-nav a.active { color: var(--accent); }
+
+    /* ── Nav ── */
+    nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0.75rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      justify-content: center;
+      position: sticky;
+      top: 44px;
+      z-index: 100;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-family: sans-serif;
+      letter-spacing: 0.5px;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: #fff; }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    /* ── Section Headings ── */
+    .section {
+      margin-top: 3rem;
+    }
+
+    .section-title {
+      color: var(--accent);
+      font-size: 1.5rem;
+      font-variant: small-caps;
+      letter-spacing: 1px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      color: #d4b87a;
+      font-size: 1.1rem;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    p { margin-bottom: 1rem; }
+
+    /* ── Ancestor Table ── */
+    .ancestor-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .ancestor-table th {
+      background: #1e1508;
+      color: var(--accent);
+      text-align: left;
+      padding: 0.6rem 1rem;
+      font-variant: small-caps;
+      letter-spacing: 0.5px;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    .ancestor-table td {
+      padding: 0.55rem 1rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    .ancestor-table tr:nth-child(even) td { background: var(--surface); }
+    .ancestor-table tr:hover td { background: #1e1a12; }
+
+    .ancestor-table .name { font-weight: bold; color: #e8d9b8; }
+    .ancestor-table .rel  { color: var(--accent); font-style: italic; font-size: 0.88rem; }
+    .ancestor-table .dates { color: var(--muted); font-size: 0.85rem; }
+    .ancestor-table .note  { color: #aaa; font-size: 0.84rem; }
+
+    /* ── Timeline ── */
+    .timeline {
+      position: relative;
+      padding-left: 1.8rem;
+      border-left: 2px solid var(--border);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 1.8rem;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -1.93rem;
+      top: 0.5rem;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid var(--bg);
+    }
+
+    .timeline-year {
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-family: sans-serif;
+      letter-spacing: 1px;
+      margin-bottom: 0.2rem;
+    }
+
+    .timeline-title {
+      font-weight: bold;
+      color: #e8d9b8;
+      margin-bottom: 0.3rem;
+    }
+
+    .timeline-body {
+      color: var(--text);
+      font-size: 0.93rem;
+    }
+
+    /* ── Story Cards ── */
+    .story-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent2);
+      border-radius: 4px;
+      padding: 1.2rem 1.4rem;
+      margin: 1.2rem 0;
+    }
+
+    .story-card .story-title {
+      color: var(--accent);
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 0.6rem;
+    }
+
+    .story-card p {
+      font-size: 0.93rem;
+      margin-bottom: 0;
+    }
+
+    /* ── Pull Quote ── */
+    blockquote {
+      border-left: 3px solid var(--accent);
+      margin: 1.5rem 0;
+      padding: 0.8rem 1.4rem;
+      background: var(--surface);
+      font-style: italic;
+      color: #c8bfae;
+      font-size: 0.95rem;
+    }
+
+    blockquote cite {
+      display: block;
+      margin-top: 0.5rem;
+      font-style: normal;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    /* ── Badges ── */
+    .badge {
+      display: inline-block;
+      background: #1e1508;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-family: sans-serif;
+      padding: 0.15rem 0.5rem;
+      border-radius: 3px;
+      margin-right: 0.3rem;
+      vertical-align: middle;
+    }
+
+    /* ── Person Cards ── */
+    .person-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .person-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem;
+    }
+
+    .person-card .pc-name {
+      font-weight: bold;
+      color: #e8d9b8;
+      margin-bottom: 0.2rem;
+    }
+
+    .person-card .pc-rel {
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+
+    .person-card .pc-dates {
+      color: var(--muted);
+      font-size: 0.8rem;
+      margin-bottom: 0.4rem;
+      font-family: sans-serif;
+    }
+
+    .person-card p {
+      font-size: 0.85rem;
+      color: #b0a898;
+      margin-bottom: 0;
+    }
+
+    /* ── Footer ── */
+    footer {
+      margin-top: 4rem;
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-family: sans-serif;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.6rem; }
+      .container { padding: 1.5rem 1rem 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html">Home</a>
+  <a href="full-family-tree.html">Family Tree</a>
+  <a href="thomas-kennard-documents.html">Thomas &amp; Kennard</a>
+  <a href="kennard-family-history.html" class="active">Kennard History</a>
+  <a href="discoveries-and-research.html">Discoveries</a>
+  <a href="sources.html">Primary Sources</a>
+  <a href="file-glossary.html">Site Index</a>
+</nav>
+
+<header>
+  <div class="crest">⚜</div>
+  <h1>Kennard Family of Grimes County, Texas</h1>
+  <div class="subtitle">A Narrative History — Compiled by Richard Gary Thomas, 2018</div>
+  <div class="byline">Presented for Avery Thomas &nbsp;·&nbsp; Direct descendant of the original Texas colonists</div>
+</header>
+
+<nav>
+  <a href="#your-line">Your Line</a>
+  <a href="#origins">Origins</a>
+  <a href="#texas">Coming to Texas</a>
+  <a href="#revolution">Texas Revolution</a>
+  <a href="#stories">Family Stories</a>
+  <a href="#civil-war">Civil War</a>
+  <a href="#john-h">Papa &amp; Mama Kennard</a>
+  <a href="#stella">Stella</a>
+  <a href="#ancestors">Ancestor List</a>
+</nav>
+
+<div class="container">
+
+  <!-- ════════════════════════════════ YOUR LINE ════════════════════════════════ -->
+  <div class="section" id="your-line">
+    <h2 class="section-title">Your Direct Line</h2>
+    <p>
+      You, <strong>Avery Thomas</strong>, are a direct descendant of the original Anglo-American colonists of Texas —
+      a family that arrived on <strong>Christmas Eve, 1832</strong> and never left Grimes County for generations.
+      Here is exactly how you connect:
+    </p>
+
+    <table class="ancestor-table">
+      <thead>
+        <tr>
+          <th>Generation</th>
+          <th>Person</th>
+          <th>Relation to You</th>
+          <th>Dates / Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td class="name">Avery Thomas</td>
+          <td class="rel">You</td>
+          <td class="dates">—</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="name">Michael Scott Thomas</td>
+          <td class="rel">Father</td>
+          <td class="dates">—</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td class="name">J.G. Thomas Jr.</td>
+          <td class="rel">Grandfather</td>
+          <td class="dates">b. Nov 28, 1924 · d. Dec 8, 2016<br><span class="note">Buried Odd Fellows Cemetery, Anderson, TX</span></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td class="name">James Gary Thomas Sr.</td>
+          <td class="rel">Great-grandfather</td>
+          <td class="dates">b. Feb 6, 1877 · d. Mar 10, 1953<br><span class="note">Banker & cattleman; rose from farm poverty to college-educated prominence</span></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td class="name">Stella Scott Kennard Thomas</td>
+          <td class="rel">Great-grandmother</td>
+          <td class="dates">b. Apr 11, 1882 · d. Feb 19, 1965<br><span class="note">Latin scholar, pianist, cattle rancher, beloved matriarch of the family</span></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td class="name">John H. "Papa" Kennard</td>
+          <td class="rel">2nd great-grandfather</td>
+          <td class="dates">b. Jun 23, 1852 · d. Nov 12, 1929<br><span class="note">Founder, First National Bank of Anderson (1904)</span></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td class="name">Hattie E. Brown Kennard ("Mama Kennard")</td>
+          <td class="rel">2nd great-grandmother</td>
+          <td class="dates">b. Jul 31, 1856 · d. Mar 4, 1948<br><span class="note">Daughter of Dr. George Washington Brown, Virginia physician who moved to Texas</span></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td class="name">Michael Moore Kennard</td>
+          <td class="rel">3rd great-grandfather</td>
+          <td class="dates">b. Jul 27, 1809 · d. Jul 7, 1895<br><span class="note">Original Texas colonist; personally knew Bowie, Crockett, and Sam Houston</span></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td class="name">Mary Ann Womack Kennard</td>
+          <td class="rel">3rd great-grandmother</td>
+          <td class="dates">m. Nov 26, 1838 · d. ~1874<br><span class="note">Heroically nursed yellow fever patient at great personal risk</span></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td class="name">Anthony Drew Kennard Sr.</td>
+          <td class="rel">4th great-grandfather</td>
+          <td class="dates">b. Jul 9, 1788 · d. 1848<br><span class="note">Led family to Texas Christmas Eve 1832; served in Texas Revolution; named "Three Notch Road"</span></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td class="name">Sarah Moore Kennard</td>
+          <td class="rel">4th great-grandmother</td>
+          <td class="dates">b. Sep 16, 1790 · d. 1877<br><span class="note">"Conducted herself as a lady, a devoted wife and mother, a pious Christian" — neighbor's tribute, 1890</span></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td class="name">Michael Kennard &amp; Johanna Drew Kennard</td>
+          <td class="rel">5th great-grandparents</td>
+          <td class="dates">Maryland → North Carolina → Tennessee<br><span class="note">First generation to move southwest in the land rush era</span></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td class="name">Nathaniel Kennard II &amp; wife</td>
+          <td class="rel">6th great-grandparents</td>
+          <td class="dates">Kent County, Maryland · d. 1794<br><span class="note">Possible Revolutionary War service</span></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td class="name">Richard Kennard &amp; Mary Pullen Kennard</td>
+          <td class="rel">~7th great-grandparents</td>
+          <td class="dates">m. 1693, Kent County, Maryland<br><span class="note">Earliest documented American ancestors of the family</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ════════════════════════════════ ORIGINS ════════════════════════════════ -->
+  <div class="section" id="origins">
+    <h2 class="section-title">Origins — Scotland to America</h2>
+
+    <p>
+      The Kennard name traces back to <strong>Norman France</strong>, arriving in England during the
+      Norman Conquest of 1066 as "Kenewardus" — recorded in the Domesday Book of 1086. Some
+      of these Norman settlers made their way to <strong>Scotland</strong>, near Aberdeen. According
+      to family lore, an ancestor supported the Scottish "Pretender" in a bid to free Scotland from
+      England. When that effort failed, he lost all his land and fled — first to northern Scotland,
+      then to the Ulster region of Ireland.
+    </p>
+
+    <p>
+      Upon immigrating to America, the family simplified "Kinnaird" to "Kennard." An old Scottish
+      schoolmaster scolded them for abandoning the original spelling. In response, three brothers
+      went three different ways: one returned to "Kinnaird," one compromised with "Kinnard," and
+      one kept "Kennard." Your line descends from the "Kennard" brother.
+    </p>
+
+    <p>
+      The earliest <em>documented</em> American ancestor is <strong>Richard Kennard</strong>, who
+      married <strong>Mary Pullen</strong> in 1693 in Kent County, Maryland, where they owned a
+      700-acre plantation called "Danby." From Richard and Mary, the family line runs unbroken
+      through four Maryland generations before beginning the long southwestern migration that
+      would eventually land them in Texas.
+    </p>
+  </div>
+
+  <!-- ════════════════════════════════ MOVING WEST ════════════════════════════════ -->
+  <div class="section">
+    <h2 class="section-title">The Long March Southwest</h2>
+    <p>Over roughly 40 years, your ancestors moved steadily southwest in search of cheap, fertile land — a common ambition of the era.</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">~1790</div>
+        <div class="timeline-title">Maryland → North Carolina</div>
+        <div class="timeline-body">Michael Kennard (your 5th great-grandfather) moves his family from Maryland to Brunswick County, North Carolina. His brother Nathaniel makes the same move.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">~1792–93</div>
+        <div class="timeline-title">North Carolina → Tennessee</div>
+        <div class="timeline-body">The family moves again, settling near Murfreesboro in what would become Rutherford County, Tennessee — just as Tennessee became a state in 1796.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">1808</div>
+        <div class="timeline-title">Anthony Drew Kennard Born &amp; Married in Tennessee</div>
+        <div class="timeline-body">Anthony Drew (your 4th great-grandfather), youngest son of Michael, marries Sarah Moore on October 16, 1808 near Murfreesboro. She was born in Garrard County, Kentucky — some 200 miles away. How they met is unknown.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">~1818</div>
+        <div class="timeline-title">Tennessee → Alabama</div>
+        <div class="timeline-body">Anthony Drew and his brother Michael II move their families to the Alabama Territory (near Greensboro). Anthony Drew was even proposed for Colonel of Shelby County, though the appointment didn't happen.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">1825–1830</div>
+        <div class="timeline-title">Signing Up for Texas</div>
+        <div class="timeline-body">Anthony Drew and Sarah sign on with Empresario Sterling Robertson's colony to move to Tejas (Mexico). They reach the Sabine River border in 1830 — only to be blocked by Mexico's Decree of April 6, 1830, which nearly halted all Anglo immigration. They wait.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">December 24, 1832</div>
+        <div class="timeline-title">Christmas Eve in Texas 🎄</div>
+        <div class="timeline-body">Anthony Drew is granted ~4,400 acres in what will become Grimes County. The family arrives at their land on Christmas Eve. Their first night: they try to hunt wild turkeys for a Christmas feast. The sons return empty-handed. They cook their last old rooster instead.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════ TEXAS ════════════════════════════════ -->
+  <div class="section" id="texas">
+    <h2 class="section-title">Life in Early Texas</h2>
+
+    <p>
+      The Kennards settled on land that was then part of the Mexican state of Coahuila. They were
+      <strong>original colonists</strong> — among the very first Anglo-American families to put down
+      permanent roots in what would become Grimes County. Their land near present-day Anderson
+      was long known as <strong>"Kennards' Prairie"</strong> — later renamed Roans Prairie, which
+      still exists today along Texas State Highway 90.
+    </p>
+
+    <div class="story-card">
+      <div class="story-title">🛤️ The Origin of Three Notch Road</div>
+      <p>
+        One of Anthony Drew's sons was sent on horseback to a trading post in Madison County
+        (15–20 miles away). On the return trip, he "gave the horse her head" — letting the mare
+        find her own way home, trusting her instinct to return to her foal. The mare took a shorter
+        route nobody knew about, passing through what are now Bedias and Singleton, Texas, where
+        the boy discovered a freshwater spring. The next morning, Anthony Drew followed his son's
+        muddy hoof prints and blazed the route by cutting <em>three notches</em> in trees with a hand
+        axe. The trail became a road used by settlers and Indians alike. Today it is <strong>Texas FM 2562</strong>,
+        still locally called "Three Notch Road." Anthony Drew and Sarah are buried beside it, where
+        the State of Texas erected a monument in their honor in 1936.
+      </p>
+    </div>
+
+    <div class="story-card">
+      <div class="story-title">🏨 The Fanthorpe Inn</div>
+      <p>
+        Michael Moore Kennard (your 3rd great-grandfather) went into business with his father-in-law
+        Abraham Womack and his brother-in-law Henry Fanthorpe — an English immigrant who had married
+        Michael's sister, Rachael. Their store, <em>"Fanthorpe, Womack, and Kennard,"</em> was the first
+        mercantile in what is now Anderson, Texas. Fanthorpe also built an inn at the crossroads of two
+        stagecoach lines. The Fanthorpe Inn became one of the most famous hotels in the Republic of Texas.
+        Its guest list reads like a history textbook: <strong>Sam Houston, Zachary Taylor, Robert E. Lee,
+        Stonewall Jackson, Jefferson Davis, and Ulysses S. Grant</strong> all stayed there.
+        The town of Anderson was named after Kenneth Lewis Anderson, Vice President of the Republic of
+        Texas — who died at the inn and is buried across the street from it.
+      </p>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════ REVOLUTION ════════════════════════════════ -->
+  <div class="section" id="revolution">
+    <h2 class="section-title">The Texas Revolution (1835–1836)</h2>
+
+    <p>
+      When tensions with Mexico boiled over into war, the Kennards were in the middle of it.
+      Anthony Drew and four of his sons — <strong>Michael Moore, William Everett, Anthony Drew Jr.,
+      and Marquis de Lafayette</strong> — all served in the Texas Army.
+    </p>
+
+    <div class="story-card">
+      <div class="story-title">📰 The Night the Alamo News Came</div>
+      <p>
+        The Kennard family learned of the fall of the Alamo from a houseguest: <strong>Dr. Anson Jones</strong>,
+        a signer of Texas' Declaration of Independence and the future last President of the Republic of Texas.
+        He spent the night at the Kennard home on his way through the area and delivered the devastating news
+        himself. Every Anglo defender of the Alamo had been killed.
+      </p>
+    </div>
+
+    <p>
+      <strong>William Everett Kennard</strong> is reported to have fought at the decisive Battle of San Jacinto
+      on April 21, 1836, where Texas won its independence. His name appears on the San Jacinto Monument
+      near Houston. <strong>Michael Moore Kennard</strong> (your 3rd great-grandfather) was reportedly on
+      baggage duty and was ill the day of the battle. After independence, the soldiers were paid in
+      land grants — adding significantly to the Kennard family's already substantial holdings.
+    </p>
+
+    <blockquote>
+      "Captain William Everett Kennard was a noble man worthy to be remembered and a truer friend I have never had."
+      <cite>— Abraham Zuber, fellow San Jacinto campaign veteran</cite>
+    </blockquote>
+
+    <p>
+      The Republic of Texas existed as an independent nation for over nine years (1836–1845),
+      before being annexed by the United States on December 29, 1845.
+    </p>
+  </div>
+
+  <!-- ════════════════════════════════ STORIES ════════════════════════════════ -->
+  <div class="section" id="stories">
+    <h2 class="section-title">Family Stories &amp; Lore</h2>
+
+    <div class="story-card">
+      <div class="story-title">🪶 The Indian Raid — Mrs. Taylor</div>
+      <p>
+        In 1840, Indians raided the area. Some neighbors took refuge in the Hadley home next to
+        the Kennards; others barricaded in the Kennard house. A woman named Mrs. Taylor, whose
+        husband was at the Kennard house, left the safety of the Hadley home with her children to
+        join him — against everyone's pleas. The Indians overtook her. She was killed, her children
+        taken captive — in full view of those watching from the Hadley house. The Kennard men
+        pursued the Indians and eventually rescued the children, bringing them to Rachael Kennard
+        Fanthorpe's home for safety.
+      </p>
+    </div>
+
+    <div class="story-card">
+      <div class="story-title">🙏 "Dat Am a Mighty Pore Help"</div>
+      <p>
+        On another occasion, when all the men were away from the Kennard home, an old enslaved
+        woman discovered Indians killing the family's calves nearby. She rushed to tell Sarah Moore
+        Kennard (your 4th great-grandmother). When Sarah made no move to act, the woman cried,
+        <em>"Missi what shall we do? What shall we do?"</em> Sarah replied calmly, <em>"We can do
+        nothing but trust in the Lord."</em> The woman shot back: <em>"Dat am a mighty pore help
+        when de Injuns am out dar killin de calves."</em>
+      </p>
+    </div>
+
+    <div class="story-card">
+      <div class="story-title">💛 The Yellow Fever Vigil</div>
+      <p>
+        During a yellow fever epidemic in Anderson, a stagecoach driver died of the disease at the
+        Fanthorpe Inn. Rachael Kennard Fanthorpe (sister-in-law of Mary Ann Womack Kennard) had
+        nursed him without knowing what he had, and she too fell ill. The entire community fled in
+        fear, and a doctor quarantined Rachael. For <strong>six weeks</strong>, Mary Ann Womack
+        Kennard (your 3rd great-grandmother) stayed and nursed her — burning or boiling her
+        clothes each day, bathing in "strongly medicated water." She believed she was risking her
+        life. She did it anyway. Rachael died. Mary Ann did not contract the disease. It was only
+        later discovered that yellow fever spreads by mosquitoes, not human contact — but that
+        knowledge didn't exist at the time. Her bravery stands regardless.
+      </p>
+    </div>
+
+    <div class="story-card">
+      <div class="story-title">🔫 Standing Guard Over a Grave</div>
+      <p>
+        After the Civil War, during Reconstruction, Union troops passed by Michael Moore Kennard's
+        country home. A Confederate soldier — likely Mary Ann's brother Volney Womack, killed at
+        the Battle of Pleasant Hill, Louisiana in 1864 — had been temporarily buried in their front
+        yard wrapped in charcoal. The soldiers suspected the mound held hidden meat and threatened
+        to dig it up. Michael Moore sat on his porch with <strong>two guns across his lap</strong>
+        and told them he would kill any man who went near the grave. After a heated standoff, the
+        soldiers saw he meant it — and left. (Had they looked in the nearby creek bottom woods,
+        they would have found large quantities of meat being guarded by the family's former slaves.)
+      </p>
+    </div>
+
+    <div class="story-card">
+      <div class="story-title">🐎 The Riderless Horse</div>
+      <p>
+        During the Civil War, Anthony Drew Kennard (a son of Michael Moore, named for his
+        grandfather) died of pneumonia in Richmond, Virginia on November 27, 1861. The family
+        learned of his death in the most gut-wrenching way: from their front porch, they watched
+        a distant figure approaching down the lane. Slowly, they made out the shape of his enslaved
+        servant leading Anthony Drew's horse — riderless. The family pieced together the awful
+        truth before a single word was spoken.
+      </p>
+    </div>
+
+    <div class="story-card">
+      <div class="story-title">🤝 Saved by a Masonic Sign</div>
+      <p>
+        A Kennard ancestor fighting for the Confederacy was captured by Union forces and placed
+        in a firing line for immediate execution. Just before the order was given, he made a secret
+        Masonic hand sign. The Union officer commanding the execution squad was also a Mason.
+        He pulled the Kennard ancestor from the line. Everyone else in the line was shot and killed.
+      </p>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════ CIVIL WAR ════════════════════════════════ -->
+  <div class="section" id="civil-war">
+    <h2 class="section-title">The Civil War</h2>
+
+    <p>
+      Texas voted to secede from the Union on February 23, 1861. Multiple Kennard men served in
+      the Confederate military. The most decorated was <strong>Captain John R. Kennard</strong>,
+      youngest son of Anthony Drew and Sarah — making him your 4th great-grand-uncle.
+    </p>
+
+    <p>
+      John R. organized the <em>"Grimes Boys"</em> infantry company, which became part of the
+      <strong>10th Texas Infantry</strong>. He was elected Captain by his own men. At the
+      <strong>Battle of Missionary Ridge</strong> (Chattanooga, November 1863), his brigade
+      commander and colonel were both wounded in the first charge, and John R. was placed in
+      command of the combined 6th, 10th, and 15th Consolidated Texas Infantry — thousands of men.
+      He handled the command with skill, including at the subsequent Battle of Ringgold Gap.
+      After the war, he became a <strong>State District Judge</strong> in Anderson, Texas.
+    </p>
+  </div>
+
+  <!-- ════════════════════════════════ JOHN H ════════════════════════════════ -->
+  <div class="section" id="john-h">
+    <h2 class="section-title">Papa &amp; Mama Kennard — Your 2nd Great-Grandparents</h2>
+
+    <p>
+      <strong>John H. Kennard</strong> (b. 1852) and <strong>Hattie Brown Kennard</strong> (b. 1856)
+      were the heart of the Grimes County Kennard family in their era. Known affectionately to
+      their grandchildren as <em>"Papa Kennard"</em> and <em>"Mama Kennard,"</em> they had six children.
+    </p>
+
+    <h3>The First National Bank of Anderson</h3>
+    <p>
+      Papa Kennard's greatest achievement was founding the <strong>First National Bank of Anderson</strong>,
+      which opened June 27, 1904. The bank employed and supported Kennard descendants for at least
+      four generations — including your great-great-grandfather James Gary Thomas Sr. as Vice President,
+      and even Richard Gary Thomas (the author) who borrowed money from it to pay for law school.
+      The bank still operates today as one of Grimes County's most prominent financial institutions.
+    </p>
+
+    <h3>Tragedy: Hiram Kennard</h3>
+    <p>
+      One of Papa and Mama Kennard's sons, <strong>Hiram</strong>, was accidentally shot and killed
+      by his own brother George Brown on December 20, 1894 — five days before Christmas — at
+      age 19. George Brown's revolver slipped from his pocket as they sat down to rest on their
+      walk home, struck a rock, and discharged. The family rarely spoke of it.
+    </p>
+  </div>
+
+  <!-- ════════════════════════════════ STELLA ════════════════════════════════ -->
+  <div class="section" id="stella">
+    <h2 class="section-title">Stella Kennard Thomas — Your Great-Grandmother</h2>
+
+    <p>
+      <strong>Stella Scott Kennard</strong> (born April 11, 1882) was a daughter of John H. and
+      Hattie Brown Kennard. She married <strong>James Gary Thomas Sr.</strong> on June 18, 1907.
+      Richard Gary Thomas (the author) called her "Grandmama" and wrote about her with more
+      warmth than almost anyone else in the entire document.
+    </p>
+
+    <p>Stella was a study in contradictions — simultaneously Victorian and fearless:</p>
+
+    <div class="person-grid">
+      <div class="person-card">
+        <div class="pc-name">The Scholar</div>
+        <p>Graduated Kidd-Key College in Sherman, TX. Was a <strong>Latin scholar</strong> who read books in Latin for pleasure. Tutored high school students in algebra and plane geometry.</p>
+      </div>
+      <div class="person-card">
+        <div class="pc-name">The Musician</div>
+        <p>An accomplished pianist with a <strong>Steinway grand</strong>. Played for her church, for family gatherings, and for herself. Neighbors two blocks away could hear her through open windows.</p>
+      </div>
+      <div class="person-card">
+        <div class="pc-name">The Victorian</div>
+        <p>Never entered a grocery store. Never drove a car. Refused to say "arm" or "leg" — only "limb." Banned alcohol and playing cards from her home. Never judged those who indulged.</p>
+      </div>
+      <div class="person-card">
+        <div class="pc-name">The Rancher</div>
+        <p>Ran a cattle operation of 1,800+ acres with her sons. In her mid-to-late 70s, she <strong>walked among 300–400 semi-wild cattle</strong> in a crowded pen, carrying a walking stick, inspecting every head. Her sons begged her to stop. She didn't.</p>
+      </div>
+    </div>
+
+    <blockquote>
+      "To say that she was most meaningful in my life is frankly a gross understatement. I loved her very much. I still do."
+      <cite>— Richard Gary Thomas, writing about Stella in 2018</cite>
+    </blockquote>
+
+    <p>
+      Stella had three sons: <strong>Kennard Thomas</strong> (b. 1908), <strong>Marion Brown Thomas</strong>
+      (b. 1913), and <strong>J.G. Thomas Sr.</strong> (b. 1924) — your great-grandfather.
+      All three were college graduates, which was notable for Grimes County in that era.
+    </p>
+  </div>
+
+  <!-- ════════════════════════════════ FULL ANCESTOR LIST ════════════════════════════════ -->
+  <div class="section" id="ancestors">
+    <h2 class="section-title">Complete Ancestor Reference — Who They Are to You</h2>
+    <p style="color:var(--muted); font-size:0.88rem; margin-bottom:1.2rem;">
+      Listed in order of generation. All relationships are through your paternal grandfather J.G. Thomas Jr.
+    </p>
+
+    <table class="ancestor-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Relation to Avery</th>
+          <th>Lived</th>
+          <th>Key Facts</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">J.G. Thomas Jr.</td>
+          <td class="rel">Grandfather</td>
+          <td class="dates">1924–2016</td>
+          <td class="note">Buried Odd Fellows Cemetery, Anderson, TX; married Charlotte Crowley 1954</td>
+        </tr>
+        <tr>
+          <td class="name">James Gary Thomas Sr.</td>
+          <td class="rel">Great-grandfather</td>
+          <td class="dates">1877–1953</td>
+          <td class="note">Self-made banker & cattleman; Vice President of First National Bank of Anderson</td>
+        </tr>
+        <tr>
+          <td class="name">Stella Scott Kennard Thomas</td>
+          <td class="rel">Great-grandmother</td>
+          <td class="dates">1882–1965</td>
+          <td class="note">Latin scholar, pianist, cattle rancher; daughter of Papa Kennard</td>
+        </tr>
+        <tr>
+          <td class="name">John H. "Papa" Kennard</td>
+          <td class="rel">2nd great-grandfather</td>
+          <td class="dates">1852–1929</td>
+          <td class="note">Founded First National Bank of Anderson, 1904</td>
+        </tr>
+        <tr>
+          <td class="name">Hattie E. Brown Kennard ("Mama Kennard")</td>
+          <td class="rel">2nd great-grandmother</td>
+          <td class="dates">1856–1948</td>
+          <td class="note">Lived to 92; daughter of Dr. George Washington Brown of Virginia/Alabama</td>
+        </tr>
+        <tr>
+          <td class="name">Kennard Thomas</td>
+          <td class="rel">Great-grand-uncle</td>
+          <td class="dates">1908–1984</td>
+          <td class="note">Stella's eldest son; VP of Anderson Bank his entire career; no children</td>
+        </tr>
+        <tr>
+          <td class="name">Marion Brown Thomas</td>
+          <td class="rel">Great-grand-uncle</td>
+          <td class="dates">1913–1963</td>
+          <td class="note">Middle son of Stella; youngest ever Grimes County Superintendent of Schools at 21; City Manager of Navasota 16 years; died at 48</td>
+        </tr>
+        <tr>
+          <td class="name">Michael Moore Kennard</td>
+          <td class="rel">3rd great-grandfather</td>
+          <td class="dates">1809–1895</td>
+          <td class="note">Original Texas colonist; Texas Revolution First Sergeant; personally knew Bowie, Crockett, Houston; oldest resident of Grimes County at death</td>
+        </tr>
+        <tr>
+          <td class="name">Mary Ann Womack Kennard</td>
+          <td class="rel">3rd great-grandmother</td>
+          <td class="dates">m.1838–d.~1874</td>
+          <td class="note">Heroically nursed yellow fever patient; co-owner of first mercantile store in Anderson</td>
+        </tr>
+        <tr>
+          <td class="name">George Brown Kennard ("Uncle Brown")</td>
+          <td class="rel">3rd great-grand-uncle</td>
+          <td class="dates">1879–1954</td>
+          <td class="note">President of First National Bank of Anderson for many years; brother of Stella</td>
+        </tr>
+        <tr>
+          <td class="name">Mary Lou Kennard</td>
+          <td class="rel">3rd great-grand-aunt</td>
+          <td class="dates">1881–1939</td>
+          <td class="note">Never married; lived next door to Stella in Anderson; died of cancer</td>
+        </tr>
+        <tr>
+          <td class="name">Lizzie Kennard Hurst</td>
+          <td class="rel">3rd great-grand-aunt</td>
+          <td class="dates">1885–?</td>
+          <td class="note">Sister of Stella; ran hardware/grocery store with husband Jack Hurst in Anderson</td>
+        </tr>
+        <tr>
+          <td class="name">Hiram Robert Kennard</td>
+          <td class="rel">3rd great-grand-uncle</td>
+          <td class="dates">1876–1894</td>
+          <td class="note">Died at 19 in a tragic accidental shooting by his brother; five days before Christmas</td>
+        </tr>
+        <tr>
+          <td class="name">Anthony Drew Kennard Sr.</td>
+          <td class="rel">4th great-grandfather</td>
+          <td class="dates">1788–1848</td>
+          <td class="note">Led family to Texas Christmas Eve 1832; Texas Revolution; co-creator of Three Notch Road; Texas state monument erected at his grave, 1936</td>
+        </tr>
+        <tr>
+          <td class="name">Sarah Moore Kennard</td>
+          <td class="rel">4th great-grandmother</td>
+          <td class="dates">1790–1877</td>
+          <td class="note">Kentucky-born; Baptist; original Texas colonist; "a devoted wife and mother, a pious Christian"</td>
+        </tr>
+        <tr>
+          <td class="name">William Everett Kennard</td>
+          <td class="rel">4th great-grand-uncle</td>
+          <td class="dates">1816–1899</td>
+          <td class="note">Battle of San Jacinto; fought Indians and Mexican army incursions for 20 years; later moved to Johnson County; name on San Jacinto Monument</td>
+        </tr>
+        <tr>
+          <td class="name">John R. Kennard</td>
+          <td class="rel">4th great-grand-uncle</td>
+          <td class="dates">?–1884</td>
+          <td class="note">Confederate Captain; commanded thousands of soldiers at Battle of Missionary Ridge; later became a State District Judge in Anderson</td>
+        </tr>
+        <tr>
+          <td class="name">Marquis de Lafayette Kennard</td>
+          <td class="rel">4th great-grand-uncle</td>
+          <td class="dates">b. 1821</td>
+          <td class="note">Son of Anthony Drew; served in Texas Revolution</td>
+        </tr>
+        <tr>
+          <td class="name">Dr. George Washington Brown</td>
+          <td class="rel">3rd great-grandfather (maternal side of Kennard line)</td>
+          <td class="dates">1826–?</td>
+          <td class="note">Virginia-born physician; Pennsylvania Medical School 1846; moved family to Grimes County 1860; father of Hattie Brown Kennard</td>
+        </tr>
+        <tr>
+          <td class="name">Michael Kennard &amp; Johanna Drew Kennard</td>
+          <td class="rel">5th great-grandparents</td>
+          <td class="dates">married 1765</td>
+          <td class="note">Maryland → North Carolina → Tennessee; parents of Anthony Drew Sr.; began the family's southwestern migration</td>
+        </tr>
+        <tr>
+          <td class="name">Richard Kennard &amp; Mary Pullen Kennard</td>
+          <td class="rel">~7th great-grandparents</td>
+          <td class="dates">married 1693</td>
+          <td class="note">Earliest documented American ancestors; owned "Danby" plantation, Kent County, Maryland</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div><!-- /container -->
+
+<footer>
+  <p>Source: <em>Kennard Family of Grimes County Texas</em> — compiled by Richard Gary Thomas, 2018 (93 pages)</p>
+  <p style="margin-top:0.4rem;">Original PDF: <code>personal/familyHistory/Kennard Family History.pdf</code></p>
+  <p style="margin-top:0.4rem;">Prepared for Avery Thomas · April 2026</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thomas &amp; Kennard Primary Documents — Avery Thomas</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --surface2: #222;
+      --border: #2e2e2e;
+      --accent: #c9a84c;
+      --accent2: #a0522d;
+      --text: #e0d8cc;
+      --muted: #888;
+      --link: #c9a84c;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', serif;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #1a1208 0%, #0f0f0f 60%);
+      border-bottom: 2px solid var(--accent);
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+    }
+
+    header .crest { font-size: 3rem; margin-bottom: 0.5rem; }
+
+    header h1 {
+      font-size: 2.2rem;
+      color: var(--accent);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+
+    header .subtitle {
+      color: var(--muted);
+      font-style: italic;
+      font-size: 1rem;
+    }
+
+    header .byline {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    /* ── Site Nav ── */
+    .site-nav {
+      background: #111;
+      border-bottom: 2px solid var(--accent);
+      padding: 0.7rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 0;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+    }
+
+    .site-nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 0.3rem 1rem;
+      border-right: 1px solid #2a2a2a;
+      transition: color 0.2s;
+    }
+
+    .site-nav a:last-child { border-right: none; }
+    .site-nav a:hover { color: var(--accent); }
+    .site-nav a.active { color: var(--accent); }
+
+    /* ── Nav ── */
+    nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0.75rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      justify-content: center;
+      position: sticky;
+      top: 44px;
+      z-index: 100;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-family: sans-serif;
+      letter-spacing: 0.5px;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: #fff; }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    /* ── Sections ── */
+    .section { margin-top: 3.5rem; }
+
+    .section-title {
+      color: var(--accent);
+      font-size: 1.5rem;
+      font-variant: small-caps;
+      letter-spacing: 1px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      color: #d4b87a;
+      font-size: 1.1rem;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    p { margin-bottom: 1rem; }
+
+    /* ── Ancestor Table ── */
+    .ancestor-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .ancestor-table th {
+      background: #1e1508;
+      color: var(--accent);
+      text-align: left;
+      padding: 0.6rem 1rem;
+      font-variant: small-caps;
+      letter-spacing: 0.5px;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    .ancestor-table td {
+      padding: 0.55rem 1rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    .ancestor-table tr:nth-child(even) td { background: var(--surface); }
+    .ancestor-table tr:hover td { background: #1e1a12; }
+
+    .ancestor-table .name  { font-weight: bold; color: #e8d9b8; }
+    .ancestor-table .rel   { color: var(--accent); font-style: italic; font-size: 0.88rem; }
+    .ancestor-table .dates { color: var(--muted); font-size: 0.85rem; }
+    .ancestor-table .note  { color: #aaa; font-size: 0.84rem; }
+    .ancestor-table .highlight-row td { background: #1e1a0f !important; border-left: 3px solid var(--accent); }
+
+    /* ── Story Cards ── */
+    .story-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent2);
+      border-radius: 4px;
+      padding: 1.2rem 1.4rem;
+      margin: 1.2rem 0;
+    }
+
+    .story-card .card-title {
+      font-weight: bold;
+      color: #e8d9b8;
+      margin-bottom: 0.4rem;
+      font-size: 1rem;
+    }
+
+    /* ── Star card — featured fact ── */
+    .feature-card {
+      background: #191408;
+      border: 2px solid var(--accent);
+      border-radius: 6px;
+      padding: 1.4rem 1.8rem;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+
+    .feature-card .feature-label {
+      font-size: 0.72rem;
+      font-family: sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-card .feature-text {
+      font-size: 1.15rem;
+      color: #f0e6cc;
+      font-style: italic;
+      line-height: 1.6;
+    }
+
+    /* ── Blockquote / Letters ── */
+    blockquote {
+      background: #131313;
+      border-left: 4px solid #444;
+      border-radius: 0 4px 4px 0;
+      padding: 1.2rem 1.6rem;
+      margin: 1.2rem 0;
+      font-size: 0.9rem;
+      color: #ccc;
+      font-style: italic;
+      line-height: 1.8;
+    }
+
+    blockquote cite {
+      display: block;
+      margin-top: 0.8rem;
+      font-style: normal;
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-family: sans-serif;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Timeline ── */
+    .timeline {
+      position: relative;
+      padding-left: 1.8rem;
+      border-left: 2px solid var(--border);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 1.8rem;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -1.93rem;
+      top: 0.5rem;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid var(--bg);
+    }
+
+    .timeline-year {
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-family: sans-serif;
+      letter-spacing: 1px;
+      margin-bottom: 0.2rem;
+    }
+
+    .timeline-title {
+      font-weight: bold;
+      color: #e8d9b8;
+      margin-bottom: 0.3rem;
+    }
+
+    .timeline-body {
+      color: var(--text);
+      font-size: 0.93rem;
+    }
+
+    /* ── Cross-reference box ── */
+    .xref-box {
+      background: #120f08;
+      border: 1px solid #3a2e15;
+      border-left: 4px solid var(--accent);
+      border-radius: 4px;
+      padding: 1rem 1.4rem;
+      margin: 1.2rem 0;
+      font-size: 0.9rem;
+    }
+
+    .xref-box .xref-label {
+      font-size: 0.72rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-family: sans-serif;
+      margin-bottom: 0.4rem;
+    }
+
+    /* ── Document badge ── */
+    .doc-badge {
+      display: inline-block;
+      background: #1e1508;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-size: 0.72rem;
+      font-family: sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    /* ── Source list ── */
+    .source-list {
+      list-style: none;
+      margin: 0;
+    }
+
+    .source-list li {
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.92rem;
+    }
+
+    .source-list li:last-child { border-bottom: none; }
+
+    .source-list .src-path {
+      display: block;
+      font-family: 'Courier New', monospace;
+      font-size: 0.82rem;
+      color: #7a9fcc;
+      margin-top: 2px;
+    }
+
+    .source-list .src-desc {
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    /* ── Warning / historical context ── */
+    .context-note {
+      background: #0f0f14;
+      border: 1px solid #2a2a40;
+      border-left: 4px solid #5b6e8c;
+      border-radius: 4px;
+      padding: 0.9rem 1.3rem;
+      margin: 1rem 0;
+      font-size: 0.88rem;
+      color: #a8b8cc;
+    }
+
+    .context-note .context-label {
+      font-size: 0.7rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      color: #7090b0;
+      margin-bottom: 0.3rem;
+    }
+
+    /* ── Divider ── */
+    hr.divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+
+    /* ── Children grid ── */
+    .children-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+      margin: 1.2rem 0;
+    }
+
+    .child-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 10px 14px;
+      font-size: 0.85rem;
+    }
+
+    .child-card .child-name {
+      font-weight: bold;
+      color: #e8d9b8;
+      margin-bottom: 2px;
+    }
+
+    .child-card .child-dates { color: var(--muted); font-size: 0.78rem; }
+    .child-card .child-note  { color: #aaa; font-size: 0.78rem; margin-top: 3px; font-style: italic; }
+    .child-card.avery-line   { border-color: var(--accent); border-width: 2px; background: #1a1608; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-family: sans-serif;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      header h1 { font-size: 1.5rem; }
+      .children-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html">Home</a>
+  <a href="full-family-tree.html">Family Tree</a>
+  <a href="thomas-kennard-documents.html" class="active">Thomas &amp; Kennard</a>
+  <a href="kennard-family-history.html">Kennard History</a>
+  <a href="discoveries-and-research.html">Discoveries</a>
+  <a href="sources.html">Primary Sources</a>
+  <a href="file-glossary.html">Site Index</a>
+</nav>
+
+<header>
+  <div class="crest">📜</div>
+  <h1>Thomas &amp; Kennard Primary Documents</h1>
+  <div class="subtitle">Letters, Land Grants &amp; Lineal Descent — Grimes County, Texas · 1788–1965</div>
+  <div class="byline">Compiled from documents provided by Michael Scott Thomas · April 2026</div>
+</header>
+
+<nav>
+  <a href="#overview">Overview</a>
+  <a href="#lineal-descent">Lineal Descent</a>
+  <a href="#thomas-in-texas">Thomas in Texas</a>
+  <a href="#thomas-children">Thomas Children</a>
+  <a href="#updated-tree">Updated Line</a>
+  <a href="#kennard-biography">Anthony Kennard</a>
+  <a href="#kennard-home">Kennard Home</a>
+  <a href="#kennard-letters">The Letters</a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<div class="container">
+
+  <!-- ═══════════════════════ OVERVIEW ═══════════════════════ -->
+  <div class="section" id="overview">
+    <h2 class="section-title">Overview — These Documents</h2>
+
+    <p>In April 2026, Michael Scott Thomas (Avery's father) provided primary source documents that significantly expand our knowledge of the Thomas and Kennard family lines. Together they add new generations, exact dates, first-person voices, and a remarkable piece of Texas history that had not been documented in any previous family file.</p>
+
+    <div class="story-card">
+      <div class="card-title"><span class="doc-badge">Doc 1</span> Anthony Drew Kennard Letters etc. (13 pages)</div>
+      <p>A compilation document containing a biographical sketch of Anthony Drew Kennard (b. 1788, Maryland), transcriptions of two private family letters from the 1860s, a Spanish-language Mexican land grant document, and photographic images of the Kennard home and family grave markers. Published via Issuu by Vanessa Kierce Burzynski; sourced from the Grimes County Historical Newsletter, February 2016. <em>Split files: Kennard_ADK_Biography_and_Letters_Newsletter.pdf · Kennard_ADK_Photographs_and_Land_Grant.pdf</em></p>
+    </div>
+
+    <div class="story-card">
+      <div class="card-title"><span class="doc-badge">Doc 2</span> Kennard Lineal Descent — Michael Scott Thomas SRT Application (16 pages)</div>
+      <p>A formal membership application to the <strong>Sons of the Republic of Texas</strong> (SRT), filed by <strong>Michael Scott Thomas</strong> (Avery's father), qualifying through lineal descent from <strong>Anthony Drew Kennard</strong>. This confirms that Avery's father is a member of the Sons of the Republic of Texas. The application includes the History of Grimes County p. 369–371 as Exhibit A (Kennard family narrative), supporting deeds and marriage certificates, Charlotte Lucille Crawley's birth certificate, and J.G. Thomas Jr.'s birth certificate. <em>Split files: Kennard_SRT_Application_Michael_Scott_Thomas.pdf · Kennard_History_of_Grimes_County_pp369-371.pdf · Kennard_SRT_Supporting_Exhibits.pdf · Thomas_Charlotte_Lucile_Crawley_Birth_Certificate.pdf · Thomas_James_Gary_Birth_Certificate_1924.pdf</em></p>
+    </div>
+
+    <div class="story-card">
+      <div class="card-title"><span class="doc-badge">Doc 3</span> Thomas Lineal Descent — Richard Gary Thomas SRT Application (6 pages)</div>
+      <p>A separate SRT membership application filed by <strong>Richard Gary Thomas</strong> of Richardson, TX, qualifying through lineal descent from <strong>James Avery Thomas</strong> (b. 1812, Marengo County, Alabama). Includes a printed excerpt from <em>History of Grimes County</em> (1982), p. 554–555. <strong>Richard Gary Thomas is also the author of the 93-page Kennard Family History document</strong> — he is J.G. Thomas Jr.'s nephew, making him Avery's first cousin twice removed. <em>Split files: Thomas_SRT_Application_Richard_Gary_Thomas.pdf · Thomas_History_of_Grimes_County_pp554-555.pdf</em></p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-label">Key Discovery</div>
+      <div class="feature-text">David Thomas — brother of James Avery Thomas and your ancestor's uncle — was a delegate to the Convention at Washington-on-the-Brazos and a <strong>signer of the Texas Declaration of Independence</strong> in 1836.</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ LINEAL DESCENT ═══════════════════════ -->
+  <div class="section" id="lineal-descent">
+    <h2 class="section-title">The Sons of the Republic of Texas — Two Applications</h2>
+
+    <p>The <strong>Sons of the Republic of Texas (SRT)</strong> is an organization open only to male direct descendants of people who were loyal residents of Texas before annexation to the United States on February 19, 1846. Membership requires documented proof of lineal descent — birth certificates, marriage records, and published historical sources.</p>
+
+    <div class="feature-card">
+      <div class="feature-label">Family Achievement</div>
+      <div class="feature-text">Both <strong>Michael Scott Thomas</strong> (Avery's father) and <strong>Richard Gary Thomas</strong> (Avery's first cousin twice removed) are members of the Sons of the Republic of Texas — each qualifying through a different ancestor of the same family line.</div>
+    </div>
+
+    <table class="ancestor-table" style="margin-bottom:2rem;">
+      <thead>
+        <tr><th>Applicant</th><th>Qualifying Ancestor</th><th>Chapter</th><th>File</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">Michael Scott Thomas <span style="color:var(--accent);font-size:0.8rem;">(Avery's father)</span></td>
+          <td><strong>Anthony Drew Kennard</strong> (b. 1788, Maryland)</td>
+          <td class="note">Sesquicentennial of Statehood / James Pinckney Henderson Class</td>
+          <td class="note">Kennard_SRT_Application_Michael_Scott_Thomas.pdf</td>
+        </tr>
+        <tr>
+          <td class="name">Richard Gary Thomas <span style="color:var(--muted);font-size:0.8rem;">(1st cousin 2x removed)</span></td>
+          <td><strong>James Avery Thomas</strong> (b. 1812, Alabama)</td>
+          <td class="note">Thomas J. Rusk Chapter No. 8, Richardson TX</td>
+          <td class="note">Thomas_SRT_Application_Richard_Gary_Thomas.pdf</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Michael Scott Thomas — Kennard Lineal Descent</h3>
+    <p>Michael Scott Thomas's application traces descent from Anthony Drew Kennard through the Kennard → Thomas line. The application is supported by the History of Grimes County pp. 369–371 (Exhibit A), deed records, a marriage certificate for John H. Kennard and Hattie Brown (Nov 15, 1875), Charlotte Lucille Crawley's birth certificate, and J.G. Thomas Jr.'s birth certificate.</p>
+
+    <table class="ancestor-table">
+      <thead>
+        <tr><th>Generation</th><th>Person</th><th>Born</th><th>Place</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="rel">Applicant</td><td class="name">Michael Scott Thomas</td><td class="dates">b. 1960</td><td>Texas</td></tr>
+        <tr><td class="rel">Father</td><td class="name">J.G. Thomas Jr.</td><td class="dates">28 Nov 1924</td><td>Anderson, Grimes Co., TX</td></tr>
+        <tr><td class="rel">Grandfather</td><td class="name">James Gary Thomas</td><td class="dates">2/6/1877</td><td>nr. Shiro, Grimes Co., TX</td></tr>
+        <tr><td class="rel">Grandmother</td><td class="name">Stella Scott Kennard</td><td class="dates">4/11/1882</td><td>nr. Anderson, Grimes Co., TX</td></tr>
+        <tr><td class="rel">Great-grandfather</td><td class="name">John H. Kennard</td><td class="dates">23 Jun 1852</td><td>Grimes Co., TX</td></tr>
+        <tr><td class="rel">Great-great-grandfather</td><td class="name">Michael Moore Kennard</td><td class="dates">27 Jul 1809</td><td>Maryland/Tennessee → Texas</td></tr>
+        <tr class="highlight-row"><td class="rel">Qualifying ancestor</td><td class="name">Anthony Drew Kennard</td><td class="dates">9 Jul 1788</td><td>Maryland → Grimes Co., TX · arrived 1832</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Richard Gary Thomas — Thomas Lineal Descent</h3>
+    <p>Richard Gary Thomas's application traces descent from James Avery Thomas, one of the earliest American settlers of Texas (arrived 1835, Austin's colony).</p>
+
+    <p>The SRT is an organization open only to male direct descendants of people who were loyal residents of Texas before its annexation to the United States on February 19, 1846. Membership requires documented proof of lineal descent. Richard Gary Thomas's application establishes the Thomas line with precision from official birth certificates and the published Grimes County history.</p>
+
+    <div class="xref-box">
+      <div class="xref-label">About the Applicant</div>
+      Richard Gary Thomas — Thomas J. Rusk Chapter No. 8, Richardson, TX — is the same Richard Gary Thomas who authored the 93-page Kennard Family History document. He is J.G. Thomas Jr.'s nephew (son of J.G. Jr.'s brother Marion Brown Thomas), making him Avery's first cousin twice removed. His wife: Mary Gail Hall Thomas (b. 1/13/1943; m. 11/22/1975). His son: Gary Walter Thomas (b. 1/4/1978).
+    </div>
+
+    <table class="ancestor-table">
+      <thead>
+        <tr>
+          <th>Generation</th>
+          <th>Person</th>
+          <th>Born</th>
+          <th>Died</th>
+          <th>Place</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rel">Applicant (Gen. 1)</td>
+          <td class="name">Richard Gary Thomas</td>
+          <td class="dates">~1948</td>
+          <td class="dates">—</td>
+          <td>Richardson, TX</td>
+        </tr>
+        <tr>
+          <td class="rel">Father (Gen. 2)</td>
+          <td class="name">Marion Brown Thomas</td>
+          <td class="dates">2/24/1913</td>
+          <td class="dates">2/7/1963</td>
+          <td>Anderson, Grimes Co., TX → Navasota, TX</td>
+        </tr>
+        <tr>
+          <td class="rel">Grandfather (Gen. 3)</td>
+          <td class="name">James Gary Thomas</td>
+          <td class="dates">2/6/1877</td>
+          <td class="dates">3/10/1953</td>
+          <td>nr. Shiro, Grimes Co., TX → Anderson, TX</td>
+        </tr>
+        <tr>
+          <td class="rel">Grandmother (Gen. 3)</td>
+          <td class="name">Stella Scott Kennard</td>
+          <td class="dates">4/11/1882</td>
+          <td class="dates">2/19/1965</td>
+          <td>nr. Anderson, Grimes Co., TX</td>
+        </tr>
+        <tr>
+          <td class="rel">Great-grandfather (Gen. 4)</td>
+          <td class="name">Francis Marion Thomas</td>
+          <td class="dates">9 Aug 1852 · Bedias, Grimes TX</td>
+          <td class="dates">20 Jan 1922 · Shiro, Grimes TX</td>
+          <td>Grimes County, TX</td>
+        </tr>
+        <tr>
+          <td class="rel">Great-grandmother (Gen. 4)</td>
+          <td class="name">Susan Barbara Mullins</td>
+          <td class="dates">19 Feb 1857 · Tennessee</td>
+          <td class="dates">27 Dec 1928 · Grimes TX</td>
+          <td>Tennessee → Grimes County, TX</td>
+        </tr>
+        <tr class="highlight-row">
+          <td class="rel">2nd great-grandfather (Gen. 5)</td>
+          <td class="name">James Avery Thomas</td>
+          <td class="dates">1812</td>
+          <td class="dates">1865</td>
+          <td>Marengo County, Alabama → Grimes Co., TX</td>
+        </tr>
+        <tr class="highlight-row">
+          <td class="rel">2nd great-grandmother (Gen. 5)</td>
+          <td class="name">Amanda K. Wheeler</td>
+          <td class="dates">unknown</td>
+          <td class="dates">9/5/1896</td>
+          <td>Grimes County, TX · m. 4/28/1842</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p style="font-size:0.88rem;color:var(--muted);">Source: Thomas Lineal Descent.pdf, pages 1–3 (Sons of the Republic of Texas membership application)</p>
+  </div>
+
+  <!-- ═══════════════════════ THOMAS IN TEXAS ═══════════════════════ -->
+  <div class="section" id="thomas-in-texas">
+    <h2 class="section-title">The Thomas Arrival in Texas — 1835</h2>
+
+    <p>The following narrative is drawn directly from <em>History of Grimes County</em> (1982), pages 554–555, cited as Exhibit A in the SRT application. It is the most detailed primary-source account of your Thomas ancestors' arrival in Texas.</p>
+
+    <div class="feature-card">
+      <div class="feature-label">Signer of the Texas Declaration of Independence</div>
+      <div class="feature-text">David Thomas was a delegate to the Convention at Washington-on-the-Brazos and a <strong>signer of the Texas Declaration of Independence</strong>, signed March 2, 1836. Family tradition holds that he was a brother of your ancestor James Avery Thomas. Multiple Thomas family historians have claimed this connection, but it has not been definitively proven — see the note below for details.</div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">1812</div>
+        <div class="timeline-title">James Avery Thomas born, Marengo County, Alabama</div>
+        <div class="timeline-body">James Avery Thomas is born in Marengo County, Alabama, one of several children of a Thomas family in the Deep South. His siblings will accompany him to Texas more than two decades later.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">1835</div>
+        <div class="timeline-title">The Thomas Family Arrives in Texas</div>
+        <div class="timeline-body">James Avery Thomas left Marengo County, Alabama <em>with his brothers and sisters</em>, leaving their parents (Phebe and John) behind in Alabama. They arrived in Texas in 1835, settling west of Conroe in <strong>Stephen F. Austin's colony</strong> — among the earliest wave of American colonists in Texas. Friends from Alabama had arrived even earlier. Some of the brothers served in Sam Houston's Army during the Texas Revolution.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">1836</div>
+        <div class="timeline-title">David Thomas Signs the Texas Declaration of Independence</div>
+        <div class="timeline-body">David Thomas was a delegate to the Convention at Washington-on-the-Brazos, held March 1–17, 1836. On March 2, 1836, the delegates signed the Texas Declaration of Independence. Family tradition claims he was James Avery's brother. <strong>However, the evidence is ambiguous:</strong> the historical David Thomas is recorded as born in Tennessee (~1800) and arrived in Texas at age ~35 in 1835 — while James Avery's brother David (son of John Thomas and Phoebe Springer) was born in 1816 and was only 14 at Texas arrival. These are likely two different people. At least four Thomas family historians have asserted the connection, but it remains unproven. James Avery, meanwhile, <strong>made shoes for the soldiers</strong> of the Texas Revolution.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">~1836–1842</div>
+        <div class="timeline-title">Land Grant at Mustang Prairie</div>
+        <div class="timeline-body">James Avery Thomas received a grant of land in present <strong>Grimes County at Mustang Prairie</strong>, in the eastern part of the county. The Thomas family settled there and began farming.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">4/28/1842</div>
+        <div class="timeline-title">Marries Amanda K. Wheeler</div>
+        <div class="timeline-body">James Avery Thomas married Amanda K. Wheeler on April 28, 1842 in Grimes County. Together they would have eight children.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">1846–1862</div>
+        <div class="timeline-title">Eight Children Born</div>
+        <div class="timeline-body">James Avery and Amanda had eight children, all born in Grimes County, Texas: John Henry (1846), Kathyron (1850), Francis Marion (1852), David (1855), Mack (1857), Arch (1860), Sam (1862), and Phoebie (no date). All settled around this part of the county, buying land and farming.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">1865</div>
+        <div class="timeline-title">James Avery Thomas dies, Grimes County</div>
+        <div class="timeline-body">James Avery Thomas died in 1865 in Grimes County, Texas, at age 53. Amanda K. Wheeler survived him; she died September 5, 1896.</div>
+      </div>
+    </div>
+
+    <blockquote>
+      "I am a descendant of James Avery Thomas (1812–1865). He left Marengo County, Alabama with his brothers and sisters to come to Texas, leaving their mother and father, Phebe and John, in Alabama. They arrived in 1835, west of Conroe, in Stephen F. Austin's colony. Friends from Alabama had arrived earlier. Some of the boys served in Sam Houston's Army. David was a delegate to the convention at Washington-on-the-Brazos, and a signer of the Declaration of Independence. James Avery made shoes for the soldiers. He was given a grant of land in present Grimes County at Mustang Prairie in eastern part of the county. He married Amanda Wheeler in 1842."
+      <cite>— Obie R. Thomas, in <em>History of Grimes County</em> (1982), p. 555 · Exhibit A, Thomas Lineal Descent.pdf</cite>
+    </blockquote>
+  </div>
+
+  <!-- ═══════════════════════ THOMAS CHILDREN ═══════════════════════ -->
+  <div class="section" id="thomas-children">
+    <h2 class="section-title">James Avery Thomas — Eight Children</h2>
+
+    <p>All eight children of James Avery Thomas and Amanda K. Wheeler were born in Grimes County, Texas, and all settled in the surrounding area. The card outlined in gold marks <strong>Francis Marion Thomas</strong> — Avery's direct ancestor through this line.</p>
+
+    <div class="children-grid">
+      <div class="child-card">
+        <div class="child-name">John Henry Thomas</div>
+        <div class="child-dates">1846–1928</div>
+        <div class="child-note">Grimes County</div>
+      </div>
+      <div class="child-card">
+        <div class="child-name">Kathyron Thomas</div>
+        <div class="child-dates">1850–1938</div>
+        <div class="child-note">Grimes County</div>
+      </div>
+      <div class="child-card avery-line">
+        <div class="child-name">Francis Marion Thomas</div>
+        <div class="child-dates">1852–1922</div>
+        <div class="child-note">Avery's line · m. Susan Mullins · 11 children including James Gary Thomas</div>
+      </div>
+      <div class="child-card">
+        <div class="child-name">David Thomas</div>
+        <div class="child-dates">1855–1942</div>
+        <div class="child-note">Grimes County</div>
+      </div>
+      <div class="child-card">
+        <div class="child-name">Mack Thomas</div>
+        <div class="child-dates">1857–1937</div>
+        <div class="child-note">Grimes County</div>
+      </div>
+      <div class="child-card">
+        <div class="child-name">Arch Thomas</div>
+        <div class="child-dates">1860–1945</div>
+        <div class="child-note">Grimes County</div>
+      </div>
+      <div class="child-card">
+        <div class="child-name">Sam Thomas</div>
+        <div class="child-dates">1862–1888</div>
+        <div class="child-note">Grimes County</div>
+      </div>
+      <div class="child-card">
+        <div class="child-name">Phoebie Thomas</div>
+        <div class="child-dates">no dates recorded</div>
+        <div class="child-note">Grimes County</div>
+      </div>
+    </div>
+
+    <h3>Francis Marion Thomas's Children</h3>
+    <p>Francis Marion Thomas (Avery's 3rd-great-grandfather) married Susan Mullins and had eleven children, according to the Grimes County history: <strong>James Gary</strong> (Avery's direct ancestor), Obie Robert, Huey Edward, Walter, Mammie, Rebecca, Alice, Sallie, Simpson, Susie Cornelia, and Myrtle.</p>
+  </div>
+
+  <!-- ═══════════════════════ UPDATED TREE ═══════════════════════ -->
+  <div class="section" id="updated-tree">
+    <h2 class="section-title">Updated Thomas Line — Avery to ~1784</h2>
+
+    <p>This table incorporates new dates from the SRT application, the previously missing generation of <strong>Marion Brown Thomas</strong> (b. 2/24/1913), and the newly confirmed generation of <strong>John Thomas &amp; Phoebe Springer</strong> — James Avery Thomas's parents — established via the GEDCOM notes and Austin's Colony register. This extends the documented line one generation further back.</p>
+
+    <div class="xref-box">
+      <div class="xref-label">New Information from These Documents</div>
+      The SRT application confirms that <strong>Marion Brown Thomas</strong> (b. 2/24/1913, Anderson TX; d. 2/7/1963, Navasota TX) is a son of James Gary Thomas and Stella Kennard. Marion is the father of Richard Gary Thomas (the SRT applicant). J.G. Thomas Jr. (b. 11/28/1924) — Avery's great-grandfather — was Marion's younger brother. Both were sons of James Gary Thomas and Stella Kennard.
+    </div>
+
+    <table class="ancestor-table">
+      <thead>
+        <tr>
+          <th>Generation from Avery</th>
+          <th>Person</th>
+          <th>Born</th>
+          <th>Died</th>
+          <th>Place / Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-row">
+          <td class="rel">You</td>
+          <td class="name">Avery Thomas</td>
+          <td class="dates">b. 1998</td>
+          <td class="dates">—</td>
+          <td>Texas</td>
+        </tr>
+        <tr>
+          <td class="rel">Father</td>
+          <td class="name">Michael Scott Thomas</td>
+          <td class="dates">b. 1960</td>
+          <td class="dates">—</td>
+          <td>Texas</td>
+        </tr>
+        <tr>
+          <td class="rel">Great-grandfather</td>
+          <td class="name">J.G. Thomas Jr.</td>
+          <td class="dates">28 Nov 1924</td>
+          <td class="dates">8 Dec 2016</td>
+          <td>Texas · brother of Marion Brown Thomas</td>
+        </tr>
+        <tr>
+          <td class="rel">Great-grandmother</td>
+          <td class="name">Charlotte Lucille Crawley (m. Thomas)</td>
+          <td class="dates">b. 1931</td>
+          <td class="dates">Living</td>
+          <td>m. J.G. Thomas Jr. 10 Apr 1954 at Hill Cumberland Church</td>
+        </tr>
+        <tr>
+          <td class="rel">2nd great-grandparents</td>
+          <td class="name">James Gary Thomas &amp; Stella Scott Kennard</td>
+          <td class="dates">6 Feb 1877 &amp; 11 Apr 1882</td>
+          <td class="dates">10 Mar 1953 · Anderson TX &amp; 19 Feb 1965 · Navasota TX</td>
+          <td>Grimes Co., TX · confirmed in GEDCOM + SRT application</td>
+        </tr>
+        <tr>
+          <td class="rel">3rd great-grandparents</td>
+          <td class="name">Francis Marion Thomas &amp; Susan Barbara Mullins</td>
+          <td class="dates">9 Aug 1852 · Bedias TX &amp; 19 Feb 1857 · TN</td>
+          <td class="dates">20 Jan 1922 · Shiro TX &amp; 27 Dec 1928 · Grimes TX</td>
+          <td>Grimes County, TX</td>
+        </tr>
+        <tr>
+          <td class="rel">4th great-grandparents</td>
+          <td class="name">James Avery Thomas &amp; Amanda K. Wheeler</td>
+          <td class="dates">1812 · m. 4/28/1842</td>
+          <td class="dates">28 Apr 1865 &amp; 5 Sep 1896</td>
+          <td>Marengo Co., Alabama → Grimes Co., TX · arrived Texas ~1832–1835</td>
+        </tr>
+        <tr>
+          <td class="rel">5th great-grandparents</td>
+          <td class="name">John C. Thomas Sr. &amp; Phebe Gayland Springer</td>
+          <td class="dates">18 Mar 1784 · Edgefield, SC · m. 26 Jul 1801, Upson Co., GA</td>
+          <td class="dates">after 1850</td>
+          <td>Edgefield, SC → Warren/Upson Co., GA → Marlboro Co., SC → Marengo Co., AL → Montgomery/Grimes Co., TX · Austin's Colony register 1835 · confirmed in updated GEDCOM (Apr 17, 2026)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="xref-box" style="margin-top:1.5rem;">
+      <div class="xref-label">Confirmed: John C. Thomas Sr. &amp; Phebe Gayland Springer</div>
+      <strong>John C. Thomas Sr.</strong> (b. 18 Mar 1784, Edgefield, South Carolina) and wife <strong>Phebe Gayland Springer</strong> are confirmed as James Avery Thomas's parents in the updated GEDCOM (Apr 17, 2026, 112 people). Sources include: 1810 census Marlboro Co. SC; 1830 census Marlboro Co. SC; Georgia County Marriage Records (married 26 Jul 1801, Upson Co., GA); Texas GLO land abstracts; and Stephen F. Austin's colony register (1835): <em>"John Thomas 50 years of age Moved from Alabama Phoebe his wife 50 years of age 6 male 2 female children."</em> The Edgefield Advertiser (Aug 19, 1841) is sourced in the GEDCOM to John C. Thomas Sr. Their children include: Sentha (1802), Nancy (1803), Betsy (1805), Polly (1807), Lucy/Lucinda (1810), <strong>James [Avery]</strong> (1812), John Nelson (1815), David (1816), Selvania (1819), Annie (1821), Samuel A.J. (1823), William (1825), Simeon (1827). The family settled in Montgomery County, Texas — later part of Grimes County — after 1830.<br><br>
+      <strong>David Thomas (signer) — is he James Avery's brother?</strong> Family tradition says yes, and at least four Thomas family historians have claimed it. However, the historical David Thomas (signer of the Declaration) is recorded as born in Tennessee around 1800 and arriving in Texas in 1835 at approximately age 35 — whereas John Thomas's son David was born in 1816 and was only 14 at Texas arrival. These birth years are irreconcilable — they are most likely <em>two different people</em> who happened to share a name and move to the same region. The question remains an open research issue; the David Thomas Papers at UT Austin (Dolph Briscoe Center) would be the best resource to resolve it definitively.
+    </div>
+
+    <p style="font-size:0.88rem;color:var(--muted);margin-top:1rem;">Sources: GEDCOM "Thomas Family Notes" (Ancestry story attached to James Avery Thomas); <strong>Austin's Colony Register, 1835</strong> — original page image now in <code>documents/AustinsColonyRegister_JohnThomas_1835.jpg</code>, confirming "John Thomas 50 years of age Moved from Alabama / Phoebe his wife 50 years of age / 6 Male 2 female children"; 1820 Wilcox Co. AL census; 1830 Marengo Co. AL census.</p>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- ═══════════════════════ KENNARD BIOGRAPHY ═══════════════════════ -->
+  <div class="section" id="kennard-biography">
+    <h2 class="section-title">Anthony Drew Kennard — Biography</h2>
+
+    <p>The following is drawn from the biographical sketch in the <em>Grimes County Historical Newsletter</em> (February 2016), compiled from family records and published by Vanessa Kierce Burzynski.</p>
+
+    <table class="ancestor-table">
+      <thead>
+        <tr>
+          <th>Fact</th>
+          <th>Detail</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rel">Born</td>
+          <td>9 July 1788, Maryland</td>
+        </tr>
+        <tr>
+          <td class="rel">Married</td>
+          <td class="name">Sarah Moore</td>
+        </tr>
+        <tr>
+          <td class="rel">Settled</td>
+          <td>"Ross' Prairie" (also called "Kennard's Prairie"), Grimes County, Texas</td>
+        </tr>
+        <tr>
+          <td class="rel">Land grant</td>
+          <td>Received a league of land from the Mexican Government — documented in a Spanish-language land grant (original document in the PDF)</td>
+        </tr>
+        <tr>
+          <td class="rel">Military service</td>
+          <td>Joined General Burleson's military expedition to meet and arrange a treaty with the Tehuacana Indians</td>
+        </tr>
+        <tr>
+          <td class="rel">Texas Revolution</td>
+          <td>Fought through the Texas Revolution until Texas independence was won</td>
+        </tr>
+        <tr>
+          <td class="rel">Died</td>
+          <td>1848 — Sarah Moore became a widow; a single marker identifies their graves</td>
+        </tr>
+        <tr>
+          <td class="rel">Children</td>
+          <td>John H. Kennard (m. Hattie Brown), Ligie (m. Jack Hirst), Mary Lou, Michael Moore Kennard</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">1788</div>
+        <div class="timeline-title">Born in Maryland</div>
+        <div class="timeline-body">Anthony Drew Kennard born July 9, 1788 in Maryland. He would be among the first Anglo-American settlers in what would become Grimes County, Texas.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">~1820s–1830s</div>
+        <div class="timeline-title">Texas Colonization — Mexican Land Grant</div>
+        <div class="timeline-body">Kennard received a league of land from the Mexican Government as part of the colonization of Texas under empresario Stephen F. Austin. A league was approximately 4,428 acres — an enormous grant. The original Spanish-language land grant document is preserved in the PDF collection. He settled his land in what became known as "Ross' Prairie" or "Kennard's Prairie," the area around present-day Anderson, Texas.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">~1834–1835</div>
+        <div class="timeline-title">Burleson Expedition — Tehuacana Indians</div>
+        <div class="timeline-body">Kennard joined General Edward Burleson's military expedition in an attempt to council and arrange a treaty with the Tehuacana Indians. The Tehuacanas were a Wichita-related group whose territory overlapped with the new Anglo settlements. Burleson's expedition was part of the broader effort to secure the frontier before the Texas Revolution.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">1835–1836</div>
+        <div class="timeline-title">Texas Revolution</div>
+        <div class="timeline-body">When conflict between Texas and Mexico broke out, Kennard fought through the war until Texas won its independence. The document notes he "took little interest in local [politics]" before the war but "fought well through the war."</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">1848</div>
+        <div class="timeline-title">Death — Sarah Moore widowed</div>
+        <div class="timeline-body">Anthony Drew Kennard died in 1848, having lived to see the Republic of Texas become a U.S. state (1846). His wife Sarah Moore survived him. A single grave marker identifies both their graves. Sarah Moore died in 1877 at approximately 87 years of age.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ KENNARD HOME ═══════════════════════ -->
+  <div class="section" id="kennard-home">
+    <h2 class="section-title">The Kennard Family Home</h2>
+
+    <p>The biographical sketch in the newsletter includes a description of the Kennard family home, built in 1892 — well after Anthony Drew Kennard's death, likely by his son John H. "Papa" Kennard or the next generation.</p>
+
+    <div class="story-card">
+      <div class="card-title">Description of the Kennard Home</div>
+      <p>A <strong>wooden frame, two-story house</strong> with a three-bay front, gable roof, shed-roofed porch at front, and lean-to rooms at rear with one gable end. The chimney was stone. Built in <strong>1892</strong>, located <strong>2 miles north of Anderson</strong>, Texas (Grimes County). The document includes photographs of the home, which are preserved as image pages in the PDF (pages 5–13) but could not be fully extracted by OCR.</p>
+    </div>
+
+    <div class="context-note">
+      <div class="context-label">About the Photographic Pages</div>
+      Pages 5–13 of "Anthony Drew Kennard Letters etc..pdf" contain photographs and handwritten/archival documents — including images of the Kennard home, grave markers, and the original Spanish-language Mexican land grant — that do not yield to OCR text extraction. To view these, open the PDF directly: <code style="color:#7a9fcc;font-size:0.85rem;">personal/familyHistory/Anthony Drew Kennard Letters etc..pdf</code>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ KENNARD LETTERS ═══════════════════════ -->
+  <div class="section" id="kennard-letters">
+    <h2 class="section-title">The Kennard Family Letters — 1860s</h2>
+
+    <p>Two private family letters were preserved in the document collection. Both date from the early 1860s, immediately before and during the Civil War. They give a rare first-person window into daily life, family economics, and political sentiment in Grimes County, Texas during this era.</p>
+
+    <div class="context-note">
+      <div class="context-label">Historical Context</div>
+      These letters mention enslaved people by name and document the division of enslaved individuals as property among family members — practices that were central to the plantation economy of the antebellum South. These passages are preserved here as primary historical record. The letters also contain explicit pro-secession sentiment, reflecting the dominant political view in East Texas at the time.
+    </div>
+
+    <h3>Letter 1 — ~1860 · Sibling to A.D. Kennard Jr.</h3>
+
+    <p>Written by a Kennard sibling (likely Michael Moore Kennard, based on the signature "M. M. Kennard") to A.D. Kennard Jr., probably around 1860. The letter covers family business, the distribution of enslaved people following their mother's move, local hardships, and a strong declaration of secession sentiment.</p>
+
+    <blockquote>
+      "Mother has sold her place to Mr. [Fanthorp] for two hundred and forty dollars, and has divided out a part of her negroes among the children. Rose and her family were appraised at $3,000 and went to Mr. William Fanthorp; Henrietta and Fox were appraised at $2,000 and came to me. Tor was appraised to John at $1,700. Austin was appraised at $1,500 and set apart for [another child]. She intends to sell her horses and cattle as soon as she can get good prices and wishes [you] would like for you both to be here also."
+      <cite>— M. M. Kennard, letter to A.D. Kennard Jr., ~1860 · Anthony Drew Kennard Letters etc..pdf, p. 2</cite>
+    </blockquote>
+
+    <blockquote>
+      "There is considerable political excitement here but I am happy to say that not with tending hard times that we are nearly all about the right way of thinking politically — when I say right I mean that we are in favor of secession and nothing shorter will satisfy us. Here's for the old 'Lone-Star Republic' once more and forever — have lost all confidence in the union and hope and trust it will be dissolved soon, very soon — sooner the better — and my life with it than submit to a 'Black Republican President.'"
+      <cite>— M. M. Kennard, ~1860 · Anthony Drew Kennard Letters etc..pdf, p. 2</cite>
+    </blockquote>
+
+    <h3>Letter 2 — January 4, 1864 · Michael Kennard to A.D. Kennard Jr.</h3>
+
+    <p>Written during the Civil War by Michael Kennard to his brother A.D. Kennard Jr. Michael's wife and family have been visiting Houston. He describes the hardships of farming and legal work during wartime, the failure of the previous year's crops, and the general state of the community.</p>
+
+    <blockquote>
+      "My dear brother, a long time has lapsed since there has been any written correspondence between us and I must confess that at last an equal share of the fault is mine — but it is not worthwhile to fill up half a letter with apologies and excuses, suffice it to say that I know that it has not been for the want of brotherly feeling on my part."
+      <cite>— Michael Kennard, letter to A.D. Kennard Jr., 4 January 1864 · Anthony Drew Kennard Letters etc..pdf, p. 3</cite>
+    </blockquote>
+
+    <blockquote>
+      "My family are now in Houston on a visit to my wife's parents and have been there about two or three weeks — almost three weeks. I have been at home almost alone during that absence. Then you think it is no wonder that I am not very lively tonight... Yours: Well another year has passed away and turned its year of events into the history of the world and whether better or worse one thing is certain we are older — and though there may be much to regret in the undivided history of each yet there is much to be thankful for, for what has been bad might have been worse and with a merciful providence continues to extend to us the great boon of life we may repent, we may improve, and we should be grateful for the opportunity to repent and to improve and use it accordingly — but enough of this moralizing."
+      <cite>— Michael Kennard, 4 January 1864 · Anthony Drew Kennard Letters etc..pdf, p. 3</cite>
+    </blockquote>
+
+    <blockquote>
+      "Very poor crops were made in this part of the country last year. Mine was almost an entire failure, which you know was calculated to discourage a new beginner in the farming business. But I shall not despair yet, I shall try again and harder this year. I have done pretty much all the law business but it has taken really all I could make to support my family owing to a failure in seed crop. And there is no chance now to collect what is owing to me and therefore I am like almost everybody else in these parts — not able to pretend to meet my debts, so everybody or nearly every body is pressed with the reality of hard times."
+      <cite>— Michael Kennard, 4 January 1864 · Anthony Drew Kennard Letters etc..pdf, p. 3</cite>
+    </blockquote>
+
+    <div class="xref-box">
+      <div class="xref-label">Connecting the Letters to Your Family</div>
+      "Michael Kennard" (the letter writer) is <strong>Michael Moore Kennard</strong> (b. 27 July 1809, d. 7 July 1895) — son of Anthony Drew Kennard and Sarah Moore, and your <strong>3rd-great-grand-uncle</strong>. His brother A.D. Kennard Jr. is also a son of Anthony Drew Kennard. The family member who connects to Avery's direct line is John H. "Papa" Kennard (b. 1852) — Michael's nephew — who married Hattie Brown and whose daughter Stella Kennard married James Gary Thomas.
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ SOURCES ═══════════════════════ -->
+  <div class="section" id="sources">
+    <h2 class="section-title">Sources &amp; File Reference</h2>
+
+    <p>All sources used in this document, with file paths for direct access:</p>
+
+    <ul class="source-list">
+      <li>
+        <strong><span class="doc-badge">PDF</span> Kennard_ADK_Biography_and_Letters_Newsletter.pdf</strong>
+        <span class="src-path">personal/familyHistory/documents/Kennard_ADK_Biography_and_Letters_Newsletter.pdf</span>
+        <span class="src-desc">Pages 1–3 of original scan. Bio sketch of Anthony Drew Kennard + two family letters (1860, 1864). From Grimes County Historical Newsletter, Feb 2016, compiled by Vanessa Kierce Burzynski.</span>
+      </li>
+      <li>
+        <strong><span class="doc-badge">PDF</span> Kennard_ADK_Photographs_and_Land_Grant.pdf</strong>
+        <span class="src-path">personal/familyHistory/documents/Kennard_ADK_Photographs_and_Land_Grant.pdf</span>
+        <span class="src-desc">Pages 4–13 of original scan. Photos of Kennard home, grave markers, and original Spanish-language Mexican land grant document.</span>
+      </li>
+      <li>
+        <strong><span class="doc-badge">PDF</span> Kennard_SRT_Application_Michael_Scott_Thomas.pdf</strong>
+        <span class="src-path">personal/familyHistory/documents/Kennard_SRT_Application_Michael_Scott_Thomas.pdf</span>
+        <span class="src-desc">Michael Scott Thomas's (Avery's father) Sons of the Republic of Texas membership application, qualifying through Anthony Drew Kennard.</span>
+      </li>
+      <li>
+        <strong><span class="doc-badge">PDF</span> Kennard_History_of_Grimes_County_pp369-371.pdf</strong>
+        <span class="src-path">personal/familyHistory/documents/Kennard_History_of_Grimes_County_pp369-371.pdf</span>
+        <span class="src-desc">Exhibit A from Michael Scott Thomas's SRT application. History of Grimes County (1982) pp. 369–371 — Kennard family narrative.</span>
+      </li>
+      <li>
+        <strong><span class="doc-badge">PDF</span> Kennard_SRT_Supporting_Exhibits.pdf</strong>
+        <span class="src-path">personal/familyHistory/documents/Kennard_SRT_Supporting_Exhibits.pdf</span>
+        <span class="src-desc">Supporting exhibits from Michael Scott Thomas's SRT application: deeds, marriage certificates (John H. Kennard + Hattie Brown, Nov 15 1875), and other documentation.</span>
+      </li>
+      <li>
+        <strong><span class="doc-badge">PDF</span> Thomas_Charlotte_Lucile_Crawley_Birth_Certificate.pdf</strong>
+        <span class="src-path">personal/familyHistory/documents/Thomas_Charlotte_Lucile_Crawley_Birth_Certificate.pdf</span>
+        <span class="src-desc">Birth certificate for Charlotte Lucille Crawley (b. 1931) — Avery's paternal grandmother, wife of J.G. Thomas Jr.</span>
+      </li>
+      <li>
+        <strong><span class="doc-badge">PDF</span> Thomas_James_Gary_Birth_Certificate_1924.pdf</strong>
+        <span class="src-path">personal/familyHistory/documents/Thomas_James_Gary_Birth_Certificate_1924.pdf</span>
+        <span class="src-desc">Grimes County birth certificate for James Gary Thomas (b. Nov 28, 1924) — Avery's great-grandfather, J.G. Thomas Jr. Father listed as Gary Thomas, mother as Stella Kennard.</span>
+      </li>
+      <li>
+        <strong><span class="doc-badge">PDF</span> Thomas_SRT_Application_Richard_Gary_Thomas.pdf</strong>
+        <span class="src-path">personal/familyHistory/documents/Thomas_SRT_Application_Richard_Gary_Thomas.pdf</span>
+        <span class="src-desc">Richard Gary Thomas's SRT application, qualifying through James Avery Thomas (b. 1812, Alabama). Richard Gary Thomas is also the author of the 93-page Kennard Family History.</span>
+      </li>
+      <li>
+        <strong><span class="doc-badge">PDF</span> Thomas_History_of_Grimes_County_pp554-555.pdf</strong>
+        <span class="src-path">personal/familyHistory/documents/Thomas_History_of_Grimes_County_pp554-555.pdf</span>
+        <span class="src-desc">Exhibit A from Richard Gary Thomas's SRT application. History of Grimes County (1982) pp. 554–555 — Thomas family narrative including the arrival in Texas in 1835 and David Thomas signing the Declaration of Independence.</span>
+      </li>
+      <li>
+        <strong><span class="doc-badge">PDF</span> Kennard Family History (93 pages)</strong>
+        <span class="src-path">personal/familyHistory/documents/Kennard Family History.pdf</span>
+        <span class="src-desc">Full 93-page Kennard Family History document authored by Richard Gary Thomas. Primary source for the kennard-family-history.html summary.</span>
+      </li>
+      <li>
+        <strong><span class="doc-badge">DOCX</span> 1861 MM Kennard Letter Transcription</strong>
+        <span class="src-path">personal/familyHistory/documents/1861 MM Kenard Ltr to AD Kennard.docx</span>
+        <span class="src-desc">Richard Gary Thomas's typed transcription of the Michael Moore Kennard letter (Jan 4, 1861) to A.D. Kennard Jr., with editorial notes. More readable than the scanned version.</span>
+      </li>
+      <li>
+        <strong><span class="doc-badge">OCR</span> Kennard Letters OCR Text</strong>
+        <span class="src-path">personal/familyHistory/ocr/kennard_letters_ocr.txt</span>
+        <span class="src-desc">OCR-extracted text from the Kennard Letters PDF. Pages 1–3 readable; pages 4–13 photographic. Generated April 2026 using Tesseract OCR 5.4.0.</span>
+      </li>
+      <li>
+        <strong><span class="doc-badge">OCR</span> Thomas Lineal Descent OCR Text</strong>
+        <span class="src-path">personal/familyHistory/ocr/thomas_lineal_descent_ocr.txt</span>
+        <span class="src-desc">OCR-extracted text from the Thomas Lineal Descent PDF. All 6 pages readable. Generated April 2026 using Tesseract OCR 5.4.0.</span>
+      </li>
+      <li>
+        <strong><span class="doc-badge">OCR</span> Kennard Family History OCR (93 pages)</strong>
+        <span class="src-path">personal/familyHistory/ocr/kennard_ocr.txt</span>
+        <span class="src-desc">Full OCR text of the 93-page Kennard Family History. 210,179 characters. Extracted April 2026.</span>
+      </li>
+      <li>
+        <strong><span class="doc-badge">HTML</span> Kennard Family History Summary</strong>
+        <span class="src-path"><a href="kennard-family-history.html" style="color:var(--link);">personal/familyHistory/kennard-family-history.html</a></span>
+        <span class="src-desc">HTML summary of the 93-page Kennard history, personalized for Avery. Created April 2026.</span>
+      </li>
+      <li>
+        <strong><span class="doc-badge">HTML</span> Full Family Tree (Paternal + Maternal)</strong>
+        <span class="src-path"><a href="full-family-tree.html" style="color:var(--link);">personal/familyHistory/full-family-tree.html</a></span>
+        <span class="src-desc">Visual family tree — Thomas/Kennard paternal line back to 1680 Virginia, and Squires/Jewish maternal line back to Kock Poland and Russia. Created April 2026.</span>
+      </li>
+      <li>
+        <strong><span class="doc-badge">GEDCOM</span> Thomas–Squires Family Tree</strong>
+        <span class="src-path">personal/familyHistory/Thomas_Squires Family Tree/Thomas_Squires Family Tree.ged</span>
+        <span class="src-desc">Ancestry.com GEDCOM export. 73 people. Exported April 12, 2026 from tree ID 178944660.</span>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  Compiled April 2026 from documents provided by Michael Scott Thomas &nbsp;·&nbsp;
+  Sources: Anthony Drew Kennard Letters etc..pdf · Thomas Lineal Descent.pdf · History of Grimes County (1982) · Ancestry GEDCOM<br>
+  <span style="color:#555;">personal/familyHistory/thomas-kennard-documents.html</span>
+</footer>
+
+</body>
+</html>
