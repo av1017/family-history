@@ -13,7 +13,7 @@
 4 CONT Lehi, UT  84043
 4 CONT USA
 1 DATE 17 Apr 2026
-2 TIME 02:16:42
+2 TIME 15:21:27
 1 GEDC
 2 VERS 5.5.1
 2 FORM LINEAGE-LINKED
@@ -26,7 +26,7 @@
 2 SURN Thomas
 2 SOUR @S466338397@
 3 _APID 1,62209::231041677
-1 FAMC @F17@
+1 FAMC @F8@
 1 BIRT
 2 DATE 5 Jan 1998
 2 PLAC Houston, Harris, Texas, USA
@@ -49,8 +49,8 @@
 4 WWW https://www.obituare.com/j-g--thomas-obituary-36246/
 3 _APID 1,7545::129488913
 1 SEX M
-1 FAMC @F9@
-1 FAMS @F17@
+1 FAMC @F4@
+1 FAMS @F8@
 1 BIRT
 2 DATE 27 Jan 1960
 2 PLAC Harris, Texas, USA
@@ -89,8 +89,8 @@
 2 SOUR @S466338293@
 3 _APID 1,8781::9097719
 1 SEX F
-1 FAMC @F7@
-1 FAMS @F17@
+1 FAMC @F23@
+1 FAMS @F8@
 1 BIRT
 2 DATE 14 Aug 1963
 2 PLAC Harris, Texas, USA
@@ -127,9 +127,8 @@
 4 CONC id=3398
 3 _APID 1,62116::68552100
 1 SEX M
-1 FAMC @F22@
-1 FAMS @F9@
-1 FAMS @F28@
+1 FAMC @F31@
+1 FAMS @F4@
 1 BIRT
 2 DATE 28 Nov 1924
 2 PLAC Anderson, Grimes, Texas, USA
@@ -214,6 +213,15 @@
 2 PAGE The Shreveport Journal; Publication Date: 23/ Apr/ 1954; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/600822411/?article=38093701-61e3-4d91-b1dd-9bec690fa599&focus=0.7255308,0.030304162,0.9573054,0.85438734&x
 3 CONC id=3398
 2 _APID 1,62116::68552100
+1 OBJE @O1@
+2 _PRIM Y
+2 _CROP
+3 _LEFT 0
+3 _TOP 0
+3 _WDTH 206
+3 _HGHT 206
+3 _TYPE primary
+1 OBJE @O34@
 0 @I182329818989@ INDI
 1 NAME Arthur /Squires/
 2 GIVN Arthur
@@ -228,9 +236,9 @@
 3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: New York, Kings, New York; Roll: 941; Page: 11; Enumeration District: 24-1695
 3 _APID 1,62308::288443159
 1 SEX M
-1 FAMC @F4@
+1 FAMC @F20@
+1 FAMS @F23@
 1 FAMS @F7@
-1 FAMS @F16@
 1 BIRT
 2 DATE 15 Jul 1933
 2 PLAC Philadelphia, Philadelphia, Pennsylvania, USA
@@ -294,7 +302,7 @@
 2 SOUR @S466338293@
 3 _APID 1,8781::19450326
 1 SEX M
-1 FAMC @F17@
+1 FAMC @F8@
 1 BIRT
 2 DATE 22 Jul 1995
 2 PLAC Harris, Texas, USA
@@ -376,8 +384,8 @@
 3 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
 3 _APID 1,61843::354592837
 1 SEX F
-1 FAMC @F2@
-1 FAMS @F9@
+1 FAMC @F1@
+1 FAMS @F4@
 1 BIRT
 2 DATE 27 Jan 1931
 2 SOUR @S466338725@
@@ -514,8 +522,8 @@
 3 PAGE Marriage of Thomas / Thomas 11 Apr 1954
 3 DATA
 4 WWW https://www.newspapers.com/article/the-longview-daily-news-marriage-of-thom/195622957/?xid=637
-3 OBJE @O4@
-2 OBJE @O4@
+3 OBJE @O6@
+2 OBJE @O6@
 1 RESI
 2 DATE 1985-2020
 2 PLAC Houston, Texas, USA
@@ -609,8 +617,8 @@
 2 PAGE Marriage of Thomas / Thomas 11 Apr 1954
 2 DATA
 3 WWW https://www.newspapers.com/article/the-longview-daily-news-marriage-of-thom/195622957/?xid=637
-2 OBJE @O4@
-1 OBJE @O27@
+2 OBJE @O6@
+1 OBJE @O32@
 2 _PRIM Y
 2 _CROP
 3 _LEFT 47
@@ -618,85 +626,85 @@
 3 _WDTH 186
 3 _HGHT 233
 3 _TYPE primary
-1 OBJE @O10@
+1 OBJE @O12@
 2 _CROP
 3 _LEFT 27
 3 _TOP 28
 3 _WDTH 109
 3 _HGHT 110
 3 _TYPE primary
-1 OBJE @O13@
+1 OBJE @O16@
 2 _CROP
 3 _LEFT 149
 3 _TOP 232
 3 _WDTH 595
 3 _HGHT 927
 3 _TYPE primary
-1 OBJE @O2@
+1 OBJE @O4@
 2 _CROP
 3 _LEFT 88
 3 _TOP 142
 3 _WDTH 351
 3 _HGHT 569
 3 _TYPE primary
-1 OBJE @O26@
+1 OBJE @O31@
 2 _CROP
 3 _LEFT 217
 3 _TOP 217
 3 _WDTH 1857
 3 _HGHT 1207
 3 _TYPE primary
-1 OBJE @O36@
+1 OBJE @O42@
 2 _CROP
 3 _LEFT 19
 3 _TOP 19
 3 _WDTH 2322
 3 _HGHT 1877
 3 _TYPE primary
-1 OBJE @O29@
+1 OBJE @O35@
 2 _CROP
 3 _LEFT 8
 3 _TOP 124
 3 _WDTH 313
 3 _HGHT 494
 3 _TYPE primary
-1 OBJE @O4@
-1 OBJE @O23@
+1 OBJE @O6@
+1 OBJE @O27@
 2 _CROP
 3 _LEFT 47
 3 _TOP 58
 3 _WDTH 187
 3 _HGHT 231
 3 _TYPE primary
-1 OBJE @O7@
+1 OBJE @O9@
 2 _CROP
 3 _LEFT 46
 3 _TOP 57
 3 _WDTH 183
 3 _HGHT 229
 3 _TYPE primary
-1 OBJE @O6@
+1 OBJE @O8@
 2 _CROP
 3 _LEFT 28
 3 _TOP 28
 3 _WDTH 111
 3 _HGHT 111
 3 _TYPE primary
-1 OBJE @O35@
+1 OBJE @O41@
 2 _CROP
 3 _LEFT 34
 3 _TOP 34
 3 _WDTH 136
 3 _HGHT 136
 3 _TYPE primary
-1 OBJE @O39@
+1 OBJE @O47@
 2 _CROP
 3 _LEFT 77
 3 _TOP 97
 3 _WDTH 309
 3 _HGHT 386
 3 _TYPE primary
-1 OBJE @O28@
+1 OBJE @O33@
 2 _CROP
 3 _LEFT 162
 3 _TOP 226
@@ -737,8 +745,8 @@
 3 PAGE Year: 1880; Census Place: Prairie Plains, Grimes, Texas; Roll: 1308; Page: 176B; Enumeration District: 067
 3 _APID 1,6742::10961263
 1 SEX M
-1 FAMC @F19@
-1 FAMS @F22@
+1 FAMC @F10@
+1 FAMS @F31@
 1 BIRT
 2 DATE 6 Feb 1877
 2 PLAC Grimes County, Texas
@@ -882,7 +890,7 @@
 1 SOUR @S528276028@
 2 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Grimes, Texas; Roll: 3986; Page: 10; Enumeration District: 93-5
 2 _APID 1,62308::190335630
-1 OBJE @O15@
+1 OBJE @O19@
 2 _PRIM Y
 2 _CROP
 3 _LEFT 83
@@ -890,7 +898,7 @@
 3 _WDTH 2486
 3 _HGHT 1492
 3 _TYPE primary
-1 OBJE @O3@
+1 OBJE @O5@
 0 @I182329819761@ INDI
 1 NAME Stella Kennard /Thomas/
 2 GIVN Stella Kennard
@@ -922,8 +930,8 @@
 2 SOUR @S466339400@
 3 _APID 1,60183::1479515
 1 SEX F
-1 FAMC @F11@
-1 FAMS @F22@
+1 FAMC @F25@
+1 FAMS @F31@
 1 BIRT
 2 DATE 11 April 1882
 2 PLAC Grimes County, Texas, United States of America
@@ -1062,7 +1070,7 @@
 2 SOUR @S466339250@
 3 _APID 1,7884::129834957
 1 SEX M
-1 FAMC @F22@
+1 FAMC @F31@
 1 BIRT
 2 DATE 2 Oct 1908
 2 PLAC Anderson, Grimes, Texas, USA
@@ -1109,7 +1117,7 @@
 3 PAGE The Eagle; Publication Date: 8 Feb 1963; Publication Place: Bryan, Texas, USA; URL: https://www.newspapers.com/image/48616744/?article=52906b5a-6495-4cb9-8592-484099dd8d94&focus=0.73530656,0.58199406,0.98610014,0.8375136&xid=3355
 3 _APID 1,61843::530555630
 1 SEX M
-1 FAMC @F22@
+1 FAMC @F31@
 1 BIRT
 2 DATE abt 1914
 2 PLAC Texas
@@ -1126,8 +1134,8 @@
 3 PAGE  15 Sep 1901
 3 DATA
 4 WWW https://www.newspapers.com/article/the-houston-post/195646386/?xid=637
-3 OBJE @O22@
-2 OBJE @O22@
+3 OBJE @O26@
+2 OBJE @O26@
 1 RESI
 2 DATE 1920
 2 PLAC Anderson, Grimes, Texas, USA
@@ -1172,8 +1180,8 @@
 2 PAGE  15 Sep 1901
 2 DATA
 3 WWW https://www.newspapers.com/article/the-houston-post/195646386/?xid=637
-2 OBJE @O22@
-1 OBJE @O22@
+2 OBJE @O26@
+1 OBJE @O26@
 0 @I182329820547@ INDI
 1 NAME Barbara /Croft/
 2 GIVN Barbara
@@ -1181,7 +1189,7 @@
 2 SOUR @S466338770@
 3 _APID 1,9168::925283561
 1 SEX F
-1 FAMS @F16@
+1 FAMS @F7@
 1 SOUR @S466338770@
 2 _APID 1,9168::925283561
 0 @I182329820752@ INDI
@@ -1197,8 +1205,8 @@
 2 SOUR @S466338701@
 3 _APID 1,1788::188302869
 1 SEX F
-1 FAMC @F20@
-1 FAMS @F7@
+1 FAMC @F11@
+1 FAMS @F23@
 1 BIRT
 2 DATE 23 Jan 1936
 2 PLAC Harris, Texas, USA
@@ -1278,7 +1286,7 @@
 3 PAGE Texas Department of State Health Services; Austin, TX; Texas, U.S., Birth Certificates, 1903-1932
 3 _APID 1,2275::1192236
 1 SEX F
-1 FAMC @F20@
+1 FAMC @F11@
 1 BIRT
 2 DATE 20 May 1929
 2 PLAC Houston, Harris, Texas, USA
@@ -1318,7 +1326,7 @@
 2 SOUR @S466341385@
 3 _APID 1,60525::190548135
 1 SEX M
-1 FAMC @F20@
+1 FAMC @F11@
 1 BIRT
 2 DATE abt 1938
 2 PLAC Texas
@@ -1380,9 +1388,9 @@
 2 SOUR @S466338293@
 3 _APID 1,8781::152676661
 1 SEX M
-1 FAMC @F23@
-1 FAMS @F20@
-1 FAMS @F21@
+1 FAMC @F14@
+1 FAMS @F11@
+1 FAMS @F12@
 1 BIRT
 2 DATE 05 Apr 1903
 2 PLAC Kock, Siedlce, Russian Empire (presently, Kock, Poland)
@@ -1524,12 +1532,12 @@
 2 DATA
 3 WWW https://catalog.archives.gov/id/350561581
 2 _APID 1,63303::1253797
-1 OBJE @O11@
+1 OBJE @O13@
 2 _PRIM Y
-1 OBJE @O34@
-1 OBJE @O12@
-1 OBJE @O24@
-1 OBJE @O25@
+1 OBJE @O40@
+1 OBJE @O15@
+1 OBJE @O28@
+1 OBJE @O29@
 0 @I182329820980@ INDI
 1 NAME Mollie Krofcheck /Croft/
 2 GIVN Mollie Krofcheck
@@ -1546,6 +1554,16 @@
 3 _APID 1,2442::160683545
 2 SOUR @S466341385@
 3 _APID 1,60525::130552274
+1 NAME Mollie /Croft/
+2 GIVN Mollie
+2 SURN Croft
+2 SOUR @S466341385@
+3 _APID 1,60525::130552274
+1 NAME Malka Mollie /Krawczyk Krafcheck/
+2 GIVN Malka Mollie
+2 SURN Krawczyk Krafcheck
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
 1 NAME Mollie /Croft/
 2 GIVN Mollie
 2 SURN Croft
@@ -1590,11 +1608,13 @@
 2 SOUR @S466338293@
 3 _APID 1,8781::302676661
 1 SEX F
-1 FAMC @F8@
-1 FAMS @F20@
+1 FAMC @F6@
+1 FAMS @F11@
 1 BIRT
 2 DATE 15 May 1905
-2 PLAC Zachodniopomorskie, Poland
+2 PLAC Radzyn Podlaski, Lubelskie, Poland
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
 2 SOUR @S466338438@
 3 _APID 1,1360::86445
 2 SOUR @S466347352@
@@ -1611,6 +1631,11 @@
 3 PAGE The National Archives in Washington, DC; Washington, DC, USA; Passenger and Crew Lists of Vessels Arriving at New York, New York, 1897-1957; Microfilm Serial or NAID: T715; RG Title: Records of the Immigration and Naturalization Service, 1787-2004
 4 CONC ; RG: 85
 3 _APID 1,7488::4018119986
+2 SOUR @S466341385@
+3 _APID 1,60525::130552274
+1 BIRT
+2 DATE 15 May 1905
+2 PLAC Zachodniopomorskie, Poland
 2 SOUR @S466341385@
 3 _APID 1,60525::130552274
 1 EVEN
@@ -1699,6 +1724,7 @@
 2 _APID 36217153018:1030:70208803
 2 _APID 290040649072:1030:89905403
 2 _APID 170121199374:1030:113704099
+2 _APID 162503752796:1030:192744850
 1 SOUR @S466338438@
 2 _APID 1,1360::86445
 1 SOUR @S466347352@
@@ -1734,9 +1760,9 @@
 2 _APID 1,60183::2521248
 1 SOUR @S466341385@
 2 _APID 1,60525::130552274
-1 OBJE @O9@
+1 OBJE @O11@
 2 _PRIM Y
-1 OBJE @O19@
+1 OBJE @O23@
 0 @I182329821622@ INDI
 1 NAME Susan B. /Thomas/
 2 GIVN Susan B.
@@ -1767,7 +1793,7 @@
 2 SOUR @S466338308@
 3 _APID 1,8795::582765
 1 SEX F
-1 FAMS @F19@
+1 FAMS @F10@
 1 BIRT
 2 DATE 19 February 1857
 2 PLAC Tennessee, USA
@@ -1860,8 +1886,8 @@
 2 SOUR @S466339346@
 3 _APID 1,6742::6871828
 1 SEX M
-1 FAMC @F25@
-1 FAMS @F19@
+1 FAMC @F17@
+1 FAMS @F10@
 1 BIRT
 2 DATE 9 aug 1852
 2 PLAC Bedies, Grimes, Texas, USA
@@ -1946,12 +1972,12 @@
 2 DATA
 3 WWW https://gw.geneanet.org/snapshot?n=thomas&oc=&p=francis+marion
 2 _APID 1,62476::7594934591
-1 OBJE @O32@
+1 OBJE @O38@
 2 _PRIM Y
+1 OBJE @O25@
+1 OBJE @O22@
 1 OBJE @O21@
-1 OBJE @O18@
-1 OBJE @O17@
-1 OBJE @O8@
+1 OBJE @O10@
 0 @I182329823816@ INDI
 1 NAME John Henry /Kennard/
 2 GIVN John Henry
@@ -1964,7 +1990,7 @@
 2 SOUR @S466339191@
 3 _APID 1,2272::60370073
 1 SEX M
-1 FAMS @F11@
+1 FAMS @F25@
 1 BIRT
 2 DATE 23 June 1852
 2 PLAC Texas, United States of America
@@ -2009,7 +2035,7 @@
 2 SOUR @S466339191@
 3 _APID 1,2272::750370073
 1 SEX F
-1 FAMS @F11@
+1 FAMS @F25@
 1 BIRT
 2 DATE 31 July 1856
 2 PLAC Perry Co, AL
@@ -2064,11 +2090,27 @@
 3 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
 3 _APID 1,61843::596015595
 2 SOUR @S466338593@
+3 PAGE The Times; Publication Date: 17/ Jun/ 1956; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+3 DATA
+4 WWW https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+3 _APID 1,62116::72528774
+2 SOUR @S466338593@
 3 PAGE The Marshall News Messenger; Publication Date: 26/ Jul/ 1925; Publication Place: Marshall, Texas, USA; URL: https://www.newspapers.com/image/320349708/?article=0bf5bb2c-7001-4481-bd92-6d3f41f811d3&focus=0.13668035,0.16666424,0.2539175,0.45292813&xi
 4 CONC d=3398
 3 DATA
 4 WWW https://www.newspapers.com/image/320349708/?article=0bf5bb2c-7001-4481-bd92-6d3f41f811d3&focus=0.13668035,0.16666424,0.2539175,0.45292813&xid=3398
 3 _APID 1,62116::95342848
+2 SOUR @S466338593@
+3 PAGE Tyler Morning Telegraph; Publication Date: 12/ Aug/ 1949; Publication Place: Tyler, Texas, USA; URL: https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+3 DATA
+4 WWW https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+3 _APID 1,62116::213063861
+1 NAME Charlotte "Lottie" /Robison Crawley/ Crawley
+2 GIVN Charlotte "Lottie"
+2 SURN Robison Crawley
+2 NSFX Crawley
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
 1 NAME Lottie R /Crawley/ Crawley
 2 GIVN Lottie R
 2 SURN Crawley
@@ -2109,8 +2151,8 @@
 2 SOUR @S466338541@
 3 _APID 1,2442::155440813
 1 SEX F
-1 FAMC @F1@
-1 FAMS @F2@
+1 FAMC @F18@
+1 FAMS @F1@
 1 BIRT
 2 DATE 11 May 1902
 2 PLAC Simsboro Lin, Louisiana
@@ -2189,6 +2231,14 @@
 3 PAGE Social Security Administration; Washington D.C., USA; Social Security Death Index, Master File
 3 _APID 1,3693::13085113
 1 RESI
+2 DATE Abt 1956
+2 PLAC Longview , Tex
+2 SOUR @S466338593@
+3 PAGE The Times; Publication Date: 17/ Jun/ 1956; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+3 DATA
+4 WWW https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+3 _APID 1,62116::72528774
+1 RESI
 2 DATE 1957
 2 PLAC Shreveport, Louisiana, USA
 2 SOUR @S466346305@
@@ -2252,6 +2302,7 @@
 3 _APID 1,61843::596015595
 1 SOUR @S466339560@
 2 PAGE Ancestry Family Tree
+2 _APID 202529086417:1030:22112250
 2 _APID 112147275234:1030:42458521
 2 _APID 422087646904:1030:85619954
 2 _APID 162389905009:1030:161114514
@@ -2290,15 +2341,25 @@
 2 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
 2 _APID 1,61843::596015595
 1 SOUR @S466338593@
+2 PAGE The Times; Publication Date: 17/ Jun/ 1956; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+2 DATA
+3 WWW https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+2 _APID 1,62116::72528774
+1 SOUR @S466338593@
 2 PAGE The Marshall News Messenger; Publication Date: 26/ Jul/ 1925; Publication Place: Marshall, Texas, USA; URL: https://www.newspapers.com/image/320349708/?article=0bf5bb2c-7001-4481-bd92-6d3f41f811d3&focus=0.13668035,0.16666424,0.2539175,0.45292813&xi
 3 CONC d=3398
 2 DATA
 3 WWW https://www.newspapers.com/image/320349708/?article=0bf5bb2c-7001-4481-bd92-6d3f41f811d3&focus=0.13668035,0.16666424,0.2539175,0.45292813&xid=3398
 2 _APID 1,62116::95342848
+1 SOUR @S466338593@
+2 PAGE Tyler Morning Telegraph; Publication Date: 12/ Aug/ 1949; Publication Place: Tyler, Texas, USA; URL: https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+2 DATA
+3 WWW https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+2 _APID 1,62116::213063861
 1 SOUR @S528276028@
 2 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Gregg, Texas; Roll: 3986; Page: 72; Enumeration District: 92-69
 2 _APID 1,62308::193515690
-1 OBJE @O38@
+1 OBJE @O46@
 2 _PRIM Y
 0 @I182329826210@ INDI
 1 NAME John Earl /Crawley/
@@ -2347,6 +2408,16 @@
 3 DATA
 4 WWW https://www.newspapers.com/image/320349708/?article=0bf5bb2c-7001-4481-bd92-6d3f41f811d3&focus=0.13668035,0.16666424,0.2539175,0.45292813&xid=3398
 3 _APID 1,62116::33215230
+2 SOUR @S466338593@
+3 PAGE Tyler Morning Telegraph; Publication Date: 12/ Aug/ 1949; Publication Place: Tyler, Texas, USA; URL: https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+3 DATA
+4 WWW https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+3 _APID 1,62116::213043534
+2 SOUR @S466338593@
+3 PAGE The Times; Publication Date: 17/ Jun/ 1956; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+3 DATA
+4 WWW https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+3 _APID 1,62116::220005246
 2 SOUR @S528276028@
 3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Gregg, Texas; Roll: 3986; Page: 72; Enumeration District: 92-69
 3 _APID 1,62308::193515689
@@ -2367,8 +2438,8 @@
 2 SOUR @S466338541@
 3 _APID 1,2442::155440810
 1 SEX M
-1 FAMC @F12@
-1 FAMS @F2@
+1 FAMC @F26@
+1 FAMS @F1@
 1 BIRT
 2 DATE 21 Feb 1903
 2 PLAC Marshall, Texas
@@ -2500,6 +2571,7 @@
 1 SOUR @S466339560@
 2 PAGE Ancestry Family Tree
 2 _APID 25794402431:1030:7444407
+2 _APID 202642583738:1030:22112250
 2 _APID 112148337835:1030:42458521
 2 _APID 422089124950:1030:85619954
 2 _APID 162389903226:1030:161114514
@@ -2553,43 +2625,123 @@
 1 SOUR @S466338593@
 2 PAGE Longview News-Journal; Publication Date: 11/ Apr/ 1954; Publication Place: Longview, Texas, USA; URL: https://www.newspapers.com/image/190894835/?article=29daaf9d-b7bb-42c9-9c1c-e71ee53eeeee&focus=0,0.031953633,0.33818415,0.48768082&xid=3398
 2 _APID 1,62116::201172807
+1 SOUR @S466338593@
+2 PAGE Tyler Morning Telegraph; Publication Date: 12/ Aug/ 1949; Publication Place: Tyler, Texas, USA; URL: https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+2 DATA
+3 WWW https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+2 _APID 1,62116::213043534
+1 SOUR @S466338593@
+2 PAGE The Times; Publication Date: 17/ Jun/ 1956; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+2 DATA
+3 WWW https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+2 _APID 1,62116::220005246
 1 SOUR @S528276028@
 2 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Gregg, Texas; Roll: 3986; Page: 72; Enumeration District: 92-69
 2 _APID 1,62308::193515689
-1 OBJE @O40@
+1 OBJE @O48@
 2 _PRIM Y
-1 OBJE @O16@
+1 OBJE @O20@
 0 @I182329830195@ INDI
 1 NAME James Benjamin /Crawley/
 2 GIVN James Benjamin
 2 SURN Crawley
 2 SOUR @S466339560@
 3 PAGE Ancestry Family Tree
+2 SOUR @S466338725@
+3 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Spring Hill High School; Year: 1942
+3 DATA
+4 WWW https://www.classmates.com/yearbooks/?page=1&s=81166&utm_source=ancestry&utm_medium=unpaid&utm_campaign=partnerships&utm_term=yearbook&utm_content=81166
+3 _APID 1,1265::196686094
+2 SOUR @S466338725@
+3 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Agricultural and Mechanical College of Texas; Year: 1947
+3 _APID 1,1265::293888928
+3 _APID 1,1265::966701494
+2 SOUR @S466338725@
+3 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Texas A and M University; Year: 1947
+3 _APID 1,1265::1423340504
+3 _APID 1,1265::1423345677
+2 SOUR @S466338336@
+3 _APID 1,1732::97577664
+2 SOUR @S466338701@
+3 _APID 1,1788::55988182
+2 SOUR @S466338562@
+3 PAGE National Archives at St. Louis; St. Louis, Missouri; Wwii Draft Registration Cards For Texas, 10/16/1940-03/31/1947; Record Group: Records of the Selective Service System, 147; Box: 332
+3 _APID 1,2238::20081190
+2 SOUR @S466495072@
+3 PAGE Gale Research Company; Detroit, Michigan; Accession Number: 993945
+3 _APID 1,4394::5899196
 2 SOUR @S466338630@
 3 PAGE Year: 1930; Census Place: Shangaloo, Webster, Louisiana; Page: 24A; Enumeration District: 0001; FHL microfilm: 2340560
 3 _APID 1,6224::91936428
+2 SOUR @S528411048@
+3 PAGE City: Norman; State: Oklahoma; Year(s): 1993-2002
+3 _APID 1,7339::79502541
 2 SOUR @S466338642@
 3 PAGE The Edmond Sun; Publication Date: 2023; Publication Place: Edmond, Oklahoma, USA; URL: https://obituaries.normantranscript.com/obituary/james-crawley-1087456246
 3 DATA
 4 WWW https://obituaries.normantranscript.com/obituary/james-crawley-1087456246
 3 _APID 1,7545::327289499
+2 SOUR @S528410733@
+3 PAGE National Archives at College Park; College Park, Maryland, USA; Electronic Army Serial Number Merged File, 1938-1946; NAID: 1263923; Record Group Title: Records of the National Archives and Records Administration, 1789-ca. 2007; Record Group: 64; B
+4 CONC ox Numbe
+3 _APID 1,8939::4275878
+2 SOUR @S528411015@
+3 PAGE The Norman Transcript; Publication Date: 19 Apr 1963; Publication Place: Norman, Oklahoma, USA; URL: https://www.newspapers.com/image/666468301/?article=8f4dfe30-887a-4aaf-9e02-b226826136b3&xid=5504&terms=James_B._Crawley
+3 DATA
+4 WWW https://www.newspapers.com/image/666468301/?article=8f4dfe30-887a-4aaf-9e02-b226826136b3&xid=5504&terms=James_B._Crawley
+3 _APID 1,50067::4732734159
+2 SOUR @S528380648@
+3 PAGE Longview News-Journal; Publication Date: 10 Jun 1956; Publication Place: Longview, Texas, USA; URL: https://www.newspapers.com/image/190915652/?article=91cc37d7-9716-4fef-b62b-15ef9b1fc934&xid=4720&terms=James_Benjamin_Crawley
+3 DATA
+4 WWW https://www.newspapers.com/image/190915652/?article=91cc37d7-9716-4fef-b62b-15ef9b1fc934&xid=4720&terms=James_Benjamin_Crawley
+3 _APID 1,50076::4795115051
+2 SOUR @S528389735@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/252554413/james-benjamin-crawley
+3 _APID 1,60541::226375707
 2 SOUR @S466339470@
 3 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
 3 _APID 1,61843::354176261
+2 SOUR @S466338593@
+3 PAGE The Times; Publication Date: 17/ Jun/ 1956; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+3 DATA
+4 WWW https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+3 _APID 1,62116::72494163
+2 SOUR @S528276028@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Midland, Midland, Texas; Roll: 2173; Page: 82; Enumeration District: 165-3
+3 _APID 1,62308::187208636
 1 NAME James B /Crowley/
 2 GIVN James B
 2 SURN Crowley
 2 SOUR @S466338541@
 3 _APID 1,2442::155440815
 1 SEX M
-1 FAMC @F2@
+1 FAMC @F1@
+1 FAMS @F13@
 1 BIRT
 2 DATE 5 Aug 1926
 2 PLAC Simsboro, Louisiana, USA
 2 SOUR @S466339560@
 3 PAGE Ancestry Family Tree
+2 SOUR @S466338725@
+3 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Spring Hill High School; Year: 1942
+3 DATA
+4 WWW https://www.classmates.com/yearbooks/?page=1&s=81166&utm_source=ancestry&utm_medium=unpaid&utm_campaign=partnerships&utm_term=yearbook&utm_content=81166
+3 _APID 1,1265::196686094
+2 SOUR @S466338725@
+3 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Texas A and M University; Year: 1947
+3 _APID 1,1265::1423340504
+3 _APID 1,1265::1423345677
+2 SOUR @S466338701@
+3 _APID 1,1788::55988182
+2 SOUR @S466338562@
+3 PAGE National Archives at St. Louis; St. Louis, Missouri; Wwii Draft Registration Cards For Texas, 10/16/1940-03/31/1947; Record Group: Records of the Selective Service System, 147; Box: 332
+3 _APID 1,2238::20081190
 2 SOUR @S466338541@
 3 _APID 1,2442::155440815
+2 SOUR @S466495072@
+3 PAGE Gale Research Company; Detroit, Michigan; Accession Number: 993945
+3 _APID 1,4394::5899196
 2 SOUR @S466338630@
 3 PAGE Year: 1930; Census Place: Shangaloo, Webster, Louisiana; Page: 24A; Enumeration District: 0001; FHL microfilm: 2340560
 3 _APID 1,6224::91936428
@@ -2598,6 +2750,17 @@
 3 DATA
 4 WWW https://obituaries.normantranscript.com/obituary/james-crawley-1087456246
 3 _APID 1,7545::327289499
+2 SOUR @S528410733@
+3 PAGE National Archives at College Park; College Park, Maryland, USA; Electronic Army Serial Number Merged File, 1938-1946; NAID: 1263923; Record Group Title: Records of the National Archives and Records Administration, 1789-ca. 2007; Record Group: 64; B
+4 CONC ox Numbe
+3 _APID 1,8939::4275878
+2 SOUR @S528389735@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/252554413/james-benjamin-crawley
+3 _APID 1,60541::226375707
+2 SOUR @S528276028@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Midland, Midland, Texas; Roll: 2173; Page: 82; Enumeration District: 165-3
+3 _APID 1,62308::187208636
 1 RESI
 2 DATE 1930
 2 PLAC Shangaloo, Shangaloo, Webster, Louisiana, USA
@@ -2615,6 +2778,93 @@
 2 PLAC J P #7, Gregg, Texas, USA
 2 SOUR @S466338541@
 3 _APID 1,2442::155440815
+1 RESI
+2 DATE 1942
+2 PLAC Longview, Texas, USA
+2 SOUR @S466338725@
+3 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Spring Hill High School; Year: 1942
+3 DATA
+4 WWW https://www.classmates.com/yearbooks/?page=1&s=81166&utm_source=ancestry&utm_medium=unpaid&utm_campaign=partnerships&utm_term=yearbook&utm_content=81166
+3 _APID 1,1265::196686094
+1 RESI
+2 DATE 1945
+2 PLAC Longview, Gregg, Texas, USA
+2 SOUR @S466338562@
+3 PAGE National Archives at St. Louis; St. Louis, Missouri; Wwii Draft Registration Cards For Texas, 10/16/1940-03/31/1947; Record Group: Records of the Selective Service System, 147; Box: 332
+3 _APID 1,2238::20081190
+2 NOTE Relation to Head of House: Self
+1 RESI
+2 DATE 1947
+2 PLAC College Station, Texas, USA
+2 SOUR @S466338725@
+3 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Agricultural and Mechanical College of Texas; Year: 1947
+3 _APID 1,1265::293888928
+3 _APID 1,1265::966701494
+2 SOUR @S466338725@
+3 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Texas A and M University; Year: 1947
+3 _APID 1,1265::1423340504
+3 _APID 1,1265::1423345677
+1 RESI
+2 DATE 1950
+2 PLAC Midland, Midland, Texas, USA
+2 SOUR @S528276028@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Midland, Midland, Texas; Roll: 2173; Page: 82; Enumeration District: 165-3
+3 _APID 1,62308::187208636
+2 NOTE Occupation: Petroleum Engineer; Relation to Head of House: Partner; Marital Status: Never Married
+1 RESI
+2 DATE 10 Jun 1956
+2 PLAC Longview, Texas, USA
+2 SOUR @S528380648@
+3 PAGE Longview News-Journal; Publication Date: 10 Jun 1956; Publication Place: Longview, Texas, USA; URL: https://www.newspapers.com/image/190915652/?article=91cc37d7-9716-4fef-b62b-15ef9b1fc934&xid=4720&terms=James_Benjamin_Crawley
+3 DATA
+4 WWW https://www.newspapers.com/image/190915652/?article=91cc37d7-9716-4fef-b62b-15ef9b1fc934&xid=4720&terms=James_Benjamin_Crawley
+3 _APID 1,50076::4795115051
+2 SOUR @S466338593@
+3 PAGE The Times; Publication Date: 17/ Jun/ 1956; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+3 DATA
+4 WWW https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+3 _APID 1,62116::72494163
+1 RESI
+2 DATE 19 Apr 1963
+2 PLAC Norman, Oklahoma, USA
+2 SOUR @S528411015@
+3 PAGE The Norman Transcript; Publication Date: 19 Apr 1963; Publication Place: Norman, Oklahoma, USA; URL: https://www.newspapers.com/image/666468301/?article=8f4dfe30-887a-4aaf-9e02-b226826136b3&xid=5504&terms=James_B._Crawley
+3 DATA
+4 WWW https://www.newspapers.com/image/666468301/?article=8f4dfe30-887a-4aaf-9e02-b226826136b3&xid=5504&terms=James_B._Crawley
+3 _APID 1,50067::4732734159
+1 RESI
+2 DATE 1993
+2 PLAC Norman, OK
+2 SOUR @S466338701@
+3 _APID 1,1788::55988182
+1 RESI
+2 DATE 1993-2002
+2 PLAC Norman, Oklahoma, USA
+2 SOUR @S528411048@
+3 PAGE City: Norman; State: Oklahoma; Year(s): 1993-2002
+3 _APID 1,7339::79502541
+1 RESI
+2 PLAC Gregg, Texas
+2 SOUR @S528410733@
+3 PAGE National Archives at College Park; College Park, Maryland, USA; Electronic Army Serial Number Merged File, 1938-1946; NAID: 1263923; Record Group Title: Records of the National Archives and Records Administration, 1789-ca. 2007; Record Group: 64; B
+4 CONC ox Numbe
+3 _APID 1,8939::4275878
+2 NOTE Marital Status: Single, without dependents
+1 RESI
+2 PLAC Oklahoma City , Okla .
+2 SOUR @S466338593@
+3 PAGE The Times; Publication Date: 17/ Jun/ 1956; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+3 DATA
+4 WWW https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+3 _APID 1,62116::72494163
+1 RESI
+2 PLAC Oklahoma City, OK
+2 SOUR @S466338701@
+3 _APID 1,1788::55988182
+1 RESI
+2 PLAC Oklahoma City, Oklahoma, USA
+2 SOUR @S466338336@
+3 _APID 1,1732::97577664
 1 DEAT
 2 DATE 4 Apr 2023
 2 PLAC Norman, Cleveland, Oklahoma, USA
@@ -2623,26 +2873,113 @@
 3 DATA
 4 WWW https://obituaries.normantranscript.com/obituary/james-crawley-1087456246
 3 _APID 1,7545::327289499
+2 SOUR @S528389735@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/252554413/james-benjamin-crawley
+3 _APID 1,60541::226375707
 1 SOUR @S466339560@
 2 PAGE Ancestry Family Tree
+2 _APID 202642583943:1030:22112250
 2 _APID 162389905010:1030:161114514
+1 SOUR @S466338725@
+2 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Spring Hill High School; Year: 1942
+2 DATA
+3 WWW https://www.classmates.com/yearbooks/?page=1&s=81166&utm_source=ancestry&utm_medium=unpaid&utm_campaign=partnerships&utm_term=yearbook&utm_content=81166
+2 _APID 1,1265::196686094
+1 SOUR @S466338725@
+2 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Agricultural and Mechanical College of Texas; Year: 1947
+2 _APID 1,1265::293888928
+2 _APID 1,1265::966701494
+1 SOUR @S466338725@
+2 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Texas A and M University; Year: 1947
+2 _APID 1,1265::1423340504
+2 _APID 1,1265::1423345677
+1 SOUR @S466338336@
+2 _APID 1,1732::97577664
+1 SOUR @S466338701@
+2 _APID 1,1788::55988182
+1 SOUR @S466338562@
+2 PAGE National Archives at St. Louis; St. Louis, Missouri; Wwii Draft Registration Cards For Texas, 10/16/1940-03/31/1947; Record Group: Records of the Selective Service System, 147; Box: 332
+2 _APID 1,2238::20081190
 1 SOUR @S466338541@
 2 _APID 1,2442::155440815
+1 SOUR @S466495072@
+2 PAGE Gale Research Company; Detroit, Michigan; Accession Number: 993945
+2 _APID 1,4394::5899196
 1 SOUR @S466338630@
 2 PAGE Year: 1930; Census Place: Shangaloo, Webster, Louisiana; Page: 24A; Enumeration District: 0001; FHL microfilm: 2340560
 2 _APID 1,6224::91936428
+1 SOUR @S528411048@
+2 PAGE City: Norman; State: Oklahoma; Year(s): 1993-2002
+2 _APID 1,7339::79502541
 1 SOUR @S466338642@
 2 PAGE The Edmond Sun; Publication Date: 2023; Publication Place: Edmond, Oklahoma, USA; URL: https://obituaries.normantranscript.com/obituary/james-crawley-1087456246
 2 DATA
 3 WWW https://obituaries.normantranscript.com/obituary/james-crawley-1087456246
 2 _APID 1,7545::327289499
+1 SOUR @S528410733@
+2 PAGE National Archives at College Park; College Park, Maryland, USA; Electronic Army Serial Number Merged File, 1938-1946; NAID: 1263923; Record Group Title: Records of the National Archives and Records Administration, 1789-ca. 2007; Record Group: 64; B
+3 CONC ox Numbe
+2 _APID 1,8939::4275878
+1 SOUR @S528411015@
+2 PAGE The Norman Transcript; Publication Date: 19 Apr 1963; Publication Place: Norman, Oklahoma, USA; URL: https://www.newspapers.com/image/666468301/?article=8f4dfe30-887a-4aaf-9e02-b226826136b3&xid=5504&terms=James_B._Crawley
+2 DATA
+3 WWW https://www.newspapers.com/image/666468301/?article=8f4dfe30-887a-4aaf-9e02-b226826136b3&xid=5504&terms=James_B._Crawley
+2 _APID 1,50067::4732734159
+1 SOUR @S528380648@
+2 PAGE Longview News-Journal; Publication Date: 10 Jun 1956; Publication Place: Longview, Texas, USA; URL: https://www.newspapers.com/image/190915652/?article=91cc37d7-9716-4fef-b62b-15ef9b1fc934&xid=4720&terms=James_Benjamin_Crawley
+2 DATA
+3 WWW https://www.newspapers.com/image/190915652/?article=91cc37d7-9716-4fef-b62b-15ef9b1fc934&xid=4720&terms=James_Benjamin_Crawley
+2 _APID 1,50076::4795115051
+1 SOUR @S528389735@
+2 DATA
+3 WWW https://www.findagrave.com/memorial/252554413/james-benjamin-crawley
+2 _APID 1,60541::226375707
 1 SOUR @S466339470@
 2 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
 2 _APID 1,61843::354176261
+1 SOUR @S466338593@
+2 PAGE The Times; Publication Date: 17/ Jun/ 1956; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+2 DATA
+3 WWW https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+2 _APID 1,62116::72494163
+1 SOUR @S528276028@
+2 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Midland, Midland, Texas; Roll: 2173; Page: 82; Enumeration District: 165-3
+2 _APID 1,62308::187208636
+1 OBJE @O18@
+2 _PRIM Y
+2 _CROP
+3 _LEFT 108
+3 _TOP 135
+3 _WDTH 432
+3 _HGHT 540
+3 _TYPE primary
+1 OBJE @O14@
+2 _CROP
+3 _LEFT 105
+3 _TOP 331
+3 _WDTH 2092
+3 _HGHT 1325
+3 _TYPE primary
+1 OBJE @O43@
+2 _CROP
+3 _LEFT 82
+3 _TOP 123
+3 _WDTH 487
+3 _HGHT 488
+3 _TYPE primary
 0 @I182329830196@ INDI
-1 NAME Mary Anne /Convis/
-2 GIVN Mary Anne
-2 SURN Convis
+1 NAME Mary Ann /Crawley/
+2 GIVN Mary Ann
+2 SURN Crawley
+2 SOUR @S466338642@
+3 PAGE Marinij; Publication Date: 12/ Nov/ 2021; Publication Place: Marinij, CA, USA; URL: https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 DATA
+4 WWW https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 _APID 1,7545::300879589
+2 SOUR @S466338293@
+3 PAGE Texas Department of State Health Services; Austin, Texas, USA; Texas Birth Indexes
+3 _APID 1,8781::305039404
 2 SOUR @S466341385@
 3 DATA
 4 WWW https://www.findagrave.com/memorial/244200904/mary-anne-convis
@@ -2650,6 +2987,11 @@
 2 SOUR @S466339470@
 3 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
 3 _APID 1,61843::354413454
+2 SOUR @S466338593@
+3 PAGE Tyler Morning Telegraph; Publication Date: 12/ Aug/ 1949; Publication Place: Tyler, Texas, USA; URL: https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+3 DATA
+4 WWW https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+3 _APID 1,62116::8584219
 1 NAME Mary Anne /Crawley/
 2 GIVN Mary Anne
 2 SURN Crawley
@@ -2668,7 +3010,9 @@
 2 SOUR @S466338541@
 3 _APID 1,2442::155440817
 1 SEX F
-1 FAMC @F2@
+1 FAMC @F1@
+1 FAMS @F5@
+1 FAMS @F32@
 1 BIRT
 2 DATE 30 Aug 1929
 2 PLAC Haynesville, Claiborne, Louisiana, USA
@@ -2679,6 +3023,11 @@
 2 SOUR @S466338630@
 3 PAGE Year: 1930; Census Place: Shangaloo, Webster, Louisiana; Page: 24A; Enumeration District: 0001; FHL microfilm: 2340560
 3 _APID 1,6224::36152860
+2 SOUR @S466338642@
+3 PAGE Marinij; Publication Date: 12/ Nov/ 2021; Publication Place: Marinij, CA, USA; URL: https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 DATA
+4 WWW https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 _APID 1,7545::300879589
 2 SOUR @S466341385@
 3 DATA
 4 WWW https://www.findagrave.com/memorial/244200904/mary-anne-convis
@@ -2700,9 +3049,22 @@
 2 PLAC J P #7, Gregg, Texas, USA
 2 SOUR @S466338541@
 3 _APID 1,2442::155440817
+1 RESI
+2 DATE Abt 1949
+2 PLAC Cross Roads
+2 SOUR @S466338593@
+3 PAGE Tyler Morning Telegraph; Publication Date: 12/ Aug/ 1949; Publication Place: Tyler, Texas, USA; URL: https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+3 DATA
+4 WWW https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+3 _APID 1,62116::8584219
 1 DEAT
 2 DATE 24 Nov 2021
 2 PLAC Grass Valley, Nevada, California, USA
+2 SOUR @S466338642@
+3 PAGE Marinij; Publication Date: 12/ Nov/ 2021; Publication Place: Marinij, CA, USA; URL: https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 DATA
+4 WWW https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 _APID 1,7545::300879589
 2 SOUR @S466341385@
 3 DATA
 4 WWW https://www.findagrave.com/memorial/244200904/mary-anne-convis
@@ -2715,6 +3077,14 @@
 1 SOUR @S466338630@
 2 PAGE Year: 1930; Census Place: Shangaloo, Webster, Louisiana; Page: 24A; Enumeration District: 0001; FHL microfilm: 2340560
 2 _APID 1,6224::36152860
+1 SOUR @S466338642@
+2 PAGE Marinij; Publication Date: 12/ Nov/ 2021; Publication Place: Marinij, CA, USA; URL: https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+2 DATA
+3 WWW https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+2 _APID 1,7545::300879589
+1 SOUR @S466338293@
+2 PAGE Texas Department of State Health Services; Austin, Texas, USA; Texas Birth Indexes
+2 _APID 1,8781::305039404
 1 SOUR @S466341385@
 2 DATA
 3 WWW https://www.findagrave.com/memorial/244200904/mary-anne-convis
@@ -2722,6 +3092,11 @@
 1 SOUR @S466339470@
 2 PAGE The Times; Publication Date: 7 Aug 1991; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/220330966/?article=d6f82d6f-1ef1-43b9-8ed0-ba464afa6d72&focus=0.8232705,0.46301413,0.97626734,0.79104966&xid=3355
 2 _APID 1,61843::354413454
+1 SOUR @S466338593@
+2 PAGE Tyler Morning Telegraph; Publication Date: 12/ Aug/ 1949; Publication Place: Tyler, Texas, USA; URL: https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+2 DATA
+3 WWW https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+2 _APID 1,62116::8584219
 0 @I182329830596@ INDI
 1 NAME Frank R /Crawley/
 2 GIVN Frank R
@@ -2745,7 +3120,7 @@
 2 SOUR @S466339560@
 3 PAGE Ancestry Family Tree
 1 SEX M
-1 FAMS @F12@
+1 FAMS @F26@
 1 BIRT
 2 DATE 10 Jan 1865
 2 PLAC Social Circle, Walton, Georgia, USA
@@ -2809,7 +3184,7 @@
 3 PAGE Year: 1910; Census Place: Marshall Ward 1, Harrison, Texas; Roll: T624_1562; Page: 3b; Enumeration District: 0044; FHL microfilm: 1375575
 3 _APID 1,7884::125853316
 1 SEX F
-1 FAMS @F12@
+1 FAMS @F26@
 1 BIRT
 2 DATE 27 Jul 1866
 2 PLAC Harrison County, Texas, USA
@@ -2884,8 +3259,8 @@
 3 PAGE Texas Department of State Health Services; Austin Texas, USA
 3 _APID 1,2272::83332999
 1 SEX M
-1 FAMC @F18@
-1 FAMS @F25@
+1 FAMC @F9@
+1 FAMS @F17@
 1 BIRT
 2 DATE 31 Oct 1812
 2 PLAC , Marengo, Alabama, USA
@@ -3028,12 +3403,12 @@
 1 SOUR @S528381133@
 2 PAGE The Genealogical Society Bulletin-V 5, No 9 (Sept 1962); Author: Fort Worth Genealogical Society (Texas)
 2 _APID 1,62282::4497518956
-1 OBJE @O20@
+1 OBJE @O24@
 2 _PRIM Y
-1 OBJE @O41@
-1 OBJE @O37@
-1 OBJE @O14@
-1 OBJE @O30@
+1 OBJE @O49@
+1 OBJE @O45@
+1 OBJE @O17@
+1 OBJE @O36@
 0 @I182329830951@ INDI
 1 NAME Amanda Katherine /Wheeler/
 2 GIVN Amanda Katherine
@@ -3049,7 +3424,7 @@
 2 SOUR @S466339191@
 3 _APID 1,2272::773332999
 1 SEX F
-1 FAMS @F25@
+1 FAMS @F17@
 1 BIRT
 2 DATE 15 May 1827
 2 PLAC Baldwin, Georgia, United States
@@ -3098,8 +3473,8 @@
 2 SOUR @S466341385@
 3 _APID 1,60525::130597050
 1 SEX M
-1 FAMC @F6@
-1 FAMS @F23@
+1 FAMC @F21@
+1 FAMS @F14@
 1 BIRT
 2 DATE 5 Mar 1877
 2 PLAC Kock, Siedlce, Russian Empire (presently, Kock, Poland)
@@ -3164,9 +3539,9 @@
 2 _APID 1,8722::31386
 1 SOUR @S466341385@
 2 _APID 1,60525::130597050
-1 OBJE @O5@
+1 OBJE @O7@
 2 _PRIM Y
-1 OBJE @O31@
+1 OBJE @O37@
 0 @I182329846703@ INDI
 1 NAME Fannie (Feiga) /Lampart/
 2 GIVN Fannie (Feiga)
@@ -3177,7 +3552,7 @@
 2 SOUR @S466341385@
 3 _APID 1,60525::130597059
 1 SEX F
-1 FAMS @F23@
+1 FAMS @F14@
 1 BIRT
 2 DATE 4 Oct 1870
 2 PLAC Kock, Siedlce, Russian Empire (presently, Kock, Poland)
@@ -3206,7 +3581,7 @@
 2 GIVN Samuel
 2 SURN Croft (Kravchik)
 1 SEX M
-1 FAMC @F23@
+1 FAMC @F14@
 1 BIRT
 2 DATE 23 Dec 1896
 2 PLAC Kock, Siedlce, Russian Empire (presently, Kock, Poland)
@@ -3223,7 +3598,7 @@
 2 GIVN William Bernard
 2 SURN Croft
 1 SEX M
-1 FAMC @F23@
+1 FAMC @F14@
 1 BIRT
 2 DATE 29 Apr 1905
 2 PLAC Kock, Siedlce, Russian Empire (presently, Kock, Poland)
@@ -3240,7 +3615,7 @@
 2 GIVN Sarah
 2 SURN Croft (Kravchik) Stein
 1 SEX F
-1 FAMC @F23@
+1 FAMC @F14@
 1 BIRT
 2 DATE 10 Dec 1908
 2 PLAC Kock, Siedlce, Russian Empire (presently, Kock, Poland)
@@ -3257,7 +3632,7 @@
 2 GIVN Tobe Bella (Touba Bajla)
 2 SURN Croft (Kravchik)Lensky
 1 SEX F
-1 FAMC @F23@
+1 FAMC @F14@
 1 BIRT
 2 DATE 16 Aug 1900
 2 PLAC Kock, Siedlce, Russian Empire (presently, Kock, Poland)
@@ -3274,7 +3649,7 @@
 2 GIVN Mollie
 2 SURN Lass
 1 SEX F
-1 FAMC @F23@
+1 FAMC @F14@
 1 BIRT
 2 DATE 17 May 1912
 2 PLAC Warszawa, Russian Empire (presently, Warszawa, Poland)
@@ -3302,7 +3677,7 @@
 2 SOUR @S466346322@
 3 _APID 1,2509::900156392
 1 SEX F
-1 FAMS @F21@
+1 FAMS @F12@
 1 SOUR @S466346322@
 2 _APID 1,2509::900156392
 0 @I182329851475@ INDI
@@ -3310,8 +3685,8 @@
 2 GIVN Abram Jojna 
 2 SURN Krawczyk 
 1 SEX M
-1 FAMC @F5@
-1 FAMS @F6@
+1 FAMC @F2@
+1 FAMS @F21@
 1 BIRT
 2 DATE 1843
 2 PLAC Kock, Siedlce, Russian Empire (presently, Kock, Poland)
@@ -3326,7 +3701,7 @@
 2 GIVN Sura
 2 SURN Kuperszlag
 1 SEX F
-1 FAMS @F6@
+1 FAMS @F21@
 1 BIRT
 2 DATE 1844
 1 SOUR @S466339560@
@@ -3340,7 +3715,7 @@
 2 GIVN Lejb Wolf
 2 SURN Krawczyk
 1 SEX M
-1 FAMS @F5@
+1 FAMS @F2@
 1 SOUR @S466339560@
 2 PAGE Ancestry Family Tree
 2 _APID 260051006015:1030:16231684
@@ -3349,7 +3724,7 @@
 1 NAME Frajda //
 2 GIVN Frajda
 1 SEX F
-1 FAMS @F5@
+1 FAMS @F2@
 1 SOUR @S466339560@
 2 PAGE Ancestry Family Tree
 2 _APID 260051006026:1030:16231684
@@ -3360,41 +3735,302 @@
 2 SOUR @S466339191@
 3 PAGE Texas Department of State Health Services; Austin Texas, USA; Texas Death Certificates, 1903–1982
 3 _APID 1,2272::81589798
+2 SOUR @S466346322@
+3 PAGE The National Archives At Fort Worth; Forth Worth, TX; Declarations of Intention For Citizenship, 1906-1980; NAI Number: 571496; Record Group Title: Records of District Courts of the United States, 1685-2009; Record Group Number: 21
+3 _APID 1,2509::210618
+1 NAME Herman /Krafcheck/
+2 GIVN Herman
+2 SURN Krafcheck
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246626
+1 NAME Hyman Israel /Krafcheck/
+2 GIVN Hyman Israel
+2 SURN Krafcheck
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/158920828/hyman-israel-krafcheck
+3 _APID 1,60525::130600366
+1 NAME Chaim Srul Hyman /Krawczyk Krafcheck/
+2 GIVN Chaim Srul Hyman
+2 SURN Krawczyk Krafcheck
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
 1 SEX M
-1 FAMS @F8@
+1 FAMS @F6@
 1 BIRT
 2 DATE 15 Jun 1873
-2 PLAC Radom, Radom, Russian Empire (presently, Radom, Poland)
+2 PLAC Radin Ruissa
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
 2 SOUR @S466339191@
 3 PAGE Texas Department of State Health Services; Austin Texas, USA; Texas Death Certificates, 1903–1982
 3 _APID 1,2272::81589798
+2 SOUR @S466346322@
+3 PAGE The National Archives At Fort Worth; Forth Worth, TX; Declarations of Intention For Citizenship, 1906-1980; NAI Number: 571496; Record Group Title: Records of District Courts of the United States, 1685-2009; Record Group Number: 21
+3 _APID 1,2509::210618
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246626
+2 SOUR @S466339414@
+3 PAGE Registration State: Texas; Registration County: Harris
+3 _APID 1,6482::16907601
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/158920828/hyman-israel-krafcheck
+3 _APID 1,60525::130600366
+1 EVEN
+2 TYPE Arrival
+2 DATE 20 Aug 1911
+2 PLAC Galveston, Texas, USA
+2 SOUR @S466346322@
+3 PAGE The National Archives At Fort Worth; Forth Worth, TX; Declarations of Intention For Citizenship, 1906-1980; NAI Number: 571496; Record Group Title: Records of District Courts of the United States, 1685-2009; Record Group Number: 21
+3 _APID 1,2509::210618
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246626
+1 RESI
+2 DATE 1917-1918
+2 PLAC Houston, Harris, Texas, USA
+2 SOUR @S466339414@
+3 PAGE Registration State: Texas; Registration County: Harris
+3 _APID 1,6482::16907601
+1 RESI
+2 DATE 1930
+2 PLAC Houston, Houston, Harris, Texas, USA
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246626
+2 NOTE Marital Status: Married; Relation to Head of House: Head; Occupation: Proprietor
+1 EVEN
+2 TYPE Departure
+2 PLAC Bremen Germany
+2 SOUR @S466346322@
+3 PAGE The National Archives At Fort Worth; Forth Worth, TX; Declarations of Intention For Citizenship, 1906-1980; NAI Number: 571496; Record Group Title: Records of District Courts of the United States, 1685-2009; Record Group Number: 21
+3 _APID 1,2509::210618
 1 DEAT
 2 DATE 24 Dec 1947
 2 PLAC Houston, TX
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/158920828/hyman-israel-krafcheck
+3 _APID 1,60525::130600366
+1 DEAT
+2 DATE 24 December 1947
+2 PLAC Harris County, Texas, USA
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
+1 BURI
+2 PLAC Houston, Harris County, Texas, United States of America
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/158920828/hyman-israel-krafcheck
+3 _APID 1,60525::130600366
 1 SOUR @S466339560@
 2 PAGE Ancestry Family Tree
 2 _APID 77019233600:1030:89905403
 2 _APID 170121199256:1030:113704099
+2 _APID 162503752793:1030:192744850
 1 SOUR @S466339191@
 2 PAGE Texas Department of State Health Services; Austin Texas, USA; Texas Death Certificates, 1903–1982
 2 _APID 1,2272::81589798
+1 SOUR @S466346322@
+2 PAGE The National Archives At Fort Worth; Forth Worth, TX; Declarations of Intention For Citizenship, 1906-1980; NAI Number: 571496; Record Group Title: Records of District Courts of the United States, 1685-2009; Record Group Number: 21
+2 _APID 1,2509::210618
+1 SOUR @S466338630@
+2 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+2 _APID 1,6224::63246626
+1 SOUR @S466339414@
+2 PAGE Registration State: Texas; Registration County: Harris
+2 _APID 1,6482::16907601
+1 SOUR @S466341385@
+2 DATA
+3 WWW https://www.findagrave.com/memorial/158920828/hyman-israel-krafcheck
+2 _APID 1,60525::130600366
 0 @I182329882502@ INDI
-1 NAME Libby /Lipschitz/
-2 GIVN Libby
+1 NAME Liba Ruchla /Krawczyk/
+2 GIVN Liba Ruchla
+2 SURN Krawczyk
+2 SOUR @S466338438@
+3 _APID 1,1360::95156
+2 SOUR @S466347352@
+3 _APID 1,1411::554799
+2 SOUR @S466339191@
+3 PAGE Texas Department of State Health Services; Austin Texas, USA; Texas Death Certificates, 1903–1982
+3 _APID 1,2272::22934414
+2 SOUR @S466347375@
+3 PAGE The National Archives in Washington, DC; Washington, DC, USA; Passenger and Crew Lists of Vessels Arriving at New York, New York, 1897-1957; Microfilm Serial or NAID: T715; RG Title: Records of the Immigration and Naturalization Service, 1787-2004
+4 CONC ; RG: 85
+3 _APID 1,7488::4018119981
+2 SOUR @S466339379@
+3 _APID 1,60901::783127444
+2 SOUR @S528276028@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Houston, Harris, Texas; Roll: 792; Page: 12; Enumeration District: 263-603
+3 _APID 1,62308::191964957
+1 NAME Leba /Lipschitz/
+2 GIVN Leba
 2 SURN Lipschitz
+2 SOUR @S466346322@
+3 PAGE The National Archives At Fort Worth; Forth Worth, TX; Declarations of Intention For Citizenship, 1906-1980; NAI Number: 571496; Record Group Title: Records of District Courts of the United States, 1685-2009; Record Group Number: 21
+3 _APID 1,2509::900210618
+1 NAME Lela /Krafcheck/
+2 GIVN Lela
+2 SURN Krafcheck
+2 SOUR @S466339414@
+3 _APID 1,6482::116907601
+1 NAME Libbie /Krafcheck/
+2 GIVN Libbie
+2 SURN Krafcheck
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246667
+1 NAME Libby /Krafcheck/
+2 GIVN Libby
+2 SURN Krafcheck
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/158920838/libby-krafcheck
+3 _APID 1,60525::130600376
 1 SEX F
-1 FAMC @F26@
-1 FAMS @F8@
+1 FAMC @F29@
+1 FAMS @F6@
 1 BIRT
 2 DATE 15 Apr 1881
 2 PLAC Radzyn Podlaskie, Poland
+2 SOUR @S466338438@
+3 _APID 1,1360::95156
+2 SOUR @S466339191@
+3 PAGE Texas Department of State Health Services; Austin Texas, USA; Texas Death Certificates, 1903–1982
+3 _APID 1,2272::22934414
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246667
+2 SOUR @S466347375@
+3 PAGE The National Archives in Washington, DC; Washington, DC, USA; Passenger and Crew Lists of Vessels Arriving at New York, New York, 1897-1957; Microfilm Serial or NAID: T715; RG Title: Records of the Immigration and Naturalization Service, 1787-2004
+4 CONC ; RG: 85
+3 _APID 1,7488::4018119981
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/158920838/libby-krafcheck
+3 _APID 1,60525::130600376
+2 SOUR @S528276028@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Houston, Harris, Texas; Roll: 792; Page: 12; Enumeration District: 263-603
+3 _APID 1,62308::191964957
+1 BIRT
+2 DATE 15 Mar 1879
+2 PLAC Radzyn Podlaskie, Poland
+2 SOUR @S466347352@
+3 _APID 1,1411::554799
+1 EVEN
+2 TYPE Arrival
+2 DATE 1918
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246667
+1 EVEN
+2 TYPE Arrival
+2 DATE 6 Nov 1920
+2 PLAC New York, New York, USA
+2 SOUR @S466347375@
+3 PAGE The National Archives in Washington, DC; Washington, DC, USA; Passenger and Crew Lists of Vessels Arriving at New York, New York, 1897-1957; Microfilm Serial or NAID: T715; RG Title: Records of the Immigration and Naturalization Service, 1787-2004
+4 CONC ; RG: 85
+3 _APID 1,7488::4018119981
+1 RESI
+2 DATE 1930
+2 PLAC Houston, Houston, Harris, Texas, USA
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246667
+2 NOTE Marital Status: Married; Relation to Head of House: Wife
+1 RESI
+2 DATE 1950
+2 PLAC Houston, Harris, Texas, USA
+2 SOUR @S528276028@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Houston, Harris, Texas; Roll: 792; Page: 12; Enumeration District: 263-603
+3 _APID 1,62308::191964957
+2 NOTE Relation to Head of House: Head; Marital Status: Widowed
+1 RESI
+2 DATE Abt 1963
+2 PLAC Houston, Harris, Texas, USA
+2 SOUR @S466339191@
+3 PAGE Texas Department of State Health Services; Austin Texas, USA; Texas Death Certificates, 1903–1982
+3 _APID 1,2272::22934414
+1 EVEN
+2 TYPE Departure
+2 PLAC Antwerp, Belgium
+2 SOUR @S466347375@
+3 PAGE The National Archives in Washington, DC; Washington, DC, USA; Passenger and Crew Lists of Vessels Arriving at New York, New York, 1897-1957; Microfilm Serial or NAID: T715; RG Title: Records of the Immigration and Naturalization Service, 1787-2004
+4 CONC ; RG: 85
+3 _APID 1,7488::4018119981
+1 RESI
+2 PLAC Poland
+2 SOUR @S466347375@
+3 PAGE The National Archives in Washington, DC; Washington, DC, USA; Passenger and Crew Lists of Vessels Arriving at New York, New York, 1897-1957; Microfilm Serial or NAID: T715; RG Title: Records of the Immigration and Naturalization Service, 1787-2004
+4 CONC ; RG: 85
+3 _APID 1,7488::4018119981
+2 NOTE Marital Status: Married
 1 DEAT
 2 DATE 6 Sep 1963
-2 PLAC Houston, TX
+2 PLAC Houston, Harris, Texas, USA
+2 SOUR @S466338438@
+3 _APID 1,1360::95156
+2 SOUR @S466347352@
+3 _APID 1,1411::554799
+2 SOUR @S466339191@
+3 PAGE Texas Department of State Health Services; Austin Texas, USA; Texas Death Certificates, 1903–1982
+3 _APID 1,2272::22934414
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/158920838/libby-krafcheck
+3 _APID 1,60525::130600376
+1 DEAT
+2 DATE 6 September 1963
+2 PLAC Harris County, Texas, USA
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
+1 BURI
+2 PLAC Houston, Harris County, Texas, United States of America
+2 SOUR @S466338438@
+3 _APID 1,1360::95156
+2 SOUR @S466347352@
+3 _APID 1,1411::554799
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/158920838/libby-krafcheck
+3 _APID 1,60525::130600376
 1 SOUR @S466339560@
 2 PAGE Ancestry Family Tree
 2 _APID 77019234907:1030:89905403
 2 _APID 170121199366:1030:113704099
+2 _APID 162503752794:1030:192744850
+1 SOUR @S466338438@
+2 _APID 1,1360::95156
+1 SOUR @S466347352@
+2 _APID 1,1411::554799
+1 SOUR @S466339191@
+2 PAGE Texas Department of State Health Services; Austin Texas, USA; Texas Death Certificates, 1903–1982
+2 _APID 1,2272::22934414
+1 SOUR @S466346322@
+2 PAGE The National Archives At Fort Worth; Forth Worth, TX; Declarations of Intention For Citizenship, 1906-1980; NAI Number: 571496; Record Group Title: Records of District Courts of the United States, 1685-2009; Record Group Number: 21
+2 _APID 1,2509::900210618
+1 SOUR @S466338630@
+2 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+2 _APID 1,6224::63246667
+1 SOUR @S466339414@
+2 _APID 1,6482::116907601
+1 SOUR @S466347375@
+2 PAGE The National Archives in Washington, DC; Washington, DC, USA; Passenger and Crew Lists of Vessels Arriving at New York, New York, 1897-1957; Microfilm Serial or NAID: T715; RG Title: Records of the Immigration and Naturalization Service, 1787-2004
+3 CONC ; RG: 85
+2 _APID 1,7488::4018119981
+1 SOUR @S466341385@
+2 DATA
+3 WWW https://www.findagrave.com/memorial/158920838/libby-krafcheck
+2 _APID 1,60525::130600376
+1 SOUR @S466339379@
+2 _APID 1,60901::783127444
+1 SOUR @S528276028@
+2 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Houston, Harris, Texas; Roll: 792; Page: 12; Enumeration District: 263-603
+2 _APID 1,62308::191964957
 0 @I182330007515@ INDI
 1 NAME Harry D /Skversky (Squires)/
 2 GIVN Harry D
@@ -3432,8 +4068,8 @@
 3 PAGE Year: 1940; Census Place: New York, Kings, New York; Roll: m-t0627-02583; Page: 3B; Enumeration District: 24-1424A
 3 _APID 1,2442::4267279
 1 SEX M
-1 FAMC @F14@
-1 FAMS @F4@
+1 FAMC @F28@
+1 FAMS @F20@
 1 BIRT
 2 DATE 4 Feb 1883
 2 PLAC Pennsylvania, USA
@@ -3589,7 +4225,7 @@
 2 SOUR @S466338541@
 3 _APID 1,2442::4267280
 1 SEX F
-1 FAMS @F4@
+1 FAMS @F20@
 1 BIRT
 2 DATE abt 1903
 2 PLAC Philadelphia
@@ -3653,7 +4289,7 @@
 2 SOUR @S466339379@
 3 _APID 1,60901::44335734
 1 SEX M
-1 FAMC @F4@
+1 FAMC @F20@
 1 BIRT
 2 DATE 8 Dec 1923
 2 PLAC Philadelphia, Pennsylvania
@@ -3700,16 +4336,24 @@
 3 _APID 1,2717::93741
 2 SOUR @S466339160@
 3 _APID 1,7602::52638433
+2 SOUR @S528402704@
+3 PAGE The Times; Publication Date: 10 Apr 1902; Publication Place: Philadelphia, Pennsylvania, USA; URL: https://www.newspapers.com/image/52558604/?article=be5ed5e9-c794-43a2-8881-0f3cf9ba931f&xid=4716&terms=Benjamin_Skversky
+3 DATA
+4 WWW https://www.newspapers.com/image/52558604/?article=be5ed5e9-c794-43a2-8881-0f3cf9ba931f&xid=4716&terms=Benjamin_Skversky
+3 _APID 1,50069::5600449900
 2 SOUR @S466341385@
 3 _APID 1,60525::181267996
+2 SOUR @S528402700@
+3 PAGE The National Archives at College Park; College Park, Maryland; Record Group Title: Records of the Office of the Quartermaster General, 1774-1985; Record Group Number: 92; Roll or Box Number: 447
+3 _APID 1,61174::108704261
 1 NAME Ben J /Skversky/
 2 GIVN Ben J
 2 SURN Skversky
 2 SOUR @S466339379@
 3 _APID 1,60901::609850127
 1 SEX M
-1 FAMC @F3@
-1 FAMS @F14@
+1 FAMC @F19@
+1 FAMS @F28@
 1 BIRT
 2 DATE Sep 1859
 2 PLAC Russia
@@ -3734,6 +4378,14 @@
 2 SOUR @S466339160@
 3 _APID 1,7602::52638433
 1 RESI
+2 DATE 10 Apr 1902
+2 PLAC Philadelphia, Pennsylvania, USA
+2 SOUR @S528402704@
+3 PAGE The Times; Publication Date: 10 Apr 1902; Publication Place: Philadelphia, Pennsylvania, USA; URL: https://www.newspapers.com/image/52558604/?article=be5ed5e9-c794-43a2-8881-0f3cf9ba931f&xid=4716&terms=Benjamin_Skversky
+3 DATA
+4 WWW https://www.newspapers.com/image/52558604/?article=be5ed5e9-c794-43a2-8881-0f3cf9ba931f&xid=4716&terms=Benjamin_Skversky
+3 _APID 1,50069::5600449900
+1 RESI
 2 DATE 1910
 2 PLAC Philadelphia Ward 1, Philadelphia, Pennsylvania, USA
 2 SOUR @S466339250@
@@ -3749,7 +4401,7 @@
 3 PAGE The National Archives in Washington, D.C.; Washington, D.C.; Record Group Title: Records of District Courts of the United States; Record Group Number: 21
 3 _APID 1,2717::93741
 1 DEAT
-2 DATE April 1925
+2 DATE 2 April 1925
 2 SOUR @S466341385@
 3 _APID 1,60525::181267996
 1 BURI
@@ -3780,17 +4432,32 @@
 2 _APID 1,7602::52638433
 1 SOUR @S466339250@
 2 _APID 1,7884::25215835
+1 SOUR @S528402704@
+2 PAGE The Times; Publication Date: 10 Apr 1902; Publication Place: Philadelphia, Pennsylvania, USA; URL: https://www.newspapers.com/image/52558604/?article=be5ed5e9-c794-43a2-8881-0f3cf9ba931f&xid=4716&terms=Benjamin_Skversky
+2 DATA
+3 WWW https://www.newspapers.com/image/52558604/?article=be5ed5e9-c794-43a2-8881-0f3cf9ba931f&xid=4716&terms=Benjamin_Skversky
+2 _APID 1,50069::5600449900
 1 SOUR @S466341385@
 2 _APID 1,60525::181267996
 1 SOUR @S466339379@
 2 _APID 1,60901::603559833
 2 _APID 1,60901::609850127
+1 SOUR @S528402700@
+2 PAGE The National Archives at College Park; College Park, Maryland; Record Group Title: Records of the Office of the Quartermaster General, 1774-1985; Record Group Number: 92; Roll or Box Number: 447
+2 _APID 1,61174::108704261
 0 @I182330620726@ INDI
 1 NAME Rose /Jablow/
 2 GIVN Rose
 2 SURN Jablow
 2 SOUR @S466339379@
 3 _APID 1,60901::753559833
+1 NAME Rose /Skversky/
+2 GIVN Rose
+2 SURN Skversky
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/218995173/rose-skversky
+3 _APID 1,60525::188601445
 1 NAME Rose /Skversky/
 2 GIVN Rose
 2 SURN Skversky
@@ -3817,8 +4484,8 @@
 2 SOUR @S466339160@
 3 _APID 1,7602::52638434
 1 SEX F
-1 FAMC @F29@
-1 FAMS @F14@
+1 FAMC @F34@
+1 FAMS @F28@
 1 BIRT
 2 DATE Nov 1862
 2 PLAC Russia
@@ -3860,6 +4527,16 @@
 1 DEAT
 2 DATE 15 Nov 1939
 2 PLAC Philadelphia, Philadelphia, Pennsylvania, USA
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/218995173/rose-skversky
+3 _APID 1,60525::188601445
+1 BURI
+2 PLAC Philadelphia, Philadelphia County, Pennsylvania, United States of America
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/218995173/rose-skversky
+3 _APID 1,60525::188601445
 1 SOUR @S466339560@
 2 PAGE Ancestry Family Tree
 2 _APID 100108974587:1030:50532568
@@ -3878,6 +4555,10 @@
 2 _APID 1,7602::52638434
 1 SOUR @S466339250@
 2 _APID 1,7884::113572546
+1 SOUR @S466341385@
+2 DATA
+3 WWW https://www.findagrave.com/memorial/218995173/rose-skversky
+2 _APID 1,60525::188601445
 1 SOUR @S466339379@
 2 _APID 1,60901::753559833
 2 _APID 1,60901::759850127
@@ -3893,7 +4574,7 @@
 2 SOUR @S466495981@
 3 _APID 1,5164::14792933
 1 SEX F
-1 FAMC @F14@
+1 FAMC @F28@
 1 BIRT
 2 DATE 26 Jul 1887
 2 PLAC Russia
@@ -3943,7 +4624,7 @@
 2 SOUR @S466339160@
 3 _APID 1,7602::52638436
 1 SEX M
-1 FAMC @F14@
+1 FAMC @F28@
 1 BIRT
 2 DATE 25 May 1883
 2 PLAC Soviet Union
@@ -3993,7 +4674,7 @@
 2 SOUR @S466339160@
 3 _APID 1,7602::52638437
 1 SEX M
-1 FAMC @F14@
+1 FAMC @F28@
 1 BIRT
 2 DATE Sep 1885
 2 PLAC Russia
@@ -4041,7 +4722,7 @@
 2 SOUR @S466339379@
 3 _APID 1,60901::9850127
 1 SEX M
-1 FAMC @F14@
+1 FAMC @F28@
 1 BIRT
 2 DATE Sep 1887
 2 PLAC Pennsylvania, USA
@@ -4089,7 +4770,7 @@
 2 SOUR @S466339223@
 3 _APID 1,6061::70668199
 1 SEX M
-1 FAMC @F14@
+1 FAMC @F28@
 1 BIRT
 2 DATE Sep 1890
 2 PLAC Pennsylvania, USA
@@ -4128,8 +4809,11 @@
 2 SURN Skversky
 2 SOUR @S466339160@
 3 _APID 1,7602::52638440
+2 SOUR @S528402700@
+3 PAGE The National Archives at College Park; College Park, Maryland; Record Group Title: Records of the Office of the Quartermaster General, 1774-1985; Record Group Number: 92; Roll or Box Number: 447
+3 _APID 1,61174::3704261
 1 SEX M
-1 FAMC @F14@
+1 FAMC @F28@
 1 BIRT
 2 DATE Aug 1893
 2 PLAC Pennsylvania, USA
@@ -4145,11 +4829,23 @@
 2 PLAC Philadelphia Ward 1, Philadelphia, Pennsylvania, USA
 2 SOUR @S466339250@
 3 _APID 1,7884::113572552
+1 EVEN
+2 TYPE Departure
+2 DATE 3 Aug 1918
+2 PLAC Hoboken, New Jersey
+2 SOUR @S528402700@
+3 PAGE The National Archives at College Park; College Park, Maryland; Record Group Title: Records of the Office of the Quartermaster General, 1774-1985; Record Group Number: 92; Roll or Box Number: 447
+3 _APID 1,61174::3704261
 1 RESI
 2 DATE 1920
 2 PLAC Philadelphia Ward 39, Philadelphia, Pennsylvania, USA
 2 SOUR @S466339223@
 3 _APID 1,6061::70668200
+1 RESI
+2 PLAC Philadelphia, Pennsylvania
+2 SOUR @S528402700@
+3 PAGE The National Archives at College Park; College Park, Maryland; Record Group Title: Records of the Office of the Quartermaster General, 1774-1985; Record Group Number: 92; Roll or Box Number: 447
+3 _APID 1,61174::3704261
 1 SOUR @S466339560@
 2 PAGE Ancestry Family Tree
 2 _APID 100108974592:1030:50532568
@@ -4162,12 +4858,15 @@
 2 _APID 1,7602::52638440
 1 SOUR @S466339250@
 2 _APID 1,7884::113572552
+1 SOUR @S528402700@
+2 PAGE The National Archives at College Park; College Park, Maryland; Record Group Title: Records of the Office of the Quartermaster General, 1774-1985; Record Group Number: 92; Roll or Box Number: 447
+2 _APID 1,61174::3704261
 0 @I182330623405@ INDI
 1 NAME Joseph /Skverski/
 2 GIVN Joseph
 2 SURN Skverski
 1 SEX M
-1 FAMS @F3@
+1 FAMS @F19@
 1 BIRT
 2 PLAC Russia
 1 SOUR @S466339560@
@@ -4178,7 +4877,7 @@
 1 NAME /Galcbie/
 2 SURN Galcbie
 1 SEX F
-1 FAMS @F3@
+1 FAMS @F19@
 1 BIRT
 2 PLAC Russia
 1 SOUR @S466339560@
@@ -4189,7 +4888,7 @@
 2 GIVN Jennie
 2 SURN Gersh
 1 SEX F
-1 FAMC @F3@
+1 FAMC @F19@
 1 BIRT
 2 DATE 1867
 2 PLAC Russia
@@ -4205,7 +4904,7 @@
 2 GIVN Louis Lyon
 2 SURN Squires
 1 SEX M
-1 FAMC @F14@
+1 FAMC @F28@
 1 BIRT
 2 DATE 1886
 1 DEAT
@@ -4219,7 +4918,7 @@
 2 GIVN Harry D.
 2 SURN Squires
 1 SEX M
-1 FAMC @F14@
+1 FAMC @F28@
 1 BIRT
 2 DATE 1883
 1 SOUR @S466339560@
@@ -4230,7 +4929,7 @@
 2 GIVN Jacob
 2 SURN Cohen
 1 SEX M
-1 FAMS @F29@
+1 FAMS @F34@
 1 BIRT
 2 DATE Abt. 1840
 2 PLAC Russia
@@ -4243,7 +4942,7 @@
 2 GIVN Ashley Sarah
 2 SURN Thomas
 1 SEX F
-1 FAMC @F17@
+1 FAMC @F8@
 1 BIRT
 2 DATE 23 03 2001
 2 PLAC , Houston, Harris, Texas, USA
@@ -4252,9 +4951,14 @@
 2 GIVN Bessie
 2 SURN Lipschitz
 1 SEX F
-1 FAMS @F26@
+1 FAMS @F29@
+1 BIRT
+2 DATE 1841
 1 DEAT
 2 PLAC Radom, Radom, Russian Empire (presently, Radom, Poland)
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 162503752802:1030:192744850
 0 @I182767689280@ INDI
 1 NAME John C. /Thomas/ Sr
 2 GIVN John C.
@@ -4299,8 +5003,8 @@
 4 WWW https://www.newspapers.com/image/76746636/?article=3f6592b0-f021-495c-8350-07821e0bd9dc&xid=5582&terms=John_C._Thomas
 3 _APID 1,50073::4301696729
 1 SEX M
-1 FAMC @F10@
-1 FAMS @F18@
+1 FAMC @F24@
+1 FAMS @F9@
 1 BIRT
 2 DATE 18 Mar 1784
 2 PLAC Edgefield, Edgefield, South Carolina
@@ -4437,8 +5141,8 @@
 2 SOUR @S528381266@
 3 _APID 1,2085::77781
 1 SEX F
-1 FAMC @F13@
-1 FAMS @F18@
+1 FAMC @F27@
+1 FAMS @F9@
 1 BIRT
 2 DATE 1785
 2 PLAC South Carolina,USA
@@ -4485,15 +5189,15 @@
 2 DATA
 3 WWW https://gw.geneanet.org/jdwileyjdw?n=ghesling+gayland+springer&oc=&p=phoebe
 2 _APID 1,62476::6257431613
-1 OBJE @O1@
+1 OBJE @O3@
 2 _PRIM Y
-1 OBJE @O33@
+1 OBJE @O39@
 0 @I182767690814@ INDI
 1 NAME Joseph "Job" /Springer/
 2 GIVN Joseph "Job"
 2 SURN Springer
 1 SEX M
-1 FAMS @F13@
+1 FAMS @F27@
 1 BIRT
 2 DATE 1753
 2 PLAC Bertie, North Carolina
@@ -4508,7 +5212,7 @@
 2 GIVN Joyce Ann Thomas
 2 SURN Callihan
 1 SEX F
-1 FAMS @F13@
+1 FAMS @F27@
 1 BIRT
 2 DATE 1754
 2 PLAC Edgefield, Edgefield, South Carolina
@@ -4523,7 +5227,7 @@
 2 GIVN Betsy
 2 SURN Thomas
 1 SEX F
-1 FAMC @F18@
+1 FAMC @F9@
 1 BIRT
 2 DATE 10 Nov 1805
 2 PLAC , Baldwin, Georgia, USA
@@ -4539,7 +5243,7 @@
 2 GIVN William M
 2 SURN Thomas
 1 SEX M
-1 FAMC @F18@
+1 FAMC @F9@
 1 BIRT
 2 DATE 15 January 1825
 2 PLAC Marengo, Alabama, USA
@@ -4557,7 +5261,7 @@
 2 SURN Thomas
 2 NSFX Jr
 1 SEX M
-1 FAMC @F18@
+1 FAMC @F9@
 1 BIRT
 2 DATE 02 Jun 1823
 2 PLAC Marengo, Alabama, USA
@@ -4571,7 +5275,7 @@
 2 GIVN Annie
 2 SURN Thomas
 1 SEX F
-1 FAMC @F18@
+1 FAMC @F9@
 1 BIRT
 2 DATE 13 Sep 1821
 2 PLAC Marengo, Alabama, USA
@@ -4598,7 +5302,7 @@
 2 SOUR @S466339560@
 3 PAGE Ancestry Family Tree
 1 SEX F
-1 FAMC @F18@
+1 FAMC @F9@
 1 BIRT
 2 DATE 19 Apr 1819
 2 PLAC Marengo, Alabama, USA
@@ -4625,7 +5329,7 @@
 2 GIVN David
 2 SURN Thomas
 1 SEX M
-1 FAMC @F18@
+1 FAMC @F9@
 1 BIRT
 2 DATE 27 Dec 1816
 2 PLAC Marengo, Alabama, United States
@@ -4642,7 +5346,7 @@
 2 GIVN John Nelson
 2 SURN Thomas
 1 SEX M
-1 FAMC @F18@
+1 FAMC @F9@
 1 BIRT
 2 DATE 18 Jan 1815
 2 PLAC Marengo, Alabama, United States
@@ -4663,7 +5367,7 @@
 2 GIVN Lucinda Lucy
 2 SURN Thomas
 1 SEX F
-1 FAMC @F18@
+1 FAMC @F9@
 1 BIRT
 2 DATE 1 Aug 1810
 2 PLAC Baldwin, Georgia, United States
@@ -4690,7 +5394,7 @@
 2 SOUR @S466339560@
 3 PAGE Ancestry Family Tree
 1 SEX F
-1 FAMC @F18@
+1 FAMC @F9@
 1 BIRT
 2 DATE 10 Dec 1807
 2 PLAC Baldwin, Georgia, United States
@@ -4707,7 +5411,7 @@
 2 GIVN Nancy
 2 SURN Thomas
 1 SEX F
-1 FAMC @F18@
+1 FAMC @F9@
 1 BIRT
 2 DATE 22 Oct 1803
 2 PLAC Baldwin, Georgia, United States
@@ -4723,7 +5427,7 @@
 2 GIVN Sentha
 2 SURN Thomas
 1 SEX F
-1 FAMC @F18@
+1 FAMC @F9@
 1 BIRT
 2 DATE 24 Mar 1802
 2 PLAC Warren, Georgia, United States
@@ -4740,7 +5444,7 @@
 2 GIVN James Simeon
 2 SURN Thomas
 1 SEX M
-1 FAMC @F18@
+1 FAMC @F9@
 1 BIRT
 2 DATE 27 Dec 1827
 2 PLAC Sumter County, Alabama, United States of America
@@ -4760,7 +5464,7 @@
 2 SOUR @S466339560@
 3 PAGE Ancestry Family Tree
 1 SEX M
-1 FAMC @F18@
+1 FAMC @F9@
 1 BIRT
 2 DATE 2 Jun 1823
 2 PLAC Marengo, Alabama, United States
@@ -4781,13 +5485,73 @@
 3 DATA
 4 WWW https://www.obituare.com/j-g--thomas-obituary-36246/
 3 _APID 1,7545::129483956
+2 SOUR @S466338397@
+3 _APID 1,62209::69913128
+1 NAME Mary Elizabeth /Thomas/
+2 GIVN Mary Elizabeth
+2 SURN Thomas
+2 SOUR @S466338293@
+3 PAGE Texas Department of State Health Services; Austin, Texas, USA; Texas Birth Indexes
+3 _APID 1,8781::315140694
+1 NAME Mary E /Thomas/
+2 GIVN Mary E
+2 SURN Thomas
+2 SOUR @S466338308@
+3 PAGE Texas Department of State Health Services; Austin, Texas; Texas Marriage Index, 1966-2021
+3 _APID 1,8795::11382542
 1 SEX F
-1 FAMC @F28@
+1 FAMC @F4@
+1 FAMS @F15@
+1 BIRT
+2 DATE 27 Mar 1957
+2 SOUR @S466338701@
+3 _APID 1,1788::344642524
+2 SOUR @S466338308@
+3 PAGE Texas Department of State Health Services; Austin, Texas; Texas Marriage Index, 1966-2021
+3 _APID 1,8795::11382542
+2 SOUR @S466338397@
+3 _APID 1,62209::69913128
+1 RESI
+2 DATE 1988-2020
+2 PLAC Kingwood, Texas, USA
+2 SOUR @S466338397@
+3 _APID 1,62209::69913128
+1 RESI
+2 DATE 1993
+2 PLAC Humble, TX
+2 SOUR @S466338701@
+3 _APID 1,1788::344642524
+1 SOUR @S466338701@
+2 _APID 1,1788::344642524
 1 SOUR @S466338642@
 2 PAGE Publication Date: 20/ Feb/ 2019; Publication Place: Charlotte, TX, USA; URL: https://www.obituare.com/j-g--thomas-obituary-36246/
 2 DATA
 3 WWW https://www.obituare.com/j-g--thomas-obituary-36246/
 2 _APID 1,7545::129483956
+1 SOUR @S466338293@
+2 PAGE Texas Department of State Health Services; Austin, Texas, USA; Texas Birth Indexes
+2 _APID 1,8781::315140694
+1 SOUR @S466338308@
+2 PAGE Texas Department of State Health Services; Austin, Texas; Texas Marriage Index, 1966-2021
+2 _APID 1,8795::11382542
+1 SOUR @S466338397@
+2 _APID 1,62209::69913128
+1 OBJE @O2@
+2 _PRIM Y
+2 _CROP
+3 _LEFT 378
+3 _TOP 277
+3 _WDTH 129
+3 _HGHT 129
+3 _TYPE primary
+1 OBJE @O44@
+1 OBJE @O30@
+2 _CROP
+3 _LEFT 0
+3 _TOP 0
+3 _WDTH 206
+3 _HGHT 206
+3 _TYPE primary
 0 @I182767693607@ INDI
 1 NAME Frank Leslie /Crawley/ (DNA)
 2 GIVN Frank Leslie
@@ -4797,7 +5561,7 @@
 3 PAGE Year: 1910; Census Place: Marshall Ward 1, Harrison, Texas; Roll: T624_1562; Page: 3b; Enumeration District: 0044; FHL microfilm: 1375575
 3 _APID 1,7884::125853317
 1 SEX M
-1 FAMC @F12@
+1 FAMC @F26@
 1 BIRT
 2 DATE 4 Sep 1893
 2 PLAC Marshall, Harrison, Texas, USA
@@ -4829,7 +5593,7 @@
 3 PAGE Year: 1910; Census Place: Marshall Ward 1, Harrison, Texas; Roll: T624_1562; Page: 3b; Enumeration District: 0044; FHL microfilm: 1375575
 3 _APID 1,7884::125853321
 1 SEX M
-1 FAMC @F12@
+1 FAMC @F26@
 1 BIRT
 2 DATE 18 Aug 1906
 2 PLAC Marshall, Harrison, Texas, USA
@@ -4864,7 +5628,7 @@
 3 PAGE Year: 1910; Census Place: Marshall Ward 1, Harrison, Texas; Roll: T624_1562; Page: 3b; Enumeration District: 0044; FHL microfilm: 1375575
 3 _APID 1,7884::125853319
 1 SEX M
-1 FAMC @F12@
+1 FAMC @F26@
 1 BIRT
 2 DATE 18 Mar 1900
 2 PLAC Marshall, Harrison, Texas, USA
@@ -4915,7 +5679,7 @@
 3 PAGE Year: 1910; Census Place: Marshall Ward 1, Harrison, Texas; Roll: T624_1562; Page: 3b; Enumeration District: 0044; FHL microfilm: 1375575
 3 _APID 1,7884::125853318
 1 SEX M
-1 FAMC @F12@
+1 FAMC @F26@
 1 BIRT
 2 DATE 13 May 1895
 2 PLAC Marshall, Harrison, Texas, USA
@@ -4956,7 +5720,7 @@
 2 GIVN Abigail Staton
 2 SURN Crawley
 1 SEX F
-1 FAMC @F12@
+1 FAMC @F26@
 1 BIRT
 2 DATE 12 Mar 1891
 2 PLAC Henderson, Texas, USA
@@ -4983,7 +5747,7 @@
 2 SOUR @S466339379@
 3 _APID 1,60901::643632680
 1 SEX M
-1 FAMS @F1@
+1 FAMS @F18@
 1 BIRT
 2 DATE 24 Jul 1866
 2 PLAC Simsboro, Lincoln, Louisiana, USA
@@ -5021,7 +5785,7 @@
 3 PAGE Year: 1910; Census Place: Police Jury Ward 3, Lincoln, Louisiana; Roll: T624_517; Page: 2a; Enumeration District: 0073; FHL microfilm: 1374530
 3 _APID 1,7884::168958153
 1 SEX F
-1 FAMS @F1@
+1 FAMS @F18@
 1 BIRT
 2 DATE 23 Mar 1873
 2 PLAC Farmerville, Union, Louisiana, USA
@@ -5054,7 +5818,7 @@
 3 PAGE Year: 1910; Census Place: Police Jury Ward 3, Lincoln, Louisiana; Roll: T624_517; Page: 2b; Enumeration District: 0073; FHL microfilm: 1374530
 3 _APID 1,7884::168958154
 1 SEX M
-1 FAMC @F1@
+1 FAMC @F18@
 1 BIRT
 2 DATE 1898
 2 PLAC Louisiana
@@ -5079,7 +5843,7 @@
 3 PAGE Year: 1910; Census Place: Police Jury Ward 3, Lincoln, Louisiana; Roll: T624_517; Page: 2b; Enumeration District: 0073; FHL microfilm: 1374530
 3 _APID 1,7884::168958155
 1 SEX M
-1 FAMC @F1@
+1 FAMC @F18@
 1 BIRT
 2 DATE 1900
 2 PLAC Louisiana
@@ -5105,7 +5869,7 @@
 4 WWW https://gw.geneanet.org/snapshot?n=thomas&oc=&p=obie+roberts
 3 _APID 1,62476::7594934661
 1 SEX M
-1 FAMC @F19@
+1 FAMC @F10@
 1 BIRT
 2 DATE 18 October 1878
 2 PLAC Shiro, Grimes County, U. S. A., Texas, USA
@@ -5129,7 +5893,7 @@
 2 GIVN David
 2 SURN Thomas
 1 SEX M
-1 FAMC @F10@
+1 FAMC @F24@
 1 BIRT
 2 DATE 1775
 2 PLAC Edgefield, Edgefield, South Carolina, United States
@@ -5144,7 +5908,7 @@
 2 GIVN Jeremiah
 2 SURN Thomas
 1 SEX M
-1 FAMC @F10@
+1 FAMC @F24@
 1 BIRT
 2 DATE 1767
 2 PLAC SC
@@ -5156,7 +5920,7 @@
 2 GIVN Joshua
 2 SURN Thomas
 1 SEX M
-1 FAMC @F10@
+1 FAMC @F24@
 1 BIRT
 2 DATE 1768
 2 PLAC , Kershaw, South Carolina, USA
@@ -5171,7 +5935,7 @@
 2 GIVN Elizabeth Betsy
 2 SURN THOMAS
 1 SEX F
-1 FAMC @F10@
+1 FAMC @F24@
 1 BIRT
 2 DATE 1779
 2 PLAC Edgefield, Edgefield, South Carolina, United States
@@ -5186,7 +5950,7 @@
 2 GIVN Butler
 2 SURN Thomas
 1 SEX M
-1 FAMC @F10@
+1 FAMC @F24@
 1 BIRT
 2 DATE 1780
 2 PLAC SC
@@ -5198,7 +5962,7 @@
 2 GIVN Jane Gussey
 2 SURN Thomas
 1 SEX F
-1 FAMC @F10@
+1 FAMC @F24@
 1 BIRT
 2 DATE 1789
 2 PLAC Georgia, United States
@@ -5234,8 +5998,8 @@
 2 SOUR @S466339560@
 3 PAGE Ancestry Family Tree
 1 SEX M
-1 FAMC @F24@
-1 FAMS @F10@
+1 FAMC @F16@
+1 FAMS @F24@
 1 BIRT
 2 DATE 1740
 2 PLAC Bertie County, North Carolina, USA
@@ -5290,6 +6054,7 @@
 2 _APID 112540203253:1030:3606891
 2 _APID 360044518167:1030:5509998
 2 _APID 312728516583:1030:16920665
+2 _APID 152502625492:1030:86149137
 1 SOUR @S528389714@
 2 _APID 1,2324::1439
 1 SOUR @S528389737@
@@ -5323,7 +6088,7 @@
 2 SOUR @S466339560@
 3 PAGE Ancestry Family Tree
 1 SEX F
-1 FAMS @F10@
+1 FAMS @F24@
 1 BIRT
 2 DATE 1754
 2 PLAC , Edgefield, South Carolina, USA
@@ -5336,8 +6101,8 @@
 2 _APID 112540204043:1030:3606891
 2 _APID 360044518174:1030:5509998
 0 @I182767901516@ INDI
-1 NAME James E /Thomas/
-2 GIVN James E
+1 NAME James Clark /Thomas/
+2 GIVN James Clark
 2 SURN Thomas
 2 SOUR @S466339560@
 3 PAGE Ancestry Family Tree
@@ -5360,9 +6125,9 @@
 2 SOUR @S466339560@
 3 PAGE Ancestry Family Tree
 1 SEX M
-1 FAMC @F15@
-1 FAMS @F24@
-1 FAMS @F27@
+1 FAMC @F30@
+1 FAMS @F16@
+1 FAMS @F33@
 1 BIRT
 2 DATE 1714
 2 PLAC New Kent, Nansemond County, Virginia
@@ -5383,8 +6148,10 @@
 2 SOUR @S528389776@
 3 _APID 1,4282::1572487
 1 DEAT
-2 DATE November 1780
-2 PLAC Bertie County, North Carolina, USA
+2 DATE 22 Oct 1780
+2 PLAC Bertie, North Carolina
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
 2 SOUR @S528389758@
 3 _APID 1,3945::845
 2 SOUR @S528381201@
@@ -5405,6 +6172,7 @@
 2 PAGE Ancestry Family Tree
 2 _APID 360197466236:1030:5509998
 2 _APID 312724976556:1030:16920665
+2 _APID 152502625120:1030:86149137
 1 SOUR @S466345864@
 2 _APID 1,2204::1067557
 1 SOUR @S528389758@
@@ -5426,7 +6194,7 @@
 4 WWW https://gw.geneanet.org/ildiko?n=barnes&oc=3&p=sarah
 3 _APID 1,62476::5544123012
 1 SEX F
-1 FAMS @F24@
+1 FAMS @F16@
 1 BIRT
 2 DATE 1718
 2 PLAC Nansemond, Virginia, USA
@@ -5450,10 +6218,16 @@
 3 DATA
 4 WWW https://gw.geneanet.org/ildiko?n=barnes&oc=3&p=sarah
 3 _APID 1,62476::5544123012
+1 DEAT
+2 DATE 1806
+2 PLAC Bertie, North Carolina
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
 1 SOUR @S466339560@
 2 PAGE Ancestry Family Tree
 2 _APID 360197466275:1030:5509998
 2 _APID 312724976592:1030:16920665
+2 _APID 152502625121:1030:86149137
 1 SOUR @S466345864@
 2 _APID 1,2204::1067558
 1 SOUR @S528381201@
@@ -5465,19 +6239,20 @@
 2 GIVN Lewis G
 2 SURN Thomas
 1 SEX M
-1 FAMC @F24@
+1 FAMC @F16@
 1 BIRT
 2 DATE 1760
 2 PLAC Rockingham, Richmond County, North Carolina, USA
 1 SOUR @S466339560@
 2 PAGE Ancestry Family Tree
 2 _APID 312728518091:1030:16920665
+2 _APID 152502625493:1030:86149137
 0 @I182767902304@ INDI
 1 NAME Laudiee /Thomas/
 2 GIVN Laudiee
 2 SURN Thomas
 1 SEX F
-1 FAMC @F24@
+1 FAMC @F16@
 1 BIRT
 2 DATE 1742
 2 PLAC Bertie, North Carolina, United States
@@ -5487,27 +6262,35 @@
 1 SOUR @S466339560@
 2 PAGE Ancestry Family Tree
 2 _APID 312728517200:1030:16920665
+2 _APID 152502625122:1030:86149137
 0 @I182767902306@ INDI
 1 NAME James /Thomas/
 2 GIVN James
 2 SURN Thomas
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
 2 SOUR @S466345864@
 3 _APID 1,2204::1067555
 1 SEX M
-1 FAMC @F24@
+1 FAMC @F16@
 1 BIRT
 2 DATE 9 September 1760
 2 PLAC Bertie County, North Carolina, Colonial America
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
 2 SOUR @S466345864@
 3 _APID 1,2204::1067555
 1 DEAT
 2 DATE 9 September 1832
 2 PLAC Cadiz, Trigg County, Kentucky, USA
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
 2 SOUR @S466345864@
 3 _APID 1,2204::1067555
 1 SOUR @S466339560@
 2 PAGE Ancestry Family Tree
 2 _APID 312728516584:1030:16920665
+2 _APID 152502625490:1030:86149137
 1 SOUR @S466345864@
 2 _APID 1,2204::1067555
 0 @I182767902307@ INDI
@@ -5515,7 +6298,7 @@
 2 GIVN Laodicea Uredica "Dicey"
 2 SURN Thomas
 1 SEX F
-1 FAMC @F24@
+1 FAMC @F16@
 1 BIRT
 2 DATE 1742
 2 PLAC Bertie, North Carolina, United States
@@ -5525,12 +6308,13 @@
 1 SOUR @S466339560@
 2 PAGE Ancestry Family Tree
 2 _APID 312728516585:1030:16920665
+2 _APID 152502625497:1030:86149137
 0 @I182767902308@ INDI
 1 NAME Lydia "Martha" /Thomas/
 2 GIVN Lydia "Martha"
 2 SURN Thomas
 1 SEX F
-1 FAMC @F24@
+1 FAMC @F16@
 1 BIRT
 2 DATE 1765
 2 PLAC Bertie County, North Carolina, USA
@@ -5540,13 +6324,14 @@
 1 SOUR @S466339560@
 2 PAGE Ancestry Family Tree
 2 _APID 312728516586:1030:16920665
+2 _APID 152502625495:1030:86149137
 0 @I182767902309@ INDI
 1 NAME Ezekiel /Thomas/ Sr.
 2 GIVN Ezekiel
 2 SURN Thomas
 2 NSFX Sr.
 1 SEX M
-1 FAMC @F24@
+1 FAMC @F16@
 1 BIRT
 2 DATE 1753
 2 PLAC Bertie, North Carolina, United States
@@ -5556,12 +6341,13 @@
 1 SOUR @S466339560@
 2 PAGE Ancestry Family Tree
 2 _APID 312728516588:1030:16920665
+2 _APID 152502624686:1030:86149137
 0 @I182767902310@ INDI
 1 NAME Luke /Thomas/
 2 GIVN Luke
 2 SURN Thomas
 1 SEX M
-1 FAMC @F24@
+1 FAMC @F16@
 1 BIRT
 2 DATE 1760
 2 PLAC Bertie, North Carolina, United States
@@ -5571,12 +6357,13 @@
 1 SOUR @S466339560@
 2 PAGE Ancestry Family Tree
 2 _APID 312728516587:1030:16920665
+2 _APID 152502625494:1030:86149137
 0 @I182767902311@ INDI
 1 NAME Hester /Thomas/
 2 GIVN Hester
 2 SURN Thomas
 1 SEX F
-1 FAMC @F27@
+1 FAMC @F33@
 1 BIRT
 2 DATE 16 Feb 1752
 2 PLAC Saint Peter and Saint Kevin, Dublin, Dublin, Ireland
@@ -5588,7 +6375,7 @@
 2 GIVN SARAH "SELY"
 2 SURN THOMAS DEMENT
 1 SEX F
-1 FAMC @F24@
+1 FAMC @F16@
 1 BIRT
 2 DATE 6 Mar 1740
 2 PLAC Bertie, North Carolina, United States
@@ -5598,53 +6385,1059 @@
 1 SOUR @S466339560@
 2 PAGE Ancestry Family Tree
 2 _APID 312724976507:1030:16920665
+2 _APID 152502625496:1030:86149137
 0 @I182767902757@ INDI
-1 NAME Joseph /Thomas/ Sr
-2 GIVN Joseph
+1 NAME Joseph Luther /Thomas/ Sr.
+2 GIVN Joseph Luther
 2 SURN Thomas
-2 NSFX Sr
+2 NSFX Sr.
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
 2 SOUR @S466345864@
 3 _APID 1,2204::1067559
-1 FAMS @F15@
+1 FAMS @F30@
 1 BIRT
-2 PLAC Nansemond, Virginia
+2 DATE 1680
+2 PLAC Isle of Wight County, Virginia, USA
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
 2 SOUR @S466345864@
 3 _APID 1,2204::1067559
 1 DEAT
-2 DATE 10 Dec 1735
-2 PLAC Bertie, North Carolina
+2 DATE 10 December 1735
+2 PLAC Bertie County, North Carolina, USA
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
 2 SOUR @S466345864@
 3 _APID 1,2204::1067559
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 152502625488:1030:86149137
 1 SOUR @S466345864@
 2 _APID 1,2204::1067559
 0 @I182767902758@ INDI
-1 NAME Alice /Thomas/
-2 GIVN Alice
-2 SURN Thomas
+1 NAME Elizabeth Alice /Spivey/
+2 GIVN Elizabeth Alice
+2 SURN Spivey
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
 2 SOUR @S466345864@
 3 _APID 1,2204::1067560
-1 FAMS @F15@
+1 FAMS @F30@
 1 BIRT
 2 PLAC Nansemond, Virginia
 2 SOUR @S466345864@
 3 _APID 1,2204::1067560
+1 BIRT
+2 DATE 1687
+2 PLAC England, England, United Kingdom
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
 1 DEAT
 2 DATE 1740
 2 PLAC Bertie, North Carolina
 2 SOUR @S466345864@
 3 _APID 1,2204::1067560
+1 DEAT
+2 DATE 1758
+2 PLAC Bertie County, North Carolina, USA
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 152502625489:1030:86149137
 1 SOUR @S466345864@
 2 _APID 1,2204::1067560
-0 @F1@ FAM
-1 HUSB @I182767721891@
-1 WIFE @I182767721892@
-1 CHIL @I182767722456@
-1 CHIL @I182767722457@
-1 CHIL @I182329826202@
+0 @I182768041537@ INDI
+1 NAME Joseph Luther /Thomas/ Jr.
+2 GIVN Joseph Luther
+2 SURN Thomas
+2 NSFX Jr.
+1 SEX M
+1 FAMC @F30@
+1 BIRT
+2 DATE 1701
+2 PLAC New Kent, New Kent, Virginia Colony, Colonial America
+1 DEAT
+2 DATE 19 Jan 1758
+2 PLAC Bertie, North Carolina Colony, Colonial America
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 152502626144:1030:86149137
+0 @I182768041538@ INDI
+1 NAME Cornelius Michael /Thomas/
+2 GIVN Cornelius Michael
+2 SURN Thomas
+1 SEX M
+1 FAMC @F30@
+1 BIRT
+2 DATE 1710
+2 PLAC New Kent, New Kent, Virginia Colony, Colonial America
+1 DEAT
+2 DATE 1802
+2 PLAC Albemarle, Virginia, United States
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 152502626160:1030:86149137
+0 @I182768041539@ INDI
+1 NAME Charity /Thomas Wimberly/
+2 GIVN Charity
+2 SURN Thomas Wimberly
+1 SEX F
+1 FAMC @F30@
+1 BIRT
+2 DATE 1714
+2 PLAC Nansemond, Virginia Colony, Colonial America
+1 DEAT
+2 DATE 1706
+2 PLAC Edgecombe, Edgecombe, North Carolina Colony, Colonial America
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 152502626154:1030:86149137
+0 @I182768041540@ INDI
+1 NAME Mary /Thomas/
+2 GIVN Mary
+2 SURN Thomas
+1 SEX F
+1 FAMC @F30@
+1 BIRT
+2 DATE 1705
+2 PLAC Taunton, Bristol, Massachusetts Colony, Colonial America
+1 DEAT
+2 DATE 13 Nov 1767
+2 PLAC Granville, South Carolina Colony, Colonial America
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 152502626145:1030:86149137
+0 @I182768041541@ INDI
+1 NAME Jonas /Thomas/
+2 GIVN Jonas
+2 SURN Thomas
+1 SEX M
+1 FAMC @F30@
+1 BIRT
+2 DATE 1718
+2 PLAC New Kent, New Kent Co., Virginia Colony, Colonial America
+1 DEAT
+2 DATE Bet. 1718–1808
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 152502626159:1030:86149137
+0 @I182768041542@ INDI
+1 NAME Jacob /Thomas/
+2 GIVN Jacob
+2 SURN Thomas
+1 SEX M
+1 FAMC @F30@
+1 BIRT
+2 DATE 1716
+2 PLAC New Kent, New Kent, Virginia Colony, Colonial America
+1 DEAT
+2 PLAC Edgecombe, Edgecombe, North Carolina Colony, Colonial America
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 152502626156:1030:86149137
+0 @I182768041544@ INDI
+1 NAME Luke /Thomas/
+2 GIVN Luke
+2 SURN Thomas
+1 SEX M
+1 FAMC @F30@
+1 BIRT
+2 DATE 1712
+2 PLAC New Kent, New Kent Co., Virginia Colony, Colonial America
+1 DEAT
+2 DATE Jul 1751
+2 PLAC Edgecombe, Edgecombe, North Carolina Colony, Colonial America
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 152502626153:1030:86149137
+0 @I182768041545@ INDI
+1 NAME Michael /Thomas/
+2 GIVN Michael
+2 SURN Thomas
+1 SEX M
+1 FAMC @F30@
+1 BIRT
+2 DATE 1710
+2 PLAC New Kent, Virginia, USA
+1 DEAT
+2 DATE 1802
+2 PLAC Albemarle, Virginia, USA
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 152502626151:1030:86149137
+0 @I182768041546@ INDI
+1 NAME Joesph /Thomas/
+2 GIVN Joesph
+2 SURN Thomas
+1 SEX M
+1 FAMC @F30@
+1 BIRT
+2 DATE 1708
+2 PLAC New Kent, New Kent, Virginia Colony, Colonial America
+1 DEAT
+2 DATE 19 Jan 1758
+2 PLAC Bertie County, North Carolina, British Colonies
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 152502626147:1030:86149137
+0 @I182768041547@ INDI
+1 NAME Hugh /Thomas/
+2 GIVN Hugh
+2 SURN Thomas
+1 SEX M
+1 FAMC @F30@
+1 BIRT
+2 DATE 1714
+2 PLAC Nansemond, Virginia, USA
+1 DEAT
+2 DATE 1780
+2 PLAC Bertie, North Carolina, USA
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 152502626167:1030:86149137
+0 @I182768041548@ INDI
+1 NAME Elisabeth Catherina /Thomas/
+2 GIVN Elisabeth Catherina
+2 SURN Thomas
+1 SEX F
+1 FAMC @F30@
+1 BIRT
+2 DATE 1712
+2 PLAC Nansemond Colony, Colonly of Virginia
+1 DEAT
+2 DATE 1780
+2 PLAC Chowan County, North Carolina, USA
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 152502626165:1030:86149137
+0 @I182768041549@ INDI
+1 NAME Elizabeth /Thomas/
+2 GIVN Elizabeth
+2 SURN Thomas
+1 SEX F
+1 FAMC @F30@
+1 BIRT
+2 DATE 1724
+2 PLAC Culpeper, Culpeper County, Virginia, USA
+1 DEAT
+2 DATE 1784
+2 PLAC Culpeper, Culpeper County, Virginia, USA
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 152502626163:1030:86149137
+0 @I182768041550@ INDI
+1 NAME Mary /Thomas/
+2 GIVN Mary
+2 SURN Thomas
+1 SEX F
+1 FAMC @F30@
+1 BIRT
+2 DATE 1722
+2 PLAC New Kent, New Kent Co., Virginia Colony, Colonial America
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 152502626162:1030:86149137
+0 @I182768045697@ INDI
+1 NAME Chaia Rywka /Lipszyc/
+2 GIVN Chaia Rywka
+2 SURN Lipszyc
+1 SEX F
+1 FAMC @F29@
+1 BIRT
+2 DATE 1867
+2 PLAC Radzyn Podlaski, Lubelskie, Poland
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 162503752810:1030:192744850
+0 @I182768045698@ INDI
+1 NAME Wulf /Lipszyc/
+2 GIVN Wulf
+2 SURN Lipszyc
+1 SEX M
+1 FAMS @F29@
+1 BIRT
+2 DATE 1845
+2 PLAC Radzyn, Podlaskie, Poland
+1 DEAT
+2 PLAC Radzyn Podlaski, Lubelskie, Poland
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 162503752801:1030:192744850
+0 @I182768045699@ INDI
+1 NAME Chane Sura Hanna /Krawczyk Krafcheck/
+2 GIVN Chane Sura Hanna
+2 SURN Krawczyk Krafcheck
+2 SOUR @S528276028@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Houston, Harris, Texas; Roll: 792; Page: 12; Enumeration District: 263-603
+3 _APID 1,62308::191964959
+1 SEX F
+1 FAMC @F6@
+1 BIRT
+2 DATE 18 Dec 1901
+2 PLAC Radzyn, Podlaskie, Poland
+2 SOUR @S528276028@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Houston, Harris, Texas; Roll: 792; Page: 12; Enumeration District: 263-603
+3 _APID 1,62308::191964959
+1 RESI
+2 DATE 1950
+2 PLAC Houston, Harris, Texas, USA
+2 SOUR @S528276028@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Houston, Harris, Texas; Roll: 792; Page: 12; Enumeration District: 263-603
+3 _APID 1,62308::191964959
+2 NOTE Relation to Head of House: Daughter; Marital Status: Married
+1 DEAT
+2 DATE 8 Feb 1981
+2 PLAC Houston, Harris, Texas, USA
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 162503752807:1030:192744850
+1 SOUR @S528276028@
+2 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Houston, Harris, Texas; Roll: 792; Page: 12; Enumeration District: 263-603
+2 _APID 1,62308::191964959
+0 @I182768045700@ INDI
+1 NAME Moses /Krafcheck/
+2 GIVN Moses
+2 SURN Krafcheck
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246696
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/162728619/moses-nathan-krafcheck
+3 _APID 1,60525::132723577
+1 SEX M
+1 FAMC @F6@
+1 BIRT
+2 DATE 2 December 1908
+2 PLAC Radzyn Podlaski, Lubelskie, Poland
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246696
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/162728619/moses-nathan-krafcheck
+3 _APID 1,60525::132723577
+1 EVEN
+2 TYPE Arrival
+2 DATE 1918
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246696
+1 RESI
+2 DATE 1930
+2 PLAC Houston, Houston, Harris, Texas, USA
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246696
+2 NOTE Marital Status: Single; Relation to Head of House: Son
+1 DEAT
+2 DATE 20 July 1973
+2 PLAC Webster, Harris County, Texas, United States of America
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/162728619/moses-nathan-krafcheck
+3 _APID 1,60525::132723577
+1 BURI
+2 PLAC Houston, Harris County, Texas, United States of America
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/162728619/moses-nathan-krafcheck
+3 _APID 1,60525::132723577
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 162503752792:1030:192744850
+1 SOUR @S466338630@
+2 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+2 _APID 1,6224::63246696
+1 SOUR @S466341385@
+2 DATA
+3 WWW https://www.findagrave.com/memorial/162728619/moses-nathan-krafcheck
+2 _APID 1,60525::132723577
+0 @I182768045701@ INDI
+1 NAME Scheindle Jean /Krafcheck/
+2 GIVN Scheindle Jean
+2 SURN Krafcheck
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246678
+1 NAME Jean /Farber/
+2 GIVN Jean
+2 SURN Farber
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/106370615/jean-farber
+3 _APID 1,60525::56870403
+1 SEX F
+1 FAMC @F6@
+1 BIRT
+2 DATE 27 April 1913
+2 PLAC Radzyn Podlaski, Lubelskie, Poland
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246678
+1 EVEN
+2 TYPE Arrival
+2 DATE 1918
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246678
+1 RESI
+2 DATE 1930
+2 PLAC Houston, Houston, Harris, Texas, USA
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246678
+2 NOTE Marital Status: Single; Relation to Head of House: Daughter
+1 DEAT
+2 DATE 14 October 1998
+2 PLAC Houston, Harris, Texas, USA
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/106370615/jean-farber
+3 _APID 1,60525::56870403
+1 BURI
+2 PLAC Houston, Harris County, Texas, United States of America
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/106370615/jean-farber
+3 _APID 1,60525::56870403
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 162503752795:1030:192744850
+1 SOUR @S466338630@
+2 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+2 _APID 1,6224::63246678
+1 SOUR @S466341385@
+2 DATA
+3 WWW https://www.findagrave.com/memorial/106370615/jean-farber
+2 _APID 1,60525::56870403
+0 @I182768045702@ INDI
+1 NAME Pesa Bessie /Krafcheck/
+2 GIVN Pesa Bessie
+2 SURN Krafcheck
+1 NAME Bessie Krafcheck /Schultz/
+2 GIVN Bessie Krafcheck
+2 SURN Schultz
+2 SOUR @S466339379@
+3 _APID 1,60901::33127444
+1 NAME Bessie /Krafcheck/
+2 GIVN Bessie
+2 SURN Krafcheck
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246691
+1 NAME Bessie Thelma /Schultz/
+2 GIVN Bessie Thelma
+2 SURN Schultz
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/170735234/bessie-thelma-schultz
+3 _APID 1,60525::136987139
+1 SEX F
+1 FAMC @F6@
+1 BIRT
+2 DATE 19 Oct 1909
+2 PLAC Radzyn Podlaski, Lubelskie, Poland
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246691
+1 BIRT
+2 DATE 19 Oct 1909
+2 PLAC Warsaw, Poland
+2 SOUR @S466339379@
+3 _APID 1,60901::33127444
+1 BIRT
+2 DATE 19 October 1911
+2 PLAC Poland
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/170735234/bessie-thelma-schultz
+3 _APID 1,60525::136987139
+1 EVEN
+2 TYPE Arrival
+2 DATE 1918
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246691
+1 RESI
+2 DATE 1930
+2 PLAC Houston, Houston, Harris, Texas, USA
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+3 _APID 1,6224::63246691
+2 NOTE Marital Status: Single; Relation to Head of House: Daughter; Occupation: Stenographer
+1 DEAT
+2 DATE 6 Feb 1999
+2 PLAC Harris County, Texas, USA
+2 SOUR @S466339379@
+3 _APID 1,60901::33127444
+1 DEAT
+2 DATE 5 February 1999
+2 PLAC Harris County, Texas, United States of America
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/170735234/bessie-thelma-schultz
+3 _APID 1,60525::136987139
+1 BURI
+2 PLAC Houston, Harris County, Texas, United States of America
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/170735234/bessie-thelma-schultz
+3 _APID 1,60525::136987139
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 162503752797:1030:192744850
+1 SOUR @S466338630@
+2 PAGE Year: 1930; Census Place: Houston, Harris, Texas; Page: 38A; Enumeration District: 0059; FHL microfilm: 2342079
+2 _APID 1,6224::63246691
+1 SOUR @S466341385@
+2 DATA
+3 WWW https://www.findagrave.com/memorial/170735234/bessie-thelma-schultz
+2 _APID 1,60525::136987139
+1 SOUR @S466339379@
+2 _APID 1,60901::33127444
+0 @I182768349721@ INDI
+1 NAME Mary Colby /Williamson/
+2 GIVN Mary Colby
+2 SURN Williamson
+2 SOUR @S466338593@
+3 PAGE The Times; Publication Date: 17/ Jun/ 1956; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+3 DATA
+4 WWW https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+3 _APID 1,62116::12811628
+1 NAME Mary Colby /Williamson/ Crawley
+2 GIVN Mary Colby
+2 SURN Williamson
+2 NSFX Crawley
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
+1 NAME Mary Colby /Crawley/
+2 GIVN Mary Colby
+2 SURN Crawley
+2 SOUR @S528389735@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/207499378/mary-colby-crawley
+3 _APID 1,60541::171877334
+1 SEX F
+1 FAMC @F22@
+1 FAMS @F13@
+1 BIRT
+2 DATE 18 January 1931
+2 PLAC Norwood, Norfolk County, Massachusetts, United States of America
+2 SOUR @S528389735@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/207499378/mary-colby-crawley
+3 _APID 1,60541::171877334
+1 RESI
+2 DATE Abt 1956
+2 PLAC That City
+2 SOUR @S466338593@
+3 PAGE The Times; Publication Date: 17/ Jun/ 1956; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+3 DATA
+4 WWW https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+3 _APID 1,62116::12811628
+1 DEAT
+2 DATE 23 February 2020
+2 PLAC Norman, Cleveland County, Oklahoma, United States of America
+2 SOUR @S528389735@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/207499378/mary-colby-crawley
+3 _APID 1,60541::171877334
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 28882646840:1030:20179637
+2 _APID 162389905259:1030:161114514
+1 SOUR @S528389735@
+2 DATA
+3 WWW https://www.findagrave.com/memorial/207499378/mary-colby-crawley
+2 _APID 1,60541::171877334
+1 SOUR @S466338593@
+2 PAGE The Times; Publication Date: 17/ Jun/ 1956; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+2 DATA
+3 WWW https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+2 _APID 1,62116::12811628
+0 @I182768351692@ INDI
+1 NAME John Bernard /Reidy/
+2 GIVN John Bernard
+2 SURN Reidy
+2 SOUR @S466338293@
+3 PAGE Texas Department of State Health Services; Austin, Texas, USA; Texas Birth Indexes
+3 _APID 1,8781::165140694
+2 SOUR @S466338308@
+3 PAGE Texas Department of State Health Services; Austin, Texas; Texas Marriage Index, 1966-2021
+3 _APID 1,8795::1163405
+1 SEX M
+1 FAMS @F15@
+1 BIRT
+2 DATE abt 1957
+2 SOUR @S466338308@
+3 PAGE Texas Department of State Health Services; Austin, Texas; Texas Marriage Index, 1966-2021
+3 _APID 1,8795::1163405
+1 SOUR @S466338293@
+2 PAGE Texas Department of State Health Services; Austin, Texas, USA; Texas Birth Indexes
+2 _APID 1,8781::165140694
+1 SOUR @S466338308@
+2 PAGE Texas Department of State Health Services; Austin, Texas; Texas Marriage Index, 1966-2021
+2 _APID 1,8795::1163405
+0 @I182768351718@ INDI
+1 NAME Kyle John /Reidy/
+2 GIVN Kyle John
+2 SURN Reidy
+2 SOUR @S466338293@
+3 PAGE Texas Department of State Health Services; Austin, Texas, USA; Texas Birth Indexes
+3 _APID 1,8781::15140694
+1 SEX M
+1 FAMC @F15@
+1 BIRT
+2 DATE 14 Jun 1987
+2 PLAC Harris, Texas, USA
+2 SOUR @S466338293@
+3 PAGE Texas Department of State Health Services; Austin, Texas, USA; Texas Birth Indexes
+3 _APID 1,8781::15140694
+1 SOUR @S466338293@
+2 PAGE Texas Department of State Health Services; Austin, Texas, USA; Texas Birth Indexes
+2 _APID 1,8781::15140694
+0 @I182768353200@ INDI
+1 NAME Margaret /Williamson/
+2 GIVN Margaret
+2 SURN Williamson
+1 SEX F
+1 FAMC @F22@
+1 BIRT
+2 DATE 13 Feb 1932
+2 PLAC Norwood, Massachusetts, USA
+1 DEAT
+2 DATE 23 Oct 1986
+2 PLAC Norwood, Massachusetts
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 28882646841:1030:20179637
+0 @I182768353201@ INDI
+1 NAME Robert Wallace /Williamson/
+2 GIVN Robert Wallace
+2 SURN Williamson
+1 SEX M
+1 FAMS @F22@
+1 BIRT
+2 DATE 24 Jul 1905
+2 PLAC Norwood, Norfolk, Massachusetts, USA
+1 DEAT
+2 DATE 26 Mar 1988
+2 PLAC Norwood, Norfolk, Massachusetts, USA
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 28882646692:1030:20179637
+0 @I182768353202@ INDI
+1 NAME Margaret Coburn /Colby/
+2 GIVN Margaret Coburn
+2 SURN Colby
+1 SEX F
+1 FAMS @F22@
+1 BIRT
+2 DATE 20 Dec 1906
+2 PLAC Claremont, New Hampshire
+1 DEAT
+2 DATE 16 Jun 1993
+2 PLAC Norwood, Norfolk, Massachusetts, USA
+1 SOUR @S466339560@
+2 PAGE Ancestry Family Tree
+2 _APID 908926505:1030:20179637
+0 @I182768353411@ INDI
+1 NAME Linda /Crawley/
+2 GIVN Linda
+2 SURN Crawley
+1 SEX F
+1 FAMC @F13@
+0 @I182768353425@ INDI
+1 NAME Sara /Crawley/
+2 GIVN Sara
+2 SURN Crawley
+1 SEX F
+1 FAMC @F13@
+0 @I182768353435@ INDI
+1 NAME Martha /Crawley/
+2 GIVN Martha
+2 SURN Crawley
+1 SEX F
+1 FAMC @F13@
+0 @I182768353636@ INDI
+1 NAME Margaret Convis /Kadoyama/
+2 GIVN Margaret Convis
+2 SURN Kadoyama
+2 SOUR @S466338642@
+3 PAGE URL: https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 DATA
+4 WWW https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 _APID 1,7545::300849921
+1 FAMC @F32@
+1 SOUR @S466338642@
+2 PAGE URL: https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+2 DATA
+3 WWW https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+2 _APID 1,7545::300849921
+0 @I182768353637@ INDI
+1 NAME Jim /Convis/
+2 GIVN Jim
+2 SURN Convis
+2 SOUR @S466338642@
+3 PAGE URL: https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 DATA
+4 WWW https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 _APID 1,7545::300955857
+1 FAMC @F32@
+1 SOUR @S466338642@
+2 PAGE URL: https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+2 DATA
+3 WWW https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+2 _APID 1,7545::300955857
+0 @I182768353639@ INDI
+1 NAME Bill /Convis/
+2 GIVN Bill
+2 SURN Convis
+2 SOUR @S466338642@
+3 PAGE URL: https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 DATA
+4 WWW https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 _APID 1,7545::300905969
+1 FAMC @F32@
+1 SOUR @S466338642@
+2 PAGE URL: https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+2 DATA
+3 WWW https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+2 _APID 1,7545::300905969
+0 @I182768353640@ INDI
+1 NAME David /Convis/
+2 GIVN David
+2 SURN Convis
+2 SOUR @S466338642@
+3 PAGE URL: https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 DATA
+4 WWW https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 _APID 1,7545::300976398
+1 FAMC @F32@
+1 SOUR @S466338642@
+2 PAGE URL: https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+2 DATA
+3 WWW https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+2 _APID 1,7545::300976398
+0 @I182768353641@ INDI
+1 NAME Johnny //
+2 GIVN Johnny
+2 SOUR @S466338642@
+3 PAGE URL: https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 DATA
+4 WWW https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 _APID 1,7545::300987299
+1 FAMC @F32@
+1 SOUR @S466338642@
+2 PAGE URL: https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+2 DATA
+3 WWW https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+2 _APID 1,7545::300987299
+0 @I182768353642@ INDI
+1 NAME Charles /Convis/
+2 GIVN Charles
+2 SURN Convis
+2 SOUR @S466338642@
+3 PAGE URL: https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 DATA
+4 WWW https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 _APID 1,7545::301003097
+1 SEX M
+1 FAMC @F32@
+1 SOUR @S466338642@
+2 PAGE URL: https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+2 DATA
+3 WWW https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+2 _APID 1,7545::301003097
+0 @I182768353903@ INDI
+1 NAME Charles Lester /Convis/
+2 GIVN Charles Lester
+2 SURN Convis
+2 SOUR @S466338541@
+3 PAGE Year: 1940; Census Place: Mount Rose, Bottineau, North Dakota; Roll: m-t0627-02994; Page: 2A; Enumeration District: 5-31
+3 _APID 1,2442::102658765
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Mount Rose, Bottineau, North Dakota; Page: 1B; Enumeration District: 0030; FHL microfilm: 2341466
+3 _APID 1,6224::108396626
+2 SOUR @S466338642@
+3 PAGE Marinij; Publication Date: 31/ Jan/ 2022; Publication Place: Marinij, California, USA; URL: https://www.legacy.com/us/obituaries/marinij/name/charles-convis-obituary?id=32517722
+3 DATA
+4 WWW https://www.legacy.com/us/obituaries/marinij/name/charles-convis-obituary?id=32517722
+3 _APID 1,7545::305430348
+2 SOUR @S466338293@
+3 PAGE Texas Department of State Health Services; Austin, Texas, USA; Texas Birth Indexes
+3 _APID 1,8781::155039404
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/244200884/charles-lester-convis
+3 _APID 1,60525::215330746
+2 SOUR @S466338593@
+3 PAGE Tyler Morning Telegraph; Publication Date: 12/ Aug/ 1949; Publication Place: Tyler, Texas, USA; URL: https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+3 DATA
+4 WWW https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+3 _APID 1,62116::67754892
+2 SOUR @S528411142@
+3 PAGE National Archives at St. Louis; St Louis, MO, USA; Record Group: Records of the Selective Service System, 1926-1975; Record Group Number: 147; Series: Post-WWII through Vietnam Era Selective Service Records, North Dakota; Series Number: 147-76A-037
+4 CONC 7
+3 DATA
+4 WWW https://www.fold3.com/image/738005409?xid=7602
+3 _APID 1,62234::4715950
+2 SOUR @S528411152@
+3 PAGE Army Cemeteries Explorer; USA; Arlington National Cemetery; URL: https://ancexplorer.army.mil/publicwmv/index.html
+3 DATA
+4 WWW https://ancexplorer.army.mil/publicwmv/index.html
+3 _APID 1,62993::90565
+1 SEX M
+1 FAMC @F3@
+1 FAMS @F5@
+1 BIRT
+2 DATE 21 Apr 1926
+2 PLAC Lansford, North Dakota
+2 SOUR @S466338541@
+3 PAGE Year: 1940; Census Place: Mount Rose, Bottineau, North Dakota; Roll: m-t0627-02994; Page: 2A; Enumeration District: 5-31
+3 _APID 1,2442::102658765
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Mount Rose, Bottineau, North Dakota; Page: 1B; Enumeration District: 0030; FHL microfilm: 2341466
+3 _APID 1,6224::108396626
+2 SOUR @S466338642@
+3 PAGE Marinij; Publication Date: 31/ Jan/ 2022; Publication Place: Marinij, California, USA; URL: https://www.legacy.com/us/obituaries/marinij/name/charles-convis-obituary?id=32517722
+3 DATA
+4 WWW https://www.legacy.com/us/obituaries/marinij/name/charles-convis-obituary?id=32517722
+3 _APID 1,7545::305430348
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/244200884/charles-lester-convis
+3 _APID 1,60525::215330746
+2 SOUR @S528411142@
+3 PAGE National Archives at St. Louis; St Louis, MO, USA; Record Group: Records of the Selective Service System, 1926-1975; Record Group Number: 147; Series: Post-WWII through Vietnam Era Selective Service Records, North Dakota; Series Number: 147-76A-037
+4 CONC 7
+3 DATA
+4 WWW https://www.fold3.com/image/738005409?xid=7602
+3 _APID 1,62234::4715950
+2 SOUR @S528411152@
+3 PAGE Army Cemeteries Explorer; USA; Arlington National Cemetery; URL: https://ancexplorer.army.mil/publicwmv/index.html
+3 DATA
+4 WWW https://ancexplorer.army.mil/publicwmv/index.html
+3 _APID 1,62993::90565
 1 MARR
-2 DATE 23 Dec 1896
-2 PLAC Lincoln, Louisiana, USA
-0 @F2@ FAM
+2 DATE Jul 1949
+2 SOUR @S466338642@
+3 PAGE Marinij; Publication Date: 31/ Jan/ 2022; Publication Place: Marinij, California, USA; URL: https://www.legacy.com/us/obituaries/marinij/name/charles-convis-obituary?id=32517722
+3 DATA
+4 WWW https://www.legacy.com/us/obituaries/marinij/name/charles-convis-obituary?id=32517722
+3 _APID 1,7545::305430348
+1 RESI
+2 DATE 1930
+2 PLAC Mount Rose, Mount Rose, Bottineau, North Dakota, USA
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Mount Rose, Bottineau, North Dakota; Page: 1B; Enumeration District: 0030; FHL microfilm: 2341466
+3 _APID 1,6224::108396626
+2 NOTE Marital Status: Single; Relation to Head of House: Son
+1 RESI
+2 DATE 1935
+2 PLAC Rural, Missouri
+2 SOUR @S466338541@
+3 PAGE Year: 1940; Census Place: Mount Rose, Bottineau, North Dakota; Roll: m-t0627-02994; Page: 2A; Enumeration District: 5-31
+3 _APID 1,2442::102658765
+1 RESI
+2 DATE 1940
+2 PLAC Mount Rose Twp, Mount Rose, Bottineau, North Dakota, USA
+2 SOUR @S466338541@
+3 PAGE Year: 1940; Census Place: Mount Rose, Bottineau, North Dakota; Roll: m-t0627-02994; Page: 2A; Enumeration District: 5-31
+3 _APID 1,2442::102658765
+2 NOTE Marital Status: Single; Relation to Head of House: Grandson
+1 RESI
+2 DATE Abt 1949
+2 PLAC Cross Roads
+2 SOUR @S466338593@
+3 PAGE Tyler Morning Telegraph; Publication Date: 12/ Aug/ 1949; Publication Place: Tyler, Texas, USA; URL: https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+3 DATA
+4 WWW https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+3 _APID 1,62116::67754892
+1 _MILT
+2 PLAC North Dakota, USA
+2 SOUR @S528411142@
+3 PAGE National Archives at St. Louis; St Louis, MO, USA; Record Group: Records of the Selective Service System, 1926-1975; Record Group Number: 147; Series: Post-WWII through Vietnam Era Selective Service Records, North Dakota; Series Number: 147-76A-037
+4 CONC 7
+3 DATA
+4 WWW https://www.fold3.com/image/738005409?xid=7602
+3 _APID 1,62234::4715950
+1 RESI
+2 PLAC Lansford, Bottineau, North Dakota
+2 SOUR @S528411142@
+3 PAGE National Archives at St. Louis; St Louis, MO, USA; Record Group: Records of the Selective Service System, 1926-1975; Record Group Number: 147; Series: Post-WWII through Vietnam Era Selective Service Records, North Dakota; Series Number: 147-76A-037
+4 CONC 7
+3 DATA
+4 WWW https://www.fold3.com/image/738005409?xid=7602
+3 _APID 1,62234::4715950
+2 NOTE Occupation: Student; Marital Status: Single
+1 DEAT
+2 DATE 7 Jan 2022
+2 PLAC Grass Valley, CA
+2 SOUR @S466338642@
+3 PAGE Marinij; Publication Date: 31/ Jan/ 2022; Publication Place: Marinij, California, USA; URL: https://www.legacy.com/us/obituaries/marinij/name/charles-convis-obituary?id=32517722
+3 DATA
+4 WWW https://www.legacy.com/us/obituaries/marinij/name/charles-convis-obituary?id=32517722
+3 _APID 1,7545::305430348
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/244200884/charles-lester-convis
+3 _APID 1,60525::215330746
+2 SOUR @S528411152@
+3 PAGE Army Cemeteries Explorer; USA; Arlington National Cemetery; URL: https://ancexplorer.army.mil/publicwmv/index.html
+3 DATA
+4 WWW https://ancexplorer.army.mil/publicwmv/index.html
+3 _APID 1,62993::90565
+1 BURI
+2 PLAC Arlington, Arlington County, Virginia, United States of America
+2 SOUR @S466341385@
+3 DATA
+4 WWW https://www.findagrave.com/memorial/244200884/charles-lester-convis
+3 _APID 1,60525::215330746
+2 SOUR @S528411152@
+3 PAGE Army Cemeteries Explorer; USA; Arlington National Cemetery; URL: https://ancexplorer.army.mil/publicwmv/index.html
+3 DATA
+4 WWW https://ancexplorer.army.mil/publicwmv/index.html
+3 _APID 1,62993::90565
+1 SOUR @S466338541@
+2 PAGE Year: 1940; Census Place: Mount Rose, Bottineau, North Dakota; Roll: m-t0627-02994; Page: 2A; Enumeration District: 5-31
+2 _APID 1,2442::102658765
+1 SOUR @S466338630@
+2 PAGE Year: 1930; Census Place: Mount Rose, Bottineau, North Dakota; Page: 1B; Enumeration District: 0030; FHL microfilm: 2341466
+2 _APID 1,6224::108396626
+1 SOUR @S466338642@
+2 PAGE Marinij; Publication Date: 31/ Jan/ 2022; Publication Place: Marinij, California, USA; URL: https://www.legacy.com/us/obituaries/marinij/name/charles-convis-obituary?id=32517722
+2 DATA
+3 WWW https://www.legacy.com/us/obituaries/marinij/name/charles-convis-obituary?id=32517722
+2 _APID 1,7545::305430348
+1 SOUR @S466338293@
+2 PAGE Texas Department of State Health Services; Austin, Texas, USA; Texas Birth Indexes
+2 _APID 1,8781::155039404
+1 SOUR @S466341385@
+2 DATA
+3 WWW https://www.findagrave.com/memorial/244200884/charles-lester-convis
+2 _APID 1,60525::215330746
+1 SOUR @S466338593@
+2 PAGE Tyler Morning Telegraph; Publication Date: 12/ Aug/ 1949; Publication Place: Tyler, Texas, USA; URL: https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+2 DATA
+3 WWW https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+2 _APID 1,62116::67754892
+1 SOUR @S528411142@
+2 PAGE National Archives at St. Louis; St Louis, MO, USA; Record Group: Records of the Selective Service System, 1926-1975; Record Group Number: 147; Series: Post-WWII through Vietnam Era Selective Service Records, North Dakota; Series Number: 147-76A-037
+3 CONC 7
+2 DATA
+3 WWW https://www.fold3.com/image/738005409?xid=7602
+2 _APID 1,62234::4715950
+1 SOUR @S528411152@
+2 PAGE Army Cemeteries Explorer; USA; Arlington National Cemetery; URL: https://ancexplorer.army.mil/publicwmv/index.html
+2 DATA
+3 WWW https://ancexplorer.army.mil/publicwmv/index.html
+2 _APID 1,62993::90565
+0 @I182768354163@ INDI
+1 NAME Delores S /Convis/
+2 GIVN Delores S
+2 SURN Convis
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Mount Rose, Bottineau, North Dakota; Page: 1B; Enumeration District: 0030; FHL microfilm: 2341466
+3 _APID 1,6224::108396599
+1 SEX F
+1 FAMC @F3@
+1 BIRT
+2 DATE abt 1926
+2 PLAC North Dakota
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Mount Rose, Bottineau, North Dakota; Page: 1B; Enumeration District: 0030; FHL microfilm: 2341466
+3 _APID 1,6224::108396599
+1 RESI
+2 DATE 1930
+2 PLAC Mount Rose, Mount Rose, Bottineau, North Dakota, USA
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Mount Rose, Bottineau, North Dakota; Page: 1B; Enumeration District: 0030; FHL microfilm: 2341466
+3 _APID 1,6224::108396599
+2 NOTE Marital Status: Single; Relation to Head of House: Daughter
+1 SOUR @S466338630@
+2 PAGE Year: 1930; Census Place: Mount Rose, Bottineau, North Dakota; Page: 1B; Enumeration District: 0030; FHL microfilm: 2341466
+2 _APID 1,6224::108396599
+0 @I182768354164@ INDI
+1 NAME Lester C /Convis/
+2 GIVN Lester C
+2 SURN Convis
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Mount Rose, Bottineau, North Dakota; Page: 1B; Enumeration District: 0030; FHL microfilm: 2341466
+3 _APID 1,6224::108396611
+1 SEX M
+1 FAMS @F3@
+1 BIRT
+2 DATE abt 1903
+2 PLAC Michigan
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Mount Rose, Bottineau, North Dakota; Page: 1B; Enumeration District: 0030; FHL microfilm: 2341466
+3 _APID 1,6224::108396611
+1 RESI
+2 DATE 1930
+2 PLAC Mount Rose, Mount Rose, Bottineau, North Dakota, USA
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Mount Rose, Bottineau, North Dakota; Page: 1B; Enumeration District: 0030; FHL microfilm: 2341466
+3 _APID 1,6224::108396611
+2 NOTE Marital Status: Married; Relation to Head of House: Head; Occupation: Farmer
+1 SOUR @S466338630@
+2 PAGE Year: 1930; Census Place: Mount Rose, Bottineau, North Dakota; Page: 1B; Enumeration District: 0030; FHL microfilm: 2341466
+2 _APID 1,6224::108396611
+0 @I182768354165@ INDI
+1 NAME Bessie H /Convis/
+2 GIVN Bessie H
+2 SURN Convis
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Mount Rose, Bottineau, North Dakota; Page: 1B; Enumeration District: 0030; FHL microfilm: 2341466
+3 _APID 1,6224::108396615
+1 SEX F
+1 FAMS @F3@
+1 BIRT
+2 DATE abt 1904
+2 PLAC Minnesota
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Mount Rose, Bottineau, North Dakota; Page: 1B; Enumeration District: 0030; FHL microfilm: 2341466
+3 _APID 1,6224::108396615
+1 RESI
+2 DATE 1930
+2 PLAC Mount Rose, Mount Rose, Bottineau, North Dakota, USA
+2 SOUR @S466338630@
+3 PAGE Year: 1930; Census Place: Mount Rose, Bottineau, North Dakota; Page: 1B; Enumeration District: 0030; FHL microfilm: 2341466
+3 _APID 1,6224::108396615
+2 NOTE Marital Status: Married; Relation to Head of House: Wife
+1 SOUR @S466338630@
+2 PAGE Year: 1930; Census Place: Mount Rose, Bottineau, North Dakota; Page: 1B; Enumeration District: 0030; FHL microfilm: 2341466
+2 _APID 1,6224::108396615
+0 @I182768354191@ INDI
+1 NAME John Scott /Convis/
+2 GIVN John Scott
+2 SURN Convis
+2 SOUR @S466338293@
+3 PAGE Texas Department of State Health Services; Austin, Texas, USA; Texas Birth Indexes
+3 _APID 1,8781::5039404
+1 SEX M
+1 FAMC @F5@
+1 BIRT
+2 DATE 9 Sep 1951
+2 PLAC Runnels, Texas, USA
+2 SOUR @S466338293@
+3 PAGE Texas Department of State Health Services; Austin, Texas, USA; Texas Birth Indexes
+3 _APID 1,8781::5039404
+1 SOUR @S466338293@
+2 PAGE Texas Department of State Health Services; Austin, Texas, USA; Texas Birth Indexes
+2 _APID 1,8781::5039404
+0 @I182768355283@ INDI
+1 NAME David /Reidy/
+2 GIVN David
+2 SURN Reidy
+1 SEX M
+1 FAMC @F15@
+1 BIRT
+2 DATE 1991
+0 @F1@ FAM
 1 HUSB @I182329826210@
 1 WIFE @I182329826202@
 1 CHIL @I182329830195@
@@ -5662,50 +7455,19 @@
 4 WWW https://www.newspapers.com/image/320349708/?article=0bf5bb2c-7001-4481-bd92-6d3f41f811d3&focus=0.13668035,0.16666424,0.2539175,0.45292813&xid=3398
 3 _HPID 1,62116::33215230
 3 _WPID 1,62116::95342848
-0 @F3@ FAM
-1 HUSB @I182330623405@
-1 WIFE @I182330623407@
-1 CHIL @I182330620723@
-1 CHIL @I182330623409@
-0 @F4@ FAM
-1 HUSB @I182330007515@
-1 WIFE @I182330010081@
-1 CHIL @I182330619639@
-1 CHIL @I182329818989@
-1 MARR
-2 DATE 1922
-2 PLAC Philadelphia, Philadelphia, Pennsylvania, USA
-2 SOUR @S466339560@
-3 PAGE Ancestry Family Tree
-0 @F5@ FAM
+0 @F2@ FAM
 1 HUSB @I182329877240@
 1 WIFE @I182329877272@
 1 CHIL @I182329851475@
-0 @F6@ FAM
-1 HUSB @I182329851475@
-1 WIFE @I182329851477@
-1 CHIL @I182329846701@
-1 MARR
-2 DATE 1863
-2 PLAC Kock, Lubelskie, Poland
-0 @F7@ FAM
-1 HUSB @I182329818989@
-1 WIFE @I182329820752@
-1 CHIL @I182329818814@
-1 MARR
-2 DATE 19 Sep 1954
-2 PLAC Harris, Texas, USA
-2 SOUR @S466338770@
-3 PAGE Johnson County Clerk's Office; Denton, Texas; Smith County Marriage Records; Pages: 2
-3 _HPID 1,9168::25283561
-3 _WPID 1,9168::925283561
-0 @F8@ FAM
-1 HUSB @I182329882449@
-1 WIFE @I182329882502@
-1 CHIL @I182329820980@
-0 @F9@ FAM
+0 @F3@ FAM
+1 HUSB @I182768354164@
+1 WIFE @I182768354165@
+1 CHIL @I182768354163@
+1 CHIL @I182768353903@
+0 @F4@ FAM
 1 HUSB @I182329818890@
 1 WIFE @I182329819662@
+1 CHIL @I182767692586@
 1 CHIL @I182329818803@
 1 MARR
 2 DATE 10 Apr 1954
@@ -5718,77 +7480,38 @@
 4 CONC id=3398
 3 _WPID 1,62116::9295883
 3 _HPID 1,62116::68552100
-0 @F10@ FAM
-1 HUSB @I182767835958@
-1 WIFE @I182767835959@
-1 CHIL @I182767835953@
-1 CHIL @I182767835954@
-1 CHIL @I182767835951@
-1 CHIL @I182767835955@
-1 CHIL @I182767835956@
-1 CHIL @I182767689280@
-1 CHIL @I182767835957@
+0 @F5@ FAM
+1 HUSB @I182768353903@
+1 WIFE @I182329830196@
+1 CHIL @I182768354191@
 1 MARR
-2 DATE 1772
-2 PLAC Edgefield, Edgefield, South Carolina, United States
+2 DATE 30 Jul 1949
+2 SOUR @S466338642@
+3 PAGE Marinij; Publication Date: 12/ Nov/ 2021; Publication Place: Marinij, CA, USA; URL: https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 DATA
+4 WWW https://www.legacy.com/us/obituaries/marinij/name/mary-convis-obituary?id=31840189
+3 _WPID 1,7545::300879589
+2 SOUR @S466338593@
+3 PAGE Tyler Morning Telegraph; Publication Date: 12/ Aug/ 1949; Publication Place: Tyler, Texas, USA; URL: https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+3 DATA
+4 WWW https://www.newspapers.com/image/587282777/?article=53d0d9ce-3178-4d0b-b8ca-2f37d22ebcca&focus=0.02740188,0.2502614,0.28210926,0.6083247&xid=3398
+3 _WPID 1,62116::8584219
+3 _HPID 1,62116::67754892
+0 @F6@ FAM
+1 HUSB @I182329882449@
+1 WIFE @I182329882502@
+1 CHIL @I182768045699@
+1 CHIL @I182329820980@
+1 CHIL @I182768045700@
+1 CHIL @I182768045702@
+1 CHIL @I182768045701@
 1 MARR
-2 DATE 1775
-2 PLAC Edgefield, Edgefield, South Carolina
-1 MARR
-2 DATE 1780
-2 PLAC , Edgefield, South Carolina, USA
-0 @F11@ FAM
-1 HUSB @I182329823816@
-1 WIFE @I182329823847@
-1 CHIL @I182329819761@
-1 MARR
-2 DATE 1876
-2 PLAC Grimes, Texas, United States
-2 SOUR @S466339160@
-3 _HPID 1,7602::61574965
-3 _WPID 1,7602::61574966
-0 @F12@ FAM
-1 HUSB @I182329830596@
-1 WIFE @I182329830598@
-1 CHIL @I182767693611@
-1 CHIL @I182767693607@
-1 CHIL @I182767693610@
-1 CHIL @I182767693609@
-1 CHIL @I182329826210@
-1 CHIL @I182767693608@
-1 MARR
-2 DATE 23 Mar 1890
-2 PLAC Harrison, Texas, USA
-2 SOUR @S466339560@
-3 PAGE Ancestry Family Tree
-1 MARR
-2 DATE 1896
-0 @F13@ FAM
-1 HUSB @I182767690814@
-1 WIFE @I182767690815@
-1 CHIL @I182767689300@
-1 MARR
-2 DATE 1775
-2 PLAC Edgefield, Edgefield, South Carolina
-0 @F14@ FAM
-1 HUSB @I182330620723@
-1 WIFE @I182330620726@
-1 CHIL @I182330623414@
-1 CHIL @I182330007515@
-1 CHIL @I182330621099@
-1 CHIL @I182330621100@
-1 CHIL @I182330623411@
-1 CHIL @I182330621097@
-1 CHIL @I182330621101@
-1 CHIL @I182330621102@
-1 CHIL @I182330621104@
-1 MARR
-2 DATE 1880
-0 @F15@ FAM
-1 HUSB @I182767902757@
-1 WIFE @I182767902758@
-1 CHIL @I182767901516@
-0 @F16@ FAM
+2 DATE 1901
+2 PLAC Radzyn Podlaski, Lubelskie, Poland
+2 NOTE Archive:Archiwum Państwowe w Lublinie
+3 CONT Fonds:Akta stanu cywilnego Okręgu Bożniczego w Radzyniu
+3 CONT Reference: 35/1768/0/1/55
+0 @F7@ FAM
 1 HUSB @I182329818989@
 1 WIFE @I182329820547@
 1 MARR
@@ -5799,7 +7522,7 @@
 3 _HPID 1,9168::25283561
 2 SOUR @S466338770@
 3 _WPID 1,9168::925283561
-0 @F17@ FAM
+0 @F8@ FAM
 1 HUSB @I182329818803@
 1 WIFE @I182329818814@
 1 CHIL @I182329819385@
@@ -5813,7 +7536,7 @@
 3 _WPID 1,8795::10953081
 2 SOUR @S466338308@
 3 _HPID 1,8795::11383646
-0 @F18@ FAM
+0 @F9@ FAM
 1 HUSB @I182767689280@
 1 WIFE @I182767689300@
 1 CHIL @I182767690826@
@@ -5856,7 +7579,7 @@
 3 DATA
 4 WWW https://gw.geneanet.org/jdwileyjdw?n=thomas&oc=&p=john
 3 _HPID 1,62476::6257432981
-0 @F19@ FAM
+0 @F10@ FAM
 1 HUSB @I182329821623@
 1 WIFE @I182329821622@
 1 CHIL @I182329819759@
@@ -5867,7 +7590,7 @@
 2 SOUR @S466339160@
 3 _HPID 1,7602::61594540
 3 _WPID 1,7602::61594541
-0 @F20@ FAM
+0 @F11@ FAM
 1 HUSB @I182329820979@
 1 WIFE @I182329820980@
 1 CHIL @I182329820976@
@@ -5884,25 +7607,25 @@
 2 SOUR @S466339400@
 3 _HPID 1,60183::2521235
 3 _WPID 1,60183::2521248
-0 @F21@ FAM
+0 @F12@ FAM
 1 HUSB @I182329820979@
 1 WIFE @I182329847524@
-0 @F22@ FAM
-1 HUSB @I182329819759@
-1 WIFE @I182329819761@
-1 CHIL @I182329820069@
-1 CHIL @I182329820070@
-1 CHIL @I182329818890@
+0 @F13@ FAM
+1 HUSB @I182329830195@
+1 WIFE @I182768349721@
+1 CHIL @I182768353411@
+1 CHIL @I182768353425@
+1 CHIL @I182768353435@
 1 MARR
-2 DATE 18 Jun 1907
-2 PLAC Grimes, Texas, United States
-2 SOUR @S466339400@
+2 DATE 5 Jun 1956
+2 PLAC Baton Rouge, Louisiana, USA
+2 SOUR @S466338593@
+3 PAGE The Times; Publication Date: 17/ Jun/ 1956; Publication Place: Shreveport, Louisiana, USA; URL: https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
 3 DATA
-4 WWW https://familysearch.org/ark:/61903/1:1:QK8T-856X
-3 _HPID 1,60183::1479502
-2 SOUR @S466339400@
-3 _WPID 1,60183::1479515
-0 @F23@ FAM
+4 WWW https://www.newspapers.com/image/210631208/?article=e8467190-04ab-4ab9-913f-b9cbd4505834&focus=0.01499347,0.26391733,0.25960866,0.86568177&xid=3398
+3 _WPID 1,62116::12811628
+3 _HPID 1,62116::72494163
+0 @F14@ FAM
 1 HUSB @I182329846701@
 1 WIFE @I182329846703@
 1 CHIL @I182329846705@
@@ -5914,7 +7637,22 @@
 1 MARR
 2 DATE 1894
 2 PLAC Kock, Siedlce, Russian Empire (presently, Kock, Poland)
-0 @F24@ FAM
+0 @F15@ FAM
+1 HUSB @I182768351692@
+1 WIFE @I182767692586@
+1 CHIL @I182768351718@
+1 CHIL @I182768355283@
+1 MARR
+2 DATE 26 Jan 1985
+2 PLAC Harris, Texas, USA
+2 SOUR @S466338308@
+3 PAGE Texas Department of State Health Services; Austin, Texas; Texas Marriage Index, 1966-2021
+3 _HPID 1,8795::1163405
+3 _WPID 1,8795::11382542
+1 DIV
+2 DATE 2019
+2 PLAC Houston, Harris County, Texas, USA
+0 @F16@ FAM
 1 HUSB @I182767901516@
 1 WIFE @I182767901517@
 1 CHIL @I182767835958@
@@ -5939,12 +7677,12 @@
 3 _WPID 1,62476::5544123012
 1 MARR
 2 DATE 1741
-2 PLAC NC
+2 PLAC Bertie, North Carolina, American colonies
 2 SOUR @S528381201@
 3 DATA
 4 WWW https://gw.geneanet.org/ildiko?n=thomas&oc=&p=james
 3 _HPID 1,62476::5544155855
-0 @F25@ FAM
+0 @F17@ FAM
 1 HUSB @I182329830948@
 1 WIFE @I182329830951@
 1 CHIL @I182329821623@
@@ -5961,19 +7699,207 @@
 3 _HPID 1,9168::25576546
 2 SOUR @S466338770@
 3 _WPID 1,9168::925576546
+0 @F18@ FAM
+1 HUSB @I182767721891@
+1 WIFE @I182767721892@
+1 CHIL @I182767722456@
+1 CHIL @I182767722457@
+1 CHIL @I182329826202@
+1 MARR
+2 DATE 23 Dec 1896
+2 PLAC Lincoln, Louisiana, USA
+0 @F19@ FAM
+1 HUSB @I182330623405@
+1 WIFE @I182330623407@
+1 CHIL @I182330620723@
+1 CHIL @I182330623409@
+0 @F20@ FAM
+1 HUSB @I182330007515@
+1 WIFE @I182330010081@
+1 CHIL @I182330619639@
+1 CHIL @I182329818989@
+1 MARR
+2 DATE 1922
+2 PLAC Philadelphia, Philadelphia, Pennsylvania, USA
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
+0 @F21@ FAM
+1 HUSB @I182329851475@
+1 WIFE @I182329851477@
+1 CHIL @I182329846701@
+1 MARR
+2 DATE 1863
+2 PLAC Kock, Lubelskie, Poland
+0 @F22@ FAM
+1 HUSB @I182768353201@
+1 WIFE @I182768353202@
+1 CHIL @I182768349721@
+1 CHIL @I182768353200@
+1 MARR
+2 DATE 5 Oct 1929
+2 PLAC Claremont, New Hampshire
+0 @F23@ FAM
+1 HUSB @I182329818989@
+1 WIFE @I182329820752@
+1 CHIL @I182329818814@
+1 MARR
+2 DATE 19 Sep 1954
+2 PLAC Harris, Texas, USA
+2 SOUR @S466338770@
+3 PAGE Johnson County Clerk's Office; Denton, Texas; Smith County Marriage Records; Pages: 2
+3 _HPID 1,9168::25283561
+3 _WPID 1,9168::925283561
+0 @F24@ FAM
+1 HUSB @I182767835958@
+1 WIFE @I182767835959@
+1 CHIL @I182767835953@
+1 CHIL @I182767835954@
+1 CHIL @I182767835951@
+1 CHIL @I182767835955@
+1 CHIL @I182767835956@
+1 CHIL @I182767689280@
+1 CHIL @I182767835957@
+1 MARR
+2 DATE 1772
+2 PLAC Edgefield, Edgefield, South Carolina, United States
+1 MARR
+2 DATE 1775
+2 PLAC Edgefield, Edgefield, South Carolina
+1 MARR
+2 DATE 1780
+2 PLAC , Edgefield, South Carolina, USA
+0 @F25@ FAM
+1 HUSB @I182329823816@
+1 WIFE @I182329823847@
+1 CHIL @I182329819761@
+1 MARR
+2 DATE 1876
+2 PLAC Grimes, Texas, United States
+2 SOUR @S466339160@
+3 _HPID 1,7602::61574965
+3 _WPID 1,7602::61574966
 0 @F26@ FAM
-1 WIFE @I182751598633@
-1 CHIL @I182329882502@
+1 HUSB @I182329830596@
+1 WIFE @I182329830598@
+1 CHIL @I182767693611@
+1 CHIL @I182767693607@
+1 CHIL @I182767693610@
+1 CHIL @I182767693609@
+1 CHIL @I182329826210@
+1 CHIL @I182767693608@
+1 MARR
+2 DATE 23 Mar 1890
+2 PLAC Harrison, Texas, USA
+2 SOUR @S466339560@
+3 PAGE Ancestry Family Tree
+1 MARR
+2 DATE 1896
 0 @F27@ FAM
+1 HUSB @I182767690814@
+1 WIFE @I182767690815@
+1 CHIL @I182767689300@
+1 MARR
+2 DATE 1775
+2 PLAC Edgefield, Edgefield, South Carolina
+0 @F28@ FAM
+1 HUSB @I182330620723@
+1 WIFE @I182330620726@
+1 CHIL @I182330623414@
+1 CHIL @I182330007515@
+1 CHIL @I182330621099@
+1 CHIL @I182330621100@
+1 CHIL @I182330623411@
+1 CHIL @I182330621097@
+1 CHIL @I182330621101@
+1 CHIL @I182330621102@
+1 CHIL @I182330621104@
+1 MARR
+2 DATE 1880
+0 @F29@ FAM
+1 HUSB @I182768045698@
+1 WIFE @I182751598633@
+1 CHIL @I182768045697@
+1 CHIL @I182329882502@
+0 @F30@ FAM
+1 HUSB @I182767902757@
+1 WIFE @I182767902758@
+1 CHIL @I182768041537@
+1 CHIL @I182768041540@
+1 CHIL @I182768041546@
+1 CHIL @I182768041538@
+1 CHIL @I182768041545@
+1 CHIL @I182768041544@
+1 CHIL @I182768041548@
+1 CHIL @I182767901516@
+1 CHIL @I182768041539@
+1 CHIL @I182768041547@
+1 CHIL @I182768041542@
+1 CHIL @I182768041541@
+1 CHIL @I182768041550@
+1 CHIL @I182768041549@
+1 MARR
+2 DATE Abt. 1695
+2 PLAC Virginia
+0 @F31@ FAM
+1 HUSB @I182329819759@
+1 WIFE @I182329819761@
+1 CHIL @I182329820069@
+1 CHIL @I182329820070@
+1 CHIL @I182329818890@
+1 MARR
+2 DATE 18 Jun 1907
+2 PLAC Grimes, Texas, United States
+2 SOUR @S466339400@
+3 DATA
+4 WWW https://familysearch.org/ark:/61903/1:1:QK8T-856X
+3 _HPID 1,60183::1479502
+2 SOUR @S466339400@
+3 _WPID 1,60183::1479515
+0 @F32@ FAM
+1 WIFE @I182329830196@
+1 CHIL @I182768353636@
+1 CHIL @I182768353637@
+1 CHIL @I182768353639@
+1 CHIL @I182768353640@
+1 CHIL @I182768353641@
+1 CHIL @I182768353642@
+0 @F33@ FAM
 1 HUSB @I182767901516@
 1 CHIL @I182767902311@
-0 @F28@ FAM
-1 HUSB @I182329818890@
-1 CHIL @I182767692586@
-0 @F29@ FAM
+0 @F34@ FAM
 1 HUSB @I182330624087@
 1 CHIL @I182330620726@
 0 @O1@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _STYPE jpeg
+3 _SIZE 8566
+3 _WDTH 206
+3 _HGHT 206
+2 TITL JGThomas
+1 _OID 06c92f20-a35e-4672-b4c4-600cac536a13
+1 _CREA 2026-04-17 14:29:34.036
+1 _USER 6Lsif1wpI4PnQZCYjDwixcwf39eL+HEd2rLkOxj4HiIAWrTeLGaQ9OafK0BuQ76jD6qxxWyFZVVud8Gw5qnmMA==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL N
+0 @O2@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _STYPE jpeg
+3 _SIZE 97461
+3 _WDTH 720
+3 _HGHT 960
+2 TITL KyleDavidMaryBethJohnCharlotteAndJG
+1 _OID 07325bed-ba98-4af7-a415-b0f519031276
+1 _CREA 2026-04-17 14:38:59.105
+1 _USER /yqrfKfsWRaqDhlieJrbHUY2TUv+4lRLf4vjVlbtDF/sbeEdiaqKuSOB0UZj69BCYL3p9wVqxFDJW8voB3iYgA==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL Y
+0 @O3@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -5984,20 +7910,20 @@
 2 TITL ? Question-Mark-Scratching-Head
 1 _OID 081ceb53-6642-4647-bb7e-626bd04c98f8
 1 _CREA 2026-04-15 20:40:07.250
-1 _USER y8DrjLSWy7CtSUpok6yFHNXDczcAhRGWu0cR0qlLLp+uhIpqO7BU7zjLrr8XYZVihP35WBMqIlCQxqgBgcD3Og==
+1 _USER /PB1RESAc+sKzO+zoFknjpksnF365LmtmVeJhzCoFKX9XfiykRj+kWbkgeth4Y0qIDsbNTxvu47UvEmJVO+blA==
 2 _ENCR 1
 1 _CLON
 2 _TID 31940943
 2 _PID 20437559576
 2 _OID 8bfe8bdc-3913-42ce-8448-86d89ac0aa73
-2 _USER SyyQdlUOkJ8bEBUW1ir8Sa30EP8iLA4FKYw2Zo8779AKmpyJzhYZf9ovR6ONaAAVX/+WFya/gOxQQ6B5comaUw==
+2 _USER tAuqyvyodSmA3pcskbBChVJaSq2PqifSLbCb9ay0LgNMJw5vEEWcwlgtJduPMlLm+ZSnWLSo01LfnbegBChD7A==
 3 _ENCR 1
 2 _DATE 2020-09-01 23:34:39.000
 1 _ORIG u
 1 _MSER
 2 _LKID 8bfe8bdc-3913-42ce-8448-86d89ac0aa73
 1 _ATL N
-0 @O2@ OBJE
+0 @O4@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6011,11 +7937,11 @@
 1 _DSCR Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.
 1 _META <metadataxml><record_source_gid>182503378:1265</record_source_gid></metadataxml>
 1 _CREA 2026-04-15 19:45:42.052
-1 _USER pWzA/dMtVCZCMlboIqDZNe4JOTGqi70/sBHdIiP1wqS6xSsqpyJoclaAKk+SNugyZ5hucTRxdUXw+eTyZjXKsQ==
+1 _USER uKlBLrwjySDewSmd586c547a6BUz/y4ofjYAAze36Li9tKnsoi0u9EeYZ/7la5/00b/VVHGomCc6XMlDthyYlA==
 2 _ENCR 1
 1 _ORIG u
 1 _ATL Y
-0 @O3@ OBJE
+0 @O5@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6027,20 +7953,20 @@
 1 _OID 15c1d4d5-d735-4e45-a289-60a50d114462
 1 DATE 4/10/2020 6:45:55 PM
 1 _CREA 2021-11-01 16:10:10.000
-1 _USER ZbhuN0DuDTD7DrIx1LhuHF05AiRRMpfwaRL5+UN7JtkhXC6wWgdS1hctMwB2Ix8EiZRwmb9H+jWkvtA7hBwlZA==
+1 _USER 1NZN2viIL0e4aoM8XgV+nNf2rs9WdFbunBJsAW+wYKyCKkyXT16Bx4RwrHCzIHseZiivZ6SczNHWUWcUA/aQ3g==
 2 _ENCR 1
 1 _CLON
 2 _TID 168757805
 2 _PID 392190569871
 2 _OID 25732fd6-ac32-4939-aebb-c70b5a77dc75
-2 _USER +q28p8EHhIa4I4gNxz54pmygaDBBzxSeFDPs8QMyy0auM9wJ4xGN+YbqZlYgJPcSsdqm0WylV7GCSa3H29LOww==
+2 _USER 5yRttGsareFJyjuDwNiCLgc6ElCD0IBdeOJWcqxm0yhDzDb56O2CUoVbTx5NYUcWcR80j/GfDIF878tqiwaVdg==
 3 _ENCR 1
 2 _DATE 2020-05-04 02:40:01.000
 1 _ORIG u
 1 _MSER
 2 _LKID 25732fd6-ac32-4939-aebb-c70b5a77dc75
 1 _ATL N
-0 @O4@ OBJE
+0 @O6@ OBJE
 1 FILE
 2 FORM
 3 TYPE image
@@ -6052,12 +7978,12 @@
 1 DATE 11 Apr 1954
 1 PLAC Longview, Texas
 1 _CREA 2026-04-15 19:40:31.187
-1 _USER PkktEFqCvm/LEO3y0SA8JzYWpPj6apIFVyi8aA/rcQdIi1OG1UUlRXrPCuz4/ovJ7pFT91tTEUhD4CBQlZUkJg==
+1 _USER fbrvGYQX1K40Dn/hITHz2QySX//DI927aORFCUifGh8I9RC+m/GP8LgJ4EDBcQYjrODdGcmw+jNq98fsPMImPQ==
 2 _ENCR 1
 1 _ORIG newspapers
 2 _URL https://www.newspapers.com/article/the-longview-daily-news-marriage-of-thom/195622957/?xid=865
 1 _ATL Y
-0 @O5@ OBJE
+0 @O7@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6068,20 +7994,20 @@
 2 TITL BernardHarryCroftgrave
 1 _OID 28481083-fc26-4892-9826-affb2f02d187
 1 _CREA 2021-11-01 19:29:40.000
-1 _USER m/yTE4R2cylnsBWTmryNa4O24JjIHDn+DLQHfIquQNhjx+sd/MaUCRd5VkvTfpONBzUVsaEBRhciiFDO0+7hTA==
+1 _USER YuDurQVHyHSJIv3qjeecE8R7SEhoNX4v6lExoxpOf805Jbqvo07u9dHJIXM+3gvYpxrsaT4K0JXFU9q3yrP71w==
 2 _ENCR 1
 1 _CLON
 2 _TID 166259760
 2 _PID 422156733346
 2 _OID b0a0a738-39a7-47dd-9c82-5e40425a7d86
-2 _USER 145NNH10RJn1mmJ+gZpWCWsgJAFg4OSrqMI+cpTgBNEAmeZHgi75E++q26A8PxaRWlHmoiAQSE4hEu7QYbXYTg==
+2 _USER j8tiVqXbxusRi6RK6UONNUqacZ3dZqimkRqW0JnJcjx5nNfEEO4KojHW3J+c7LLkgnpLZ6oOwPHZy2rYNeI79Q==
 3 _ENCR 1
 2 _DATE 2020-01-13 15:54:38.000
 1 _ORIG u
 1 _MSER
 2 _LKID b0a0a738-39a7-47dd-9c82-5e40425a7d86
 1 _ATL N
-0 @O6@ OBJE
+0 @O8@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6095,11 +8021,11 @@
 1 _DSCR Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.
 1 _META <metadataxml><record_source_gid>1466767800:1265</record_source_gid></metadataxml>
 1 _CREA 2026-04-15 19:35:56.506
-1 _USER FnlcexKQQQFCwfrQwMvBVbu1VGMwN4OlqudeXDYXs4Y9HEzUrhp0isCpyA921ojYWRu4bOka68DPA1c+K/PoTQ==
+1 _USER 2FZbt0U7msS7Rgg7P2g+u8Y7PfMj6TXi2jx4Q/rXOjqjJyIz9M56asi1K7K1/dPom3yiPgOJ3mRdBllanMjUVg==
 2 _ENCR 1
 1 _ORIG u
 1 _ATL Y
-0 @O7@ OBJE
+0 @O9@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6113,11 +8039,11 @@
 1 _DSCR Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.
 1 _META <metadataxml><record_source_gid>169199935:1265</record_source_gid></metadataxml>
 1 _CREA 2026-04-15 19:36:09.700
-1 _USER ZLTWWh+N4ayMLBjAdLvYYqU4wJz4LW1wFBace1PZodOZkvLFc7lnzIEZfcaSbMTTvY6HSaFqnEao2qChXs635g==
+1 _USER XuHWOq0q+dnqNpipLwllIKQH5peWDqa4PYhOXhUsgjcHep6qKysdW0cEcCHmKq+tfooQDk85QFQ0wmL78rfuuA==
 2 _ENCR 1
 1 _ORIG u
 1 _ATL Y
-0 @O8@ OBJE
+0 @O10@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6130,20 +8056,20 @@
 1 _OID 379352b3-ea05-4bf6-a4df-89d5e91d7b74
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2021-11-01 16:51:48.000
-1 _USER TdkvLpyydUpuutGILUzcGRcafbSo8edKkVkWs3XVhlE27kaM5uFkyvZP58YkeS12ImY9GH96jBwQFFDI9zEa4Q==
+1 _USER mM12DAfXcxpWwI6fh71iXlJHaP4eLDCAOx5fuxvI6fW6UfII/yveOhQZgqhJujyFRP9S4p2K34EzavrL80YH8Q==
 2 _ENCR 1
 1 _CLON
 2 _TID 15734294
 2 _PID 1115066090
 2 _OID 4375e073-2a78-453a-a205-35498961bb1b
-2 _USER Kbek7wydjBVu559NWnpYzVsynyU6lQ5Nl1yEc0ZN/1Ubh5Z2O2CsKzNn1f7VZSVkEEIoBlx7MFfeOXZaapCFxg==
+2 _USER cUTUaTpJlF1ds/tJgk6S+jlUTq9sYGb3HpQpvmMr0lQT6B1mcX1fYsDn/qXanpHl8E+j6JA9eMLMZciF7333JA==
 3 _ENCR 1
 2 _DATE 2011-07-12 05:30:58.000
 1 _ORIG u
 1 _MSER
 2 _LKID 4375e073-2a78-453a-a205-35498961bb1b
 1 _ATL N
-0 @O9@ OBJE
+0 @O11@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6154,18 +8080,18 @@
 2 TITL MollieKravchikCroftgrave
 1 _OID 3bac99a3-216f-4a73-aaca-69a0f69a0a3c
 1 _CREA 2021-11-01 19:38:20.000
-1 _USER DxSzJVU+nUx6M+CL4ioV6Y5+rmWV3Su99lceqhVvR8vG7jFk8GBFkv5aV0IriQ5FKhrYaxHbRWhl0sFkxK3qZA==
+1 _USER 8726H8b896IUxTcSPDm4AcWlNzVrstOVea7aAwcP1GYD2aLkvRMwYsOl0fkMCod0UAyq7JHAsBmJ3lVIitv6/A==
 2 _ENCR 1
 1 _CLON
 2 _OID ee1d57df-7ff4-47c9-b4e4-a3ca0031f869
-2 _USER XfJK8H9gCHgURw/XXRyltuRQrHTwwQqpFrqzwNFTe6tZ3vq2Hsuiwot/Ku3Rt/W2cH0ubC5kSkFaeUbMIso0JA==
+2 _USER NVskmty0zx/JUzw8JqqH6jo3jhSphgZhJnw1YhE2pJvgjo28AqnHcnNLk/9l3puPEfAWj1jzfUszjtGocaUZNA==
 3 _ENCR 1
 2 _DATE 2018-12-31 01:16:44.000
 1 _ORIG u
 1 _MSER
 2 _LKID ee1d57df-7ff4-47c9-b4e4-a3ca0031f869
 1 _ATL N
-0 @O10@ OBJE
+0 @O12@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6179,11 +8105,11 @@
 1 _DSCR Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.
 1 _META <metadataxml><record_source_gid>1464440342:1265</record_source_gid></metadataxml>
 1 _CREA 2026-04-15 19:46:46.101
-1 _USER Dyh1+/k/goFNDNf+w+CJL7wWEC5X8Uv0ouNUM1IkzUN72ua9mn5X73Lv/RYdhvgGgZEYsqU2UEFrsdtDmfXXhg==
+1 _USER BqxJX5aGvV1H17lnUDZbEUD6pUnqZui6fAnsGsIflOKUdAy5GbsSYzQxpMwiJbLX6dydhE/OnFnb3eZHC1qELA==
 2 _ENCR 1
 1 _ORIG u
 1 _ATL Y
-0 @O11@ OBJE
+0 @O13@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6194,18 +8120,36 @@
 2 TITL JackCroftgrave2
 1 _OID 4461bd6e-3785-4d70-a42f-f60016056393
 1 _CREA 2021-11-01 18:52:02.000
-1 _USER 0bK8B1INXP8rZCXB10JQKcQ0ltooI54rMfhJghYK5WJTlVoV3v1De8GuKglMKFhhrABbbJI1reUl6+zxF4enAw==
+1 _USER zgEbqUXK9T+hcm9RHIV+ifPa5pFYpTYz18E1Ai5oTHXlJlNbuzEtNWZMDwShqdaHJlYVTr/yAFKGqgipwVSqKg==
 2 _ENCR 1
 1 _CLON
 2 _OID c8c1d6c1-86c7-49a5-8481-b9b1cb0dcaf0
-2 _USER ReowRBhVzjTxDt+z+g/U9grahCFL8GabSX2LjiQFHEwr2yVZvYKjG3uVw/vf0iApfhHoqpGQV+lXBE4HD55tfA==
+2 _USER ctAB0YYakVt10T5ePyrZs1CnHNLxtYwhF4IAW+cO3lf1NdmFSF8PnCN+vEiTEfUArMU7LtF6I5VKdDLew0bszA==
 3 _ENCR 1
 2 _DATE 2018-12-31 14:50:34.000
 1 _ORIG u
 1 _MSER
 2 _LKID c8c1d6c1-86c7-49a5-8481-b9b1cb0dcaf0
 1 _ATL N
-0 @O12@ OBJE
+0 @O14@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 829685
+3 _WDTH 2580
+3 _HGHT 1837
+2 TITL James Benjamin Crawley
+1 _OID 47819415-06ab-4273-ac72-8129792a1d95
+1 _DSCR Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.
+1 _META <metadataxml><record_source_gid>966701494:1265</record_source_gid></metadataxml>
+1 _CREA 2026-04-17 14:07:32.671
+1 _USER LU6BkS31if8Fd/toN5nlxuzVri6C5ViXpnchRka7Zvt1LWpIOYY68rBEyXq0mIlbqq+PABAovGjW9ywx28tdlA==
+2 _ENCR 1
+1 _ORIG u
+1 _ATL N
+0 @O15@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6216,20 +8160,20 @@
 2 TITL JackCroftgrave1
 1 _OID 49535b61-c400-429c-87bc-680932d743a2
 1 _CREA 2026-04-15 21:58:42.286
-1 _USER UmjlxVd93874Pas1iZ8+5XepdBc9IsPJ71FS1AVzfpevOmnzjKUHDjH6DlrxBVmwgah3g2NcGSlT6Yq85v3jtQ==
+1 _USER AzOYaRwm0Uioz3q4Iywpq1SHO53g00gOPJQLZK8eIMBbWd2/FU/GMKgAU951NVXVKETogfT4RAfQkCwPga/uqQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 166259760
 2 _PID 422156733349
 2 _OID 967b42a6-e36d-477f-ae03-01b9d69c15ef
-2 _USER m7ysz8ySXaV01eOzSHg6aDgLuE4AiHCIotQCUWauhQEnIM/ILc+8l1Q9vCidUrb9Emn6fU7k9MkgSwSkfLAzUQ==
+2 _USER wnWBVCi8Yzhi3Jv01mgabAc6GLp02/cqY6lMpr6ktrBDPzhAq9cV5o5e9fYyYK4+E62Hn9MmTA/qD5NhzrN9wA==
 3 _ENCR 1
 2 _DATE 2020-01-13 15:55:12.000
 1 _ORIG u
 1 _MSER
 2 _LKID 967b42a6-e36d-477f-ae03-01b9d69c15ef
 1 _ATL N
-0 @O13@ OBJE
+0 @O16@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6243,11 +8187,11 @@
 1 _DSCR Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.
 1 _META <metadataxml><record_source_gid>440725420:1265</record_source_gid></metadataxml>
 1 _CREA 2026-04-15 19:45:57.025
-1 _USER 5RbfsXtz3/nU50SGRRGKIJaBM74hHI72TGllB19t3AFmRu+B4rtoxGX5imd3nTXzaF7graPbxrPXNfztay2e2g==
+1 _USER 2a0GSUUZyH1Os+tyc/wjPD5vOhVTdG5MtUPaHMwjfG7OiQxaRG5XTyZID8pnd3/cRmASS0jhacRB9cRZuzDpRQ==
 2 _ENCR 1
 1 _ORIG u
 1 _ATL Y
-0 @O14@ OBJE
+0 @O17@ OBJE
 1 FILE
 2 FORM
 3 TYPE story
@@ -6290,20 +8234,38 @@
 2 CONC ind A Grave Memorial# 73230209&lt;/td&gt;</line><line>&lt;/tr&gt;</line><line>&lt;/tbody&gt;</line><line /><line>&lt;p&gt;&lt;span style="font-size: small;"&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</line></content></metadat
 2 CONC axml>
 1 _CREA 2021-11-01 17:02:54.000
-1 _USER fnHLrpwaNB8hFcKLyd764ey6nzOkMcfQIqbunkYPyWXaAcFMw8n3TNwChMm/qjVw9t2zqbjNJ4p0peLt59mpGA==
+1 _USER hpWCuZQrrjs/S1jY6ZKP1JIApi1Qcdkl2MKkO832szzrSMLJzyegwbm2XTZ5UuotpyhZVhntsLHhEloMC6MIXA==
 2 _ENCR 1
 1 _CLON
 2 _TID 6187406
 2 _PID -1331255582
 2 _OID fd9ec8ba-7dd2-4535-b128-4a3fd7a298eb
-2 _USER wrOg7dqn+mYSgmG49f3xvfcO+x4vS+qV1l964a3vkfA/bOwIIG13lRaa9BH5JgqBHhLyWJaaBr0yA66Vjkxv+g==
+2 _USER FwkRtD/neRRaW0Rhm2pqqZTllcBD5HMzp9k8T4V3kHOawJVfLP79UvA9Mho8fbOUw5Zak7FPBKw4H5MnvBL2gg==
 3 _ENCR 1
 2 _DATE 2014-04-23 14:43:34.000
 1 _ORIG u
 1 _MSER
 2 _LKID fd9ec8ba-7dd2-4535-b128-4a3fd7a298eb
 1 _ATL N
-0 @O15@ OBJE
+0 @O18@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 129958
+3 _WDTH 648
+3 _HGHT 810
+2 TITL James Benjamin Crawley
+1 _OID 52202dc1-263f-4eb5-a260-46e08d0c81d3
+1 _DSCR Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.
+1 _META <metadataxml><record_source_gid>293888928:1265</record_source_gid></metadataxml>
+1 _CREA 2026-04-17 14:48:15.556
+1 _USER jqYjCwmTFmy95QcDFoRmeuyBI5Yc5xDDrBStP9br20J15tjBc4JJtrJSZ+atdXAGHv0sGWxt5Ht69zkVTtucNw==
+2 _ENCR 1
+1 _ORIG u
+1 _ATL N
+0 @O19@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6317,11 +8279,11 @@
 1 _DSCR Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.
 1 _META <metadataxml><record_source_gid>54116264:1265</record_source_gid></metadataxml>
 1 _CREA 2026-04-12 18:17:51.821
-1 _USER 3AyHUlkbmdqsggdnJ4lCHlJgyw67y6U66f3Qnc200wH+g0AqKB2qGzBCR1SJqo4j3JL0QBoBrALuIZ4+UNroJg==
+1 _USER KTTVbhtzhOKBjDUHt+VryKLbFlIKDLizeJjIkixIOnywae+jaixYFbP/aCHQLllkIRD5LiY6couCo4jt/gPtvA==
 2 _ENCR 1
 1 _ORIG u
 1 _ATL N
-0 @O16@ OBJE
+0 @O20@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6335,13 +8297,13 @@
 1 DATE 2 Jun 1953
 1 PLAC Spring Hill, Gregg County, Texas, USA
 1 _CREA 2021-11-01 16:47:31.000
-1 _USER 5V4ijg1EZkr3lOw6KAfMySLfn0hb535aV1AqPuHkxCDpTPh06ZdGtDuCGWbHyz7ccmCBAgNcIOYZ1+J1wkAETQ==
+1 _USER nLfLSJjw6RmSDfDfOQ0o00Mf38z/SnG230L8M3EKrX8ONP9ThwRIdeDXkkPM8U4pyozhBDKp6ARhu2J57C5U8Q==
 2 _ENCR 1
 1 _CLON
 2 _TID 117657095
 2 _PID 370173183081
 2 _OID 400f8633-994c-4232-983b-fec5b183dccd
-2 _USER EAEQcUsgh2UB/AfxCe02l9KAXhjeUvL87Xn0IrSmnZbSGh5ZBpVrIFeHyw9hmniLP5V+6cT0lDufugwXJWBcxA==
+2 _USER gU06tTqNveOPRDFsRK6B8t+QHUvILblAAIAQM8RmP/eCrkja67bvfIKqZLEqd0WqC6Wzm+5Wj1qx7EHDtYNplg==
 3 _ENCR 1
 2 _DATE 2018-01-05 17:42:15.000
 1 _ORIG u
@@ -6349,7 +8311,7 @@
 1 _MSER
 2 _LKID 400f8633-994c-4232-983b-fec5b183dccd
 1 _ATL N
-0 @O17@ OBJE
+0 @O21@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6363,20 +8325,20 @@
 1 _DSCR Photo per Lou Poole
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2021-11-01 16:51:53.000
-1 _USER ZuO+ktc22cPYoAPtZYacaJRUU7A416AdTBMtvN8FTvoPvxwF34SIA9ziSJRgOMgwY1tDn2yI3SuRNqF9tPdZwA==
+1 _USER lXnzGOHmdSkCad3dnS07rFoiSvF2u/ZL+bktRrVDO6IX+fnBZncYssHMXXM6/Ozcty+3V835gZbSxIpQdmYsVA==
 2 _ENCR 1
 1 _CLON
 2 _TID 15734294
 2 _PID 1115066090
 2 _OID ddd5e527-9cf3-4dbb-82c6-fb6c24218d24
-2 _USER crGTTjwj893VGD+IiFoF8oAomc3HKv+Xym9S3yPk9xrw85MRcKSwIqAkONFVrnhib0tiNO5kaEj2YXAIcB8DDA==
+2 _USER WWXb9cOVgNm88W8zVSUKPxjwKLxVMpJI/q3DoC+Byjo/kO0fC2+2uH1jZC8O4jSe+zWEiL12Qj9IFS4IDq/mZw==
 3 _ENCR 1
 2 _DATE 2015-09-26 01:33:08.000
 1 _ORIG u
 1 _MSER
 2 _LKID ddd5e527-9cf3-4dbb-82c6-fb6c24218d24
 1 _ATL N
-0 @O18@ OBJE
+0 @O22@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6389,20 +8351,20 @@
 1 _OID 6834b379-9141-43c3-8bbe-da4a988d1585
 1 _META <metadataxml><cemetery>Mustang Cemetery</cemetery><transcription /><personas><persona><pname>M. Thomas</pname><bdate>1852</bdate><bplace /><ddate>1922</ddate><dplace /></persona></personas></metadataxml>
 1 _CREA 2021-11-01 16:51:55.000
-1 _USER ZQ1bu2gZD0IptjFgcjrpn/ADQHUeKsczd2ze+02WqQ5dHKrMcunvkdKcnpF+yp+uyzNM6hC53tZfazSUVtBTJw==
+1 _USER T+aG9hCc59ItvGkUHzyxV9hAaQAPm1nFIKqNFeDbi68J82lWHSEJwQjcNO5iKZH+H/RzH2a1Iq83wS49KWRFzQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 10142672
 2 _PID 6124305322
 2 _OID df93d6d2-34cb-4dd2-ae93-233cfd4b4a75
-2 _USER riZP0vGvli/mZyrZ/oG8JHyOw3DF+fGbVfpqm1byJiE4mR2FT1wiFo7fAlWbZ13NwppTojR7Biut0OI32Gunsg==
+2 _USER jdJ7Mlysg+Y/XhlpkcRxRyZ0w1VzRAD4MK6t6reJjT+fQXoZw8rUuE0jtdXNJXYPUnj9l1By/CZ1wWGgAaIYRQ==
 3 _ENCR 1
 2 _DATE 2013-08-20 04:51:23.000
 1 _ORIG u
 1 _MSER
 2 _LKID df93d6d2-34cb-4dd2-ae93-233cfd4b4a75
 1 _ATL N
-0 @O19@ OBJE
+0 @O23@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6413,20 +8375,20 @@
 2 TITL MollieKravchikCroftgrave
 1 _OID 6f2fe06d-e9aa-4ff8-b707-e1958c5c9560
 1 _CREA 2026-04-15 22:08:06.509
-1 _USER xKGX/rJWYRjfmayLAve3M7fr5xQfuiualgphi+GHjNYL0IKOCZ6B/m7cH8becfZmT4yKaw6R/ibHwJTFWuhA5g==
+1 _USER tbRC4OZYIfSCnUI8tlwkH6Gdx8oa0DpWR1ngumtgd/XpcrLZtjnMtM/tURsyFf6Dpt2ozOMouOhUxHNjadFSBA==
 2 _ENCR 1
 1 _CLON
 2 _TID 166259760
 2 _PID 422156728717
 2 _OID e9ad68a1-0b13-4837-9d49-f5d935729e6a
-2 _USER PEqFxMmzB2/j+Pm1/fnABLhX6taWFuq8Z2xsnWmGn7MnHBnbovwTcMwyuvRGG8KXlliSWd7SCd7mnczxYG9HrQ==
+2 _USER B0vEa5KtDSYLh1016PoOVrk/7EmMhnG3VV/I3t89dEq1OszZ1M6UCFpsMpf9B5mkXVFg+PAzcMiAfRZxhU+XgQ==
 3 _ENCR 1
 2 _DATE 2020-01-13 15:50:49.000
 1 _ORIG u
 1 _MSER
 2 _LKID e9ad68a1-0b13-4837-9d49-f5d935729e6a
 1 _ATL N
-0 @O20@ OBJE
+0 @O24@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6441,20 +8403,20 @@
 1 _DSCR per Sandy Avery
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2021-11-01 17:02:59.000
-1 _USER Z3XG5HCS5RUmtGNmJyWLN1MfkK17VkEVwqmQpa22DRF1l6DiwgPi3cu0Sk5pwXHSP0aq+wsg/5MZ7VSZk1kdpA==
+1 _USER sFQ8XB8nkOm6JY3RiIdujhCchdumtaaH5bZPyW6Q5ipisnSnXFS3j8zdy5zjMiVFc1dUwdcVsbDdKtdUWTc9jg==
 2 _ENCR 1
 1 _CLON
 2 _TID 15734294
 2 _PID 1095534787
 2 _OID bab75de5-4eed-4cbf-b42c-ed1b3f3d02c9
-2 _USER I2r+qVFXwysDX7wyv5kccZwC7dSTRsMitfnNaPZgoVahxzlPkGve9VV2Xj82CeKnQjtZcT6RdC40nNbdNugZSg==
+2 _USER yxr3cQrNZIaLUlsaOzOH1WxgiTGTBowfhKm8gwoZ6uXE3DvgXTRl0FPCZQCYyWQXn4jxcIcgy6MnvV3RwZbFfQ==
 3 _ENCR 1
 2 _DATE 2011-07-12 13:07:10.000
 1 _ORIG u
 1 _MSER
 2 _LKID bab75de5-4eed-4cbf-b42c-ed1b3f3d02c9
 1 _ATL N
-0 @O21@ OBJE
+0 @O25@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6467,20 +8429,20 @@
 1 _OID 74a1020a-d997-485b-8b6d-fca43d750d41
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2021-11-01 16:52:01.000
-1 _USER +GQIfoLX4bC4LfQMS81F0bIW2T+7Ebg+yaJY1/Atm0ZwqvzM5USThR+684ZEmANo/dCYVkAme6RJN4ZAesscmw==
+1 _USER RexshwK+fvovhXcMhmWLLCKfPnzxn2lWqNRhflq2KZF4X3Sz6nxEG5ek9FyjhgoUDxaIezY4KJXTDdHrkjYOLQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 6187406
 2 _PID 24109620795
 2 _OID 51d0f165-977f-4761-af00-f7f4bbb12172
-2 _USER N3NVIo80nhx4m/2+lBM2O58tX6/JJPmNqSe/a1KLEqu0+TS6+feZdTMyVg2h4Y92vjp8PBV72ZWYPbSQWzm/Zw==
+2 _USER 57gBUYCQzPgNVgyyMd++fBtytkkEJ7xfoGCMWDK8/tQ2pwFtDJ9oUIf0Do8zlb8Oc0/gb2VpO7wqI3NRmKPNeA==
 3 _ENCR 1
 2 _DATE 2014-04-23 16:44:52.000
 1 _ORIG u
 1 _MSER
 2 _LKID 51d0f165-977f-4761-af00-f7f4bbb12172
 1 _ATL N
-0 @O22@ OBJE
+0 @O26@ OBJE
 1 FILE
 2 FORM
 3 TYPE image
@@ -6492,12 +8454,12 @@
 1 DATE 15 Sep 1901
 1 PLAC Houston, Texas
 1 _CREA 2026-04-16 01:33:47.249
-1 _USER 4blmhyGnqz2Vc4qoezZVV3hL5k/aEt5r1u1uqE06w32mYErOPhFuI0/xUUCOD/LlWvM8rWJNBMGlNzpIkU1zyw==
+1 _USER nnRC59/oB68Bj5E8BMhFA5/aVTVxRdoIlCZ3kkgcoo4ksJBu6Clj6cNQ6colkHmYXhX1/V9sPvW4nneuMZodhA==
 2 _ENCR 1
 1 _ORIG newspapers
 2 _URL https://www.newspapers.com/article/the-houston-post/195646386/?xid=865
 1 _ATL N
-0 @O23@ OBJE
+0 @O27@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6511,11 +8473,11 @@
 1 _DSCR Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.
 1 _META <metadataxml><record_source_gid>192715989:1265</record_source_gid></metadataxml>
 1 _CREA 2026-04-15 19:36:19.950
-1 _USER 61TlbucMH+4aFv40b9SvDs4F79TRHolyDvuy1+yaxwCTb/lQfhUh/G0Ka7dfmJOUwc8xkIZHgTj1wGYcx+ldbg==
+1 _USER 7VLB0f2IZqS2bRGq0TxuKoMVyKRZxsJSsbYatIXoVW7x2lMBS6iEezyL1uvGR5LPvhaT5Kcws3PpKE090VVICg==
 2 _ENCR 1
 1 _ORIG u
 1 _ATL Y
-0 @O24@ OBJE
+0 @O28@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6526,20 +8488,20 @@
 2 TITL JackCroftgrave2
 1 _OID 7de0bc7e-18fc-4e36-bd55-afe0cafabafc
 1 _CREA 2026-04-15 21:58:05.406
-1 _USER 4a29O57D7UsN7NEmjYyc3D72H+tDK4nr+Fq2pYmXOQO174ODlPEbFCmHRgAICnNoG17D4LH1rMQ2mq0E5GhgHQ==
+1 _USER Ugg9F9fvWrPj3O3AQH0xM4RYG2w6zZCvmYVlN95oyhw7iS0ZsCVlHCK2Zk7K8yPfNlg5Hg5eDpudPjHn86G+nQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 166259760
 2 _PID 422156733349
 2 _OID 50d4f3bf-4f33-46cc-bef0-a2e2ef5bb111
-2 _USER S14O3EYPihH7Lh2lJO1d1ImIK9AFxjJxBkchJaDF7bqul5EVfeX5MT1xmXzTlWNlXdNm6nhYLRGIdaOG6CEwlQ==
+2 _USER l5YbO9LEUE+50TcmXG5FplMgu/pNYGgFa1mpy4aqQO3oXKqBoJ8NJ3zhQoMPgBZn1UGU8+tp1xpN7Zxb34gGYA==
 3 _ENCR 1
 2 _DATE 2020-01-13 15:50:35.000
 1 _ORIG u
 1 _MSER
 2 _LKID 50d4f3bf-4f33-46cc-bef0-a2e2ef5bb111
 1 _ATL N
-0 @O25@ OBJE
+0 @O29@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6550,18 +8512,33 @@
 2 TITL JackCroftgrave1
 1 _OID 8958108e-bee9-488b-b943-ae65ee982e14
 1 _CREA 2021-11-01 18:52:07.000
-1 _USER env1yc7Pmlw6Y5PPcj59uMUoPgoSr1WczClqUNigAKEUqZs6/k9g1LQVoDfz2KlT2Ybv9S7XERYteBilmCYfzw==
+1 _USER TyqPUqjkpJQHjD85kKZDJkzF5WjpqUqqJQUSZnRa9JeTYKXGteanhB0SSFxE8fJurq/WftHog0IAK7P5BOQxUA==
 2 _ENCR 1
 1 _CLON
 2 _OID c94d29dd-0500-4534-b858-e8d41967a3b3
-2 _USER qsU7M2Ez766z4FwFh/liic/UdzKo3UyKiA4OiaygiVPf8jrpn4jIsxENj+4tmc/2SGC8R1lz//bua4V7gkbOaA==
+2 _USER I+Y5in+P42mXLA/cI4sKOOymJEBKpIx6tplT4SmMnZ9kF6LdMpalo9v+gqcBcZrV1qdGwvFYJ0iLEjAuYAkWPw==
 3 _ENCR 1
 2 _DATE 2018-12-31 14:50:11.000
 1 _ORIG u
 1 _MSER
 2 _LKID c94d29dd-0500-4534-b858-e8d41967a3b3
 1 _ATL N
-0 @O26@ OBJE
+0 @O30@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _STYPE jpeg
+3 _SIZE 8872
+3 _WDTH 206
+3 _HGHT 206
+2 TITL MaryBethAndCharlotte
+1 _OID 9139c4c9-6ad2-4d09-82c6-2fde4a449edb
+1 _CREA 2026-04-17 14:37:42.042
+1 _USER /zMb/jDlpYkr9CsduOVmaBmF06x4Zi824pGfFR2HUKNIXQruBXYW4O8o9osQ1tzgLrh/pRm2oiQdmoTZbBv5cg==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL Y
+0 @O31@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6575,11 +8552,11 @@
 1 _DSCR Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.
 1 _META <metadataxml><record_source_gid>994261649:1265</record_source_gid></metadataxml>
 1 _CREA 2026-04-15 19:45:31.195
-1 _USER SoPz9zZdCx7Uf0Ctw7g1jzt8rjbTPzrNU7oOTwTzUpFbDuj35a/4BQsEDfbg6iGwBLaZbHhA09B4lc7LXYFyGQ==
+1 _USER qLot4GXHZuMvpuS3cpO2DxJDBknVJPWruf5eIriMXQ0HkHrAC6WI0oo6d9glMjqUqdUONve5WUeqxJZA3fePbw==
 2 _ENCR 1
 1 _ORIG u
 1 _ATL Y
-0 @O27@ OBJE
+0 @O32@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6593,11 +8570,11 @@
 1 _DSCR Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.
 1 _META <metadataxml><record_source_gid>466816124:1265</record_source_gid></metadataxml>
 1 _CREA 2026-04-15 21:07:53.208
-1 _USER mpUxhc7YznUtcAdXby47YKyD3VjJTpNXGxMzrLLDdRo3c6TXtaBxaK9S4YdIVSUWdq2WBqTwOAk/BswTx/f85A==
+1 _USER +KeFGZ0WFOmeGevxBu+U/k+2QQf9M9vDaBtiAnYvwcuY9YZ63z5b7WTESj1Vqy3my36ksckJEBJ5Abr47HJqRA==
 2 _ENCR 1
 1 _ORIG u
 1 _ATL Y
-0 @O28@ OBJE
+0 @O33@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6611,11 +8588,26 @@
 1 _DSCR Ancestry.com. U.S., School Yearbooks, 1900-1999 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.
 1 _META <metadataxml><record_source_gid>182570548:1265</record_source_gid></metadataxml>
 1 _CREA 2021-11-01 16:01:00.000
-1 _USER scy+YjZVJi1bumgXvfqD94ELQNRITxoYUwl90APYy+IYxBZiyI4/OqrX3WOg0qJjKHH7jJ/6nj0u2VrJkEa2WA==
+1 _USER MoEDmcqp1q6G3NfurPvr66DilgAGr/YooT2BbdYVB0eBuBmpLMlPSMrfUQw/Dz1Xq7IgESb9bnGPMgr6HQ691Q==
 2 _ENCR 1
 1 _ORIG u
 1 _ATL Y
-0 @O29@ OBJE
+0 @O34@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _STYPE jpeg
+3 _SIZE 5787
+3 _WDTH 206
+3 _HGHT 206
+2 TITL JGThomas2
+1 _OID b45e42f7-da29-4949-8bd9-421f1291be7d
+1 _CREA 2026-04-17 14:30:12.861
+1 _USER fM7aR/Ee3wFk3W1uEymI7Dh4PRz/++NYcIacLR/JDmFSLpKfaGrdTojy8+UpYGz52FVP7x6xW5yHOAmlfyvEHQ==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL N
+0 @O35@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6629,11 +8621,11 @@
 1 _DSCR Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.
 1 _META <metadataxml><record_source_gid>96965244:1265</record_source_gid></metadataxml>
 1 _CREA 2026-04-15 19:44:48.682
-1 _USER 9o/IAU++2xC/oTQyBo+yIk2CRSnkwmi8WVADSGuoTxLdcFHdn1p2+Eob9+V3lzANp4UqXvoFe+kLZoLcEQTHQw==
+1 _USER cH2LkPoYo367tJGQkSCHeiqJDDwnhfwFR/NG6PbUpU59U6V1AG+/6sFCKd8ZQHyVrtUHf4nxCOFt92leN/Ri8w==
 2 _ENCR 1
 1 _ORIG u
 1 _ATL Y
-0 @O30@ OBJE
+0 @O36@ OBJE
 1 FILE
 2 FORM htm
 3 TYPE story
@@ -6674,20 +8666,20 @@
 2 CONC 0 census are in error by two years for Amanda and Marion.&lt;/font&gt;&lt;/strong&gt; &lt;/p&gt;&lt;p&gt;Source: &lt;span&gt;&lt;font color="#366388"&gt;http://www.fortunecity.com/tinpan/nirvana/621/thomas.htm&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;</l
 2 CONC ine></content></metadataxml>
 1 _CREA 2021-11-01 17:02:25.000
-1 _USER ocZfg8OiwaODHap8B96uUmqipHU15X+nL5PPE2OmMER2LCzZxn9qWPEADPdpyAfQk0sjfKX/5JGFB4DosbH7Tw==
+1 _USER uoFmPIO6ds1Zohy53ObxM5XO/1DbEDfc63oHqjQK16HO9YqQIPal5hOB1lf2dgHduSHFOfE7dJHwEJs3QGsRyg==
 2 _ENCR 1
 1 _CLON
 2 _TID 15734294
 2 _PID 1095534787
 2 _OID 45f030a5-ee55-46de-acc1-c921800875fd
-2 _USER QJvOEOZThrgqmITCQDB2wLysQFdOUAWOD/xxgQ+2h5W1eRC8vQra4a37XMX8As91V9Myw0qJuER9cDpnZNPLNQ==
+2 _USER HYaNUsmoKP4AyP9RdcH4MVvS8qb5rQNI/SrKJxnh2/u4J6zjUCDwJYMaYb26o/pq8OuSsoEcPEge0+N7A1itIA==
 3 _ENCR 1
 2 _DATE 2010-10-12 04:07:01.000
 1 _ORIG u
 1 _MSER
 2 _LKID 45f030a5-ee55-46de-acc1-c921800875fd
 1 _ATL N
-0 @O31@ OBJE
+0 @O37@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6702,20 +8694,20 @@
 1 PLAC Houston, Harris, Texas, USA
 1 _META <metadataxml><transcription></transcription></metadataxml>
 1 _CREA 2021-11-01 19:30:28.000
-1 _USER KuTXurnOE2E5/2yB/wfPnuFwIbE/ZB5LWBUDhT9W/0dgaIxOPtrOsYreQb7+GwDKYub3RfyrmaukX2yOGHr/CA==
+1 _USER 6O4Lh16N93ZsBqoDOYOBfl792UybWe3wmLh1su0wDV9aeWnmeMAjsOgmlINmnHkOUoZ0YhrrnZng5KAbx+86fQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 81610823
 2 _PID 210060696245
 2 _OID 3b6c7f29-f744-4965-a15e-3d0107d88893
-2 _USER cJgvLGAHxwD7bYHQu2e0QVxdTXhBfs25GT/hEUOsFK9rDVeMMER4SFL4zjFKsxXffmg/SI6bcbfUwts9Rwmd0Q==
+2 _USER xUYVpcxjq/tz2wS0aDIJ3oqf/RIa6tLoSEgpcGa+/sHK9S3b1nDPUqsQ9wJ2gK/uk2agiyflCCd4jDOYb0iVrA==
 3 _ENCR 1
 2 _DATE 2018-11-10 16:49:53.000
 1 _ORIG u
 1 _MSER
 2 _LKID 3b6c7f29-f744-4965-a15e-3d0107d88893
 1 _ATL N
-0 @O32@ OBJE
+0 @O38@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6730,20 +8722,20 @@
 1 _DSCR Find A Grave Memorial# 20619274
 1 _META <metadataxml><cemetery /><transcription /></metadataxml>
 1 _CREA 2021-11-01 16:51:46.000
-1 _USER +fwfMnzY8SlWJ0WgomW0v+Z7IevOq04QT0cpOnaf8c05ClZLKEM4kLZwmzw/IyMe5/H8dRO7BLrRLKcGdUtDRw==
+1 _USER nH5FetcTHfA8m99UkGrx7PaU+dKm2SGtZmR8mXhbQI9TPwr67a2qubKAml3FpDR5r8j6D7VU4ZvEu9ax2gBv6Q==
 2 _ENCR 1
 1 _CLON
 2 _TID 15734294
 2 _PID 1115066090
 2 _OID 804609d6-0806-4a20-a170-03a5d959b354
-2 _USER bJ+Qz2caiETsdeT1ZkTiQeqETZRfisAlqFJZbVSAOB4xQclTpWC7BKNH+QoYulIx6oCwOFySX4SX413daYDOAg==
+2 _USER K9KUyzHtVfYhAHyV8tgjsqxrfHna/D/r0ZNPsdzppl8EotabsPB1DB1fEH44TjYWu5LjmSdFMo2c52OCJNEIWw==
 3 _ENCR 1
 2 _DATE 2015-09-26 01:33:45.000
 1 _ORIG u
 1 _MSER
 2 _LKID 804609d6-0806-4a20-a170-03a5d959b354
 1 _ATL N
-0 @O33@ OBJE
+0 @O39@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6756,20 +8748,20 @@
 1 _OID c8779174-5f43-4620-8a44-78299a6d8c81
 1 _META <metadataxml><transcription></transcription></metadataxml>
 1 _CREA 2026-04-15 20:45:38.498
-1 _USER nbu5VqPmJ5jIGghvlSd9+gik3Q5NFnuckMy7RyW+mpRZrdigza2ESDQFfFiE43LVUmUSDUGAXT5/0evtLCmtdQ==
+1 _USER LCGQ3ix1s44pM1u/+8GaFvqaA0W3m0u9RJeSVS44HbuvRx7RCfX4iUADSETXaoTb1U55+W1/cD8xAi5u5LdN/Q==
 2 _ENCR 1
 1 _CLON
 2 _TID 151564118
 2 _PID 162021709934
 2 _OID 332d9abd-561f-4bea-907f-56081deacbec
-2 _USER mFXIUKZIZu9rWsVFxA3nZSCmUL+Rtp+4fkWCzQGc2A6uqdEakgVuOcxCwafXD2FflzPE3cI4yPZFIECf1UzKMQ==
+2 _USER 8jCOTB2sZtRrZFNHhfZUs5yfGFE37uOzg5Nk03rzMgD3j2Ox+/Vx9JEXJnwmeFd3vD8IiDRh98LfNBIZ6ccNTw==
 3 _ENCR 1
 2 _DATE 2018-07-28 23:16:19.077
 1 _ORIG u
 1 _MSER
 2 _LKID 332d9abd-561f-4bea-907f-56081deacbec
 1 _ATL N
-0 @O34@ OBJE
+0 @O40@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6784,13 +8776,13 @@
 1 PLAC Texas
 1 _DSCR Draft registration cards compiled from multiple registrations beginning in 1940, for men 18 to 45 years old.
 1 _CREA 2026-04-15 22:00:07.683
-1 _USER mSWyVK0iqhNzTpuPQV/ebHlZRKOExA4u+sKhkev0sn3kevCLwjaobqxQ6HUEWdiR9z9ZmSa9YN83LghCEVDWNQ==
+1 _USER Gmv2kxCXsmtvybqNbQAcKsgB7GCTwqhybmJAs7DTM12Jv2llWa9P0XXctCZPGBvwcOhHOvvwhjM9wyV3XZWbWw==
 2 _ENCR 1
 1 _CLON
 2 _TID 89343722
 2 _PID 282047894957
 2 _OID cc27e20c-85ef-4ba9-80eb-713e6e1f9870
-2 _USER TRMT4LG1fo9HcIxD4Cwl02/X3ARNhMUF39qSgQRS4i6Gfpq1W3SglG74jkzjNIE67bikrFDFqeFdNIkCK3ZQog==
+2 _USER eevMvRwUo61kCkWL0aPl5KVBgFzizWZCWkvKqdphRJSTlcjVvDrziUaef8JQ4AtdG3vDZep3nwUZophPANh9cA==
 3 _ENCR 1
 2 _DATE 2018-11-14 18:46:37.514
 1 _ORIG fold3
@@ -6798,7 +8790,7 @@
 1 _MSER
 2 _LKID cc27e20c-85ef-4ba9-80eb-713e6e1f9870
 1 _ATL N
-0 @O35@ OBJE
+0 @O41@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6812,11 +8804,11 @@
 1 _DSCR Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.
 1 _META <metadataxml><record_source_gid>1465343113:1265</record_source_gid></metadataxml>
 1 _CREA 2026-04-15 19:35:34.539
-1 _USER e4Rr47TvlPZJ8ReSwXJtOSY+U3AfdXsrIwxnVJWEO0GDTN8kW8IpU1DqaCV5QxAm/uMNgUX6uLyHmxM6sicE6g==
+1 _USER cPu5vzYEOtmYfpdlxeIfqWOb0GRCfVBNM8wvSJaTZFaiMXP2OmuV7pLYGxzxccXADyd4ijCoDwpCtqS39t5LKg==
 2 _ENCR 1
 1 _ORIG u
 1 _ATL Y
-0 @O36@ OBJE
+0 @O42@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -6830,11 +8822,44 @@
 1 _DSCR Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.
 1 _META <metadataxml><record_source_gid>441038455:1265</record_source_gid></metadataxml>
 1 _CREA 2026-04-15 19:45:16.506
-1 _USER 3cWOXYPERIVTYbI873uJ+mHL97jTCH3c1zLDsYlrRg9+2hKkU0Q3a8z0pvHiGMO21wV5lXTH9sved1W2+k87XA==
+1 _USER g2qzpJJKjieiikHtk/bB8C7ejPxb+dwjMqg1XabBBRCIDyOzC6aPZZlHvgu9iim1GPv/6zBVUt1DkBrU8adCrA==
 2 _ENCR 1
 1 _ORIG u
 1 _ATL Y
-0 @O37@ OBJE
+0 @O43@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpeg
+3 _SIZE 135945
+3 _WDTH 652
+3 _HGHT 805
+2 TITL James Benjamin Crawley
+1 _OID e53d45dd-751f-413d-9125-2db2ca4adc7e
+1 _DSCR Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.
+1 _META <metadataxml><record_source_gid>1423340504:1265</record_source_gid></metadataxml>
+1 _CREA 2026-04-17 14:07:03.603
+1 _USER 8GkVtJvzqX6k2bLNRyIYd0yPR7YOT+09usBOphg74LAal14CncKPuHsfb44aPjNZ+/iFkd2OhkdnAf13dL3OgA==
+2 _ENCR 1
+1 _ORIG u
+1 _ATL N
+0 @O44@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _STYPE jpeg
+3 _SIZE 10185
+3 _WDTH 206
+3 _HGHT 206
+2 TITL JohnAndMaryBeth
+1 _OID e671eb01-ace3-46d5-9aee-b7878db878c6
+1 _CREA 2026-04-17 14:38:19.787
+1 _USER QLsS0WgD/8BYWgYRHGs1J/qyKhB6YYnJOwgJA6N+cLlHIz9wTopK6vp/v29CuW7C3u4IYTtAFT2bNos3XcNQGA==
+2 _ENCR 1
+1 _ORIG acom
+1 _ATL Y
+0 @O45@ OBJE
 1 FILE
 2 FORM htm
 3 TYPE story
@@ -6988,20 +9013,20 @@
 2 CONC nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 26 Jan 1868&lt;/font&gt; &lt;p&gt;&lt;font color="#0000a0"&gt;This page appears in the book SANDEL / THOMAS And Related Families&lt;/font&gt; &lt;br&gt;&lt;font color="#0000a0"&gt;Written and researche
 2 CONC d by Charlotte Sandel Beck&lt;/font&gt; &lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/div&gt;</line></content></metadataxml>
 1 _CREA 2021-11-01 17:03:57.000
-1 _USER dflVqG6wTwxzte2QgEjFwk/eOmEPFhBobJHvAHcoKdUVEZzJBlgvQemmCNiNLME1UbR8/JNsmrIt42lMCJphtw==
+1 _USER lVUKHLdyt2l8R+Nj3gYb3/JJ7RdcYtY6j+E8gBHIYE6YBs9gBoDBQYIZE8c5oUGguAtUHkT7KSN7TqnjakK/Vg==
 2 _ENCR 1
 1 _CLON
 2 _TID 15734294
 2 _PID 1095534787
 2 _OID b391b448-878c-4f13-bbe8-6956bd1b030f
-2 _USER fHE8V4EToO0vyibN7lbUYiamdFlsq1JQENOfdhVprXBUYfymG32H0j8gpJDsxJ4lFvkN1XI3QNtsuqpfN/w3Zw==
+2 _USER 0RyZJCA22vuM9Hjj2OSZtsA5jMzaQfeIDA7rOF8hUwmW7HSBD5mpLlIG1jf24rNDPRaKOi/p4Pnb+ynXvkogJQ==
 3 _ENCR 1
 2 _DATE 2010-10-11 21:54:07.000
 1 _ORIG u
 1 _MSER
 2 _LKID b391b448-878c-4f13-bbe8-6956bd1b030f
 1 _ATL N
-0 @O38@ OBJE
+0 @O46@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -7015,13 +9040,13 @@
 1 DATE 26 Jul 1925
 1 PLAC Marshall, Texas
 1 _CREA 2026-04-15 21:32:49.184
-1 _USER WG8RgoENaEbG9nHQ4VIxDSRRrrpZ4auO/lq9F3SAq8aoamxPHVmSYf8UCeHn5hdyW3apDCpThCHgL0akAnbvow==
+1 _USER uJ77t9v9jxsBf5Gs9R2vweGWtAlnC6lvC69kBX49jtbx6Mxmpy8hTzjXApYFJKIe5k/fyS7cebG+z6riasHKcQ==
 2 _ENCR 1
 1 _CLON
 2 _TID 158210555
 2 _PID 312324600253
 2 _OID cec151af-6066-4b55-94bc-74d4e4a22fe8
-2 _USER QULS/nzrBwZM9GlYu7Ab4gZ5Mbsc3u7Kefz6GYKw3wM3a2fbEA872A7U+3lZ0L1YcRff9qOowPUOjXP8JVvZtg==
+2 _USER GUuM05n1hP9uJ03fqOT0Ft1/yLjUnExy5HMP9/Ny1hUnPW03jqh440xJMwpWOfL5B3svUYTsC+fg4eIU6+jiRA==
 3 _ENCR 1
 2 _DATE 2021-11-12 00:24:07.000
 1 _ORIG newspapers
@@ -7029,7 +9054,7 @@
 1 _MSER
 2 _LKID cec151af-6066-4b55-94bc-74d4e4a22fe8
 1 _ATL N
-0 @O39@ OBJE
+0 @O47@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -7043,11 +9068,11 @@
 1 _DSCR Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.
 1 _META <metadataxml><record_source_gid>275054931:1265</record_source_gid></metadataxml>
 1 _CREA 2026-04-15 19:35:15.954
-1 _USER FgqT8DEGB6t/HTxJWjVLBhRCtLOqy6eL+BnAvg+7iEjFEPg0LMnXzAu76GKmVc5dYprdtvBWQKyy4e6yxCjJ/g==
+1 _USER eKmOPnrG2cLx190wywW+UrvV0m5+d7+tmBv04SP0efJY9GOfI54ICC/g78VGA/AeyBigMMXE1015IyKXsNKruA==
 2 _ENCR 1
 1 _ORIG u
 1 _ATL Y
-0 @O40@ OBJE
+0 @O48@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -7057,20 +9082,20 @@
 3 _HGHT 3693
 1 _OID fa1c8530-2548-4c06-9db3-f2460faecc60
 1 _CREA 2021-11-01 16:47:19.000
-1 _USER dcqFpWQrMu4IB/wzI6Z3tN2yAg+FjB+pzEww+mMMlIujD/aCqJFdPnFy6WzevppAnHmQPjtJ4k9AgzPrSLeS+g==
+1 _USER orTQ+t3Ep2qkTNETB9CQ/GLLhLkbS3dFtLK7WXWw/v0yJzVmFt22S5tjFGWhmKN79s2TXdvb3KXuoTelTyjwBw==
 2 _ENCR 1
 1 _CLON
 2 _TID 109510079
 2 _PID 330076745882
 2 _OID 852c6181-1ddf-4016-ac4d-7c9201d73151
-2 _USER DTALW8vt5UrddADQKPqF+GqrGNa4ISBNxeg/JSoD3q1Bp427c6ZiR9yu/z/c/fF2WCKxI6VqJC8Dc1W6zAOrmg==
+2 _USER ixcpfLAgYkNzcy1B8hvlhL7q98dZOLJQDGE3yhzAM9cxisrKEwfmY4L+M0PEk5/IBNrpUCUrWkrpGQCWv6yyVQ==
 3 _ENCR 1
 2 _DATE 2017-03-10 22:35:17.000
 1 _ORIG u
 1 _MSER
 2 _LKID 852c6181-1ddf-4016-ac4d-7c9201d73151
 1 _ATL N
-0 @O41@ OBJE
+0 @O49@ OBJE
 1 FILE
 2 FORM jpg
 3 TYPE image
@@ -7081,13 +9106,13 @@
 2 TITL CSA THE CHARGE OF GEN. LEE
 1 _OID fe48683d-af84-4bb3-8db0-64c4f7748db2
 1 _CREA 2026-04-15 20:20:52.360
-1 _USER QHLSIsILWAf38aoX8e9f4B5BKmZoJ5zxsxKFGFvz1qcy0bMVKyFWs3jXx5M8MBlaZZ9OfT+n3pgAYZ8uqcBT4A==
+1 _USER fHn+49lfakVcvDfdJyUUqxggE251Rn8ycV0SbY+e6wLHkUbK0a88BWM25ZgFftzBDTanSKefmvCnS6pf/HJ+3w==
 2 _ENCR 1
 1 _CLON
 2 _TID 46354041
 2 _PID 24077779121
 2 _OID 6dcfa772-f524-4d7d-91f4-61f4402d1c50
-2 _USER ExPNvakfOA0k8HjKHj5HCZcTh/vtFfEk3L7EWYi/MtXo6MCnmx15xzxJ/6oh9Egci/BPBg47dEHI+bQE3HuvFw==
+2 _USER XTN+fTmkcIc577go/UdDKoc3aAR8ADQHryrHCqO9kWSYi/WHPjOhCF5SnxYObFxlQDJCFlijv1wsQ0/hIfROyQ==
 3 _ENCR 1
 2 _DATE 2017-11-01 02:53:58.353
 1 _ORIG u
@@ -7772,6 +9797,62 @@
 2 DATE 2007
 2 PLAC Lehi, UT, USA
 1 _APID 1,4282::0
+1 REPO @R404973340@
+0 @S528402700@ SOUR
+1 TITL U.S., Army Transport Service Arriving and Departing Passenger Lists, 1910-1939
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2016
+2 PLAC Lehi, UT, USA
+1 _APID 1,61174::0
+1 REPO @R404973340@
+0 @S528402704@ SOUR
+1 TITL Pennsylvania, U.S., Newspapers.com™ Stories and Events Index, 1800's-current
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2023
+2 PLAC Lehi, UT, USA
+1 _APID 1,50069::0
+1 REPO @R404973340@
+0 @S528410733@ SOUR
+1 TITL U.S., World War II Army Enlistment Records, 1938-1946
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2005
+2 PLAC Lehi, UT, USA
+1 _APID 1,8939::0
+1 REPO @R404973340@
+0 @S528411015@ SOUR
+1 TITL Oklahoma, U.S., Newspapers.com™ Stories and Events Index, 1800's-current
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2023
+2 PLAC Lehi, UT, USA
+1 _APID 1,50067::0
+1 REPO @R404973340@
+0 @S528411048@ SOUR
+1 TITL U.S., Phone and Address Directories, 1993-2002
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+2 DATE 2005
+2 PLAC Lehi, UT, USA
+1 _APID 1,7339::0
+1 REPO @R404973340@
+0 @S528411142@ SOUR
+1 TITL U.S., Korean War Era Draft Cards, 1948-1959
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2024
+2 PLAC Lehi, UT, USA
+1 _APID 1,62234::0
+1 REPO @R404973340@
+0 @S528411152@ SOUR
+1 TITL Arlington, Virginia, U.S., Arlington National Cemetery, 1861-2024
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2024
+2 PLAC Lehi, UT, USA
+1 _APID 1,62993::0
 1 REPO @R404973340@
 0 @R404973340@ REPO
 1 NAME Ancestry.com
