@@ -22,109 +22,176 @@
       font-size: 1.4rem;
       font-weight: normal;
       letter-spacing: 0.04em;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.3rem;
       color: #e8d9b0;
+      text-align: center;
     }
 
     .subtitle {
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       color: #888;
       margin-bottom: 1.4rem;
       text-align: center;
     }
 
-    .toggle-btn {
-      background: #2e2e2e;
-      border: 1px solid #555;
-      color: #e8d9b0;
-      padding: 0.5rem 1.4rem;
-      font-size: 0.9rem;
-      cursor: pointer;
-      border-radius: 4px;
-      margin-bottom: 1.2rem;
-      letter-spacing: 0.03em;
-      transition: background 0.2s;
+    /* Main layout: photo + sidebar */
+    .main {
+      display: flex;
+      gap: 1.4rem;
+      align-items: flex-start;
+      max-width: 980px;
+      width: 100%;
     }
-    .toggle-btn:hover { background: #3a3a3a; }
 
+    /* Photo */
     .photo-wrapper {
       position: relative;
-      display: inline-block;
+      flex-shrink: 0;
       line-height: 0;
     }
 
     .photo-wrapper img {
-      max-width: min(640px, 100vw - 2rem);
+      width: 620px;
+      max-width: calc(100vw - 2rem);
       display: block;
       border: 2px solid #444;
     }
 
-    /* Label base styles */
+    /* Labels */
     .label {
       position: absolute;
-      font-size: 0.7rem;
+      font-size: 0.68rem;
       font-family: Arial, sans-serif;
       line-height: 1.3;
       text-align: center;
       pointer-events: none;
-      transition: opacity 0.25s;
-      text-shadow: 0 1px 3px #000, 0 0 6px #000;
       max-width: 110px;
+      transform: translateX(-50%);
+      text-shadow: 0 1px 4px #000, 0 0 8px #000;
+      transition: opacity 0.2s;
     }
+    .label.confirmed { color: #ffffff; }
+    .label.unconfirmed { color: #ffe066; }
 
-    .label.confirmed {
-      color: #ffffff;
-    }
-
-    .label.unconfirmed {
-      color: #ffe066;
-    }
-
-    /* Small dot marker */
-    .label::before {
-      content: '';
-      display: block;
-      width: 6px;
-      height: 6px;
+    .label .dot {
+      width: 7px;
+      height: 7px;
       border-radius: 50%;
       margin: 0 auto 3px;
     }
-    .label.confirmed::before { background: #fff; }
-    .label.unconfirmed::before { background: #ffe066; }
+    .label.confirmed .dot { background: #fff; box-shadow: 0 0 4px #fff; }
+    .label.unconfirmed .dot { background: #ffe066; box-shadow: 0 0 4px #ffe066; }
 
-    .labels-hidden .label { opacity: 0; }
-    .labels-visible .label { opacity: 1; }
+    .label.hidden { opacity: 0; }
+
+    /* Sidebar */
+    .sidebar {
+      min-width: 200px;
+      max-width: 220px;
+      flex-shrink: 0;
+    }
+
+    .sidebar-title {
+      font-size: 0.78rem;
+      color: #888;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+
+    .master-btns {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .btn {
+      background: #2e2e2e;
+      border: 1px solid #555;
+      color: #e8d9b0;
+      padding: 0.3rem 0.7rem;
+      font-size: 0.78rem;
+      cursor: pointer;
+      border-radius: 3px;
+      transition: background 0.15s;
+    }
+    .btn:hover { background: #3a3a3a; }
+
+    .person-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+
+    .person-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      cursor: pointer;
+      padding: 0.3rem 0.4rem;
+      border-radius: 3px;
+      transition: background 0.15s;
+      user-select: none;
+    }
+    .person-item:hover { background: #2a2a2a; }
+
+    .person-item input[type="checkbox"] {
+      margin-top: 2px;
+      flex-shrink: 0;
+      accent-color: #c9a84c;
+      cursor: pointer;
+    }
+
+    .person-name {
+      font-size: 0.78rem;
+      line-height: 1.35;
+    }
+    .person-name.confirmed { color: #ddd; }
+    .person-name.unconfirmed { color: #ffe066; }
+
+    .person-name .tag {
+      display: block;
+      font-size: 0.68rem;
+      color: #666;
+      margin-top: 1px;
+    }
 
     /* Legend */
     .legend {
-      margin-top: 1.4rem;
+      margin-top: 1.6rem;
       display: flex;
       gap: 1.8rem;
-      font-size: 0.8rem;
-      color: #aaa;
+      font-size: 0.78rem;
+      color: #777;
     }
     .legend span { display: flex; align-items: center; gap: 0.4rem; }
-    .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
-    .dot.c { background: #fff; }
-    .dot.u { background: #ffe066; }
+    .ldot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+    .ldot.c { background: #fff; }
+    .ldot.u { background: #ffe066; }
 
+    /* Notes */
     .notes {
       margin-top: 1.6rem;
-      max-width: 640px;
-      font-size: 0.82rem;
-      color: #888;
+      max-width: 840px;
+      font-size: 0.8rem;
+      color: #777;
       line-height: 1.7;
-      border-top: 1px solid #333;
+      border-top: 1px solid #2e2e2e;
       padding-top: 1rem;
     }
-    .notes strong { color: #bbb; }
+    .notes strong { color: #aaa; }
 
     .back-link {
-      margin-top: 1.4rem;
-      font-size: 0.82rem;
+      margin-top: 1.2rem;
+      font-size: 0.8rem;
     }
     .back-link a { color: #c9a84c; text-decoration: none; }
     .back-link a:hover { text-decoration: underline; }
+
+    @media (max-width: 700px) {
+      .main { flex-direction: column; align-items: center; }
+      .sidebar { max-width: 100%; min-width: unset; width: 100%; }
+    }
   </style>
 </head>
 <body>
@@ -132,98 +199,167 @@
   <h1>Crawley Family — Mountain Visit, ~1964</h1>
   <p class="subtitle">Likely taken during a visit to James "Jim" Crawley while serving in the US Air Corps / Air Force</p>
 
-  <button class="toggle-btn" id="toggleBtn" onclick="toggleLabels()">Hide Labels</button>
+  <div class="main">
 
-  <div class="photo-wrapper labels-visible" id="photoWrapper">
-    <img src="CrawleyFamilyPhotoWithChildrenCir1964.jpg" alt="Crawley Family Photo ~1964" id="photo">
+    <!-- PHOTO -->
+    <div class="photo-wrapper" id="photoWrapper">
+      <img src="CrawleyFamilyPhotoWithChildrenCir1964.jpg" alt="Crawley Family Photo ~1964">
 
-    <!--
-      Positions are expressed as percentages of the image's rendered width/height.
-      left/top point to the person's approximate head/shoulder.
-      Adjust as needed if photo renders at different size.
-    -->
+      <!-- Confirmed -->
+      <div class="label confirmed" id="lbl-jim" style="left:13%; top:29%;">
+        <div class="dot"></div>James "Jim"<br>Crawley
+      </div>
 
-    <!-- James "Jim" Crawley — far left, standing -->
-    <div class="label confirmed" style="left:10%; top:28%;">
-      James "Jim" Crawley
-    </div>
+      <div class="label confirmed" id="lbl-jg" style="left:47%; top:24%;">
+        <div class="dot"></div>J.G. Thomas Jr.
+      </div>
 
-    <!-- Mary Williamson Crawley — glasses, white cardigan -->
-    <div class="label unconfirmed" style="left:28%; top:35%;">
-      Mary Williamson<br>Crawley?
-    </div>
+      <div class="label confirmed" id="lbl-scott" style="left:40%; top:12%;">
+        <div class="dot"></div>Michael Scott<br>Thomas (~age 4)
+      </div>
 
-    <!-- J.G. Thomas Jr. — center back, holding toddler -->
-    <div class="label confirmed" style="left:46%; top:18%;">
-      J.G. Thomas Jr.
-    </div>
+      <div class="label confirmed" id="lbl-charlotte" style="left:59%; top:29%;">
+        <div class="dot"></div>Charlotte<br>Crawley Thomas
+      </div>
 
-    <!-- Michael Scott Thomas — toddler held by J.G. -->
-    <div class="label confirmed" style="left:37%; top:13%;">
-      Michael Scott<br>Thomas (~age 4)
-    </div>
+      <div class="label confirmed" id="lbl-chuck" style="left:76%; top:20%;">
+        <div class="dot"></div>Charles "Chuck"<br>Convis
+      </div>
 
-    <!-- Charlotte Lucille Crawley Thomas — tan dress, next to J.G. -->
-    <div class="label confirmed" style="left:56%; top:26%;">
-      Charlotte<br>Crawley Thomas
-    </div>
+      <!-- Unconfirmed adults -->
+      <div class="label unconfirmed" id="lbl-mary-w" style="left:30%; top:37%;">
+        <div class="dot"></div>Mary Williamson<br>Crawley?
+      </div>
 
-    <!-- Charles "Chuck" Convis — tall man far right -->
-    <div class="label confirmed" style="left:74%; top:22%;">
-      Charles "Chuck"<br>Convis
-    </div>
+      <div class="label unconfirmed" id="lbl-lottie" style="left:18%; top:55%;">
+        <div class="dot"></div>Lottie Robison<br>Crawley?<br><span style="font-size:0.6rem;">("Grandma Crawley")</span>
+      </div>
 
-    <!-- Lottie Robison Crawley — seated left, orange chair -->
-    <div class="label unconfirmed" style="left:17%; top:57%;">
-      Lottie Robison<br>Crawley?<br>("Grandma Crawley")
-    </div>
+      <div class="label unconfirmed" id="lbl-maryann" style="left:63%; top:50%;">
+        <div class="dot"></div>Mary Ann<br>Crawley Convis?<br><span style="font-size:0.6rem;">("Aunt Mary Ann")</span>
+      </div>
 
-    <!-- Mary Ann Crawley Convis — seated right, white top -->
-    <div class="label unconfirmed" style="left:60%; top:52%;">
-      Mary Ann<br>Crawley Convis?<br>("Aunt Mary Ann")
-    </div>
+      <div class="label unconfirmed" id="lbl-marybeth" style="left:52%; top:42%;">
+        <div class="dot"></div>Mary Beth<br>Thomas?
+      </div>
 
-    <!-- Mary Beth Thomas — girl in light blue top, center -->
-    <div class="label unconfirmed" style="left:52%; top:44%;">
-      Mary Beth<br>Thomas?
-    </div>
+      <!-- Children -->
+      <div class="label unconfirmed" id="lbl-infant" style="left:22%; top:70%;">
+        <div class="dot"></div>Infant —<br>unknown
+      </div>
 
-    <!-- Child — girl in lavender dress, covering eyes -->
-    <div class="label unconfirmed" style="left:36%; top:50%;">
-      Charles Jr. / Bill /<br>Jim / John Scott /<br>David Convis<br>— or —<br>Linda / Martha /<br>Sara Crawley?
-    </div>
+      <div class="label unconfirmed" id="lbl-child-lavender" style="left:37%; top:52%;">
+        <div class="dot"></div>Charles Jr. / Bill /<br>Jim / John Scott /<br>David Convis<br>— or —<br>Linda / Martha /<br>Sara Crawley?
+      </div>
 
-    <!-- Child — boy front center, face down -->
-    <div class="label unconfirmed" style="left:42%; top:70%;">
-      Convis or<br>Crawley child?
-    </div>
+      <div class="label unconfirmed" id="lbl-child-front" style="left:44%; top:72%;">
+        <div class="dot"></div>Convis or<br>Crawley child?
+      </div>
 
-    <!-- Child — boy seated far right, white polo -->
-    <div class="label unconfirmed" style="left:76%; top:45%;">
-      Convis or<br>Crawley child?
-    </div>
+      <div class="label unconfirmed" id="lbl-child-right1" style="left:80%; top:43%;">
+        <div class="dot"></div>Convis or<br>Crawley child?
+      </div>
 
-    <!-- Child — boy standing far right behind Mary Ann -->
-    <div class="label unconfirmed" style="left:82%; top:33%;">
-      Convis or<br>Crawley child?
-    </div>
+      <div class="label unconfirmed" id="lbl-child-right2" style="left:86%; top:32%;">
+        <div class="dot"></div>Convis or<br>Crawley child?
+      </div>
 
-    <!-- Infant held by Lottie -->
-    <div class="label unconfirmed" style="left:20%; top:68%;">
-      Infant —<br>identity unknown
-    </div>
+    </div><!-- /photo-wrapper -->
 
-  </div>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="sidebar-title">Show / Hide Labels</div>
+
+      <div class="master-btns">
+        <button class="btn" onclick="setAll(true)">Show All</button>
+        <button class="btn" onclick="setAll(false)">Hide All</button>
+      </div>
+
+      <div class="person-list">
+
+        <label class="person-item">
+          <input type="checkbox" checked onchange="toggle('lbl-jim', this.checked)">
+          <span class="person-name confirmed">James "Jim" Crawley<span class="tag">Confirmed</span></span>
+        </label>
+
+        <label class="person-item">
+          <input type="checkbox" checked onchange="toggle('lbl-jg', this.checked)">
+          <span class="person-name confirmed">J.G. Thomas Jr.<span class="tag">Confirmed</span></span>
+        </label>
+
+        <label class="person-item">
+          <input type="checkbox" checked onchange="toggle('lbl-scott', this.checked)">
+          <span class="person-name confirmed">Michael Scott Thomas<span class="tag">Confirmed · toddler ~age 4</span></span>
+        </label>
+
+        <label class="person-item">
+          <input type="checkbox" checked onchange="toggle('lbl-charlotte', this.checked)">
+          <span class="person-name confirmed">Charlotte Crawley Thomas<span class="tag">Confirmed</span></span>
+        </label>
+
+        <label class="person-item">
+          <input type="checkbox" checked onchange="toggle('lbl-chuck', this.checked)">
+          <span class="person-name confirmed">Charles "Chuck" Convis<span class="tag">Confirmed</span></span>
+        </label>
+
+        <label class="person-item">
+          <input type="checkbox" checked onchange="toggle('lbl-mary-w', this.checked)">
+          <span class="person-name unconfirmed">Mary Williamson Crawley<span class="tag">Unconfirmed · Jim's wife</span></span>
+        </label>
+
+        <label class="person-item">
+          <input type="checkbox" checked onchange="toggle('lbl-lottie', this.checked)">
+          <span class="person-name unconfirmed">Lottie Robison Crawley<span class="tag">Unconfirmed · "Grandma Crawley"</span></span>
+        </label>
+
+        <label class="person-item">
+          <input type="checkbox" checked onchange="toggle('lbl-maryann', this.checked)">
+          <span class="person-name unconfirmed">Mary Ann Crawley Convis<span class="tag">Unconfirmed · "Aunt Mary Ann"</span></span>
+        </label>
+
+        <label class="person-item">
+          <input type="checkbox" checked onchange="toggle('lbl-marybeth', this.checked)">
+          <span class="person-name unconfirmed">Mary Beth Thomas<span class="tag">Unconfirmed · Avery's aunt</span></span>
+        </label>
+
+        <label class="person-item">
+          <input type="checkbox" checked onchange="toggle('lbl-infant', this.checked)">
+          <span class="person-name unconfirmed">Infant<span class="tag">Identity unknown</span></span>
+        </label>
+
+        <label class="person-item">
+          <input type="checkbox" checked onchange="toggle('lbl-child-lavender', this.checked)">
+          <span class="person-name unconfirmed">Child (lavender dress)<span class="tag">Convis or Crawley child?</span></span>
+        </label>
+
+        <label class="person-item">
+          <input type="checkbox" checked onchange="toggle('lbl-child-front', this.checked)">
+          <span class="person-name unconfirmed">Child (front center)<span class="tag">Convis or Crawley child?</span></span>
+        </label>
+
+        <label class="person-item">
+          <input type="checkbox" checked onchange="toggle('lbl-child-right1', this.checked)">
+          <span class="person-name unconfirmed">Child (seated right)<span class="tag">Convis or Crawley child?</span></span>
+        </label>
+
+        <label class="person-item">
+          <input type="checkbox" checked onchange="toggle('lbl-child-right2', this.checked)">
+          <span class="person-name unconfirmed">Child (standing far right)<span class="tag">Convis or Crawley child?</span></span>
+        </label>
+
+      </div>
+    </div><!-- /sidebar -->
+
+  </div><!-- /main -->
 
   <div class="legend">
-    <span><span class="dot c"></span> Confirmed</span>
-    <span><span class="dot u"></span> Unconfirmed / pending Charlotte's verification</span>
+    <span><span class="ldot c"></span> Confirmed identification</span>
+    <span><span class="ldot u"></span> Unconfirmed — pending Charlotte's verification</span>
   </div>
 
   <div class="notes">
-    <strong>Children (5 unidentified):</strong> Believed to be a mix of Convis children (Charles Jr., Bill, Jim, John Scott, and/or David — children of Chuck &amp; Mary Ann) and/or Jim &amp; Mary Crawley's daughters (Linda, Martha, and/or Sara). To be confirmed by Charlotte Thomas or Charles Convis Jr.<br><br>
-    <strong>Setting:</strong> Mountain or canyon location, consistent with an Air Force base visit. Charlotte Thomas recalled the trip in a Facebook comment: <em>"all I remember about James in the Air Corp was a visit we made to see him… we stayed in a rustic cabin and had a meal of chicken fried steak and gravy that Aunt Imogene had canned."</em><br><br>
-    <strong>Photo courtesy:</strong> Crawley Family Connection (Facebook group), posted by Charles Convis Jr.
+    <strong>Children (5 unidentified):</strong> Believed to be a mix of Convis children (Charles Jr., Bill, Jim, John Scott, and/or David — children of Chuck &amp; Mary Ann Convis) and/or Jim &amp; Mary Crawley's daughters (Linda, Martha, and/or Sara). To be confirmed by Charlotte Thomas or Charles Convis Jr.<br><br>
+    <strong>Setting:</strong> Charlotte Thomas recalled the trip in a Facebook comment: <em>"all I remember about James in the Air Corp was a visit we made to see him… we stayed in a rustic cabin and had a meal of chicken fried steak and gravy that Aunt Imogene had canned. Also, we camped out one night and your mother and I crawled through the car window when we thought there was an animal around our cots."</em>
   </div>
 
   <div class="back-link">
@@ -231,16 +367,14 @@
   </div>
 
   <script>
-    function toggleLabels() {
-      const wrapper = document.getElementById('photoWrapper');
-      const btn = document.getElementById('toggleBtn');
-      if (wrapper.classList.contains('labels-visible')) {
-        wrapper.classList.replace('labels-visible', 'labels-hidden');
-        btn.textContent = 'Show Labels';
-      } else {
-        wrapper.classList.replace('labels-hidden', 'labels-visible');
-        btn.textContent = 'Hide Labels';
-      }
+    function toggle(id, show) {
+      const el = document.getElementById(id);
+      if (el) el.classList.toggle('hidden', !show);
+    }
+
+    function setAll(show) {
+      document.querySelectorAll('.label').forEach(el => el.classList.toggle('hidden', !show));
+      document.querySelectorAll('.person-list input[type="checkbox"]').forEach(cb => cb.checked = show);
     }
   </script>
 
