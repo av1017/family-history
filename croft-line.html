@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Croft Line — Roots: Family History</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --surface2: #222;
+      --border: #2e2e2e;
+      --accent: #c9a84c;
+      --accent2: #a0522d;
+      --accent-blue: #5b8dc9;
+      --accent-teal: #4ca89a;
+      --text: #e0d8cc;
+      --muted: #888;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; font-size: 16px; line-height: 1.75; }
+
+    header { background: linear-gradient(135deg, #080e0d 0%, #0f0f0f 60%); border-bottom: 2px solid var(--accent-teal); padding: 3rem 2rem 2rem; text-align: center; }
+    header .crest { font-size: 3rem; margin-bottom: 0.5rem; }
+    header h1 { font-size: 2.4rem; color: var(--accent-teal); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.4rem; }
+    header .subtitle { color: var(--muted); font-style: italic; font-size: 1rem; }
+    header .byline { margin-top: 1rem; font-size: 0.85rem; color: var(--muted); }
+
+    .site-nav { background: #111; border-bottom: 2px solid var(--accent); padding: 0.7rem 2rem; display: flex; flex-wrap: wrap; gap: 0.4rem 0; justify-content: center; position: sticky; top: 0; z-index: 200; }
+    .site-nav a { color: var(--muted); text-decoration: none; font-size: 0.82rem; font-family: sans-serif; letter-spacing: 0.8px; text-transform: uppercase; padding: 0.3rem 1rem; border-right: 1px solid #2a2a2a; transition: color 0.2s; }
+    .site-nav a:last-child { border-right: none; }
+    .site-nav a:hover { color: var(--accent); }
+    .site-nav a.active { color: var(--accent-teal); }
+    .nav-divider { color: #444; font-size: 0.72rem; font-family: sans-serif; letter-spacing: 1px; text-transform: uppercase; padding: 0.3rem 0.5rem 0.3rem 1.2rem; pointer-events: none; user-select: none; }
+
+    nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0.75rem 2rem; display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; justify-content: center; position: sticky; top: 44px; z-index: 100; }
+    nav a { color: var(--accent-teal); text-decoration: none; font-size: 0.85rem; font-family: sans-serif; letter-spacing: 0.5px; transition: color 0.2s; }
+    nav a:hover { color: #fff; }
+
+    .container { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    .section { margin-top: 3rem; }
+    .section-title { font-size: 1.5rem; font-variant: small-caps; letter-spacing: 1px; border-bottom: 1px solid #1e3030; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+    .section-title.teal { color: var(--accent-teal); }
+    .section-title.blue { color: var(--accent-blue); }
+    h3 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
+    h3.teal { color: #6ec8bb; }
+    h3.blue { color: #90b8e0; }
+    p { margin-bottom: 1rem; }
+
+    .ancestor-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin-bottom: 1.5rem; }
+    .ancestor-table.teal th { background: #0b1412; color: var(--accent-teal); border-bottom: 2px solid var(--accent-teal); }
+    .ancestor-table.blue th { background: #0c1018; color: var(--accent-blue); border-bottom: 2px solid var(--accent-blue); }
+    .ancestor-table th { text-align: left; padding: 0.6rem 1rem; font-variant: small-caps; letter-spacing: 0.5px; }
+    .ancestor-table td { padding: 0.55rem 1rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .ancestor-table tr:nth-child(even) td { background: var(--surface); }
+    .ancestor-table tr:hover td { background: #0e1a18; }
+    .ancestor-table .name { font-weight: bold; color: #e8d9b8; }
+    .ancestor-table .rel.teal { color: var(--accent-teal); font-style: italic; font-size: 0.88rem; }
+    .ancestor-table .rel.blue { color: var(--accent-blue); font-style: italic; font-size: 0.88rem; }
+    .ancestor-table .dates { color: var(--muted); font-size: 0.85rem; }
+    .ancestor-table .note  { color: #aaa; font-size: 0.84rem; }
+
+    .story-card { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 1.2rem 1.4rem; margin: 1.2rem 0; }
+    .story-card.teal { border-left: 4px solid var(--accent-teal); }
+    .story-card.blue { border-left: 4px solid var(--accent-blue); }
+    .story-card .card-title.teal { color: var(--accent-teal); font-size: 1rem; font-weight: bold; margin-bottom: 0.6rem; }
+    .story-card .card-title.blue { color: var(--accent-blue); font-size: 1rem; font-weight: bold; margin-bottom: 0.6rem; }
+    .story-card p { font-size: 0.93rem; margin-bottom: 0.6rem; }
+    .story-card p:last-child { margin-bottom: 0; }
+
+    .timeline { margin: 1.5rem 0; border-left: 3px solid var(--accent-blue); padding-left: 1.5rem; }
+    .timeline-item { margin-bottom: 2rem; position: relative; }
+    .timeline-item::before { content: ''; position: absolute; left: -1.75rem; top: 0.4rem; width: 10px; height: 10px; border-radius: 50%; background: var(--accent-blue); }
+    .timeline-year { font-family: sans-serif; font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 0.3rem; }
+    .timeline-year.blue { color: var(--accent-blue); }
+    .timeline-title { font-weight: bold; color: #d4c9b8; margin-bottom: 0.5rem; }
+    .timeline-body { font-size: 0.93rem; color: #bbb; line-height: 1.8; }
+
+    .name-change { font-weight: bold; font-size: 1.1rem; color: var(--accent-teal); font-family: sans-serif; letter-spacing: 1px; }
+    .arrow-right { color: var(--muted); font-size: 1.2rem; padding: 0 0.4rem; }
+
+    .map-note { background: #1a1a1a; border: 1px solid #2a2a2a; border-left: 4px solid var(--accent-teal); padding: 0.9rem 1.2rem; font-size: 0.88rem; color: #aaa; margin-bottom: 1.5rem; border-radius: 3px; }
+
+    footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.82rem; border-top: 1px solid var(--border); margin-top: 3rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="crest">✡</div>
+  <h1>The Croft Line</h1>
+  <div class="subtitle">Krawczyk &amp; Krafcheck — From the Russian Empire to Texas</div>
+  <div class="byline">Kock, Poland · Radom · Radzyn Podlaski · Philadelphia · Houston</div>
+</header>
+
+<div class="site-nav">
+  <a href="index.html">Home</a>
+  <span class="nav-divider">Paternal —</span>
+  <a href="full-family-tree.html#paternal-tree">Full Tree</a>
+  <a href="thomas-line.html">Thomas</a>
+  <a href="kennard-family-history.html">Kennard</a>
+  <a href="crawley-line.html">Crawley</a>
+  <a href="convis-line.html">Convis</a>
+  <span class="nav-divider">Maternal —</span>
+  <a href="full-family-tree.html#maternal-tree">Maternal Tree</a>
+  <a href="squires-line.html">Squires</a>
+  <a href="croft-line.html" class="active">Croft</a>
+  <span class="nav-divider">Site —</span>
+  <a href="discoveries-and-research.html">Discoveries</a>
+  <a href="sources.html">Sources</a>
+  <a href="file-glossary.html">Site Index</a>
+</div>
+
+<nav>
+  <a href="#overview">Overview</a>
+  <a href="#croft-krawczyk">Croft / Krawczyk</a>
+  <a href="#krafcheck">Krafcheck</a>
+  <a href="#lipszyc">Lipszyc Line</a>
+  <a href="#children-croft">Jack &amp; Mollie's Children</a>
+  <a href="#immigration">Immigration Story</a>
+  <a href="#name-changes">Name Changes</a>
+  <a href="#origins-map">Origins Map</a>
+</nav>
+
+<div class="container">
+
+  <!-- OVERVIEW -->
+  <div class="section" id="overview">
+    <h2 class="section-title teal">Overview — Two Jewish Families, One American Story</h2>
+
+    <p>The richer and more traceable Jewish ancestry comes through Avery's maternal grandmother <strong>Barbara C. Squires (née Croft)</strong> (b. 23 January 1936, Houston), who married Arthur Squires. Her maiden name connects two Jewish families who converged in America: the Croft family (originally <strong>Krawczyk</strong>) from Kock, Poland, and the Krafcheck family from Radom, Poland.</p>
+
+    <p>Both families lived in the <strong>Pale of Settlement</strong> — the vast zone of the Russian Empire where Jews were legally required to reside — and both fled the same world of pogroms, poverty, and exclusion in the late 19th and early 20th centuries. They arrived in Philadelphia, met in the tight-knit immigrant Jewish community there, married, and eventually settled in Houston. Within two generations, their descendants were thoroughly Texan.</p>
+
+    <p>The connection to the <a href="squires-line.html" style="color: var(--accent-blue);">Squires line</a> comes through Barbara Croft's marriage to Arthur Squires, whose grandfather was Harry D. Skversky (later Squires) of the Pennsylvania Skversky family. Both the Croft and Squires families passed through Philadelphia before converging in Texas.</p>
+
+    <div class="story-card teal">
+      <div class="card-title teal">A Striking Coincidence — Two Families Named "Tailor"</div>
+      <p>The most remarkable detail in this family's history: the Krawczyk family and the Krafcheck family share a common etymological root. <em>Krawczyk</em> is a Polish word meaning "tailor" (from <em>krawiec</em>). <em>Krafcheck</em> is an Americanized spelling of <em>Kravchik</em> — itself a Yiddish diminutive of <em>kravets</em>, also meaning tailor. Two Jewish families from the same region of Russian-controlled Poland, both with names meaning tailor, whose children — Jack Croft and Mollie Krafcheck — met and married in America. Whether this is coincidence, a shared occupational origin in the Lublin tailoring trade, or something more is an open research question.</p>
+    </div>
+  </div>
+
+  <!-- CROFT / KRAWCZYK FAMILY -->
+  <div class="section" id="croft-krawczyk">
+    <h2 class="section-title teal">The Croft / Krawczyk Family of Kock</h2>
+
+    <table class="ancestor-table teal">
+      <thead>
+        <tr>
+          <th>Generation</th>
+          <th>Person</th>
+          <th>Born</th>
+          <th>Place</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rel teal">5th great-grandparents</td>
+          <td class="name">Lejb Wolf Krawczyk &amp; Frajda</td>
+          <td class="dates">unknown</td>
+          <td>Kock, Poland (Russian Empire)</td>
+        </tr>
+        <tr>
+          <td class="rel teal">4th great-grandparents</td>
+          <td class="name">Abram Jojna Krawczyk &amp; Sura Kuperszlag</td>
+          <td class="dates">~1843 / ~1844</td>
+          <td>Kock, Poland</td>
+        </tr>
+        <tr>
+          <td class="rel teal">3rd great-grandparents (in America)</td>
+          <td class="name">Bernard "Baruch" Harry Croft &amp; Fannie "Faggi" Croft</td>
+          <td class="dates">1877 / 1870</td>
+          <td>Kock, Poland → America</td>
+        </tr>
+        <tr>
+          <td class="rel teal">Great-great-grandparents</td>
+          <td class="name">Jack Craft &amp; Mollie Krafcheck</td>
+          <td class="dates">1903 / 1905</td>
+          <td>Kock, Poland / Poland → USA</td>
+        </tr>
+        <tr>
+          <td class="rel teal">Maternal grandmother</td>
+          <td class="name">Barbara C. Squires (née Croft)</td>
+          <td class="dates">23 Jan 1936</td>
+          <td>Houston, TX</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="story-card teal">
+      <div class="card-title teal">Krawczyk — A Jewish Family in a Polish Town</div>
+      <p>The Krawczyk name is puzzling at first glance: it is a native Polish word meaning "tailor" (<em>krawiec</em>), and it was commonly assigned to Jewish families in the Pale of Settlement during name-assignment drives under Russian and Prussian rule in the late 18th and early 19th centuries. Jewish families in Kock and surrounding towns were often required to take Polish or German surnames, and occupational surnames like Krawczyk (tailor), Goldstein (goldsmith), or Schneider (also tailor) were common assignments. That Abram Jojna carried this name in Kock is consistent with this history.</p>
+      <p style="margin-top:0.7rem;"><strong>Kock</strong> itself was a small but historically significant shtetl in the Lublin region of Russian-controlled Poland. In the 19th century it was home to a substantial Jewish community — by some estimates Jews made up over half the town's population — and it was a center of Hasidic Judaism, associated with the famous Rabbi Menachem Mendel of Kotzk (the "Kotzker Rebbe"), one of the most influential Hasidic masters of the 19th century. Whether the Krawczyk ancestors were Hasidic or followed other Jewish traditions is unknown, but they lived and died in this world.</p>
+      <p style="margin-top:0.7rem;">Abram Jojna Krawczyk (b. ~1843) and his wife Sura Kuperszlag (b. ~1844) raised a large family in Kock spanning nearly four decades — their oldest known child, Fannie (Feiga), was born in 1870, and their youngest known children (Jack, William, Sarah) were born as late as 1903–1908, suggesting either a long marriage or a second generation that stayed in Kock well into the 20th century. At least seven children are now documented. The span of births — 1870 to 1908 — captures the full arc of the Jewish crisis in the Russian Empire: from relative stability through the devastating pogroms of the 1880s and early 1900s that drove most of the family to emigrate.</p>
+      <p style="margin-top:0.7rem;">Notably, some of Bernard's siblings retained the original Slavic form of the name long after emigration. Samuel and Sarah are recorded as <strong>Croft (Kravchik)</strong> — preserving the Yiddish pronunciation of Krawczyk ("Kravchik") alongside the Americanized form. This dual naming is a telling window into the immigrant experience: families straddling two worlds, using the anglicized name in daily American life while the old name survived in family documents, synagogue records, and memory.</p>
+    </div>
+
+    <h3 class="teal">Siblings of Bernard "Baruch" Croft — Children of Abram Jojna Krawczyk</h3>
+    <p style="font-size:0.88rem;color:var(--muted);margin-bottom:0.8rem;">Bernard (b. 1877) was one of several children born to Abram Jojna Krawczyk &amp; Sura Kuperszlag in Kock, Poland. These are Avery's 3rd great-granduncles/aunts.</p>
+    <table class="ancestor-table teal">
+      <thead>
+        <tr><th>Name</th><th>Born</th><th>Place</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">Fannie (Feiga) Lampart</td>
+          <td class="dates">4 Oct 1870</td>
+          <td>Kock, Poland (Russian Empire)</td>
+          <td class="note">Older sister of Bernard; married name Lampart</td>
+        </tr>
+        <tr>
+          <td class="name">Bernard "Baruch" Harry Croft</td>
+          <td class="dates">5 Mar 1877</td>
+          <td>Kock, Poland (Russian Empire)</td>
+          <td class="note">Avery's 3rd great-grandfather; immigrated to America</td>
+        </tr>
+        <tr>
+          <td class="name">Samuel Croft (Kravchik)</td>
+          <td class="dates">23 Dec 1896</td>
+          <td>Kock, Poland (Russian Empire)</td>
+          <td class="note">Born before the family's emigration</td>
+        </tr>
+        <tr>
+          <td class="name">Tobe Bella (Touba Bajla) Croft / Lensky</td>
+          <td class="dates">16 Aug 1900</td>
+          <td>Kock, Poland (Russian Empire)</td>
+          <td class="note">Married name Lensky</td>
+        </tr>
+        <tr>
+          <td class="name">Jack Croft (Krawczyk)</td>
+          <td class="dates">5 Apr 1903</td>
+          <td>Kock, Poland (Russian Empire)</td>
+          <td class="note">Avery's 2nd great-grandfather; married Mollie Krafcheck; name Americanized to Croft/Craft</td>
+        </tr>
+        <tr>
+          <td class="name">William Bernard Croft</td>
+          <td class="dates">29 Apr 1905</td>
+          <td>Kock, Poland (Russian Empire)</td>
+          <td class="note">Named after father Bernard</td>
+        </tr>
+        <tr>
+          <td class="name">Sarah Croft (Kravchik) Stein</td>
+          <td class="dates">10 Dec 1908</td>
+          <td>Kock, Poland (Russian Empire)</td>
+          <td class="note">Married name Stein</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KRAFCHECK FAMILY -->
+  <div class="section" id="krafcheck">
+    <h2 class="section-title teal">The Krafcheck Family — Radom &amp; Radzyn Podlaski</h2>
+
+    <table class="ancestor-table teal">
+      <thead>
+        <tr>
+          <th>Person</th>
+          <th>Born</th>
+          <th>Place</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">Hyman Krafcheck</td>
+          <td class="dates">b. 1873</td>
+          <td>Radom, Poland (Russian Empire)</td>
+          <td class="note">Paternal grandfather of Mollie</td>
+        </tr>
+        <tr>
+          <td class="name">Libby Lipschitz</td>
+          <td class="dates">b. 1881</td>
+          <td>Radzyn Podlaski, Poland (Russian Empire)</td>
+          <td class="note">Maternal grandmother of Mollie; Lipschitz is a notable Ashkenazi surname</td>
+        </tr>
+        <tr>
+          <td class="name">Mollie Krafcheck</td>
+          <td class="dates">b. 1905, Poland</td>
+          <td>Poland → USA</td>
+          <td class="note">Married Jack Craft; mother of Barbara</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="story-card teal">
+      <div class="card-title teal">The Krafcheck Family — Two Towns, One Migration</div>
+      <p>The Krafcheck family roots run through two closely connected towns in Russian-controlled Poland: <strong>Radom</strong> and <strong>Radzyn Podlaski</strong>. Hyman Krafcheck (b. 15 Jun 1873) came from Radom — a substantial industrial city in the Lublin region with a Jewish population that would eventually reach nearly 30,000 before the Holocaust. His wife Libby (Leba) Lipschitz came from Radzyn Podlaski, a smaller town about 100 km to the east, also with a significant Jewish community. Their marriage brought together two established Ashkenazi families from this region.</p>
+      <p style="margin-top:0.7rem;">Together Hyman and Libby had at least seven children, all born in Radzyn Podlaski between roughly 1881 and 1913. The fact that children were still being born there as late as 1913 — after the worst of the pogroms — suggests the family delayed emigration longer than many, or that some siblings emigrated while others remained. Mollie (b. 1905), who eventually married Jack Croft and became Avery's 2nd great-grandmother, was the middle child of this large family. Her siblings — Liba Ruchla, Chane Sura Hanna, Moses, Pesa Bessie, and Scheindle Jean — represent a generation caught between the old world and the new. Whether all of them survived the 20th century's catastrophes in Poland is not yet known.</p>
+      <p style="margin-top:0.7rem;">The name <strong>Krafcheck</strong> itself is an Americanized spelling of a Yiddish/Hebrew name — likely derived from <em>Kravchik</em> or a similar form, the same root as Krawczyk. This is a striking detail: the Krawczyk family (Croft) and the Krafcheck family share a common etymological root meaning "tailor." Two Jewish families from the same region, both with names meaning tailor, whose children — Jack Croft and Mollie Krafcheck — married each other in America. Whether this is coincidence, a common occupational origin, or something more is an open research question.</p>
+    </div>
+
+    <h3 class="teal">Siblings of Mollie Krafcheck — Children of Hyman &amp; Libby Krafcheck</h3>
+    <p style="font-size:0.88rem;color:var(--muted);margin-bottom:0.8rem;">Mollie (b. 1905) had several siblings, all born in Radzyn Podlaski, Poland. These are Avery's 2nd great-granduncles/aunts on the maternal side.</p>
+    <table class="ancestor-table teal">
+      <thead>
+        <tr><th>Name</th><th>Born</th><th>Place</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">Liba Ruchla Krawczyk</td>
+          <td class="dates">15 Apr 1881</td>
+          <td>Radzyn Podlaski, Poland</td>
+          <td class="note">Oldest known sibling</td>
+        </tr>
+        <tr>
+          <td class="name">Chane Sura Hanna Krawczyk Krafcheck</td>
+          <td class="dates">18 Dec 1901</td>
+          <td>Radzyn, Poland</td>
+          <td class="note"></td>
+        </tr>
+        <tr>
+          <td class="name">Mollie Krafcheck (m. Croft)</td>
+          <td class="dates">15 May 1905</td>
+          <td>Radzyn Podlaski, Poland</td>
+          <td class="note">Avery's 2nd great-grandmother; married Jack Croft</td>
+        </tr>
+        <tr>
+          <td class="name">Moses Krafcheck</td>
+          <td class="dates">2 Dec 1908</td>
+          <td>Radzyn Podlaski, Poland</td>
+          <td class="note"></td>
+        </tr>
+        <tr>
+          <td class="name">Pesa Bessie Krafcheck</td>
+          <td class="dates">19 Oct 1909</td>
+          <td>Radzyn Podlaski, Poland</td>
+          <td class="note"></td>
+        </tr>
+        <tr>
+          <td class="name">Scheindle Jean Krafcheck</td>
+          <td class="dates">27 Apr 1913</td>
+          <td>Radzyn Podlaski, Poland</td>
+          <td class="note"></td>
+        </tr>
+        <tr>
+          <td class="name">Mollie Lass</td>
+          <td class="dates">17 May 1912</td>
+          <td>Warsaw, Poland (Russian Empire)</td>
+          <td class="note">Born in Warsaw — possible sibling or cousin; married name Lass</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- LIPSZYC LINE -->
+  <div class="section" id="lipszyc">
+    <h2 class="section-title teal">The Lipszyc / Lipschitz Line — Libby's Family</h2>
+    <p style="font-size:0.88rem;color:var(--muted);margin-bottom:0.8rem;">Libby Lipschitz (Krafcheck) was the mother of Mollie Krafcheck. Her parents — Wulf Lipszyc &amp; Bessie Lipschitz — are Avery's 4th great-grandparents on the maternal side.</p>
+    <table class="ancestor-table teal">
+      <thead>
+        <tr><th>Name</th><th>Born</th><th>Place</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">Wulf Lipszyc</td>
+          <td class="dates">b. 1845</td>
+          <td>Radzyn Podlaski, Poland</td>
+          <td class="note">Libby's father; 4th great-grandfather</td>
+        </tr>
+        <tr>
+          <td class="name">Bessie Lipschitz</td>
+          <td class="dates">b. 1841</td>
+          <td>Radom, Poland (Russian Empire)</td>
+          <td class="note">Libby's mother; 4th great-grandmother</td>
+        </tr>
+        <tr>
+          <td class="name">Chaia Rywka Lipszyc</td>
+          <td class="dates">b. 1867</td>
+          <td>Radzyn Podlaski, Poland</td>
+          <td class="note">Sibling of Libby; Avery's 3rd great-grandaunt</td>
+        </tr>
+        <tr>
+          <td class="name">Libby (Leba) Lipschitz / Krafcheck</td>
+          <td class="dates">b. ~1881</td>
+          <td>Radzyn Podlaski, Poland</td>
+          <td class="note">Married Hyman Krafcheck; mother of Mollie; Avery's 3rd great-grandmother</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CHILDREN OF JACK & MOLLIE -->
+  <div class="section" id="children-croft">
+    <h2 class="section-title blue">Children of Jack &amp; Mollie Croft — Barbara's Siblings</h2>
+    <p style="font-size:0.88rem;color:var(--muted);margin-bottom:0.8rem;">Jack Croft and Mollie Krafcheck had at least three known children, all born in Houston, Texas. These are Avery's great-granduncles/aunt on the maternal side.</p>
+    <table class="ancestor-table blue">
+      <thead>
+        <tr><th>Name</th><th>Born</th><th>Place</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">Evelyn Croft</td>
+          <td class="dates">20 May 1929</td>
+          <td>Houston, TX</td>
+          <td class="note">Barbara's older sister</td>
+        </tr>
+        <tr>
+          <td class="name">Barbara C. Croft (m. Squires)</td>
+          <td class="dates">23 Jan 1936</td>
+          <td>Houston, TX</td>
+          <td class="note">Avery's maternal grandmother; married Arthur Squires — see <a href="squires-line.html" style="color:var(--accent-blue);">Squires line</a></td>
+        </tr>
+        <tr>
+          <td class="name">Kenneth Croft</td>
+          <td class="dates">~1938</td>
+          <td>Texas</td>
+          <td class="note">Barbara's younger brother</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="story-card teal">
+      <div class="card-title teal">From Kock to Houston — A Family Fully Transplanted</div>
+      <p>The most striking fact about Jack and Mollie's children is where they were born: not Philadelphia, where both families had established roots, but <strong>Houston, Texas</strong>. Evelyn (1929), Barbara (1936), and Kenneth (~1938) are all Texan by birth. Something drew the Croft family south — possibly the oil industry, the warmer climate, family or community connections to the growing Houston Jewish community, or some combination of these. The specific circumstances remain an open research question.</p>
+      <p style="margin-top:0.7rem;">What is clear is the speed of the transformation: Jack was born in Kock, Poland in 1903; his daughter Barbara was born in Houston, Texas in 1936. In a single generation, a family from a Hasidic shtetl in the Lublin region had become thoroughly American — and thoroughly Texan.</p>
+    </div>
+  </div>
+
+  <!-- IMMIGRATION STORY -->
+  <div class="section" id="immigration">
+    <h2 class="section-title blue">The Immigration Story — From the Russian Empire to America</h2>
+
+    <p>The maternal Jewish ancestors lived in the <strong>Pale of Settlement</strong> — the vast zone of the Russian Empire where Jews were legally required to reside, stretching across modern-day Poland, Lithuania, Belarus, Ukraine, and Moldova. Life in the Pale was defined by poverty, periodic pogroms (mob violence against Jews), legal restrictions on where Jews could live and work, and quotas limiting their access to education and professions.</p>
+
+    <p>The wave of Jewish immigration to America between roughly <strong>1880 and 1924</strong> (when the Immigration Act of 1924 nearly closed the door) brought approximately 2 million Ashkenazi Jews — the largest Jewish migration in history. This family was part of that wave.</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year blue">1840s–1870s</div>
+        <div class="timeline-title">Origins in the Pale — Three Families, Three Towns</div>
+        <div class="timeline-body">Three separate Jewish families living in the Russian-controlled Pale of Settlement, all unknowingly connected by the descendants they will one day share.<br><br>
+        In <strong>Kock, Poland</strong>: Abram Jojna Krawczyk (b. ~1843) and Sura Kuperszlag (b. ~1844) are raising a family in one of the most famous Jewish shtetls in the Lublin region — a town still resonating with the legacy of the Kotzker Rebbe. Their oldest known child, Fannie (Feiga), is born in 1870. More children will follow across the next four decades.<br><br>
+        In <strong>Radzyn Podlaski</strong>: Wulf Lipszyc (b. 1845) and Bessie Lipschitz (b. 1841) are raising their family, including daughter Chaia Rywka (b. 1867) and Libby (b. ~1881). Libby will eventually marry Hyman Krafcheck (b. 1873, Radom) — bringing two Lublin-region families together.<br><br>
+        Somewhere in <strong>western Russia</strong>: Ben J. Skversky (b. Sep 1859) and Rosie Cohen (b. ~1862, Russia) are living in the Pale. All of these families share the same world: Yiddish as their daily language, the rhythm of the Jewish calendar, the constant weight of legal restrictions on where they may live, work, and travel.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year blue">1881–1906</div>
+        <div class="timeline-title">The Pogrom Years — The World Breaks Open</div>
+        <div class="timeline-body">The assassination of Tsar Alexander II in 1881 triggers a wave of violent pogroms across the Pale — Jewish communities burned, looted, attacked, with little or no protection from Russian authorities. A second, even more devastating wave strikes in 1903–1906 (Kishinev, Odessa, and hundreds of other towns). Over two million Jews flee the Russian Empire between 1880 and 1924.<br><br>
+        Bernard "Baruch" Croft (b. 1877, Kock) — Avery's 3rd great-grandfather — makes the crossing in this era, along with his wife Fannie (Feiga) Lampart (b. 1870). His younger siblings Samuel (b. 1896), Tobe Bella (b. 1900), Jack (b. 1903), William (b. 1905), and Sarah (b. 1908) are still being born in Kock, suggesting part of the family delayed emigration. The Krafcheck family in Radzyn Podlaski also stays longer — Mollie is born there in 1905, and her younger siblings Moses (1908), Pesa Bessie (1909), and Scheindle Jean (1913) are born there as well. These families were slower to leave, perhaps unable to afford the passage, perhaps hoping conditions would improve.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year blue">1903–1914</div>
+        <div class="timeline-title">Jack and Mollie — Born in the Old World</div>
+        <div class="timeline-body">Jack Croft (born Krawczyk, b. 5 Apr 1903, Kock) and Mollie Krafcheck (b. 15 May 1905, Radzyn Podlaski) are both born in Poland — firmly in the old country, not America. This is a critical detail: unlike some immigrant-generation children born shortly after arrival, Jack and Mollie spent their earliest years in the shtetl world before emigrating. Jack was born while Kock still bore the full weight of the Russian Empire; Mollie's birth year falls between the two great pogrom waves.<br><br>
+        At some point — likely between 1905 and 1920, though the exact year is unknown — both families made the crossing. The port of entry for many Polish Jewish families was <strong>Philadelphia</strong>, not just Ellis Island, via Hamburg–America or Cunard lines through Liverpool. Philadelphia had a large, established Jewish immigrant community, and it is where both the Croft and Skversky families planted roots. Jack and Mollie likely met there, in the tight-knit immigrant Jewish community of Philadelphia.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year blue">1920s–1930s</div>
+        <div class="timeline-title">Americanization — Names, Marriage, and the Move to Texas</div>
+        <div class="timeline-body">Jack Krawczyk/Croft marries Mollie Krafcheck. The name Krawczyk has been Americanized to "Croft" — and sometimes "Craft" (Jack appears as "Jack Craft" in some records), showing the name was still settling. The Skversky family has already Americanized to "Squires" by this generation. Both families are part of the Philadelphia Jewish community, navigating American life in the era of the great immigrant assimilation push.<br><br>
+        The most striking fact about this generation: Jack and Mollie's children are born not in Philadelphia but in <strong>Houston, Texas</strong>. Evelyn Croft is born in Houston in 1929; Barbara in 1936; Kenneth around 1938. Something drew the family south — possibly work in the oil industry, family connections, or community ties that remain to be researched. By the 1930s, the Croft family is Texan.<br><br>
+        Meanwhile the 1924 Immigration Act has slammed the door nearly shut on Eastern European Jewish immigration. The relatives who did not leave Poland in time — Mollie's siblings Moses, Pesa Bessie, Scheindle Jean; Jack's siblings William and Sarah; all the cousins and aunts and uncles who stayed behind — are now trapped. What happened to them in the 1930s and 1940s is not yet documented in this research, but Radzyn Podlaski and Kock were both devastated in the Holocaust. This is an open and painful research question.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year blue">1930s–1960s</div>
+        <div class="timeline-title">Two American Jewish Families Converge in Texas</div>
+        <div class="timeline-body">Barbara Croft (b. 23 Jan 1936, Houston) grows up in Texas as a second-generation American Jew. Arthur Squires — whose grandfather was Harry D. Skversky (Squires) of the Pennsylvania Skversky line — also ends up in Texas. The Philadelphia Jewish world that both families passed through created the kind of community networks that connected families across cities. Arthur and Barbara meet, marry, and settle in Texas.<br><br>
+        The Squires/Croft household in Houston carries the full weight of this immigration story: Krawczyk tailors from Kock, Krafcheck families from Radzyn Podlaski, Skversky families from Russia — all converging in one Houston Jewish family within two generations of the Atlantic crossing.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year blue">1963–1998</div>
+        <div class="timeline-title">Heather Squires → Avery Thomas</div>
+        <div class="timeline-body">Heather Denise Squires (b. 1963), daughter of Arthur and Barbara, grows up in Texas carrying this Jewish immigrant heritage. She marries Michael Scott Thomas (b. 1960) — whose own family traces back ten generations to colonial Virginia, Revolutionary War patriots, Austin's Colony settlers, and the deep Texas frontier.<br><br>
+        The marriage of Heather and Michael is a collision of two completely different American stories: Eastern European Jewish immigrants who arrived with nothing and built American lives within living memory, and a Southern colonial family whose roots in American soil go back to the 1600s. Avery Thomas, born in 1998 in Texas, is the product of both.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAME CHANGES -->
+  <div class="section" id="name-changes">
+    <h2 class="section-title blue">The Name Changes — Identity in a New World</h2>
+
+    <p>Two major name changes mark this family's Jewish immigration story — and together they reveal two very different strategies for becoming American. One name was simplified phonetically; the other was replaced with something aspirational. Both erased a piece of the old world in exchange for a foothold in the new one. But the old names survived in documents, and now, through genealogy, they have come back.</p>
+
+    <div style="margin: 1.5rem 0; text-align: center; font-size: 1.05rem;">
+      <span class="name-change">Krawczyk</span>
+      <span class="arrow-right">→</span>
+      <span class="name-change">Croft</span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="name-change">Kravchik</span>
+      <span class="arrow-right">→</span>
+      <span class="name-change">Croft</span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="name-change">Skversky</span>
+      <span class="arrow-right">→</span>
+      <span class="name-change">Squires</span>
+    </div>
+
+    <div class="story-card blue">
+      <div class="card-title blue">Krawczyk → Croft (and Kravchik → Croft)</div>
+      <p><strong>Krawczyk</strong> (pronounced roughly "KRAVCH-ik" in Yiddish-inflected Polish) is a Polish occupational surname meaning "tailor" — from <em>krawiec</em>, one who cuts and sews cloth. It was one of the most common surnames assigned to Jewish families during the forced name-registration drives of the late 18th and early 19th centuries under Russian and Prussian rule. The irony of a Jewish family being named "tailor" is multilayered: tailoring was one of the few occupations Jews were legally permitted to practice in many parts of the Pale, so the surname may have reflected a genuine family trade, not merely a bureaucratic assignment.</p>
+      <p style="margin-top:0.7rem;">The Americanization to <strong>Croft</strong> is not a semantic translation — there is no English equivalent of the tailor concept in "croft." Instead it is phonetic: "Croft" preserves the hard Kr-/Cr- opening consonant cluster and compresses the rest of the name into a clean, English-sounding monosyllable. "Croft" is an Old English word meaning a small enclosed field or smallholding — a thoroughly respectable, rural English sound, evoking land and permanence rather than immigrant newcomer status.</p>
+      <p style="margin-top:0.7rem;">Critically, the family also used the spelling <strong>"Craft"</strong> — Jack appears as "Jack Craft" in some American records. This tells us the name was still in flux; it had not yet fully settled into a single spelling. And some siblings retained the Yiddish form: Samuel and Sarah are recorded as <strong>Croft (Kravchik)</strong> — writing the Americanized name first, but preserving the old pronunciation in parentheses. This dual-naming practice is a small window into a family caught between two identities, uncertain which name would stick.</p>
+      <p style="margin-top:0.7rem;">What is particularly striking in this family's case is that Mollie Krafcheck — who married Jack Croft — also had a name derived from the same root. <em>Krafcheck</em> is an Americanized spelling of <em>Kravchik</em>, itself a Yiddish diminutive of <em>kravets</em> (tailor). Two families, both named "tailor" in different linguistic forms, met and married in America. Whether this is coincidence, a shared occupational origin in the Lublin tailoring trade, or something more is an open question worth pursuing.</p>
+    </div>
+
+    <div class="story-card blue">
+      <div class="card-title blue">Skversky → Squires</div>
+      <p><strong>Skversky</strong> is almost certainly a place-name surname — derived from <em>Skwierzyna</em> (a town in what is now western Poland), or possibly from another town with a similar root. Place-name surnames were extremely common among Ashkenazi Jews in Eastern Europe; families were often named for the town their ancestors came from, and when they emigrated, those place names traveled with them as surnames.</p>
+      <p style="margin-top:0.7rem;">The Americanization to <strong>Squires</strong> is a more ambitious transformation than Krawczyk → Croft. The phonetic connection is real — both Sk- and Sq- produce the same initial sound cluster — but the choice of "Squires" goes beyond phonetics. In English social tradition, a <em>squire</em> was a man of minor gentry, a landowner, a person of local standing. For a Jewish immigrant family from Russia arriving with little but their wits and their work ethic, choosing the name "Squires" was an act of American aspiration: we are not refugees, we are landowners, we belong here.</p>
+      <p style="margin-top:0.7rem;">The name "Squires" endures today as Avery's mother's maiden name — Heather Denise Squires — which means that every time that name appears, it carries within it the echo of the Skversky family's crossing from Russia to Pennsylvania, and their deliberate choice to plant themselves in America with a new name that said: <em>we are here, and we are staying.</em></p>
+    </div>
+
+    <h3 class="blue">Why Name Changes Happened — The Full Picture</h3>
+    <p>Name changes among Jewish immigrants were not a single event but a process — driven by overlapping pressures that played out differently in each family and each generation:</p>
+    <ul style="margin-left:1.5rem;margin-bottom:1rem;font-size:0.93rem;line-height:1.9;">
+      <li style="margin-bottom:0.6rem;"><strong>Immigration processing:</strong> Ellis Island and Philadelphia port clerks wrote names phonetically as they heard them, often permanently anglicizing them on official documents before families had any say.</li>
+      <li style="margin-bottom:0.6rem;"><strong>Anti-Semitism and passing:</strong> A visibly Jewish name could cost someone a job, an apartment, or social standing. Discrimination in hiring was open and legal; landlords routinely refused Jewish tenants.</li>
+      <li style="margin-bottom:0.6rem;"><strong>American identity:</strong> Especially among the second generation — children born in America who went to American schools, made American friends, spoke English without an accent — there was enormous pressure to assimilate completely.</li>
+      <li style="margin-bottom:0.6rem;"><strong>Legal and commercial simplicity:</strong> Government documents, business contracts, deeds, and tax records all required names that American officials could spell and record.</li>
+      <li style="margin-bottom:0.6rem;"><strong>Gradual family drift:</strong> Often no single dramatic decision was made. One sibling spelled it one way, another sibling spelled it differently, a court record used a third variant. The Croft/Craft variation is a perfect example — both spellings were used simultaneously.</li>
+      <li style="margin-bottom:0.6rem;"><strong>What was lost — and what survived:</strong> The price of these name changes was the severing of a direct link to ancestral origins. Genealogical research — like this project — is the act of recovering those severed connections, following the paper trail back through variant spellings to the original name and the original place.</li>
+    </ul>
+
+    <div class="story-card blue">
+      <div class="card-title blue">The Names That Did Not Change — Krafcheck</div>
+      <p>Not every name in this family was fully anglicized. <strong>Krafcheck</strong> — Mollie's maiden name — is itself already a partial anglicization of <em>Kravchik</em>, but it never completed the journey to a fully English name the way Krawczyk became Croft. Mollie Krafcheck married Jack Croft and took his name, so the Krafcheck name did not pass directly to Barbara or Heather. But it survives in the genealogy as one of the most traceable threads — because "Krafcheck" is unusual enough that it appears in records consistently, unlike the more thoroughly anglicized names that can be harder to trace.</p>
+      <p style="margin-top:0.7rem;">Similarly, the given names in this family show the same pattern of dual identity. Bernard's Yiddish name was <strong>Baruch</strong> — a Hebrew name meaning "blessed" — and he went by "Baruch Harry," using the American "Harry" alongside the Hebrew original. Fannie's birth name was <strong>Feiga</strong> (a Yiddish bird name, related to the German <em>Vogel</em>). These given name pairs — Baruch/Harry, Feiga/Fannie — are fingerprints: they appear in different records depending on the context, and knowing both forms is what makes it possible to follow a single person through American documents.</p>
+    </div>
+  </div>
+
+  <!-- ORIGINS MAP -->
+  <div class="section" id="origins-map">
+    <h2 class="section-title teal">Origins Map — Where the Family Came From</h2>
+
+    <div class="map-note">
+      <strong>Note:</strong> This is a text-based geographic reference. The towns below were all within the <strong>Pale of Settlement</strong> — the region of the Russian Empire where Jews were legally required to reside, roughly corresponding to modern Poland, Lithuania, Belarus, and Ukraine.
+    </div>
+
+    <h3 class="teal">Jewish Origin Towns</h3>
+
+    <table class="ancestor-table teal">
+      <thead>
+        <tr>
+          <th>Town</th>
+          <th>Modern Country</th>
+          <th>Family</th>
+          <th>Context</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">Kock (Kock nad Wieprzem)</td>
+          <td>Poland</td>
+          <td class="rel teal">Krawczyk / Croft family</td>
+          <td class="note">Lublin region. Famous as a Hasidic center — the Kocker Rebbe was one of the most famous Hasidic masters of the 19th century. A significant Jewish shtetl before the Holocaust.</td>
+        </tr>
+        <tr>
+          <td class="name">Radom</td>
+          <td>Poland</td>
+          <td class="rel teal">Krafcheck family</td>
+          <td class="note">Major city in central Poland, Masovian region. Had a substantial Jewish population in the 19th–early 20th century before near-total destruction in the Holocaust.</td>
+        </tr>
+        <tr>
+          <td class="name">Radzyn Podlaski</td>
+          <td>Poland</td>
+          <td class="rel teal">Lipschitz / Krafcheck family</td>
+          <td class="note">Eastern Poland (Lublin region). Also known as a Hasidic center — the Radzyner Rebbe line is famous. Significant Jewish community before WWII.</td>
+        </tr>
+        <tr>
+          <td class="name">Russia (unspecified)</td>
+          <td>Russia / Western Pale</td>
+          <td class="rel blue">Skversky family</td>
+          <td class="note">Ben J. Skversky (b. 1859) and Rosie Cohen (b. 1862) listed as born in Russia. Likely the western Pale — could be Lithuania, Belarus, or Ukraine.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="story-card teal">
+      <div class="card-title teal">The Hasidic Connection — Kock and Radzyn Podlaski</div>
+      <p>Two of the family's origin towns — Kock and Radzyn Podlaski — are specifically famous as centers of Hasidic Judaism. The <strong>Kocker Rebbe</strong> (Menachem Mendel of Kotzk, 1787–1859) was one of the most radical and celebrated Hasidic masters, known for his fierce demands for honesty and his legendary 20-year self-imposed isolation. The <strong>Radzyner Rebbe</strong> line was known for reinstating the <em>tekhelet</em> (blue thread) in the tallit. Whether the Krawczyk and Lipschitz ancestors were Hasidic Jews or opposed to Hasidism (the <em>Mitnagdim</em> movement) is unknown — but they lived in communities saturated with this religious ferment. The world they left behind was one of intense spiritual life, Yiddish literature, and communal solidarity that was largely destroyed in the Holocaust.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>Roots: A Family History Project &nbsp;·&nbsp; Last updated April 2026</p>
+  <p style="margin-top:0.4rem;">Part of a living genealogical record. See also: <a href="squires-line.html" style="color:var(--accent-teal);">Squires Line</a> &nbsp;·&nbsp; <a href="full-family-tree.html" style="color:var(--accent-teal);">Full Family Tree</a></p>
+</footer>
+
+</body>
+</html>

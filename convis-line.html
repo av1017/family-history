@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Convis Line — Roots: Family History</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --surface2: #222;
+      --border: #2e2e2e;
+      --accent: #c9a84c;
+      --accent2: #a0522d;
+      --accent-blue: #5b8dc9;
+      --accent-teal: #4ca89a;
+      --text: #e0d8cc;
+      --muted: #888;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; font-size: 16px; line-height: 1.75; }
+
+    header { background: linear-gradient(135deg, #1a1208 0%, #0f0f0f 60%); border-bottom: 2px solid var(--accent); padding: 3rem 2rem 2rem; text-align: center; }
+    header .crest { font-size: 3rem; margin-bottom: 0.5rem; }
+    header h1 { font-size: 2.4rem; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.4rem; }
+    header .subtitle { color: var(--muted); font-style: italic; font-size: 1rem; }
+    header .byline { margin-top: 1rem; font-size: 0.85rem; color: var(--muted); }
+
+    .site-nav { background: #111; border-bottom: 2px solid var(--accent); padding: 0.7rem 2rem; display: flex; flex-wrap: wrap; gap: 0.4rem 0; justify-content: center; position: sticky; top: 0; z-index: 200; }
+    .site-nav a { color: var(--muted); text-decoration: none; font-size: 0.82rem; font-family: sans-serif; letter-spacing: 0.8px; text-transform: uppercase; padding: 0.3rem 1rem; border-right: 1px solid #2a2a2a; transition: color 0.2s; }
+    .site-nav a:last-child { border-right: none; }
+    .site-nav a:hover { color: var(--accent); }
+    .site-nav a.active { color: var(--accent); }
+    .nav-divider { color: #444; font-size: 0.72rem; font-family: sans-serif; letter-spacing: 1px; text-transform: uppercase; padding: 0.3rem 0.5rem 0.3rem 1.2rem; pointer-events: none; user-select: none; }
+
+    nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0.75rem 2rem; display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; justify-content: center; position: sticky; top: 44px; z-index: 100; }
+    nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; font-family: sans-serif; letter-spacing: 0.5px; transition: color 0.2s; }
+    nav a:hover { color: #fff; }
+
+    .container { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    .section { margin-top: 3rem; }
+    .section-title { color: var(--accent); font-size: 1.5rem; font-variant: small-caps; letter-spacing: 1px; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+    h3 { color: #d4b87a; font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+
+    .ancestor-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin-bottom: 1.5rem; }
+    .ancestor-table th { background: #1e1508; color: var(--accent); text-align: left; padding: 0.6rem 1rem; font-variant: small-caps; letter-spacing: 0.5px; border-bottom: 2px solid var(--accent); }
+    .ancestor-table td { padding: 0.55rem 1rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .ancestor-table tr:nth-child(even) td { background: var(--surface); }
+    .ancestor-table tr:hover td { background: #1e1a12; }
+    .ancestor-table .name { font-weight: bold; color: #e8d9b8; }
+    .ancestor-table .rel  { color: var(--accent); font-style: italic; font-size: 0.88rem; }
+    .ancestor-table .dates { color: var(--muted); font-size: 0.85rem; }
+    .ancestor-table .note  { color: #aaa; font-size: 0.84rem; }
+
+    .story-card { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--accent2); border-radius: 4px; padding: 1.2rem 1.4rem; margin: 1.2rem 0; }
+    .story-card .card-title { color: var(--accent); font-size: 1rem; font-weight: bold; margin-bottom: 0.6rem; }
+    .story-card p { font-size: 0.93rem; margin-bottom: 0.6rem; }
+    .story-card p:last-child { margin-bottom: 0; }
+
+    .video-card { background: #0c1018; border: 1px solid #2a3040; border-left: 4px solid var(--accent-blue); border-radius: 4px; padding: 1.2rem 1.4rem; margin: 1.2rem 0; }
+    .video-card .vc-label { font-size: 0.72rem; font-family: sans-serif; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent-blue); margin-bottom: 0.3rem; }
+    .video-card .vc-title { color: #c8d8f0; font-weight: bold; font-size: 1rem; margin-bottom: 0.6rem; }
+    .video-card p { font-size: 0.9rem; color: #aab8cc; margin-bottom: 0.5rem; }
+    .video-card ul { font-size: 0.88rem; color: #9aaabb; padding-left: 1.2rem; line-height: 1.8; }
+    .video-card p:last-child { margin-bottom: 0; }
+    .video-card .vc-pending { color: #555; font-style: italic; font-size: 0.88rem; }
+
+    .research-status { background: #0c0f14; border: 1px solid #2a2a4a; border-left: 4px solid var(--accent-blue); border-radius: 4px; padding: 1.2rem 1.4rem; margin: 1.2rem 0; }
+    .research-status .rs-title { color: var(--accent-blue); font-size: 0.85rem; font-family: sans-serif; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 0.6rem; }
+    .research-status ul { list-style: none; font-size: 0.88rem; color: #aaa; padding-left: 0; }
+    .research-status ul li { padding: 0.25rem 0; border-bottom: 1px solid #1a1a2a; }
+    .research-status ul li:last-child { border-bottom: none; }
+
+    footer { margin-top: 4rem; border-top: 1px solid var(--border); padding: 2rem; text-align: center; color: var(--muted); font-size: 0.82rem; font-family: sans-serif; }
+    footer a { color: #666; text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+
+    @media (max-width: 600px) { header h1 { font-size: 1.6rem; } .container { padding: 1.5rem 1rem 3rem; } }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html">Home</a>
+  <span class="nav-divider">Paternal —</span>
+  <a href="full-family-tree.html#paternal-tree">Full Tree</a>
+  <a href="thomas-line.html">Thomas</a>
+  <a href="kennard-family-history.html">Kennard</a>
+  <a href="crawley-line.html">Crawley</a>
+  <a href="convis-line.html" class="active">Convis</a>
+  <span class="nav-divider">Maternal —</span>
+  <a href="full-family-tree.html#maternal-tree">Maternal Tree</a>
+  <a href="squires-line.html">Squires</a>
+  <a href="croft-line.html">Croft</a>
+  <span class="nav-divider">Site —</span>
+  <a href="discoveries-and-research.html">Discoveries</a>
+  <a href="sources.html">Sources</a>
+  <a href="file-glossary.html">Site Index</a>
+</nav>
+
+<header>
+  <div class="crest">🏡</div>
+  <h1>The Convis Line</h1>
+  <div class="subtitle">North Dakota to California — Chuck &amp; Mary Anne Convis</div>
+  <div class="byline">Part of the Thomas &amp; Squires Family History · Compiled April 2026</div>
+</header>
+
+<nav>
+  <a href="#origins">Convis Origins</a>
+  <a href="#chuck-youth">Chuck's Youth</a>
+  <a href="#family">Chuck &amp; Mary Anne</a>
+  <a href="#children">Their Children</a>
+  <a href="#charles-jr">Charles Jr.</a>
+  <a href="#videos">Memorial Videos</a>
+  <a href="#research">Research Status</a>
+</nav>
+
+<div class="container">
+
+  <!-- CONVIS ORIGINS -->
+  <div class="section" id="origins">
+    <h2 class="section-title">The Convis Family — Four Generations</h2>
+    <p>The Convis family came from <strong>North Dakota</strong> — farmers and homesteaders in the northern Great Plains. Four generations are now documented, confirmed from a labeled photograph taken around 1934 showing all four generations together: <strong>Oscar Convis</strong> (great-grandfather), <strong>Elmer Convis</strong> (grandfather), <strong>Lester Convis</strong> (father), and young <strong>Chuck Convis</strong>. The Convis farm, known as <strong>"Modern Acres,"</strong> was built by Elmer near Douglas, North Dakota in 1905 and was still in operation as of 2022.</p>
+
+    <table class="ancestor-table">
+      <thead>
+        <tr><th>Generation</th><th>Person</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rel">Great-great-grandfather</td>
+          <td class="name">Oscar Convis</td>
+          <td class="note">Earliest confirmed Convis generation · Labeled in ~1934 four-generations photo</td>
+        </tr>
+        <tr>
+          <td class="rel">Great-grandfather</td>
+          <td class="name">Elmer Convis</td>
+          <td class="note">Built Convis family farm near Douglas, North Dakota, 1905 · "Modern Acres"</td>
+        </tr>
+        <tr>
+          <td class="rel">Grandfather (Chuck's father)</td>
+          <td class="name">Lester Convis</td>
+          <td class="note">Labeled "Dad" in ~1934 four-generations photo · North Dakota farmer</td>
+        </tr>
+        <tr>
+          <td class="rel">Chuck's siblings</td>
+          <td class="name">Delores Convis · Millie Convis · Margaret Convis (m. Kadoyama)</td>
+          <td class="note">All appear in the ~1934 four-generations family photo alongside Chuck</td>
+        </tr>
+        <tr>
+          <td class="rel">Chuck</td>
+          <td class="name">Charles "Chuck" Lester Convis</td>
+          <td class="dates">b. 21 Apr 1926 · Lansford, Bottineau County, North Dakota · d. 2022</td>
+          <td class="note">m. Mary Anne Crawley · Known to Avery's father as "Uncle Chuck"</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="story-card">
+      <div class="card-title">Modern Acres — The Convis Farm</div>
+      <p>Elmer Convis built the family homestead near Douglas, North Dakota in 1905 — in the era of the great northern plains land rush following the Homestead Act. Chuck was born in a homestead cabin near Lansford and Mount Rose, Bottineau County, in April 1926. An aerial photograph of "Modern Acres" from 1953 shows the farm in full operation; the memorial video notes it was still active as of 2022. The farm represents nearly 120 years of continuous Convis family history on the northern plains.</p>
+    </div>
+  </div>
+
+  <!-- CHUCK'S YOUTH -->
+  <div class="section" id="chuck-youth">
+    <h2 class="section-title">Chuck Convis — Growing Up in North Dakota</h2>
+    <p>Charles "Chuck" Lester Convis was born on <strong>21 April 1926</strong> in a homestead cabin near <strong>Lansford and Mount Rose, Bottineau County, North Dakota</strong>. He grew up on the family's Modern Acres farm and came of age during the Depression and WWII years on the northern plains.</p>
+    <p>In <strong>1937</strong>, Chuck was a member of the <strong>Mt. Rose 4H Club</strong>, where he raised lambs — a photograph shows him standing with his animals at a fair or exhibition. By <strong>1941</strong>, he was playing <strong>trumpet</strong>, with Bix Beiderbecke as his musical hero. He came of age during the swing era, the same years Mary Anne Crawley was growing up listening to Bob Wills in East Texas.</p>
+    <p>In <strong>1956</strong>, Chuck was in <strong>Cambridge, Massachusetts</strong> — the year J.G. Thomas served as usher at the Crawley family wedding in Texas. The exact reason for Chuck's Cambridge presence is unknown; it may relate to education or early career work.</p>
+  </div>
+
+  <!-- CHUCK & MARY ANNE -->
+  <div class="section" id="family">
+    <h2 class="section-title">Chuck &amp; Mary Anne — Their Life Together</h2>
+    <p>Charles "Chuck" Lester Convis (b. 21 Apr 1926, North Dakota · d. 2022) married <strong>Mary Anne Crawley</strong> (b. 30 Aug 1929, Haynesville, Louisiana · d. 24 Nov 2021, Grass Valley, California). Their life together spanned the post-WWII boom years, the growth of American suburbia and technology sectors, and eventually retirement in California. Chuck died in 2022 at age 95 or 96; Mary Anne had preceded him in November 2021.</p>
+    <p>Mary Anne was known to Avery's father Michael Scott Thomas as <strong>"Aunt Mary Anne,"</strong> and Chuck was <strong>"Uncle Chuck."</strong> They were Charlotte Thomas's sister and brother-in-law — central figures in the extended Crawley family network for decades.</p>
+    <p>For Mary Anne's early life and the Crawley family background, see the <a href="crawley-line.html" style="color:var(--accent);">Crawley Line page</a>.</p>
+  </div>
+
+  <!-- THEIR CHILDREN -->
+  <div class="section" id="children">
+    <h2 class="section-title">Chuck &amp; Mary Anne's Children</h2>
+
+    <table class="ancestor-table">
+      <thead>
+        <tr><th>Person</th><th>Born</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">Charles Convis Jr.</td>
+          <td class="dates">—</td>
+          <td class="note">Eldest · Photographer, filmmaker, former ESRI GIS conservation director, National Park Ranger · Created the memorial video series (2022) · Contact initiated April 2026</td>
+        </tr>
+        <tr>
+          <td class="name">Bill Convis</td>
+          <td class="dates">—</td>
+          <td class="note">Son of Chuck &amp; Mary Anne</td>
+        </tr>
+        <tr>
+          <td class="name">Jim Convis</td>
+          <td class="dates">—</td>
+          <td class="note">Son of Chuck &amp; Mary Anne</td>
+        </tr>
+        <tr>
+          <td class="name">John Scott Convis</td>
+          <td class="dates">b. 9 Sep 1951 · Runnels, Texas</td>
+          <td class="note">Son of Chuck &amp; Mary Anne</td>
+        </tr>
+        <tr>
+          <td class="name">David Convis</td>
+          <td class="dates">—</td>
+          <td class="note">Son of Chuck &amp; Mary Anne</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p style="font-size:0.88rem;color:var(--muted);">All five children are Avery's first cousins once removed on Charlotte's side.</p>
+  </div>
+
+  <!-- CHARLES JR. -->
+  <div class="section" id="charles-jr">
+    <h2 class="section-title">Charles Convis Jr. — Photographer &amp; Family Historian</h2>
+    <p>Charles Convis Jr. is Chuck and Mary Anne's eldest son, making him Avery's first cousin once removed on Charlotte's side. He is an accomplished figure in multiple fields: an independent photographer and filmmaker specializing in wildlife, nature, and Milky Way photography; a former Conservation Program head at <strong>ESRI</strong> (Environmental Systems Research Institute), where he spent 33 years leading GIS technology and spatial analysis for conservation groups worldwide; and a former field ecologist and National Park Ranger.</p>
+    <p>He is also a dedicated family documentarian. In May 2022, following the deaths of both Chuck and Mary Anne, Charles Jr. created a six-part memorial video slideshow series covering the full arc of their lives — from Chuck's North Dakota homestead childhood and WWII service to Mary Anne's Louisiana and East Texas girlhood, their college years, married life, and later years together. He maintains an extensive photography portfolio at <a href="https://www.convisart.com/" target="_blank" style="color:var(--accent);">convisart.com</a> and <a href="https://charlesconvis.smugmug.com/" target="_blank" style="color:var(--accent);">charlesconvis.smugmug.com</a>.</p>
+    <p>Contact was initiated with Charles Jr. via Ancestry on April 17, 2026. He has approved use of the memorial videos and has been asked to share his GEDCOM export. Collaboration is active.</p>
+  </div>
+
+  <!-- MEMORIAL VIDEOS -->
+  <div class="section" id="videos">
+    <h2 class="section-title">Memorial Video Series — Key Findings</h2>
+    <p>Charles Convis Jr. created a six-part memorial slideshow series in May 2022. Each video has been analyzed frame by frame for genealogical data. Findings are documented here as videos are processed.</p>
+
+    <div class="video-card">
+      <div class="vc-label">Video 1 · Processed April 2026</div>
+      <div class="vc-title">1DadYouthSLIDES6 — Chuck's Youth</div>
+      <p>Chuck's early life in North Dakota. Key findings:</p>
+      <ul>
+        <li>Born April 1926 in homestead cabin, Lansford / Mount Rose area, Bottineau County, ND</li>
+        <li>Four-generation Convis photo (~1934) confirms: Oscar (Gt-Grandpa) → Elmer (Grandpa) → Lester (Dad) → Chuck</li>
+        <li>Chuck's siblings confirmed in same photo: Delores, Millie, Margaret</li>
+        <li>Elmer's farm "Modern Acres" built near Douglas, ND in 1905; aerial photo 1953; still active 2022</li>
+        <li>1937: Chuck in Mt. Rose 4H Club with lambs</li>
+        <li>1941: Chuck playing trumpet; musical hero was Bix Beiderbecke</li>
+        <li>1956: Chuck in Cambridge, Massachusetts (reason unknown)</li>
+      </ul>
+    </div>
+
+    <div class="video-card">
+      <div class="vc-label">Video 2 · Processed April 2026</div>
+      <div class="vc-title">2MomYouthSLIDES6 — Mary Anne's Youth</div>
+      <p>Mary Anne Crawley's early life in Louisiana and East Texas. Key findings:</p>
+      <ul>
+        <li>Born 1929 in Haynesville, Claiborne Parish, Louisiana (confirmed)</li>
+        <li>Crawley/Robison ancestral home: Simsboro, Lincoln Parish, Louisiana</li>
+        <li>Depression forced family to Marshall, TX; moved to Gladewater ~1932 following oil boom</li>
+        <li>Extended Crawley family included migrant workers (truck caravan photos documented)</li>
+        <li>Mary Anne attended Spring Hill School near Longview, TX (school portraits 1942–43, 1943–44)</li>
+        <li>1936 photo confirms: Mary Anne, James, Charlotte all in Gladewater area</li>
+        <li>1942 Simsboro photo: Lottie, James (letterman jacket "S"), Mary Anne, Charlotte, young man in Army uniform</li>
+        <li>1937 Simsboro: large extended family gathering (~13 people), one man in wheelchair (identity unknown)</li>
+        <li>1963 Simsboro: Mary Anne with young children; home movie shot by Chuck</li>
+        <li>Favorite music: Bob Wills &amp; the Texas Playboys</li>
+        <li>Photos credited to Lottie Crawley and Norma Robison; film by Charles Convis Sr.</li>
+      </ul>
+    </div>
+
+    <div class="video-card">
+      <div class="vc-label">Video 3 · Pending</div>
+      <div class="vc-title">3DadWarSlidesVer9 — Chuck's WWII Service</div>
+      <p class="vc-pending">Not yet processed. Will document Chuck's military service and wartime years.</p>
+    </div>
+
+    <div class="video-card">
+      <div class="vc-label">Video 4 · Pending</div>
+      <div class="vc-title">4CollegeSLIDESver7 — College Years</div>
+      <p class="vc-pending">Not yet processed. Will document Chuck and Mary Anne's college years and how they met.</p>
+    </div>
+
+    <div class="video-card">
+      <div class="vc-label">Video 5 · Pending</div>
+      <div class="vc-title">5KernberryReddSLIDESver5</div>
+      <p class="vc-pending">Not yet processed. Title suggests a location or event name — Kernberry Redd.</p>
+    </div>
+
+    <div class="video-card">
+      <div class="vc-label">Video 6 · Pending</div>
+      <div class="vc-title">6LaterLifeSLIDESver3 — Later Life</div>
+      <p class="vc-pending">Not yet processed. Will document Chuck and Mary Anne's later years in California.</p>
+    </div>
+  </div>
+
+  <!-- RESEARCH STATUS -->
+  <div class="section" id="research">
+    <h2 class="section-title">Research Status</h2>
+
+    <div class="research-status">
+      <div class="rs-title">Open Questions</div>
+      <ul>
+        <li>GEDCOM export from Charles Convis Jr. — requested April 2026, awaiting response</li>
+        <li>Videos 3–6 not yet processed — WWII service, college years, later life pending</li>
+        <li>Chuck's 1956 Cambridge, MA presence — reason unknown</li>
+        <li>Army uniform man in 1942 Simsboro photo — identity unknown</li>
+        <li>Man in wheelchair in 1937 Simsboro photo — identity unknown</li>
+        <li>Birth dates and details for Bill, Jim, and David Convis — not yet documented</li>
+        <li>Chuck's exact date of death in 2022 — known as 2022, exact date unknown</li>
+        <li>Where did Chuck and Mary Anne live between Texas and California? Career/location arc incomplete</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>The Thomas &amp; Squires Family History · Compiled by Avery Thomas · April 2026</p>
+  <p style="margin-top:0.5rem;"><a href="index.html">Home</a> · <a href="crawley-line.html">Crawley Line</a> · <a href="full-family-tree.html">Full Family Tree</a> · <a href="file-glossary.html">Site Index</a></p>
+</footer>
+
+</body>
+</html>

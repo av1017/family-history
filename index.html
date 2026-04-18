@@ -57,6 +57,7 @@
     .site-nav a:last-child { border-right: none; }
     .site-nav a:hover { color: var(--accent); }
     .site-nav a.active { color: var(--accent); }
+    .nav-divider { color: #444; font-size: 0.72rem; font-family: sans-serif; letter-spacing: 1px; text-transform: uppercase; padding: 0.3rem 0.5rem 0.3rem 1.2rem; pointer-events: none; user-select: none; }
 
     /* ── Hero ── */
     .hero {
@@ -117,7 +118,7 @@
     /* ── Heritage cards ── */
     .heritage-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 1.5rem;
       margin-top: 1.5rem;
     }
@@ -311,11 +312,19 @@
 <!-- ── Site-wide Navigation ── -->
 <nav class="site-nav">
   <a href="index.html" class="active">Home</a>
-  <a href="full-family-tree.html">Family Tree</a>
-  <a href="thomas-kennard-documents.html">Thomas &amp; Kennard</a>
-  <a href="kennard-family-history.html">Kennard History</a>
+  <span class="nav-divider">Paternal —</span>
+  <a href="full-family-tree.html#paternal-tree">Full Tree</a>
+  <a href="thomas-line.html">Thomas</a>
+  <a href="kennard-family-history.html">Kennard</a>
+  <a href="crawley-line.html">Crawley</a>
+  <a href="convis-line.html">Convis</a>
+  <span class="nav-divider">Maternal —</span>
+  <a href="full-family-tree.html#maternal-tree">Maternal Tree</a>
+  <a href="squires-line.html">Squires</a>
+  <a href="croft-line.html">Croft</a>
+  <span class="nav-divider">Site —</span>
   <a href="discoveries-and-research.html">Discoveries</a>
-  <a href="sources.html">Primary Sources</a>
+  <a href="sources.html">Sources</a>
   <a href="file-glossary.html">Site Index</a>
 </nav>
 
@@ -332,13 +341,13 @@
   <!-- ── Intro ── -->
   <div class="section">
     <p>This site documents the family history of <strong>Avery Thomas</strong>, tracing two very different lineages — one deep into the American South, the other across the Atlantic from Eastern Europe. Together they tell a story of migration, survival, and the long arc of family across centuries.</p>
-    <p>The <strong>Thomas &amp; Kennard</strong> paternal line runs from colonial Virginia in the 1680s, south through the Carolinas and Georgia, west into Alabama, and finally into Texas with the earliest wave of American settlers. The <strong>Squires &amp; Croft</strong> maternal line originates in the Jewish communities of Poland and the Russian Empire, arriving in Philadelphia in the early twentieth century and eventually settling in Texas.</p>
-    <p>This is a living research project. Some lines are documented back ten generations with primary sources. Others are works in progress.</p>
+    <p>The <strong>paternal line</strong> includes the Thomas family (colonial Virginia, 1680s, through the South to Texas), the Kennard line (Grimes County, Texas), and the Crawley and Convis families (Louisiana and North Dakota to Texas). The <strong>maternal line</strong> traces the Squires family (Skversky) and Croft family (Krawczyk) from the Jewish communities of the Russian Empire through Philadelphia to Texas.</p>
+    <p>This is a living research project. Some lines are documented back ten generations with primary sources. Others are works in progress. Every family member — whatever your surname — has a page here.</p>
   </div>
 
   <!-- ── Heritage Cards ── -->
   <div class="section">
-    <h2 class="section-title">Two Heritages</h2>
+    <h2 class="section-title">Family Lines</h2>
     <div class="heritage-grid">
 
       <div class="heritage-card">
@@ -347,10 +356,24 @@
           <li>Origins: <span>Virginia, 1680s — English colonial</span></li>
           <li>Route: <span>VA → NC → SC/GA → AL → Texas (1835)</span></li>
           <li>Earliest ancestor: <span>Richard Thomas, York Co. VA, d. ~1667</span></li>
-          <li>Generations documented: <span>10</span></li>
-          <li>Notable: <span>Revolutionary War service · Sons of the Republic of Texas · Texas Declaration of Independence connection</span></li>
+          <li>Generations documented: <span>10+</span></li>
+          <li>Notable: <span>Revolutionary War service · Sons of the Republic of Texas · Austin's Colony</span></li>
         </ul>
-        <a href="full-family-tree.html#paternal-tree" class="card-link">View Paternal Tree →</a>
+        <a href="thomas-line.html" class="card-link">Thomas Line →</a>
+        &nbsp;&nbsp;<a href="kennard-family-history.html" class="card-link">Kennard Line →</a>
+      </div>
+
+      <div class="heritage-card">
+        <h3>Paternal — Crawley &amp; Convis</h3>
+        <ul>
+          <li>Origins: <span>Simsboro, Louisiana · Lansford, North Dakota</span></li>
+          <li>Route: <span>LA → East Texas (1932) · ND → California → Texas</span></li>
+          <li>Key figures: <span>John &amp; Lottie Crawley · Chuck &amp; Mary Anne Convis</span></li>
+          <li>Generations documented: <span>4–5</span></li>
+          <li>Notable: <span>East Texas oil boom migration · North Dakota homestead · memorial video series</span></li>
+        </ul>
+        <a href="crawley-line.html" class="card-link">Crawley Line →</a>
+        &nbsp;&nbsp;<a href="convis-line.html" class="card-link">Convis Line →</a>
       </div>
 
       <div class="heritage-card maternal">
@@ -359,10 +382,11 @@
           <li>Origins: <span>Poland &amp; Russian Empire — Jewish community</span></li>
           <li>Route: <span>Eastern Europe → Philadelphia, early 1900s → Texas</span></li>
           <li>Name changes: <span>Skversky → Squires · Krawczyk → Croft</span></li>
-          <li>Generations documented: <span>3–4 (active research)</span></li>
-          <li>Notable: <span>Immigration-era name Americanization · Philadelphia Jewish community</span></li>
+          <li>Generations documented: <span>4–5 (active research)</span></li>
+          <li>Notable: <span>Pale of Settlement origins · Hasidic shtetl towns · Philadelphia Jewish community</span></li>
         </ul>
-        <a href="full-family-tree.html#maternal-tree" class="card-link">View Maternal Tree →</a>
+        <a href="squires-line.html" class="card-link">Squires Line →</a>
+        &nbsp;&nbsp;<a href="croft-line.html" class="card-link">Croft Line →</a>
       </div>
 
     </div>
@@ -405,7 +429,7 @@
         <div class="hl-label">Immigration Story</div>
         <div class="hl-title">Skversky → Squires · Krawczyk → Croft</div>
         <div class="hl-body">Two Americanization-era name changes mark the maternal line's arrival in the United States — a pattern common among Jewish immigrants from Eastern Europe in the early twentieth century.</div>
-        <a href="full-family-tree.html#name-changes">Read more →</a>
+        <a href="croft-line.html#name-changes">Read more →</a>
       </div>
 
       <div class="highlight-card">
@@ -423,22 +447,52 @@
     <h2 class="section-title">Explore the Site</h2>
     <div class="pages-grid">
 
+      <a href="thomas-line.html" class="page-card">
+        <div class="pc-icon">🏛️</div>
+        <div class="pc-title">Thomas Line</div>
+        <div class="pc-desc">Ten generations from colonial Virginia to Texas — Revolutionary War patriots, Austin's Colony settlers, and the road to Avery.</div>
+      </a>
+
+      <a href="kennard-family-history.html" class="page-card">
+        <div class="pc-icon">📖</div>
+        <div class="pc-title">Kennard Line</div>
+        <div class="pc-desc">A detailed history of the Kennard family of Grimes County, Texas, drawn from Richard Gary Thomas's 93-page narrative.</div>
+      </a>
+
+      <a href="crawley-line.html" class="page-card">
+        <div class="pc-icon">🛢️</div>
+        <div class="pc-title">Crawley Line</div>
+        <div class="pc-desc">John &amp; Lottie Crawley of Simsboro, Louisiana — their three children, the Great Depression migration, and the East Texas oil boom.</div>
+      </a>
+
+      <a href="convis-line.html" class="page-card">
+        <div class="pc-icon">🎺</div>
+        <div class="pc-title">Convis Line</div>
+        <div class="pc-desc">Chuck &amp; Mary Anne Convis — North Dakota homestead roots, four generations, and the ongoing memorial video series.</div>
+      </a>
+
+      <a href="squires-line.html" class="page-card">
+        <div class="pc-icon">✡</div>
+        <div class="pc-title">Squires Line</div>
+        <div class="pc-desc">The Skversky family — from the Russian Empire to Philadelphia, and the name change to Squires that carries forward to today.</div>
+      </a>
+
+      <a href="croft-line.html" class="page-card">
+        <div class="pc-icon">✡</div>
+        <div class="pc-title">Croft Line</div>
+        <div class="pc-desc">Krawczyk and Krafcheck families from Kock, Radom, and Radzyn Podlaski — two tailor families who met and married in America.</div>
+      </a>
+
       <a href="full-family-tree.html" class="page-card">
         <div class="pc-icon">🌳</div>
         <div class="pc-title">Full Family Tree</div>
-        <div class="pc-desc">Both paternal and maternal lines, generation by generation — from colonial Virginia and Eastern Europe to Texas.</div>
+        <div class="pc-desc">The complete ancestor reference — both paternal and maternal lines with all generation tables and data in one place.</div>
       </a>
 
       <a href="thomas-kennard-documents.html" class="page-card">
         <div class="pc-icon">📜</div>
         <div class="pc-title">Thomas &amp; Kennard Documents</div>
         <div class="pc-desc">Primary source analysis — SRT applications, Austin's Colony register, birth certificates, and the Texas Declaration connection.</div>
-      </a>
-
-      <a href="kennard-family-history.html" class="page-card">
-        <div class="pc-icon">📖</div>
-        <div class="pc-title">Kennard Family History</div>
-        <div class="pc-desc">A detailed history of the Kennard line, drawn from the 93-page document authored by Richard Gary Thomas.</div>
       </a>
 
       <a href="discoveries-and-research.html" class="page-card">
@@ -450,7 +504,7 @@
       <a href="sources.html" class="page-card">
         <div class="pc-icon">🗂️</div>
         <div class="pc-title">Primary Sources</div>
-        <div class="pc-desc">Browse all 19 original documents — birth certificates, draft cards, marriage records, land grants, and newspaper clippings.</div>
+        <div class="pc-desc">Original documents — birth certificates, draft cards, marriage records, land grants, and newspaper clippings.</div>
       </a>
 
       <a href="file-glossary.html" class="page-card blue">

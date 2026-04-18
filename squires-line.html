@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Squires Line — Roots: Family History</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --surface2: #222;
+      --border: #2e2e2e;
+      --accent: #c9a84c;
+      --accent2: #a0522d;
+      --accent-blue: #5b8dc9;
+      --accent-teal: #4ca89a;
+      --text: #e0d8cc;
+      --muted: #888;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; font-size: 16px; line-height: 1.75; }
+
+    header { background: linear-gradient(135deg, #0a1018 0%, #0f0f0f 60%); border-bottom: 2px solid var(--accent-blue); padding: 3rem 2rem 2rem; text-align: center; }
+    header .crest { font-size: 3rem; margin-bottom: 0.5rem; }
+    header h1 { font-size: 2.4rem; color: var(--accent-blue); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.4rem; }
+    header .subtitle { color: var(--muted); font-style: italic; font-size: 1rem; }
+    header .byline { margin-top: 1rem; font-size: 0.85rem; color: var(--muted); }
+
+    .site-nav { background: #111; border-bottom: 2px solid var(--accent); padding: 0.7rem 2rem; display: flex; flex-wrap: wrap; gap: 0.4rem 0; justify-content: center; position: sticky; top: 0; z-index: 200; }
+    .site-nav a { color: var(--muted); text-decoration: none; font-size: 0.82rem; font-family: sans-serif; letter-spacing: 0.8px; text-transform: uppercase; padding: 0.3rem 1rem; border-right: 1px solid #2a2a2a; transition: color 0.2s; }
+    .site-nav a:last-child { border-right: none; }
+    .site-nav a:hover { color: var(--accent); }
+    .site-nav a.active { color: var(--accent-blue); }
+    .nav-divider { color: #444; font-size: 0.72rem; font-family: sans-serif; letter-spacing: 1px; text-transform: uppercase; padding: 0.3rem 0.5rem 0.3rem 1.2rem; pointer-events: none; user-select: none; }
+
+    nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0.75rem 2rem; display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; justify-content: center; position: sticky; top: 44px; z-index: 100; }
+    nav a { color: var(--accent-blue); text-decoration: none; font-size: 0.85rem; font-family: sans-serif; letter-spacing: 0.5px; transition: color 0.2s; }
+    nav a:hover { color: #fff; }
+
+    .container { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    .section { margin-top: 3rem; }
+    .section-title { color: var(--accent-blue); font-size: 1.5rem; font-variant: small-caps; letter-spacing: 1px; border-bottom: 1px solid #2a3040; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+    h3 { color: #90b8e0; font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+
+    .ancestor-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin-bottom: 1.5rem; }
+    .ancestor-table th { background: #0c1018; color: var(--accent-blue); text-align: left; padding: 0.6rem 1rem; font-variant: small-caps; letter-spacing: 0.5px; border-bottom: 2px solid var(--accent-blue); }
+    .ancestor-table td { padding: 0.55rem 1rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .ancestor-table tr:nth-child(even) td { background: var(--surface); }
+    .ancestor-table tr:hover td { background: #0e1218; }
+    .ancestor-table .name { font-weight: bold; color: #e8d9b8; }
+    .ancestor-table .rel  { color: var(--accent-blue); font-style: italic; font-size: 0.88rem; }
+    .ancestor-table .dates { color: var(--muted); font-size: 0.85rem; }
+    .ancestor-table .note  { color: #aaa; font-size: 0.84rem; }
+
+    .story-card { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--accent-blue); border-radius: 4px; padding: 1.2rem 1.4rem; margin: 1.2rem 0; }
+    .story-card .card-title { color: var(--accent-blue); font-size: 1rem; font-weight: bold; margin-bottom: 0.6rem; }
+    .story-card p { font-size: 0.93rem; margin-bottom: 0.6rem; }
+    .story-card p:last-child { margin-bottom: 0; }
+
+    .name-change { display: inline-block; background: #151a25; border: 1px solid var(--accent-blue); border-radius: 3px; padding: 0 6px; font-size: 0.88rem; font-family: sans-serif; color: var(--accent-blue); }
+    .arrow-right { color: var(--muted); margin: 0 4px; }
+
+    footer { margin-top: 4rem; border-top: 1px solid var(--border); padding: 2rem; text-align: center; color: var(--muted); font-size: 0.82rem; font-family: sans-serif; }
+    footer a { color: #666; text-decoration: none; }
+    footer a:hover { color: var(--accent-blue); }
+
+    @media (max-width: 600px) { header h1 { font-size: 1.6rem; } .container { padding: 1.5rem 1rem 3rem; } }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html">Home</a>
+  <span class="nav-divider">Paternal —</span>
+  <a href="full-family-tree.html#paternal-tree">Full Tree</a>
+  <a href="thomas-line.html">Thomas</a>
+  <a href="kennard-family-history.html">Kennard</a>
+  <a href="crawley-line.html">Crawley</a>
+  <a href="convis-line.html">Convis</a>
+  <span class="nav-divider">Maternal —</span>
+  <a href="full-family-tree.html#maternal-tree">Maternal Tree</a>
+  <a href="squires-line.html" class="active">Squires</a>
+  <a href="croft-line.html">Croft</a>
+  <span class="nav-divider">Site —</span>
+  <a href="discoveries-and-research.html">Discoveries</a>
+  <a href="sources.html">Sources</a>
+  <a href="file-glossary.html">Site Index</a>
+</nav>
+
+<header>
+  <div class="crest">✡</div>
+  <h1>The Squires Line</h1>
+  <div class="subtitle">Skversky — From Russia to Philadelphia to Texas</div>
+  <div class="byline">Part of the Thomas &amp; Squires Family History · Compiled April 2026</div>
+</header>
+
+<nav>
+  <a href="#origins">Origins</a>
+  <a href="#skversky">Skversky Family</a>
+  <a href="#name-change">Skversky → Squires</a>
+  <a href="#philadelphia">Philadelphia</a>
+  <a href="#heather">Heather Squires</a>
+</nav>
+
+<div class="container">
+
+  <!-- ORIGINS -->
+  <div class="section" id="origins">
+    <h2 class="section-title">Origins — The Russian Empire</h2>
+    <p>The Squires name is an Americanization. Behind it lies the <strong>Skversky</strong> family — Jewish immigrants from the Russian Empire who arrived in Pennsylvania in the 1880s and built American lives in Philadelphia. The name "Squires" was chosen or assigned as an anglicized replacement, and within two generations the original name had largely faded from daily use. Genealogical research has now recovered the original.</p>
+    <p>The chain that connects Avery Thomas to this line runs through <strong>Heather Denise Squires</strong> (Avery's mother) → <strong>Barbara Croft Squires</strong> (maternal grandmother) → <strong>Arthur Squires</strong> (maternal grandfather) → <strong>Harry D. Squires (née Skversky)</strong> → <strong>Ben J. Skversky &amp; Rosie Cohen Skversky</strong> — both born in Russia in the late 1850s–early 1860s.</p>
+  </div>
+
+  <!-- SKVERSKY FAMILY -->
+  <div class="section" id="skversky">
+    <h2 class="section-title">The Skversky Family — Russia to Pennsylvania</h2>
+
+    <p><strong>Ben J. Skversky</strong> (b. Sep 1859, Russia) and <strong>Rosie Cohen Skversky</strong> (b. Nov 1862, Russia) were both born in the Pale of Settlement — the vast zone of the Russian Empire where Jews were legally required to reside. The surname Skversky and the given name Cohen are strongly Jewish markers of the Russian Empire era. They emigrated to Pennsylvania at the start of the great Jewish exodus, likely in the early 1880s following the first major pogrom wave after the 1881 assassination of Tsar Alexander II.</p>
+
+    <p>Their children's birth records tell the emigration story directly: some siblings were born in Russia, some in Pennsylvania — a family that straddled the Atlantic crossing in real time.</p>
+
+    <table class="ancestor-table">
+      <thead>
+        <tr><th>Generation</th><th>Person</th><th>Born</th><th>Place</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rel">3rd great-grandparents</td>
+          <td class="name">Joseph Skverski &amp; Galcbie Skverski</td>
+          <td class="dates">unknown</td>
+          <td>Russia</td>
+          <td class="note">Ben's parents — earliest confirmed Skversky generation</td>
+        </tr>
+        <tr>
+          <td class="rel">3rd great-grandparents (Rosie's side)</td>
+          <td class="name">Jacob Cohen</td>
+          <td class="dates">b. ~1840, Russia</td>
+          <td>Russia</td>
+          <td class="note">Rosie's father</td>
+        </tr>
+        <tr>
+          <td class="rel">2nd great-grandparents</td>
+          <td class="name">Ben J. Skversky &amp; Rosie Cohen Skversky</td>
+          <td class="dates">Sep 1859 / Nov 1862</td>
+          <td>Russia → Pennsylvania</td>
+          <td class="note">Emigrated to Pennsylvania ~early 1880s</td>
+        </tr>
+        <tr>
+          <td class="rel">Great-great-grandfather</td>
+          <td class="name">Harry D. Skversky (Squires)</td>
+          <td class="dates">4 Feb 1883</td>
+          <td>Pennsylvania, USA</td>
+          <td class="note">Born in America · Name Americanized to Squires · Avery's 2nd great-grandfather</td>
+        </tr>
+        <tr>
+          <td class="rel">Great-great-grandparents</td>
+          <td class="name">Hany Sames &amp; Eleanor Sames</td>
+          <td class="dates">May 1897 / ~1903</td>
+          <td>Pennsylvania / Philadelphia</td>
+          <td class="note">Harry's wife's family</td>
+        </tr>
+        <tr>
+          <td class="rel">Maternal grandfather</td>
+          <td class="name">Arthur Squires</td>
+          <td class="dates">~1934 · d. 8 Aug 2022</td>
+          <td>Philadelphia, PA</td>
+          <td class="note">Married Barbara C. Croft · Avery's maternal grandfather</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Children of Ben &amp; Rosie Skversky</h3>
+    <p style="font-size:0.88rem;color:var(--muted);margin-bottom:0.8rem;">Harry D. Skversky (later Squires) was one of a large family. These are Avery's 2nd great-granduncles/aunts on the maternal side. The mix of Russian and Pennsylvania birthplaces shows the family emigrated in stages or right at the moment of crossing.</p>
+
+    <table class="ancestor-table">
+      <thead>
+        <tr><th>Name</th><th>Born</th><th>Place</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="name">Simon Skversky</td><td class="dates">25 May 1883</td><td>Soviet Union</td><td class="note">May have remained in Russia; fate unknown</td></tr>
+        <tr><td class="name">Harry D. Skversky (Squires)</td><td class="dates">4 Feb 1883</td><td>Pennsylvania, USA</td><td class="note">Avery's 2nd great-grandfather; name Americanized to Squires</td></tr>
+        <tr><td class="name">Louie Skversky</td><td class="dates">Sep 1885</td><td>Russia</td><td class="note">Born in Russia; emigrated as child</td></tr>
+        <tr><td class="name">Minie Skversky</td><td class="dates">26 Jul 1887</td><td>Russia</td><td class="note">Born in Russia; emigrated as child</td></tr>
+        <tr><td class="name">Frank Skversky</td><td class="dates">Sep 1887</td><td>Pennsylvania, USA</td><td class="note">Born in America</td></tr>
+        <tr><td class="name">Meyer Skversky</td><td class="dates">Sep 1890</td><td>Pennsylvania, USA</td><td class="note">Born in America</td></tr>
+        <tr><td class="name">David Skversky</td><td class="dates">Aug 1893</td><td>Pennsylvania, USA</td><td class="note">Born in America</td></tr>
+        <tr><td class="name">Eleanor Yampolsky</td><td class="dates">~1903</td><td>Philadelphia, PA</td><td class="note">Married name Yampolsky; relationship to Skversky line to be confirmed</td></tr>
+        <tr><td class="name">Dorothy Davidoff</td><td class="dates">unknown</td><td>unknown</td><td class="note">Married name Davidoff; relationship to Skversky line to be confirmed</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- NAME CHANGE -->
+  <div class="section" id="name-change">
+    <h2 class="section-title">Skversky → Squires</h2>
+
+    <div style="margin: 1.5rem 0; text-align: center; font-size: 1.1rem;">
+      <span class="name-change">Skversky</span>
+      <span class="arrow-right">→</span>
+      <span class="name-change">Squires</span>
+    </div>
+
+    <div class="story-card">
+      <div class="card-title">The Name Change — Aspiration in a New World</div>
+      <p><strong>Skversky</strong> is almost certainly a place-name surname — derived from <em>Skwierzyna</em> (a town in what is now western Poland, known in Yiddish as <em>Schwerin an der Warthe</em>), or possibly from another town with a similar root. Place-name surnames were extremely common among Ashkenazi Jews in Eastern Europe; families were often named for the town their ancestors came from, and when they emigrated, those place names traveled with them as surnames.</p>
+      <p style="margin-top:0.7rem;">The Americanization to <strong>Squires</strong> is a more ambitious transformation than a simple phonetic simplification. The phonetic connection is real — both Sk- and Sq- produce the same initial sound cluster — but the choice of "Squires" goes beyond phonetics. In English social tradition, a <em>squire</em> was a man of minor gentry, a landowner, a person of local standing — a step below knight but above common farmer. It was a title of respect and rootedness. For a Jewish immigrant family from Russia arriving with little, choosing the name "Squires" was an act of American aspiration: <em>we are not refugees, we are landowners, we belong here.</em></p>
+      <p style="margin-top:0.7rem;">The timeline of this change is revealing. Ben Skversky's children born in Pennsylvania — Harry (1883), Frank (1887), Meyer (1890), David (1893) — all appear in early records as Skversky. But by the time Harry's grandson Arthur was born, the family was thoroughly "Squires." The change happened across two generations, not overnight. Simon Skversky, born in Russia in 1883, may never have made the change at all.</p>
+      <p style="margin-top:0.7rem;">The name "Squires" endures today as Avery's mother's maiden name — <strong>Heather Denise Squires</strong> — which means that every time that name appears, it carries within it the echo of the Skversky family's crossing from Russia to Pennsylvania, and their deliberate choice to plant themselves in America with a new name that said: <em>we are here, and we are staying.</em></p>
+    </div>
+  </div>
+
+  <!-- PHILADELPHIA -->
+  <div class="section" id="philadelphia">
+    <h2 class="section-title">Philadelphia — The Jewish Immigrant Community</h2>
+    <p>The Skversky family settled in <strong>Philadelphia, Pennsylvania</strong> — one of the major centers of Jewish immigrant life in late 19th and early 20th century America. Philadelphia had a large, established Jewish community, and it was a common port of entry for Eastern European Jewish immigrants traveling via Hamburg–America or Cunard lines. The tight-knit immigrant Jewish community of Philadelphia is also where the Skversky/Squires line would eventually connect with the Croft/Krafcheck line — Barbara Croft and Arthur Squires meeting in the overlapping world of American Jewish families with Eastern European roots.</p>
+    <p>Arthur Squires (b. ~1934, Philadelphia · d. 8 Aug 2022) married <strong>Barbara C. Croft</strong> (b. 23 Jan 1936, Houston, TX) and eventually settled in Texas. Their daughter Heather Denise Squires (b. 1963) married Michael Scott Thomas — bringing the Squires/Skversky line into the Thomas family.</p>
+    <p style="margin-top:1rem;">For the full Croft/Krawczyk line — Barbara's family and the Polish Jewish roots — see the <a href="croft-line.html" style="color:var(--accent-blue);">Croft Line page</a>.</p>
+  </div>
+
+  <!-- HEATHER -->
+  <div class="section" id="heather">
+    <h2 class="section-title">Heather Denise Squires — Avery's Mother</h2>
+    <p>Heather Denise Squires (b. 1963, Texas) is Avery's mother and the daughter of Arthur and Barbara Squires. She married Michael Scott Thomas (b. 1960), son of J.G. Thomas Jr. and Charlotte Crawley. Their marriage in the 1990s joined two completely different American stories: an Eastern European Jewish immigrant heritage that arrived in America within living memory, and a Southern colonial family whose roots in American soil go back to the 1600s.</p>
+    <p style="font-size:0.88rem;color:var(--muted);">Living persons policy: birth year only, no full date or location, per site privacy policy.</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>The Thomas &amp; Squires Family History · Compiled by Avery Thomas · April 2026</p>
+  <p style="margin-top:0.5rem;"><a href="index.html">Home</a> · <a href="croft-line.html">Croft Line</a> · <a href="full-family-tree.html">Full Family Tree</a> · <a href="file-glossary.html">Site Index</a></p>
+</footer>
+
+</body>
+</html>

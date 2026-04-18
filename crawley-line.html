@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Crawley Line — Roots: Family History</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --surface2: #222;
+      --border: #2e2e2e;
+      --accent: #c9a84c;
+      --accent2: #a0522d;
+      --accent-blue: #5b8dc9;
+      --accent-teal: #4ca89a;
+      --text: #e0d8cc;
+      --muted: #888;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; font-size: 16px; line-height: 1.75; }
+
+    header { background: linear-gradient(135deg, #1a1208 0%, #0f0f0f 60%); border-bottom: 2px solid var(--accent); padding: 3rem 2rem 2rem; text-align: center; }
+    header .crest { font-size: 3rem; margin-bottom: 0.5rem; }
+    header h1 { font-size: 2.4rem; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.4rem; }
+    header .subtitle { color: var(--muted); font-style: italic; font-size: 1rem; }
+    header .byline { margin-top: 1rem; font-size: 0.85rem; color: var(--muted); }
+
+    .site-nav { background: #111; border-bottom: 2px solid var(--accent); padding: 0.7rem 2rem; display: flex; flex-wrap: wrap; gap: 0.4rem 0; justify-content: center; position: sticky; top: 0; z-index: 200; }
+    .site-nav a { color: var(--muted); text-decoration: none; font-size: 0.82rem; font-family: sans-serif; letter-spacing: 0.8px; text-transform: uppercase; padding: 0.3rem 1rem; border-right: 1px solid #2a2a2a; transition: color 0.2s; }
+    .site-nav a:last-child { border-right: none; }
+    .site-nav a:hover { color: var(--accent); }
+    .site-nav a.active { color: var(--accent); }
+    .nav-divider { color: #444; font-size: 0.72rem; font-family: sans-serif; letter-spacing: 1px; text-transform: uppercase; padding: 0.3rem 0.5rem 0.3rem 1.2rem; pointer-events: none; user-select: none; }
+
+    nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0.75rem 2rem; display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; justify-content: center; position: sticky; top: 44px; z-index: 100; }
+    nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; font-family: sans-serif; letter-spacing: 0.5px; transition: color 0.2s; }
+    nav a:hover { color: #fff; }
+
+    .container { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    .section { margin-top: 3rem; }
+    .section-title { color: var(--accent); font-size: 1.5rem; font-variant: small-caps; letter-spacing: 1px; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+    h3 { color: #d4b87a; font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+
+    .ancestor-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin-bottom: 1.5rem; }
+    .ancestor-table th { background: #1e1508; color: var(--accent); text-align: left; padding: 0.6rem 1rem; font-variant: small-caps; letter-spacing: 0.5px; border-bottom: 2px solid var(--accent); }
+    .ancestor-table td { padding: 0.55rem 1rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .ancestor-table tr:nth-child(even) td { background: var(--surface); }
+    .ancestor-table tr:hover td { background: #1e1a12; }
+    .ancestor-table .name { font-weight: bold; color: #e8d9b8; }
+    .ancestor-table .rel  { color: var(--accent); font-style: italic; font-size: 0.88rem; }
+    .ancestor-table .dates { color: var(--muted); font-size: 0.85rem; }
+    .ancestor-table .note  { color: #aaa; font-size: 0.84rem; }
+
+    .story-card { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--accent2); border-radius: 4px; padding: 1.2rem 1.4rem; margin: 1.2rem 0; }
+    .story-card .card-title { color: var(--accent); font-size: 1rem; font-weight: bold; margin-bottom: 0.6rem; }
+    .story-card p { font-size: 0.93rem; margin-bottom: 0.6rem; }
+    .story-card p:last-child { margin-bottom: 0; }
+
+    blockquote { border-left: 3px solid var(--accent); margin: 1.5rem 0; padding: 0.8rem 1.4rem; background: var(--surface); font-style: italic; color: #c8bfae; font-size: 0.95rem; }
+    blockquote cite { display: block; margin-top: 0.5rem; font-style: normal; font-size: 0.82rem; color: var(--muted); }
+
+    .photo-card { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 1.2rem 1.4rem; margin: 1.2rem 0; }
+    .photo-card .photo-title { color: #d4b87a; font-size: 1rem; font-weight: bold; margin-bottom: 0.5rem; }
+    .photo-card p { font-size: 0.9rem; color: #aaa; margin-bottom: 0.5rem; }
+    .photo-card a { color: var(--accent); font-size: 0.88rem; text-decoration: none; }
+    .photo-card a:hover { color: #fff; }
+
+    .research-status { background: #0c0f14; border: 1px solid #2a2a4a; border-left: 4px solid var(--accent-blue); border-radius: 4px; padding: 1.2rem 1.4rem; margin: 1.2rem 0; }
+    .research-status .rs-title { color: var(--accent-blue); font-size: 0.85rem; font-family: sans-serif; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 0.6rem; }
+    .research-status ul { list-style: none; font-size: 0.88rem; color: #aaa; padding-left: 0; }
+    .research-status ul li { padding: 0.25rem 0; border-bottom: 1px solid #1a1a2a; }
+    .research-status ul li:last-child { border-bottom: none; }
+
+    .link-forward { display: inline-block; margin-top: 0.8rem; color: var(--accent); font-size: 0.9rem; font-family: sans-serif; text-decoration: none; border: 1px solid var(--accent); padding: 0.3rem 0.9rem; border-radius: 3px; transition: background 0.2s; }
+    .link-forward:hover { background: #1e1508; }
+
+    footer { margin-top: 4rem; border-top: 1px solid var(--border); padding: 2rem; text-align: center; color: var(--muted); font-size: 0.82rem; font-family: sans-serif; }
+    footer a { color: #666; text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+
+    @media (max-width: 600px) { header h1 { font-size: 1.6rem; } .container { padding: 1.5rem 1rem 3rem; } }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html">Home</a>
+  <span class="nav-divider">Paternal —</span>
+  <a href="full-family-tree.html#paternal-tree">Full Tree</a>
+  <a href="thomas-line.html">Thomas</a>
+  <a href="kennard-family-history.html">Kennard</a>
+  <a href="crawley-line.html" class="active">Crawley</a>
+  <a href="convis-line.html">Convis</a>
+  <span class="nav-divider">Maternal —</span>
+  <a href="full-family-tree.html#maternal-tree">Maternal Tree</a>
+  <a href="squires-line.html">Squires</a>
+  <a href="croft-line.html">Croft</a>
+  <span class="nav-divider">Site —</span>
+  <a href="discoveries-and-research.html">Discoveries</a>
+  <a href="sources.html">Sources</a>
+  <a href="file-glossary.html">Site Index</a>
+</nav>
+
+<header>
+  <div class="crest">🌿</div>
+  <h1>The Crawley Line</h1>
+  <div class="subtitle">Louisiana to Texas — Simsboro, Gladewater, Longview</div>
+  <div class="byline">Part of the Thomas &amp; Squires Family History · Compiled April 2026</div>
+</header>
+
+<nav>
+  <a href="#origins">Origins</a>
+  <a href="#john-lottie">John &amp; Lottie</a>
+  <a href="#children">The Children</a>
+  <a href="#mary-anne">Mary Anne's Youth</a>
+  <a href="#photos">Photographs</a>
+  <a href="#research">Research Status</a>
+</nav>
+
+<div class="container">
+
+  <!-- ORIGINS -->
+  <div class="section" id="origins">
+    <h2 class="section-title">Origins — Simsboro, Louisiana</h2>
+    <p>The Crawley and Robison families both had roots in <strong>Simsboro, Lincoln Parish, Louisiana</strong> — a small town in the north-central part of the state. Lottie Robison was born there in 1902, the daughter of <strong>James A. Robison</strong> and <strong>Norma Hodge Robison</strong>. The Robison family kept the Simsboro property as an ancestral gathering place well into the mid-20th century, and the Crawley children returned there for family reunions through the 1930s, 1940s, and even into the 1960s.</p>
+    <p>The Great Depression forced John and Lottie out of Louisiana. Jobless, they lived with relatives in <strong>Marshall, Texas</strong> — a stop on the road that thousands of Depression-era families made, following work wherever it appeared. When the East Texas oil boom erupted around Longview and Gladewater in 1931–32 — at the time the largest oil field in the world — John found work and the family planted roots in the <strong>Gladewater area</strong>. They eventually settled in Longview, where John worked for Magnolia Petroleum Company.</p>
+
+    <div class="story-card">
+      <div class="card-title">The East Texas Oil Boom — Why the Crawleys Came to Texas</div>
+      <p>On October 3, 1930, wildcatter C.M. "Dad" Joiner struck oil near Kilgore, Texas — discovering the East Texas Oil Field, which stretched under Longview, Gladewater, Kilgore, and Tyler. By 1932 it was producing a third of all U.S. oil output. The oil derricks were so dense they were visible in the fields behind the Crawley children's house. Thousands of families followed the work, transforming small East Texas towns into boomtowns practically overnight. John Crawley was one of those workers — and Gladewater became home.</p>
+    </div>
+  </div>
+
+  <!-- JOHN & LOTTIE -->
+  <div class="section" id="john-lottie">
+    <h2 class="section-title">John Earl Crawley &amp; Lottie Robison</h2>
+
+    <p>John Earl Crawley and Lottie Robison married in <strong>1925</strong>. John (b. 8 Feb 1908, Texas · d. Jul 1953) worked for <strong>Magnolia Petroleum Company</strong> in Longview and registered for the WWII draft in 1942. He died in July 1953 at age 45, leaving Lottie to raise their children and eventually become a social worker. Lottie (b. 11 May 1902, Simsboro, Louisiana · d. Jul 1991, Norman, Oklahoma) outlived John by nearly 40 years and was known to Avery's generation as <strong>"Grandma Crawley."</strong> She was buried at Elmira Chapel Cemetery, Longview, Texas.</p>
+
+    <table class="ancestor-table">
+      <thead>
+        <tr><th>Person</th><th>Born</th><th>Died</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">James A. Robison</td>
+          <td class="dates">—</td>
+          <td class="dates">—</td>
+          <td class="note">Lottie's father · Simsboro, Louisiana</td>
+        </tr>
+        <tr>
+          <td class="name">Norma Hodge Robison</td>
+          <td class="dates">—</td>
+          <td class="dates">—</td>
+          <td class="note">Lottie's mother · Simsboro, Louisiana · Kept family photo archive</td>
+        </tr>
+        <tr>
+          <td class="name">Lottie Robison Crawley</td>
+          <td class="dates">11 May 1902 · Simsboro, Louisiana</td>
+          <td class="dates">Jul 1991 · Norman, Oklahoma</td>
+          <td class="note">m. John Earl Crawley 1925 · Social worker after John's death · "Grandma Crawley" · Buried Elmira Chapel Cemetery, Longview TX</td>
+        </tr>
+        <tr>
+          <td class="name">John Earl Crawley</td>
+          <td class="dates">8 Feb 1908 · Texas</td>
+          <td class="dates">Jul 1953</td>
+          <td class="note">Magnolia Petroleum Company, Longview TX · WWII draft registered 1942 · Died age 45</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- THE CHILDREN -->
+  <div class="section" id="children">
+    <h2 class="section-title">The Crawley Children</h2>
+    <p>John and Lottie had three children who grew up in the Gladewater/Longview oil patch of East Texas.</p>
+
+    <table class="ancestor-table">
+      <thead>
+        <tr><th>Person</th><th>Born</th><th>Died</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">Mary Anne Crawley (m. Convis)</td>
+          <td class="dates">30 Aug 1929 · Haynesville, Claiborne Parish, Louisiana</td>
+          <td class="dates">24 Nov 2021 · Grass Valley, California</td>
+          <td class="note">Eldest · m. Charles "Chuck" Lester Convis · 5 children · Grew up in Gladewater TX · Spring Hill School 1942–44</td>
+        </tr>
+        <tr>
+          <td class="name">James B. Crawley</td>
+          <td class="dates">—</td>
+          <td class="dates">—</td>
+          <td class="note">Known as "Uncle Jim" · Served US Air Corps / Air Force · Exact dates and descendants unknown · Research in progress</td>
+        </tr>
+        <tr>
+          <td class="name">Charlotte Lucille Crawley (m. Thomas)</td>
+          <td class="dates">b. 1931 · Louisiana</td>
+          <td class="dates">Living</td>
+          <td class="note">m. J.G. Thomas Jr., 10 Apr 1954, Hill Cumberland Church · Avery's paternal grandmother</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>James B. Crawley — US Air Corps / Air Force</h3>
+    <p>James B. Crawley served in the United States Air Corps (later Air Force). Exact dates of service and his family are not yet documented. Charlotte Thomas recalled a family visit to see James while he was stationed — they stayed in a rustic cabin, ate chicken-fried steak canned by an "Aunt Imogene," and camped out one night near what appeared to be a mountain or canyon setting. This visit is believed to be the occasion of the 1964 family group photograph.</p>
+
+    <h3>Charlotte Lucille Crawley — m. J.G. Thomas Jr.</h3>
+    <p>Charlotte (b. 1931, Louisiana) married J.G. Thomas Jr. on 10 April 1954 at Hill Cumberland Church. J.G. Thomas served as an usher at her brother James's 1956 wedding to Mary Williamson — an early sign of the families' close connection. Charlotte and J.G. had two children: Michael Scott Thomas (Avery's father) and Mary Beth Thomas (m. Reidy).</p>
+  </div>
+
+  <!-- MARY ANNE'S YOUTH -->
+  <div class="section" id="mary-anne">
+    <h2 class="section-title">Mary Anne Crawley — Growing Up in the Oil Fields</h2>
+
+    <p>Mary Anne was born in <strong>1929 in Haynesville, Claiborne Parish, Louisiana</strong>, the eldest of John and Lottie's three children. The family's roots were in Simsboro, where Lottie grew up — but the Depression forced the family out. Jobless, they lived with relatives in Marshall, Texas while Mary Anne was still a toddler. When the East Texas oil boom erupted around Longview and Gladewater in 1931–32, John found work and the family planted roots in the Gladewater area. Mary Anne spent her childhood and teenage years there, with oil derricks visible in the fields behind the house.</p>
+
+    <p>For school, the family moved to <strong>Spring Hill</strong> (between Gladewater and Longview) so Mary Anne could attend <strong>Spring Hill School</strong>. Her school portraits survive from <strong>1942–43</strong> and <strong>1943–44</strong>. Her favorite music was <strong>Bob Wills &amp; the Texas Playboys</strong> — fitting for a girl growing up in the Texas swing era. A photograph from 1943 shows her laughing outdoors with a girlfriend, and a mid-1940s photo shows her paddling a canoe with a flower in her hair.</p>
+
+    <p>Some branches of the extended Crawley family were <strong>migrant workers</strong>, following seasonal labor across the region — a pattern documented in Charles Convis Jr.'s memorial video with photographs of truck caravans and makeshift trailer homes.</p>
+
+    <p>The family continued to return to <strong>Simsboro</strong> as a home base for large Crawley gatherings. A 1937 photograph shows a group of roughly 13 extended family members assembled at the Simsboro house — one man is in a wheelchair, identity unknown. A 1942 photograph at Simsboro shows Lottie, James, Mary Anne, Charlotte, and a young man in Army uniform — likely a cousin or family friend departing for WWII service. By 1963, Mary Anne and Chuck were bringing their own children to Simsboro; Chuck filmed the visit on 8mm home movie film.</p>
+
+    <p style="font-size:0.88rem;color:var(--muted);">Sources: Charles Convis Jr. memorial video "2MomYouthSLIDES6" (2022). Photos credited to Lottie Crawley and Norma Robison; film by Charles Convis Sr.</p>
+
+    <p style="margin-top:1rem;">For Mary Anne's life after marriage, see the <a href="convis-line.html" style="color:var(--accent);">Convis Line page</a>.</p>
+  </div>
+
+  <!-- PHOTOGRAPHS -->
+  <div class="section" id="photos">
+    <h2 class="section-title">Family Photographs</h2>
+
+    <div class="photo-card">
+      <div class="photo-title">Crawley Family Group Photo — Mountain Setting, ~1964</div>
+      <p>A large family group photograph, approximately 13 people, likely taken during a family visit to James B. Crawley while he was serving in the Air Corps / Air Force. Charlotte Thomas commented on this photo in the Crawley Family Connection Facebook group: <em>"all I remember about James in the Air Corp was a visit we made to see him. I remember we stayed in a rustic cabin and had a meal of chicken fried steak and gravy that Aunt Imogene had canned. Also, we camped out one night and your mother and I crawled through the car window when we thought there was an animal around our cots."</em></p>
+      <p><strong>Identified:</strong> James "Jim" Crawley (far left) · J.G. Thomas Jr. (center back, holding toddler) · Michael Scott Thomas (toddler, ~age 4) · Charlotte Crawley Thomas (tan dress) · Charles "Chuck" Convis (far right, grey polo) <em>[confirmed]</em> · Lottie Robison Crawley (seated left, orange chair) · Mary Ann Crawley Convis (seated right, white top) · Mary Beth Thomas (girl in light blue) · Mary Williamson Crawley (glasses, white cardigan) <em>[unconfirmed — Charlotte to verify]</em></p>
+      <a href="documents/crawley-family-photo-1964-annotated.html" target="_blank">View annotated photograph (toggle labels) →</a>
+      &nbsp;&nbsp;·&nbsp;&nbsp;
+      <a href="documents/CrawleyFamilyPhotoWithChildrenCir1964.jpg" target="_blank">Original photo →</a>
+    </div>
+
+    <div class="photo-card">
+      <div class="photo-title">Simsboro Family Gatherings — 1937 &amp; 1942</div>
+      <p>Two large group photographs taken at the Simsboro, Louisiana family home. The 1937 photo shows ~13 extended family members including a man in a wheelchair (identity unknown). The 1942 photo shows Lottie, James, Mary Anne, Charlotte, and a young man in Army uniform — possibly a cousin or family friend departing for wartime service.</p>
+      <p style="color:var(--muted);font-size:0.85rem;">Source: Charles Convis Jr. memorial video "2MomYouthSLIDES6" (2022)</p>
+    </div>
+
+    <blockquote>
+      "all I remember about James in the Air Corp was a visit we made to see him. Your mother probably remembers this. I remember we stayed in a rustic cabin and had a meal of chicken fried steak and gravy (I think) that Aunt Imogene had canned. Also, we camped out one night and your mother and I crawled through the car window when we thought there was an animal around our cots."
+      <cite>— Charlotte Thomas, Facebook comment on Crawley Family Connection group</cite>
+    </blockquote>
+  </div>
+
+  <!-- RESEARCH STATUS -->
+  <div class="section" id="research">
+    <h2 class="section-title">Research Status</h2>
+
+    <div class="research-status">
+      <div class="rs-title">Open Questions</div>
+      <ul>
+        <li>James B. Crawley — birth date, service details, family, descendants</li>
+        <li>John Earl Crawley's extended family — parents, siblings, origins before Texas</li>
+        <li>Lottie Robison's extended family — the full Robison and Hodge lines in Simsboro, LA</li>
+        <li>Crawley family origin — where did the Crawley line come from before Louisiana/Texas?</li>
+        <li><strong>Aunt Imogene</strong> — mentioned by Charlotte in Facebook comment re: ~1964 Air Corps visit. Identity unknown — possibly a sibling of John Earl Crawley or Lottie Robison</li>
+        <li><strong>Man in wheelchair</strong> — Simsboro family photo, 1937. Identity unknown</li>
+        <li><strong>Army uniform man, Simsboro 1942</strong> — photographed with family. Identity unknown</li>
+        <li>GEDCOM from Charles Convis Jr. — requested April 2026, awaiting response</li>
+        <li>Confirmation from Charlotte Thomas on several unconfirmed photo identifications</li>
+      </ul>
+    </div>
+
+    <p style="margin-top:1.5rem;">For the Convis family — Mary Anne's married family, Chuck's history, and the memorial video findings — see the dedicated page:</p>
+    <a href="convis-line.html" class="link-forward">The Convis Line →</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>The Thomas &amp; Squires Family History · Compiled by Avery Thomas · April 2026</p>
+  <p style="margin-top:0.5rem;"><a href="index.html">Home</a> · <a href="full-family-tree.html">Full Family Tree</a> · <a href="file-glossary.html">Site Index</a></p>
+</footer>
+
+</body>
+</html>

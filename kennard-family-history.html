@@ -89,6 +89,7 @@
     .site-nav a:last-child { border-right: none; }
     .site-nav a:hover { color: var(--accent); }
     .site-nav a.active { color: var(--accent); }
+    .nav-divider { color: #444; font-size: 0.72rem; font-family: sans-serif; letter-spacing: 1px; text-transform: uppercase; padding: 0.3rem 0.5rem 0.3rem 1.2rem; pointer-events: none; user-select: none; }
 
     /* ── Nav ── */
     nav {
@@ -338,11 +339,19 @@
 
 <nav class="site-nav">
   <a href="index.html">Home</a>
-  <a href="full-family-tree.html">Family Tree</a>
-  <a href="thomas-kennard-documents.html">Thomas &amp; Kennard</a>
-  <a href="kennard-family-history.html" class="active">Kennard History</a>
+  <span class="nav-divider">Paternal —</span>
+  <a href="full-family-tree.html#paternal-tree">Full Tree</a>
+  <a href="thomas-line.html">Thomas</a>
+  <a href="kennard-family-history.html" class="active">Kennard</a>
+  <a href="crawley-line.html">Crawley</a>
+  <a href="convis-line.html">Convis</a>
+  <span class="nav-divider">Maternal —</span>
+  <a href="full-family-tree.html#maternal-tree">Maternal Tree</a>
+  <a href="squires-line.html">Squires</a>
+  <a href="croft-line.html">Croft</a>
+  <span class="nav-divider">Site —</span>
   <a href="discoveries-and-research.html">Discoveries</a>
-  <a href="sources.html">Primary Sources</a>
+  <a href="sources.html">Sources</a>
   <a href="file-glossary.html">Site Index</a>
 </nav>
 

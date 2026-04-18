@@ -74,6 +74,7 @@
     .site-nav a:last-child { border-right: none; }
     .site-nav a:hover { color: var(--accent); }
     .site-nav a.active { color: var(--accent); }
+    .nav-divider { color: #444; font-size: 0.72rem; font-family: sans-serif; letter-spacing: 1px; text-transform: uppercase; padding: 0.3rem 0.5rem 0.3rem 1.2rem; pointer-events: none; user-select: none; }
 
     nav {
       background: var(--surface);
@@ -258,11 +259,19 @@
 
 <nav class="site-nav">
   <a href="index.html">Home</a>
-  <a href="full-family-tree.html">Family Tree</a>
-  <a href="thomas-kennard-documents.html">Thomas &amp; Kennard</a>
-  <a href="kennard-family-history.html">Kennard History</a>
+  <span class="nav-divider">Paternal —</span>
+  <a href="full-family-tree.html#paternal-tree">Full Tree</a>
+  <a href="thomas-line.html">Thomas</a>
+  <a href="kennard-family-history.html">Kennard</a>
+  <a href="crawley-line.html">Crawley</a>
+  <a href="convis-line.html">Convis</a>
+  <span class="nav-divider">Maternal —</span>
+  <a href="full-family-tree.html#maternal-tree">Maternal Tree</a>
+  <a href="squires-line.html">Squires</a>
+  <a href="croft-line.html">Croft</a>
+  <span class="nav-divider">Site —</span>
   <a href="discoveries-and-research.html">Discoveries</a>
-  <a href="sources.html">Primary Sources</a>
+  <a href="sources.html">Sources</a>
   <a href="file-glossary.html" class="active">Site Index</a>
 </nav>
 
@@ -270,7 +279,7 @@
   <div class="crest">📁</div>
   <h1>Family History File Glossary</h1>
   <div class="subtitle">Complete index of all files in personal/familyHistory/ — what each one is and where it came from</div>
-  <div class="byline">Last updated April 15, 2026 · Avery Thomas</div>
+  <div class="byline">Last updated April 17, 2026 · Avery Thomas</div>
 </header>
 
 <nav>
@@ -289,7 +298,7 @@
     <h2 class="section-title">Summary</h2>
 
     <div class="stats-bar">
-      <div class="stat"><div class="stat-num">4</div><div class="stat-label">HTML files</div></div>
+      <div class="stat"><div class="stat-num">11</div><div class="stat-label">HTML files</div></div>
       <div class="stat"><div class="stat-num">11</div><div class="stat-label">PDF/DOCX docs</div></div>
       <div class="stat"><div class="stat-num">3</div><div class="stat-label">OCR text files</div></div>
       <div class="stat"><div class="stat-num">1</div><div class="stat-label">GEDCOM</div></div>
@@ -366,6 +375,41 @@
           <td class="fdesc">Ongoing log of major discoveries and open research questions. Documents: (1) Revolutionary War finding — James Clark Thomas (b. 1714, Nansemond VA, military service 1775–1783) is Avery's 7th great-grandfather; SAR eligibility identified. (2) Full confirmed Thomas chain: Richard Thomas → John Thomas → Joseph Thomas Sr. → James Clark Thomas (REV WAR) → Joseph Augustus Thomas (1740) → John C. Thomas Sr. (1784, Edgefield SC) → James Avery Thomas (1812) → … → Avery. (3) Open questions: David Thomas signer relationship; SAR formal documentation; William Thomas + Elizabeth Purviance placement. Question 1 (James Avery's parents) resolved Apr 17, 2026.</td>
           <td class="fdate">Apr 16 2026</td>
           <td class="fstatus status-partial">↻ Growing</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-html">HTML</span></td>
+          <td class="fname"><a href="thomas-line.html" style="color:#7a9fcc;">thomas-line.html</a></td>
+          <td class="fdesc">Dedicated Thomas family narrative — ten generations from Virginia (1680s) to Texas. Includes ancestor table, migration timeline, J.G. Thomas Jr. family, story cards (SAR, Austin's Colony, namesake). Links to thomas-kennard-documents.html for primary sources.</td>
+          <td class="fdate">Apr 17 2026</td>
+          <td class="fstatus status-done">✓ Complete</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-html">HTML</span></td>
+          <td class="fname"><a href="crawley-line.html" style="color:#7a9fcc;">crawley-line.html</a></td>
+          <td class="fdesc">Crawley family history — Simsboro, Louisiana origins through John &amp; Lottie Crawley to East Texas. Covers the three children (Charlotte, James B., Mary Ann), Depression migration, East Texas oil boom, family photographs including the 1964 reunion photo. Links to convis-line.html for Mary Ann's married family.</td>
+          <td class="fdate">Apr 17 2026</td>
+          <td class="fstatus status-done">✓ Complete</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-html">HTML</span></td>
+          <td class="fname"><a href="convis-line.html" style="color:#7a9fcc;">convis-line.html</a></td>
+          <td class="fdesc">Convis family history — four-generation chain (Oscar→Elmer→Lester→Chuck), North Dakota homestead, Chuck's youth, Chuck &amp; Mary Ann's family and children. Includes memorial video series section tracking video analyses (Videos 1–6). Charles Convis Jr. biography. GEDCOM pending.</td>
+          <td class="fdate">Apr 17 2026</td>
+          <td class="fstatus status-partial">↻ Videos 3–6 pending</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-html">HTML</span></td>
+          <td class="fname"><a href="squires-line.html" style="color:#7a9fcc;">squires-line.html</a></td>
+          <td class="fdesc">Squires/Skversky family history — Ben &amp; Rosie Skversky from Russia to Pennsylvania, Skversky→Squires name change, Harry D. Squires chain to Arthur Squires to Heather Squires to Avery. Sibling tables and Philadelphia Jewish community context. Links to croft-line.html for Barbara's side.</td>
+          <td class="fdate">Apr 17 2026</td>
+          <td class="fstatus status-done">✓ Complete</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-html">HTML</span></td>
+          <td class="fname"><a href="croft-line.html" style="color:#7a9fcc;">croft-line.html</a></td>
+          <td class="fdesc">Croft/Krawczyk &amp; Krafcheck family history — Krawczyk family of Kock Poland, Krafcheck family of Radom/Radzyn Podlaski, Lipszyc line, Jack &amp; Mollie Croft's children (Evelyn, Barbara, Kenneth), full immigration timeline (6 entries), name change story cards (Krawczyk→Croft, Skversky→Squires), origins map. Contains all Jewish roots content moved from full-family-tree.html.</td>
+          <td class="fdate">Apr 17 2026</td>
+          <td class="fstatus status-done">✓ Complete</td>
         </tr>
         <tr>
           <td><span class="badge badge-html">HTML</span></td>
