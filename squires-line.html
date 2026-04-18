@@ -66,6 +66,16 @@
     footer a { color: #666; text-decoration: none; }
     footer a:hover { color: var(--accent-blue); }
 
+    /* Photo Gallery */
+    .photo-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.2rem; margin-top: 1.5rem; }
+    .photo-card { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; }
+    .photo-card .photo-placeholder { background: #0c1018; border-bottom: 1px solid var(--border); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 0.4rem; color: var(--muted); font-family: sans-serif; font-size: 0.78rem; text-align: center; padding: 0.5rem; }
+    .photo-card .photo-placeholder .slide-ref { font-size: 1.1rem; color: var(--accent-blue); font-weight: bold; }
+    .photo-card img { width: 100%; height: auto; display: block; aspect-ratio: 4/3; object-fit: cover; }
+    .photo-card .photo-caption { padding: 0.6rem 0.8rem 0.7rem; font-size: 0.82rem; color: #b0c0d8; font-family: sans-serif; line-height: 1.4; flex: 1; }
+    .photo-card .photo-caption .photo-year { color: var(--muted); font-size: 0.77rem; display: block; margin-top: 0.3rem; }
+    .photo-section-note { font-size: 0.88rem; color: var(--muted); font-style: italic; margin-bottom: 1rem; }
+
     @media (max-width: 600px) { header h1 { font-size: 1.6rem; } .container { padding: 1.5rem 1rem 3rem; } }
   </style>
 </head>
@@ -105,6 +115,7 @@
   <a href="#philadelphia">Philadelphia</a>
   <a href="#archive">Archive</a>
   <a href="#heather">Heather Squires</a>
+  <a href="#photos">Photo Gallery</a>
 </nav>
 
 <div class="container">
@@ -264,6 +275,134 @@
     <h2 class="section-title">Heather Denise Squires — Avery's Mother</h2>
     <p>Heather Denise Squires (b. 1963, Texas) is Avery's mother and the daughter of Arthur and Barbara Squires. She married Michael Scott Thomas (b. 1960), son of J.G. Thomas Jr. and Charlotte Crawley. Their marriage in the 1990s joined two completely different American stories: an Eastern European Jewish immigrant heritage that arrived in America within living memory, and a Southern colonial family whose roots in American soil go back to the 1600s.</p>
     <p style="font-size:0.88rem;color:var(--muted);">Living persons policy: birth year only, no full date or location, per site privacy policy.</p>
+  </div>
+
+  <!-- PHOTO GALLERY -->
+  <div class="section" id="photos">
+    <h2 class="section-title">Photo Gallery</h2>
+    <p class="photo-section-note">Photos sourced from Barbara Squires' memorial slideshow (2025) and family collection. Slide numbers refer to the full 151-slide memorial presentation. Additional photos will be added as the collection is reviewed.</p>
+
+    <h3>Barbara — Growing Up</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 3</span>Barbara as a child<br>black &amp; white</div>
+        <div class="photo-caption">Barbara Croft as a young girl — one of the earliest known photos of her.<span class="photo-year">~1940s</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 1</span>Barbara's prom photo</div>
+        <div class="photo-caption">Barbara at prom — a formal portrait in an elegant gown.<span class="photo-year">~1953–54</span></div>
+      </div>
+    </div>
+
+    <h3>Art &amp; Barbara — Together</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 2</span>Art &amp; Barbara formal portrait<br>in front of synagogue</div>
+        <div class="photo-caption">Art and Barbara Squires — formal portrait, likely taken at their synagogue.<span class="photo-year">~1980s–90s</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 8</span>Art &amp; Barbara kissing<br>at restaurant (candid)</div>
+        <div class="photo-caption">A candid moment — Art and Barbara at a restaurant.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 41</span>Art &amp; Barbara<br>beach / snorkeling vacation</div>
+        <div class="photo-caption">Art and Barbara on a vacation — beach or snorkeling trip.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 44</span>Art, Marla &amp; Barbara<br>Italian restaurant</div>
+        <div class="photo-caption">Art, Marla (Mitchell's wife), and Barbara at an Italian restaurant — a recent family dinner.<span class="photo-year">~2010s–2020s</span></div>
+      </div>
+    </div>
+
+    <h3>Newspaper — "The Champ"</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 5</span>"The Champ" newspaper article<br>Art in interview</div>
+        <div class="photo-caption">A newspaper profile of Art Squires — likely from a Houston paper during the Southwest Concerts years.<span class="photo-year">~1960s–1980s</span></div>
+      </div>
+    </div>
+
+    <h3>Family Gatherings</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 6</span>Formal family portrait<br>Art · Barbara · Mitchell · Marla · Casey · Heather</div>
+        <div class="photo-caption">The full Squires family — Art, Barbara, their son Mitchell with wife Marla and daughter Casey, and their daughter Heather.<span class="photo-year">~1988</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 26</span>Mother's Day portrait<br>All 9 family members</div>
+        <div class="photo-caption">Mother's Day — all 9 Squires family members together: Art, Barbara, Mitchell, Marla, Casie, Kirby, Heather, and Avery's siblings.<span class="photo-year">~2015</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 34</span>Art · JG Thomas · Ashley · Charlotte · Barbara</div>
+        <div class="photo-caption">From left: Art Squires, J.G. Thomas, Ashley Thomas, Charlotte Thomas, and Barbara Squires — both families together.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 28</span>Ashley · Heather · Barbara · Charlotte</div>
+        <div class="photo-caption">From left: Ashley Thomas, Heather Squires Thomas, Barbara Squires, and Charlotte Thomas — three generations of women.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 60</span>Barbara · Heather · Ashley<br>at restaurant</div>
+        <div class="photo-caption">Barbara, Heather, and Ashley at a restaurant.<span class="photo-year">Date unknown</span></div>
+      </div>
+    </div>
+
+    <h3>Ashley's Bat Mitzvah — 2015</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 16</span>All 4 grandparents<br>at bat mitzvah</div>
+        <div class="photo-caption">Ashley Thomas's bat mitzvah — all four grandparents together: Art &amp; Barbara Squires and J.G. &amp; Charlotte Thomas.<span class="photo-year">2015</span></div>
+      </div>
+    </div>
+
+    <h3>Art Dancing</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 46</span>Art dancing with young girl<br>at a party</div>
+        <div class="photo-caption">Art Squires dancing with a young girl — likely granddaughter Kirby — at a family celebration.<span class="photo-year">~2010s</span></div>
+      </div>
+    </div>
+
+    <h3>Heather &amp; Barbara</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slides 49–51</span>Heather &amp; Barbara selfies<br>+ caricature "HEATHER &amp; BARBARA 2025"</div>
+        <div class="photo-caption">A series of selfies and a caricature drawing — "HEATHER &amp; BARBARA 2025" — capturing a close mother-daughter bond in Barbara's final year.<span class="photo-year">2025</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 53</span>Heather &amp; Barbara<br>Rosh Hashanah card</div>
+        <div class="photo-caption">A Shana Tova (Rosh Hashanah) card featuring Heather and Barbara — a photo greeting for the Jewish New Year.<span class="photo-year">Date unknown</span></div>
+      </div>
+    </div>
+
+    <h3>Avery with Barbara</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 4</span>Avery · Austin · Ashley<br>as young children</div>
+        <div class="photo-caption">Avery, Austin, and Ashley Thomas as young children — with Barbara.<span class="photo-year">~late 1990s–2000s</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 57</span>Barbara &amp; Avery<br>sitting outside</div>
+        <div class="photo-caption">Barbara and Avery sitting outside together — Avery wearing a "The Happy Musicians" hoodie. One of the last photos of them together.<span class="photo-year">~2024–2025</span></div>
+      </div>
+    </div>
+
+    <h3>Barbara's Later Years</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 22</span>Barbara &amp; Casey<br>candid photo</div>
+        <div class="photo-caption">Barbara and her granddaughter Casey — a casual photo together.<span class="photo-year">~1990s–2000s</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 55</span>Barbara with lei<br>assisted living dining room</div>
+        <div class="photo-caption">Barbara wearing a lei in the dining room of her assisted living facility — still celebrating.<span class="photo-year">~2024–2025</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 56</span>Barbara shopping<br>at Chico's Outlet</div>
+        <div class="photo-caption">Barbara shopping at Chico's Outlet with her walker — ever stylish in her later years.<span class="photo-year">~2024</span></div>
+      </div>
+    </div>
+
+    <p style="margin-top:1.5rem;font-size:0.85rem;color:var(--muted);">Source: <em>Barbara Squires Memorial Slideshow</em>, 2025 (151 slides). Slides 61–151 still being catalogued — more photos to be added. To add a photo from the family collection, contact Avery Thomas.</p>
   </div>
 
 </div>
