@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Summary: Thomas Family History (Poole, B5 C19) — Roots</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --surface2: #222;
+      --border: #2e2e2e;
+      --accent: #c9a84c;
+      --accent2: #a0522d;
+      --accent-blue: #5b8dc9;
+      --accent-teal: #4ca89a;
+      --text: #e0d8cc;
+      --muted: #888;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', serif;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    /* ── Site Nav ── */
+    .site-nav {
+      background: #111;
+      border-bottom: 2px solid var(--accent);
+      padding: 0.7rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 0;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+    }
+    .site-nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 0.3rem 1rem;
+      border-right: 1px solid #2a2a2a;
+      transition: color 0.2s;
+    }
+    .site-nav a:last-child { border-right: none; }
+    .site-nav a:hover { color: var(--accent); }
+    .site-nav a.active { color: var(--accent); }
+    .nav-divider { color: #444; font-size: 0.72rem; font-family: sans-serif; letter-spacing: 1px; text-transform: uppercase; padding: 0.3rem 0.5rem 0.3rem 1.2rem; pointer-events: none; user-select: none; }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #1a1208 0%, #0a0a14 50%, #0f0f0f 100%);
+      border-bottom: 2px solid var(--accent);
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+    }
+    header .eyebrow {
+      font-size: 0.8rem;
+      font-family: sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: var(--accent);
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+    header .subtitle {
+      color: #aaa;
+      font-style: italic;
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+    header .meta {
+      font-size: 0.82rem;
+      color: #555;
+      font-family: sans-serif;
+    }
+    header .back-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--accent-teal);
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      text-decoration: none;
+      border: 1px solid #1a3a30;
+      border-radius: 3px;
+      padding: 0.25rem 0.8rem;
+    }
+    header .back-link:hover { background: #0a1a10; color: #fff; }
+
+    /* ── Page Nav ── */
+    .page-nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0.65rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.2rem;
+      justify-content: center;
+      position: sticky;
+      top: 44px;
+      z-index: 100;
+    }
+    .page-nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      letter-spacing: 0.5px;
+      transition: color 0.2s;
+    }
+    .page-nav a:hover { color: #fff; }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 5rem;
+    }
+
+    /* ── Document info box ── */
+    .doc-info {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 4px;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 2.5rem;
+      font-family: sans-serif;
+      font-size: 0.88rem;
+      color: #bbb;
+      line-height: 1.7;
+    }
+    .doc-info strong { color: var(--accent); }
+    .doc-info a { color: var(--accent-teal); text-decoration: none; }
+    .doc-info a:hover { text-decoration: underline; }
+
+    /* ── Sections ── */
+    .section { margin-top: 3rem; }
+
+    .section-title {
+      color: var(--accent);
+      font-size: 1.35rem;
+      font-variant: small-caps;
+      letter-spacing: 1px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.4rem;
+    }
+
+    h3 {
+      color: #d4c090;
+      font-size: 1.05rem;
+      margin: 1.6rem 0 0.5rem;
+      font-variant: small-caps;
+      letter-spacing: 0.5px;
+    }
+
+    p { margin-bottom: 1rem; }
+
+    ul, ol {
+      margin: 0.5rem 0 1rem 1.5rem;
+    }
+    li { margin-bottom: 0.4rem; }
+
+    /* ── Person cards ── */
+    .person-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1rem 1.3rem;
+      margin: 1rem 0 1.2rem;
+    }
+    .person-block .person-name {
+      color: #e8d9b8;
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+    }
+    .person-block .person-dates {
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+    .person-block p { margin-bottom: 0.4rem; font-size: 0.92rem; }
+
+    /* ── Debunk boxes ── */
+    .debunk {
+      background: #1a0a0a;
+      border: 1px solid #4a1a1a;
+      border-left: 4px solid #c04040;
+      border-radius: 4px;
+      padding: 1rem 1.3rem;
+      margin: 1rem 0 1.4rem;
+    }
+    .debunk .debunk-label {
+      font-size: 0.75rem;
+      font-family: sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #c04040;
+      margin-bottom: 0.4rem;
+    }
+    .debunk p { margin-bottom: 0.4rem; font-size: 0.92rem; }
+
+    /* ── Finding boxes ── */
+    .finding {
+      background: #0a1a0f;
+      border: 1px solid #1a4a2a;
+      border-left: 4px solid var(--accent-teal);
+      border-radius: 4px;
+      padding: 1rem 1.3rem;
+      margin: 1rem 0 1.4rem;
+    }
+    .finding .finding-label {
+      font-size: 0.75rem;
+      font-family: sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--accent-teal);
+      margin-bottom: 0.4rem;
+    }
+    .finding p { margin-bottom: 0.4rem; font-size: 0.92rem; }
+
+    /* ── Quote blocks ── */
+    blockquote {
+      border-left: 3px solid var(--border);
+      margin: 0.8rem 0 1rem 0;
+      padding: 0.5rem 0 0.5rem 1.2rem;
+      color: #aaa;
+      font-style: italic;
+      font-size: 0.92rem;
+    }
+
+    /* ── Source chain ── */
+    .source-chain {
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      color: #666;
+      border-top: 1px solid var(--border);
+      padding-top: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    /* ── Children table ── */
+    .children-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.8rem 0 1.2rem;
+      font-size: 0.88rem;
+    }
+    .children-table th {
+      text-align: left;
+      color: var(--accent);
+      font-family: sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border);
+      padding: 0.4rem 0.6rem;
+    }
+    .children-table td {
+      padding: 0.45rem 0.6rem;
+      border-bottom: 1px solid #1e1e1e;
+      vertical-align: top;
+    }
+    .children-table tr:last-child td { border-bottom: none; }
+    .children-table .highlight-row td { color: var(--accent); }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 1.5rem 2rem;
+      font-size: 0.8rem;
+      color: #444;
+      font-family: sans-serif;
+    }
+    footer a { color: #666; text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<!-- ── Site Nav ── -->
+<nav class="site-nav">
+  <a href="index.html">Home</a>
+  <span class="nav-divider">Paternal —</span>
+  <a href="full-family-tree.html#paternal-tree">Full Tree</a>
+  <a href="thomas-line.html">Thomas</a>
+  <a href="kennard-family-history.html">Kennard</a>
+  <a href="crawley-line.html">Crawley</a>
+  <a href="convis-line.html">Convis</a>
+  <span class="nav-divider">Maternal —</span>
+  <a href="full-family-tree.html#maternal-tree">Maternal Tree</a>
+  <a href="squires-line.html">Squires</a>
+  <a href="croft-line.html">Croft</a>
+  <span class="nav-divider">Site —</span>
+  <a href="discoveries-and-research.html">Discoveries</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="sources.html" class="active">Sources</a>
+  <a href="file-glossary.html">Site Index</a>
+</nav>
+
+<!-- ── Header ── -->
+<header>
+  <div class="eyebrow">Source Summary</div>
+  <h1>Thomas Family History</h1>
+  <div class="subtitle">Book 5, Chapter 19 — Louis Poole (revised 09/24/12)</div>
+  <div class="meta">93 pages &nbsp;·&nbsp; Provided by Richard Gary Thomas, April 2026 &nbsp;·&nbsp; Not for publication</div>
+  <a href="sources.html#research" class="back-link">← Back to Sources</a>
+</header>
+
+<!-- ── Page Nav ── -->
+<nav class="page-nav">
+  <a href="#about">About This Document</a>
+  <a href="#progenitor">Progenitor</a>
+  <a href="#john-thomas">John Thomas</a>
+  <a href="#james-avery">James Avery Thomas</a>
+  <a href="#children">Children</a>
+  <a href="#debunked">Debunked Legends</a>
+  <a href="#methodology">Methodology</a>
+</nav>
+
+<div class="container">
+
+  <!-- ── About ── -->
+  <div class="section" id="about">
+    <h2 class="section-title">About This Document</h2>
+
+    <div class="doc-info">
+      <strong>Full title:</strong> "Thomas Family" — Book 5, Chapter 19 (revised September 24, 2012)<br>
+      <strong>Author:</strong> Louis Poole, who is himself a direct descendant of the Thomas family (see <a href="wheeler-family-summary.html">Wheeler Family summary</a> for his lineage)<br>
+      <strong>Source:</strong> Provided to Avery Thomas by Richard Gary Thomas (first cousin twice removed) in April 2026<br>
+      <strong>Status:</strong> Marked "Not for Publication" — private family research document<br>
+      <strong>Scope:</strong> Traces the Thomas line from the progenitor Evan Thomas (~1750–1806) through James Avery Thomas (b. ~1812, d. 1865) and his eight children in Grimes County, Texas<br>
+      <strong>Primary source methodology:</strong> Poole relies on original census records, deed records, land grants, wills, tax lists, and probate records — correcting multiple family legends and published errors along the way
+    </div>
+
+    <p>This is the most authoritative and thoroughly sourced document Avery has encountered on the Thomas line. Poole traces the family across five generations using original records, and explicitly identifies and corrects legends that have circulated in family histories and on the internet. Several key facts on this website were corrected based on this document.</p>
+  </div>
+
+  <!-- ── Progenitor ── -->
+  <div class="section" id="progenitor">
+    <h2 class="section-title">The Progenitor: Evan Thomas</h2>
+
+    <div class="person-block">
+      <div class="person-name">Evan Thomas</div>
+      <div class="person-dates">b. ~1750–1755 (location unknown) &nbsp;·&nbsp; d. ~1805–1806, Warren County, Georgia</div>
+      <p>First generation Thomas ancestor that Poole was able to identify. First found in Union County, South Carolina records in 1779 — listed on a tax return. Moved to Warren County, Georgia around 1791, where he appears in deed records. By the early 1800s he had established himself as a landowner in Warren County. He died intestate (no will) sometime around 1805–1806, based on records of his estate being administered.</p>
+      <p>Wife unknown. He had at least one known son: John Thomas (b. ~1782).</p>
+    </div>
+
+    <div class="finding">
+      <div class="finding-label">Key Finding</div>
+      <p>The connection between Evan Thomas and earlier Thomas families in Virginia or the Carolinas has not been established by Poole. He notes the name was extremely common and cautions against speculative connections without documentary evidence. The family's paper trail begins with Evan in South Carolina in 1779.</p>
+    </div>
+  </div>
+
+  <!-- ── John Thomas ── -->
+  <div class="section" id="john-thomas">
+    <h2 class="section-title">John Thomas (Son of Evan)</h2>
+
+    <div class="person-block">
+      <div class="person-name">John Thomas (also "John C. Thomas Sr.")</div>
+      <div class="person-dates">b. ~1782, South Carolina &nbsp;·&nbsp; d. after 1835, Texas (exact date unknown)</div>
+      <p>Son of Evan Thomas. Born in South Carolina, grew up in Warren County, Georgia. Married <strong>Phoebe Ghiselin</strong> on 26 June 1801 in Warren County, Georgia. Moved the family to Alabama — present in Marengo County by the 1820s–1830s. Entered Texas with Austin's Colony in December 1832, not 1835 as some family accounts state.</p>
+      <p>His Austin's Colony Register entry reads: <em>"John Thomas, 50 years of age, moved from Alabama. Phoebe his wife, 50 years of age. 6 male 2 female children."</em> Marginal note: <em>"Want land in the San Jacinto District &amp; have gone to examine it."</em></p>
+    </div>
+
+    <h3>Phoebe Ghiselin — Not Phoebe Springer</h3>
+
+    <div class="debunk">
+      <div class="debunk-label">Corrected Record</div>
+      <p>Many online family trees and earlier published accounts list John Thomas's wife as "Phoebe Springer." This is incorrect. Poole found the original Warren County, Georgia marriage record, which reads <em>"Phoebe Geezland"</em> — a phonetic spelling of the French surname <strong>Ghiselin</strong> (also spelled Ghislin, Ghizelin in other records). The marriage is dated 26 June 1801.</p>
+      <p>The "Springer" error appears to have originated from the fact that the Springer family (John Springer, Ezekiel Springer) traveled with the Thomas family to Texas and appear on the same Austin's Colony Register page. They were neighbors and traveling companions, not in-laws.</p>
+      <div class="source-chain">Source: Original Warren County, Georgia marriage record, cited by Poole. Austin's Colony Register page showing Springer and Thomas entries.</div>
+    </div>
+
+    <h3>Arrival in Texas: December 1832, Not 1835</h3>
+
+    <div class="finding">
+      <div class="finding-label">Confirmed by Primary Source</div>
+      <p>Stephen F. Austin's <em>Register of Families</em> (also called Austin's Colony Register) definitively establishes that John Thomas and his family — including his son James Avery Thomas — arrived in Texas in <strong>December 1832</strong>. This directly contradicts family accounts that place their arrival in 1835 or later.</p>
+      <p>The distinction matters for land grant eligibility: settlers who arrived before the Texas Revolution could receive a full league of land under Mexican law. Those arriving after 1835–1836 received smaller Class III grants (640 acres).</p>
+      <div class="source-chain">Source: Williams, Villamae. <em>Stephen F. Austin's Register of Families.</em></div>
+    </div>
+
+    <h3>Children of John Thomas and Phoebe Ghiselin</h3>
+    <p>John and Phoebe had 13 children. Below are those identified by Poole with enough certainty to name:</p>
+    <table class="children-table">
+      <thead>
+        <tr><th>#</th><th>Name</th><th>Birth</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Eliza Thomas</td><td>~1802</td><td>Married George Henson</td></tr>
+        <tr><td>2</td><td>Mary Thomas</td><td>~1804</td><td>Married Wm. Morris (traveled to TX together)</td></tr>
+        <tr><td>3</td><td>David Thomas</td><td>~1806, GA</td><td>See debunked legends below</td></tr>
+        <tr><td>4</td><td>Phoebe Thomas</td><td>~1808</td><td></td></tr>
+        <tr><td>5</td><td>John Thomas Jr.</td><td>~1810</td><td></td></tr>
+        <tr class="highlight-row"><td>6</td><td><strong>James Avery Thomas</strong></td><td>~1812, Marengo Co., AL</td><td><strong>Avery's direct ancestor</strong></td></tr>
+        <tr><td>7</td><td>Nancy Thomas</td><td>~1815</td><td></td></tr>
+        <tr><td>8</td><td>Susannah Thomas</td><td>~1817</td><td>Married Zachariah Landrum</td></tr>
+        <tr><td>9–13</td><td>(additional children)</td><td></td><td>Not fully identified by Poole</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ── James Avery Thomas ── -->
+  <div class="section" id="james-avery">
+    <h2 class="section-title">James Avery Thomas</h2>
+
+    <div class="person-block">
+      <div class="person-name">James Avery Thomas</div>
+      <div class="person-dates">b. ~1812, Marengo County, Alabama &nbsp;·&nbsp; d. 28 April 1865, Mustang Prairie, Grimes County, Texas</div>
+      <p>Sixth of 13 children of John Thomas and Phoebe Ghiselin. Arrived in Texas with his family in December 1832 as a young man of ~20. Settled in what is now Grimes County, Texas (then part of Montgomery County). Married <strong>Amanda Wheeler</strong> on 28 April 1842 in Montgomery County, Texas. They had eight children together.</p>
+      <p>James died on 28 April 1865 — his wedding anniversary — at age ~53. He is buried at <strong>Mustang Cemetery</strong>, Grimes County, approximately 4 miles east of Roans Prairie. Amanda outlived him by 31 years, dying 5 September 1896, also buried at Mustang Cemetery.</p>
+      <p>His occupation was farming. He received land grants in Grimes County and operated a farm on Mustang Prairie. Poole found no evidence of the family legend that he made shoes for Sam Houston's soldiers (see Debunked Legends).</p>
+    </div>
+
+    <h3>Marriage to Amanda Wheeler</h3>
+    <p>James married Amanda Wheeler on 28 April 1842. Amanda was born 15 May 1827 in Georgia — the daughter of <strong>Henry H. Wheeler</strong> and <strong>Mary Ann Sawyer</strong>. The Wheeler family had followed the Thomas family from Alabama to Texas, arriving before 1842. See the <a href="wheeler-family-summary.html">Wheeler Family summary</a> for Amanda's full lineage.</p>
+
+    <h3>Land and Property</h3>
+    <p>James Avery Thomas held land grants in Grimes County (carved from Montgomery County in 1846). Poole traces the land transactions in the Texas General Land Office records. John Thomas (James's father) had owned 300 acres on the western side of the W. Landrum survey, 260 acres of the W. Patterson survey, and 60 acres of the B. Rigby survey — all in Montgomery County, all adjoining land that would be associated with the Wheeler and other neighboring families.</p>
+
+    <h3>Death and Burial</h3>
+    <p>James Avery Thomas died 28 April 1865. Poole notes the exact burial location as Mustang Cemetery, Grimes County. The cemetery entrance arch reads "MUSTANG 1862," dating its formal establishment. Richard Gary Thomas provided photographs of the cemetery in April 2026; F.M. Thomas (James's son Francis Marion, b. 1852) and Susie B. Thomas (F.M.'s wife) are confirmed buried there.</p>
+    <p>Poole notes uncertainty about whether James himself has an identifiable grave marker — <em>"It is not known where James Avery Thomas was buried"</em> — while confirming Amanda's headstone exists and was the source for her birth and death dates.</p>
+  </div>
+
+  <!-- ── Children ── -->
+  <div class="section" id="children">
+    <h2 class="section-title">Children of James Avery Thomas &amp; Amanda Wheeler</h2>
+
+    <p>James and Amanda had eight children, all born in Grimes County, Texas:</p>
+
+    <table class="children-table">
+      <thead>
+        <tr><th>#</th><th>Name</th><th>Born</th><th>Died</th><th>Spouse / Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Amanda Thomas</td><td>1843</td><td>~1845</td><td>Died in childhood</td></tr>
+        <tr><td>2</td><td>Mary Thomas</td><td>1845</td><td></td><td>Married; details in document</td></tr>
+        <tr><td>3</td><td>John Thomas</td><td>~1847</td><td></td><td></td></tr>
+        <tr class="highlight-row"><td>4</td><td><strong>Samuel A.J. Thomas</strong></td><td>1848</td><td>1888</td><td>Married Sarah Jane Reed (1852–1890) — Avery's direct ancestor</td></tr>
+        <tr><td>5</td><td>Francis Marion Thomas (F.M.)</td><td>9 Aug 1852</td><td>20 Jan 1922</td><td>Married Susie B. Thomas (née unknown, b. 29 Feb 1857, d. 27 Dec 1928). Both buried Mustang Cemetery — confirmed by grave photos from RGT.</td></tr>
+        <tr><td>6</td><td>Catherine Thomas</td><td>~1853</td><td></td><td></td></tr>
+        <tr><td>7</td><td>Charles Thomas</td><td>9 Mar 1855</td><td></td><td></td></tr>
+        <tr><td>8</td><td>Fannie Almeda Thomas</td><td>1873</td><td>1958</td><td>Married John Robert Wingard, 14 Nov 1890, Grimes County — this is Louis Poole's grandmother (see Wheeler Family summary)</td></tr>
+      </tbody>
+    </table>
+
+    <div class="finding">
+      <div class="finding-label">Key Connection</div>
+      <p>Fannie Almeda Thomas (child #8) married John Robert Wingard in 1890. Their son George Franklin Wingard (1900–1987) married Minnie Estelle Manly, and their son George Franklin Wingard Jr. (1924–2017) married Lillian Fay Mayes. Their daughter Elise Estelle Wingard (1947– ) married <strong>James Louis Poole (1942– )</strong> — making Louis Poole the author of this very document a great-great-grandson of James Avery Thomas and Amanda Wheeler. He is Avery's distant cousin.</p>
+    </div>
+
+    <h3>The 1860 Grimes County Census Household</h3>
+    <p>The 1860 census shows the James Avery Thomas household with eight children listed. Poole reproduces the actual census page and analyzes it carefully. One child listed as "Jane" (female, age ~8) is ambiguous — Poole suggests this may be Sarah Jane Wheeler (daughter of John Wheeler, Amanda's brother), who was staying with the family, rather than a Thomas child. Francis Marion Thomas would have been 8 at the time and is not easily found on the census.</p>
+  </div>
+
+  <!-- ── Debunked Legends ── -->
+  <div class="section" id="debunked">
+    <h2 class="section-title">Debunked Family Legends</h2>
+
+    <p>This is one of the most valuable parts of the Poole document. He methodically works through several legends that have circulated in family histories and on genealogy websites, and disproves each one with primary source evidence.</p>
+
+    <h3>Legend 1: David Thomas Signed the Texas Declaration of Independence</h3>
+    <div class="debunk">
+      <div class="debunk-label">Definitively False</div>
+      <p>Multiple family histories — including the entry in the <em>History of Grimes County</em> (1982) and Richard Gary Thomas's own SRT application — state that David Thomas, brother of James Avery Thomas, was a signer of the Texas Declaration of Independence.</p>
+      <p>Poole establishes that this is <strong>definitively false</strong>. There was a David Thomas who signed the Declaration — but that David Thomas was from Tennessee, practiced law, represented Refugio Municipality at the Convention, and died in April 1836 shortly after signing. He has no connection to the Grimes County Thomas family.</p>
+      <p>Our David Thomas (son of John Thomas and Phoebe Ghiselin) was born ~1806 in Georgia, was illiterate (signed documents with an X), and was a farmer. He could not have been a lawyer representing Refugio. The two men share only a common name.</p>
+      <p>The confusion likely began because family members knew a "David Thomas" existed as a historical figure connected to the Republic of Texas, and assumed he was their David Thomas.</p>
+      <div class="source-chain">Source: Poole cites the journal of the Texas Convention (1836) identifying the delegate David Thomas as from Refugio, Tennessee-born, and a lawyer. Cross-referenced against census and land records for our David Thomas showing illiteracy and farming occupation in Grimes County.</div>
+    </div>
+
+    <h3>Legend 2: James Avery Thomas Made Shoes for Sam Houston's Soldiers</h3>
+    <div class="debunk">
+      <div class="debunk-label">False</div>
+      <p>A family legend holds that James Avery Thomas was a shoemaker who made shoes for Sam Houston's soldiers during some campaign. Poole finds no evidence for this claim in any primary record.</p>
+      <p>Furthermore, the timeline is problematic: James arrived in Texas in December 1832 as a young man of about 20, with no records suggesting he was a trained shoemaker. Sam Houston's famous military service in Texas culminated at San Jacinto in April 1836, when James would have been approximately 24. There is no record of James Avery Thomas being associated with Houston's campaign in any capacity.</p>
+      <p>James is consistently identified in records as a farmer. No occupation of shoemaking appears anywhere in his paper trail.</p>
+    </div>
+
+    <h3>Legend 3: Phoebe Springer Was John Thomas's Wife</h3>
+    <div class="debunk">
+      <div class="debunk-label">Corrected by Original Marriage Record</div>
+      <p>See the <a href="#john-thomas">John Thomas section</a> above. The name "Springer" entered the record because the Springer family (John Springer, Ezekiel Springer) were neighbors who traveled to Texas with the Thomas family and appear on the same Austin's Colony Register page. They were not in-laws. The original Warren County marriage record reads "Phoebe Geezland" — a phonetic rendering of Ghiselin.</p>
+    </div>
+
+    <h3>Legend 4: The Thomas Family Arrived in Texas in 1835</h3>
+    <div class="debunk">
+      <div class="debunk-label">Corrected by Austin's Colony Register</div>
+      <p>Stephen F. Austin's <em>Register of Families</em> (primary source) establishes the family arrived in December 1832 — more than two years before the commonly cited 1835 date. The 1835 date appears to have originated in the <em>History of Grimes County</em> (1982) and was repeated in subsequent family histories. The Register is definitive.</p>
+    </div>
+  </div>
+
+  <!-- ── Methodology ── -->
+  <div class="section" id="methodology">
+    <h2 class="section-title">Poole's Methodology &amp; Source Notes</h2>
+
+    <p>Poole is explicit about his standards throughout the document. Key points for understanding how to use this source:</p>
+
+    <ul>
+      <li><strong>Primary sources only for core claims.</strong> He distinguishes between what is documented in original records versus what is inferred or circumstantial. Inferences are clearly labeled.</li>
+      <li><strong>Census data treated with caution.</strong> He frequently notes that census ages are unreliable and contradictory, and uses them only as rough guides when no better record exists.</li>
+      <li><strong>Courthouse burns as a recurring obstacle.</strong> Many Alabama and Texas county courthouse records were burned during the Civil War or in post-war fires. Poole notes where gaps exist because records simply don't survive.</li>
+      <li><strong>Internet sources explicitly distrusted.</strong> He identifies several specific family trees and published accounts online that contain errors, traces their likely origins, and corrects them. He never cites an internet source as authoritative.</li>
+      <li><strong>The document is "not for publication."</strong> This is private family research, shared within the family. It should not be published or distributed outside this context.</li>
+      <li><strong>Cross-references.</strong> The Thomas chapter (B5 C19) is cross-referenced extensively with the Wheeler chapter (B5 C31) and a Wingard chapter (B5 C1). These chapters form a connected research project covering multiple intermarried families.</li>
+    </ul>
+
+    <h3>Key Primary Sources Poole Used</h3>
+    <ul>
+      <li>Warren County, Georgia marriage records (original, not transcribed)</li>
+      <li>Stephen F. Austin's <em>Register of Families</em> (Williams, Villamae, ed.)</li>
+      <li>Texas General Land Office records (GLO abstracts and original certificates)</li>
+      <li>Montgomery County, Texas deed books A–E, 1831–1840</li>
+      <li>Grimes County census records (1850, 1860, 1870, 1880)</li>
+      <li>Grimes County deed books and probate records</li>
+      <li>Montgomery County, Alabama census and deed records</li>
+      <li>Journal of the Texas Convention, 1836 (for the David Thomas question)</li>
+    </ul>
+
+    <div class="finding">
+      <div class="finding-label">For Future Research</div>
+      <p>Poole suggests the Briscoe Center for American History at UT Austin holds the Art and Barbara Squires Papers (1901–1996, 2007), which contain materials relevant to the family. He also references Series IX of the collection as containing Harry Thomas's autobiography — a potential primary source on the early 20th-century Thomas family not yet reviewed by Avery.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Roots: The Thomas &amp; Squires Family History &nbsp;·&nbsp; Compiled by Avery Thomas · April 2026 &nbsp;·&nbsp;
+  <a href="file-glossary.html">Site Index</a> &nbsp;·&nbsp;
+  <a href="sources.html">Sources</a> &nbsp;·&nbsp;
+  <a href="index.html">Home</a>
+</footer>
+
+</body>
+</html>

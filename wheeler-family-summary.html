@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Summary: Wheeler Family (Poole, B5 C31) — Roots</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --surface2: #222;
+      --border: #2e2e2e;
+      --accent: #c9a84c;
+      --accent2: #a0522d;
+      --accent-blue: #5b8dc9;
+      --accent-teal: #4ca89a;
+      --text: #e0d8cc;
+      --muted: #888;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', serif;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    /* ── Site Nav ── */
+    .site-nav {
+      background: #111;
+      border-bottom: 2px solid var(--accent);
+      padding: 0.7rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 0;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+    }
+    .site-nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 0.3rem 1rem;
+      border-right: 1px solid #2a2a2a;
+      transition: color 0.2s;
+    }
+    .site-nav a:last-child { border-right: none; }
+    .site-nav a:hover { color: var(--accent); }
+    .site-nav a.active { color: var(--accent); }
+    .nav-divider { color: #444; font-size: 0.72rem; font-family: sans-serif; letter-spacing: 1px; text-transform: uppercase; padding: 0.3rem 0.5rem 0.3rem 1.2rem; pointer-events: none; user-select: none; }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #1a1208 0%, #0a0a14 50%, #0f0f0f 100%);
+      border-bottom: 2px solid var(--accent);
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+    }
+    header .eyebrow {
+      font-size: 0.8rem;
+      font-family: sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: var(--accent);
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+    header .subtitle {
+      color: #aaa;
+      font-style: italic;
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+    header .meta {
+      font-size: 0.82rem;
+      color: #555;
+      font-family: sans-serif;
+    }
+    header .back-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--accent-teal);
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      text-decoration: none;
+      border: 1px solid #1a3a30;
+      border-radius: 3px;
+      padding: 0.25rem 0.8rem;
+    }
+    header .back-link:hover { background: #0a1a10; color: #fff; }
+
+    /* ── Page Nav ── */
+    .page-nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0.65rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.2rem;
+      justify-content: center;
+      position: sticky;
+      top: 44px;
+      z-index: 100;
+    }
+    .page-nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      letter-spacing: 0.5px;
+      transition: color 0.2s;
+    }
+    .page-nav a:hover { color: #fff; }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 5rem;
+    }
+
+    /* ── Document info box ── */
+    .doc-info {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 4px;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 2.5rem;
+      font-family: sans-serif;
+      font-size: 0.88rem;
+      color: #bbb;
+      line-height: 1.7;
+    }
+    .doc-info strong { color: var(--accent); }
+    .doc-info a { color: var(--accent-teal); text-decoration: none; }
+    .doc-info a:hover { text-decoration: underline; }
+
+    /* ── Sections ── */
+    .section { margin-top: 3rem; }
+
+    .section-title {
+      color: var(--accent);
+      font-size: 1.35rem;
+      font-variant: small-caps;
+      letter-spacing: 1px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.4rem;
+    }
+
+    h3 {
+      color: #d4c090;
+      font-size: 1.05rem;
+      margin: 1.6rem 0 0.5rem;
+      font-variant: small-caps;
+      letter-spacing: 0.5px;
+    }
+
+    p { margin-bottom: 1rem; }
+
+    ul, ol {
+      margin: 0.5rem 0 1rem 1.5rem;
+    }
+    li { margin-bottom: 0.4rem; }
+
+    /* ── Person cards ── */
+    .person-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1rem 1.3rem;
+      margin: 1rem 0 1.2rem;
+    }
+    .person-block .person-name {
+      color: #e8d9b8;
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+    }
+    .person-block .person-dates {
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+    .person-block p { margin-bottom: 0.4rem; font-size: 0.92rem; }
+
+    /* ── Debunk boxes ── */
+    .debunk {
+      background: #1a0a0a;
+      border: 1px solid #4a1a1a;
+      border-left: 4px solid #c04040;
+      border-radius: 4px;
+      padding: 1rem 1.3rem;
+      margin: 1rem 0 1.4rem;
+    }
+    .debunk .debunk-label {
+      font-size: 0.75rem;
+      font-family: sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #c04040;
+      margin-bottom: 0.4rem;
+    }
+    .debunk p { margin-bottom: 0.4rem; font-size: 0.92rem; }
+
+    /* ── Finding boxes ── */
+    .finding {
+      background: #0a1a0f;
+      border: 1px solid #1a4a2a;
+      border-left: 4px solid var(--accent-teal);
+      border-radius: 4px;
+      padding: 1rem 1.3rem;
+      margin: 1rem 0 1.4rem;
+    }
+    .finding .finding-label {
+      font-size: 0.75rem;
+      font-family: sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--accent-teal);
+      margin-bottom: 0.4rem;
+    }
+    .finding p { margin-bottom: 0.4rem; font-size: 0.92rem; }
+
+    /* ── Quote blocks ── */
+    blockquote {
+      border-left: 3px solid var(--border);
+      margin: 0.8rem 0 1rem 0;
+      padding: 0.5rem 0 0.5rem 1.2rem;
+      color: #aaa;
+      font-style: italic;
+      font-size: 0.92rem;
+    }
+
+    /* ── Source chain ── */
+    .source-chain {
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      color: #666;
+      border-top: 1px solid var(--border);
+      padding-top: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    /* ── Children table ── */
+    .children-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.8rem 0 1.2rem;
+      font-size: 0.88rem;
+    }
+    .children-table th {
+      text-align: left;
+      color: var(--accent);
+      font-family: sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border);
+      padding: 0.4rem 0.6rem;
+    }
+    .children-table td {
+      padding: 0.45rem 0.6rem;
+      border-bottom: 1px solid #1e1e1e;
+      vertical-align: top;
+    }
+    .children-table tr:last-child td { border-bottom: none; }
+    .children-table .highlight-row td { color: var(--accent); }
+
+    /* ── Lineage chain ── */
+    .lineage-chain {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.2rem 1.5rem;
+      margin: 1rem 0;
+      font-family: sans-serif;
+      font-size: 0.9rem;
+      line-height: 2;
+    }
+    .lineage-chain .gen {
+      display: flex;
+      align-items: baseline;
+      gap: 0.8rem;
+    }
+    .lineage-chain .gen-num {
+      font-size: 0.72rem;
+      color: var(--muted);
+      min-width: 2rem;
+      text-align: right;
+    }
+    .lineage-chain .gen-name { color: #e8d9b8; }
+    .lineage-chain .gen-dates { font-size: 0.8rem; color: var(--muted); }
+    .lineage-chain .gen-connector {
+      color: #444;
+      padding-left: 2.8rem;
+      font-size: 0.8rem;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 1.5rem 2rem;
+      font-size: 0.8rem;
+      color: #444;
+      font-family: sans-serif;
+    }
+    footer a { color: #666; text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<!-- ── Site Nav ── -->
+<nav class="site-nav">
+  <a href="index.html">Home</a>
+  <span class="nav-divider">Paternal —</span>
+  <a href="full-family-tree.html#paternal-tree">Full Tree</a>
+  <a href="thomas-line.html">Thomas</a>
+  <a href="kennard-family-history.html">Kennard</a>
+  <a href="crawley-line.html">Crawley</a>
+  <a href="convis-line.html">Convis</a>
+  <span class="nav-divider">Maternal —</span>
+  <a href="full-family-tree.html#maternal-tree">Maternal Tree</a>
+  <a href="squires-line.html">Squires</a>
+  <a href="croft-line.html">Croft</a>
+  <span class="nav-divider">Site —</span>
+  <a href="discoveries-and-research.html">Discoveries</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="sources.html" class="active">Sources</a>
+  <a href="file-glossary.html">Site Index</a>
+</nav>
+
+<!-- ── Header ── -->
+<header>
+  <div class="eyebrow">Source Summary</div>
+  <h1>Wheeler Family</h1>
+  <div class="subtitle">Book 5, Chapter 31 — Louis Poole (revised 03/24/13)</div>
+  <div class="meta">49 pages &nbsp;·&nbsp; Provided by Richard Gary Thomas, April 2026 &nbsp;·&nbsp; Not for publication</div>
+  <a href="sources.html#research" class="back-link">← Back to Sources</a>
+</header>
+
+<!-- ── Page Nav ── -->
+<nav class="page-nav">
+  <a href="#about">About</a>
+  <a href="#connection">Thomas Connection</a>
+  <a href="#henry-wheeler">Henry H. Wheeler</a>
+  <a href="#amanda">Amanda Wheeler</a>
+  <a href="#fab-wheeler">F.A.B. Wheeler</a>
+  <a href="#jesse-origins">Jesse's Origins</a>
+  <a href="#poole-lineage">Poole's Lineage</a>
+  <a href="#debunked">Debunked Legends</a>
+</nav>
+
+<div class="container">
+
+  <!-- ── About ── -->
+  <div class="section" id="about">
+    <h2 class="section-title">About This Document</h2>
+
+    <div class="doc-info">
+      <strong>Full title:</strong> "Wheeler Family" — Book 5, Chapter 31 (revised March 24, 2013)<br>
+      <strong>Author:</strong> Louis Poole — himself a descendant of the Thomas/Wheeler line (see <a href="#poole-lineage">Poole's Lineage</a> below)<br>
+      <strong>Source:</strong> Provided to Avery Thomas by Richard Gary Thomas in April 2026<br>
+      <strong>Status:</strong> Marked "Not for Publication" — private family research<br>
+      <strong>Scope:</strong> Traces the Wheeler family from probable North Carolina origins (~1760s) through Henry H. Wheeler (Amanda's father), documenting their migration through Georgia and Alabama to Grimes County, Texas by 1840<br>
+      <strong>Companion to:</strong> <a href="thomas-family-history-summary.html">Thomas Family History (B5 C19)</a> — the two chapters cross-reference extensively
+    </div>
+
+    <p>This chapter is far more speculative than the Thomas chapter — Poole is candid that many courthouse records for the Wheeler family's path through Georgia and Alabama were destroyed during the Civil War. He distinguishes carefully between what is documented and what is "circumstantial." The Amanda Wheeler–James Avery Thomas connection, however, is firmly established.</p>
+  </div>
+
+  <!-- ── Thomas Connection ── -->
+  <div class="section" id="connection">
+    <h2 class="section-title">How the Wheeler Family Connects to the Thomas Family</h2>
+
+    <div class="finding">
+      <div class="finding-label">Core Connection</div>
+      <p><strong>Amanda Wheeler</strong> (b. 15 May 1827, Georgia; d. 5 Sep 1896) married <strong>James Avery Thomas</strong> on 28 April 1842 in Montgomery County, Texas. She was the daughter of Henry H. Wheeler and Mary Ann Sawyer. Amanda and James are Avery's great-great-great-great-grandparents on the paternal side.</p>
+      <p>Both Amanda's headstone and James's family records at Mustang Cemetery are confirmed primary sources. Amanda is confirmed buried at Mustang Cemetery; James's burial location at Mustang Cemetery is the family tradition, though Poole notes his specific grave marker has not been located.</p>
+    </div>
+
+    <p>The Wheeler and Thomas families were neighbors and traveled the same migration corridor: Warren County, Georgia → Marengo/Montgomery County, Alabama → Montgomery County (later Grimes County), Texas. They likely knew each other in Alabama before arriving in Texas. Henry H. Wheeler arrived in Texas in November 1840; James Avery Thomas had been there since 1832.</p>
+
+    <h3>The 1830 Montgomery County, Alabama Census</h3>
+    <p>In the 1830 Alabama census, Henry Wheeler, Green(e) Wheeler, and Jesse Wheeler are listed in adjacent entries in Montgomery County — all living close together. Amanda Wheeler (then ~3 years old) would have been in Henry's household. In the same census, the Henry Wheeler household included a young female child who Poole identifies as almost certainly Amanda.</p>
+  </div>
+
+  <!-- ── Henry H. Wheeler ── -->
+  <div class="section" id="henry-wheeler">
+    <h2 class="section-title">Henry H. Wheeler (Amanda's Father)</h2>
+
+    <div class="person-block">
+      <div class="person-name">Henry H. Wheeler</div>
+      <div class="person-dates">b. ~1800, North Carolina &nbsp;·&nbsp; d. after 1854 (exact date unknown) &nbsp;·&nbsp; last found in records 1854, San Patricio County, TX</div>
+      <p>Father of Amanda Wheeler. Born in North Carolina around 1800 — he stated this himself in the 1850 census. Married <strong>Mary Ann Sawyer</strong> on 29 August 1822 in Baldwin County, Georgia. After Mary Ann apparently died (possibly ~1835–1840), he married <strong>Eliza Holman</strong> on 5 January 1840 in Montgomery County, Alabama.</p>
+      <p>Arrived in Texas in <strong>November 1840</strong> — documented in his own land certificate application to the Board of Land Commissioners for Montgomery County, filed 2 May 1842. He and his son John Wheeler filed on the same day.</p>
+      <p>In the 1850 Grimes County census, Henry H. Wheeler and Mary Ann Wheeler (age 15) are listed in the <strong>James Avery Thomas</strong> household. Henry is listed as a laborer. The Mary Ann Wheeler listed there is believed by Poole to be a previously unknown daughter of Henry — probably the Mary Ann (Wheeler) Johnson who later married Joseph B.T. Johnson and then James May, and is also buried at Mustang Cemetery.</p>
+    </div>
+
+    <h3>Children of Henry H. Wheeler and Mary Ann Sawyer</h3>
+    <table class="children-table">
+      <thead>
+        <tr><th>#</th><th>Name</th><th>Born</th><th>Died</th><th>Spouse / Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>John Wheeler</td><td>~1823</td><td>bef. Dec 1859</td><td>m. Elizabeth Landrum (dau. of Joseph L. Landrum). Elizabeth was later declared insane and a pauper; their children lived in the Thomas household. John may have died or abandoned the family.</td></tr>
+        <tr><td>2</td><td>(son) Wheeler</td><td>~1825</td><td>aft. 1830</td><td>Listed in the 1830 Alabama census; no further record</td></tr>
+        <tr class="highlight-row"><td>3</td><td><strong>Amanda Wheeler</strong></td><td>15 May 1827</td><td>5 Sep 1896</td><td><strong>Married James Avery Thomas, 28 Apr 1842. Avery's direct ancestor. Buried Mustang Cemetery.</strong></td></tr>
+        <tr><td>4</td><td>(?) Sarah Ann Wheeler</td><td>~1833</td><td></td><td>Circumstantial only. May have married Charles A. Barton, then Alphonso Herve. Poole cannot confirm she was Henry's daughter.</td></tr>
+        <tr><td>5</td><td>Mary Ann Wheeler</td><td>~1835</td><td>aft. 1900</td><td>m. (1) Joseph B.T. Johnson 19 Nov 1856; (2) James May 21 Apr 1864. Both buried Mustang Cemetery.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Henry's Son John Wheeler — A Family Tragedy</h3>
+    <p>John Wheeler (Henry's son, Amanda's brother) married Elizabeth Landrum and lived near the Thomas family in Grimes County. By 1858, John had filed a court action declaring his wife Elizabeth mentally incompetent. She was declared a lunatic and a pauper, and a guardian was appointed for her estate. By 1860, John himself had either died or disappeared — Elizabeth was living in the James Avery Thomas household, listed as insane. Their children (James Avery Wheeler and Sarah Jane Wheeler) were distributed among neighbors.</p>
+    <p>John Wheeler died intestate in Montgomery County, Texas around December 1859, based on a probate packet filed that month. His son James Avery Wheeler (b. 1852) lived to adulthood; his daughter Sarah Jane Wheeler (b. 5 Sep 1855) survived and married William Franklin Martin in 1870.</p>
+
+    <h3>Henry Wheeler's Land Dealings</h3>
+    <p>Henry H. Wheeler's land situation was complex. He received a 640-acre headright certificate for arriving in November 1840, but quickly sold off portions of it. By 1847 he had transferred his headright certificate to John B. Harris, who sold it to William Von Rosenberg, who eventually received three separate patents (Kaufman, Llano, and Williamson counties) totaling 640 acres. Henry also sold 122 acres to Samuel Grimmett in July 1843. He appears to have left Grimes County for good sometime after 1851, with a possible survey done in his name in San Patricio County in 1854 — his last known record.</p>
+  </div>
+
+  <!-- ── Amanda Wheeler ── -->
+  <div class="section" id="amanda">
+    <h2 class="section-title">Amanda Wheeler Thomas</h2>
+
+    <div class="person-block">
+      <div class="person-name">Amanda Wheeler</div>
+      <div class="person-dates">b. 15 May 1827, Georgia &nbsp;·&nbsp; d. 5 Sep 1896, Mustang Prairie, Grimes County, Texas</div>
+      <p>Daughter of Henry H. Wheeler and Mary Ann Sawyer. Born in Georgia while the family was still in Baldwin County. Arrived in Texas with her father November 1840 at age ~13. Married James Avery Thomas on 28 April 1842 in Montgomery County, Texas, when she was not yet 15.</p>
+      <p>Amanda outlived James by 31 years. After James died in 1865, she remained on Mustang Prairie and raised the family. She died 5 September 1896 and is buried at Mustang Cemetery. Her headstone is the primary source for her birth and death dates.</p>
+      <p>Her eight children with James Avery Thomas are detailed in the <a href="thomas-family-history-summary.html#children">Thomas Family History summary</a>.</p>
+    </div>
+
+    <div class="finding">
+      <div class="finding-label">Confirmed by Primary Source</div>
+      <p>Amanda's birth date (15 May 1827) and death date (5 Sep 1896) are confirmed by her headstone at Mustang Cemetery, photographed and cited by Poole. The marriage date (28 April 1842) is confirmed by Montgomery County, Texas marriage records.</p>
+      <div class="source-chain">Source: Headstone of "Mrs. Amanda Thomas," Mustang Cemetery, northern Grimes County. Montgomery County, Texas Marriage Records, 1838–1894.</div>
+    </div>
+  </div>
+
+  <!-- ── F.A.B. Wheeler ── -->
+  <div class="section" id="fab-wheeler">
+    <h2 class="section-title">Francis Asbury B. (F.A.B.) Wheeler — Amanda's Uncle</h2>
+
+    <div class="person-block">
+      <div class="person-name">Francis Asbury B. Wheeler ("F.A.B." or "Colonel Wheeler")</div>
+      <div class="person-dates">b. ~1790–1800, North Carolina &nbsp;·&nbsp; d. ~1841–1842, Montgomery County, Texas</div>
+      <p>Believed by Poole to be the older brother of Henry H. Wheeler, and therefore Amanda Wheeler's uncle. F.A.B. arrived in Texas in September 1837 (confirmed by land certificate). He settled in Montgomery County in the Lake Creek Settlement area, controlling large amounts of surveyed but unpatented land (~2,114 acres in the 1840 tax rolls). He died intestate, probably in 1841–1842; his widow Susannah Wheeler administered his estate.</p>
+      <p>F.A.B. Wheeler was elected colonel of the Third Militia District of Texas in June 1840 and led about 150 men in a campaign against raiding Indians — the "Colonel Wheeler's Campaign" documented in Stephen L. Moore's <em>Savage Frontier, 1840–1841</em>. After about four weeks, Wheeler led roughly half his regiment home without engaging the enemy.</p>
+    </div>
+
+    <h3>F.A.B. Wheeler's Land</h3>
+    <p>F.A.B. Wheeler acquired land rights totaling 1,937+ acres in Montgomery County through a combination of land certificate purchases and a direct headright. The landowner map of the Lake Creek Settlement shows his surveys on both sides of John Landrum's survey — immediately adjacent to the John Thomas (James Avery Thomas's father) survey. This confirms the Thomas and Wheeler families were literal neighbors on adjoining land.</p>
+
+    <div class="debunk">
+      <div class="debunk-label">Debunked: F.A.B. Wheeler as Early Pioneer of 1823–1825</div>
+      <p>Local legends and historical markers claimed F.A.B. Wheeler was "the first settler in 1825 of Montgomery County." Poole disproves this conclusively:</p>
+      <ul>
+        <li>He is not listed in Austin's Register of Families, which would have included him if he arrived before 1835</li>
+        <li>His name does not appear on the 1838 Montgomery County tax list</li>
+        <li>He received a Class III land certificate (640 acres) — awarded only to settlers who arrived after 1837</li>
+        <li>The 1850 census ages of his children confirm he was in Georgia and Alabama at least through 1833</li>
+        <li>His first appearance in any Texas record is as a witness to a deed in 1839</li>
+      </ul>
+      <p>Poole notes the claim has been "erroneously repeated so many times that it has become a part of history." The historical marker in Harris County, Georgia naming F.A.B. Wheeler as county coroner is genuine — but it postdates his Texas arrival.</p>
+    </div>
+
+    <h3>F.A.B. Wheeler's Children</h3>
+    <p>F.A.B. and Susannah Wheeler had three known children: Sarah A.L. Wheeler (who married Allen Lowery), Louisa M. Wheeler, and Amanda Matilda Wheeler — named, notably, after her cousin <strong>Amanda Wheeler Thomas</strong>. Poole notes this shared name as circumstantial evidence of the close relationship between F.A.B. and Henry H. Wheeler (brothers), and between their daughters.</p>
+  </div>
+
+  <!-- ── Jesse's Origins ── -->
+  <div class="section" id="jesse-origins">
+    <h2 class="section-title">Jesse Wheeler — Probable Father of Henry and F.A.B.</h2>
+
+    <p>The most speculative part of the document. Poole believes Henry H. Wheeler and F.A.B. Wheeler were sons of a <strong>Jesse Wheeler</strong>, who first appears in Baldwin County, Georgia records around 1810. Jesse moved the family from North Carolina to Georgia between 1800 and 1806, then from Georgia to Montgomery County, Alabama, before his sons moved to Texas.</p>
+
+    <div class="person-block">
+      <div class="person-name">Jesse Wheeler (postulated)</div>
+      <div class="person-dates">b. ~1760–1775, probably North Carolina &nbsp;·&nbsp; d. ~1830–1840, Montgomery County, Alabama</div>
+      <p>Poole traces a "Jesse Wheler" in the 1800 Chatham County, North Carolina census, listed in the 26–45 age bracket with two sons — consistent with F.A.B. (b. ~1790) and Henry (b. ~1800) being those sons. Jesse is not found in the 1810 North Carolina census, suggesting he moved to Georgia between 1800 and 1810, which aligns with Baldwin County, Georgia records showing him from ~1810.</p>
+      <p>In the 1820 Baldwin County, Georgia census, Jesse Wheeler is listed with his two known sons Henry and "Asberry" (F.A.B.) nearby. In the 1830 Montgomery County, Alabama census, Jesse is listed again, now in the 70–80 age bracket, adjacent to Greene Wheeler and Henry Wheeler. Jesse probably died in Montgomery County before 1840, freeing his sons to move to Texas.</p>
+      <p>Poole explicitly states this relationship <em>"has not in any sense of the word been proven"</em> and may never be provable due to courthouse fires. He presents it as his best current assessment of the circumstantial evidence.</p>
+    </div>
+
+    <h3>Jesse's Possible Siblings and Origins</h3>
+    <p>Poole traces the Chatham County, NC Wheeler group (Jesse, John, and Dred "Wheler" in the 1800 census) and hypothesizes that these were brothers. He further traces a Joseph Wheeler Sr. of Franklin/Wake counties, NC as a likely father of Jesse. Jesse Wheeler is believed to have been born in North Carolina, possibly with roots going back through Virginia.</p>
+
+    <p>Poole also identifies additional possible sons of Jesse beyond Henry and F.A.B.:</p>
+    <ul>
+      <li><strong>Greene E. Wheeler</strong> (b. 8 Dec 1806, GA; d. 1 May 1879, Harrison Co., TX) — listed adjacent to Jesse and Henry in the 1830 Alabama census</li>
+      <li><strong>Elias H. Wheeler</strong> (b. ~1813, GA; d. 31 Dec 1869, Bradley Co., AR) — appears in the same Alabama county cluster</li>
+    </ul>
+
+    <div class="finding">
+      <div class="finding-label">Key Uncertainty</div>
+      <p>The Wheeler chapter is candid that the family's pre-Georgia origins may never be definitively resolved. The 1800 and 1810 Georgia censuses are lost. Baldwin County, Alabama records were largely destroyed during the Civil War. Poole presents his best working hypothesis while being explicit about what is documented versus inferred.</p>
+    </div>
+  </div>
+
+  <!-- ── Poole's Lineage ── -->
+  <div class="section" id="poole-lineage">
+    <h2 class="section-title">Louis Poole's Personal Lineage — He's Family</h2>
+
+    <div class="finding">
+      <div class="finding-label">Remarkable Discovery</div>
+      <p>Louis Poole is not merely a genealogical researcher studying the Thomas and Wheeler families from the outside. He is a <strong>direct descendant</strong> of James Avery Thomas and Amanda Wheeler — which means he is Avery's distant cousin. He traces his own lineage in the family tree diagram at the end of the Wheeler chapter.</p>
+    </div>
+
+    <div class="lineage-chain">
+      <div class="gen"><span class="gen-num">Gen 1</span><span class="gen-name">James Avery Thomas</span><span class="gen-dates">(~1812–1865)</span></div>
+      <div class="gen-connector">↓ married Amanda Wheeler</div>
+      <div class="gen"><span class="gen-num">Gen 2</span><span class="gen-name">Samuel A.J. Thomas</span><span class="gen-dates">(1848–1888)</span></div>
+      <div class="gen-connector">↓ married Sarah Jane Reed (1852–1890)</div>
+      <div class="gen"><span class="gen-num">Gen 3</span><span class="gen-name">Fannie Almeda Thomas</span><span class="gen-dates">(1873–1958)</span></div>
+      <div class="gen-connector">↓ married John Robert Wingard, 14 Nov 1890, Grimes County</div>
+      <div class="gen"><span class="gen-num">Gen 4</span><span class="gen-name">George Franklin Wingard</span><span class="gen-dates">(1900–1987)</span></div>
+      <div class="gen-connector">↓ married Minnie Estelle Manly (1903–1991)</div>
+      <div class="gen"><span class="gen-num">Gen 5</span><span class="gen-name">George Franklin Wingard Jr.</span><span class="gen-dates">(1924–2017)</span></div>
+      <div class="gen-connector">↓ married Lillian Fay Mayes (1926–2004)</div>
+      <div class="gen"><span class="gen-num">Gen 6</span><span class="gen-name">Elise Estelle Wingard</span><span class="gen-dates">(1947– )</span></div>
+      <div class="gen-connector">↓ married James Louis Poole (1942– )</div>
+      <div class="gen"><span class="gen-num">Author</span><span class="gen-name" style="color: var(--accent-teal);">Louis Poole</span><span class="gen-dates">— author of this document</span></div>
+    </div>
+
+    <p>Poole also lists two children of himself and Elise in the chart:</p>
+    <ul>
+      <li>Heather Elise Poole (1971– ), married Neil Michael Lieberman (1970– )</li>
+      <li>Holly Emalyn Poole (1977– ), married Donald Allen Jr. (1967– )</li>
+    </ul>
+
+    <p>This means the Thomas Family History and Wheeler Family documents were written by someone doing primary source research on his own family — with every personal reason to get it right. That said, Poole's own notes as footnotes in his source documents, particularly his critiques of the Charlotte Sandel Beck online account of the Wheeler family, show he is willing to correct errors even in accounts that were flattering to the family.</p>
+
+    <h3>How Avery and Poole Are Related</h3>
+    <p>Avery Thomas descends from Samuel A.J. Thomas through the Thomas → Gary Thomas → Scott Thomas line. Louis Poole descends from Samuel A.J. Thomas through the Fannie Almeda Thomas → Wingard line. They share Samuel A.J. Thomas (1848–1888) and Sarah Jane Reed (1852–1890) as common ancestors — making them distant cousins.</p>
+  </div>
+
+  <!-- ── Debunked ── -->
+  <div class="section" id="debunked">
+    <h2 class="section-title">Debunked Legends — Wheeler Line</h2>
+
+    <h3>F.A.B. Wheeler as First Settler of Montgomery County (1823–1825)</h3>
+    <div class="debunk">
+      <div class="debunk-label">Definitively False</div>
+      <p>See the <a href="#fab-wheeler">F.A.B. Wheeler section</a> above. Land records, tax records, Austin's Register, and census birth data for his children all confirm F.A.B. arrived in Texas no earlier than 1837. The "first settler in 1825" claim appears repeatedly in local histories and historical markers, but has no documentary basis.</p>
+    </div>
+
+    <h3>Henry H. Wheeler Born in Georgia</h3>
+    <div class="debunk">
+      <div class="debunk-label">Incorrect</div>
+      <p>One published account (and some family trees) states Henry Wheeler was born in Georgia. Henry himself stated in the 1850 census that he was born in North Carolina. Poole accepts his own testimony and the circumstantial evidence of the family's North Carolina origins.</p>
+    </div>
+
+    <h3>Henry H. Wheeler in the 1830 Marengo County, Alabama Census</h3>
+    <div class="debunk">
+      <div class="debunk-label">Wrong County</div>
+      <p>Charlotte Sandel Beck's online account of the Wheeler family stated Henry Wheeler was listed in the 1830 census of Marengo County, Alabama. Poole checked: he was not listed in Marengo County — he was listed in <strong>Montgomery County</strong>, Alabama. An easy confusion between counties, but a meaningful one for tracing the family's movements.</p>
+    </div>
+
+    <h3>The Thomas Family Arrived in Texas in 1835 (Wheeler Version)</h3>
+    <div class="debunk">
+      <div class="debunk-label">Incorrect</div>
+      <p>Poole's footnotes in the Wheeler chapter correct an online account that placed the Thomas family's Texas arrival in 1835. As established in the Thomas chapter, they arrived in December 1832 per Austin's Register. This is noted in the Wheeler chapter footnotes as a factual correction to the Beck account.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Roots: The Thomas &amp; Squires Family History &nbsp;·&nbsp; Compiled by Avery Thomas · April 2026 &nbsp;·&nbsp;
+  <a href="file-glossary.html">Site Index</a> &nbsp;·&nbsp;
+  <a href="sources.html">Sources</a> &nbsp;·&nbsp;
+  <a href="index.html">Home</a>
+</footer>
+
+</body>
+</html>
