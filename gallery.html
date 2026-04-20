@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Photo Gallery — Roots: Family History</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --surface2: #222;
+      --border: #2e2e2e;
+      --accent: #c9a84c;
+      --accent2: #a0522d;
+      --accent-blue: #5b8dc9;
+      --accent-teal: #4ca89a;
+      --text: #e0d8cc;
+      --muted: #888;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; font-size: 16px; line-height: 1.75; }
+
+    header { background: linear-gradient(135deg, #0a0f0a 0%, #0f0f0f 60%); border-bottom: 2px solid var(--accent); padding: 3rem 2rem 2rem; text-align: center; }
+    header .crest { font-size: 3rem; margin-bottom: 0.5rem; }
+    header h1 { font-size: 2.4rem; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.4rem; }
+    header .subtitle { color: var(--muted); font-style: italic; font-size: 1rem; }
+    header .byline { margin-top: 1rem; font-size: 0.85rem; color: var(--muted); }
+
+    .site-nav { background: #111; border-bottom: 2px solid var(--accent); padding: 0.7rem 2rem; display: flex; flex-wrap: wrap; gap: 0.4rem 0; justify-content: center; position: sticky; top: 0; z-index: 200; }
+    .site-nav a { color: var(--muted); text-decoration: none; font-size: 0.82rem; font-family: sans-serif; letter-spacing: 0.8px; text-transform: uppercase; padding: 0.3rem 1rem; border-right: 1px solid #2a2a2a; transition: color 0.2s; }
+    .site-nav a:last-child { border-right: none; }
+    .site-nav a:hover { color: var(--accent); }
+    .site-nav a.active { color: var(--accent); }
+    .nav-divider { color: #444; font-size: 0.72rem; font-family: sans-serif; letter-spacing: 1px; text-transform: uppercase; padding: 0.3rem 0.5rem 0.3rem 1.2rem; pointer-events: none; user-select: none; }
+
+    nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0.75rem 2rem; display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; justify-content: center; position: sticky; top: 44px; z-index: 100; }
+    nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; font-family: sans-serif; letter-spacing: 0.5px; transition: color 0.2s; }
+    nav a:hover { color: #fff; }
+
+    .container { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    .section { margin-top: 3rem; }
+    .section-title { font-size: 1.5rem; font-variant: small-caps; letter-spacing: 1px; padding-bottom: 0.5rem; margin-bottom: 0.5rem; border-bottom: 1px solid #2a2a2a; }
+    .section-title.squires { color: var(--accent-blue); border-color: #2a3040; }
+    .section-title.croft   { color: var(--accent-blue); border-color: #2a3040; }
+    .section-title.thomas  { color: var(--accent); border-color: #3a2a10; }
+    .section-title.crawley { color: var(--accent-teal); border-color: #1a2e2a; }
+    .section-title.convis  { color: var(--accent-teal); border-color: #1a2e2a; }
+    .section-subtitle { font-size: 0.88rem; color: var(--muted); font-style: italic; margin-bottom: 1.5rem; }
+    h3 { color: #90b8e0; font-size: 1.05rem; margin: 1.8rem 0 0.6rem; font-family: sans-serif; letter-spacing: 0.3px; }
+    h3.gold { color: #c9a84c; }
+    h3.teal { color: var(--accent-teal); }
+
+    /* Photo Gallery */
+    .photo-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; margin-top: 0.5rem; }
+    .photo-card { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; }
+    .photo-card .photo-placeholder { background: #0c1018; border-bottom: 1px solid var(--border); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 0.4rem; color: var(--muted); font-family: sans-serif; font-size: 0.75rem; text-align: center; padding: 0.5rem; }
+    .photo-card .photo-placeholder .slide-ref { font-size: 1rem; color: var(--accent-blue); font-weight: bold; }
+    .photo-card img { width: 100%; height: auto; display: block; aspect-ratio: 4/3; object-fit: cover; }
+    .photo-card .photo-caption { padding: 0.5rem 0.7rem 0.6rem; font-size: 0.8rem; color: #b0c0d8; font-family: sans-serif; line-height: 1.4; flex: 1; }
+    .photo-card .photo-caption .photo-year { color: var(--muted); font-size: 0.74rem; display: block; margin-top: 0.25rem; }
+    .photo-section-note { font-size: 0.85rem; color: var(--muted); font-style: italic; margin-bottom: 0.5rem; }
+
+    .coming-soon { background: var(--surface); border: 1px dashed var(--border); border-radius: 4px; padding: 2rem; text-align: center; color: var(--muted); font-family: sans-serif; font-size: 0.88rem; margin-top: 1rem; }
+
+    footer { margin-top: 4rem; border-top: 1px solid var(--border); padding: 2rem; text-align: center; color: var(--muted); font-size: 0.82rem; font-family: sans-serif; }
+    footer a { color: #666; text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+
+    @media (max-width: 600px) { header h1 { font-size: 1.6rem; } .container { padding: 1.5rem 1rem 3rem; } .photo-gallery { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); } }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html">Home</a>
+  <span class="nav-divider">Paternal —</span>
+  <a href="full-family-tree.html#paternal-tree">Full Tree</a>
+  <a href="thomas-line.html">Thomas</a>
+  <a href="kennard-family-history.html">Kennard</a>
+  <a href="crawley-line.html">Crawley</a>
+  <a href="convis-line.html">Convis</a>
+  <span class="nav-divider">Maternal —</span>
+  <a href="full-family-tree.html#maternal-tree">Maternal Tree</a>
+  <a href="squires-line.html">Squires</a>
+  <a href="croft-line.html">Croft</a>
+  <span class="nav-divider">Site —</span>
+  <a href="discoveries-and-research.html">Discoveries</a>
+  <a href="gallery.html" class="active">Gallery</a>
+  <a href="sources.html">Sources</a>
+  <a href="file-glossary.html">Site Index</a>
+</nav>
+
+<header>
+  <div class="crest">📷</div>
+  <h1>Family Photo Gallery</h1>
+  <div class="subtitle">Squires · Croft · Thomas · Crawley · Convis</div>
+  <div class="byline">Thomas &amp; Squires Family History · Compiled April 2026</div>
+</header>
+
+<nav>
+  <a href="#squires">Squires</a>
+  <a href="#croft">Croft</a>
+  <a href="#thomas">Thomas</a>
+  <a href="#crawley">Crawley</a>
+  <a href="#convis">Convis</a>
+</nav>
+
+<div class="container">
+
+  <!-- SQUIRES -->
+  <div class="section" id="squires">
+    <h2 class="section-title squires">The Squires Family</h2>
+    <p class="section-subtitle">Photos sourced from Barbara Squires' memorial slideshow (2025) and family collection. Slides 121–151 still being reviewed — more photos to be added.</p>
+
+    <h3>Barbara — Growing Up</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 3</span>Barbara as a child<br>black &amp; white</div>
+        <div class="photo-caption">Barbara Croft as a young girl — one of the earliest known photos.<span class="photo-year">~1940s</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 83</span>Barbara as a little girl<br>at a piano/desk, sepia</div>
+        <div class="photo-caption">Barbara as a very young child, sitting at a piano or writing desk.<span class="photo-year">~late 1930s–early 1940s</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 1</span>Barbara's prom photo</div>
+        <div class="photo-caption">Barbara at prom — a formal portrait in an elegant gown.<span class="photo-year">~1953–54</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 75</span>Vintage glamour portrait<br>of Barbara</div>
+        <div class="photo-caption">A vintage glamour portrait of Barbara — faded color photograph.<span class="photo-year">~1960s–70s</span></div>
+      </div>
+    </div>
+
+    <h3>Art &amp; Barbara — Together</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 2</span>Art &amp; Barbara<br>formal synagogue portrait</div>
+        <div class="photo-caption">Art and Barbara Squires — formal portrait, likely at their synagogue.<span class="photo-year">~1980s–90s</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 8</span>Art &amp; Barbara kissing<br>at restaurant (candid)</div>
+        <div class="photo-caption">A candid moment — Art and Barbara at a restaurant.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 76</span>Art, Barbara &amp; young Heather<br>studio portrait</div>
+        <div class="photo-caption">Art, Barbara, and their daughter Heather (~age 7) in a studio family portrait.<span class="photo-year">~1970</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 84</span>Art &amp; Barbara on sofa<br>dressed up</div>
+        <div class="photo-caption">Art and Barbara Squires dressed up together at home — one of the later portraits.<span class="photo-year">~2018–2020</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 94</span>Art &amp; Barbara<br>formal event portrait</div>
+        <div class="photo-caption">Art and Barbara at a formal event — a classic couple portrait.<span class="photo-year">~1980s</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 41</span>Art &amp; Barbara<br>beach / snorkeling vacation</div>
+        <div class="photo-caption">Art and Barbara on vacation — beach or snorkeling trip.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 44</span>Art, Marla &amp; Barbara<br>Italian restaurant</div>
+        <div class="photo-caption">Art, Marla (Mitchell's wife), and Barbara at an Italian restaurant — a recent family dinner.<span class="photo-year">~2010s–2020s</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 73</span>Art &amp; Barbara on sofa<br>with small dark dog</div>
+        <div class="photo-caption">Art and Barbara relaxing on their sofa at home with their dog — a cozy candid.<span class="photo-year">~2010s</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 116</span>Art &amp; Barbara outside<br>store with disco balls</div>
+        <div class="photo-caption">Art in bold blue and orange, Barbara in black — outside a store decorated with silver disco balls.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 118</span>Art &amp; Barbara<br>in winter coats</div>
+        <div class="photo-caption">Art and Barbara bundled up outdoors in winter coats — Art in his signature colorful striped scarf.<span class="photo-year">Date unknown</span></div>
+      </div>
+    </div>
+
+    <h3>Southwest Concerts — The Business Years</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 5</span>"The Champ"<br>newspaper profile of Art</div>
+        <div class="photo-caption">A newspaper profile of Art Squires — likely a Houston paper during the Southwest Concerts years.<span class="photo-year">~1960s–1980s</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 80</span>Vintage "Peace!" holiday card<br>Art at desk, Barbara standing</div>
+        <div class="photo-caption">A vintage illustrated holiday card — Art at his desk, Barbara standing beside him. A Southwest Concerts era Christmas card.<span class="photo-year">~1960s–70s</span></div>
+      </div>
+      <div class="photo-card">
+        <!-- Ask Heather to identify: famous music industry person -->
+        <div class="photo-placeholder"><span class="slide-ref">Slide 61</span>Barbara with Burt Bacharach<br>(labeled) — backstage, B&amp;W</div>
+        <div class="photo-caption">Barbara Squires with Burt Bacharach — labeled in the slideshow. Taken backstage or at an event during the Southwest Concerts years.<span class="photo-year">~1970s–80s</span></div>
+      </div>
+      <!-- Slides 82, 86, 87, 88: famous music industry people — ask Heather to identify before adding -->
+    </div>
+
+    <h3>Family Gatherings</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 6</span>Formal family portrait<br>Art · Barbara · Mitchell · Marla · Casey · Heather</div>
+        <div class="photo-caption">The full Squires family — Art, Barbara, son Mitchell with wife Marla and daughter Casey, and daughter Heather.<span class="photo-year">~1988</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 71</span>Full family on sofa<br>Avery · Ashley · Heather · Barbara · Art · Austin · Charlotte · Scott</div>
+        <div class="photo-caption">From left: Avery, Ashley, Heather, Barbara, Art, Austin (in purple), Charlotte Thomas, Scott Thomas — both families together.<span class="photo-year">~2015–2020</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 26</span>Mother's Day portrait<br>All 9 family members</div>
+        <div class="photo-caption">Mother's Day — all 9 Squires family members together: Art, Barbara, Mitchell, Marla, Casie, Kirby, Heather, and Avery's siblings.<span class="photo-year">~2015</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 74</span>Restaurant table<br>Ashley · Austin · Mitchell · Marla · Art · Barbara · Avery · Heather · Scott</div>
+        <div class="photo-caption">A large family dinner — Ashley, Austin, Mitchell, Marla, Art, Barbara, Avery, Heather, and Scott all around the table.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 34</span>Art · JG Thomas · Ashley · Charlotte · Barbara</div>
+        <div class="photo-caption">From left: Art Squires, J.G. Thomas, Ashley Thomas, Charlotte Thomas, and Barbara Squires — both families together.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 28</span>Ashley · Heather · Barbara · Charlotte</div>
+        <div class="photo-caption">From left: Ashley Thomas, Heather Thomas, Barbara Squires, and Charlotte Thomas — three generations of women.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 79</span>Art · Barbara · Heather · Scott · Austin · Avery · Ashley<br>outside brick building</div>
+        <div class="photo-caption">Art, Barbara, Heather, Scott, Austin, Avery, and Ashley — the whole immediate family outside together.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 85</span>All the women of the family<br>Kirby · Casey · Marla · Ashley · Heather · Barbara</div>
+        <div class="photo-caption">From left: Kirby, Casey, Marla, Ashley, Heather, Barbara — all the women of the Squires side at a family event.<span class="photo-year">~2010s</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 91</span>Heather · Barbara · Scott · Art<br>at a nice restaurant</div>
+        <div class="photo-caption">Heather, Barbara, Scott, and Art at a restaurant — a four-person family dinner.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 60</span>Barbara · Heather · Ashley<br>at restaurant</div>
+        <div class="photo-caption">Barbara, Heather, and Ashley at a restaurant.<span class="photo-year">Date unknown</span></div>
+      </div>
+    </div>
+
+    <h3>Barbara &amp; Evelyn — The Croft Sisters</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 62</span>Barbara (right) &amp; Evelyn (left)<br>warm selfie indoors</div>
+        <div class="photo-caption">Barbara and her sister Evelyn Laviage — a warm, close photo of the two sisters.<span class="photo-year">~2020s</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 22</span>Barbara &amp; Casey<br>candid photo</div>
+        <div class="photo-caption">Barbara and her granddaughter Casey — a casual photo together.<span class="photo-year">~1990s–2000s</span></div>
+      </div>
+    </div>
+
+    <h3>Ashley's Bat Mitzvah — 2015</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 16</span>All 4 grandparents<br>at bat mitzvah</div>
+        <div class="photo-caption">Ashley Thomas's bat mitzvah — all four grandparents together: Art &amp; Barbara Squires and J.G. &amp; Charlotte Thomas.<span class="photo-year">2015</span></div>
+      </div>
+    </div>
+
+    <h3>Art &amp; Barbara Dancing</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 93</span>Barbara &amp; Art dancing<br>Barbara in novelty glasses</div>
+        <div class="photo-caption">Barbara in novelty sunglasses dancing with Art at a party — pure joy.<span class="photo-year">Date unknown</span></div>
+      </div>
+    </div>
+
+    <h3>Heather &amp; Barbara</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 89</span>Barbara &amp; young Heather<br>in a swimming pool</div>
+        <div class="photo-caption">Barbara and a young Heather in a swimming pool — a summer vacation photo.<span class="photo-year">~late 1970s–early 1980s</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slides 49–51</span>Heather &amp; Barbara selfies<br>+ caricature "HEATHER &amp; BARBARA 2025"</div>
+        <div class="photo-caption">A series of selfies and a caricature drawing labeled "HEATHER &amp; BARBARA 2025" — capturing a close mother-daughter bond in Barbara's final year.<span class="photo-year">2025</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 53</span>Heather &amp; Barbara<br>Rosh Hashanah card</div>
+        <div class="photo-caption">A Shana Tova (Rosh Hashanah) card featuring Heather and Barbara.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 67</span>Heather &amp; Barbara selfie<br>assisted living</div>
+        <div class="photo-caption">Heather and Barbara — a selfie taken during a visit at assisted living.<span class="photo-year">~2024–2025</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 90</span>Heather hugging Barbara<br>in a hallway</div>
+        <div class="photo-caption">Heather and Barbara in a close embrace in a hallway — a candid, emotional moment.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 63</span>Ashley &amp; Barbara<br>outside a store</div>
+        <div class="photo-caption">Ashley Thomas and Barbara Squires outside a store — a casual outing together.<span class="photo-year">~2020s</span></div>
+      </div>
+    </div>
+
+    <h3>With the Grandchildren</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 4</span>Avery · Austin · Ashley<br>as young children with Barbara</div>
+        <div class="photo-caption">Avery, Austin, and Ashley Thomas as young children with Barbara.<span class="photo-year">~late 1990s–2000s</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 92</span>Barbara · Heather · baby Avery<br>2nd birthday party</div>
+        <div class="photo-caption">Barbara and Heather with baby Avery at Avery's 2nd birthday party — Dr. Seuss tablecloth, cake with "2".<span class="photo-year">~1999</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 57</span>Barbara &amp; Avery<br>sitting outside</div>
+        <div class="photo-caption">Barbara and Avery sitting outside together — Avery in a "The Happy Musicians" hoodie. One of the last photos of them together.<span class="photo-year">~2024–2025</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 97</span>Barbara holding baby Austin<br>(unconfirmed)</div>
+        <div class="photo-caption">Barbara holding a newborn in a blue hat — likely Austin Thomas as a baby.<span class="photo-year">~2001 (unconfirmed)</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 98</span>Barbara &amp; Austin<br>hugging</div>
+        <div class="photo-caption">Barbara and Austin Thomas — a warm hug, both in matching striped shirts.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 81</span>Barbara holding baby Casey<br>(unconfirmed)</div>
+        <div class="photo-caption">Barbara holding a newborn — likely her granddaughter Casey as a baby.<span class="photo-year">~late 1980s (unconfirmed)</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 99</span>Kirby · Barbara · Casey · Marla<br>at a pool / cookout</div>
+        <div class="photo-caption">From left: Kirby, Barbara, Casey, and Marla — the Mitchell Squires branch at a summer outing.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 113</span>Barbara hugging young Ashley</div>
+        <div class="photo-caption">Barbara and a young Ashley Thomas — a sweet embrace.<span class="photo-year">~2000s</span></div>
+      </div>
+    </div>
+
+    <h3>Barbara — Later Years</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 64</span>Digitally enhanced<br>glamour portrait of Barbara</div>
+        <div class="photo-caption">A digitally enhanced glamour portrait of Barbara — vibrant and striking.<span class="photo-year">Based on ~1980s original</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 65</span>Barbara &amp; Heather<br>Passover Seder, assisted living</div>
+        <div class="photo-caption">Barbara and Heather at a Passover Seder in assisted living — matzah and Haggadah on the table.<span class="photo-year">~2024–2025</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 66</span>Solo portrait of Barbara<br>white blouse, gold hoops</div>
+        <div class="photo-caption">A close portrait of Barbara — white blouse, gold hoop earrings, warm smile.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 69</span>Barbara in fur hat<br>and blue scarf</div>
+        <div class="photo-caption">Barbara in a fur hat and bright blue scarf — solo portrait, very stylish.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 72</span>Barbara in prayer pose<br>assisted living, floral blouse</div>
+        <div class="photo-caption">Barbara in profile at assisted living, hands pressed together in a prayer pose, wearing a colorful floral blouse.<span class="photo-year">~2024–2025</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 55</span>Barbara with lei<br>assisted living dining room</div>
+        <div class="photo-caption">Barbara wearing a lei in the dining room of her assisted living facility — still celebrating.<span class="photo-year">~2024–2025</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 56</span>Barbara shopping<br>at Chico's Outlet</div>
+        <div class="photo-caption">Barbara shopping at Chico's Outlet with her walker — ever stylish in her later years.<span class="photo-year">~2024</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 104</span>Barbara solo on a beach<br>tropical vacation</div>
+        <div class="photo-caption">Barbara standing on a beach in a black-and-white swimsuit, tropical resort in the background.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 110</span>Barbara on beach<br>with boogie board</div>
+        <div class="photo-caption">Barbara on a beach carrying a yellow boogie board — full of energy on vacation.<span class="photo-year">Date unknown</span></div>
+      </div>
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 111</span>Barbara hula hooping<br>outside</div>
+        <div class="photo-caption">Barbara hula hooping in the driveway — a joyful, energetic shot that captures her spirit perfectly.<span class="photo-year">Date unknown</span></div>
+      </div>
+    </div>
+
+    <h3>The "ARTS" License Plate — A Keepsake Photo</h3>
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <div class="photo-placeholder"><span class="slide-ref">Slide 120</span>Barbara &amp; young Heather<br>in front of car with "ARTS" plate — Polaroid</div>
+        <div class="photo-caption">Barbara and a young Heather (~age 10) standing in front of Art's car — the license plate reads "ARTS." A Polaroid snapshot capturing the whole family's identity in one frame.<span class="photo-year">~1973–74</span></div>
+      </div>
+    </div>
+
+    <p style="margin-top:1.5rem;font-size:0.85rem;color:var(--muted);">Source: <em>Barbara Squires Memorial Slideshow</em>, 2025 (151 slides). Slides 121–151 still being reviewed. To contribute a photo from the family collection, contact Avery Thomas.</p>
+  </div>
+
+  <!-- CROFT -->
+  <div class="section" id="croft">
+    <h2 class="section-title croft">The Croft Family</h2>
+    <p class="section-subtitle">Barbara's parents Jack &amp; Mollie Croft, and the Croft/Krawczyk line from Poland.</p>
+    <div class="coming-soon">Photos coming soon — this section will be populated as family photos are collected and identified.</div>
+  </div>
+
+  <!-- THOMAS -->
+  <div class="section" id="thomas">
+    <h2 class="section-title thomas">The Thomas Family</h2>
+    <p class="section-subtitle">The Thomas and Kennard lines — Avery's paternal side.</p>
+    <div class="coming-soon">Photos coming soon — this section will be populated as family photos are collected and identified.</div>
+  </div>
+
+  <!-- CRAWLEY -->
+  <div class="section" id="crawley">
+    <h2 class="section-title crawley">The Crawley Family</h2>
+    <p class="section-subtitle">Mary Ann Crawley and the Louisiana/Texas Crawley line.</p>
+    <div class="coming-soon">Photos coming soon — the Crawley memorial video collection is being reviewed separately.</div>
+  </div>
+
+  <!-- CONVIS -->
+  <div class="section" id="convis">
+    <h2 class="section-title convis">The Convis Family</h2>
+    <p class="section-subtitle">Chuck Convis and the North Dakota/Texas Convis line.</p>
+    <div class="coming-soon">Photos coming soon — this section will be populated as family photos are collected and identified.</div>
+  </div>
+
+</div>
+
+<footer>
+  <p>The Thomas &amp; Squires Family History · Compiled by Avery Thomas · April 2026</p>
+  <p style="margin-top:0.5rem;"><a href="index.html">Home</a> · <a href="squires-line.html">Squires Line</a> · <a href="croft-line.html">Croft Line</a> · <a href="full-family-tree.html">Full Family Tree</a> · <a href="file-glossary.html">Site Index</a></p>
+</footer>
+
+</body>
+</html>
