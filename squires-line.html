@@ -71,7 +71,22 @@
     .photo-card { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; }
     .photo-card .photo-placeholder { background: #0c1018; border-bottom: 1px solid var(--border); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 0.4rem; color: var(--muted); font-family: sans-serif; font-size: 0.78rem; text-align: center; padding: 0.5rem; }
     .photo-card .photo-placeholder .slide-ref { font-size: 1.1rem; color: var(--accent-blue); font-weight: bold; }
+    .photo-card { cursor: pointer; transition: border-color 0.2s; }
+    .photo-card:hover { border-color: #5a5a5a; }
     .photo-card img { width: 100%; height: auto; display: block; aspect-ratio: 4/3; object-fit: cover; }
+
+    /* Lightbox */
+    #lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 1000; align-items: center; justify-content: center; }
+    #lightbox.open { display: flex; }
+    #lightbox img { max-width: 90vw; max-height: 88vh; object-fit: contain; border-radius: 2px; box-shadow: 0 0 60px rgba(0,0,0,0.8); user-select: none; }
+    #lightbox-caption { position: fixed; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.85)); color: #ccc; font-family: sans-serif; font-size: 0.88rem; text-align: center; padding: 2rem 2rem 1.2rem; pointer-events: none; }
+    #lightbox-caption .lb-year { color: var(--muted); font-size: 0.78rem; margin-top: 0.2rem; display: block; }
+    .lb-btn { position: fixed; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #fff; font-size: 1.8rem; width: 48px; height: 64px; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 3px; transition: background 0.15s; user-select: none; z-index: 1001; }
+    .lb-btn:hover { background: rgba(255,255,255,0.18); }
+    #lb-prev { left: 1rem; }
+    #lb-next { right: 1rem; }
+    #lb-close { position: fixed; top: 1rem; right: 1rem; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #fff; font-size: 1.4rem; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 3px; transition: background 0.15s; z-index: 1001; }
+    #lb-close:hover { background: rgba(255,255,255,0.18); }
     .photo-card .photo-caption { padding: 0.6rem 0.8rem 0.7rem; font-size: 0.82rem; color: #b0c0d8; font-family: sans-serif; line-height: 1.4; flex: 1; }
     .photo-card .photo-caption .photo-year { color: var(--muted); font-size: 0.77rem; display: block; margin-top: 0.3rem; }
     .photo-section-note { font-size: 0.88rem; color: var(--muted); font-style: italic; margin-bottom: 1rem; }
@@ -283,15 +298,15 @@
     <p class="photo-section-note">A selection of family photos from the collection. View the full gallery for all photos organized by family line.</p>
 
     <div class="photo-gallery">
-      <div class="photo-card">
+      <div class="photo-card" data-src="images/squires/slide_006.jpg" data-caption="The full Squires family — Art, Barbara, Mitchell, Marla, Casey, and Heather." data-year="~1988">
         <img src="images/squires/slide_006.jpg" alt="The full Squires family formal portrait" />
         <div class="photo-caption">The full Squires family — Art, Barbara, Mitchell, Marla, Casey, and Heather.<span class="photo-year">~1988</span></div>
       </div>
-      <div class="photo-card">
+      <div class="photo-card" data-src="images/squires/slide_061.jpg" data-caption="Barbara Squires with Burt Bacharach — backstage during the Southwest Concerts years." data-year="~1970s–80s">
         <img src="images/squires/slide_061.jpg" alt="Barbara Squires with Burt Bacharach" />
         <div class="photo-caption">Barbara Squires with Burt Bacharach — backstage during the Southwest Concerts years.<span class="photo-year">~1970s–80s</span></div>
       </div>
-      <div class="photo-card">
+      <div class="photo-card" data-src="images/squires/slide_120.jpg" data-caption="Barbara and young Heather in front of Art's car with the &quot;ARTS&quot; vanity plate — a Polaroid snapshot." data-year="~1973–74">
         <img src="images/squires/slide_120.jpg" alt="Barbara and young Heather in front of Art's car with ARTS license plate" />
         <div class="photo-caption">Barbara and young Heather in front of Art's car with the "ARTS" vanity plate — a Polaroid snapshot.<span class="photo-year">~1973–74</span></div>
       </div>
@@ -308,6 +323,63 @@
   <p>The Thomas &amp; Squires Family History · Compiled by Avery Thomas · April 2026</p>
   <p style="margin-top:0.5rem;"><a href="index.html">Home</a> · <a href="croft-line.html">Croft Line</a> · <a href="full-family-tree.html">Full Family Tree</a> · <a href="file-glossary.html">Site Index</a></p>
 </footer>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <button class="lb-btn" id="lb-prev">&#8249;</button>
+  <img id="lb-img" src="" alt="" />
+  <button class="lb-btn" id="lb-next">&#8250;</button>
+  <button id="lb-close">&#x2715;</button>
+  <div id="lightbox-caption">
+    <span id="lb-caption-text"></span>
+    <span class="lb-year" id="lb-caption-year"></span>
+  </div>
+</div>
+
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lb-img');
+  const lbCaption = document.getElementById('lb-caption-text');
+  const lbYear = document.getElementById('lb-caption-year');
+  let currentIndex = 0;
+  let currentCards = [];
+
+  function openLightbox(cards, index) {
+    currentCards = cards; currentIndex = index;
+    showSlide(currentIndex);
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function showSlide(index) {
+    const card = currentCards[index];
+    lbImg.src = card.dataset.src;
+    lbImg.alt = card.querySelector('img').alt;
+    lbCaption.textContent = card.dataset.caption;
+    lbYear.textContent = card.dataset.year;
+  }
+  function prev() { currentIndex = (currentIndex - 1 + currentCards.length) % currentCards.length; showSlide(currentIndex); }
+  function next() { currentIndex = (currentIndex + 1) % currentCards.length; showSlide(currentIndex); }
+
+  document.querySelectorAll('.photo-gallery').forEach(gallery => {
+    const cards = Array.from(gallery.querySelectorAll('.photo-card'));
+    cards.forEach((card, i) => card.addEventListener('click', () => openLightbox(cards, i)));
+  });
+
+  document.getElementById('lb-prev').addEventListener('click', e => { e.stopPropagation(); prev(); });
+  document.getElementById('lb-next').addEventListener('click', e => { e.stopPropagation(); next(); });
+  document.getElementById('lb-close').addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', e => { if (e.target === lightbox || e.target === lbImg) closeLightbox(); });
+  document.addEventListener('keydown', e => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') prev();
+    if (e.key === 'ArrowRight') next();
+  });
+</script>
 
 </body>
 </html>
