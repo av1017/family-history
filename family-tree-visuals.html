@@ -204,15 +204,17 @@
     <line id="pl-par-a3"  x1="620" y1="440" x2="620" y2="460" stroke="#c9a84c" stroke-width="1.5"/>
 
     <!-- Great-grandparents lines (hidden by default, shown when expanded) -->
-    <!-- Thomas pair midpoint ≈ 175, Crawley pair ≈ 605 -->
-    <!-- Both converge to Charlotte(270) and JG(510) via horizontal -->
-    <line id="pl-gg-thomas" x1="175" y1="62" x2="175" y2="82"  stroke="#554520" stroke-width="1.5" style="display:none"/>
-    <line id="pl-gg-crawley"x1="605" y1="62" x2="605" y2="82"  stroke="#554520" stroke-width="1.5" style="display:none"/>
-    <line id="pl-gg-h"      x1="175" y1="82" x2="605" y2="82"  stroke="#554520" stroke-width="1.5" style="display:none"/>
-    <line id="pl-gg-jg"     x1="390" y1="82" x2="510" y2="82"  stroke="#554520" stroke-width="1.5" style="display:none"/>
-    <line id="pl-gg-jg2"    x1="510" y1="82" x2="510" y2="110" stroke="#554520" stroke-width="1.5" style="display:none"/>
-    <line id="pl-gg-ch"     x1="390" y1="82" x2="270" y2="82"  stroke="#554520" stroke-width="1.5" style="display:none"/>
-    <line id="pl-gg-ch2"    x1="270" y1="82" x2="270" y2="110" stroke="#554520" stroke-width="1.5" style="display:none"/>
+    <!-- Charlotte(270) parents = Crawley pair, midpoint x=270 -->
+    <!-- JG(510) parents = Thomas pair, midpoint x=510 -->
+    <!-- vertical stems up from each couple midpoint -->
+    <line id="pl-gg-crawley" x1="270" y1="62" x2="270" y2="82"  stroke="#554520" stroke-width="1.5" style="display:none"/>
+    <line id="pl-gg-thomas"  x1="510" y1="62" x2="510" y2="82"  stroke="#554520" stroke-width="1.5" style="display:none"/>
+    <!-- horizontal connecting bar at y=82 -->
+    <line id="pl-gg-h"       x1="270" y1="82" x2="510" y2="82"  stroke="#554520" stroke-width="1.5" style="display:none"/>
+    <!-- drop to Charlotte at x=270 -->
+    <line id="pl-gg-ch"      x1="270" y1="82" x2="270" y2="110" stroke="#554520" stroke-width="1.5" style="display:none"/>
+    <!-- drop to JG at x=510 -->
+    <line id="pl-gg-jg2"     x1="510" y1="82" x2="510" y2="110" stroke="#554520" stroke-width="1.5" style="display:none"/>
 
     <!-- Charlotte siblings lines (to left of Charlotte) -->
     <line id="pl-chsib-h"  x1="30"  y1="175" x2="270" y2="175" stroke="#554520" stroke-width="1.5" style="display:none"/>
@@ -248,27 +250,27 @@
   </div>
 
   <!-- ── GEN 4: Great-grandparents (hidden by default) ── -->
-  <!-- Thomas pair: centered around x=175 → James at 105, Stella at 245 -->
-  <div class="card gold" id="pc-gg-james" style="left:105px; top:0; display:none;">
-    <div class="avatar"><span class="sil">&#9786;</span></div>
-    <div class="cname gold">James Geren Thomas Sr.</div>
-    <div class="cdates">1877–1953</div>
-  </div>
-  <div class="card gold" id="pc-gg-stella" style="left:245px; top:0; display:none;">
-    <div class="avatar"><span class="sil">&#9786;</span></div>
-    <div class="cname gold">Stella Kennard Thomas</div>
-    <div class="cdates">1883–1965</div>
-  </div>
-  <!-- Crawley pair: centered around x=605 → John at 535, Lottie at 675 -->
-  <div class="card gold" id="pc-gg-john" style="left:535px; top:0; display:none;">
+  <!-- Crawley pair (Charlotte's parents): centered around x=270 → John at 200, Lottie at 340 -->
+  <div class="card gold" id="pc-gg-john" style="left:200px; top:0; display:none;">
     <div class="avatar"><span class="sil">&#9786;</span></div>
     <div class="cname gold">John Earl Crawley</div>
     <div class="cdates">1903–1953</div>
   </div>
-  <div class="card gold" id="pc-gg-lottie" style="left:675px; top:0; display:none;">
+  <div class="card gold" id="pc-gg-lottie" style="left:340px; top:0; display:none;">
     <div class="avatar"><span class="sil">&#9786;</span></div>
     <div class="cname gold">Lottie R. Crawley</div>
     <div class="cdates">1902–1991</div>
+  </div>
+  <!-- Thomas pair (JG's parents): centered around x=510 → James at 440, Stella at 580 -->
+  <div class="card gold" id="pc-gg-james" style="left:440px; top:0; display:none;">
+    <div class="avatar"><span class="sil">&#9786;</span></div>
+    <div class="cname gold">James Geren Thomas Sr.</div>
+    <div class="cdates">1877–1953</div>
+  </div>
+  <div class="card gold" id="pc-gg-stella" style="left:580px; top:0; display:none;">
+    <div class="avatar"><span class="sil">&#9786;</span></div>
+    <div class="cname gold">Stella Kennard Thomas</div>
+    <div class="cdates">1883–1965</div>
   </div>
 
   <!-- ── Charlotte's siblings (hidden, to left of Charlotte) ── -->
@@ -542,7 +544,7 @@ function patToggle(key) {
     // Show/hide great-grandparents
     const ids = ['pc-gg-james','pc-gg-stella','pc-gg-john','pc-gg-lottie'];
     ids.forEach(id => document.getElementById(id).style.display = on ? 'flex' : 'none');
-    const lineIds = ['pl-gg-thomas','pl-gg-crawley','pl-gg-h','pl-gg-jg','pl-gg-jg2','pl-gg-ch','pl-gg-ch2'];
+    const lineIds = ['pl-gg-crawley','pl-gg-thomas','pl-gg-h','pl-gg-jg2','pl-gg-ch'];
     lineIds.forEach(id => document.getElementById(id).style.display = on ? '' : 'none');
     // Resize canvas height
     resizePat();
