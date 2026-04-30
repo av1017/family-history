@@ -204,16 +204,13 @@
     <line id="pl-par-a3"  x1="620" y1="440" x2="620" y2="460" stroke="#c9a84c" stroke-width="1.5"/>
 
     <!-- Great-grandparents lines (hidden by default, shown when expanded) -->
-    <!-- Charlotte(270) parents = Crawley pair, midpoint x=270 -->
-    <!-- JG(510) parents = Thomas pair, midpoint x=510 -->
-    <!-- vertical stems up from each couple midpoint -->
+    <!-- Crawley pair (John x=200, Lottie x=340): midpoint x=270 → Charlotte x=270 -->
     <line id="pl-gg-crawley" x1="270" y1="62" x2="270" y2="82"  stroke="#554520" stroke-width="1.5" style="display:none"/>
-    <line id="pl-gg-thomas"  x1="510" y1="62" x2="510" y2="82"  stroke="#554520" stroke-width="1.5" style="display:none"/>
-    <!-- horizontal connecting bar at y=82 -->
-    <line id="pl-gg-h"       x1="270" y1="82" x2="510" y2="82"  stroke="#554520" stroke-width="1.5" style="display:none"/>
-    <!-- drop to Charlotte at x=270 -->
+    <line id="pl-gg-ch-h"    x1="200" y1="82" x2="340" y2="82"  stroke="#554520" stroke-width="1.5" style="display:none"/>
     <line id="pl-gg-ch"      x1="270" y1="82" x2="270" y2="110" stroke="#554520" stroke-width="1.5" style="display:none"/>
-    <!-- drop to JG at x=510 -->
+    <!-- Thomas pair (James x=440, Stella x=580): midpoint x=510 → JG x=510 -->
+    <line id="pl-gg-thomas"  x1="510" y1="62" x2="510" y2="82"  stroke="#554520" stroke-width="1.5" style="display:none"/>
+    <line id="pl-gg-jg-h"    x1="440" y1="82" x2="580" y2="82"  stroke="#554520" stroke-width="1.5" style="display:none"/>
     <line id="pl-gg-jg2"     x1="510" y1="82" x2="510" y2="110" stroke="#554520" stroke-width="1.5" style="display:none"/>
 
     <!-- Charlotte siblings lines (to left of Charlotte) -->
@@ -330,17 +327,17 @@
 
   <!-- ── GEN 1: Avery's generation ── -->
   <!-- Austin=160, Avery=390, Ashley=620 — top=460 -->
-  <div class="card neutral" style="left:160px; top:460px;">
+  <div class="card neutral" id="pc-austin" style="left:160px; top:460px;">
     <div class="avatar"><span class="sil">&#9786;</span></div>
     <div class="cname">Austin Thomas</div>
     <div class="cdates">Living</div>
   </div>
-  <div class="card subject" style="left:390px; top:460px;">
+  <div class="card subject" id="pc-avery" style="left:390px; top:460px;">
     <div class="avatar"><span class="sil">&#9786;</span></div>
     <div class="cname gold">Avery Scott Thomas</div>
     <div class="cdates">b. 1998</div>
   </div>
-  <div class="card neutral" style="left:620px; top:460px;">
+  <div class="card neutral" id="pc-ashley" style="left:620px; top:460px;">
     <div class="avatar"><span class="sil">&#9786;</span></div>
     <div class="cname">Ashley Thomas</div>
     <div class="cdates">Living</div>
@@ -376,13 +373,15 @@
     <line x1="610" y1="440" x2="610" y2="460" stroke="#5b8dc9" stroke-width="1.5"/>
 
     <!-- Great-grandparents lines (hidden) -->
-    <!-- Squires pair mid=140, Croft pair mid=620 → converge to Art(270) and Barbara(490) -->
+    <!-- Squires pair (Harry x=70, Eleanor x=210): midpoint x=140 → Art x=270 -->
     <line id="ml-gg-sq"    x1="140" y1="62"  x2="140" y2="82"  stroke="#1e3050" stroke-width="1.5" style="display:none"/>
-    <line id="ml-gg-cr"    x1="620" y1="62"  x2="620" y2="82"  stroke="#1e3050" stroke-width="1.5" style="display:none"/>
-    <line id="ml-gg-h"     x1="140" y1="82"  x2="620" y2="82"  stroke="#1e3050" stroke-width="1.5" style="display:none"/>
-    <line id="ml-gg-art"   x1="380" y1="82"  x2="270" y2="82"  stroke="#1e3050" stroke-width="1.5" style="display:none"/>
+    <line id="ml-gg-sq-h"  x1="70"  y1="82"  x2="210" y2="82"  stroke="#1e3050" stroke-width="1.5" style="display:none"/>
+    <line id="ml-gg-sq-c"  x1="140" y1="82"  x2="270" y2="82"  stroke="#1e3050" stroke-width="1.5" style="display:none"/>
     <line id="ml-gg-art2"  x1="270" y1="82"  x2="270" y2="110" stroke="#1e3050" stroke-width="1.5" style="display:none"/>
-    <line id="ml-gg-bar"   x1="380" y1="82"  x2="490" y2="82"  stroke="#1e3050" stroke-width="1.5" style="display:none"/>
+    <!-- Croft pair (Jack x=550, Mollie x=690): midpoint x=620 → Barbara x=490 -->
+    <line id="ml-gg-cr"    x1="620" y1="62"  x2="620" y2="82"  stroke="#1e3050" stroke-width="1.5" style="display:none"/>
+    <line id="ml-gg-cr-h"  x1="550" y1="82"  x2="690" y2="82"  stroke="#1e3050" stroke-width="1.5" style="display:none"/>
+    <line id="ml-gg-cr-c"  x1="490" y1="82"  x2="620" y2="82"  stroke="#1e3050" stroke-width="1.5" style="display:none"/>
     <line id="ml-gg-bar2"  x1="490" y1="82"  x2="490" y2="110" stroke="#1e3050" stroke-width="1.5" style="display:none"/>
 
     <!-- Art sibling Irving (to left of Art) -->
@@ -544,7 +543,7 @@ function patToggle(key) {
     // Show/hide great-grandparents
     const ids = ['pc-gg-james','pc-gg-stella','pc-gg-john','pc-gg-lottie'];
     ids.forEach(id => document.getElementById(id).style.display = on ? 'flex' : 'none');
-    const lineIds = ['pl-gg-crawley','pl-gg-thomas','pl-gg-h','pl-gg-jg2','pl-gg-ch'];
+    const lineIds = ['pl-gg-crawley','pl-gg-thomas','pl-gg-ch','pl-gg-jg2','pl-gg-ch-h','pl-gg-jg-h'];
     lineIds.forEach(id => document.getElementById(id).style.display = on ? '' : 'none');
     // Resize canvas height
     resizePat();
@@ -568,6 +567,7 @@ function patToggle(key) {
   if (key === 'mb-kids') {
     ['pc-kyle','pc-david'].forEach(id => document.getElementById(id).style.display = on ? 'flex' : 'none');
     ['pl-mb-mid','pl-mb-h','pl-mb-v1','pl-mb-v2'].forEach(id => document.getElementById(id).style.display = on ? '' : 'none');
+    resizePatMBKids();
   }
 }
 
@@ -576,52 +576,81 @@ function patToggleHide(key) {
   ['pc-kyle','pc-david'].forEach(id => document.getElementById(id).style.display = 'none');
   ['pl-mb-mid','pl-mb-h','pl-mb-v1','pl-mb-v2'].forEach(id => document.getElementById(id).style.display = 'none');
   updateBtns('paternal', key, false);
+  resizePatMBKids();
 }
 
 function resizePat() {
-  // Grow canvas height when great-grandparents shown
-  const on = patState['gg'];
-  const canvas = document.getElementById('pat-canvas');
-  const svg    = document.getElementById('pat-svg');
-  const newH   = on ? 660 : 560;
-  canvas.style.height = newH + 'px';
-  svg.setAttribute('height', newH);
+  const ggShift = patState['gg'] ? 100 : 0;
+  const canvas  = document.getElementById('pat-canvas');
+  const svg     = document.getElementById('pat-svg');
 
-  // Shift all existing cards down by 100px when GG shown
-  const shift = on ? 100 : 0;
-  // Store original tops on first run
+  // Shift all cards except bottom gen (bottom gen handled by resizePatMBKids)
+  const bottomGenIds = new Set(['pc-austin','pc-avery','pc-ashley']);
   canvas.querySelectorAll('.card').forEach(card => {
-    if (!card.dataset.baseTop) {
-      card.dataset.baseTop = parseInt(card.style.top);
-    }
-    const base = parseInt(card.dataset.baseTop);
-    card.style.top = (base + shift) + 'px';
+    if (bottomGenIds.has(card.id)) return;
+    if (!card.dataset.baseTop) card.dataset.baseTop = parseInt(card.style.top);
+    card.style.top = (parseInt(card.dataset.baseTop) + ggShift) + 'px';
   });
 
-  // Reposition SVG lines that depend on card positions
-  const dy = shift;
+  // SVG lines that shift only with GG expansion
+  const dy = ggShift;
   function setY(id, attr, val) {
     const el = document.getElementById(id);
     if (el) el.setAttribute(attr, val + dy);
   }
-  setY('pl-gp-mid',  'y1', 220); setY('pl-gp-mid',  'y2', 240);
-  setY('pl-gp-h',    'y1', 240); setY('pl-gp-h',    'y2', 240);
-  setY('pl-gp-sc',   'y1', 240); setY('pl-gp-sc',   'y2', 280);
-  setY('pl-gp-he',   'y1', 240); setY('pl-gp-he',   'y2', 280);
-  setY('pl-par-mid', 'y1', 420); setY('pl-par-mid', 'y2', 440);
-  setY('pl-par-h',   'y1', 440); setY('pl-par-h',   'y2', 440);
-  setY('pl-par-a1',  'y1', 440); setY('pl-par-a1',  'y2', 460);
-  setY('pl-par-a2',  'y1', 440); setY('pl-par-a2',  'y2', 460);
-  setY('pl-par-a3',  'y1', 440); setY('pl-par-a3',  'y2', 460);
-  setY('pl-chsib-h', 'y1', 175); setY('pl-chsib-h', 'y2', 175);
-  setY('pl-chsib-v1','y1', 155); setY('pl-chsib-v1','y2', 175);
-  setY('pl-chsib-v2','y1', 155); setY('pl-chsib-v2','y2', 175);
-  setY('pl-scsib-v', 'y1', 290); setY('pl-scsib-v', 'y2', 355);
-  setY('pl-scsib-h', 'y1', 355); setY('pl-scsib-h', 'y2', 355);
-  setY('pl-mb-mid',  'y1', 400); setY('pl-mb-mid',  'y2', 415);
-  setY('pl-mb-h',    'y1', 415); setY('pl-mb-h',    'y2', 415);
-  setY('pl-mb-v1',   'y1', 415); setY('pl-mb-v1',   'y2', 430);
-  setY('pl-mb-v2',   'y1', 415); setY('pl-mb-v2',   'y2', 430);
+  setY('pl-gg-crawley','y1', 62);  setY('pl-gg-crawley','y2', 82);
+  setY('pl-gg-ch-h',   'y1', 82);  setY('pl-gg-ch-h',   'y2', 82);
+  setY('pl-gg-ch',     'y1', 82);  setY('pl-gg-ch',     'y2', 110);
+  setY('pl-gg-thomas', 'y1', 62);  setY('pl-gg-thomas', 'y2', 82);
+  setY('pl-gg-jg-h',   'y1', 82);  setY('pl-gg-jg-h',   'y2', 82);
+  setY('pl-gg-jg2',    'y1', 82);  setY('pl-gg-jg2',    'y2', 110);
+  setY('pl-gp-mid',    'y1', 220); setY('pl-gp-mid',    'y2', 240);
+  setY('pl-gp-h',      'y1', 240); setY('pl-gp-h',      'y2', 240);
+  setY('pl-gp-sc',     'y1', 240); setY('pl-gp-sc',     'y2', 280);
+  setY('pl-gp-he',     'y1', 240); setY('pl-gp-he',     'y2', 280);
+  setY('pl-chsib-h',   'y1', 175); setY('pl-chsib-h',   'y2', 175);
+  setY('pl-chsib-v1',  'y1', 155); setY('pl-chsib-v1',  'y2', 175);
+  setY('pl-chsib-v2',  'y1', 155); setY('pl-chsib-v2',  'y2', 175);
+  setY('pl-scsib-v',   'y1', 290); setY('pl-scsib-v',   'y2', 355);
+  setY('pl-scsib-h',   'y1', 355); setY('pl-scsib-h',   'y2', 355);
+
+  // Delegate bottom gen + connecting lines to resizePatMBKids
+  resizePatMBKids();
+}
+
+function resizePatMBKids() {
+  const ggShift = patState['gg'] ? 100 : 0;
+  const mbShift = patState['mb-kids'] ? 120 : 0;
+  const canvas  = document.getElementById('pat-canvas');
+  const svg     = document.getElementById('pat-svg');
+
+  // Canvas height: base 560 + GG expansion + MB-kids expansion
+  canvas.style.height = (560 + ggShift + mbShift) + 'px';
+  svg.setAttribute('height', 560 + ggShift + mbShift);
+
+  // Bottom gen always lives at base=460; their total shift = ggShift + mbShift
+  const gen1Top = 460 + ggShift + mbShift;
+  ['pc-austin','pc-avery','pc-ashley'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.top = gen1Top + 'px';
+  });
+
+  // GEN2→GEN1 connector lines shift by ggShift + mbShift from base positions
+  const dy = ggShift + mbShift;
+  function setY2(id, attr, base) {
+    const el = document.getElementById(id);
+    if (el) el.setAttribute(attr, base + dy);
+  }
+  setY2('pl-par-mid','y1', 420); setY2('pl-par-mid','y2', 440);
+  setY2('pl-par-h',  'y1', 440); setY2('pl-par-h',  'y2', 440);
+  setY2('pl-par-a1', 'y1', 440); setY2('pl-par-a1', 'y2', 460);
+  setY2('pl-par-a2', 'y1', 440); setY2('pl-par-a2', 'y2', 460);
+  setY2('pl-par-a3', 'y1', 440); setY2('pl-par-a3', 'y2', 460);
+  // Mary Beth children connector lines (base positions)
+  setY2('pl-mb-mid', 'y1', 400); setY2('pl-mb-mid', 'y2', 415);
+  setY2('pl-mb-h',   'y1', 415); setY2('pl-mb-h',   'y2', 415);
+  setY2('pl-mb-v1',  'y1', 415); setY2('pl-mb-v1',  'y2', 430);
+  setY2('pl-mb-v2',  'y1', 415); setY2('pl-mb-v2',  'y2', 430);
 }
 
 /* ── Maternal toggles ─────────────────────────────────── */
@@ -636,7 +665,7 @@ function matToggle(key) {
   if (key === 'gg') {
     ['mc-harry','mc-eleanor','mc-jack','mc-mollie'].forEach(id =>
       document.getElementById(id).style.display = on ? 'flex' : 'none');
-    ['ml-gg-sq','ml-gg-cr','ml-gg-h','ml-gg-art','ml-gg-art2','ml-gg-bar','ml-gg-bar2'].forEach(id =>
+    ['ml-gg-sq','ml-gg-sq-h','ml-gg-sq-c','ml-gg-art2','ml-gg-cr','ml-gg-cr-h','ml-gg-cr-c','ml-gg-bar2'].forEach(id =>
       document.getElementById(id).style.display = on ? '' : 'none');
     resizeMat();
   }
@@ -671,6 +700,20 @@ function resizeMat() {
     if (!card.dataset.baseTop) card.dataset.baseTop = parseInt(card.style.top);
     card.style.top = (parseInt(card.dataset.baseTop) + shift) + 'px';
   });
+
+  const dy = shift;
+  function setYm(id, attr, val) {
+    const el = document.getElementById(id);
+    if (el) el.setAttribute(attr, val + dy);
+  }
+  setYm('ml-gg-sq',   'y1', 62);  setYm('ml-gg-sq',   'y2', 82);
+  setYm('ml-gg-sq-h', 'y1', 82);  setYm('ml-gg-sq-h', 'y2', 82);
+  setYm('ml-gg-sq-c', 'y1', 82);  setYm('ml-gg-sq-c', 'y2', 82);
+  setYm('ml-gg-art2', 'y1', 82);  setYm('ml-gg-art2', 'y2', 110);
+  setYm('ml-gg-cr',   'y1', 62);  setYm('ml-gg-cr',   'y2', 82);
+  setYm('ml-gg-cr-h', 'y1', 82);  setYm('ml-gg-cr-h', 'y2', 82);
+  setYm('ml-gg-cr-c', 'y1', 82);  setYm('ml-gg-cr-c', 'y2', 82);
+  setYm('ml-gg-bar2', 'y1', 82);  setYm('ml-gg-bar2', 'y2', 110);
 }
 
 /* ── Generic button label updater ─────────────────────── */
