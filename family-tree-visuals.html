@@ -9,22 +9,21 @@
       --bg: #0f0f0f;
       --surface: #1a1a1a;
       --border: #2e2e2e;
-      --accent: #c9a84c;
+      --gold: #c9a84c;
+      --gold-dim: #6b5520;
+      --blue: #5b8dc9;
+      --blue-dim: #2a4a70;
       --text: #e0d8cc;
       --muted: #888;
-      --gold: #c9a84c;
-      --gold-dim: #554520;
-      --blue: #5b8dc9;
-      --blue-dim: #1e3050;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: var(--bg); color: var(--text); font-family: Georgia, serif; font-size: 16px; }
+    body { background: var(--bg); color: var(--text); font-family: Georgia, serif; }
 
     /* ── Nav ── */
     .site-nav {
-      background: #111; border-bottom: 2px solid var(--accent);
+      background: #111; border-bottom: 2px solid var(--gold);
       padding: 0.7rem 2rem; display: flex; flex-wrap: wrap;
-      gap: 0.4rem 0; justify-content: center; position: sticky; top: 0; z-index: 200;
+      gap: 0.4rem 0; justify-content: center; position: sticky; top: 0; z-index: 300;
     }
     .site-nav a {
       color: var(--muted); text-decoration: none; font-size: 0.82rem;
@@ -32,8 +31,7 @@
       padding: 0.3rem 1rem; border-right: 1px solid #2a2a2a; transition: color 0.2s;
     }
     .site-nav a:last-child { border-right: none; }
-    .site-nav a:hover { color: var(--accent); }
-    .site-nav a.active { color: var(--accent); }
+    .site-nav a:hover, .site-nav a.active { color: var(--gold); }
     .nav-divider {
       color: #444; font-size: 0.72rem; font-family: sans-serif; letter-spacing: 1px;
       text-transform: uppercase; padding: 0.3rem 0.5rem 0.3rem 1.2rem;
@@ -43,125 +41,138 @@
     /* ── Header ── */
     .page-header {
       background: linear-gradient(160deg, #1a1208 0%, #0a0a14 55%, #0f0f0f 100%);
-      border-bottom: 2px solid var(--accent);
-      padding: 3rem 2rem 2rem; text-align: center;
+      border-bottom: 2px solid var(--gold);
+      padding: 2.5rem 2rem 1.8rem; text-align: center;
     }
-    .page-header h1 { font-size: 2rem; color: var(--accent); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 0.3rem; }
-    .page-header p { color: var(--muted); font-style: italic; font-size: 0.95rem; }
+    .page-header h1 { font-size: 1.9rem; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 0.3rem; }
+    .page-header p { color: var(--muted); font-style: italic; font-size: 0.9rem; }
 
     /* ── Legend ── */
     .legend {
-      display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;
-      padding: 1.2rem 1rem 0.5rem; font-family: sans-serif; font-size: 0.72rem; color: var(--muted);
+      display: flex; gap: 1.4rem; justify-content: center; flex-wrap: wrap;
+      padding: 1rem 1rem 0.6rem; font-family: sans-serif; font-size: 0.72rem; color: var(--muted);
     }
     .legend-item { display: flex; align-items: center; gap: 0.4rem; }
-    .legend-dot { width: 10px; height: 10px; border-radius: 50%; border: 2px solid; }
-    .legend-dot.gold    { border-color: var(--gold); }
-    .legend-dot.blue    { border-color: var(--blue); }
-    .legend-dot.subject { border-color: var(--gold); box-shadow: 0 0 6px rgba(201,168,76,0.5); }
-    .legend-dot.neutral { border-color: #555; }
+    .leg-dot { width: 10px; height: 10px; border-radius: 50%; border: 2px solid; flex-shrink: 0; }
+    .leg-dot.gold    { border-color: var(--gold); }
+    .leg-dot.blue    { border-color: var(--blue); }
+    .leg-dot.subject { border-color: var(--gold); box-shadow: 0 0 6px rgba(201,168,76,0.55); }
+    .leg-dot.neutral { border-color: #555; }
 
-    /* ── Tree viewport ── */
-    .tree-viewport {
-      overflow-x: auto; overflow-y: visible;
-      padding: 2rem 2rem 3rem;
+    /* ── Scroll container (SVG lives here as absolute overlay) ── */
+    .tree-scroll {
+      overflow-x: auto;
+      overflow-y: visible;
+      padding: 2rem 3rem 4rem;
       -webkit-overflow-scrolling: touch;
     }
 
-    /* ── Tree: vertical stack of generation rows ── */
-    .tree-root {
-      position: relative; /* SVG overlay sits here */
-      display: inline-flex; /* shrink-wrap to content width */
-      flex-direction: column-reverse; /* row 0 = bottom */
-      align-items: center;
-      gap: 0;
-      min-width: 100%;
-    }
-
-    /* Each generation row */
-    .gen-row {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: flex-end; /* cards bottom-align so connectors land at card top */
-      gap: 0;
-      width: 100%;
+    /* ── Tree root: the relative container SVG overlays ── */
+    #tree {
       position: relative;
-      z-index: 2;
+      display: inline-flex;       /* shrink-wrap to content width */
+      flex-direction: column;     /* top = ancestors, bottom = Avery */
+      align-items: center;
+      gap: 0px;                   /* row spacing handled by padding-bottom on each row */
+      min-width: max-content;
     }
 
-    /* Spacer between groups within a row */
-    .row-gap { width: 40px; flex-shrink: 0; }
-    /* Tighter gap between couple pairs */
-    .couple-gap { width: 16px; flex-shrink: 0; }
-
-    /* Row padding gives room for connector lines between rows */
-    .gen-row { padding-bottom: 56px; }
-    .gen-row:last-child { padding-bottom: 0; } /* topmost row needs no bottom pad */
-
-    /* ── Person card ── */
-    .card {
-      display: flex; flex-direction: column; align-items: center;
-      width: 108px; text-align: center; flex-shrink: 0;
-    }
-
-    .avatar {
-      width: 68px; height: 68px; border-radius: 50%;
-      border: 2px solid #333; background: #1c1c1c;
-      display: flex; align-items: center; justify-content: center;
-      overflow: hidden; flex-shrink: 0;
-    }
-    .avatar img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
-    .avatar .sil { font-size: 2rem; color: #3a3a3a; line-height: 1; margin-top: 4px; }
-
-    .card.gold    .avatar { border-color: var(--gold); }
-    .card.blue    .avatar { border-color: var(--blue); }
-    .card.subject .avatar { border-color: var(--gold); box-shadow: 0 0 14px rgba(201,168,76,0.4); }
-    .card.neutral .avatar { border-color: #555; }
-
-    .cname {
-      margin-top: 0.3rem; font-family: sans-serif; font-size: 0.63rem;
-      font-weight: 700; line-height: 1.25; color: var(--text);
-    }
-    .cname.gold { color: var(--gold); }
-    .cname.blue { color: var(--blue); }
-    .cdates { font-family: sans-serif; font-size: 0.56rem; color: var(--muted); margin-top: 0.1rem; }
-    .cnote  { font-family: sans-serif; font-size: 0.54rem; font-style: italic; color: #666; margin-top: 0.1rem; }
-
-    /* ── Expand button ── */
-    .xbtn {
-      margin-top: 0.35rem;
-      background: none; border: 1px solid #383838; border-radius: 3px;
-      color: #666; font-size: 0.55rem; font-family: sans-serif;
-      padding: 0.1rem 0.35rem; cursor: pointer;
-      transition: border-color 0.2s, color 0.2s;
-      white-space: nowrap; line-height: 1.4;
-    }
-    .xbtn:hover       { border-color: var(--gold); color: var(--gold); }
-    .xbtn.blue-style:hover { border-color: var(--blue); color: var(--blue); }
-    .xbtn.active      { border-color: var(--gold); color: var(--gold); }
-    .xbtn.active.blue-style { border-color: var(--blue); color: var(--blue); }
-
-    /* ── SVG connector overlay ── */
+    /* ── SVG overlay ── */
     #tree-svg {
       position: absolute;
       top: 0; left: 0;
-      width: 100%; height: 100%;
       pointer-events: none;
       z-index: 1;
       overflow: visible;
     }
 
-    /* ── Hidden cards (siblings, collateral) ── */
-    .card.hidden { display: none; }
+    /* ── Generation row ── */
+    .gen-row {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;   /* cards top-align within a row */
+      justify-content: center;
+      gap: 0px;
+      position: relative;
+      z-index: 2;
+      padding-bottom: 64px;      /* space for connector lines between rows */
+      width: 100%;
+    }
+    /* Last row has no connector below it */
+    .gen-row:last-child { padding-bottom: 0; }
+
+    /* ── Spacers ── */
+    .gap-sm  { width: 14px;  flex-shrink: 0; }  /* between couple */
+    .gap-med { width: 32px;  flex-shrink: 0; }  /* between families in same row */
+    .gap-lg  { width: 56px;  flex-shrink: 0; }  /* between paternal and maternal sides */
+
+    /* ── Person card ── */
+    .card {
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .avatar {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      border: 2px solid #333;
+      background: #1c1c1c;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden; flex-shrink: 0;
+    }
+    .avatar img  { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+    .avatar .sil { font-size: 1.9rem; color: #383838; line-height: 1; margin-top: 4px; }
+
+    .card.gold    .avatar { border-color: var(--gold); }
+    .card.blue    .avatar { border-color: var(--blue); }
+    .card.subject .avatar { border-color: var(--gold); box-shadow: 0 0 16px rgba(201,168,76,0.4); }
+    .card.neutral .avatar { border-color: #555; }
+    .card.dim     .avatar { border-color: #444; opacity: 0.75; }
+
+    .cname  { margin-top: 0.28rem; font-family: sans-serif; font-size: 0.6rem; font-weight: 700; line-height: 1.3; }
+    .cname.gold { color: var(--gold); }
+    .cname.blue { color: var(--blue); }
+    .cname.plain { color: var(--text); }
+    .cdates { font-family: sans-serif; font-size: 0.55rem; color: var(--muted); margin-top: 0.1rem; }
+    .cnote  { font-family: sans-serif; font-size: 0.52rem; font-style: italic; color: #666; margin-top: 0.08rem; line-height: 1.3; }
+
+    /* ── Expand button ── */
+    .xbtn {
+      margin-top: 0.3rem;
+      background: none;
+      border: 1px solid #383838;
+      border-radius: 3px;
+      color: #666;
+      font-size: 0.54rem;
+      font-family: sans-serif;
+      padding: 0.12rem 0.38rem;
+      cursor: pointer;
+      transition: border-color 0.18s, color 0.18s;
+      white-space: nowrap;
+      line-height: 1.5;
+      display: block;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .xbtn + .xbtn { margin-top: 0.18rem; }
+    .xbtn:hover        { border-color: var(--gold); color: var(--gold); }
+    .xbtn.blue:hover   { border-color: var(--blue); color: var(--blue); }
+    .xbtn.on           { border-color: var(--gold); color: var(--gold); }
+    .xbtn.blue.on      { border-color: var(--blue); color: var(--blue); }
 
     /* ── Footer ── */
     footer {
       border-top: 1px solid var(--border); text-align: center;
-      padding: 2rem; font-size: 0.8rem; color: #444; font-family: sans-serif; margin-top: 2rem;
+      padding: 2rem; font-size: 0.8rem; color: #444;
+      font-family: sans-serif; margin-top: 2rem;
     }
     footer a { color: var(--muted); text-decoration: none; }
-    footer a:hover { color: var(--accent); }
+    footer a:hover { color: var(--gold); }
   </style>
 </head>
 <body>
@@ -188,313 +199,236 @@
 
 <div class="page-header">
   <h1>Visual Family Tree</h1>
-  <p>Click any ↑ button to reveal ancestors &nbsp;·&nbsp; Click ↔ to reveal siblings &amp; relatives</p>
+  <p>↑ expand ancestors &nbsp;·&nbsp; ↔ expand siblings &amp; relatives &nbsp;·&nbsp; ↓ expand children</p>
 </div>
 
 <div class="legend">
-  <span class="legend-item"><span class="legend-dot subject"></span> Avery (subject)</span>
-  <span class="legend-item"><span class="legend-dot gold"></span> Paternal line</span>
-  <span class="legend-item"><span class="legend-dot blue"></span> Maternal line</span>
-  <span class="legend-item"><span class="legend-dot neutral"></span> Living / in-law</span>
+  <span class="legend-item"><span class="leg-dot subject"></span> Avery</span>
+  <span class="legend-item"><span class="leg-dot gold"></span> Paternal</span>
+  <span class="legend-item"><span class="leg-dot blue"></span> Maternal</span>
+  <span class="legend-item"><span class="leg-dot neutral"></span> Living / in-law</span>
 </div>
 
-<div class="tree-viewport">
-<div class="tree-root" id="tree-root">
+<div class="tree-scroll">
+  <div id="tree">
+    <svg id="tree-svg"></svg>
 
-  <!-- SVG drawn by JS -->
-  <svg id="tree-svg" aria-hidden="true"></svg>
+    <!--
+      ROW ORDER IN DOM (top → bottom):
+        row-gg   — great-grandparents (injected when expanded, removed when collapsed)
+        row-gp   — grandparents  [DEFAULT VISIBLE]
+        row-par  — parents       [DEFAULT VISIBLE]
+        row-gen1 — Avery's gen   [DEFAULT VISIBLE]
+    -->
 
-  <!--
-    Generation rows, bottom = row 0 (Avery), top = row 4 (great-grandparents).
-    column-reverse on .tree-root means the DOM order here (row4 first) renders
-    row0 at the bottom visually.
-  -->
+    <!-- ══════════════════════════════════════
+         ROW: Grandparents
+    ══════════════════════════════════════ -->
+    <div class="gen-row" id="row-gp">
 
-  <!-- ═══════════════════════════════════════
-       ROW 4 — Great-grandparents (hidden until expanded)
-  ═══════════════════════════════════════ -->
-  <div class="gen-row" id="row-gg" style="display:none;">
-
-    <!-- Crawley pair (Charlotte's parents) -->
-    <div class="card gold hidden" id="c-john-crawley">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname gold">John Earl Crawley</div>
-      <div class="cdates">1903–1953</div>
-    </div>
-    <div class="couple-gap"></div>
-    <div class="card gold hidden" id="c-lottie-crawley">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname gold">Lottie R. Crawley</div>
-      <div class="cdates">1902–1991</div>
-    </div>
-
-    <div class="row-gap"></div>
-    <div class="row-gap"></div>
-
-    <!-- Thomas pair (JG's parents) -->
-    <div class="card gold hidden" id="c-james-thomas-sr">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname gold">James Geren Thomas Sr.</div>
-      <div class="cdates">1877–1953</div>
-    </div>
-    <div class="couple-gap"></div>
-    <div class="card gold hidden" id="c-stella-kennard">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname gold">Stella Kennard Thomas</div>
-      <div class="cdates">1883–1965</div>
-    </div>
-
-    <div class="row-gap"></div>
-    <div class="row-gap"></div>
-    <div class="row-gap"></div>
-
-    <!-- Squires pair (Art's parents) -->
-    <div class="card blue hidden" id="c-harry-squires">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname blue">Harry D. Skversky / Squires</div>
-      <div class="cdates">1897–1963</div>
-      <div class="cnote">né Skversky</div>
-    </div>
-    <div class="couple-gap"></div>
-    <div class="card blue hidden" id="c-eleanor-yampolsky">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname blue">Eleanor Yampolsky</div>
-      <div class="cdates">b. 1903</div>
-    </div>
-
-    <div class="row-gap"></div>
-    <div class="row-gap"></div>
-
-    <!-- Croft pair (Barbara's parents) -->
-    <div class="card blue hidden" id="c-jack-croft">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname blue">Jack Croft</div>
-      <div class="cdates">1903–1982</div>
-    </div>
-    <div class="couple-gap"></div>
-    <div class="card blue hidden" id="c-mollie-croft">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname blue">Mollie K. Krafcheck Croft</div>
-      <div class="cdates">1905–1947</div>
-    </div>
-
-  </div><!-- /row-gg -->
-
-
-  <!-- ═══════════════════════════════════════
-       ROW 3 — Grandparents
-  ═══════════════════════════════════════ -->
-  <div class="gen-row" id="row-gp">
-
-    <!-- Charlotte's siblings (hidden) -->
-    <div class="card gold hidden" id="c-jim-crawley">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname gold">James B. "Jim" Crawley</div>
-      <div class="cdates">1926–2023</div>
-      <div class="cnote">m. Mary Colby Williamson</div>
-    </div>
-    <div class="couple-gap hidden sib-gap-ch"></div>
-    <div class="card gold hidden" id="c-mary-anne-crawley">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname gold">Mary Anne Crawley</div>
-      <div class="cdates">1929–2021</div>
-      <div class="cnote">m. Charles L. Convis</div>
-    </div>
-    <div class="row-gap hidden sib-gap-ch"></div>
-
-    <!-- Charlotte -->
-    <div class="card gold" id="c-charlotte">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname gold">Charlotte Lucille Crawley</div>
-      <div class="cdates">b. 1931</div>
-      <button class="xbtn" id="btn-gg-pat" onclick="toggleGGPat()">↑ parents</button>
-      <button class="xbtn" style="margin-top:0.15rem;" id="btn-chsib" onclick="toggleChSib()">↔ siblings</button>
-    </div>
-
-    <div class="couple-gap"></div>
-
-    <!-- JG -->
-    <div class="card gold" id="c-jg">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname gold">James Gary Thomas Jr. "JG"</div>
-      <div class="cdates">1924–2016</div>
-    </div>
-
-    <div class="row-gap"></div>
-    <div class="row-gap"></div>
-    <div class="row-gap"></div>
-
-    <!-- Art -->
-    <div class="card blue" id="c-art">
-      <div class="avatar">
-        <img src="images/squires/slide_094.jpg" alt="Art Squires" loading="lazy"/>
+      <!-- Charlotte's siblings (hidden by default) -->
+      <div class="card gold" id="c-jim-crawley" style="display:none">
+        <div class="avatar"><span class="sil">&#9786;</span></div>
+        <div class="cname gold">James B. "Jim" Crawley</div>
+        <div class="cdates">1926–2023</div>
+        <div class="cnote">m. Mary Colby Williamson</div>
       </div>
-      <div class="cname blue">Arthur "Art" Squires</div>
-      <div class="cdates">1933–2022</div>
-      <div class="cnote">"Poppi"</div>
-      <button class="xbtn blue-style" id="btn-gg-mat" onclick="toggleGGMat()">↑ parents</button>
-      <button class="xbtn blue-style" style="margin-top:0.15rem;" id="btn-artsib" onclick="toggleArtSib()">↔ sibling</button>
-    </div>
-
-    <div class="couple-gap"></div>
-
-    <!-- Barbara -->
-    <div class="card blue" id="c-barbara">
-      <div class="avatar">
-        <img src="images/squires/slide_084.jpg" alt="Barbara Croft Squires" loading="lazy"/>
+      <div class="gap-sm" id="gap-chsib-2" style="display:none"></div>
+      <div class="card gold" id="c-mary-anne" style="display:none">
+        <div class="avatar"><span class="sil">&#9786;</span></div>
+        <div class="cname gold">Mary Anne Crawley</div>
+        <div class="cdates">1929–2021</div>
+        <div class="cnote">m. Charles L. Convis</div>
       </div>
-      <div class="cname blue">Barbara Croft Squires</div>
-      <div class="cdates">1936–2025</div>
-      <div class="cnote">"Mimi"</div>
-      <button class="xbtn blue-style" id="btn-barsib" onclick="toggleBarSib()">↔ siblings</button>
-    </div>
+      <div class="gap-med" id="gap-chsib-1" style="display:none"></div>
 
-    <!-- Barbara's siblings (hidden) -->
-    <div class="row-gap hidden sib-gap-bar"></div>
-    <div class="card blue hidden" id="c-evelyn-laviage">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname blue">Evelyn Croft Laviage</div>
-      <div class="cdates">b. 1929</div>
-    </div>
-    <div class="couple-gap hidden sib-gap-bar"></div>
-    <div class="card blue hidden" id="c-kenneth-croft">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname blue">Kenneth Croft</div>
-      <div class="cdates">1938–2021</div>
-    </div>
-
-    <!-- Art's sibling (hidden) — appears between Art and Barbara siblings -->
-    <!-- Irving hidden, placed logically between art and barbara siblings group -->
-    <!-- We inject Irving just after art's gap via JS toggle; kept here for DOM order -->
-    <div class="row-gap hidden sib-gap-art" id="gap-art-irving"></div>
-    <div class="card blue hidden" id="c-irving-squires">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname blue">Irving Squires</div>
-      <div class="cdates">1923–2002</div>
-    </div>
-
-  </div><!-- /row-gp -->
-
-
-  <!-- ═══════════════════════════════════════
-       ROW 2 — Parents
-  ═══════════════════════════════════════ -->
-  <div class="gen-row" id="row-par">
-
-    <!-- Mary Beth (Scott's sibling, hidden) -->
-    <div class="card gold hidden" id="c-marybeth">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname gold">Mary Beth Thomas Reidy</div>
-      <div class="cdates">b. 1957</div>
-      <div class="cnote">m. John B. Reidy</div>
-      <button class="xbtn" id="btn-mbkids" onclick="toggleMBKids()">↓ children</button>
-    </div>
-    <div class="row-gap hidden sib-gap-sc" id="gap-sc-sib"></div>
-
-    <!-- Scott -->
-    <div class="card gold" id="c-scott">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname gold">Michael Scott Thomas</div>
-      <div class="cdates">b. 1961</div>
-      <div class="cnote">"Scott"</div>
-      <button class="xbtn" id="btn-scsib" onclick="toggleScSib()">↔ sibling</button>
-    </div>
-
-    <div class="couple-gap"></div>
-
-    <!-- Heather -->
-    <div class="card blue" id="c-heather">
-      <div class="avatar">
-        <img src="images/squires/slide_076.jpg" alt="Heather Squires Thomas" loading="lazy"/>
+      <!-- Charlotte -->
+      <div class="card gold" id="c-charlotte">
+        <div class="avatar"><span class="sil">&#9786;</span></div>
+        <div class="cname gold">Charlotte Lucille Crawley</div>
+        <div class="cdates">b. 1931</div>
+        <button class="xbtn" id="btn-gg-pat" onclick="toggleGGPat()">↑ parents</button>
+        <button class="xbtn" id="btn-chsib"  onclick="toggleChSib()">↔ siblings</button>
       </div>
-      <div class="cname blue">Heather Denise Squires</div>
-      <div class="cdates">b. 1963</div>
-      <div class="cnote">m. Scott Thomas</div>
-    </div>
 
-    <div class="row-gap"></div>
+      <div class="gap-sm"></div>
 
-    <!-- Mitchell (Heather's brother) -->
-    <div class="card blue" id="c-mitchell">
-      <div class="avatar">
-        <img src="images/squires/slide_006.jpg" alt="Mitchell Squires" loading="lazy"/>
+      <!-- JG -->
+      <div class="card gold" id="c-jg">
+        <div class="avatar"><span class="sil">&#9786;</span></div>
+        <div class="cname gold">James Gary Thomas Jr. "JG"</div>
+        <div class="cdates">1924–2016</div>
       </div>
-      <div class="cname blue">Mitchell Squires</div>
-      <div class="cdates">Living</div>
-      <div class="cnote">m. Marla</div>
-      <button class="xbtn blue-style" id="btn-mitchkids" onclick="toggleMitchKids()">↓ children</button>
-    </div>
 
-  </div><!-- /row-par -->
+      <div class="gap-lg"></div>
+
+      <!-- Art -->
+      <div class="card blue" id="c-art">
+        <div class="avatar">
+          <img src="images/squires/slide_094.jpg" alt="Art Squires" loading="lazy"/>
+        </div>
+        <div class="cname blue">Arthur "Art" Squires</div>
+        <div class="cdates">1933–2022</div>
+        <div class="cnote">"Poppi"</div>
+        <button class="xbtn blue" id="btn-gg-mat"  onclick="toggleGGMat()">↑ parents</button>
+        <button class="xbtn blue" id="btn-art-sib" onclick="toggleArtSib()">↔ sibling</button>
+      </div>
+
+      <div class="gap-sm"></div>
+
+      <!-- Barbara -->
+      <div class="card blue" id="c-barbara">
+        <div class="avatar">
+          <img src="images/squires/slide_084.jpg" alt="Barbara Croft Squires" loading="lazy"/>
+        </div>
+        <div class="cname blue">Barbara Croft Squires</div>
+        <div class="cdates">1936–2025</div>
+        <div class="cnote">"Mimi"</div>
+        <button class="xbtn blue" id="btn-bar-sib" onclick="toggleBarSib()">↔ siblings</button>
+      </div>
+
+      <!-- Art's sibling Irving (hidden) -->
+      <div class="gap-med" id="gap-artsib-1" style="display:none"></div>
+      <div class="card blue" id="c-irving" style="display:none">
+        <div class="avatar"><span class="sil">&#9786;</span></div>
+        <div class="cname blue">Irving Squires</div>
+        <div class="cdates">1923–2002</div>
+      </div>
+
+      <!-- Barbara's siblings (hidden) -->
+      <div class="gap-med" id="gap-barsib-1" style="display:none"></div>
+      <div class="card blue" id="c-evelyn" style="display:none">
+        <div class="avatar"><span class="sil">&#9786;</span></div>
+        <div class="cname blue">Evelyn Croft Laviage</div>
+        <div class="cdates">b. 1929</div>
+      </div>
+      <div class="gap-sm" id="gap-barsib-2" style="display:none"></div>
+      <div class="card blue" id="c-kenneth" style="display:none">
+        <div class="avatar"><span class="sil">&#9786;</span></div>
+        <div class="cname blue">Kenneth Croft</div>
+        <div class="cdates">1938–2021</div>
+      </div>
+
+    </div><!-- /row-gp -->
 
 
-  <!-- ═══════════════════════════════════════
-       ROW 1 — Avery's generation
-  ═══════════════════════════════════════ -->
-  <div class="gen-row" id="row-avery">
+    <!-- ══════════════════════════════════════
+         ROW: Parents
+    ══════════════════════════════════════ -->
+    <div class="gen-row" id="row-par">
 
-    <!-- Kyle & David (Mary Beth's children, hidden) -->
-    <div class="card neutral hidden" id="c-kyle">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname">Kyle John Reidy</div>
-      <div class="cdates">b. 1987</div>
-      <div class="cnote">m. Lauren Chandley<br>Eleanor, Piper, Coco</div>
-    </div>
-    <div class="couple-gap hidden mb-kids-gap"></div>
-    <div class="card neutral hidden" id="c-david">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname">David T. Reidy</div>
-      <div class="cdates">b. 1992</div>
-      <div class="cnote">m. Haley Cameron<br>Maeve</div>
-    </div>
-    <div class="row-gap hidden mb-kids-gap"></div>
+      <!-- Mary Beth (Scott's sibling, hidden) -->
+      <div class="card gold" id="c-marybeth" style="display:none">
+        <div class="avatar"><span class="sil">&#9786;</span></div>
+        <div class="cname gold">Mary Beth Thomas Reidy</div>
+        <div class="cdates">b. 1957</div>
+        <div class="cnote">m. John B. Reidy</div>
+        <button class="xbtn" id="btn-mb-kids" onclick="toggleMBKids()">↓ children</button>
+      </div>
+      <div class="gap-med" id="gap-scsib-1" style="display:none"></div>
 
-    <!-- Austin -->
-    <div class="card neutral" id="c-austin">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname">Austin Thomas</div>
-      <div class="cdates">Living</div>
-    </div>
+      <!-- Scott -->
+      <div class="card gold" id="c-scott">
+        <div class="avatar"><span class="sil">&#9786;</span></div>
+        <div class="cname gold">Michael Scott Thomas</div>
+        <div class="cdates">b. 1961</div>
+        <div class="cnote">"Scott"</div>
+        <button class="xbtn" id="btn-sc-sib" onclick="toggleScSib()">↔ sibling</button>
+      </div>
 
-    <div class="couple-gap"></div>
+      <div class="gap-sm"></div>
 
-    <!-- Avery -->
-    <div class="card subject" id="c-avery">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname gold">Avery Scott Thomas</div>
-      <div class="cdates">b. 1998</div>
-    </div>
+      <!-- Heather -->
+      <div class="card blue" id="c-heather">
+        <div class="avatar">
+          <img src="images/squires/slide_076.jpg" alt="Heather Squires Thomas" loading="lazy"/>
+        </div>
+        <div class="cname blue">Heather Denise Squires</div>
+        <div class="cdates">b. 1963</div>
+        <div class="cnote">m. Scott Thomas</div>
+      </div>
 
-    <div class="couple-gap"></div>
+      <div class="gap-lg"></div>
 
-    <!-- Ashley -->
-    <div class="card neutral" id="c-ashley">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname">Ashley Thomas</div>
-      <div class="cdates">Living</div>
-    </div>
+      <!-- Mitchell -->
+      <div class="card blue" id="c-mitchell">
+        <div class="avatar">
+          <img src="images/squires/slide_006.jpg" alt="Mitchell Squires" loading="lazy"/>
+        </div>
+        <div class="cname blue">Mitchell Squires</div>
+        <div class="cdates">Living</div>
+        <div class="cnote">m. Marla</div>
+        <button class="xbtn blue" id="btn-mitch-kids" onclick="toggleMitchKids()">↓ children</button>
+      </div>
 
-    <div class="row-gap"></div>
-    <div class="row-gap"></div>
+    </div><!-- /row-par -->
 
-    <!-- Casie & Kirby (Mitchell's children, hidden) -->
-    <div class="row-gap hidden mitch-kids-gap"></div>
-    <div class="card neutral hidden" id="c-casie">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname">Casie Squires</div>
-      <div class="cdates">Living</div>
-    </div>
-    <div class="couple-gap hidden mitch-kids-gap"></div>
-    <div class="card neutral hidden" id="c-kirby">
-      <div class="avatar"><span class="sil">&#9786;</span></div>
-      <div class="cname">Kirby Squires</div>
-      <div class="cdates">Living</div>
-    </div>
 
-  </div><!-- /row-avery -->
+    <!-- ══════════════════════════════════════
+         ROW: Avery's generation
+    ══════════════════════════════════════ -->
+    <div class="gen-row" id="row-gen1">
 
-</div><!-- /tree-root -->
-</div><!-- /tree-viewport -->
+      <!-- Mary Beth's children (hidden) -->
+      <div class="card neutral" id="c-kyle" style="display:none">
+        <div class="avatar"><span class="sil">&#9786;</span></div>
+        <div class="cname plain">Kyle John Reidy</div>
+        <div class="cdates">b. 1987</div>
+        <div class="cnote">m. Lauren Chandley<br>Eleanor, Piper, Coco</div>
+      </div>
+      <div class="gap-sm" id="gap-mbkids-2" style="display:none"></div>
+      <div class="card neutral" id="c-david" style="display:none">
+        <div class="avatar"><span class="sil">&#9786;</span></div>
+        <div class="cname plain">David T. Reidy</div>
+        <div class="cdates">b. 1992</div>
+        <div class="cnote">m. Haley Cameron<br>Maeve</div>
+      </div>
+      <div class="gap-med" id="gap-mbkids-1" style="display:none"></div>
+
+      <!-- Austin -->
+      <div class="card neutral" id="c-austin">
+        <div class="avatar"><span class="sil">&#9786;</span></div>
+        <div class="cname plain">Austin Thomas</div>
+        <div class="cdates">Living</div>
+      </div>
+
+      <div class="gap-sm"></div>
+
+      <!-- Avery -->
+      <div class="card subject" id="c-avery">
+        <div class="avatar"><span class="sil">&#9786;</span></div>
+        <div class="cname gold">Avery Scott Thomas</div>
+        <div class="cdates">b. 1998</div>
+      </div>
+
+      <div class="gap-sm"></div>
+
+      <!-- Ashley -->
+      <div class="card neutral" id="c-ashley">
+        <div class="avatar"><span class="sil">&#9786;</span></div>
+        <div class="cname plain">Ashley Thomas</div>
+        <div class="cdates">Living</div>
+      </div>
+
+      <div class="gap-lg"></div>
+
+      <!-- Mitchell's children (hidden) -->
+      <div class="card neutral" id="c-casie" style="display:none">
+        <div class="avatar"><span class="sil">&#9786;</span></div>
+        <div class="cname plain">Casie Squires</div>
+        <div class="cdates">Living</div>
+      </div>
+      <div class="gap-sm" id="gap-mitchkids-2" style="display:none"></div>
+      <div class="card neutral" id="c-kirby" style="display:none">
+        <div class="avatar"><span class="sil">&#9786;</span></div>
+        <div class="cname plain">Kirby Squires</div>
+        <div class="cdates">Living</div>
+      </div>
+
+    </div><!-- /row-gen1 -->
+
+  </div><!-- /#tree -->
+</div><!-- /.tree-scroll -->
 
 <footer>
   <a href="index.html">Home</a> &nbsp;·&nbsp;
@@ -503,337 +437,384 @@
 </footer>
 
 <script>
-/* ─────────────────────────────────────────────────────────
+/* ═══════════════════════════════════════════════════════
    STATE
-───────────────────────────────────────────────────────── */
-const state = {
-  ggPat:    false,  // Charlotte & JG's parents
-  ggMat:    false,  // Art & Barbara's parents
-  chSib:    false,  // Charlotte's siblings
-  artSib:   false,  // Art's sibling Irving
-  barSib:   false,  // Barbara's siblings
-  scSib:    false,  // Scott's sibling Mary Beth
-  mbKids:   false,  // Mary Beth's children
-  mitchKids:false,  // Mitchell's children
+═══════════════════════════════════════════════════════ */
+const st = {
+  ggPat:     false,
+  ggMat:     false,
+  chSib:     false,
+  artSib:    false,
+  barSib:    false,
+  scSib:     false,
+  mbKids:    false,
+  mitchKids: false,
 };
 
-/* ─────────────────────────────────────────────────────────
-   SHOW / HIDE HELPERS
-───────────────────────────────────────────────────────── */
-function show(id)  { const el = document.getElementById(id); if (el) { el.classList.remove('hidden'); el.style.display = ''; } }
-function hide(id)  { const el = document.getElementById(id); if (el) { el.classList.add('hidden');    el.style.display = 'none'; } }
-function showAll(ids) { ids.forEach(show); }
-function hideAll(ids) { ids.forEach(hide); }
+/* ═══════════════════════════════════════════════════════
+   DOM HELPERS
+═══════════════════════════════════════════════════════ */
+const el = id => document.getElementById(id);
 
-function showClass(cls)  { document.querySelectorAll('.' + cls).forEach(el => { el.classList.remove('hidden'); el.style.display = ''; }); }
-function hideClass(cls)  { document.querySelectorAll('.' + cls).forEach(el => { el.classList.add('hidden');    el.style.display = 'none'; }); }
+function show(...ids) { ids.forEach(id => { const e = el(id); if (e) e.style.display = ''; }); }
+function hide(...ids) { ids.forEach(id => { const e = el(id); if (e) e.style.display = 'none'; }); }
 
-function setBtn(id, active, goldStyle) {
-  const btn = document.getElementById(id);
-  if (!btn) return;
-  btn.classList.toggle('active', active);
-  if (!goldStyle) btn.classList.toggle('blue-style', false);
+function btn(id, on, isBlue) {
+  const b = el(id);
+  if (!b) return;
+  b.classList.toggle('on', on);
+  if (isBlue) b.classList.add('blue');
 }
 
-/* ─────────────────────────────────────────────────────────
-   GG ROW VISIBILITY: show row only when at least one card visible
-───────────────────────────────────────────────────────── */
-function refreshGGRow() {
-  const ggRow = document.getElementById('row-gg');
-  const visible = state.ggPat || state.ggMat;
-  ggRow.style.display = visible ? '' : 'none';
+/* ═══════════════════════════════════════════════════════
+   GREAT-GRANDPARENT ROW — built/removed on demand
+═══════════════════════════════════════════════════════ */
+function buildGGRow() {
+  const row = document.createElement('div');
+  row.className = 'gen-row';
+  row.id = 'row-gg';
+  row.innerHTML = `
+    <!-- Crawley pair (Charlotte's parents) -->
+    <div class="card gold" id="c-john-crawley" ${st.ggPat ? '' : 'style="display:none"'}>
+      <div class="avatar"><span class="sil">&#9786;</span></div>
+      <div class="cname gold">John Earl Crawley</div>
+      <div class="cdates">1903–1953</div>
+    </div>
+    <div class="gap-sm" id="gg-gap-1" ${st.ggPat ? '' : 'style="display:none"'}></div>
+    <div class="card gold" id="c-lottie-crawley" ${st.ggPat ? '' : 'style="display:none"'}>
+      <div class="avatar"><span class="sil">&#9786;</span></div>
+      <div class="cname gold">Lottie R. Crawley</div>
+      <div class="cdates">1902–1991</div>
+    </div>
 
-  // Show/hide individual pairs
-  const patIds = ['c-john-crawley','c-lottie-crawley','c-james-thomas-sr','c-stella-kennard'];
-  const matIds = ['c-harry-squires','c-eleanor-yampolsky','c-jack-croft','c-mollie-croft'];
-  patIds.forEach(id => state.ggPat ? show(id) : hide(id));
-  matIds.forEach(id => state.ggMat ? show(id) : hide(id));
+    <div class="gap-lg" id="gg-gap-2" ${st.ggPat ? '' : 'style="display:none"'}></div>
+    <div class="gap-lg" id="gg-gap-3" ${st.ggPat ? '' : 'style="display:none"'}></div>
+
+    <!-- Thomas pair (JG's parents) -->
+    <div class="card gold" id="c-james-sr" ${st.ggPat ? '' : 'style="display:none"'}>
+      <div class="avatar"><span class="sil">&#9786;</span></div>
+      <div class="cname gold">James Geren Thomas Sr.</div>
+      <div class="cdates">1877–1953</div>
+    </div>
+    <div class="gap-sm" id="gg-gap-4" ${st.ggPat ? '' : 'style="display:none"'}></div>
+    <div class="card gold" id="c-stella-kennard" ${st.ggPat ? '' : 'style="display:none"'}>
+      <div class="avatar"><span class="sil">&#9786;</span></div>
+      <div class="cname gold">Stella Kennard Thomas</div>
+      <div class="cdates">1883–1965</div>
+    </div>
+
+    <div class="gap-lg"></div>
+
+    <!-- Squires pair (Art's parents) -->
+    <div class="card blue" id="c-harry-squires" ${st.ggMat ? '' : 'style="display:none"'}>
+      <div class="avatar"><span class="sil">&#9786;</span></div>
+      <div class="cname blue">Harry D. Skversky / Squires</div>
+      <div class="cdates">1897–1963</div>
+      <div class="cnote">né Skversky</div>
+    </div>
+    <div class="gap-sm" id="gg-gap-5" ${st.ggMat ? '' : 'style="display:none"'}></div>
+    <div class="card blue" id="c-eleanor" ${st.ggMat ? '' : 'style="display:none"'}>
+      <div class="avatar"><span class="sil">&#9786;</span></div>
+      <div class="cname blue">Eleanor Yampolsky</div>
+      <div class="cdates">b. 1903</div>
+    </div>
+
+    <div class="gap-lg" id="gg-gap-6" ${st.ggMat ? '' : 'style="display:none"'}></div>
+    <div class="gap-lg" id="gg-gap-7" ${st.ggMat ? '' : 'style="display:none"'}></div>
+
+    <!-- Croft pair (Barbara's parents) -->
+    <div class="card blue" id="c-jack-croft" ${st.ggMat ? '' : 'style="display:none"'}>
+      <div class="avatar"><span class="sil">&#9786;</span></div>
+      <div class="cname blue">Jack Croft</div>
+      <div class="cdates">1903–1982</div>
+    </div>
+    <div class="gap-sm" id="gg-gap-8" ${st.ggMat ? '' : 'style="display:none"'}></div>
+    <div class="card blue" id="c-mollie-croft" ${st.ggMat ? '' : 'style="display:none"'}>
+      <div class="avatar"><span class="sil">&#9786;</span></div>
+      <div class="cname blue">Mollie K. Krafcheck Croft</div>
+      <div class="cdates">1905–1947</div>
+    </div>
+  `;
+  return row;
 }
 
-/* ─────────────────────────────────────────────────────────
+function ensureGGRow() {
+  if (!el('row-gg')) {
+    const tree = el('tree');
+    const gpRow = el('row-gp');
+    tree.insertBefore(buildGGRow(), gpRow);
+  }
+}
+
+function removeGGRowIfEmpty() {
+  if (!st.ggPat && !st.ggMat) {
+    const row = el('row-gg');
+    if (row) row.remove();
+  }
+}
+
+/* ═══════════════════════════════════════════════════════
    TOGGLE FUNCTIONS
-───────────────────────────────────────────────────────── */
+═══════════════════════════════════════════════════════ */
 function toggleGGPat() {
-  state.ggPat = !state.ggPat;
-  refreshGGRow();
-  const btn = document.getElementById('btn-gg-pat');
-  if (btn) { btn.textContent = state.ggPat ? '↑ hide parents' : '↑ parents'; btn.classList.toggle('active', state.ggPat); }
-  drawLines();
+  st.ggPat = !st.ggPat;
+  if (st.ggPat) {
+    ensureGGRow();
+    show('c-john-crawley','gg-gap-1','c-lottie-crawley','gg-gap-2','gg-gap-3','c-james-sr','gg-gap-4','c-stella-kennard');
+  } else {
+    hide('c-john-crawley','gg-gap-1','c-lottie-crawley','gg-gap-2','gg-gap-3','c-james-sr','gg-gap-4','c-stella-kennard');
+    removeGGRowIfEmpty();
+  }
+  const b = el('btn-gg-pat');
+  if (b) { b.textContent = st.ggPat ? '↑ hide parents' : '↑ parents'; b.classList.toggle('on', st.ggPat); }
+  redraw();
 }
 
 function toggleGGMat() {
-  state.ggMat = !state.ggMat;
-  refreshGGRow();
-  const btn = document.getElementById('btn-gg-mat');
-  if (btn) { btn.textContent = state.ggMat ? '↑ hide parents' : '↑ parents'; btn.classList.toggle('active', state.ggMat); btn.classList.add('blue-style'); }
-  drawLines();
+  st.ggMat = !st.ggMat;
+  if (st.ggMat) {
+    ensureGGRow();
+    show('c-harry-squires','gg-gap-5','c-eleanor','gg-gap-6','gg-gap-7','c-jack-croft','gg-gap-8','c-mollie-croft');
+  } else {
+    hide('c-harry-squires','gg-gap-5','c-eleanor','gg-gap-6','gg-gap-7','c-jack-croft','gg-gap-8','c-mollie-croft');
+    removeGGRowIfEmpty();
+  }
+  const b = el('btn-gg-mat');
+  if (b) { b.textContent = st.ggMat ? '↑ hide parents' : '↑ parents'; b.classList.toggle('on', st.ggMat); b.classList.add('blue'); }
+  redraw();
 }
 
 function toggleChSib() {
-  state.chSib = !state.chSib;
-  const ids = ['c-jim-crawley','c-mary-anne-crawley'];
-  state.chSib ? showAll(ids) : hideAll(ids);
-  state.chSib ? showClass('sib-gap-ch') : hideClass('sib-gap-ch');
-  const btn = document.getElementById('btn-chsib');
-  if (btn) { btn.textContent = state.chSib ? '↔ hide siblings' : '↔ siblings'; btn.classList.toggle('active', state.chSib); }
-  drawLines();
+  st.chSib = !st.chSib;
+  if (st.chSib) {
+    show('c-jim-crawley','gap-chsib-2','c-mary-anne','gap-chsib-1');
+  } else {
+    hide('c-jim-crawley','gap-chsib-2','c-mary-anne','gap-chsib-1');
+  }
+  const b = el('btn-chsib');
+  if (b) { b.textContent = st.chSib ? '↔ hide siblings' : '↔ siblings'; b.classList.toggle('on', st.chSib); }
+  redraw();
 }
 
 function toggleArtSib() {
-  state.artSib = !state.artSib;
-  state.artSib ? show('c-irving-squires') : hide('c-irving-squires');
-  state.artSib ? showClass('sib-gap-art') : hideClass('sib-gap-art');
-  const btn = document.getElementById('btn-artsib');
-  if (btn) { btn.textContent = state.artSib ? '↔ hide sibling' : '↔ sibling'; btn.classList.toggle('active', state.artSib); btn.classList.add('blue-style'); }
-  drawLines();
+  st.artSib = !st.artSib;
+  if (st.artSib) {
+    show('gap-artsib-1','c-irving');
+  } else {
+    hide('gap-artsib-1','c-irving');
+  }
+  const b = el('btn-art-sib');
+  if (b) { b.textContent = st.artSib ? '↔ hide sibling' : '↔ sibling'; b.classList.toggle('on', st.artSib); b.classList.add('blue'); }
+  redraw();
 }
 
 function toggleBarSib() {
-  state.barSib = !state.barSib;
-  const ids = ['c-evelyn-laviage','c-kenneth-croft'];
-  state.barSib ? showAll(ids) : hideAll(ids);
-  state.barSib ? showClass('sib-gap-bar') : hideClass('sib-gap-bar');
-  const btn = document.getElementById('btn-barsib');
-  if (btn) { btn.textContent = state.barSib ? '↔ hide siblings' : '↔ siblings'; btn.classList.toggle('active', state.barSib); btn.classList.add('blue-style'); }
-  drawLines();
+  st.barSib = !st.barSib;
+  if (st.barSib) {
+    show('gap-barsib-1','c-evelyn','gap-barsib-2','c-kenneth');
+  } else {
+    hide('gap-barsib-1','c-evelyn','gap-barsib-2','c-kenneth');
+  }
+  const b = el('btn-bar-sib');
+  if (b) { b.textContent = st.barSib ? '↔ hide siblings' : '↔ siblings'; b.classList.toggle('on', st.barSib); b.classList.add('blue'); }
+  redraw();
 }
 
 function toggleScSib() {
-  state.scSib = !state.scSib;
-  state.scSib ? show('c-marybeth') : hide('c-marybeth');
-  state.scSib ? showClass('sib-gap-sc') : hideClass('sib-gap-sc');
-  // If hiding sibling, cascade-hide children
-  if (!state.scSib && state.mbKids) {
-    state.mbKids = false;
-    hideAll(['c-kyle','c-david']);
-    hideClass('mb-kids-gap');
-    const b = document.getElementById('btn-mbkids');
-    if (b) { b.textContent = '↓ children'; b.classList.remove('active'); }
+  st.scSib = !st.scSib;
+  if (st.scSib) {
+    show('c-marybeth','gap-scsib-1');
+  } else {
+    hide('c-marybeth','gap-scsib-1');
+    // cascade: hide Mary Beth's children
+    if (st.mbKids) {
+      st.mbKids = false;
+      hide('c-kyle','gap-mbkids-2','c-david','gap-mbkids-1');
+      const bm = el('btn-mb-kids');
+      if (bm) { bm.textContent = '↓ children'; bm.classList.remove('on'); }
+    }
   }
-  const btn = document.getElementById('btn-scsib');
-  if (btn) { btn.textContent = state.scSib ? '↔ hide sibling' : '↔ sibling'; btn.classList.toggle('active', state.scSib); }
-  drawLines();
+  const b = el('btn-sc-sib');
+  if (b) { b.textContent = st.scSib ? '↔ hide sibling' : '↔ sibling'; b.classList.toggle('on', st.scSib); }
+  redraw();
 }
 
 function toggleMBKids() {
-  state.mbKids = !state.mbKids;
-  const ids = ['c-kyle','c-david'];
-  state.mbKids ? showAll(ids) : hideAll(ids);
-  state.mbKids ? showClass('mb-kids-gap') : hideClass('mb-kids-gap');
-  const btn = document.getElementById('btn-mbkids');
-  if (btn) { btn.textContent = state.mbKids ? '↓ hide children' : '↓ children'; btn.classList.toggle('active', state.mbKids); }
-  drawLines();
+  st.mbKids = !st.mbKids;
+  if (st.mbKids) {
+    show('c-kyle','gap-mbkids-2','c-david','gap-mbkids-1');
+  } else {
+    hide('c-kyle','gap-mbkids-2','c-david','gap-mbkids-1');
+  }
+  const b = el('btn-mb-kids');
+  if (b) { b.textContent = st.mbKids ? '↓ hide children' : '↓ children'; b.classList.toggle('on', st.mbKids); }
+  redraw();
 }
 
 function toggleMitchKids() {
-  state.mitchKids = !state.mitchKids;
-  const ids = ['c-casie','c-kirby'];
-  state.mitchKids ? showAll(ids) : hideAll(ids);
-  state.mitchKids ? showClass('mitch-kids-gap') : hideClass('mitch-kids-gap');
-  const btn = document.getElementById('btn-mitchkids');
-  if (btn) { btn.textContent = state.mitchKids ? '↓ hide children' : '↓ children'; btn.classList.toggle('active', state.mitchKids); btn.classList.add('blue-style'); }
-  drawLines();
+  st.mitchKids = !st.mitchKids;
+  if (st.mitchKids) {
+    show('c-casie','gap-mitchkids-2','c-kirby');
+  } else {
+    hide('c-casie','gap-mitchkids-2','c-kirby');
+  }
+  const b = el('btn-mitch-kids');
+  if (b) { b.textContent = st.mitchKids ? '↓ hide children' : '↓ children'; b.classList.toggle('on', st.mitchKids); b.classList.add('blue'); }
+  redraw();
 }
 
-/* ─────────────────────────────────────────────────────────
-   CONNECTOR LINE DRAWING
-   All coordinates computed from actual DOM positions.
-   Called after every toggle and on load/resize.
-───────────────────────────────────────────────────────── */
-function cardCenterX(id) {
-  const el = document.getElementById(id);
-  if (!el || el.classList.contains('hidden') || el.style.display === 'none') return null;
-  const root = document.getElementById('tree-root');
-  const rootRect = root.getBoundingClientRect();
-  const rect = el.getBoundingClientRect();
-  return rect.left - rootRect.left + rect.width / 2;
+/* ═══════════════════════════════════════════════════════
+   SVG CONNECTOR DRAWING
+   All coordinates from getBoundingClientRect() relative
+   to the #tree container. Redraws after every toggle.
+═══════════════════════════════════════════════════════ */
+
+function pos(id) {
+  const e = el(id);
+  if (!e || e.style.display === 'none') return null;
+  const tree = el('tree');
+  const tr = tree.getBoundingClientRect();
+  const er = e.getBoundingClientRect();
+  return {
+    cx: er.left - tr.left + er.width  / 2,  // center x
+    top:    er.top    - tr.top,
+    bottom: er.bottom - tr.top,
+    left:   er.left   - tr.left,
+    right:  er.right  - tr.left,
+  };
 }
 
-function cardTop(id) {
-  const el = document.getElementById(id);
-  if (!el || el.classList.contains('hidden') || el.style.display === 'none') return null;
-  const root = document.getElementById('tree-root');
-  const rootRect = root.getBoundingClientRect();
-  const rect = el.getBoundingClientRect();
-  return rect.top - rootRect.top;
+function redraw() {
+  requestAnimationFrame(_redraw);
 }
 
-function cardBottom(id) {
-  const el = document.getElementById(id);
-  if (!el || el.classList.contains('hidden') || el.style.display === 'none') return null;
-  const root = document.getElementById('tree-root');
-  const rootRect = root.getBoundingClientRect();
-  const rect = el.getBoundingClientRect();
-  return rect.bottom - rootRect.top;
-}
-
-function midX(id1, id2) {
-  const x1 = cardCenterX(id1), x2 = cardCenterX(id2);
-  if (x1 === null || x2 === null) return null;
-  return (x1 + x2) / 2;
-}
-
-function drawLines() {
-  // Wait one frame so layout is settled after DOM changes
-  requestAnimationFrame(_drawLines);
-}
-
-function _drawLines() {
-  const svg = document.getElementById('tree-svg');
-  // Resize SVG to cover tree-root
-  const root = document.getElementById('tree-root');
-  const h = root.scrollHeight;
-  const w = root.scrollWidth;
-  svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
-  svg.setAttribute('width', w);
-  svg.setAttribute('height', h);
+function _redraw() {
+  const svg = el('tree-svg');
+  const tree = el('tree');
+  svg.setAttribute('width',  tree.scrollWidth);
+  svg.setAttribute('height', tree.scrollHeight);
   svg.innerHTML = '';
 
-  const GOLD = '#c9a84c';
-  const GOLDDIM = '#554520';
-  const BLUE = '#5b8dc9';
-  const BLUEDIM = '#1e3050';
+  const C_GOLD     = '#c9a84c';
+  const C_GOLDDIM  = '#6b5520';
+  const C_BLUE     = '#5b8dc9';
+  const C_BLUEDIM  = '#2a4a70';
   const SW = 1.5;
 
-  function line(x1, y1, x2, y2, color, dashed) {
-    if (x1===null||y1===null||x2===null||y2===null) return;
-    const l = document.createElementNS('http://www.w3.org/2000/svg','line');
-    l.setAttribute('x1', x1); l.setAttribute('y1', y1);
-    l.setAttribute('x2', x2); l.setAttribute('y2', y2);
-    l.setAttribute('stroke', color); l.setAttribute('stroke-width', SW);
-    if (dashed) l.setAttribute('stroke-dasharray','4 3');
+  function line(x1, y1, x2, y2, color) {
+    const l = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    l.setAttribute('x1', Math.round(x1)); l.setAttribute('y1', Math.round(y1));
+    l.setAttribute('x2', Math.round(x2)); l.setAttribute('y2', Math.round(y2));
+    l.setAttribute('stroke', color);
+    l.setAttribute('stroke-width', SW);
     svg.appendChild(l);
   }
 
-  // Draw a standard parent→child connector:
-  // parent card bottom → midpoint drop → horizontal bar → child card tops
-  function parentToChildren(parentId, childIds, color) {
-    const px = cardCenterX(parentId);
-    const py = cardBottom(parentId);
-    if (px === null || py === null) return;
+  function dashedLine(x1, y1, x2, y2, color) {
+    const l = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    l.setAttribute('x1', Math.round(x1)); l.setAttribute('y1', Math.round(y1));
+    l.setAttribute('x2', Math.round(x2)); l.setAttribute('y2', Math.round(y2));
+    l.setAttribute('stroke', color);
+    l.setAttribute('stroke-width', SW);
+    l.setAttribute('stroke-dasharray', '5 3');
+    svg.appendChild(l);
+  }
 
-    const childXs = childIds.map(id => cardCenterX(id)).filter(x => x !== null);
-    const childTops = childIds.map(id => cardTop(id)).filter(t => t !== null);
-    if (childXs.length === 0) return;
+  // Elbow connector: couple (or single parent) → one or more children
+  // Draws: horizontal bar across couple bottoms → vertical stem down → horizontal bar → drops to each child top
+  function connect(parentIds, childIds, color) {
+    const parents  = parentIds.map(pos).filter(Boolean);
+    const children = childIds.map(pos).filter(Boolean);
+    if (!parents.length || !children.length) return;
 
-    const minX = Math.min(...childXs);
-    const maxX = Math.max(...childXs);
-    const childY = Math.min(...childTops); // top of child cards
-    const midY = py + (childY - py) * 0.5; // horizontal bar midway between parent bottom and child top
+    const parentBottom = Math.max(...parents.map(p => p.bottom));
+    const coupleLeft   = Math.min(...parents.map(p => p.cx));
+    const coupleRight  = Math.max(...parents.map(p => p.cx));
+    const coupleMidX   = (coupleLeft + coupleRight) / 2;
 
-    // Vertical stem from parent down to horizontal bar
-    line(px, py, px, midY, color);
-    // Horizontal bar spanning all children
-    if (childXs.length > 1) line(minX, midY, maxX, midY, color);
+    const childTop = Math.min(...children.map(c => c.top));
+    const elbowY   = parentBottom + (childTop - parentBottom) / 2;
+
+    const childLeft  = Math.min(...children.map(c => c.cx));
+    const childRight = Math.max(...children.map(c => c.cx));
+
+    // Horizontal bar across couple
+    if (parents.length > 1) line(coupleLeft, parentBottom, coupleRight, parentBottom, color);
+    // Stem down from midpoint
+    line(coupleMidX, parentBottom, coupleMidX, elbowY, color);
+    // Horizontal bar across children
+    if (children.length > 1) line(childLeft, elbowY, childRight, elbowY, color);
     // Drops to each child
-    childXs.forEach(cx => line(cx, midY, cx, childY, color));
+    children.forEach(c => line(c.cx, elbowY, c.cx, childTop, color));
   }
 
-  // Draw a couple → child connector (two parents share a midpoint drop)
-  function coupleToChild(parent1Id, parent2Id, childIds, color) {
-    const p1x = cardCenterX(parent1Id), p2x = cardCenterX(parent2Id);
-    const p1y = cardBottom(parent1Id),  p2y = cardBottom(parent2Id);
-    if (p1x===null||p2x===null||p1y===null||p2y===null) return;
-
-    const childXs = childIds.map(id => cardCenterX(id)).filter(x => x !== null);
-    const childTops = childIds.map(id => cardTop(id)).filter(t => t !== null);
-    if (childXs.length === 0) return;
-
-    const coupleY = Math.max(p1y, p2y); // bottom of the lower of the two parents
-    const midX_val = (p1x + p2x) / 2;
-    const childY = Math.min(...childTops);
-    const midY = coupleY + (childY - coupleY) * 0.5;
-
-    // Horizontal bar connecting the couple at their bottom
-    line(p1x, coupleY, p2x, coupleY, color);
-    // Stem down from couple midpoint
-    line(midX_val, coupleY, midX_val, midY, color);
-    // Horizontal bar spanning children
-    const minX = Math.min(...childXs), maxX = Math.max(...childXs);
-    if (childXs.length > 1) line(minX, midY, maxX, midY, color);
-    // Drops
-    childXs.forEach(cx => line(cx, midY, cx, childY, color));
+  // Sibling dashed line: horizontal at avatar midpoint between sibling and anchor card
+  function sibLine(sibId, anchorId, color) {
+    const s = pos(sibId), a = pos(anchorId);
+    if (!s || !a) return;
+    const y = s.top + 32; // ~mid-avatar height
+    dashedLine(s.cx, y, a.cx, y, color);
   }
 
-  // Sibling connector: dashed horizontal line from sibling card to main card
-  function siblingLine(sibId, mainId, color) {
-    const sx = cardCenterX(sibId), mx = cardCenterX(mainId);
-    const sy = cardBottom(sibId),  my = cardBottom(mainId);
-    if (sx===null||mx===null||sy===null||my===null) return;
-    const y = Math.max(sy, my) - 20; // line at card avatar mid-height area
-    const avatarH = 34; // ~half avatar height
-    const cardTopSib = cardTop(sibId), cardTopMain = cardTop(mainId);
-    if (cardTopSib===null||cardTopMain===null) return;
-    const lineY = Math.min(cardTopSib, cardTopMain) + avatarH;
-    line(sx, lineY, mx, lineY, color, true);
+  /* ── Great-grandparents → grandparents ── */
+  if (st.ggPat) {
+    connect(['c-john-crawley','c-lottie-crawley'], ['c-charlotte'], C_GOLDDIM);
+    connect(['c-james-sr','c-stella-kennard'],     ['c-jg'],        C_GOLDDIM);
+  }
+  if (st.ggMat) {
+    connect(['c-harry-squires','c-eleanor'], ['c-art'],      C_BLUEDIM);
+    connect(['c-jack-croft','c-mollie-croft'], ['c-barbara'], C_BLUEDIM);
   }
 
-  /* ── Row 3 → Row 4: great-grandparents ── */
-  if (state.ggPat) {
-    // Crawley pair → Charlotte
-    coupleToChild('c-john-crawley','c-lottie-crawley',['c-charlotte'], GOLDDIM);
-    // Thomas pair → JG
-    coupleToChild('c-james-thomas-sr','c-stella-kennard',['c-jg'], GOLDDIM);
+  /* ── Grandparent siblings ── */
+  if (st.chSib) {
+    sibLine('c-jim-crawley', 'c-charlotte', C_GOLDDIM);
+    sibLine('c-mary-anne',   'c-charlotte', C_GOLDDIM);
   }
-  if (state.ggMat) {
-    // Squires pair → Art
-    coupleToChild('c-harry-squires','c-eleanor-yampolsky',['c-art'], BLUEDIM);
-    // Croft pair → Barbara
-    coupleToChild('c-jack-croft','c-mollie-croft',['c-barbara'], BLUEDIM);
+  if (st.artSib) {
+    sibLine('c-irving', 'c-art', C_BLUEDIM);
   }
-
-  /* ── Row 3: sibling lines ── */
-  if (state.chSib) {
-    siblingLine('c-jim-crawley',       'c-charlotte', GOLDDIM);
-    siblingLine('c-mary-anne-crawley', 'c-charlotte', GOLDDIM);
-  }
-  if (state.artSib) {
-    siblingLine('c-irving-squires', 'c-art', BLUEDIM);
-  }
-  if (state.barSib) {
-    siblingLine('c-evelyn-laviage', 'c-barbara', BLUEDIM);
-    siblingLine('c-kenneth-croft',  'c-barbara', BLUEDIM);
+  if (st.barSib) {
+    sibLine('c-evelyn',  'c-barbara', C_BLUEDIM);
+    sibLine('c-kenneth', 'c-barbara', C_BLUEDIM);
   }
 
-  /* ── Row 3 → Row 2: grandparents → parents ── */
-  // Charlotte + JG → Scott
-  coupleToChild('c-charlotte','c-jg',['c-scott'], GOLD);
-  // Art + Barbara → Heather & Mitchell
-  coupleToChild('c-art','c-barbara',['c-heather','c-mitchell'], BLUE);
+  /* ── Grandparents → parents ── */
+  connect(['c-charlotte','c-jg'],       ['c-scott'],                     C_GOLD);
+  connect(['c-art','c-barbara'],        ['c-heather','c-mitchell'],       C_BLUE);
 
-  /* ── Row 2: Scott sibling line ── */
-  if (state.scSib) {
-    siblingLine('c-marybeth','c-scott', GOLDDIM);
+  /* ── Parent siblings ── */
+  if (st.scSib) {
+    sibLine('c-marybeth', 'c-scott', C_GOLDDIM);
   }
 
-  /* ── Row 2 → Row 1: parents → Avery's generation ── */
-  // Scott + Heather → Austin, Avery, Ashley
-  coupleToChild('c-scott','c-heather',['c-austin','c-avery','c-ashley'], GOLD);
-  // Mitchell → Casie, Kirby (if shown)
-  if (state.mitchKids) {
-    parentToChildren('c-mitchell',['c-casie','c-kirby'], BLUE);
+  /* ── Parents → Avery's generation ── */
+  connect(['c-scott','c-heather'], ['c-austin','c-avery','c-ashley'], C_GOLD);
+
+  /* ── Mitchell → his children ── */
+  if (st.mitchKids) {
+    connect(['c-mitchell'], ['c-casie','c-kirby'], C_BLUE);
   }
 
-  /* ── Row 1: Mary Beth children sibling line ── */
-  if (state.mbKids) {
-    siblingLine('c-kyle',  'c-austin', GOLDDIM);
-    siblingLine('c-david', 'c-austin', GOLDDIM);
+  /* ── Mary Beth → her children ── */
+  if (st.mbKids) {
+    connect(['c-marybeth'], ['c-kyle','c-david'], C_GOLDDIM);
   }
 }
 
-/* ─────────────────────────────────────────────────────────
+/* ═══════════════════════════════════════════════════════
    INIT
-───────────────────────────────────────────────────────── */
-// Hide GG row on load
-document.getElementById('row-gg').style.display = 'none';
+═══════════════════════════════════════════════════════ */
+// Redraw after layout settles on load
+window.addEventListener('load', redraw);
+window.addEventListener('resize', redraw);
 
-// Draw on load and on resize
-window.addEventListener('load', () => { drawLines(); });
-window.addEventListener('resize', () => { drawLines(); });
-// Also draw after images load (they can shift layout)
-document.querySelectorAll('img').forEach(img => {
-  img.addEventListener('load', drawLines);
-});
+// Redraw after any image loads (images shift card heights)
+document.querySelectorAll('img').forEach(img => img.addEventListener('load', redraw));
+
+// ResizeObserver: catches any card size change (e.g. buttons wrapping)
+const ro = new ResizeObserver(redraw);
+document.querySelectorAll('.card').forEach(c => ro.observe(c));
 </script>
 </body>
 </html>
