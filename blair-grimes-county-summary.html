@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blair's Early History of Grimes County — Family Passages</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --surface2: #222;
+      --border: #2e2e2e;
+      --accent: #c9a84c;
+      --accent2: #a0522d;
+      --accent-blue: #5b8dc9;
+      --accent-teal: #4ca89a;
+      --text: #e0d8cc;
+      --muted: #888;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', serif;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .site-nav {
+      background: #111;
+      border-bottom: 2px solid var(--accent);
+      padding: 0.7rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 0;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+    }
+
+    .site-nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 0.3rem 1rem;
+      border-right: 1px solid #2a2a2a;
+      transition: color 0.2s;
+    }
+
+    .site-nav a:last-child { border-right: none; }
+    .site-nav a:hover { color: var(--accent); }
+    .site-nav a.active { color: var(--accent); }
+    .nav-divider { color: #444; font-size: 0.72rem; font-family: sans-serif; letter-spacing: 1px; text-transform: uppercase; padding: 0.3rem 0.5rem 0.3rem 1.2rem; pointer-events: none; user-select: none; }
+
+    header {
+      background: linear-gradient(135deg, #1a1208 0%, #0a0a14 50%, #0f0f0f 100%);
+      border-bottom: 2px solid var(--accent);
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+    }
+
+    header .crest { font-size: 3rem; margin-bottom: 0.5rem; }
+
+    header h1 {
+      font-size: 2rem;
+      color: var(--accent);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    header .subtitle {
+      color: var(--muted);
+      font-style: italic;
+      font-size: 1rem;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    header .byline {
+      margin-top: 0.8rem;
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    .page-nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0.65rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.2rem;
+      justify-content: center;
+      position: sticky;
+      top: 44px;
+      z-index: 100;
+    }
+
+    .page-nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-family: sans-serif;
+      letter-spacing: 0.5px;
+      transition: color 0.2s;
+    }
+
+    .page-nav a:hover { color: #fff; }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 5rem;
+    }
+
+    .intro-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      padding: 1.4rem 1.8rem;
+      margin-bottom: 2.5rem;
+      border-radius: 3px;
+    }
+
+    .intro-block p { color: #bbb; font-size: 0.95rem; margin-bottom: 0.6rem; }
+    .intro-block p:last-child { margin-bottom: 0; }
+
+    .section { margin-top: 3rem; }
+
+    .section-title {
+      color: var(--accent);
+      font-size: 1.5rem;
+      font-variant: small-caps;
+      letter-spacing: 1px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-subtitle {
+      color: #bbb;
+      font-size: 0.85rem;
+      font-family: sans-serif;
+      margin-bottom: 1.5rem;
+      margin-top: -1rem;
+    }
+
+    p { margin-bottom: 1rem; }
+
+    /* Pull quote / direct excerpt */
+    .excerpt {
+      background: #111;
+      border-left: 3px solid var(--accent2);
+      padding: 1rem 1.5rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+      color: #c8b89a;
+      font-size: 0.95rem;
+      line-height: 1.75;
+    }
+
+    .excerpt cite {
+      display: block;
+      margin-top: 0.6rem;
+      font-style: normal;
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-family: sans-serif;
+    }
+
+    /* Fact table */
+    .fact-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.2rem 0 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .fact-table th {
+      background: var(--surface2);
+      color: var(--accent);
+      text-align: left;
+      padding: 0.5rem 0.9rem;
+      font-family: sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .fact-table td {
+      padding: 0.5rem 0.9rem;
+      border-bottom: 1px solid #1e1e1e;
+      color: #ccc;
+      vertical-align: top;
+    }
+
+    .fact-table tr:last-child td { border-bottom: none; }
+    .fact-table td:first-child { color: var(--muted); font-family: sans-serif; font-size: 0.82rem; white-space: nowrap; }
+
+    /* Name highlight */
+    .name { color: #e8d9b8; font-weight: bold; }
+
+    /* Tag badges */
+    .tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-family: sans-serif;
+      padding: 0.1rem 0.45rem;
+      border-radius: 2px;
+      margin-right: 0.3rem;
+      font-weight: bold;
+      letter-spacing: 0.3px;
+    }
+    .tag-ancestor { background: #2a1a0a; color: #e0903a; border: 1px solid #5a2a0a; }
+    .tag-direct   { background: #0a1a0a; color: #50c050; border: 1px solid #0a3a0a; }
+    .tag-source   { background: #0a0a2a; color: #6090d0; border: 1px solid #0a0a5a; }
+
+    /* Person card */
+    .person-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.2rem 1.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .person-card h3 {
+      color: var(--accent);
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .person-card .dates {
+      color: var(--muted);
+      font-family: sans-serif;
+      font-size: 0.82rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+
+    .grantee-list {
+      columns: 2;
+      column-gap: 2rem;
+      font-size: 0.88rem;
+      color: #bbb;
+      list-style: none;
+      padding: 0;
+    }
+
+    .grantee-list li {
+      padding: 0.2rem 0;
+      border-bottom: 1px solid #1a1a1a;
+      break-inside: avoid;
+    }
+
+    .grantee-list li.family { color: var(--accent); font-weight: bold; }
+
+    @media (max-width: 600px) { .grantee-list { columns: 1; } }
+
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 1.5rem 2rem;
+      font-size: 0.8rem;
+      color: #444;
+      font-family: sans-serif;
+    }
+
+    footer a { color: #666; text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html">Home</a>
+  <span class="nav-divider">Paternal —</span>
+  <a href="full-family-tree.html#paternal-tree">Full Tree</a>
+  <a href="family-tree-visuals.html">Visual Tree</a>
+  <a href="thomas-line.html">Thomas</a>
+  <a href="kennard-family-history.html">Kennard</a>
+  <a href="crawley-line.html">Crawley</a>
+  <a href="convis-line.html">Convis</a>
+  <span class="nav-divider">Maternal —</span>
+  <a href="full-family-tree.html#maternal-tree">Maternal Tree</a>
+  <a href="squires-line.html">Squires</a>
+  <a href="croft-line.html">Croft</a>
+  <span class="nav-divider">Site —</span>
+  <a href="discoveries-and-research.html">Discoveries</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="sources.html">Sources</a>
+  <a href="file-glossary.html">Site Index</a>
+</nav>
+
+<header>
+  <div class="crest">📖</div>
+  <h1>Early History of Grimes County</h1>
+  <div class="subtitle">Family passages extracted from E.L. Blair's 1930 history — the earliest scholarly account of the families who built Grimes County, Texas</div>
+  <div class="byline">E.L. Blair · 1930 · 251 pages · Source: <a href="documents/Blair_EarlyHistoryGrimesCounty_1930.pdf" target="_blank" style="color:#666;">View full PDF →</a></div>
+</header>
+
+<nav class="page-nav">
+  <a href="#about">About the Book</a>
+  <a href="#kennard">Kennard Family</a>
+  <a href="#fanthorp">Fanthorp &amp; the Inn</a>
+  <a href="#womack">Womack Connection</a>
+  <a href="#muster">Muster Rolls</a>
+  <a href="#grantees">Appendix I — Grantees</a>
+</nav>
+
+<div class="container">
+
+  <!-- About -->
+  <div class="intro-block" id="about">
+    <p><strong style="color:var(--accent)">What this book is:</strong> E.L. Blair's <em>Early History of Grimes County</em> (1930) is the foundational scholarly history of the county. Blair, a graduate student at the University of Texas, spent years collecting testimony from elderly residents and descendants, cross-referencing land records, muster rolls, and newspaper archives. The result is 251 pages covering all 64 original Austin's Colony land grantees in Grimes County — with biographical sketches, family trees, and firsthand accounts that exist nowhere else in print.</p>
+    <p><strong style="color:var(--accent)">Why it matters for this family:</strong> The Kennard family receives a dedicated chapter (pp. 116–125). Blair interviewed Mrs. Minnie (Kennard) Williams — a direct family member — and Judge J.G. McDonald, who knew the Kennards personally. The Womack connection, the founding of Fanthorp Inn, the firm "Fanthorp, Womack &amp; Kennard," and the double Robertson-Womack marriage tie all appear here in primary-source form, written down within living memory of the events.</p>
+    <p><strong style="color:var(--accent)">Connection to Avery:</strong> <span class="name">Stella Kennard</span> (daughter of John H. Kennard, granddaughter of Michael Moore Kennard, great-granddaughter of Anthony Drew Kennard Sr.) married <span class="name">Gary Thomas</span> — making her Avery's great-great-grandmother. Every person described in this chapter is Avery's direct ancestor or a close collateral relation.</p>
+  </div>
+
+  <!-- Kennard Family -->
+  <div class="section" id="kennard">
+    <h2 class="section-title">The Kennard Family</h2>
+    <div class="section-subtitle">Blair, pp. 116–121 · Primary source: Mrs. Minnie (Kennard) Williams, questionnaire dated January 13, 1929</div>
+
+    <div class="person-card">
+      <h3>Anthony Drew Kennard Sr. <span class="tag tag-ancestor">Direct Ancestor</span></h3>
+      <div class="dates">b. July 9, 1788 · d. 1848, Grimes County, TX · Married Sarah "Sallie" Moore, Oct 16, 1808</div>
+      <p>Anthony Drew Kennard was granted one league of land "situated about eight miles northeast of the present town of Anderson, in Grimes county, patent to which was dated, November 22, 1832." He and his wife Sarah arrived in Texas on December 24, 1832, settling along Gibbon's Creek. The land became known as <strong>Kennard's Prairie</strong> — today Roans Prairie, TX.</p>
+      <div class="excerpt">
+        "The Kennard men apparently took little interest in the political affairs of the colony, but participated actively in the military activities of the period. Anthony D. Kennard served in the Texas army on an Indian campaign in 1835, in Captain Coleman's Company, of Colonel John H. Moore's Regiment. Four of Anthony D. Kennard's sons were in the Texas army during the revolution against Mexico, namely: William E., A. D., Mark L., and Mike. M."
+        <cite>— E.L. Blair, Early History of Grimes County, p. 117</cite>
+      </div>
+      <p>Anthony D. and Sarah Kennard had <strong>eight children</strong>:</p>
+      <table class="fact-table">
+        <thead><tr><th>Name</th><th>Birth</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Mark L. Kennard</td><td>Jul 24, 1821, Alabama</td><td>Died Apr 23, 1897, Roan's Prairie. Wife: Helen Walker (d. Sep 1897, Anderson). Six children.</td></tr>
+          <tr><td>William E. Kennard</td><td>Jul 16, 1815</td><td>Died Feb 14, 1899, Cleburne, TX. Texas Revolution veteran. Married Miss Robertson — see Womack connection below.</td></tr>
+          <tr><td>Anthony D. Kennard Jr.</td><td>~1818</td><td>Texas Revolution. Married (1838) Sarah Smith (b. Mar 23, 1821, Greensboro, AL). Moved to Johnson County ~1850.</td></tr>
+          <tr><td>Michael Moore Kennard</td><td>–</td><td><strong>Direct ancestor.</strong> Married Mary Ann Womack. Five children. Co-founded "Fanthorp, Womack &amp; Kennard," 1837.</td></tr>
+          <tr><td>John R. Kennard</td><td>youngest</td><td>Civil War: Major, General Pat Cleburne's Division. District Judge at death, 1884. Married Sallie Nobles.</td></tr>
+          <tr><td>Rachel Kennard</td><td>–</td><td>Married Henry Fanthorp (spring 1834). Three children: John, Mary A., and one who died in infancy.</td></tr>
+          <tr><td>Virginia Kennard</td><td>–</td><td>Named in the list of eight children.</td></tr>
+          <tr><td>Two daughters</td><td>–</td><td>"died in childhood at ages eleven and thirteen, respectively."</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="person-card">
+      <h3>William E. Kennard <span class="tag tag-ancestor">Collateral</span></h3>
+      <div class="dates">b. July 16, 1815 · d. February 14, 1899, Cleburne, TX</div>
+      <p>William E. Kennard, eldest surviving son of Anthony D. Sr., served in the Texas Army in every major campaign of the era:</p>
+      <div class="excerpt">
+        "William E. Kennard, eldest son of Anthony D. and Sarah Kennard, is said to have served in the Texas Army against the Indians in the Tidwell Campaign of 1840; as a volunteer in the San Jacinto Campaign in 1836; in the Kiell Campaign of 1839; and in the expedition against the Vasquez invasion of 1842; and was elected captain of the militia in 1841."
+        <cite>— E.L. Blair, Early History of Grimes County, p. 119</cite>
+      </div>
+      <p>William married a <strong>Miss Robertson</strong> — who was the <em>sister</em> of Mrs. A.M. Womack (Abraham Womack's wife). This means the Kennard-Womack bond ran in two directions at once: Michael Moore Kennard married Abraham Womack's daughter, while William Kennard married the sister of Abraham Womack's wife. The marriage was unhappy and ended in separation after four children: John, Rachel, Dolly, and William. The family moved to Johnson County.</p>
+    </div>
+
+    <div class="person-card">
+      <h3>Michael Moore Kennard <span class="tag tag-direct">Direct Ancestor</span></h3>
+      <div class="dates">Son of Anthony D. Kennard Sr. · Married Mary Ann Womack</div>
+      <p>Mike M. Kennard served in the Texas army during the revolutionary period and was the driving commercial force in the family's post-independence life. He is the direct link between the Kennard and Womack families.</p>
+      <div class="excerpt">
+        "Mike M. Kennard, son of the original Anthony D. Kennard, as stated above, rendered military service to Texas during the revolutionary period. He later married a Miss Womack, daughter of A. M. Womack, formerly of the Apolonia community in Grimes county. Five children were born to them, namely: Anthony D. (died while in the Southern army during the Civil War), Mary, A. W., John H., and another daughter whose name the writer does not have."
+        <cite>— E.L. Blair, Early History of Grimes County, p. 120</cite>
+      </div>
+      <p>Michael Moore Kennard's son <strong>John H. Kennard</strong> would go on to marry Mattie Brown and have five children including <strong>Stella Kennard</strong> — who married Gary Thomas, making her Avery's great-great-grandmother.</p>
+    </div>
+
+    <div class="person-card">
+      <h3>John H. Kennard <span class="tag tag-direct">Direct Ancestor</span></h3>
+      <div class="dates">Son of Michael Moore Kennard · Tax collector, Grimes County</div>
+      <div class="excerpt">
+        "John H. Kennard, brother of A. W. Kennard, is now a merchant at Anderson, Texas. He was tax collector of Grimes county for a term of four years, beginning in 1890. He married Mattie Brown, daughter of G. W. Brown, by whom he has five children, namely: Hiram, G. Brown, Mary Lou, Stella, and Lizzie."
+        <cite>— E.L. Blair, Early History of Grimes County, p. 120 (footnote)</cite>
+      </div>
+      <p><strong>Stella Kennard</strong> — listed here as John H. Kennard's daughter — is confirmed elsewhere in Blair: <em>"Stella is now Mrs. Gary Thomas of Anderson, Texas. She is the mother of three sons, whose names, however, the writer does not have."</em> Those three sons include <strong>J.G. Thomas Jr.</strong>, Avery's great-grandfather.</p>
+    </div>
+
+    <div class="person-card">
+      <h3>John R. Kennard <span class="tag tag-ancestor">Collateral</span></h3>
+      <div class="dates">Youngest son of Anthony D. Kennard Sr. · d. 1884</div>
+      <div class="excerpt">
+        "John R. Kennard, the youngest son of Anthony D. Kennard, the colonist, was too young to serve in the army of the Republic of Texas. When the Civil War came, however, he enlisted, and was promoted to the rank of Major in General Pat Cleburne's Division. At the time of his death, in 1884, he was serving as District Judge for this district, which office he had held for about four years."
+        <cite>— E.L. Blair, Early History of Grimes County, p. 121</cite>
+      </div>
+      <p>John R. Kennard married Sallie Nobles, daughter of Judge Nobles of Houston. They had four children: Mary, Ed, John, and Lucy.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Fanthorp -->
+  <div class="section" id="fanthorp">
+    <h2 class="section-title">Henry Fanthorp &amp; The Inn</h2>
+    <div class="section-subtitle">Blair, pp. 121–123 · Source: Judge J.G. McDonald to E.L. Blair, June 11, 1928</div>
+
+    <p><span class="name">Rachel Kennard</span> — the only daughter of Anthony D. Kennard Sr. to survive — married <span class="name">Henry Fanthorp</span> in the spring of 1834, completing the house he built for the occasion. What followed was one of the most consequential institutions in early Texas history.</p>
+
+    <div class="excerpt">
+      "Rachel Kennard, the only daughter of the elder Anthony D. Kennard, married (by bond in 1833 or 1834) Henry Fanthorp, an Englishman who came to Texas, direct from England, about 1832. Henry Fanthorp is one of the most interesting characters connected with the early history of Grimes county. He had been married twice in England. When death claimed his second wife and an only son, he determined to start life anew in the province of Texas. He arrived at Washington, Texas, sometime in the year 1832, and, after a short time, purchased from Francis Holland at a price of twenty-five cents per acre, eleven hundred and seven acres of land. He erected a log house, the ruins of which still stand, being used today by Judge J. G. McDonald as a corn crib."
+      <cite>— E.L. Blair, Early History of Grimes County, p. 121</cite>
+    </div>
+
+    <div class="excerpt">
+      "In the spring of 1834, Fanthorp built a new and much larger house. This time care was taken to select a beautiful clump of trees for the site. A comfortable log dwelling with a rock chimney at each end was erected. Upon the completion of the new house, the wedding with Miss Rachel Kennard was celebrated. The couple soon found themselves in the hotel business, and Fanthorp enlarged the dwelling so as to make a spacious tavern, known as the Fanthorp Inn."
+      <cite>— E.L. Blair, Early History of Grimes County, p. 122</cite>
+    </div>
+
+    <p>The inn became the social and commercial center of the region. In 1835, it became the first post office in what is now Grimes County, with Henry Fanthorp as postmaster. In 1837, Fanthorp expanded into commerce:</p>
+
+    <div class="excerpt">
+      "Here, in 1837, Fanthorp, with his brother-in-law, Mike M. Kennard, and Abraham Womack, established the first mercantile firm to do business in what is now Grimes county. They purchased a ten thousand dollar stock of merchandise in New Orleans, freighted the goods to Fanthorp and operated under the firm name of <strong>Fanthorp, Womack &amp; Kennard.</strong> Here two of the most important stage lines of this section of Texas crossed, and maintained stage stands across from the tavern, where three times a week each stage stopped, watered, or exchanged teams, and made necessary repairs, while the passengers refreshed themselves at the tavern. One of these stage lines ran from Houston to Old Springfield; the other from Nacogdoches to Austin. Sam Houston was often a visitor."
+      <cite>— E.L. Blair, Early History of Grimes County, p. 122</cite>
+    </div>
+
+    <p>The inn hosted some of the most consequential figures of 19th-century America. General Zachary Taylor and his army stopped there in 1846, marching to the Mexican border. Most significantly:</p>
+
+    <div class="excerpt">
+      "At this inn died Kenneth L. Anderson, the last Vice President of the Republic of Texas, and he was buried with Masonic honors across the road from the old tavern in the Fanthorp cemetery. When the new county was created by the First State Legislature of Texas in 1846, it was decided to name the new county seat in honor of this Kenneth L. Anderson."
+      <cite>— E.L. Blair, Early History of Grimes County, p. 123</cite>
+    </div>
+
+    <p>Henry Fanthorp and Rachel Kennard had three children: <strong>John</strong> (married Sallie Moore, died young, no children), <strong>Mary A.</strong> (married 1863 Major William M. Stone; five children including Annie B., Eleanor, Julia, William M., and Henry Fanthorp Stone), and <strong>one child who died in infancy</strong>.</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Womack -->
+  <div class="section" id="womack">
+    <h2 class="section-title">The Womack Connection</h2>
+    <div class="section-subtitle">Blair, pp. 119–120 · The double family bond between the Kennards and Womacks</div>
+
+    <p>The Kennard family was bound to the Womack family not once but twice — through two separate marriages in the same generation.</p>
+
+    <table class="fact-table">
+      <thead><tr><th>Connection</th><th>Kennard</th><th>Womack / Robertson</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Marriage 1</td>
+          <td><strong>Michael Moore Kennard</strong><br>(son of Anthony D. Sr.)</td>
+          <td>Married <strong>Mary Ann Womack</strong><br>daughter of Abraham M. Womack</td>
+        </tr>
+        <tr>
+          <td>Marriage 2</td>
+          <td><strong>William E. Kennard</strong><br>(son of Anthony D. Sr.)</td>
+          <td>Married <strong>Miss Robertson</strong><br><em>sister</em> of Mrs. A.M. Womack (Abraham's wife)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="excerpt">
+      "He [William E. Kennard] married a Miss Robertson (sister of Mrs. A. M. Womack) but the marriage was an unhappy one and separation took place after the birth of four children, namely: John, Rachel, Dolly, and William."
+      <cite>— E.L. Blair, Early History of Grimes County, p. 119</cite>
+    </div>
+
+    <div class="excerpt">
+      "He [Mike M. Kennard] later married a Miss Womack, daughter of A. M. Womack, formerly of the Apolonia community in Grimes county."
+      <cite>— E.L. Blair, Early History of Grimes County, p. 120</cite>
+    </div>
+
+    <p><span class="name">Abraham M. Womack</span> (b. ~July 25, 1799, Hancock, Georgia; d. ~October 19, 1861, Grimes County, TX) was therefore simultaneously the father-in-law of Michael Moore Kennard and the brother-in-law of William E. Kennard. His home community in Grimes County was <strong>Apolonia</strong> — a small settlement in the southern part of the county. He was one of three partners in "Fanthorp, Womack &amp; Kennard," the firm that operated the first mercantile business in Grimes County history.</p>
+
+    <p>Abraham Womack does <em>not</em> appear on Blair's Appendix I list of original Austin's Colony land grantees — he arrived in Grimes County through a different route, likely a headright or preemption grant, consistent with his descendants' later Montgomery County school land patents (1905–1906).</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Muster Rolls -->
+  <div class="section" id="muster">
+    <h2 class="section-title">Muster Rolls — Family Members in Military Service</h2>
+    <div class="section-subtitle">Blair, Appendix III — compiled from Texas State Library archives</div>
+
+    <p>Blair's appendix reproduces muster rolls from multiple Confederate and Republic-era companies. The following family members appear by name:</p>
+
+    <table class="fact-table">
+      <thead><tr><th>Name</th><th>Unit</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>A. Drew Kennard</td>
+          <td>Company G, 4th Regiment<br>(Hood's Texas Brigade)</td>
+          <td>#78 on the roll. Confederate service, Civil War.</td>
+        </tr>
+        <tr>
+          <td>M. Kennard</td>
+          <td>Anderson-area company</td>
+          <td>#121. Likely Michael Moore Kennard or a son.</td>
+        </tr>
+        <tr>
+          <td>John R. Kennard</td>
+          <td>Grimes County Greys</td>
+          <td>Second Lieutenant. Confirmed Confederate officer; later Major, General Pat Cleburne's Division.</td>
+        </tr>
+        <tr>
+          <td>A. Womack</td>
+          <td>Dickson Rangers (Cavalry)</td>
+          <td>Likely a son of Abraham Womack. Confederate cavalry.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Blair also notes from the chapter (p. 120, footnote) that <strong>Anthony D. Kennard</strong> (son of Michael Moore Kennard and Mary Ann Womack) <em>"died while in the Southern army during the Civil War"</em> — a direct family casualty of the conflict.</p>
+
+    <p>For the earlier Republic period, Blair documents Anthony D. Kennard Sr.'s service in <strong>Captain Coleman's Company, Colonel John H. Moore's Regiment</strong> (Indian campaign, 1835), and William E. Kennard's service in the San Jacinto Campaign (1836), the Tidwell Campaign (1840), the Kiell Campaign (1839), and the Vasquez expedition (1842).</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Appendix I Grantee List -->
+  <div class="section" id="grantees">
+    <h2 class="section-title">Appendix I — All 64 Original Land Grantees</h2>
+    <div class="section-subtitle">Blair, pp. 175–177 · Source: Abstract of Texas Land Titles, Vol. I, p. 604 ff. · Family names highlighted</div>
+
+    <p>The following is the complete list of persons granted land in what is now Grimes County by the Government of the United States (formerly Mexico, under Austin's Colony). All received one league (~4,428 acres) unless otherwise noted. Family-connected names are highlighted.</p>
+
+    <ul class="grantee-list">
+      <li>1. Armour, Robert — 1 league — Oct 5, 1835</li>
+      <li>2. Arnold, Daniel — 1 league — May 9, 1831</li>
+      <li>3. Babbitt, Benjamin — ¼ league — Nov 22, 1832</li>
+      <li>4. Bell, James — ¾ league — Dec 2, 1832</li>
+      <li>5. Black, John S. — 1 league — Apr 6, 1831</li>
+      <li>6. Black, Marcus D. — ¼ league — Apr 6, 1831</li>
+      <li>7. Bowman, John — 1 league — Apr 6, 1831</li>
+      <li>8. Bowman, Samuel — 1 league — Oct 16, 1835</li>
+      <li>9. Brown, Alexander — 1 league — May 17, 1831</li>
+      <li>10. Burney, William — 1 league — Apr 6, 1831</li>
+      <li>11. Campbell, Cyrus — 1 league — Oct 22, 1835</li>
+      <li>12. Conner, John C. — 1 league — Oct 22, 1835</li>
+      <li>13. Cox, James — 1 league — May 28, 1832</li>
+      <li>14. Cornaugh, Hannah — 1 league — Dec 19, 1832</li>
+      <li>15. FitzGibbons, William — 1 league — Apr 6, 1831</li>
+      <li>16. Fulton, Samuel — 1 league — Apr 9, 1831</li>
+      <li>17. Garrett, Claiborne — ¼ league — Dec 3, 1832</li>
+      <li>18. Gillett, Heirs of J. — 1 league — Mar 27, 1831</li>
+      <li>19. Greenwood, Franklin J. — 1 league — Apr 7, 1831</li>
+      <li>20. Greenwood, Joel — 1 league — May 13, 1831</li>
+      <li>21. Gregg, Darius — ¼ league — Apr 6, 1831</li>
+      <li>22. Grimes, Jesse — 1 league — Apr 6, 1831</li>
+      <li>23. Groce, Jared E. — <strong>3 leagues</strong> — Jul 29, 1831</li>
+      <li>24. Groce, Leonard W. — 1 league — Apr 21, 1831</li>
+      <li>25. Hadley, Joshua — 1 league — May 7, 1831</li>
+      <li>26. Harris, John — ¼ league — Oct 16, 1832</li>
+      <li>27. Hays, Jacob — 1 league — Apr 8, 1831</li>
+      <li class="family">28. Holland, Francis — 1 league — Aug 10, 1824 ★ Fanthorp bought land from Holland</li>
+      <li>29. Holland, James — ¼ league — Apr 7, 1831</li>
+      <li>30. Holland, William — 1 league — Aug 10, 1824</li>
+      <li>31. Jack, Patrick C. — ¼ league — Apr 6, 1831</li>
+      <li>32. Jackson, Isaac — 1 league — Aug 7, 1824</li>
+      <li>33. Jones, Timothy — 1 league — Oct 24, 1835</li>
+      <li class="family">34. Kennard, Anthony Drew — 1 league — Nov 2, 1823 ★ Direct ancestor</li>
+      <li>35. Landrum, John — 1 league — Apr 10, 1831</li>
+      <li>36. Laughlin, William — ¼ league — Apr 11, 1831</li>
+      <li>37. McDonald, Thomas — 1 league — Oct 5, 1835</li>
+      <li>38. McDowell, M. — 1 league — Oct 17, 1835</li>
+      <li>39. McGriffin (McGuffin) Wm. — 1 league — Nov 12, 1832</li>
+      <li>40. McIntire, William — ¼ league — Apr 6, 1831</li>
+      <li>41. McIntire, Margaret — 1 league — Apr 5, 1831</li>
+      <li>42. McMahan, Daniel B. — 1 league — Oct 16, 1835</li>
+      <li>43. Montgomery, William — 1 league — May 4, 1831</li>
+      <li>44. McNealy, Jesse B. — 1 league — Apr 11, 1831</li>
+      <li class="family">45. Moore, James W. — 1 league — Oct 20, 1835 ★ Possible Moore family connection (Sallie Moore Kennard)</li>
+      <li class="family">46. Moore, John — 1 league — Apr 15, 1831 ★ Possible Moore family connection</li>
+      <li>47. Pankey, James W. — 1 league — Oct 19, 1835</li>
+      <li>48. Payne, John — 1 league — Oct 16, 1835</li>
+      <li>49. Peterson, John — 1 league — Apr 2, 1831</li>
+      <li>50. Pitts, Heirs of Obediah — 1 league — Oct 29, 1835</li>
+      <li>51. Ray, Robert — ¼ league — Apr 9, 1831</li>
+      <li>52. Rea, Andrew — ¼ league — Jun 18, 1831</li>
+      <li>53. Simms, Ignacius — 1 league — Oct 26, 1835</li>
+      <li>54. Townsend, William — 1 league — Oct 20, 1835</li>
+      <li>55. Tyler, Daniel — ¼ league — Oct 22, 1835</li>
+      <li>56. Vince, Allen — ½ league — Apr 30, 1831</li>
+      <li>57. Walker, Tandy — 1 league — Apr 27, 1831</li>
+      <li>58. Wallace, Caleb — 1 league — May 14, 1828</li>
+      <li>59. Wallace, James — 1 league — Apr 9, 1831</li>
+      <li>60. White, Dudley J. — 1 league — May 31, 1831</li>
+      <li>61. Whitesides, John J. — 1 league — Oct 14, 1831</li>
+      <li>62. Whitesides, James — 1 league — Jul 16, 1824</li>
+      <li>63. Yeamans, Asa — 1 league — Jul 8, 1831</li>
+      <li>64. Zuber, Abraham — 1 league — Mar 4, 1833</li>
+    </ul>
+
+    <p style="margin-top:1.2rem;font-size:0.85rem;color:var(--muted);">Note: The Kennard patent date of "November 2, 1823" is the earliest in the list by several years. This reflects the date the Mexican government originally issued the land title under Austin's Colony petition — the family did not physically arrive in Texas until December 24, 1832. Abraham Womack does not appear on this list; he was not one of the original 64 colonists and likely arrived under a subsequent headright or preemption grant.</p>
+  </div>
+
+</div>
+
+<footer>
+  Roots: The Thomas &amp; Squires Family History &nbsp;·&nbsp; Compiled by Avery Thomas · May 2026 &nbsp;·&nbsp;
+  <a href="sources.html">Sources</a> &nbsp;·&nbsp;
+  <a href="file-glossary.html">Site Index</a> &nbsp;·&nbsp;
+  <a href="index.html">Home</a>
+</footer>
+
+</body>
+</html>
